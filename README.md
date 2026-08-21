@@ -50,6 +50,27 @@ pass `--coverage-bound 4096`; that is not an acceptance run.
 The checked acceptance-run outputs and hashes are recorded in
 `RUN_RESULTS.md` and `artifacts/SHA256SUMS`.
 
+## Phase 3 mixed-modulus search
+
+Phase 3 adds coefficient-only structure auditing, mixed `LatticeNode`
+binary/ternary splits, bounded exact `REVERSE_MERGE`, an independent verifier,
+and an exact boundary-gap audit through boundary depth 36. It still produces a
+large unresolved `OPEN` frontier and does not prove the Collatz conjecture.
+
+```bash
+.venv/bin/python -m pytest -q
+.venv/bin/python src/phase3_search.py \
+  --phase1-certificate artifacts/baseline_certificate.json \
+  --binary-depth 20 --max-ternary 2 --boundary-depth 36
+.venv/bin/python verifier/verify_phase3.py artifacts/phase3_certificate.json \
+  --phase1-certificate artifacts/baseline_certificate.json \
+  --output artifacts/phase3_verifier_result.json
+.venv/bin/python scripts/hash_artifacts.py artifacts --write artifacts/SHA256SUMS
+```
+
+See `PHASE3_RUN_RESULTS.md` and `artifacts/phase3_obstruction_report.md` for the
+checked result and the remaining exact bounded-search obstruction.
+
 ## Interpretation boundaries
 
 - **Proved by the checker:** the finite JSON tree is internally exact; every

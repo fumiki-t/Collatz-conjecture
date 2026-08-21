@@ -1,0 +1,17 @@
+{
+  "binary_depth": 20,
+  "binary_frontier_nodes": 27328,
+  "closed_by_reverse_merge": 43198,
+  "coefficient_dp_valid": true,
+  "mixed_open_nodes": 79350,
+  "phase1_domain_zero_boundary_margins_checked": 190067,
+  "phase1_positive_t_min_exceptions": 2,
+  "proves_collatz": false,
+  "records_by_ternary_level": {
+    "0": 27328,
+    "1": 47610,
+    "2": 95220
+  },
+  "status": "verified_partial_phase3_certificate_with_mixed_open_frontier",
+  "valid": true
+}
