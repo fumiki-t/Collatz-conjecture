@@ -162,6 +162,7 @@
     "original_status": "unresolved_unquantified_conjecture",
     "survives_bounded_search": false
   },
+  "best_mixed_block_excess_bound": "2^-13",
   "dangerous_repetition_families_checked": 160,
   "direct_audit": {
     "bound_exclusive": 16777216,
@@ -227,6 +228,7 @@
   "heteroclinic_identity_count": 7,
   "maximum_first_return_length": 9,
   "maximum_other_multiplier": "27/32",
+  "mixed_block_records_checked": 8,
   "noncontracting_words": [
     "1",
     "101",

@@ -23,6 +23,8 @@ DANGEROUS = {
     "1101": Fraction(-23, 11),
     "011101": Fraction(-146, 17),
 }
+MIXED_A = "11101"
+MIXED_B = "1100"
 
 
 def step(value: int) -> int:
@@ -537,7 +539,124 @@ def analyze_stored_path(row: dict[str, object], template_map: dict[str, dict[str
             raise ValueError(f"stored switch path analysis mismatch: {field}")
 
 
-def verify_switches(payload: object, templates: list[dict[str, object]]) -> tuple[int, int]:
+def verify_mixed_block(
+    payload: object, template_map: dict[str, dict[str, object]]
+) -> tuple[int, int]:
+    if not isinstance(payload, dict) or payload.get("format") != "collatz-mixed-block-adversarial-v1":
+        raise ValueError("mixed-block adversarial audit is missing")
+    map_a = word_map(MIXED_A)
+    map_b = word_map(MIXED_B)
+    map_w = word_map(MIXED_A + MIXED_B)
+    expected_blocks = {
+        "A": {"word": MIXED_A, **map_compact(map_a)},
+        "B": {"word": MIXED_B, **map_compact(map_b)},
+    }
+    expected_w = {"word": MIXED_A + MIXED_B, **map_compact(map_w)}
+    if payload.get("blocks") != expected_blocks or payload.get("W") != expected_w:
+        raise ValueError("A, B, or W affine map mismatch")
+    if map_w[:3] != (729, 817, 512) or Fraction(817, 512 - 729) != Fraction(-817, 217):
+        raise ValueError("W fixed-point identity mismatch")
+    if payload.get("general_multiplier") != "3^(4*r+2*s)/2^(5*r+4*s)":
+        raise ValueError("mixed-block general multiplier mismatch")
+    expected_parameterization = {
+        "u": "2*r+s",
+        "q": "5*r+4*s=floor(log2(9^u))",
+        "r": "(4*u-q)/3",
+        "s": "(2*q-5*u)/3",
+    }
+    if payload.get("record_parameterization") != expected_parameterization:
+        raise ValueError("mixed-block record parameterization mismatch")
+    expected_argument = {
+        "positive_logs": ["log(81/32)>0", "log(16/9)>0"],
+        "irrational_ratio": "log(81/32)/log(16/9)",
+        "rationality_contradiction": "3^(4*n+2*m)=2^(5*n+4*m) for positive m,n",
+        "number_theory_input": "density of positive linear combinations r*alpha-s*beta when alpha/beta is irrational",
+        "conclusion": "there are positive r,s with multiplier>1 arbitrarily close to 1",
+        "checker_scope": "exact premises and finite record sequence checked; density theorem named explicitly",
+    }
+    if payload.get("arbitrary_closeness_argument") != expected_argument:
+        raise ValueError("mixed-block arbitrary-closeness scope mismatch")
+    expected_implication = {
+        "H5_A": "near-neutral nondecreasing families with no long aligned repetition of one canonical dangerous cycle",
+        "H5_B": "four-center coordinates are incomplete for near-neutral rational shadows; this does not alone settle the original unquantified switch-cost statement",
+        "four_center_ranking": "W has fixed point -817/217 outside the four canonical centers",
+    }
+    if payload.get("ranking_implication") != expected_implication:
+        raise ValueError("mixed-block ranking implication mismatch")
+    bound = int(payload["record_u_bound"])
+    records = payload.get("records")
+    if not isinstance(records, list):
+        raise ValueError("mixed-block records missing")
+    expected_pairs: list[tuple[int, int, int, int, int]] = []
+    power = 1
+    best_gap: int | None = None
+    best_denominator: int | None = None
+    for u in range(1, bound + 1):
+        power *= 9
+        exponent_two = power.bit_length() - 1
+        if exponent_two % 3 != u % 3 or not (5 * u <= 2 * exponent_two <= 8 * u):
+            continue
+        repetitions_a = (4 * u - exponent_two) // 3
+        repetitions_b = (2 * exponent_two - 5 * u) // 3
+        if repetitions_a < 1 or repetitions_b < 1:
+            continue
+        denominator = 1 << exponent_two
+        gap = power - denominator
+        if gap <= 0:
+            continue
+        if (
+            best_gap is not None
+            and best_denominator is not None
+            and gap * best_denominator >= best_gap * denominator
+        ):
+            continue
+        best_gap, best_denominator = gap, denominator
+        expected_pairs.append((u, repetitions_a, repetitions_b, gap, denominator))
+    if len(records) != len(expected_pairs) or payload.get("record_count") != len(expected_pairs):
+        raise ValueError("mixed-block record count mismatch")
+    previous: tuple[int, int] | None = None
+    for row, (u, repetitions_a, repetitions_b, gap, denominator) in zip(
+        records, expected_pairs, strict=True
+    ):
+        if not isinstance(row, dict):
+            raise ValueError("malformed mixed-block record")
+        word = MIXED_A * repetitions_a + MIXED_B * repetitions_b
+        affine = word_map(word)
+        fixed = Fraction(affine[1], affine[2] - affine[0])
+        precision = 0
+        while gap * (1 << (precision + 1)) < denominator:
+            precision += 1
+        expected_scalars = {
+            "u": u,
+            "r": repetitions_a,
+            "s": repetitions_b,
+            "word_length": len(word),
+            "odd_steps": affine[3],
+            "multiplier": [affine[0], affine[2]],
+            "excess_over_one": [gap, denominator],
+            "certified_excess_below_power_of_two": precision,
+            "fixed_point": [fixed.numerator, fixed.denominator],
+            "fixed_point_is_one_of_four_centers": fixed in set(DANGEROUS.values()),
+        }
+        for field, expected in expected_scalars.items():
+            if row.get(field) != expected:
+                raise ValueError(f"mixed-block record mismatch: {field}")
+        if affine[0] <= affine[2] or row["path"]["parity_word"] != word:
+            raise ValueError("mixed-block multiplier is not above one")
+        analyze_stored_path(row["path"], template_map)
+        if row["path"]["whole_cylinder_path_nondecreasing"] is not True:
+            raise ValueError("mixed-block cylinder is not uniformly nondecreasing")
+        if previous is not None and gap * previous[1] >= previous[0] * denominator:
+            raise ValueError("mixed-block excess records do not improve strictly")
+        previous = gap, denominator
+    if records[0]["r"] != 1 or records[0]["s"] != 1:
+        raise ValueError("W=AB is not the first mixed-block record")
+    if payload.get("proves_collatz") is not False:
+        raise ValueError("mixed-block audit claims a Collatz proof")
+    return len(records), int(records[-1]["certified_excess_below_power_of_two"])
+
+
+def verify_switches(payload: object, templates: list[dict[str, object]]) -> tuple[int, int, int, int]:
     if not isinstance(payload, dict) or payload.get("format") != "collatz-shadow-switch-search-v1":
         raise ValueError("shadow-switch artifact format mismatch")
     if payload.get("not_exhaustive") is not True or payload.get("proves_collatz") is not False:
@@ -647,7 +766,10 @@ def verify_switches(payload: object, templates: list[dict[str, object]]) -> tupl
     ranking = payload.get("ranking_synthesis")
     if not isinstance(ranking, dict) or ranking.get("universal_rank_certified") is not False:
         raise ValueError("ranking artifact claims unsupported universality")
-    return len(paths), len(adversarial)
+    mixed_count, mixed_precision = verify_mixed_block(
+        payload.get("mixed_block_adversarial"), template_map
+    )
+    return len(paths), len(adversarial), mixed_count, mixed_precision
 
 
 def verify(artifact_dir: Path) -> dict[str, object]:
@@ -675,7 +797,7 @@ def verify(artifact_dir: Path) -> dict[str, object]:
     cycle_rows, _ = verify_cycles(cycle_data)
     verify_domination(domination, cycle_rows)
     transfer_rows, heteroclinic = verify_transfer(transfer, templates)
-    retained_paths, adversarial = verify_switches(switches, templates)
+    retained_paths, adversarial, mixed_count, mixed_precision = verify_switches(switches, templates)
     if section_data.get("proves_collatz") is not False or cycle_data.get("proves_collatz") is not False:
         raise ValueError("Phase 5 artifacts claim a Collatz proof")
     return {
@@ -693,6 +815,8 @@ def verify(artifact_dir: Path) -> dict[str, object]:
         "heteroclinic_identity_count": heteroclinic,
         "retained_shadow_paths_checked": retained_paths,
         "dangerous_repetition_families_checked": adversarial,
+        "mixed_block_records_checked": mixed_count,
+        "best_mixed_block_excess_bound": f"2^-{mixed_precision}",
         "H5_A": switches["H5_A"],
         "H5_B": switches["H5_B"],
         "universal_rank_certified": False,

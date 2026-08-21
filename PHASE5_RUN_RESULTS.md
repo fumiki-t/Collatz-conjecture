@@ -10,7 +10,8 @@ non-exhaustive depth-40 shadow search. It does not prove the Collatz conjecture.
 ```bash
 .venv/bin/python src/phase5_search.py \
   --direct-bound 16777216 --shadow-depth 40 \
-  --beam-width 256 --low-precision-limit 4
+  --beam-width 256 --low-precision-limit 4 \
+  --mixed-block-u-bound 20000
 .venv/bin/python verifier/verify_phase5.py \
   --artifact-dir artifacts \
   --output artifacts/section4_verifier_result.json
@@ -21,7 +22,7 @@ non-exhaustive depth-40 shadow search. It does not prove the Collatz conjecture.
 ## Tests
 
 ```text
-144 passed in 74.71s (0:01:14)
+145 passed in 71.79s (0:01:11)
 ```
 
 The tests include exact affine-family properties, all 52 first-return
@@ -44,7 +45,9 @@ below `2^24`, independent-verifier acceptance, and tamper rejection.
   7,162,840 shortcut steps. Its digest is
   `588b40e626d5dbf165dcb1e0f8e157742b2d43a5e4ddc26b4f4384187c51c2ef`.
 - The independent verifier reconstructed 832 shadow identities, 9,941 retained
-  exact paths, and 160 dangerous-cycle repetition families.
+  exact paths, 160 dangerous-cycle repetition families, and all eight
+  mixed-block multiplier records. Its best finite mixed-block bound is
+  `multiplier - 1 < 2^-13`.
 
 The verifier result is `valid: true`, with status
 `verified_phase5_algebraic_certificates_with_bounded_heuristics_unresolved`.
@@ -67,18 +70,31 @@ The verifier result is `valid: true`, with status
   languages. Exact adversarial families for arbitrary repetitions of all four
   dangerous words are retained; failure of these candidate languages is not a
   theorem that no other ranking exists.
+- Required mixed-block family `A=11101`, `B=1100` was audited separately.
+  `W=AB=111011100` has map `(729x+817)/512` and fixed point `-817/217`, which
+  is not one of the four canonical shadow centers.
+- Exact integer search through `u<=20000` produced eight successively closer
+  multipliers above one. The last record is `(r,s)=(184,297)`, has return depth
+  1,146, has no aligned canonical dangerous-cycle run longer than one, and has
+  multiplier excess below `2^-13`.
+- The arbitrary-closeness conclusion is separated from the finite records: it
+  uses the exact irrationality reduction for
+  `log(81/32)/log(16/9)` plus the named irrational-rotation density theorem.
+  This refutes four-center completeness and the quantified H5-A surrogate; for
+  H5-B it is an obstruction to the four-center ranking interpretation, not by
+  itself a proof or disproof of the original unquantified statement.
 
 ## Phase 5 SHA-256
 
 ```text
-988c0f547d009c799b28f1529e448a7fa850049b504e765ce6cfd9bd58cc08ce  phase5_obstruction_report.md
+34855b28bbed9f6348100c7abb1d549582949da6b7c072f435b71a4e2db773e2  phase5_obstruction_report.md
 5eb408b6509ef010bb6029b0e6af0c5d7b85d57c44be9198e6847450a1cd80b5  return20_domination.json
 aa04e4171232873127793dbd9d6ec1294ebdadeee0d131822f13c74069c96fa8  section4_templates.json
-6bb7272b393873e8af71de8de4125b36f2e0401c3933feb7459fc6e1e70fa074  section4_verifier_result.json
-b3856762efe98de62b94dcf206aa94b5c6e141e585d149d6abca78a37fad4905  shadow_switch_counterexamples.json
+84af08ba355f970e0a74e8a046bad27faddaba9dab4cbbcd252a9e9d8f7e8cea  section4_verifier_result.json
+9ccc8774f0cf86a6162edd0cec2e8378c4eacc60025ca385da575c50f495563f  shadow_switch_counterexamples.json
 74890ae9c2876ee5c524321d7967e57c9948d98811da41b111b4d15b88141d61  shadow_transfer_matrix.json
 d2e3904fe29e73bedf1f4b086ebb78832e919a3b0bb55680330e8fb3752d899b  simple_cycles_mod27.json
 ```
 
 The complete manifest is `artifacts/SHA256SUMS`; its own SHA-256 is
-`bcbe90a748aa2289c0d8ec12e681ad503c5dc6c449870e3509ea9092fc719971`.
+`3b4b63767a2663a19121a00444a052fd235e289d04cd7bee236f84550b8ff6b1`.

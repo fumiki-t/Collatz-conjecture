@@ -16,6 +16,7 @@ def test_phase5_independent_verifier_and_tamper_rejection(tmp_path: Path) -> Non
         shadow_depth=4,
         beam_width=24,
         low_precision_limit=3,
+        mixed_block_u_bound=100,
     )
     command = [
         sys.executable,

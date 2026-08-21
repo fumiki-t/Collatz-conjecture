@@ -108,7 +108,8 @@ bounded heuristics, not universal certificates.
 ```bash
 .venv/bin/python src/phase5_search.py \
   --direct-bound 16777216 --shadow-depth 40 \
-  --beam-width 256 --low-precision-limit 4
+  --beam-width 256 --low-precision-limit 4 \
+  --mixed-block-u-bound 20000
 .venv/bin/python verifier/verify_phase5.py \
   --artifact-dir artifacts \
   --output artifacts/section4_verifier_result.json

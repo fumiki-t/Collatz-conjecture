@@ -37,6 +37,8 @@ from src.phase5_model import (
 
 
 FORMAT = "collatz-phase5-dangerous-cycles-v1"
+MIXED_BLOCK_A = "11101"
+MIXED_BLOCK_B = "1100"
 
 
 def fraction_pair(value: Fraction) -> list[int]:
@@ -433,6 +435,118 @@ def adversarial_shadow_families(
     return rows
 
 
+def mixed_block_adversarial_audit(
+    templates: list[ReturnTemplate], record_u_bound: int
+) -> dict[str, object]:
+    if record_u_bound < 3:
+        raise ValueError("mixed-block record bound must be at least three")
+    template_map = {row.name: row for row in templates}
+    map_a = affine_word(MIXED_BLOCK_A)
+    map_b = affine_word(MIXED_BLOCK_B)
+    word_w = MIXED_BLOCK_A + MIXED_BLOCK_B
+    map_w = affine_word(word_w)
+    if (map_a.A, map_a.B, map_a.denominator) != (81, 73, 32):
+        raise AssertionError("mixed block A affine map mismatch")
+    if (map_b.A, map_b.B, map_b.denominator) != (9, 5, 16):
+        raise AssertionError("mixed block B affine map mismatch")
+    if (map_w.A, map_w.B, map_w.denominator) != (729, 817, 512):
+        raise AssertionError("mixed word W affine map mismatch")
+    if map_w.fixed_point != Fraction(-817, 217):
+        raise AssertionError("mixed word W fixed point mismatch")
+
+    records: list[dict[str, object]] = []
+    best_gap: int | None = None
+    best_denominator: int | None = None
+    power_of_nine = 1
+    for u in range(1, record_u_bound + 1):
+        power_of_nine *= 9
+        exponent_two = power_of_nine.bit_length() - 1
+        if exponent_two % 3 != u % 3 or not (5 * u <= 2 * exponent_two <= 8 * u):
+            continue
+        repetitions_a = (4 * u - exponent_two) // 3
+        repetitions_b = (2 * exponent_two - 5 * u) // 3
+        if repetitions_a < 1 or repetitions_b < 1:
+            continue
+        denominator = 1 << exponent_two
+        gap = power_of_nine - denominator
+        if gap <= 0:
+            continue
+        if (
+            best_gap is not None
+            and best_denominator is not None
+            and gap * best_denominator >= best_gap * denominator
+        ):
+            continue
+        best_gap, best_denominator = gap, denominator
+        word = MIXED_BLOCK_A * repetitions_a + MIXED_BLOCK_B * repetitions_b
+        affine = affine_word(word)
+        if (affine.A, affine.denominator) != (power_of_nine, denominator):
+            raise AssertionError("mixed-block exponent conversion mismatch")
+        return_names = split_into_returns(20, word, templates)
+        state = PathState(20, 20, tuple(return_names), word, affine)
+        analysis = analyze_path(state, template_map)
+        fixed = affine.fixed_point
+        if fixed is None:
+            raise AssertionError("mixed-block word unexpectedly has multiplier one")
+        precision_bits = 0
+        while gap * (1 << (precision_bits + 1)) < denominator:
+            precision_bits += 1
+        records.append(
+            {
+                "u": u,
+                "r": repetitions_a,
+                "s": repetitions_b,
+                "word_length": len(word),
+                "odd_steps": affine.q,
+                "multiplier": [affine.A, affine.denominator],
+                "excess_over_one": [gap, denominator],
+                "certified_excess_below_power_of_two": precision_bits,
+                "fixed_point": [fixed.numerator, fixed.denominator],
+                "fixed_point_is_one_of_four_centers": fixed in set(DANGEROUS_CYCLES.values()),
+                "path": analysis,
+            }
+        )
+    if not records or (records[0]["r"], records[0]["s"]) != (1, 1):
+        raise AssertionError("W=AB is missing from the mixed-block records")
+    for previous, current in zip(records, records[1:]):
+        p_gap, p_denominator = map(int, previous["excess_over_one"])
+        c_gap, c_denominator = map(int, current["excess_over_one"])
+        if c_gap * p_denominator >= p_gap * c_denominator:
+            raise AssertionError("mixed-block record excess is not strictly decreasing")
+    return {
+        "format": "collatz-mixed-block-adversarial-v1",
+        "blocks": {
+            "A": {"word": MIXED_BLOCK_A, **map_a.compact()},
+            "B": {"word": MIXED_BLOCK_B, **map_b.compact()},
+        },
+        "W": {"word": word_w, **map_w.compact()},
+        "general_multiplier": "3^(4*r+2*s)/2^(5*r+4*s)",
+        "record_parameterization": {
+            "u": "2*r+s",
+            "q": "5*r+4*s=floor(log2(9^u))",
+            "r": "(4*u-q)/3",
+            "s": "(2*q-5*u)/3",
+        },
+        "record_u_bound": record_u_bound,
+        "record_count": len(records),
+        "records": records,
+        "arbitrary_closeness_argument": {
+            "positive_logs": ["log(81/32)>0", "log(16/9)>0"],
+            "irrational_ratio": "log(81/32)/log(16/9)",
+            "rationality_contradiction": "3^(4*n+2*m)=2^(5*n+4*m) for positive m,n",
+            "number_theory_input": "density of positive linear combinations r*alpha-s*beta when alpha/beta is irrational",
+            "conclusion": "there are positive r,s with multiplier>1 arbitrarily close to 1",
+            "checker_scope": "exact premises and finite record sequence checked; density theorem named explicitly",
+        },
+        "ranking_implication": {
+            "H5_A": "near-neutral nondecreasing families with no long aligned repetition of one canonical dangerous cycle",
+            "H5_B": "four-center coordinates are incomplete for near-neutral rational shadows; this does not alone settle the original unquantified switch-cost statement",
+            "four_center_ranking": "W has fixed point -817/217 outside the four canonical centers",
+        },
+        "proves_collatz": False,
+    }
+
+
 def shadow_switch_search(
     templates: list[ReturnTemplate], max_depth: int, beam_width: int
 ) -> dict[str, object]:
@@ -594,6 +708,8 @@ def ranking_synthesis(
     assert isinstance(adversarial, list)
     max_repetitions = max(int(row["repetitions"]) for row in adversarial)
     smallest_refill = transfer["smallest_nontrivial_switch_witness"]
+    mixed = switch_result["mixed_block_adversarial"]
+    assert isinstance(mixed, dict)
     return {
         "method": "bounded CEGAR over exact coefficient comparisons, section residues, and truncated shadow valuations",
         "candidate_languages": [
@@ -620,6 +736,14 @@ def ranking_synthesis(
                 "candidate": "safe-cycle charge alone",
                 "counterexample": "the four noncontracting simple cycles carry no 27/32 safe-cycle charge",
             },
+            {
+                "candidate": "four dangerous shadow centers are complete",
+                "counterexample": "W=111011100 has map (729*x+817)/512 and fixed point -817/217",
+            },
+            {
+                "candidate": "fixed contraction per noncanonical shadow episode",
+                "counterexample": "A^r B^s has multiplier above one with exact finite records approaching one",
+            },
         ],
         "smallest_exact_refill_or_switch_witness": smallest_refill,
         "universal_rank_certified": False,
@@ -638,9 +762,14 @@ def write_report(
     direct = section_data["direct_audit"]
     h5a = switches["H5_A"]
     h5b = switches["H5_B"]
+    mixed = switches["mixed_block_adversarial"]
     h5a_min = h5a["minimal_exact_counterexample"]
     h5b_min = h5b["minimal_exact_candidate"]
     refill = transfer["smallest_nontrivial_switch_witness"]
+    assert isinstance(mixed, dict)
+    mixed_records = mixed["records"]
+    assert isinstance(mixed_records, list) and mixed_records
+    last_mixed = mixed_records[-1]
     if isinstance(h5a_min, dict):
         h5a_detail = (
             f"- Minimal H5-A surrogate counterexample: return depth `{h5a_min['depth']}`, source family "
@@ -687,11 +816,15 @@ def write_report(
         f"- H5-B bounded test survives: `{h5b['survives_bounded_search']}`; the original arbitrary-precision conjecture remains unresolved.",
         h5b_detail,
         "- No bounded beam result is promoted to a universal certificate.",
+        f"- Required mixed-block audit: `A=11101`, `B=1100`, with `{mixed['record_count']}` strict multiplier records through `u<={mixed['record_u_bound']}`.",
+        f"- The last record is `(r,s)=({last_mixed['r']},{last_mixed['s']})`, multiplier excess below `2^-{last_mixed['certified_excess_below_power_of_two']}`.",
         "",
         "## Exact obstruction and failed ranking synthesis",
         "",
         f"- Smallest nontrivial low-precision switch witness: start `{refill['start']}`, end `{refill['end']}`, `{refill['source_form']}->{refill['target_form']}` with valuations `{refill['source_precision']}->{refill['target_precision']}`.",
         "- Arbitrary repetition families are generated exactly for all four dangerous words; the artifact records repetitions through depth 40.",
+        "- `W=AB=111011100` has exact map `(729x+817)/512` and fixed point `-817/217`, outside the four canonical shadow centers.",
+        "- The irrational-ratio reduction for `A^rB^s` shows why multipliers above one can approach one arbitrarily closely; the checker validates its exact premises and finite records and names the density theorem used.",
         f"- Ranking synthesis result: `{ranking['status']}`.",
         "- This failure rejects only the tested rank languages. It is not a theorem that no ranking exists.",
         "",
@@ -709,6 +842,7 @@ def generate(
     shadow_depth: int,
     beam_width: int,
     low_precision_limit: int,
+    mixed_block_u_bound: int = 20_000,
 ) -> dict[str, object]:
     artifact_dir.mkdir(parents=True, exist_ok=True)
     templates = enumerate_return_templates()
@@ -726,6 +860,9 @@ def generate(
     domination = return20_domination_audit(cycles["cycles"])
     transfer = shadow_transfer_audit(templates, low_precision_limit)
     switches = shadow_switch_search(templates, shadow_depth, beam_width)
+    switches["mixed_block_adversarial"] = mixed_block_adversarial_audit(
+        templates, mixed_block_u_bound
+    )
     ranking = ranking_synthesis(switches, transfer)
     switches["ranking_synthesis"] = ranking
 
@@ -761,6 +898,7 @@ def generate(
         "H5_A": switches["H5_A"],
         "H5_B": switches["H5_B"],
         "ranking_status": ranking["status"],
+        "mixed_block_record_count": switches["mixed_block_adversarial"]["record_count"],
         "proves_collatz": False,
     }
 
@@ -772,6 +910,7 @@ def main() -> int:
     parser.add_argument("--shadow-depth", type=int, default=40)
     parser.add_argument("--beam-width", type=int, default=256)
     parser.add_argument("--low-precision-limit", type=int, default=4)
+    parser.add_argument("--mixed-block-u-bound", type=int, default=20_000)
     args = parser.parse_args()
     result = generate(
         args.artifact_dir,
@@ -779,6 +918,7 @@ def main() -> int:
         args.shadow_depth,
         args.beam_width,
         args.low_precision_limit,
+        args.mixed_block_u_bound,
     )
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0

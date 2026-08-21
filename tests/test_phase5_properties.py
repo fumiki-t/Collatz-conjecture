@@ -15,6 +15,7 @@ from src.phase5_model import (
 )
 from src.phase5_search import (
     direct_template_audit,
+    mixed_block_adversarial_audit,
     return20_domination_audit,
     simple_cycle_audit,
 )
@@ -77,3 +78,19 @@ def test_exhaustive_direct_phase5_audit_below_2_24() -> None:
 def test_colored_graph_is_closed_on_units() -> None:
     vertices = set(colored_graph())
     assert all(target in vertices for edges in colored_graph().values() for target in edges.values())
+
+
+def test_required_mixed_block_adversarial_family() -> None:
+    result = mixed_block_adversarial_audit(enumerate_return_templates(), 20_000)
+    assert result["W"]["word"] == "111011100"
+    assert (result["W"]["A"], result["W"]["B"], result["W"]["denominator"]) == (
+        729,
+        817,
+        512,
+    )
+    assert result["W"]["fixed_point"] == [-817, 217]
+    assert result["record_count"] == 8
+    assert [(row["r"], row["s"]) for row in result["records"]][-1] == (184, 297)
+    assert all(row["multiplier"][0] > row["multiplier"][1] for row in result["records"])
+    assert all(row["fixed_point_is_one_of_four_centers"] is False for row in result["records"])
+    assert all(row["path"]["maximum_dangerous_repeat"] == 1 for row in result["records"])

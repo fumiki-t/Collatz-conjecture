@@ -25,11 +25,15 @@ This report does not claim a proof of the Collatz conjecture.
 - H5-B bounded test survives: `False`; the original arbitrary-precision conjecture remains unresolved.
 - Minimal H5-B bounded candidate: return depth `5`, start `362638`, `C146->C23` with valuations `9->11`.
 - No bounded beam result is promoted to a universal certificate.
+- Required mixed-block audit: `A=11101`, `B=1100`, with `8` strict multiplier records through `u<=20000`.
+- The last record is `(r,s)=(184,297)`, multiplier excess below `2^-13`.
 
 ## Exact obstruction and failed ranking synthesis
 
 - Smallest nontrivial low-precision switch witness: start `11`, end `26`, `C7->C146` with valuations `1->2`.
 - Arbitrary repetition families are generated exactly for all four dangerous words; the artifact records repetitions through depth 40.
+- `W=AB=111011100` has exact map `(729x+817)/512` and fixed point `-817/217`, outside the four canonical shadow centers.
+- The irrational-ratio reduction for `A^rB^s` shows why multipliers above one can approach one arbitrarily closely; the checker validates its exact premises and finite records and names the density theorem used.
 - Ranking synthesis result: `no_universal_well_founded_rank_synthesized`.
 - This failure rejects only the tested rank languages. It is not a theorem that no ranking exists.
 
