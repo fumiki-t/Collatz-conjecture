@@ -1,0 +1,19 @@
+{
+  "closed_records": 10335,
+  "direct_audit": {
+    "bound_exclusive": 16777216,
+    "section_integers_checked": 1864135,
+    "sha256": "4185d73b4301ebc29c39bb7ba7e141ed6907d2580456ceb30bb10cea5f8a5d54",
+    "shortcut_steps_checked": 7340021
+  },
+  "max_a": 8,
+  "max_return_depth": 3,
+  "open_records": 23785,
+  "proves_collatz": false,
+  "records": 34788,
+  "return_code_kraft": "1/1",
+  "return_code_prefix_free": true,
+  "status": "verified_partial_return9_certificate_with_open_and_run_overflow",
+  "templates": 52,
+  "valid": true
+}

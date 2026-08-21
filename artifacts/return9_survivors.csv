@@ -1,0 +1,10 @@
+max_a,return_depth,cylinders,closed_at_level,open_at_bound,surviving_to_next,overflow_code_open
+4,1,28,23,5,0,True
+4,2,140,93,47,0,True
+4,3,1316,780,536,0,True
+6,1,40,29,11,0,True
+6,2,440,222,218,0,True
+6,3,8720,3725,4995,0,True
+8,1,52,32,20,0,True
+8,2,1040,392,648,0,True
+8,3,33696,9911,23785,0,True

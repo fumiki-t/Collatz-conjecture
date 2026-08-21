@@ -1,8 +1,8 @@
-# Adaptive affine Collatz certificates — Phase 1–2
+# Adaptive affine Collatz certificates — Phase 1–4
 
-This repository implements only Phase 1 and Phase 2 of
-`collatz_codex_research_brief.md`. It is a finite exact search and obstruction
-mining experiment. It does **not** prove the Collatz conjecture.
+This repository implements Phase 1–4 across the successive research briefs.
+It is a finite exact search and obstruction-mining experiment. It does **not**
+prove the Collatz conjecture.
 
 All certificate decisions use Python arbitrary-precision integers. Rational
 fixed points use `fractions.Fraction`; floating point is not used for proof or
@@ -70,6 +70,32 @@ large unresolved `OPEN` frontier and does not prove the Collatz conjecture.
 
 See `PHASE3_RUN_RESULTS.md` and `artifacts/phase3_obstruction_report.md` for the
 checked result and the remaining exact bounded-search obstruction.
+
+## Phase 4 exact mod-9 first-return search
+
+Phase 4 works on the section `S = {n : n = 2 (mod 9)}`. It implements the
+exact prefix-free first-return code, its `z=(4n+1)/3` parametrization, exact
+composition through three returns, the recurrence constants `1`, `5`, and
+`21`, and a separate verifier that imports no code from `src/`. The configured
+finite dictionary leaves both an explicit `OPEN` frontier and all code families
+with `a > 8` out of scope; neither is silently treated as closed.
+
+```bash
+.venv/bin/python src/phase4_search.py \
+  --max-a 8 --return-depth 3 \
+  --direct-bound 16777216 --stopping-bound 1048576
+.venv/bin/python verifier/verify_return9.py \
+  artifacts/return9_certificate.json \
+  --code-audit artifacts/return9_code_audit.json \
+  --output artifacts/return9_verifier_result.json
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/hash_artifacts.py artifacts --write artifacts/SHA256SUMS
+```
+
+See `PHASE4_RUN_RESULTS.md` and `artifacts/phase4_obstruction_report.md` for the
+independently checked finite result, failed ranking proposals, and exact open
+families. As in earlier phases, these results do not prove the Collatz
+conjecture.
 
 ## Interpretation boundaries
 

@@ -1,0 +1,60 @@
+{
+  "diagnostic_only": true,
+  "exhaustive_simple_cycle_claim": "not used as a proof rule",
+  "format": "collatz-mod27-dangerous-cycles-v1",
+  "listed_cycles": [
+    {
+      "B": 1,
+      "P": 3,
+      "Q": 2,
+      "fixed_point": [
+        -1,
+        1
+      ],
+      "length": 1,
+      "noncontracting_coefficient": true,
+      "odd_steps": 1,
+      "word": "1"
+    },
+    {
+      "B": 23,
+      "P": 27,
+      "Q": 16,
+      "fixed_point": [
+        -23,
+        11
+      ],
+      "length": 4,
+      "noncontracting_coefficient": true,
+      "odd_steps": 3,
+      "word": "1101"
+    },
+    {
+      "B": 146,
+      "P": 81,
+      "Q": 64,
+      "fixed_point": [
+        -146,
+        17
+      ],
+      "length": 6,
+      "noncontracting_coefficient": true,
+      "odd_steps": 4,
+      "word": "011101"
+    },
+    {
+      "B": 7,
+      "P": 9,
+      "Q": 8,
+      "fixed_point": [
+        -7,
+        1
+      ],
+      "length": 3,
+      "noncontracting_coefficient": true,
+      "odd_steps": 2,
+      "word": "101"
+    }
+  ],
+  "residue_class": "20 mod 27"
+}
