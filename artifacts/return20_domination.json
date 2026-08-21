@@ -1,0 +1,1306 @@
+{
+  "format": "collatz-return20-domination-v1",
+  "internal_cycle_lemma": {
+    "cycle_count": 10,
+    "cycles": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      [
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "maximum_fixed_point": [
+      1,
+      1
+    ],
+    "maximum_multiplier": [
+      3,
+      4
+    ],
+    "reason": "for x>=1 each internal cycle map is <=x; later shortcut affine maps are increasing"
+  },
+  "other_path_envelope": {
+    "strictly_below_x_for_positive_20_mod_27": true,
+    "upper_bound": "(27*x+46)/32"
+  },
+  "scope": "all positive 20-to-20 paths with no internal 20 or 26",
+  "simple_path_count": 25,
+  "simple_paths": [
+    {
+      "A": 9,
+      "B": 7,
+      "denominator": 8,
+      "envelope_inequality": {
+        "constant": 144,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": -72,
+        "valid_for_all_positive_admissible_x": false,
+        "value_at_minimum_admissible_x": -14904
+      },
+      "fixed_point": [
+        -7,
+        1
+      ],
+      "k": 3,
+      "multiplier": [
+        9,
+        8
+      ],
+      "noncontracting": true,
+      "path": [
+        20,
+        17,
+        22,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        209,
+        216
+      ],
+      "word": "101"
+    },
+    {
+      "A": 9,
+      "B": 28,
+      "denominator": 32,
+      "envelope_inequality": {
+        "constant": 576,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 576,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 260928
+      },
+      "fixed_point": [
+        28,
+        23
+      ],
+      "k": 5,
+      "multiplier": [
+        9,
+        32
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        452,
+        864
+      ],
+      "word": "00101"
+    },
+    {
+      "A": 27,
+      "B": 46,
+      "denominator": 32,
+      "envelope_inequality": {
+        "constant": 0,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 0,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 0
+      },
+      "fixed_point": [
+        46,
+        5
+      ],
+      "k": 5,
+      "multiplier": [
+        27,
+        32
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        182,
+        864
+      ],
+      "word": "01101"
+    },
+    {
+      "A": 3,
+      "B": 32,
+      "denominator": 64,
+      "envelope_inequality": {
+        "constant": 1920,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 1632,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 1620864
+      },
+      "fixed_point": [
+        32,
+        61
+      ],
+      "k": 6,
+      "multiplier": [
+        3,
+        64
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        20
+      ],
+      "q": 1,
+      "source_family": [
+        992,
+        1728
+      ],
+      "word": "000001"
+    },
+    {
+      "A": 27,
+      "B": 184,
+      "denominator": 128,
+      "envelope_inequality": {
+        "constant": 0,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 2592,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 891648
+      },
+      "fixed_point": [
+        184,
+        101
+      ],
+      "k": 7,
+      "multiplier": [
+        27,
+        128
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        344,
+        3456
+      ],
+      "word": "0001101"
+    },
+    {
+      "A": 27,
+      "B": 130,
+      "denominator": 128,
+      "envelope_inequality": {
+        "constant": 1728,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 2592,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 3552768
+      },
+      "fixed_point": [
+        130,
+        101
+      ],
+      "k": 7,
+      "multiplier": [
+        27,
+        128
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        2,
+        1,
+        14,
+        8,
+        4,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        1370,
+        3456
+      ],
+      "word": "0100101"
+    },
+    {
+      "A": 27,
+      "B": 260,
+      "denominator": 256,
+      "envelope_inequality": {
+        "constant": 3456,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 6048,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 36702720
+      },
+      "fixed_point": [
+        260,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        6068,
+        6912
+      ],
+      "word": "00100101"
+    },
+    {
+      "A": 9,
+      "B": 134,
+      "denominator": 256,
+      "envelope_inequality": {
+        "constant": 7488,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 6624,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 29113344
+      },
+      "fixed_point": [
+        134,
+        247
+      ],
+      "k": 8,
+      "multiplier": [
+        9,
+        256
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        2,
+        1,
+        14,
+        7,
+        17,
+        22,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        4394,
+        6912
+      ],
+      "word": "01000001"
+    },
+    {
+      "A": 27,
+      "B": 233,
+      "denominator": 256,
+      "envelope_inequality": {
+        "constant": 4320,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 6048,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 39806208
+      },
+      "fixed_point": [
+        233,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        6581,
+        6912
+      ],
+      "word": "10000101"
+    },
+    {
+      "A": 9,
+      "B": 448,
+      "denominator": 512,
+      "envelope_inequality": {
+        "constant": 9216,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 13536,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 118692864
+      },
+      "fixed_point": [
+        448,
+        503
+      ],
+      "k": 9,
+      "multiplier": [
+        9,
+        512
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        8768,
+        13824
+      ],
+      "word": "000000101"
+    },
+    {
+      "A": 27,
+      "B": 520,
+      "denominator": 512,
+      "envelope_inequality": {
+        "constant": 6912,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 12960,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 110840832
+      },
+      "fixed_point": [
+        104,
+        97
+      ],
+      "k": 9,
+      "multiplier": [
+        27,
+        512
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        8552,
+        13824
+      ],
+      "word": "000100101"
+    },
+    {
+      "A": 81,
+      "B": 952,
+      "denominator": 512,
+      "envelope_inequality": {
+        "constant": -6912,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 11232,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 28118016
+      },
+      "fixed_point": [
+        952,
+        431
+      ],
+      "k": 9,
+      "multiplier": [
+        81,
+        512
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        2504,
+        13824
+      ],
+      "word": "000101101"
+    },
+    {
+      "A": 81,
+      "B": 790,
+      "denominator": 512,
+      "envelope_inequality": {
+        "constant": -1728,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 11232,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 39647232
+      },
+      "fixed_point": [
+        790,
+        431
+      ],
+      "k": 9,
+      "multiplier": [
+        81,
+        512
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        2,
+        1,
+        14,
+        7,
+        11,
+        17,
+        22,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        3530,
+        13824
+      ],
+      "word": "010001101"
+    },
+    {
+      "A": 81,
+      "B": 986,
+      "denominator": 1024,
+      "envelope_inequality": {
+        "constant": 15552,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 25056,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 296828928
+      },
+      "fixed_point": [
+        986,
+        943
+      ],
+      "k": 10,
+      "multiplier": [
+        81,
+        1024
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        11846,
+        27648
+      ],
+      "word": "0110000101"
+    },
+    {
+      "A": 81,
+      "B": 1067,
+      "denominator": 1024,
+      "envelope_inequality": {
+        "constant": 12960,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 25056,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 630346752
+      },
+      "fixed_point": [
+        1067,
+        943
+      ],
+      "k": 10,
+      "multiplier": [
+        81,
+        1024
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        17,
+        22,
+        11,
+        19,
+        2,
+        1,
+        14,
+        8,
+        4,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        25157,
+        27648
+      ],
+      "word": "1000100101"
+    },
+    {
+      "A": 81,
+      "B": 2296,
+      "denominator": 2048,
+      "envelope_inequality": {
+        "constant": 20736,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 52704,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 1680224256
+      },
+      "fixed_point": [
+        328,
+        281
+      ],
+      "k": 11,
+      "multiplier": [
+        81,
+        2048
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2,
+        1,
+        14,
+        8,
+        4,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        31880,
+        55296
+      ],
+      "word": "00010100101"
+    },
+    {
+      "A": 9,
+      "B": 1036,
+      "denominator": 2048,
+      "envelope_inequality": {
+        "constant": 61056,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 55008,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 2947829760
+      },
+      "fixed_point": [
+        1036,
+        2039
+      ],
+      "k": 11,
+      "multiplier": [
+        9,
+        2048
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1,
+        14,
+        7,
+        17,
+        22,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        53588,
+        55296
+      ],
+      "word": "00100000001"
+    },
+    {
+      "A": 81,
+      "B": 2134,
+      "denominator": 2048,
+      "envelope_inequality": {
+        "constant": 25920,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 52704,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 277143552
+      },
+      "fixed_point": [
+        2134,
+        1967
+      ],
+      "k": 11,
+      "multiplier": [
+        81,
+        2048
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        2,
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        5258,
+        55296
+      ],
+      "word": "01000100101"
+    },
+    {
+      "A": 3,
+      "B": 2048,
+      "denominator": 4096,
+      "envelope_inequality": {
+        "constant": 122880,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 110496,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 11088617472
+      },
+      "fixed_point": [
+        2048,
+        4093
+      ],
+      "k": 12,
+      "multiplier": [
+        3,
+        4096
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2,
+        1,
+        14,
+        7,
+        17,
+        22,
+        20
+      ],
+      "q": 1,
+      "source_family": [
+        100352,
+        110592
+      ],
+      "word": "000000000001"
+    },
+    {
+      "A": 81,
+      "B": 4376,
+      "denominator": 4096,
+      "envelope_inequality": {
+        "constant": 48384,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 108000,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 6149136384
+      },
+      "fixed_point": [
+        4376,
+        4015
+      ],
+      "k": 12,
+      "multiplier": [
+        81,
+        4096
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        56936,
+        110592
+      ],
+      "word": "000100100101"
+    },
+    {
+      "A": 27,
+      "B": 2216,
+      "denominator": 4096,
+      "envelope_inequality": {
+        "constant": 117504,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 109728,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 1222926336
+      },
+      "fixed_point": [
+        2216,
+        4069
+      ],
+      "k": 12,
+      "multiplier": [
+        27,
+        4096
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2,
+        1,
+        14,
+        7,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        11144,
+        110592
+      ],
+      "word": "000101000001"
+    },
+    {
+      "A": 81,
+      "B": 5996,
+      "denominator": 4096,
+      "envelope_inequality": {
+        "constant": -3456,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 108000,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 11012972544
+      },
+      "fixed_point": [
+        5996,
+        4015
+      ],
+      "k": 12,
+      "multiplier": [
+        81,
+        4096
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1,
+        14,
+        7,
+        11,
+        17,
+        22,
+        20
+      ],
+      "q": 4,
+      "source_family": [
+        101972,
+        110592
+      ],
+      "word": "001000001101"
+    },
+    {
+      "A": 27,
+      "B": 11776,
+      "denominator": 8192,
+      "envelope_inequality": {
+        "constant": 0,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 220320,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 37338071040
+      },
+      "fixed_point": [
+        512,
+        355
+      ],
+      "k": 13,
+      "multiplier": [
+        27,
+        8192
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2,
+        1,
+        14,
+        7,
+        11,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        169472,
+        221184
+      ],
+      "word": "0000000001101"
+    },
+    {
+      "A": 27,
+      "B": 7186,
+      "denominator": 8192,
+      "envelope_inequality": {
+        "constant": 146880,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 220320,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 13912473600
+      },
+      "fixed_point": [
+        7186,
+        8165
+      ],
+      "k": 13,
+      "multiplier": [
+        27,
+        8192
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        2,
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        63146,
+        221184
+      ],
+      "word": "0100000000101"
+    },
+    {
+      "A": 27,
+      "B": 16648,
+      "denominator": 32768,
+      "envelope_inequality": {
+        "constant": 974592,
+        "integer_form": "(27*2^k-32*A)*x + (46*2^k-32*B) >= 0",
+        "slope": 883872,
+        "valid_for_all_positive_admissible_x": true,
+        "value_at_minimum_admissible_x": 600164204544
+      },
+      "fixed_point": [
+        16648,
+        32741
+      ],
+      "k": 15,
+      "multiplier": [
+        27,
+        32768
+      ],
+      "noncontracting": false,
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4,
+        2,
+        1,
+        14,
+        7,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        679016,
+        884736
+      ],
+      "word": "000100100000001"
+    }
+  ],
+  "unique_noncontracting_map": {
+    "A": 9,
+    "B": 7,
+    "denominator": 8
+  },
+  "unique_noncontracting_word": "101",
+  "verified": true
+}

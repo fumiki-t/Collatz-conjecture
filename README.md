@@ -97,6 +97,29 @@ independently checked finite result, failed ranking proposals, and exact open
 families. As in earlier phases, these results do not prove the Collatz
 conjecture.
 
+## Phase 5 dangerous-cycle audit
+
+Phase 5 moves to the bounded-return section `{1,11,20,26} (mod 27)`. It
+independently checks the 52 first-return templates, all 108 labeled simple
+cycles, the four noncontracting dangerous cycles, and the return-20 domination
+bound. Shadow-switch and ranking experiments are deliberately reported as
+bounded heuristics, not universal certificates.
+
+```bash
+.venv/bin/python src/phase5_search.py \
+  --direct-bound 16777216 --shadow-depth 40 \
+  --beam-width 256 --low-precision-limit 4
+.venv/bin/python verifier/verify_phase5.py \
+  --artifact-dir artifacts \
+  --output artifacts/section4_verifier_result.json
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/hash_artifacts.py artifacts --write artifacts/SHA256SUMS
+```
+
+See `PHASE5_RUN_RESULTS.md` and `artifacts/phase5_obstruction_report.md` for the
+independent result, quantified bounded counterexamples, and unresolved status
+of H5-A/H5-B.
+
 ## Interpretation boundaries
 
 - **Proved by the checker:** the finite JSON tree is internally exact; every

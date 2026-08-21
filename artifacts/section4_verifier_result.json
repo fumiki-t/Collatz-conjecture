@@ -1,0 +1,246 @@
+{
+  "H5_A": {
+    "bounded_surrogate": "depth>=20 nondecreasing minimum representative; require dangerous repeat>=4 or total multiplier<=(27/32)^switches",
+    "counterexample_count": 2141,
+    "minimal_exact_counterexample": {
+      "contains_dangerous_cycle": true,
+      "dangerous_repeat_counts": {
+        "011101": 1,
+        "1": 2,
+        "101": 1,
+        "1101": 0
+      },
+      "depth": 20,
+      "dominant_shadow_switches": 16,
+      "endpoint_family": [
+        1801672611905,
+        1853020188851841
+      ],
+      "maximum_dangerous_repeat": 2,
+      "minimum_representative_path_nondecreasing": true,
+      "parity_word": "11110111110011100111101010110001101011101101",
+      "shadow_final": {
+        "C1": 1,
+        "C146": 0,
+        "C23": 1,
+        "C7": 3
+      },
+      "shadow_maximum": {
+        "C1": 4,
+        "C146": 6,
+        "C23": 4,
+        "C7": 6
+      },
+      "shadow_start": {
+        "C1": 4,
+        "C146": 0,
+        "C23": 2,
+        "C7": 1
+      },
+      "source_residue": 1,
+      "starting_cylinder": [
+        461826978031,
+        474989023199232
+      ],
+      "target_residue": 20,
+      "template_names": [
+        "r1-to-r26-111",
+        "r26-to-r26-1",
+        "r26-to-r20-01",
+        "r20-to-r26-11",
+        "r26-to-r26-1",
+        "r26-to-r26-1",
+        "r26-to-r20-00",
+        "r20-to-r26-11",
+        "r26-to-r26-1",
+        "r26-to-r20-00",
+        "r20-to-r26-11",
+        "r26-to-r26-1",
+        "r26-to-r26-1",
+        "r26-to-r20-01",
+        "r20-to-r1-010",
+        "r1-to-r11-1100",
+        "r11-to-r20-01101",
+        "r20-to-r26-0111",
+        "r26-to-r20-01",
+        "r20-to-r20-101"
+      ],
+      "total_map": {
+        "A": 68630377364883,
+        "B": 210604148487107,
+        "denominator": 17592186044416,
+        "fixed_point": [
+          -210604148487107,
+          51038191320467
+        ],
+        "k": 44,
+        "multiplier": [
+          68630377364883,
+          17592186044416
+        ],
+        "q": 29
+      },
+      "whole_cylinder_path_nondecreasing": true
+    },
+    "original_status": "unresolved_unquantified_conjecture",
+    "survives_bounded_search": false
+  },
+  "H5_B": {
+    "bounded_test": "different start/final forms both have valuation>=8 in retained exact cylinders",
+    "candidate_count": 80,
+    "minimal_exact_candidate": {
+      "path": {
+        "contains_dangerous_cycle": true,
+        "dangerous_repeat_counts": {
+          "011101": 0,
+          "1": 1,
+          "101": 0,
+          "1101": 0
+        },
+        "depth": 5,
+        "dominant_shadow_switches": 3,
+        "endpoint_family": [
+          326747,
+          1594323
+        ],
+        "maximum_dangerous_repeat": 1,
+        "minimum_representative_path_nondecreasing": false,
+        "parity_word": "0111010110101101",
+        "shadow_final": {
+          "C1": 2,
+          "C146": 0,
+          "C23": 11,
+          "C7": 1
+        },
+        "shadow_maximum": {
+          "C1": 2,
+          "C146": 9,
+          "C23": 11,
+          "C7": 3
+        },
+        "shadow_start": {
+          "C1": 0,
+          "C146": 9,
+          "C23": 0,
+          "C7": 0
+        },
+        "source_residue": 1,
+        "starting_cylinder": [
+          362638,
+          1769472
+        ],
+        "target_residue": 20,
+        "template_names": [
+          "r1-to-r26-011",
+          "r26-to-r26-1",
+          "r26-to-r20-01",
+          "r20-to-r20-01101",
+          "r20-to-r20-01101"
+        ],
+        "total_map": {
+          "A": 59049,
+          "B": 280130,
+          "denominator": 65536,
+          "fixed_point": [
+            280130,
+            6487
+          ],
+          "k": 16,
+          "multiplier": [
+            59049,
+            65536
+          ],
+          "q": 10
+        },
+        "whole_cylinder_path_nondecreasing": false
+      },
+      "source_form": "C146",
+      "source_precision": 9,
+      "target_form": "C23",
+      "target_precision": 11
+    },
+    "original_status": "unresolved_unquantified_conjecture",
+    "survives_bounded_search": false
+  },
+  "dangerous_repetition_families_checked": 160,
+  "direct_audit": {
+    "bound_exclusive": 16777216,
+    "integers_checked": 2485513,
+    "per_template_counts": {
+      "r1-to-r1-01000": 19418,
+      "r1-to-r1-10": 155345,
+      "r1-to-r11-00000": 19418,
+      "r1-to-r11-001": 77673,
+      "r1-to-r11-0100100": 4854,
+      "r1-to-r11-1100": 38836,
+      "r1-to-r20-00001": 19418,
+      "r1-to-r20-0100101": 4855,
+      "r1-to-r20-0101": 38836,
+      "r1-to-r20-1101": 38836,
+      "r1-to-r26-0001": 38836,
+      "r1-to-r26-010011": 9709,
+      "r1-to-r26-011": 77672,
+      "r1-to-r26-111": 77673,
+      "r11-to-r1-001000": 9709,
+      "r11-to-r1-010": 77672,
+      "r11-to-r11-0001": 38836,
+      "r11-to-r11-00100100": 2428,
+      "r11-to-r11-01100": 19419,
+      "r11-to-r11-100": 77672,
+      "r11-to-r20-00100101": 2427,
+      "r11-to-r20-00101": 19418,
+      "r11-to-r20-01101": 19418,
+      "r11-to-r20-101": 77672,
+      "r11-to-r26-0000": 38836,
+      "r11-to-r26-0010011": 4854,
+      "r11-to-r26-0011": 38836,
+      "r11-to-r26-0111": 38836,
+      "r11-to-r26-11": 155345,
+      "r20-to-r1-0000000": 4855,
+      "r20-to-r1-001000": 9710,
+      "r20-to-r1-010": 77672,
+      "r20-to-r11-000000100": 1214,
+      "r20-to-r11-0001": 38836,
+      "r20-to-r11-00100100": 2427,
+      "r20-to-r11-01100": 19418,
+      "r20-to-r11-100": 77672,
+      "r20-to-r20-000000101": 1213,
+      "r20-to-r20-000001": 9709,
+      "r20-to-r20-00100101": 2427,
+      "r20-to-r20-00101": 19418,
+      "r20-to-r20-01101": 19418,
+      "r20-to-r20-101": 77672,
+      "r20-to-r26-00000011": 2427,
+      "r20-to-r26-00001": 19418,
+      "r20-to-r26-0010011": 4855,
+      "r20-to-r26-0011": 38836,
+      "r20-to-r26-0111": 38836,
+      "r20-to-r26-11": 155345,
+      "r26-to-r20-00": 155344,
+      "r26-to-r20-01": 155345,
+      "r26-to-r26-1": 310689
+    },
+    "result": "all_direct_first_returns_match_exact_templates",
+    "sha256": "588b40e626d5dbf165dcb1e0f8e157742b2d43a5e4ddc26b4f4384187c51c2ef",
+    "shortcut_steps_checked": 7162840
+  },
+  "heteroclinic_identity_count": 7,
+  "maximum_first_return_length": 9,
+  "maximum_other_multiplier": "27/32",
+  "noncontracting_words": [
+    "1",
+    "101",
+    "1101",
+    "011101"
+  ],
+  "proves_collatz": false,
+  "retained_shadow_paths_checked": 9941,
+  "return20_domination_verified": true,
+  "section_deleted_graph_acyclic": true,
+  "shadow_identity_rows": 832,
+  "simple_cycle_count": 108,
+  "status": "verified_phase5_algebraic_certificates_with_bounded_heuristics_unresolved",
+  "template_count": 52,
+  "universal_rank_certified": false,
+  "valid": true
+}

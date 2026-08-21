@@ -1,0 +1,7991 @@
+{
+  "cycle_equivalence": "labeled directed simple cycles modulo cyclic rotation",
+  "cycles": [
+    {
+      "A": 3,
+      "B": 1,
+      "canonical_edge_key": [
+        [
+          26,
+          1
+        ]
+      ],
+      "dangerous_rotation": "1",
+      "denominator": 2,
+      "fixed_point": [
+        -1,
+        1
+      ],
+      "k": 1,
+      "multiplier": [
+        3,
+        2
+      ],
+      "nodes": [
+        26
+      ],
+      "noncontracting": true,
+      "q": 1,
+      "word": "1"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "canonical_edge_key": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4,
+      "fixed_point": [
+        1,
+        1
+      ],
+      "k": 2,
+      "multiplier": [
+        3,
+        4
+      ],
+      "nodes": [
+        1,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "10"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "canonical_edge_key": [
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8,
+      "fixed_point": [
+        1,
+        5
+      ],
+      "k": 3,
+      "multiplier": [
+        3,
+        8
+      ],
+      "nodes": [
+        11,
+        17,
+        22
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "100"
+    },
+    {
+      "A": 9,
+      "B": 7,
+      "canonical_edge_key": [
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          1
+        ]
+      ],
+      "dangerous_rotation": "101",
+      "denominator": 8,
+      "fixed_point": [
+        -7,
+        1
+      ],
+      "k": 3,
+      "multiplier": [
+        9,
+        8
+      ],
+      "nodes": [
+        20,
+        17,
+        22
+      ],
+      "noncontracting": true,
+      "q": 2,
+      "word": "101"
+    },
+    {
+      "A": 3,
+      "B": 8,
+      "canonical_edge_key": [
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16,
+      "fixed_point": [
+        8,
+        13
+      ],
+      "k": 4,
+      "multiplier": [
+        3,
+        16
+      ],
+      "nodes": [
+        11,
+        19,
+        23,
+        25
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "0001"
+    },
+    {
+      "A": 9,
+      "B": 10,
+      "canonical_edge_key": [
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16,
+      "fixed_point": [
+        10,
+        7
+      ],
+      "k": 4,
+      "multiplier": [
+        9,
+        16
+      ],
+      "nodes": [
+        13,
+        20,
+        17,
+        26
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "0110"
+    },
+    {
+      "A": 27,
+      "B": 23,
+      "canonical_edge_key": [
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ]
+      ],
+      "dangerous_rotation": "1101",
+      "denominator": 16,
+      "fixed_point": [
+        -23,
+        11
+      ],
+      "k": 4,
+      "multiplier": [
+        27,
+        16
+      ],
+      "nodes": [
+        20,
+        17,
+        26,
+        13
+      ],
+      "noncontracting": true,
+      "q": 3,
+      "word": "1101"
+    },
+    {
+      "A": 3,
+      "B": 2,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32,
+      "fixed_point": [
+        2,
+        29
+      ],
+      "k": 5,
+      "multiplier": [
+        3,
+        32
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "01000"
+    },
+    {
+      "A": 9,
+      "B": 19,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32,
+      "fixed_point": [
+        19,
+        23
+      ],
+      "k": 5,
+      "multiplier": [
+        9,
+        32
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "10001"
+    },
+    {
+      "A": 9,
+      "B": 11,
+      "canonical_edge_key": [
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32,
+      "fixed_point": [
+        11,
+        23
+      ],
+      "k": 5,
+      "multiplier": [
+        9,
+        32
+      ],
+      "nodes": [
+        4,
+        20,
+        10,
+        5,
+        8
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "10010"
+    },
+    {
+      "A": 27,
+      "B": 37,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32,
+      "fixed_point": [
+        37,
+        5
+      ],
+      "k": 5,
+      "multiplier": [
+        27,
+        32
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "10101"
+    },
+    {
+      "A": 9,
+      "B": 28,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 64,
+      "fixed_point": [
+        28,
+        55
+      ],
+      "k": 6,
+      "multiplier": [
+        9,
+        64
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "001010"
+    },
+    {
+      "A": 81,
+      "B": 146,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": "011101",
+      "denominator": 64,
+      "fixed_point": [
+        -146,
+        17
+      ],
+      "k": 6,
+      "multiplier": [
+        81,
+        64
+      ],
+      "nodes": [
+        20,
+        10,
+        2,
+        17,
+        26,
+        13
+      ],
+      "noncontracting": true,
+      "q": 4,
+      "word": "011101"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "canonical_edge_key": [
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 64,
+      "fixed_point": [
+        1,
+        61
+      ],
+      "k": 6,
+      "multiplier": [
+        3,
+        64
+      ],
+      "nodes": [
+        4,
+        20,
+        10,
+        5,
+        16,
+        8
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "100000"
+    },
+    {
+      "A": 9,
+      "B": 5,
+      "canonical_edge_key": [
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 64,
+      "fixed_point": [
+        1,
+        11
+      ],
+      "k": 6,
+      "multiplier": [
+        9,
+        64
+      ],
+      "nodes": [
+        5,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "110000"
+    },
+    {
+      "A": 27,
+      "B": 47,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 64,
+      "fixed_point": [
+        47,
+        37
+      ],
+      "k": 6,
+      "multiplier": [
+        27,
+        64
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "110001"
+    },
+    {
+      "A": 27,
+      "B": 23,
+      "canonical_edge_key": [
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 64,
+      "fixed_point": [
+        23,
+        37
+      ],
+      "k": 6,
+      "multiplier": [
+        27,
+        64
+      ],
+      "nodes": [
+        5,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "110100"
+    },
+    {
+      "A": 3,
+      "B": 4,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 128,
+      "fixed_point": [
+        4,
+        125
+      ],
+      "k": 7,
+      "multiplier": [
+        3,
+        128
+      ],
+      "nodes": [
+        5,
+        16,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "0010000"
+    },
+    {
+      "A": 9,
+      "B": 28,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 128,
+      "fixed_point": [
+        4,
+        17
+      ],
+      "k": 7,
+      "multiplier": [
+        9,
+        128
+      ],
+      "nodes": [
+        5,
+        16,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "0010100"
+    },
+    {
+      "A": 27,
+      "B": 74,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 128,
+      "fixed_point": [
+        74,
+        101
+      ],
+      "k": 7,
+      "multiplier": [
+        27,
+        128
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        4,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "0101010"
+    },
+    {
+      "A": 27,
+      "B": 46,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 128,
+      "fixed_point": [
+        46,
+        101
+      ],
+      "k": 7,
+      "multiplier": [
+        27,
+        128
+      ],
+      "nodes": [
+        5,
+        16,
+        11,
+        17,
+        22,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "0110100"
+    },
+    {
+      "A": 3,
+      "B": 64,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        64,
+        253
+      ],
+      "k": 8,
+      "multiplier": [
+        3,
+        256
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "00000010"
+    },
+    {
+      "A": 9,
+      "B": 112,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        112,
+        247
+      ],
+      "k": 8,
+      "multiplier": [
+        9,
+        256
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "00001010"
+    },
+    {
+      "A": 27,
+      "B": 94,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        94,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "01100010"
+    },
+    {
+      "A": 81,
+      "B": 202,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        202,
+        175
+      ],
+      "k": 8,
+      "multiplier": [
+        81,
+        256
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "01101010"
+    },
+    {
+      "A": 27,
+      "B": 38,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        38,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "nodes": [
+        5,
+        16,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "01110000"
+    },
+    {
+      "A": 81,
+      "B": 146,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        146,
+        175
+      ],
+      "k": 8,
+      "multiplier": [
+        81,
+        256
+      ],
+      "nodes": [
+        5,
+        16,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "01110100"
+    },
+    {
+      "A": 9,
+      "B": 35,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        35,
+        247
+      ],
+      "k": 8,
+      "multiplier": [
+        9,
+        256
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "10000100"
+    },
+    {
+      "A": 27,
+      "B": 53,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        53,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        20,
+        10,
+        5,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "10100100"
+    },
+    {
+      "A": 27,
+      "B": 79,
+      "canonical_edge_key": [
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 256,
+      "fixed_point": [
+        79,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "nodes": [
+        4,
+        20,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "11000010"
+    },
+    {
+      "A": 3,
+      "B": 64,
+      "canonical_edge_key": [
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        64,
+        509
+      ],
+      "k": 9,
+      "multiplier": [
+        3,
+        512
+      ],
+      "nodes": [
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        17,
+        22
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "000000100"
+    },
+    {
+      "A": 9,
+      "B": 160,
+      "canonical_edge_key": [
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        160,
+        503
+      ],
+      "k": 9,
+      "multiplier": [
+        9,
+        512
+      ],
+      "nodes": [
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        17,
+        22
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "000001100"
+    },
+    {
+      "A": 9,
+      "B": 152,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        152,
+        503
+      ],
+      "k": 9,
+      "multiplier": [
+        9,
+        512
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "000100010"
+    },
+    {
+      "A": 27,
+      "B": 296,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        296,
+        485
+      ],
+      "k": 9,
+      "multiplier": [
+        27,
+        512
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "000101010"
+    },
+    {
+      "A": 9,
+      "B": 44,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        44,
+        503
+      ],
+      "k": 9,
+      "multiplier": [
+        9,
+        512
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "001001000"
+    },
+    {
+      "A": 81,
+      "B": 404,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        404,
+        431
+      ],
+      "k": 9,
+      "multiplier": [
+        81,
+        512
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        22,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "001101010"
+    },
+    {
+      "A": 27,
+      "B": 185,
+      "canonical_edge_key": [
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        37,
+        97
+      ],
+      "k": 9,
+      "multiplier": [
+        27,
+        512
+      ],
+      "nodes": [
+        4,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "100010010"
+    },
+    {
+      "A": 27,
+      "B": 289,
+      "canonical_edge_key": [
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        289,
+        485
+      ],
+      "k": 9,
+      "multiplier": [
+        27,
+        512
+      ],
+      "nodes": [
+        8,
+        26,
+        13,
+        20,
+        17,
+        22,
+        11,
+        19,
+        23
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "100100001"
+    },
+    {
+      "A": 9,
+      "B": 7,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        7,
+        503
+      ],
+      "k": 9,
+      "multiplier": [
+        9,
+        512
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "101000000"
+    },
+    {
+      "A": 81,
+      "B": 511,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        511,
+        431
+      ],
+      "k": 9,
+      "multiplier": [
+        81,
+        512
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "101000101"
+    },
+    {
+      "A": 81,
+      "B": 343,
+      "canonical_edge_key": [
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        343,
+        431
+      ],
+      "k": 9,
+      "multiplier": [
+        81,
+        512
+      ],
+      "nodes": [
+        8,
+        26,
+        13,
+        20,
+        17,
+        22,
+        11,
+        19,
+        23
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "101100001"
+    },
+    {
+      "A": 27,
+      "B": 79,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        79,
+        485
+      ],
+      "k": 9,
+      "multiplier": [
+        27,
+        512
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "110000100"
+    },
+    {
+      "A": 81,
+      "B": 133,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 512,
+      "fixed_point": [
+        133,
+        431
+      ],
+      "k": 9,
+      "multiplier": [
+        81,
+        512
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "110100100"
+    },
+    {
+      "A": 81,
+      "B": 484,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        484,
+        943
+      ],
+      "k": 10,
+      "multiplier": [
+        81,
+        1024
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "0011100010"
+    },
+    {
+      "A": 243,
+      "B": 1132,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        1132,
+        781
+      ],
+      "k": 10,
+      "multiplier": [
+        243,
+        1024
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "0011101010"
+    },
+    {
+      "A": 3,
+      "B": 2,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        2,
+        1021
+      ],
+      "k": 10,
+      "multiplier": [
+        3,
+        1024
+      ],
+      "nodes": [
+        5,
+        16,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "0100000000"
+    },
+    {
+      "A": 9,
+      "B": 134,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        134,
+        1015
+      ],
+      "k": 10,
+      "multiplier": [
+        9,
+        1024
+      ],
+      "nodes": [
+        5,
+        16,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "0100000100"
+    },
+    {
+      "A": 27,
+      "B": 98,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        98,
+        997
+      ],
+      "k": 10,
+      "multiplier": [
+        27,
+        1024
+      ],
+      "nodes": [
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "0100110000"
+    },
+    {
+      "A": 81,
+      "B": 422,
+      "canonical_edge_key": [
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        422,
+        943
+      ],
+      "k": 10,
+      "multiplier": [
+        81,
+        1024
+      ],
+      "nodes": [
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "0100110100"
+    },
+    {
+      "A": 81,
+      "B": 430,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        430,
+        943
+      ],
+      "k": 10,
+      "multiplier": [
+        81,
+        1024
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        4,
+        20,
+        17,
+        22,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "0101100010"
+    },
+    {
+      "A": 81,
+      "B": 1211,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        1211,
+        943
+      ],
+      "k": 10,
+      "multiplier": [
+        81,
+        1024
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "1000010101"
+    },
+    {
+      "A": 9,
+      "B": 5,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        1,
+        203
+      ],
+      "k": 10,
+      "multiplier": [
+        9,
+        1024
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "1100000000"
+    },
+    {
+      "A": 81,
+      "B": 941,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        941,
+        943
+      ],
+      "k": 10,
+      "multiplier": [
+        81,
+        1024
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "1100000101"
+    },
+    {
+      "A": 27,
+      "B": 23,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        23,
+        997
+      ],
+      "k": 10,
+      "multiplier": [
+        27,
+        1024
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "1101000000"
+    },
+    {
+      "A": 243,
+      "B": 1103,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 1024,
+      "fixed_point": [
+        1103,
+        781
+      ],
+      "k": 10,
+      "multiplier": [
+        243,
+        1024
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "1101000101"
+    },
+    {
+      "A": 3,
+      "B": 128,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        128,
+        2045
+      ],
+      "k": 11,
+      "multiplier": [
+        3,
+        2048
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "00000001000"
+    },
+    {
+      "A": 9,
+      "B": 176,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        176,
+        2039
+      ],
+      "k": 11,
+      "multiplier": [
+        9,
+        2048
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "00001001000"
+    },
+    {
+      "A": 81,
+      "B": 1292,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        1292,
+        1967
+      ],
+      "k": 11,
+      "multiplier": [
+        81,
+        2048
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "00100101010"
+    },
+    {
+      "A": 81,
+      "B": 1022,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        146,
+        281
+      ],
+      "k": 11,
+      "multiplier": [
+        81,
+        2048
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        4,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "01010001010"
+    },
+    {
+      "A": 81,
+      "B": 698,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        698,
+        1967
+      ],
+      "k": 11,
+      "multiplier": [
+        81,
+        2048
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        26,
+        13,
+        20,
+        17,
+        22,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "01100100010"
+    },
+    {
+      "A": 243,
+      "B": 1022,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        1022,
+        1805
+      ],
+      "k": 11,
+      "multiplier": [
+        243,
+        2048
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        26,
+        13,
+        20,
+        17,
+        22,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "01101100010"
+    },
+    {
+      "A": 9,
+      "B": 1027,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        1027,
+        2039
+      ],
+      "k": 11,
+      "multiplier": [
+        9,
+        2048
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "10000000001"
+    },
+    {
+      "A": 27,
+      "B": 1801,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        1801,
+        2021
+      ],
+      "k": 11,
+      "multiplier": [
+        27,
+        2048
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "10000000101"
+    },
+    {
+      "A": 81,
+      "B": 1531,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        1531,
+        1967
+      ],
+      "k": 11,
+      "multiplier": [
+        81,
+        2048
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "10000110001"
+    },
+    {
+      "A": 243,
+      "B": 3313,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 2048,
+      "fixed_point": [
+        3313,
+        1805
+      ],
+      "k": 11,
+      "multiplier": [
+        243,
+        2048
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "10000110101"
+    },
+    {
+      "A": 3,
+      "B": 16,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        16,
+        4093
+      ],
+      "k": 12,
+      "multiplier": [
+        3,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "000010000000"
+    },
+    {
+      "A": 27,
+      "B": 1936,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        1936,
+        4069
+      ],
+      "k": 12,
+      "multiplier": [
+        27,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "000010001010"
+    },
+    {
+      "A": 9,
+      "B": 280,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        280,
+        4087
+      ],
+      "k": 12,
+      "multiplier": [
+        9,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "000100001000"
+    },
+    {
+      "A": 27,
+      "B": 424,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        424,
+        4069
+      ],
+      "k": 12,
+      "multiplier": [
+        27,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "000101001000"
+    },
+    {
+      "A": 9,
+      "B": 1036,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        1036,
+        4087
+      ],
+      "k": 12,
+      "multiplier": [
+        9,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "001000000010"
+    },
+    {
+      "A": 27,
+      "B": 1828,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        1828,
+        4069
+      ],
+      "k": 12,
+      "multiplier": [
+        27,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "001000001010"
+    },
+    {
+      "A": 81,
+      "B": 1612,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        1612,
+        4015
+      ],
+      "k": 12,
+      "multiplier": [
+        81,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "001001100010"
+    },
+    {
+      "A": 243,
+      "B": 3556,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        3556,
+        3853
+      ],
+      "k": 12,
+      "multiplier": [
+        243,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "001001101010"
+    },
+    {
+      "A": 81,
+      "B": 532,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        532,
+        4015
+      ],
+      "k": 12,
+      "multiplier": [
+        81,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        22,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "001101001000"
+    },
+    {
+      "A": 81,
+      "B": 1882,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        1882,
+        4015
+      ],
+      "k": 12,
+      "multiplier": [
+        81,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "011000001010"
+    },
+    {
+      "A": 243,
+      "B": 2206,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        2206,
+        3853
+      ],
+      "k": 12,
+      "multiplier": [
+        243,
+        4096
+      ],
+      "nodes": [
+        1,
+        14,
+        8,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "011010001010"
+    },
+    {
+      "A": 81,
+      "B": 767,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 4096,
+      "fixed_point": [
+        767,
+        4015
+      ],
+      "k": 12,
+      "multiplier": [
+        81,
+        4096
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "101000100100"
+    },
+    {
+      "A": 27,
+      "B": 4736,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        4736,
+        8165
+      ],
+      "k": 13,
+      "multiplier": [
+        27,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        4,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "0000000101010"
+    },
+    {
+      "A": 3,
+      "B": 8,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        8,
+        8189
+      ],
+      "k": 13,
+      "multiplier": [
+        3,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "0001000000000"
+    },
+    {
+      "A": 27,
+      "B": 3656,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        3656,
+        8165
+      ],
+      "k": 13,
+      "multiplier": [
+        27,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "0001000001010"
+    },
+    {
+      "A": 9,
+      "B": 56,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        8,
+        1169
+      ],
+      "k": 13,
+      "multiplier": [
+        9,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "0001010000000"
+    },
+    {
+      "A": 81,
+      "B": 4088,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        4088,
+        8111
+      ],
+      "k": 13,
+      "multiplier": [
+        81,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "0001010001010"
+    },
+    {
+      "A": 27,
+      "B": 92,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        4,
+        355
+      ],
+      "k": 13,
+      "multiplier": [
+        27,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        22,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "0011010000000"
+    },
+    {
+      "A": 81,
+      "B": 740,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        740,
+        8111
+      ],
+      "k": 13,
+      "multiplier": [
+        81,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "0011100001000"
+    },
+    {
+      "A": 243,
+      "B": 1388,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        1388,
+        7949
+      ],
+      "k": 13,
+      "multiplier": [
+        243,
+        8192
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "0011101001000"
+    },
+    {
+      "A": 81,
+      "B": 1453,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        1453,
+        8111
+      ],
+      "k": 13,
+      "multiplier": [
+        81,
+        8192
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "1100000100100"
+    },
+    {
+      "A": 243,
+      "B": 1615,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 8192,
+      "fixed_point": [
+        1615,
+        7949
+      ],
+      "k": 13,
+      "multiplier": [
+        243,
+        8192
+      ],
+      "nodes": [
+        2,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 5,
+      "word": "1101000100100"
+    },
+    {
+      "A": 3,
+      "B": 4096,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        4096,
+        16381
+      ],
+      "k": 14,
+      "multiplier": [
+        3,
+        16384
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "00000000000010"
+    },
+    {
+      "A": 9,
+      "B": 7168,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        7168,
+        16375
+      ],
+      "k": 14,
+      "multiplier": [
+        9,
+        16384
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "00000000001010"
+    },
+    {
+      "A": 27,
+      "B": 6016,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        6016,
+        16357
+      ],
+      "k": 14,
+      "multiplier": [
+        27,
+        16384
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "00000001100010"
+    },
+    {
+      "A": 81,
+      "B": 12928,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        12928,
+        16303
+      ],
+      "k": 14,
+      "multiplier": [
+        81,
+        16384
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        8,
+        26,
+        13,
+        20,
+        10,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "00000001101010"
+    },
+    {
+      "A": 27,
+      "B": 76,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        76,
+        16357
+      ],
+      "k": 14,
+      "multiplier": [
+        27,
+        16384
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "00111000000000"
+    },
+    {
+      "A": 81,
+      "B": 292,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        292,
+        16303
+      ],
+      "k": 14,
+      "multiplier": [
+        81,
+        16384
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "00111010000000"
+    },
+    {
+      "A": 9,
+      "B": 2051,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        2051,
+        16375
+      ],
+      "k": 14,
+      "multiplier": [
+        9,
+        16384
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "10000000000100"
+    },
+    {
+      "A": 27,
+      "B": 2825,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 16384,
+      "fixed_point": [
+        2825,
+        16357
+      ],
+      "k": 14,
+      "multiplier": [
+        27,
+        16384
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "10000000100100"
+    },
+    {
+      "A": 27,
+      "B": 2960,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32768,
+      "fixed_point": [
+        2960,
+        32741
+      ],
+      "k": 15,
+      "multiplier": [
+        27,
+        32768
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "000010001001000"
+    },
+    {
+      "A": 9,
+      "B": 2060,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32768,
+      "fixed_point": [
+        2060,
+        32759
+      ],
+      "k": 15,
+      "multiplier": [
+        9,
+        32768
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "001000000001000"
+    },
+    {
+      "A": 27,
+      "B": 2852,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32768,
+      "fixed_point": [
+        2852,
+        32741
+      ],
+      "k": 15,
+      "multiplier": [
+        27,
+        32768
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "001000001001000"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32768,
+      "fixed_point": [
+        1,
+        32765
+      ],
+      "k": 15,
+      "multiplier": [
+        3,
+        32768
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "100000000000000"
+    },
+    {
+      "A": 9,
+      "B": 259,
+      "canonical_edge_key": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 32768,
+      "fixed_point": [
+        259,
+        32759
+      ],
+      "k": 15,
+      "multiplier": [
+        9,
+        32768
+      ],
+      "nodes": [
+        2,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "100000001000000"
+    },
+    {
+      "A": 27,
+      "B": 5704,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 65536,
+      "fixed_point": [
+        5704,
+        65509
+      ],
+      "k": 16,
+      "multiplier": [
+        27,
+        65536
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 3,
+      "word": "0001000001001000"
+    },
+    {
+      "A": 81,
+      "B": 6136,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 65536,
+      "fixed_point": [
+        472,
+        5035
+      ],
+      "k": 16,
+      "multiplier": [
+        81,
+        65536
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        11,
+        19,
+        23,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 4,
+      "word": "0001010001001000"
+    },
+    {
+      "A": 3,
+      "B": 4,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 65536,
+      "fixed_point": [
+        4,
+        65533
+      ],
+      "k": 16,
+      "multiplier": [
+        3,
+        65536
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "0010000000000000"
+    },
+    {
+      "A": 9,
+      "B": 268,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 65536,
+      "fixed_point": [
+        268,
+        65527
+      ],
+      "k": 16,
+      "multiplier": [
+        9,
+        65536
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "0010000010000000"
+    },
+    {
+      "A": 3,
+      "B": 8192,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 131072,
+      "fixed_point": [
+        8192,
+        131069
+      ],
+      "k": 17,
+      "multiplier": [
+        3,
+        131072
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "00000000000001000"
+    },
+    {
+      "A": 9,
+      "B": 11264,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 131072,
+      "fixed_point": [
+        11264,
+        131063
+      ],
+      "k": 17,
+      "multiplier": [
+        9,
+        131072
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 2,
+      "word": "00000000001001000"
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 262144,
+      "fixed_point": [
+        0,
+        1
+      ],
+      "k": 18,
+      "multiplier": [
+        1,
+        262144
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 0,
+      "word": "000000000000000000"
+    },
+    {
+      "A": 3,
+      "B": 1024,
+      "canonical_edge_key": [
+        [
+          1,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "dangerous_rotation": null,
+      "denominator": 262144,
+      "fixed_point": [
+        1024,
+        262141
+      ],
+      "k": 18,
+      "multiplier": [
+        3,
+        262144
+      ],
+      "nodes": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11,
+        19,
+        23,
+        25,
+        26,
+        13,
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2
+      ],
+      "noncontracting": false,
+      "q": 1,
+      "word": "000000000010000000"
+    }
+  ],
+  "format": "collatz-simple-cycles-mod27-v1",
+  "maximum_other_multiplier": [
+    27,
+    32
+  ],
+  "noncontracting_count": 4,
+  "noncontracting_words": [
+    "1",
+    "101",
+    "1101",
+    "011101"
+  ],
+  "proves_collatz": false,
+  "simple_cycle_count": 108,
+  "unit_vertices": 18
+}

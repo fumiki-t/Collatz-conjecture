@@ -1,0 +1,1927 @@
+{
+  "direct_audit": {
+    "bound_exclusive": 16777216,
+    "integers_checked": 2485513,
+    "per_template_counts": {
+      "r1-to-r1-01000": 19418,
+      "r1-to-r1-10": 155345,
+      "r1-to-r11-00000": 19418,
+      "r1-to-r11-001": 77673,
+      "r1-to-r11-0100100": 4854,
+      "r1-to-r11-1100": 38836,
+      "r1-to-r20-00001": 19418,
+      "r1-to-r20-0100101": 4855,
+      "r1-to-r20-0101": 38836,
+      "r1-to-r20-1101": 38836,
+      "r1-to-r26-0001": 38836,
+      "r1-to-r26-010011": 9709,
+      "r1-to-r26-011": 77672,
+      "r1-to-r26-111": 77673,
+      "r11-to-r1-001000": 9709,
+      "r11-to-r1-010": 77672,
+      "r11-to-r11-0001": 38836,
+      "r11-to-r11-00100100": 2428,
+      "r11-to-r11-01100": 19419,
+      "r11-to-r11-100": 77672,
+      "r11-to-r20-00100101": 2427,
+      "r11-to-r20-00101": 19418,
+      "r11-to-r20-01101": 19418,
+      "r11-to-r20-101": 77672,
+      "r11-to-r26-0000": 38836,
+      "r11-to-r26-0010011": 4854,
+      "r11-to-r26-0011": 38836,
+      "r11-to-r26-0111": 38836,
+      "r11-to-r26-11": 155345,
+      "r20-to-r1-0000000": 4855,
+      "r20-to-r1-001000": 9710,
+      "r20-to-r1-010": 77672,
+      "r20-to-r11-000000100": 1214,
+      "r20-to-r11-0001": 38836,
+      "r20-to-r11-00100100": 2427,
+      "r20-to-r11-01100": 19418,
+      "r20-to-r11-100": 77672,
+      "r20-to-r20-000000101": 1213,
+      "r20-to-r20-000001": 9709,
+      "r20-to-r20-00100101": 2427,
+      "r20-to-r20-00101": 19418,
+      "r20-to-r20-01101": 19418,
+      "r20-to-r20-101": 77672,
+      "r20-to-r26-00000011": 2427,
+      "r20-to-r26-00001": 19418,
+      "r20-to-r26-0010011": 4855,
+      "r20-to-r26-0011": 38836,
+      "r20-to-r26-0111": 38836,
+      "r20-to-r26-11": 155345,
+      "r26-to-r20-00": 155344,
+      "r26-to-r20-01": 155345,
+      "r26-to-r26-1": 310689
+    },
+    "result": "all_direct_first_returns_match_exact_templates",
+    "sha256": "588b40e626d5dbf165dcb1e0f8e157742b2d43a5e4ddc26b4f4384187c51c2ef",
+    "shortcut_steps_checked": 7162840
+  },
+  "format": "collatz-phase5-dangerous-cycles-v1",
+  "graph_audit": {
+    "acyclic": true,
+    "deleted_vertices": [
+      1,
+      11,
+      20,
+      26
+    ],
+    "maximum_first_return_length": 9,
+    "maximum_internal_edges": 7,
+    "remaining_vertices": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      13,
+      14,
+      16,
+      17,
+      19,
+      22,
+      23,
+      25
+    ],
+    "topological_order": [
+      10,
+      5,
+      13,
+      14,
+      7,
+      16,
+      19,
+      23,
+      8,
+      4,
+      2,
+      17,
+      22,
+      25
+    ]
+  },
+  "modulus": 27,
+  "proves_collatz": false,
+  "section": [
+    1,
+    11,
+    20,
+    26
+  ],
+  "template_count": 52,
+  "templates": [
+    {
+      "A": 1,
+      "B": 0,
+      "denominator": 32,
+      "fixed_point": [
+        0,
+        1
+      ],
+      "k": 5,
+      "multiplier": [
+        1,
+        32
+      ],
+      "name": "r1-to-r11-00000",
+      "path": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        11
+      ],
+      "q": 0,
+      "source_family": [
+        352,
+        864
+      ],
+      "source_residue": 1,
+      "target_family": [
+        11,
+        27
+      ],
+      "target_residue": 11,
+      "word": "00000"
+    },
+    {
+      "A": 3,
+      "B": 16,
+      "denominator": 32,
+      "fixed_point": [
+        16,
+        29
+      ],
+      "k": 5,
+      "multiplier": [
+        3,
+        32
+      ],
+      "name": "r1-to-r20-00001",
+      "path": [
+        1,
+        14,
+        7,
+        17,
+        22,
+        20
+      ],
+      "q": 1,
+      "source_family": [
+        784,
+        864
+      ],
+      "source_residue": 1,
+      "target_family": [
+        74,
+        81
+      ],
+      "target_residue": 20,
+      "word": "00001"
+    },
+    {
+      "A": 3,
+      "B": 8,
+      "denominator": 16,
+      "fixed_point": [
+        8,
+        13
+      ],
+      "k": 4,
+      "multiplier": [
+        3,
+        16
+      ],
+      "name": "r1-to-r26-0001",
+      "path": [
+        1,
+        14,
+        7,
+        17,
+        26
+      ],
+      "q": 1,
+      "source_family": [
+        136,
+        432
+      ],
+      "source_residue": 1,
+      "target_family": [
+        26,
+        81
+      ],
+      "target_residue": 26,
+      "word": "0001"
+    },
+    {
+      "A": 3,
+      "B": 4,
+      "denominator": 8,
+      "fixed_point": [
+        4,
+        5
+      ],
+      "k": 3,
+      "multiplier": [
+        3,
+        8
+      ],
+      "name": "r1-to-r11-001",
+      "path": [
+        1,
+        14,
+        7,
+        11
+      ],
+      "q": 1,
+      "source_family": [
+        28,
+        216
+      ],
+      "source_residue": 1,
+      "target_family": [
+        11,
+        81
+      ],
+      "target_residue": 11,
+      "word": "001"
+    },
+    {
+      "A": 3,
+      "B": 2,
+      "denominator": 32,
+      "fixed_point": [
+        2,
+        29
+      ],
+      "k": 5,
+      "multiplier": [
+        3,
+        32
+      ],
+      "name": "r1-to-r1-01000",
+      "path": [
+        1,
+        14,
+        8,
+        4,
+        2,
+        1
+      ],
+      "q": 1,
+      "source_family": [
+        298,
+        864
+      ],
+      "source_residue": 1,
+      "target_family": [
+        28,
+        81
+      ],
+      "target_residue": 1,
+      "word": "01000"
+    },
+    {
+      "A": 9,
+      "B": 22,
+      "denominator": 128,
+      "fixed_point": [
+        22,
+        119
+      ],
+      "k": 7,
+      "multiplier": [
+        9,
+        128
+      ],
+      "name": "r1-to-r11-0100100",
+      "path": [
+        1,
+        14,
+        8,
+        4,
+        2,
+        17,
+        22,
+        11
+      ],
+      "q": 2,
+      "source_family": [
+        2458,
+        3456
+      ],
+      "source_residue": 1,
+      "target_family": [
+        173,
+        243
+      ],
+      "target_residue": 11,
+      "word": "0100100"
+    },
+    {
+      "A": 27,
+      "B": 130,
+      "denominator": 128,
+      "fixed_point": [
+        130,
+        101
+      ],
+      "k": 7,
+      "multiplier": [
+        27,
+        128
+      ],
+      "name": "r1-to-r20-0100101",
+      "path": [
+        1,
+        14,
+        8,
+        4,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        730,
+        3456
+      ],
+      "source_residue": 1,
+      "target_family": [
+        155,
+        729
+      ],
+      "target_residue": 20,
+      "word": "0100101"
+    },
+    {
+      "A": 27,
+      "B": 98,
+      "denominator": 64,
+      "fixed_point": [
+        98,
+        37
+      ],
+      "k": 6,
+      "multiplier": [
+        27,
+        64
+      ],
+      "name": "r1-to-r26-010011",
+      "path": [
+        1,
+        14,
+        8,
+        4,
+        2,
+        17,
+        26
+      ],
+      "q": 3,
+      "source_family": [
+        1594,
+        1728
+      ],
+      "source_residue": 1,
+      "target_family": [
+        674,
+        729
+      ],
+      "target_residue": 26,
+      "word": "010011"
+    },
+    {
+      "A": 9,
+      "B": 14,
+      "denominator": 16,
+      "fixed_point": [
+        2,
+        1
+      ],
+      "k": 4,
+      "multiplier": [
+        9,
+        16
+      ],
+      "name": "r1-to-r20-0101",
+      "path": [
+        1,
+        14,
+        8,
+        4,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        82,
+        432
+      ],
+      "source_residue": 1,
+      "target_family": [
+        47,
+        243
+      ],
+      "target_residue": 20,
+      "word": "0101"
+    },
+    {
+      "A": 9,
+      "B": 10,
+      "denominator": 8,
+      "fixed_point": [
+        -10,
+        1
+      ],
+      "k": 3,
+      "multiplier": [
+        9,
+        8
+      ],
+      "name": "r1-to-r26-011",
+      "path": [
+        1,
+        14,
+        8,
+        26
+      ],
+      "q": 2,
+      "source_family": [
+        190,
+        216
+      ],
+      "source_residue": 1,
+      "target_family": [
+        215,
+        243
+      ],
+      "target_residue": 26,
+      "word": "011"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "denominator": 4,
+      "fixed_point": [
+        1,
+        1
+      ],
+      "k": 2,
+      "multiplier": [
+        3,
+        4
+      ],
+      "name": "r1-to-r1-10",
+      "path": [
+        1,
+        2,
+        1
+      ],
+      "q": 1,
+      "source_family": [
+        1,
+        108
+      ],
+      "source_residue": 1,
+      "target_family": [
+        1,
+        81
+      ],
+      "target_residue": 1,
+      "word": "10"
+    },
+    {
+      "A": 9,
+      "B": 5,
+      "denominator": 16,
+      "fixed_point": [
+        5,
+        7
+      ],
+      "k": 4,
+      "multiplier": [
+        9,
+        16
+      ],
+      "name": "r1-to-r11-1100",
+      "path": [
+        1,
+        2,
+        17,
+        22,
+        11
+      ],
+      "q": 2,
+      "source_family": [
+        163,
+        432
+      ],
+      "source_residue": 1,
+      "target_family": [
+        92,
+        243
+      ],
+      "target_residue": 11,
+      "word": "1100"
+    },
+    {
+      "A": 27,
+      "B": 23,
+      "denominator": 16,
+      "fixed_point": [
+        -23,
+        11
+      ],
+      "k": 4,
+      "multiplier": [
+        27,
+        16
+      ],
+      "name": "r1-to-r20-1101",
+      "path": [
+        1,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        379,
+        432
+      ],
+      "source_residue": 1,
+      "target_family": [
+        641,
+        729
+      ],
+      "target_residue": 20,
+      "word": "1101"
+    },
+    {
+      "A": 27,
+      "B": 19,
+      "denominator": 8,
+      "fixed_point": [
+        -1,
+        1
+      ],
+      "k": 3,
+      "multiplier": [
+        27,
+        8
+      ],
+      "name": "r1-to-r26-111",
+      "path": [
+        1,
+        2,
+        17,
+        26
+      ],
+      "q": 3,
+      "source_family": [
+        55,
+        216
+      ],
+      "source_residue": 1,
+      "target_family": [
+        188,
+        729
+      ],
+      "target_residue": 26,
+      "word": "111"
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "denominator": 16,
+      "fixed_point": [
+        0,
+        1
+      ],
+      "k": 4,
+      "multiplier": [
+        1,
+        16
+      ],
+      "name": "r11-to-r26-0000",
+      "path": [
+        11,
+        19,
+        23,
+        25,
+        26
+      ],
+      "q": 0,
+      "source_family": [
+        416,
+        432
+      ],
+      "source_residue": 11,
+      "target_family": [
+        26,
+        27
+      ],
+      "target_residue": 26,
+      "word": "0000"
+    },
+    {
+      "A": 3,
+      "B": 8,
+      "denominator": 16,
+      "fixed_point": [
+        8,
+        13
+      ],
+      "k": 4,
+      "multiplier": [
+        3,
+        16
+      ],
+      "name": "r11-to-r11-0001",
+      "path": [
+        11,
+        19,
+        23,
+        25,
+        11
+      ],
+      "q": 1,
+      "source_family": [
+        200,
+        432
+      ],
+      "source_residue": 11,
+      "target_family": [
+        38,
+        81
+      ],
+      "target_residue": 11,
+      "word": "0001"
+    },
+    {
+      "A": 3,
+      "B": 4,
+      "denominator": 64,
+      "fixed_point": [
+        4,
+        61
+      ],
+      "k": 6,
+      "multiplier": [
+        3,
+        64
+      ],
+      "name": "r11-to-r1-001000",
+      "path": [
+        11,
+        19,
+        23,
+        8,
+        4,
+        2,
+        1
+      ],
+      "q": 1,
+      "source_family": [
+        1172,
+        1728
+      ],
+      "source_residue": 11,
+      "target_family": [
+        55,
+        81
+      ],
+      "target_residue": 1,
+      "word": "001000"
+    },
+    {
+      "A": 9,
+      "B": 44,
+      "denominator": 256,
+      "fixed_point": [
+        44,
+        247
+      ],
+      "k": 8,
+      "multiplier": [
+        9,
+        256
+      ],
+      "name": "r11-to-r11-00100100",
+      "path": [
+        11,
+        19,
+        23,
+        8,
+        4,
+        2,
+        17,
+        22,
+        11
+      ],
+      "q": 2,
+      "source_family": [
+        308,
+        6912
+      ],
+      "source_residue": 11,
+      "target_family": [
+        11,
+        243
+      ],
+      "target_residue": 11,
+      "word": "00100100"
+    },
+    {
+      "A": 27,
+      "B": 260,
+      "denominator": 256,
+      "fixed_point": [
+        260,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "name": "r11-to-r20-00100101",
+      "path": [
+        11,
+        19,
+        23,
+        8,
+        4,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        3764,
+        6912
+      ],
+      "source_residue": 11,
+      "target_family": [
+        398,
+        729
+      ],
+      "target_residue": 20,
+      "word": "00100101"
+    },
+    {
+      "A": 27,
+      "B": 196,
+      "denominator": 128,
+      "fixed_point": [
+        196,
+        101
+      ],
+      "k": 7,
+      "multiplier": [
+        27,
+        128
+      ],
+      "name": "r11-to-r26-0010011",
+      "path": [
+        11,
+        19,
+        23,
+        8,
+        4,
+        2,
+        17,
+        26
+      ],
+      "q": 3,
+      "source_family": [
+        2036,
+        3456
+      ],
+      "source_residue": 11,
+      "target_family": [
+        431,
+        729
+      ],
+      "target_residue": 26,
+      "word": "0010011"
+    },
+    {
+      "A": 9,
+      "B": 28,
+      "denominator": 32,
+      "fixed_point": [
+        28,
+        23
+      ],
+      "k": 5,
+      "multiplier": [
+        9,
+        32
+      ],
+      "name": "r11-to-r20-00101",
+      "path": [
+        11,
+        19,
+        23,
+        8,
+        4,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        740,
+        864
+      ],
+      "source_residue": 11,
+      "target_family": [
+        209,
+        243
+      ],
+      "target_residue": 20,
+      "word": "00101"
+    },
+    {
+      "A": 9,
+      "B": 20,
+      "denominator": 16,
+      "fixed_point": [
+        20,
+        7
+      ],
+      "k": 4,
+      "multiplier": [
+        9,
+        16
+      ],
+      "name": "r11-to-r26-0011",
+      "path": [
+        11,
+        19,
+        23,
+        8,
+        26
+      ],
+      "q": 2,
+      "source_family": [
+        92,
+        432
+      ],
+      "source_residue": 11,
+      "target_family": [
+        53,
+        243
+      ],
+      "target_residue": 26,
+      "word": "0011"
+    },
+    {
+      "A": 3,
+      "B": 2,
+      "denominator": 8,
+      "fixed_point": [
+        2,
+        5
+      ],
+      "k": 3,
+      "multiplier": [
+        3,
+        8
+      ],
+      "name": "r11-to-r1-010",
+      "path": [
+        11,
+        19,
+        2,
+        1
+      ],
+      "q": 1,
+      "source_family": [
+        146,
+        216
+      ],
+      "source_residue": 11,
+      "target_family": [
+        55,
+        81
+      ],
+      "target_residue": 1,
+      "word": "010"
+    },
+    {
+      "A": 9,
+      "B": 10,
+      "denominator": 32,
+      "fixed_point": [
+        10,
+        23
+      ],
+      "k": 5,
+      "multiplier": [
+        9,
+        32
+      ],
+      "name": "r11-to-r11-01100",
+      "path": [
+        11,
+        19,
+        2,
+        17,
+        22,
+        11
+      ],
+      "q": 2,
+      "source_family": [
+        38,
+        864
+      ],
+      "source_residue": 11,
+      "target_family": [
+        11,
+        243
+      ],
+      "target_residue": 11,
+      "word": "01100"
+    },
+    {
+      "A": 27,
+      "B": 46,
+      "denominator": 32,
+      "fixed_point": [
+        46,
+        5
+      ],
+      "k": 5,
+      "multiplier": [
+        27,
+        32
+      ],
+      "name": "r11-to-r20-01101",
+      "path": [
+        11,
+        19,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        470,
+        864
+      ],
+      "source_residue": 11,
+      "target_family": [
+        398,
+        729
+      ],
+      "target_residue": 20,
+      "word": "01101"
+    },
+    {
+      "A": 27,
+      "B": 38,
+      "denominator": 16,
+      "fixed_point": [
+        -38,
+        11
+      ],
+      "k": 4,
+      "multiplier": [
+        27,
+        16
+      ],
+      "name": "r11-to-r26-0111",
+      "path": [
+        11,
+        19,
+        2,
+        17,
+        26
+      ],
+      "q": 3,
+      "source_family": [
+        254,
+        432
+      ],
+      "source_residue": 11,
+      "target_family": [
+        431,
+        729
+      ],
+      "target_residue": 26,
+      "word": "0111"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "denominator": 8,
+      "fixed_point": [
+        1,
+        5
+      ],
+      "k": 3,
+      "multiplier": [
+        3,
+        8
+      ],
+      "name": "r11-to-r11-100",
+      "path": [
+        11,
+        17,
+        22,
+        11
+      ],
+      "q": 1,
+      "source_family": [
+        173,
+        216
+      ],
+      "source_residue": 11,
+      "target_family": [
+        65,
+        81
+      ],
+      "target_residue": 11,
+      "word": "100"
+    },
+    {
+      "A": 9,
+      "B": 7,
+      "denominator": 8,
+      "fixed_point": [
+        -7,
+        1
+      ],
+      "k": 3,
+      "multiplier": [
+        9,
+        8
+      ],
+      "name": "r11-to-r20-101",
+      "path": [
+        11,
+        17,
+        22,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        65,
+        216
+      ],
+      "source_residue": 11,
+      "target_family": [
+        74,
+        243
+      ],
+      "target_residue": 20,
+      "word": "101"
+    },
+    {
+      "A": 9,
+      "B": 5,
+      "denominator": 4,
+      "fixed_point": [
+        -1,
+        1
+      ],
+      "k": 2,
+      "multiplier": [
+        9,
+        4
+      ],
+      "name": "r11-to-r26-11",
+      "path": [
+        11,
+        17,
+        26
+      ],
+      "q": 2,
+      "source_family": [
+        11,
+        108
+      ],
+      "source_residue": 11,
+      "target_family": [
+        26,
+        243
+      ],
+      "target_residue": 26,
+      "word": "11"
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "denominator": 128,
+      "fixed_point": [
+        0,
+        1
+      ],
+      "k": 7,
+      "multiplier": [
+        1,
+        128
+      ],
+      "name": "r20-to-r1-0000000",
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "q": 0,
+      "source_family": [
+        128,
+        3456
+      ],
+      "source_residue": 20,
+      "target_family": [
+        1,
+        27
+      ],
+      "target_residue": 1,
+      "word": "0000000"
+    },
+    {
+      "A": 3,
+      "B": 64,
+      "denominator": 512,
+      "fixed_point": [
+        64,
+        509
+      ],
+      "k": 9,
+      "multiplier": [
+        3,
+        512
+      ],
+      "name": "r20-to-r11-000000100",
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2,
+        17,
+        22,
+        11
+      ],
+      "q": 1,
+      "source_family": [
+        1856,
+        13824
+      ],
+      "source_residue": 20,
+      "target_family": [
+        11,
+        81
+      ],
+      "target_residue": 11,
+      "word": "000000100"
+    },
+    {
+      "A": 9,
+      "B": 448,
+      "denominator": 512,
+      "fixed_point": [
+        448,
+        503
+      ],
+      "k": 9,
+      "multiplier": [
+        9,
+        512
+      ],
+      "name": "r20-to-r20-000000101",
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        8768,
+        13824
+      ],
+      "source_residue": 20,
+      "target_family": [
+        155,
+        243
+      ],
+      "target_residue": 20,
+      "word": "000000101"
+    },
+    {
+      "A": 9,
+      "B": 320,
+      "denominator": 256,
+      "fixed_point": [
+        320,
+        247
+      ],
+      "k": 8,
+      "multiplier": [
+        9,
+        256
+      ],
+      "name": "r20-to-r26-00000011",
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        2,
+        17,
+        26
+      ],
+      "q": 2,
+      "source_family": [
+        5312,
+        6912
+      ],
+      "source_residue": 20,
+      "target_family": [
+        188,
+        243
+      ],
+      "target_residue": 26,
+      "word": "00000011"
+    },
+    {
+      "A": 3,
+      "B": 32,
+      "denominator": 64,
+      "fixed_point": [
+        32,
+        61
+      ],
+      "k": 6,
+      "multiplier": [
+        3,
+        64
+      ],
+      "name": "r20-to-r20-000001",
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        4,
+        20
+      ],
+      "q": 1,
+      "source_family": [
+        992,
+        1728
+      ],
+      "source_residue": 20,
+      "target_family": [
+        47,
+        81
+      ],
+      "target_residue": 20,
+      "word": "000001"
+    },
+    {
+      "A": 3,
+      "B": 16,
+      "denominator": 32,
+      "fixed_point": [
+        16,
+        29
+      ],
+      "k": 5,
+      "multiplier": [
+        3,
+        32
+      ],
+      "name": "r20-to-r26-00001",
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        8,
+        26
+      ],
+      "q": 1,
+      "source_family": [
+        560,
+        864
+      ],
+      "source_residue": 20,
+      "target_family": [
+        53,
+        81
+      ],
+      "target_residue": 26,
+      "word": "00001"
+    },
+    {
+      "A": 3,
+      "B": 8,
+      "denominator": 16,
+      "fixed_point": [
+        8,
+        13
+      ],
+      "k": 4,
+      "multiplier": [
+        3,
+        16
+      ],
+      "name": "r20-to-r11-0001",
+      "path": [
+        20,
+        10,
+        5,
+        16,
+        11
+      ],
+      "q": 1,
+      "source_family": [
+        344,
+        432
+      ],
+      "source_residue": 20,
+      "target_family": [
+        65,
+        81
+      ],
+      "target_residue": 11,
+      "word": "0001"
+    },
+    {
+      "A": 3,
+      "B": 4,
+      "denominator": 64,
+      "fixed_point": [
+        4,
+        61
+      ],
+      "k": 6,
+      "multiplier": [
+        3,
+        64
+      ],
+      "name": "r20-to-r1-001000",
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "q": 1,
+      "source_family": [
+        20,
+        1728
+      ],
+      "source_residue": 20,
+      "target_family": [
+        1,
+        81
+      ],
+      "target_residue": 1,
+      "word": "001000"
+    },
+    {
+      "A": 9,
+      "B": 44,
+      "denominator": 256,
+      "fixed_point": [
+        44,
+        247
+      ],
+      "k": 8,
+      "multiplier": [
+        9,
+        256
+      ],
+      "name": "r20-to-r11-00100100",
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        17,
+        22,
+        11
+      ],
+      "q": 2,
+      "source_family": [
+        2612,
+        6912
+      ],
+      "source_residue": 20,
+      "target_family": [
+        92,
+        243
+      ],
+      "target_residue": 11,
+      "word": "00100100"
+    },
+    {
+      "A": 27,
+      "B": 260,
+      "denominator": 256,
+      "fixed_point": [
+        260,
+        229
+      ],
+      "k": 8,
+      "multiplier": [
+        27,
+        256
+      ],
+      "name": "r20-to-r20-00100101",
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        6068,
+        6912
+      ],
+      "source_residue": 20,
+      "target_family": [
+        641,
+        729
+      ],
+      "target_residue": 20,
+      "word": "00100101"
+    },
+    {
+      "A": 27,
+      "B": 196,
+      "denominator": 128,
+      "fixed_point": [
+        196,
+        101
+      ],
+      "k": 7,
+      "multiplier": [
+        27,
+        128
+      ],
+      "name": "r20-to-r26-0010011",
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        17,
+        26
+      ],
+      "q": 3,
+      "source_family": [
+        884,
+        3456
+      ],
+      "source_residue": 20,
+      "target_family": [
+        188,
+        729
+      ],
+      "target_residue": 26,
+      "word": "0010011"
+    },
+    {
+      "A": 9,
+      "B": 28,
+      "denominator": 32,
+      "fixed_point": [
+        28,
+        23
+      ],
+      "k": 5,
+      "multiplier": [
+        9,
+        32
+      ],
+      "name": "r20-to-r20-00101",
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        4,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        452,
+        864
+      ],
+      "source_residue": 20,
+      "target_family": [
+        128,
+        243
+      ],
+      "target_residue": 20,
+      "word": "00101"
+    },
+    {
+      "A": 9,
+      "B": 20,
+      "denominator": 16,
+      "fixed_point": [
+        20,
+        7
+      ],
+      "k": 4,
+      "multiplier": [
+        9,
+        16
+      ],
+      "name": "r20-to-r26-0011",
+      "path": [
+        20,
+        10,
+        5,
+        8,
+        26
+      ],
+      "q": 2,
+      "source_family": [
+        236,
+        432
+      ],
+      "source_residue": 20,
+      "target_family": [
+        134,
+        243
+      ],
+      "target_residue": 26,
+      "word": "0011"
+    },
+    {
+      "A": 3,
+      "B": 2,
+      "denominator": 8,
+      "fixed_point": [
+        2,
+        5
+      ],
+      "k": 3,
+      "multiplier": [
+        3,
+        8
+      ],
+      "name": "r20-to-r1-010",
+      "path": [
+        20,
+        10,
+        2,
+        1
+      ],
+      "q": 1,
+      "source_family": [
+        74,
+        216
+      ],
+      "source_residue": 20,
+      "target_family": [
+        28,
+        81
+      ],
+      "target_residue": 1,
+      "word": "010"
+    },
+    {
+      "A": 9,
+      "B": 10,
+      "denominator": 32,
+      "fixed_point": [
+        10,
+        23
+      ],
+      "k": 5,
+      "multiplier": [
+        9,
+        32
+      ],
+      "name": "r20-to-r11-01100",
+      "path": [
+        20,
+        10,
+        2,
+        17,
+        22,
+        11
+      ],
+      "q": 2,
+      "source_family": [
+        614,
+        864
+      ],
+      "source_residue": 20,
+      "target_family": [
+        173,
+        243
+      ],
+      "target_residue": 11,
+      "word": "01100"
+    },
+    {
+      "A": 27,
+      "B": 46,
+      "denominator": 32,
+      "fixed_point": [
+        46,
+        5
+      ],
+      "k": 5,
+      "multiplier": [
+        27,
+        32
+      ],
+      "name": "r20-to-r20-01101",
+      "path": [
+        20,
+        10,
+        2,
+        17,
+        22,
+        20
+      ],
+      "q": 3,
+      "source_family": [
+        182,
+        864
+      ],
+      "source_residue": 20,
+      "target_family": [
+        155,
+        729
+      ],
+      "target_residue": 20,
+      "word": "01101"
+    },
+    {
+      "A": 27,
+      "B": 38,
+      "denominator": 16,
+      "fixed_point": [
+        -38,
+        11
+      ],
+      "k": 4,
+      "multiplier": [
+        27,
+        16
+      ],
+      "name": "r20-to-r26-0111",
+      "path": [
+        20,
+        10,
+        2,
+        17,
+        26
+      ],
+      "q": 3,
+      "source_family": [
+        398,
+        432
+      ],
+      "source_residue": 20,
+      "target_family": [
+        674,
+        729
+      ],
+      "target_residue": 26,
+      "word": "0111"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "denominator": 8,
+      "fixed_point": [
+        1,
+        5
+      ],
+      "k": 3,
+      "multiplier": [
+        3,
+        8
+      ],
+      "name": "r20-to-r11-100",
+      "path": [
+        20,
+        17,
+        22,
+        11
+      ],
+      "q": 1,
+      "source_family": [
+        101,
+        216
+      ],
+      "source_residue": 20,
+      "target_family": [
+        38,
+        81
+      ],
+      "target_residue": 11,
+      "word": "100"
+    },
+    {
+      "A": 9,
+      "B": 7,
+      "denominator": 8,
+      "fixed_point": [
+        -7,
+        1
+      ],
+      "k": 3,
+      "multiplier": [
+        9,
+        8
+      ],
+      "name": "r20-to-r20-101",
+      "path": [
+        20,
+        17,
+        22,
+        20
+      ],
+      "q": 2,
+      "source_family": [
+        209,
+        216
+      ],
+      "source_residue": 20,
+      "target_family": [
+        236,
+        243
+      ],
+      "target_residue": 20,
+      "word": "101"
+    },
+    {
+      "A": 9,
+      "B": 5,
+      "denominator": 4,
+      "fixed_point": [
+        -1,
+        1
+      ],
+      "k": 2,
+      "multiplier": [
+        9,
+        4
+      ],
+      "name": "r20-to-r26-11",
+      "path": [
+        20,
+        17,
+        26
+      ],
+      "q": 2,
+      "source_family": [
+        47,
+        108
+      ],
+      "source_residue": 20,
+      "target_family": [
+        107,
+        243
+      ],
+      "target_residue": 26,
+      "word": "11"
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "denominator": 4,
+      "fixed_point": [
+        0,
+        1
+      ],
+      "k": 2,
+      "multiplier": [
+        1,
+        4
+      ],
+      "name": "r26-to-r20-00",
+      "path": [
+        26,
+        13,
+        20
+      ],
+      "q": 0,
+      "source_family": [
+        80,
+        108
+      ],
+      "source_residue": 26,
+      "target_family": [
+        20,
+        27
+      ],
+      "target_residue": 20,
+      "word": "00"
+    },
+    {
+      "A": 3,
+      "B": 2,
+      "denominator": 4,
+      "fixed_point": [
+        2,
+        1
+      ],
+      "k": 2,
+      "multiplier": [
+        3,
+        4
+      ],
+      "name": "r26-to-r20-01",
+      "path": [
+        26,
+        13,
+        20
+      ],
+      "q": 1,
+      "source_family": [
+        26,
+        108
+      ],
+      "source_residue": 26,
+      "target_family": [
+        20,
+        81
+      ],
+      "target_residue": 20,
+      "word": "01"
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "denominator": 2,
+      "fixed_point": [
+        -1,
+        1
+      ],
+      "k": 1,
+      "multiplier": [
+        3,
+        2
+      ],
+      "name": "r26-to-r26-1",
+      "path": [
+        26,
+        26
+      ],
+      "q": 1,
+      "source_family": [
+        53,
+        54
+      ],
+      "source_residue": 26,
+      "target_family": [
+        80,
+        81
+      ],
+      "target_residue": 26,
+      "word": "1"
+    }
+  ]
+}
