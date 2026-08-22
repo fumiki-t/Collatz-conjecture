@@ -1,0 +1,143 @@
+{
+  "contact_density": {
+    "centered_cap_mean_upper": [
+      "1282555588972643204463194240415789587957453738464826262188393090638346822527667832391487525002476110440153737199717019711026215043030294609096206480361337",
+      "18587168528257975802768881321306162235261266809950159282152019541156729147265941669968921802207825162810981745306447479883927839727585779078633273123930112"
+    ],
+    "classification": "EXACT_FINITE_CERTIFICATE",
+    "denjoy_koksma_error_upper": [
+      "33914717729852067806019783465708279545762552194397326977635730407156374857451",
+      "28948022309329048855892746252171976963317496166410141009864396001978282409984"
+    ],
+    "density_exceeds_43_percent": true,
+    "density_lower_bound": [
+      "31327720462",
+      "72057431991"
+    ],
+    "minimum_contact_count": 31327720462,
+    "repository_status": "CONDITIONAL",
+    "threshold_t": [
+      "1",
+      "2"
+    ],
+    "u_2_to_minus_t": {
+      "lower": [
+        "81877371507464127617551201542979628307507432471243237061821853600756754782485",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ],
+      "upper": [
+        "40938685753732063808775600771489814153753716235621618530910926800378377391243",
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ]
+    }
+  },
+  "contact_weight": {
+    "N_replaced_by_external_lower_bound_V": 2392312122059207475200,
+    "classification": "EXACT_FINITE_CERTIFICATE",
+    "lower_bound": [
+      "109322583399686755052858573732647362437325183816224282440151361431131561468169453973947830164090394913231058154320588485967687025511509405298518585",
+      "4030449699738298695559698551291305314652719997490660214007136904070997720034718306187709923597801533591855474159177412002230296513609728"
+    ],
+    "repository_status": "CONDITIONAL"
+  },
+  "format": "collatz-phase7-boundary-defect-v1",
+  "literature_audit": {
+    "classification": "EXTERNAL_MATH_INPUT",
+    "items": [
+      {
+        "relationship": "Introduces coefficient stopping/admissible parity vectors; Phase 6 safe prefixes are the complementary unconverged-prefix language.",
+        "source": "Terras (1976), A stopping time problem on the positive integers"
+      },
+      {
+        "relationship": "Already uses continued fractions of log2(3) with an external verification bound. The Phase 7 first-pair certificate is a modern exact-enclosure version, not a novel use of continued fractions.",
+        "source": "Garner (1981), On the Collatz 3n+1 algorithm"
+      },
+      {
+        "relationship": "Coefficient-safe/paradoxical finite words and continued-fraction exceptional ratios substantially overlap the Phase 6/7 setting.",
+        "source": "Rozier--Terracol (2026), Paradoxical behavior in Collatz sequences"
+      },
+      {
+        "relationship": "Withdrawn because Rozier--Terracol v4 already enumerated the stated finite paradoxical data; not used as authority.",
+        "source": "Tong Niu, arXiv:2605.13886v2 (withdrawn 2026)"
+      },
+      {
+        "relationship": "Preprint explicitly notes substantial overlap with Winkler and identifies its W(d),w(k) with A100982,A076227. Fixed-(k,q) rigidity is independently rederived here.",
+        "source": "Hikawa (2026), Finite-Dimensional Combinatorial and Arithmetic Structures of Parity Vectors"
+      },
+      {
+        "relationship": "Exactly the Phase 1/6 safe-prefix counts a_k, e.g. a_26=1037374; these counts are not new.",
+        "source": "OEIS A076227"
+      },
+      {
+        "relationship": "Counts admissible first-crossing sequences by odd-step order; Phase 7 fixed-q layer counts reproduce selected terms.",
+        "source": "OEIS A100982"
+      }
+    ],
+    "newness_boundary": "New repository contribution is the exact certificate composition and boundary-defect/contact audit, not the classical parity-vector counts or continued-fraction principle.",
+    "q4961_audit": {
+      "facts": [
+        "4961=4296+665",
+        "665 is the denominator of convergent 1054/665 to log2(3)",
+        "q=4961 is the next Phase 6 H_q record after q=4296"
+      ],
+      "interpretation": "The obstacle is continued-fraction structured, consistent with Garner's method; it is not evidence of a new independent phenomenon."
+    },
+    "repository_status": "EXTERNAL_THEOREM"
+  },
+  "proves_collatz": false,
+  "rotation_sum": {
+    "S0_interval": {
+      "lower": [
+        "347653358124694623764702768965644743643993185202918547803238971406453253118498950403662",
+        "6688413348832609071852825350525839211165888967632495550510238958784996414681"
+      ],
+      "upper": [
+        "4171840297817379325920398463036672540553158504570985244085227443301930507443667232748630",
+        "80260960185991308862233904206310070533990667611589946606122867505419956976171"
+      ]
+    },
+    "classification": "EXTERNAL_MATH_INPUT",
+    "conclusion_used": "|S0-q0/(2*ln(2))|<=2",
+    "exact_premises_checked": {
+      "circle_variation_of_2^-x": "1",
+      "q0_ostrowski_decomposition": [
+        6586818670,
+        65470613321
+      ],
+      "rotation": "log2(3) modulo 1",
+      "summands_are_consecutive_cf_denominators": true
+    },
+    "input": "DENJOY_KOKSMA",
+    "repository_status": "EXTERNAL_THEOREM",
+    "special_case_reproved_in_repository": false
+  },
+  "symbolic_identity": {
+    "assumptions": [
+      "N is the least positive Collatz counterexample",
+      "K is its first coefficient crossing and q is the odd-step count",
+      "d_j is the zero-indexed position of odd step j"
+    ],
+    "classification": "VERIFIED_SYMBOLIC",
+    "definitions": {
+      "S(a)": "sum_{j=0}^{q-1} w_j*2^{-a_j}",
+      "a_j": "f_j-d_j >= 0",
+      "contact_set": "C={j:a_j=0}",
+      "delta": "2^K/3^q-1",
+      "f_j": "floor(j*log2(3))",
+      "w_j": "2^f_j/3^j = 2^{-fractional_part(j*log2(3))}"
+    },
+    "exact_steps": [
+      "B=sum_j 3^(q-1-j)*2^d_j",
+      "B/3^(q-1)=S(a)",
+      "least-counterexample endpoint gives B>=N*(2^K-3^q)",
+      "therefore S(a)>=3*N*delta",
+      "noncontacts have 2^{-a_j}<=1/2",
+      "therefore S(a)<=(S0+W(C))/2",
+      "therefore W(C)>=6*N*delta-S0"
+    ],
+    "external_math_required": false,
+    "proves_collatz": false,
+    "repository_status": "CONDITIONAL"
+  },
+  "what_this_result_does_not_prove": "The contact bounds are conditional on a least counterexample, the external N>V computation, and Denjoy-Koksma. They do not rule out the mechanical boundary path."
+}

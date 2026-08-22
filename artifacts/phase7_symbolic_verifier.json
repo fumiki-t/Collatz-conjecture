@@ -1,0 +1,73 @@
+{
+  "classification": "EXACT_FINITE_CERTIFICATE",
+  "contact_pair_lower_bounds": {
+    "12": 889748829,
+    "306": 2163774115,
+    "41": 1098696479,
+    "53": 2053484375,
+    "665": 2265341609
+  },
+  "external_inputs_reproved": {
+    "DENJOY_KOKSMA": false,
+    "N_gt_V": false
+  },
+  "first_crossing_pair": [
+    72057431991,
+    114208327604
+  ],
+  "fixed_layers": {
+    "1": {
+      "pareto_records": 1,
+      "words": 1
+    },
+    "17": {
+      "pareto_records": 13,
+      "words": 312455
+    },
+    "3": {
+      "pareto_records": 1,
+      "words": 2
+    },
+    "5": {
+      "pareto_records": 3,
+      "words": 7
+    }
+  },
+  "format": "collatz-phase7-independent-verifier-v1",
+  "independent_search_imports": [],
+  "macros": {
+    "counts_by_factor": [
+      2652,
+      2862,
+      3387,
+      3733,
+      4072,
+      5033,
+      5393,
+      8045,
+      8640,
+      9690,
+      10642,
+      11433,
+      11433
+    ],
+    "macro_count": 87015
+  },
+  "mixed_block_audit": {
+    "bound": 128,
+    "contracting_pairs": 5051,
+    "pairs": 16384
+  },
+  "proves_collatz": false,
+  "repository_status": "VERIFIED_FINITE",
+  "valid": true,
+  "verified_input_sha256": {
+    "phase7_arithmetic_frontier.json": "adfb7a2c6a4766020fcd103a29e75702b7fe9348bdae5d3337f44ff9cea22107",
+    "phase7_boundary_defect.json": "44c6ab7c6d58314e59b3d8d2000d376b44c835b001be64f9468de94ece5ea252",
+    "phase7_contact_autocorrelation.json": "eb96fef01b7e09b8ee9551e3ae1b9736d07b0aa1a8cf93b9ac16ff3b820cdae5",
+    "phase7_macro12.json": "1f6722d4db1aa2acc2d1cd5fda538af4cf1b4e34a7ed20e80b6cbf3614caa379",
+    "phase7_obstruction_report.md": "5fd7471952aab4302a338c03570fa9ac82c86230eaef6274e465b80fb0a0e3c8",
+    "phase7_symbolic_certificate.json": "a902d726a1779dc4abc1d67c19f2ea30cc0ea82516dd665271092c0777b35ea7"
+  },
+  "what_this_result_does_not_prove": "This verifier checks exact finite and symbolic certificate arithmetic; it does not establish the external N>V computation, reprove Denjoy-Koksma, or prove Collatz."
+}

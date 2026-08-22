@@ -25,6 +25,7 @@ conjectural. None of the completed phases proves the Collatz conjecture.
 | 4 | `feat/phase4-return9` / `909fad1` | Prefix-free mod-9 return code with Kraft sum 1; 52 finite templates | 23,785 open depth-3 cylinders, `a>8` overflow, and refill constants defeat the tested ranking | Exact finite, open frontier |
 | 5 | `feat/phase5-dangerous-cycles` / `39c90b4`, `4444d7c` | 52 section returns, 108 simple cycles, four noncontracting words, return-20 domination | H5-A surrogate fails; H5-B bounded candidates persist; no universal rank synthesized | Exact algebra plus bounded heuristics |
 | 6 | `feat/phase6-critical-prefix-barrier` / `8684d53` | Conditional P54 audit, 37 exact `H_q` records through 200,000, five `M(k)>X` certificates | No eventual lower bound for `M`; exact coverage currently ends at `q=4960` | Conditional symbolic plus exact finite |
+| 7 | `feat/phase7-boundary-defect-arithmetic` | Exact first-crossing and contact certificates, 87,015 exact 12-odd macros, fixed-layer arithmetic frontiers | Immediate macro counterexamples; no uniform high-`B`/small-`r2` separation | Conditional symbolic plus exact finite |
 
 The branch history is linear: each phase branch contains every earlier phase.
 Separate branches are retained as reproducible milestones, while `main` is the
@@ -64,6 +65,19 @@ cumulative research record.
   The smallest exact post-failure ratio is at `q=46`, where `M(72)=703` and
   `M/H_q>4`.
 
+### Boundary-defect arithmetic
+
+- Exact rational logarithm enclosures and a Farey-neighbor certificate make
+  `(q0,K0)=(72057431991,114208327604)` the first possible crossing pair after
+  substituting the external bound `N>2075*2^60`; no giant powers are built.
+- Under the least-counterexample assumptions, direct algebra gives
+  `S(a)>=3*N*delta` and `W(C)>=6*N*delta-S0`.
+- With Denjoy--Koksma kept external, the exact certificate forces at least
+  31,327,720,462 contacts and 889,748,829 genuine `h=12` contact pairs.
+- Exact enumeration gives 13 mechanical factors and 87,015 12-odd
+  contact-return macros. Fixed layers `q=1,3,5,17` reproduce selected A100982
+  counts and have distinct 2-adic residues.
+
 ## Counterexamples and failed mechanisms
 
 - A fixed short-block dictionary is not complete at depth 26; the smallest
@@ -84,6 +98,11 @@ cumulative research record.
 - The Phase 6 barrier inequality has exact early failures at
   `(q,N)=(17,27),(29,27),(41,703)`. No rigorous eventual polynomial lower
   bound for `M(k)` has been found.
+- Phase 7 macro id 0, word `1111111111110000000`, refutes all three claims
+  that every contact-return macro contracts, decomposes into the four Phase 5
+  dangerous words, or is unrealizable over positive integers.
+- Finite high-`B`/small-positive-2-adic-residue Pareto fronts did not yield a
+  monotone or `q`-uniform separation theorem.
 
 ## External inputs kept separate
 
@@ -94,13 +113,16 @@ cumulative research record.
   `q=41,K_q=65`, and every possible crossing with `66<=K_q<=1005` passes.
 - The irrational-rotation density theorem used for arbitrary closeness of
   `A^rB^s` multipliers is named but not reproved.
+- Phase 7 uses `N>2075*2^60` only as external computational evidence and
+  Denjoy--Koksma only as an external theorem; neither is reproved here.
 - The Wu–Wang Diophantine estimate and the contextual bound
   `H_q=O(q^5.117)` are not inputs to any current finite certificate.
 
 ## Current research frontier
 
-1. Prove an effective eventual lower bound for `M(k)` strong enough to exceed
-   `H_q`, or find an exact obstruction to each proposed mechanism.
+1. Prove an effective high-correction/least-positive-residue separation bound
+   strong enough to imply `M(k)>H_q` eventually, or find an exact obstruction
+   to each proposed form.
 2. Extend binary-cylinder certificates beyond the next uncovered barrier
    record `q=4961` without relying on external record minimality.
 3. Replace external dropping-time record evidence with independently checkable
@@ -118,6 +140,7 @@ cumulative research record.
 - Phase 4: [`PHASE4_RUN_RESULTS.md`](PHASE4_RUN_RESULTS.md)
 - Phase 5: [`PHASE5_RUN_RESULTS.md`](PHASE5_RUN_RESULTS.md)
 - Phase 6: [`PHASE6_RUN_RESULTS.md`](PHASE6_RUN_RESULTS.md)
+- Phase 7: [`PHASE7_RUN_RESULTS.md`](PHASE7_RUN_RESULTS.md)
 - Current hashes: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 Each phase result file contains its acceptance commands, independent verifier

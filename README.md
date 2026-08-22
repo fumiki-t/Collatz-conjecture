@@ -155,6 +155,26 @@ See `PHASE6_RUN_RESULTS.md` and `artifacts/phase6_obstruction_report.md`. The
 symbolic implication and finite certificates do not establish the missing
 eventual lower bound for `M(k)` and do not prove the Collatz conjecture.
 
+## Phase 7 boundary-defect arithmetic
+
+Phase 7 certifies the first possible least-counterexample crossing after an
+explicit external verification bound, derives boundary-defect contact
+inequalities, audits contact autocorrelation, enumerates exact 12-odd
+contact-return macros, and compares finite inverse-parity arithmetic layers.
+
+```bash
+.venv/bin/python src/phase7_search.py \
+  --artifact-dir artifacts --mixed-bound 128
+.venv/bin/python verifier/verify_phase7.py --artifact-dir artifacts
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/hash_artifacts.py artifacts --write artifacts/SHA256SUMS
+```
+
+See `PHASE7_RUN_RESULTS.md` and `artifacts/phase7_obstruction_report.md`.
+Denjoy--Koksma and `N>2075*2^60` remain external inputs, the finite macro
+alphabet yields counterexamples rather than a universal obstruction, and no
+proof of the Collatz conjecture is claimed.
+
 ## Interpretation boundaries
 
 - **Proved by the checker:** the finite JSON tree is internally exact; every
