@@ -1,0 +1,155 @@
+# Proof-oriented research roadmap
+
+The ranking is by closeness to a complete Collatz implication, not by ease of
+computation. Every proposal begins with a small exact falsification test and
+the mandatory adversarial families.
+
+## P0 — Eventual critical-prefix barrier
+
+**Target.** Prove `M(K_q-1) > H_q` for all sufficiently large `q`.
+
+**Why this would solve Collatz.** By P54, a least positive counterexample whose
+coefficient first crosses below one at that barrier would have to satisfy the
+opposite inequality. Eventual proof plus exact checking of the finite remainder
+closes the least-counterexample route.
+
+**Missing theorem.** An effective eventual lower bound for the least positive
+coefficient-safe representative `M(k)` strong enough to dominate `H_q`.
+
+**Fast falsification test.** Apply any proposed bound to all exact `M(k)` data,
+the known failures `(17,27),(29,27),(41,703)`, and generated prefixes from
+`2^m-1`, `8^m-5`, `(110|111)^*`, and `A^rB^s` before proving it.
+
+**Success criterion.** A repository-contained proof with explicit threshold,
+or a finite certificate format for the remainder, independently audited
+without external record-minimality assumptions.
+
+## P1 — Structural lower bounds for `M(k)`
+
+**Target.** Derive recursive, combinatorial, or Diophantine inequalities that
+force every coefficient-safe residue representative to grow effectively.
+
+**Why this would solve Collatz.** A bound such as
+`M(k) >= k^{5.117+epsilon}` with effective constants would plausibly dominate
+the current contextual polynomial upper bound for `H_q`.
+
+**Missing theorem.** A bridge from prefix-density constraints to the ordinary
+size of the least compatible positive residue; modulus `2^k` alone supplies no
+such bridge.
+
+**Fast falsification test.** Compute the proposed recursion exactly on the
+known `M(k)` records and search for a smaller compatible residue at the first
+unsupported depth.
+
+**Success criterion.** An explicit monotone lower bound, composable across
+prefix blocks and valid for every admissible word, with a proof that survives
+carry behavior.
+
+## P1 — Anti-concentration of inverse parity residues
+
+**Target.** Prove that high-correction coefficient-safe parity words cannot
+have unusually small positive representatives under the inverse parity map.
+
+**Why this would solve Collatz.** A uniform small-residue exclusion gives the
+needed lower bound for `M(k)` directly.
+
+**Missing theorem.** A deterministic, `q`-uniform separation inequality over
+the generalized Ballot language. Phase 7 fixed-layer Pareto fronts and
+fixed-`(k,q)` rigidity do not supply this Archimedean minimum bound.
+
+**Fast falsification test.** Measure the joint `(B,r2)` Pareto frontier in exact
+dynamic-programming/meet-in-the-middle slices, beginning with Phase 7's
+`q=1,3,5,17` records; attack monotonicity with macro id 0 and `A^rB^s` before
+scaling.
+
+**Success criterion.** An effective inequality for the minimum, or a tail
+bound strong enough to imply it after a union bound whose constants and
+dependencies are rigorous.
+
+## P2 — Moving rational shadows and simultaneous 2-adic/3-adic constraints
+
+**Target.** Show that any indefinitely coefficient-safe positive path must
+create rational shadow centers of unbounded height, then prove that the needed
+simultaneous approximations are impossible or force descent.
+
+**Why this would solve Collatz.** It would replace the refuted finite shadow
+dictionary with an arithmetic obstruction that grows with depth and could
+exclude an infinite critical path.
+
+**Missing theorem.** A quantitative height-growth lemma plus a simultaneous
+approximation bound linked to positivity and cylinder congruence.
+
+**Fast falsification test.** Use `A^rB^s` records to attack every fixed-margin,
+fixed-height, or four-center version; verify that the proposal also handles
+`(110|111)^*`.
+
+**Success criterion.** A proved lower bound on required shadow height that
+translates into an explicit lower bound for `M(k)` or a direct contradiction.
+
+## P2 — Extend exact barrier certificates
+
+**Target.** Extend independently verified coverage beyond `q=4960` and replace
+external dropping-record minimality where practical.
+
+**Why this helps Collatz.** It reduces the finite remainder once an eventual
+theorem is found and tests whether proposed structure predicts difficult
+records.
+
+**Missing theorem.** None for a finite extension; the limitation is certificate
+size and search strategy. This task cannot supply eventuality by itself.
+
+**Fast falsification test.** Target the next uncovered record and compare any
+new pruning rule with the independent verifier before broad scanning.
+
+**Success criterion.** New compact exact certificates, tamper-rejection tests,
+an independent verifier result, and SHA-256 manifest, with no asymptotic claim.
+
+## P3 — Predecessor-tree and density approaches
+
+**Target.** Find a quantitative bridge from predecessor abundance or
+almost-everywhere descent to the particular cylinder of a least counterexample.
+
+**Why this could solve Collatz.** Such a bridge could force the exceptional
+orbit to intersect a verified descending set.
+
+**Missing theorem.** Exceptional-set control or invariance strong enough for a
+single designated integer; global density comparison is insufficient.
+
+**Fast falsification test.** State the exact sets and density notions, then
+construct abstract sparse sets satisfying both marginal bounds but having empty
+intersection. If this is possible, the proposed bridge is incomplete.
+
+**Success criterion.** A rigorous intersection/transport theorem that applies
+to the least-counterexample arithmetic set, with all external results cited at
+the exact theorem level.
+
+## P4 — Bounded finite-state or modular experiments
+
+**Target.** Use bounded models to falsify new conjectures, discover exact
+templates, or generate candidate lemmas.
+
+**Why this does not currently solve Collatz.** Phases 1–5 show that fixed depth,
+modulus, state, or shadow dictionaries retain supercritical or refill-driven
+frontiers.
+
+**Missing theorem.** Any unbounded well-founded invariant that connects the
+finite model to all depths.
+
+**Fast falsification test.** Run the mandatory adversarial set at depths well
+beyond the state horizon and mine the smallest counterexample.
+
+**Success criterion.** A precise new asymptotic hypothesis or proof rule,
+rather than a larger success percentage. Without that, stop after recording
+the obstruction.
+
+## Stop criteria for large computation
+
+Do not spend a large compute budget unless the experiment has:
+
+1. a precise claim ID and status;
+2. a finite scope and early stop condition;
+3. a fast adversarial counterexample pass;
+4. a planned independent verifier and artifact;
+5. a stated interpretation boundary;
+6. a reason the result changes P0/P1 knowledge rather than only extending a
+   previous depth.
