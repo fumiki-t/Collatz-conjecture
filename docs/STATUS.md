@@ -1,6 +1,7 @@
 # Current research status
 
-**Last updated:** 2026-08-22  
+**Last updated:** 2026-08-22
+
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
 

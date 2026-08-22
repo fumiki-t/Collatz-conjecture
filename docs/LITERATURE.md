@@ -9,7 +9,8 @@ independently reproduced here.
 
 ### Bernstein and Lagarias (1996)
 
-**Status:** `EXTERNAL_THEOREM`  
+**Status:** `EXTERNAL_THEOREM`
+
 D. J. Bernstein and J. C. Lagarias, “The 3x + 1 Conjugacy Map,” *Canadian
 Journal of Mathematics* **48** (1996), 1154–1169.
 [DOI 10.4153/CJM-1996-060-x](https://doi.org/10.4153/CJM-1996-060-x).
@@ -23,7 +24,8 @@ delegate acceptance to this paper.
 
 ### Garner (1981)
 
-**Status:** `EXTERNAL_THEOREM`  
+**Status:** `EXTERNAL_THEOREM`
+
 Lynn E. Garner, “On the Collatz 3n + 1 Algorithm,” *Proceedings of the
 American Mathematical Society* **82**(1) (1981), 19–22.
 [DOI 10.1090/S0002-9939-1981-0603593-2](https://doi.org/10.1090/S0002-9939-1981-0603593-2).
@@ -36,7 +38,8 @@ certificates.
 
 ### Krasikov and Lagarias (2003)
 
-**Status:** `EXTERNAL_THEOREM`  
+**Status:** `EXTERNAL_THEOREM`
+
 Ilia Krasikov and Jeffrey C. Lagarias, “Bounds for the 3x+1 Problem Using
 Difference Inequalities,” *Acta Arithmetica* **109**(3) (2003), 237–258.
 [DOI 10.4064/aa109-3-4](https://doi.org/10.4064/aa109-3-4),
@@ -53,7 +56,8 @@ does not repair NG12 by itself.
 
 ### Monks, Monks, Monks, and Monks (2013; arXiv 2012)
 
-**Status:** `EXTERNAL_THEOREM`  
+**Status:** `EXTERNAL_THEOREM`
+
 Keenan Monks, Kenneth G. Monks, Kenneth M. Monks, and Maria Monks, “Strongly
 sufficient sets and the distribution of arithmetic sequences in the 3x+1
 graph,” *Discrete Mathematics* **313**(4) (2013), 468–489.
@@ -71,7 +75,8 @@ finite return dictionaries, not the global strongly-sufficient theorem.
 
 ### López and Stoll (2009)
 
-**Status:** `EXTERNAL_THEOREM`  
+**Status:** `EXTERNAL_THEOREM`
+
 Josefina López and Peter Stoll, “The 3x + 1 Conjugacy Map over a Sturmian
 Word,” *Integers* **9**(2) (2009), 141–162.
 [DOI 10.1515/INTEG.2009.014](https://doi.org/10.1515/INTEG.2009.014).
@@ -86,7 +91,8 @@ full reduction.
 
 ### López and Stoll (2021)
 
-**Status:** `EXTERNAL_THEOREM` from a preprint, not an active proof dependency  
+**Status:** `EXTERNAL_THEOREM` from a preprint, not an active proof dependency
+
 Josefina López and Peter Stoll, “The 3x+1 Periodicity Conjeture in
 `R`,” arXiv:2101.12747 (2021).
 [arXiv:2101.12747](https://arxiv.org/abs/2101.12747).
@@ -106,7 +112,8 @@ integer setting.
 
 ### Tao (2022)
 
-**Status:** `EXTERNAL_THEOREM`  
+**Status:** `EXTERNAL_THEOREM`
+
 Terence Tao, “Almost all orbits of the Collatz map attain almost bounded
 values,” *Forum of Mathematics, Pi* **10** (2022), e12, 1–56.
 [DOI 10.1017/fmp.2022.8](https://doi.org/10.1017/fmp.2022.8),
@@ -125,7 +132,8 @@ current certificate.
 ### Rozier and Terracol (2026; first posted 2025)
 
 **Status:** `EXTERNAL_THEOREM`; publication metadata updated from the original
-research draft  
+research draft
+
 Olivier Rozier and Claude Terracol, “Paradoxical behavior in Collatz
 sequences,” *Discrete Mathematics* **349** (2026), 115167.
 [DOI 10.1016/j.disc.2026.115167](https://doi.org/10.1016/j.disc.2026.115167),
@@ -143,7 +151,8 @@ an input to Phase 6 certificates.
 
 ### Wu and Wang (2014)
 
-**Status:** `EXTERNAL_THEOREM`  
+**Status:** `EXTERNAL_THEOREM`
+
 Qiang Wu and Lihong Wang, “On the irrationality measure of `log 3`,” *Journal
 of Number Theory* **142** (2014), 264–273.
 [DOI 10.1016/j.jnt.2014.03.007](https://doi.org/10.1016/j.jnt.2014.03.007).

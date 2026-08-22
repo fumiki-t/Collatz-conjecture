@@ -24,7 +24,8 @@ strongest current result is a `CONDITIONAL` Phase 6 reduction, supplemented by
 `VERIFIED_FINITE` barrier certificates. Bounded searches, high coverage, and
 external datasets are never promoted to asymptotic claims.
 
-Current status: [`docs/STATUS.md`](docs/STATUS.md)  
+Current status: [`docs/STATUS.md`](docs/STATUS.md)
+
 Ten-minute handoff: [`docs/HANDOFF.md`](docs/HANDOFF.md)
 
 ## Current strongest route

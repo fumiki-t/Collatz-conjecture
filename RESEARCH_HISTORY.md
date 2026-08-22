@@ -91,7 +91,8 @@ models remain valuable for certificates, counterexamples, and lemma discovery.
 
 ## 4. Phase 1–2 — adaptive affine certificates
 
-**Milestone:** `main` at `42dc629`  
+**Milestone:** `main` at `42dc629`
+
 **Acceptance record:** [`RUN_RESULTS.md`](RUN_RESULTS.md)
 
 Phase 1 represented each parity cylinder exactly and implemented the rules
@@ -130,7 +131,8 @@ rule out every possible parametric macro language.
 
 ## 5. Phase 3 — mixed binary/ternary certificates
 
-**Branch / milestone:** `feat/phase3-mixed-merge` / `d7bb6d9`  
+**Branch / milestone:** `feat/phase3-mixed-merge` / `d7bb6d9`
+
 **Acceptance record:** [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
 
 Phase 3 introduced exact binary and ternary `LatticeNode` refinements and a
@@ -161,7 +163,8 @@ than decreasing.
 
 ## 6. Phase 4 — exact first return modulo 9
 
-**Branch / milestone:** `feat/phase4-return9` / `909fad1`  
+**Branch / milestone:** `feat/phase4-return9` / `909fad1`
+
 **Acceptance record:** [`PHASE4_RUN_RESULTS.md`](PHASE4_RUN_RESULTS.md)
 
 Using the externally established strongly sufficient section `n = 2 mod 9`,
@@ -194,7 +197,8 @@ outside its finite dictionary.
 ## 7. Phase 5 — mod-27 returns and dangerous cycles
 
 **Branch / milestones:** `feat/phase5-dangerous-cycles` / `39c90b4`,
-`4444d7c`  
+`4444d7c`
+
 **Acceptance record:** [`PHASE5_RUN_RESULTS.md`](PHASE5_RUN_RESULTS.md)
 
 Phase 5 used the section `{1,11,20,26} mod 27`. Deleting that section from the
@@ -284,7 +288,8 @@ yet converts that height growth into descent or a lower bound for `M(k)`.
 
 ## 9. Phase 6 — critical-prefix barrier
 
-**Branch / milestone:** `feat/phase6-critical-prefix-barrier` / `8684d53`  
+**Branch / milestone:** `feat/phase6-critical-prefix-barrier` / `8684d53`
+
 **Acceptance record:** [`PHASE6_RUN_RESULTS.md`](PHASE6_RUN_RESULTS.md)
 
 Define
