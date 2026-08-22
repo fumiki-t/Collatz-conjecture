@@ -1,8 +1,11 @@
-# Adaptive affine Collatz certificates — Phase 1–4
+# Adaptive affine Collatz certificates — Phase 1–6
 
-This repository implements Phase 1–4 across the successive research briefs.
+This repository implements Phase 1–6 across the successive research briefs.
 It is a finite exact search and obstruction-mining experiment. It does **not**
 prove the Collatz conjecture.
+
+See [`RESEARCH_HISTORY.md`](RESEARCH_HISTORY.md) for the cumulative ledger of
+verified results, failed mechanisms, external inputs, and open research targets.
 
 All certificate decisions use Python arbitrary-precision integers. Rational
 fixed points use `fractions.Fraction`; floating point is not used for proof or
@@ -20,6 +23,15 @@ clustering decisions.
 - `src/mine_obstructions.py`: exact Phase 2 survivor statistics, repeated
   blocks of length at most 16, discrete signatures, and the failed-dictionary
   report.
+- `src/phase3_search.py`: mixed binary/ternary refinement and exact bounded
+  reverse-merge certificates.
+- `src/phase4_search.py`: exact mod-9 first-return code and bounded composition
+  search.
+- `src/phase5_search.py`: exact mod-27 section graph and cycle algebra plus
+  explicitly bounded shadow diagnostics.
+- `src/phase6_search.py`: exact `H_q` records, critical-prefix searches, and
+  binary-cylinder certificates for finite `M(k)>X` claims.
+- `verifier/`: independent checkers that import no corresponding search model.
 - `tests/`: Hypothesis properties, sanity counts, tamper rejection, required
   adversarial families, and exact block checks.
 
