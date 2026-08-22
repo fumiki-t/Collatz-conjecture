@@ -1,0 +1,161 @@
+{
+  "Hq_records_checked": 37,
+  "Hq_sanity_records_reproduced": true,
+  "Hq_scan_limit": 200000,
+  "M_search_bound_inclusive": 1500000,
+  "M_search_records_checked": 13,
+  "adversarial_cases_checked": 545,
+  "certified_barrier_record_q": [
+    1,
+    3,
+    5,
+    94,
+    147,
+    200,
+    253,
+    306,
+    971,
+    1636,
+    2301,
+    2966,
+    3631,
+    4296
+  ],
+  "certified_barrier_records": 14,
+  "eventual_M_lower_bound_verified": false,
+  "exact_certificates_checked": 5,
+  "exact_direct_ratio_audit": {
+    "K_q": 73,
+    "M": 703,
+    "M_exact_through_k": 223,
+    "q": 46,
+    "ratio_denominator": 98878719971867038884317,
+    "ratio_greater_than_four": true,
+    "ratio_numerator": 409001776799012900018489
+  },
+  "exact_sparse_barrier_range_q": [
+    94,
+    4960
+  ],
+  "external_barrier_failure_count": 8,
+  "external_last_failure": {
+    "K_q": 65,
+    "q": 41
+  },
+  "external_minimality_verified": false,
+  "external_minimum_ratio_location": {
+    "K_q": 73,
+    "assumed_M": 703,
+    "q": 46,
+    "ratio_greater_than_four": true
+  },
+  "external_record_rows_checked": 35,
+  "format": "collatz-phase6-independent-verifier-v1",
+  "proves_collatz": false,
+  "status": "verified_phase6_symbolic_barrier_and_finite_certificates_eventual_bound_unresolved",
+  "symbolic_audit": {
+    "assumptions": [
+      "N is the least positive Collatz counterexample",
+      "the coefficient first crosses below one at K with q odd steps"
+    ],
+    "checker_boundary": "checks the exact algebraic implication schema under stated assumptions; does not prove existence of an eventual M lower bound",
+    "inference_rules": [
+      "multiplication by a positive integer preserves weak and strict integer inequalities",
+      "if x>=y and y>z then x>z",
+      "for positive integer x, bitlength(x)=K iff 2^(K-1)<=x<2^K",
+      "for q>=1, 3^q is odd and greater than one, hence is not a power of two",
+      "if integer exponents a<=b then 2^a<=2^b",
+      "summing termwise weak inequalities preserves the inequality",
+      "the minimum over a subset is at least the minimum over its superset"
+    ],
+    "status": "conditional_symbolic_implication_verified",
+    "steps": [
+      {
+        "conclusion": "an odd final step cannot make the coefficient less than one",
+        "exact_rewrite": "3*A-2*D = 3*(A-D)+D > 0 when A>=D>0",
+        "id": "P54.1",
+        "premises": [
+          "C_(K-1)>=1",
+          "the K-th step is assumed odd"
+        ]
+      },
+      {
+        "conclusion": "K=bitlength(3^q)=K_q",
+        "exact_rewrite": "2^(K-1)<=3^q<2^K",
+        "id": "P54.2",
+        "premises": [
+          "the final step is even",
+          "3^q/2^(K-1)>=1",
+          "3^q/2^K<1"
+        ]
+      },
+      {
+        "conclusion": "N>=M(K_q-1)",
+        "exact_rewrite": "N belongs to the defining set of M(K_q-1)",
+        "id": "P54.3",
+        "premises": [
+          "C_j(N)>=1 for every 1<=j<=K_q-1"
+        ]
+      },
+      {
+        "conclusion": "d_j<=floor(j*log2(3))",
+        "exact_rewrite": "2^d_j<=3^j iff d_j<=bitlength(3^j)-1",
+        "id": "P54.4",
+        "premises": [
+          "d_j is the zero-indexed position of odd step j",
+          "3^j/2^d_j>=1"
+        ]
+      },
+      {
+        "conclusion": "B<=B_q^max",
+        "exact_rewrite": "each positive summand is bounded by replacing d_j with bitlength(3^j)-1",
+        "id": "P54.5",
+        "premises": [
+          "B=sum_j 3^(q-1-j)*2^d_j",
+          "the P54.4 exponent bounds"
+        ]
+      },
+      {
+        "conclusion": "M(K_q-1)<=N<=B/D_q<=H_q",
+        "exact_rewrite": "(3^q-2^K_q)*N+B = B-D_q*N >= 0",
+        "id": "P54.6",
+        "premises": [
+          "T^K_q(N)>=N by least-counterexample minimality",
+          "T^K_q(N)=(3^q*N+B)/2^K_q"
+        ]
+      },
+      {
+        "conclusion": "H_q>q/6",
+        "exact_rewrite": "B_q^max>(q/2)*3^(q-1) and D_q<3^q",
+        "id": "P54.7",
+        "premises": [
+          "2^(bitlength(3^j)-1)>3^j/2",
+          "0<D_q<3^q"
+        ]
+      },
+      {
+        "conclusion": "M diverges on an unbounded subsequence and a never-crossing fixed N is impossible",
+        "exact_rewrite": "M(K_q-1)>q/6 along unbounded q",
+        "id": "P54.8",
+        "premises": [
+          "eventual M(K_q-1)>H_q",
+          "H_q>q/6",
+          "M is nondecreasing"
+        ]
+      },
+      {
+        "conclusion": "checking every barrier record covers every intervening q",
+        "exact_rewrite": "M(K_q-1)>=M(K_q0-1)>H_q0>=H_q",
+        "id": "SPARSE",
+        "premises": [
+          "q_0 is the last H-record at or before q",
+          "K_q is nondecreasing because 3^q is strictly increasing",
+          "M is nondecreasing"
+        ]
+      }
+    ]
+  },
+  "symbolic_theorem_verified": true,
+  "universal_barrier_certified": false,
+  "valid": true
+}

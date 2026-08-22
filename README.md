@@ -121,6 +121,28 @@ See `PHASE5_RUN_RESULTS.md` and `artifacts/phase5_obstruction_report.md` for the
 independent result, quantified bounded counterexamples, and unresolved status
 of H5-A/H5-B.
 
+## Phase 6 critical-prefix barrier
+
+Phase 6 checks the conditional P54 barrier algebra, enumerates every exact
+`H_q` record through `q=200000`, and introduces independently checked binary
+cylinder certificates for finite claims `M(k)>X`. External dropping-time
+records are isolated as evidence and are never treated as verified minimality.
+
+```bash
+.venv/bin/python src/phase6_search.py \
+  --hq-limit 200000 --m-search-bound 1500000 \
+  --certificate-max-x 1500000 --direct-threshold 64
+.venv/bin/python verifier/verify_phase6.py \
+  --artifact-dir artifacts \
+  --output artifacts/barrier_theorem_verifier.json
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/hash_artifacts.py artifacts --write artifacts/SHA256SUMS
+```
+
+See `PHASE6_RUN_RESULTS.md` and `artifacts/phase6_obstruction_report.md`. The
+symbolic implication and finite certificates do not establish the missing
+eventual lower bound for `M(k)` and do not prove the Collatz conjecture.
+
 ## Interpretation boundaries
 
 - **Proved by the checker:** the finite JSON tree is internally exact; every
