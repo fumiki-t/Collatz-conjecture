@@ -1,0 +1,236 @@
+{
+  "case_partition": {
+    "r1_s_ge_5": {
+      "base_check_s5": [
+        5242880,
+        3188646
+      ],
+      "equivalent_inequality": "20*16^s>216*9^s",
+      "monotone_ratio": [
+        16,
+        9
+      ]
+    },
+    "r_ge_2_P_over_Q_at_most_half": {
+      "minimum_scalar_check": [
+        2048,
+        108
+      ],
+      "proof": "u*(Q-P)>=4*(Q/2)=2Q>108*16^s>108*(16^s-9^s)"
+    },
+    "r_ge_4_between_half_and_one": {
+      "exact_power_check": [
+        1099511627776,
+        1068115234375
+      ],
+      "external_lower_bound_after_dividing_16s": "(Q-P)/16^s > (1/2)*(2^40/5^16)^r > 7^r/2 > 27",
+      "minimum_nu": 30,
+      "nu_minimum_witness_check": [
+        22876792454961,
+        17592186044416
+      ],
+      "s_ge_2r_contradiction": [
+        3706040377703682,
+        4503599627370496
+      ],
+      "s_strictly_below_2r": true,
+      "terminal_check": [
+        2401,
+        54
+      ]
+    },
+    "six_base_cases": [
+      {
+        "C02_core_margin": 16545536,
+        "P": 6561,
+        "Q": 8192,
+        "after_A_power": 16787,
+        "all_realizations": "u=10156+12544*t, t>=0",
+        "crt_modulus": 12544,
+        "endpoint": 5312,
+        "least_source": 6631,
+        "least_u": 10156,
+        "r": 1,
+        "s": 2,
+        "source_descent_margin": 1319,
+        "u_congruence_mod_16s": 172,
+        "u_congruence_mod_49": 13
+      },
+      {
+        "C02_core_margin": 3441471488,
+        "P": 59049,
+        "Q": 131072,
+        "after_A_power": 78995,
+        "all_realizations": "u=47788+200704*t, t>=0",
+        "crt_modulus": 200704,
+        "endpoint": 14060,
+        "least_source": 31207,
+        "least_u": 47788,
+        "r": 1,
+        "s": 3,
+        "source_descent_margin": 17147,
+        "u_congruence_mod_16s": 2732,
+        "u_congruence_mod_49": 13
+      },
+      {
+        "C02_core_margin": 4788482736128,
+        "P": 531441,
+        "Q": 2097152,
+        "after_A_power": 5055635,
+        "all_realizations": "u=3058348+3211264*t, t>=0",
+        "crt_modulus": 3211264,
+        "endpoint": 506135,
+        "least_source": 1997287,
+        "least_u": 3058348,
+        "r": 1,
+        "s": 4,
+        "source_descent_margin": 1491152,
+        "u_congruence_mod_16s": 43692,
+        "u_congruence_mod_49": 13
+      },
+      {
+        "C02_core_margin": 40020438614016,
+        "P": 43046721,
+        "Q": 67108864,
+        "after_A_power": 222700691,
+        "all_realizations": "u=1663212+3211264*t, t>=0",
+        "crt_modulus": 3211264,
+        "endpoint": 22295216,
+        "least_source": 34757735,
+        "least_u": 1663212,
+        "r": 2,
+        "s": 4,
+        "source_descent_margin": 12462519,
+        "u_congruence_mod_16s": 24812,
+        "u_congruence_mod_49": 5
+      },
+      {
+        "C02_core_margin": 40093814275178496,
+        "P": 31381059609,
+        "Q": 34359738368,
+        "after_A_power": 145986495635,
+        "all_realizations": "u=13460268+51380224*t, t>=0",
+        "crt_modulus": 51380224,
+        "endpoint": 8221012670,
+        "least_source": 9001348199,
+        "least_u": 13460268,
+        "r": 3,
+        "s": 5,
+        "source_descent_margin": 780335529,
+        "u_congruence_mod_16s": 877356,
+        "u_congruence_mod_49": 17
+      },
+      {
+        "C02_core_margin": 182156975520937410560,
+        "P": 282429536481,
+        "Q": 549755813888,
+        "after_A_power": 7390318109843,
+        "all_realizations": "u=681403180+822083584*t, t>=0",
+        "crt_modulus": 822083584,
+        "endpoint": 234098318018,
+        "least_source": 455677946983,
+        "least_u": 681403180,
+        "r": 3,
+        "s": 6,
+        "source_descent_margin": 221579628965,
+        "u_congruence_mod_16s": 10314540,
+        "u_congruence_mod_49": 17
+      }
+    ],
+    "small_regimes": {
+      "r1": {
+        "base_s": [
+          2,
+          3,
+          4
+        ],
+        "monotone_s_from": 5,
+        "noncontracting_boundary": [
+          1,
+          1
+        ]
+      },
+      "r2": {
+        "at_most_half_from_s": 5,
+        "between_half_and_one_s": [
+          4
+        ],
+        "noncontracting_through_s": 3
+      },
+      "r3": {
+        "at_most_half_from_s": 7,
+        "between_half_and_one_s": [
+          5,
+          6
+        ],
+        "noncontracting_through_s": 4
+      }
+    }
+  },
+  "claim": {
+    "dependencies": [
+      "exact affine algebra",
+      "integrality congruences",
+      "EXT05",
+      "six exact base cases"
+    ],
+    "id": "C02",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "For r,s>=1, every positive integral realization x of B^s(A^r(x)) descends whenever 3^(4r+2s)<2^(5r+4s)."
+  },
+  "composition_convention": {
+    "A": {
+      "map": [
+        81,
+        73,
+        32
+      ],
+      "word": "11101"
+    },
+    "B": {
+      "map": [
+        9,
+        5,
+        16
+      ],
+      "word": "1100"
+    },
+    "P": "81^r*9^s=3^(4r+2s)",
+    "Q": "32^r*16^s=2^(5r+4s)",
+    "block_word": "A^r followed by B^s",
+    "function": "F_(r,s)=B^s composed with A^r"
+  },
+  "external_input": {
+    "application": {
+      "kappa": "5r+4s",
+      "nu": "4r+2s",
+      "nu_greater_than_18": true
+    },
+    "finite_13_to_18_part_used": false,
+    "id": "EXT05",
+    "paper_derivation": "q>18 case derived from Ellison (1971), Theorem 3",
+    "repository_status": "EXTERNAL_THEOREM",
+    "source": "Rozier--Terracol (2026), Paradoxical behavior in Collatz sequences, arXiv:2502.00948v5, Lemma B.1",
+    "statement": "for positive k,q with q>12, abs(2^k-3^q)>(64/25)^q/2"
+  },
+  "format": "collatz-phase8-c02-theorem-v1",
+  "integrality_reduction": {
+    "A_identity": "49*A(x)+73=(81/32)*(49*x+73)",
+    "A_power": "A^r(x)=(81^r*u-73)/49",
+    "B_identity": "7*B(x)-5=(9/16)*(7*x-5)",
+    "congruences": [
+      "u*81^r=108 mod 16^s",
+      "u*32^r=73 mod 49"
+    ],
+    "lower_bound": "u>=4",
+    "u_definition": "u=(49*x+73)/32^r",
+    "valuation": "v2(u)=2"
+  },
+  "proves_collatz": false,
+  "sign_identity": {
+    "core_equivalence": "F_(r,s)(x)<x iff u*(Q-P)>108*(16^s-9^s)",
+    "left": "49*Q*(F_(r,s)(x)-x)",
+    "right": "32^r*(u*(P-Q)+108*(16^s-9^s))"
+  },
+  "what_this_result_does_not_prove": "C02 does not cover arbitrary words over {A,B}, noncontracting A^rB^s prefixes, H54, H57, or the Collatz conjecture."
+}

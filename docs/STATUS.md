@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-22
+**Last updated:** 2026-08-23
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -10,6 +10,9 @@ disproved by this repository.
 - `VERIFIED_THEOREM`: the exact affine-cylinder identities and the symbolic
   algebra used by the certificate rules can be reconstructed with integer or
   rational arithmetic.
+- `VERIFIED_THEOREM`: C02 now proves exact descent for every positive integral
+  contracting realization of the ordered family `A^rB^s`, using six internal
+  CRT cases and the isolated external gap theorem EXT05.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -40,6 +43,13 @@ No item above proves the Collatz conjecture.
   Under external Denjoy--Koksma, exact consequences force 31,327,720,462
   contacts and 889,748,829 genuine `h=12` pairs. The exact finite alphabet has
   87,015 macros, and selected fixed layers contain `1,2,7,312455` words.
+- Phase 8: under P58, X02, EXT04, and the Phase 7 certificates, exact counting
+  gives at most 5 octave exceptions, at least 31,327,720,457 first-octave odd
+  iterates, 889,748,819 first-octave `h=12` pairs, and 7,308,576,455
+  first-octave consecutive returns of odd gap at most 2. The C03 falsification
+  search reconstructs all 79,184 contracting `{A,B}` words through block
+  length 18 (79,166 mixed) and 12,265 first block-boundary crossings through
+  length 22, with no counterexample.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -57,6 +67,10 @@ audit: deleting `{1,11,20,26}` leaves a DAG, first returns have length at most
 Phase 7 adds the strongest large-`q` conditional consequence, but it depends
 on external computational evidence and Denjoy--Koksma. It does not supersede
 the internally verified Phase 6 finite barrier range.
+
+Phase 8 closes C02 as a genuine theorem for the ordered contracting family
+`A^rB^s`. This is the strongest new universal block result, but it covers only
+one ordering family and therefore does not supersede the P54 barrier route.
 
 ## Strongest conditional route
 
@@ -77,6 +91,9 @@ No asymptotic lower bound is known for the least coefficient-safe
 representative `M(k)`. Phase 7 narrows the missing statement: no `q`-uniform
 inequality is known that prevents a high affine correction `B` from coexisting
 with an unusually small least positive inverse-parity residue.
+Phase 8 shows that even many exact first-octave returns do not yet supply a
+well-founded rank for arbitrary interleavings of the four short-return maps or
+the block alphabet `{A,B}`; C03 remains `OPEN`.
 The needed result must dominate `H_q`; the contextual estimate
 `H_q = O(q^5.117)` depends on an external Diophantine estimate and is not an
 input to current certificates.
@@ -88,6 +105,9 @@ input to current certificates.
 - Derive recursive or meet-in-the-middle lower bounds for `M(k)`.
 - Explain small `M(k)` using moving rational shadows of unbounded height and
   simultaneous 2-adic/3-adic constraints.
+- Seek a common well-founded potential for the partial integer block system
+  `A:32u->81u`, `B:16u+108->9u+108`, beginning with an adversarial audit of
+  arbitrary interleavings rather than only `A^rB^s`.
 - Extend exact certificates only when testing a precise structural conjecture.
 - Revisit predecessor-tree density only with a bridge from global density to a
   single least counterexample.
@@ -148,4 +168,5 @@ input to current certificates.
 - Prioritized program: [`ROADMAP.md`](ROADMAP.md)
 - Phase 6 acceptance: [`../PHASE6_RUN_RESULTS.md`](../PHASE6_RUN_RESULTS.md)
 - Phase 7 acceptance: [`../PHASE7_RUN_RESULTS.md`](../PHASE7_RUN_RESULTS.md)
+- Phase 8 acceptance: [`../PHASE8_RUN_RESULTS.md`](../PHASE8_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

@@ -1,0 +1,89 @@
+{
+  "E13": {
+    "conditional_dependencies": [
+      "P58",
+      "X02",
+      "EXT04",
+      "Phase 7 contact certificates"
+    ],
+    "exception_damage": {
+      "adjacent_gaps_per_exception": 2,
+      "contacts": 1,
+      "h12_pairs_per_exception": 2
+    },
+    "first_octave_consecutive_contact_gap_at_most_2_lower": 7308576455,
+    "first_octave_odd_iterates_lower": 31327720457,
+    "h12_first_octave_pairs_lower": 889748819,
+    "raw_consecutive_contact_gap_at_most_2_lower": 7308576465,
+    "repository_status": "VERIFIED_FINITE"
+  },
+  "P58": {
+    "assumptions": [
+      "least positive counterexample N",
+      "first coefficient crossing",
+      "d_j is the j-th odd position"
+    ],
+    "definitions": {
+      "R_j": "B_j/3^j=(1/3)*sum_(i<j) 2^(-theta_i-a_i)",
+      "x_j": "T^(d_j)(N)"
+    },
+    "identities": [
+      "x_j=2^(theta_j+a_j)*(N+R_j)",
+      "R_(j+1)=R_j+(1/3)*2^(-theta_j-a_j)",
+      "0<=R_j<=j/3",
+      "2^a_j*N<=x_j<2^(a_j+1)*(N+j/3)"
+    ],
+    "proves_collatz": false,
+    "repository_status": "CONDITIONAL"
+  },
+  "constants": {
+    "K0": 114208327604,
+    "V": 2392312122059207475200,
+    "q0": 72057431991
+  },
+  "denjoy_koksma": {
+    "continued_fraction_denominator_blocks": [
+      6586818670,
+      65470613321
+    ],
+    "dependency": "EXT04",
+    "error_per_block": 2,
+    "indicator_circle_variation": 2,
+    "maximum_integer_exception_count": 5,
+    "sum": 72057431991,
+    "total_error": 4
+  },
+  "eta": {
+    "definition": "log2(1+q0/(3V))",
+    "lower": [
+      "1677231899991215252154778442146901620197438363667226014066661496487",
+      "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+    ],
+    "q0_times_eta_strictly_below_2": true,
+    "q0_times_eta_upper": [
+      "120857023566752706529584863800673291528744626882365463864234470123674402779599",
+      "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+    ],
+    "upper": [
+      "1677231899991215252154778442146901620197438363667226014066661496489",
+      "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+    ]
+  },
+  "exception_localization": {
+    "derivation": "x_j>=2^(a_j+1)N implies theta_j>=1-log2(1+R_j/N)>=1-eta",
+    "statement": "a_j can differ from floor(log2(x_j/N)) only if fractional_part(j*log2(3)) lies in [1-eta,1)"
+  },
+  "external_inputs": {
+    "EXT04_Denjoy_Koksma_reproved": false,
+    "X02_N_greater_than_V_reproved": false
+  },
+  "format": "collatz-phase8-octave-bridge-v1",
+  "phase7_dependencies": {
+    "h12_nonwrapping_pairs": 889748829,
+    "minimum_contacts": 31327720462,
+    "phase7_boundary_defect_sha256": "44c6ab7c6d58314e59b3d8d2000d376b44c835b001be64f9468de94ece5ea252",
+    "phase7_contact_autocorrelation_sha256": "eb96fef01b7e09b8ee9551e3ae1b9736d07b0aa1a8cf93b9ac16ff3b820cdae5"
+  },
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The octave counts are conditional numerical consequences. They do not force descent, forbid all short-excursion concatenations, or prove Collatz."
+}

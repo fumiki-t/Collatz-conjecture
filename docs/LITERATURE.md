@@ -1,6 +1,6 @@
 # Annotated literature
 
-**Metadata last checked:** 2026-08-22. Links below point to publishers, DOI
+**Metadata last checked:** 2026-08-23. Links below point to publishers, DOI
 records, author-hosted copies, or arXiv. An `EXTERNAL_THEOREM` label means the
 result is external to this repository; it does not mean its proof has been
 independently reproduced here.
@@ -156,12 +156,31 @@ sequences,” *Discrete Mathematics* **349** (2026), 115167.
 version 5 dated 2026-05-17).
 
 **Result relevant here.** Connections among coefficient stopping, finite
-paradoxical sequences, and the Collatz conjecture.
+paradoxical sequences, and the Collatz conjecture. Phase 8 uses the exact
+statement of Lemma B.1: for positive `k,q` with `q>12`,
+`|2^k-3^q|>(64/25)^q/2`.
 
 **Repository role.** Motivation for the critical-prefix language. The paper's
 empirical suggestion of finiteness is not imported as a theorem, and it is not
 an input to Phase 6 certificates. Phase 7 records substantial overlap with its
-paradoxical-sequence and continued-fraction setting.
+paradoxical-sequence and continued-fraction setting. Phase 8 isolates Lemma
+B.1 as EXT05 and applies it only with exponent `q>=30`; therefore the C02 proof
+does not use the paper's separate finite check for `13<=q<=18`.
+
+### Ellison (1971)
+
+**Status:** `EXTERNAL_THEOREM`; indirect dependency through EXT05
+
+W. J. Ellison, “On a theorem of S. Sivasankaranarayana Pillai,” *Séminaire de
+Théorie des Nombres de Bordeaux* (1971), 1–10.
+
+**Result relevant here.** Rozier--Terracol derive the `q>18` part of Lemma B.1
+from their cited form of Ellison's Theorem 3.
+
+**Repository role.** The repository does not independently rederive
+Rozier--Terracol's reduction or Ellison's theorem. It records this dependency
+chain explicitly; Phase 8 verifies only that its own exponents lie in the
+`q>=30` regime and that the subsequent rational inequalities are exact.
 
 ### Niu (2026; withdrawn)
 
@@ -256,5 +275,5 @@ is still required for:
    to the positive-integer least-counterexample setting;
 2. the derivation, exponent rounding, and effective constants in converting
    Wu–Wang to the contextual `H_q = O(q^5.117)` statement;
-3. the exact theorem from Rozier–Terracol (2026) that is actually needed, as
-   distinct from the paper's empirical finiteness language.
+3. the complete proof chain from Ellison's Theorem 3 to Rozier--Terracol Lemma
+   B.1 if EXT05 ever becomes part of a claimed full Collatz proof.

@@ -1,0 +1,36 @@
+{
+  "C02": "VERIFIED_THEOREM",
+  "C03": "OPEN",
+  "c02": {
+    "base_cases": 6,
+    "external_minimum_nu": 30
+  },
+  "external_inputs_reproved": {
+    "EXT04": false,
+    "EXT05": false,
+    "X02": false
+  },
+  "octave": {
+    "first_octave_odd_iterates": 31327720457,
+    "h12_pairs": 889748819,
+    "maximum_exceptions": 5,
+    "short_returns": 7308576455
+  },
+  "proves_collatz": false,
+  "semigroup": {
+    "contracting_maximum_length": 18,
+    "contracting_words": 79184,
+    "counterexamples": 0,
+    "crossing_maximum_length": 22,
+    "first_crossings": 12265,
+    "minimum_descent_margin": 1,
+    "minimum_margin_word": "B",
+    "minimum_mixed_descent_margin": 1249,
+    "minimum_mixed_margin_word": "BBA",
+    "mixed_contracting_words": 79166
+  },
+  "short_excursions": {
+    "maps": 4
+  },
+  "valid": true
+}

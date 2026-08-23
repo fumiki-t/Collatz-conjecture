@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–7 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–8 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -416,7 +416,67 @@ counterexample, prove an eventual lower bound for `M(k)`, or prove the Collatz
 conjecture. The main bottleneck is now stated more precisely: high correction
 must be linked to a sufficiently large least positive inverse-parity residue.
 
-## 11. Predecessor-tree and density detour
+## 11. Phase 8 — contracting mixed blocks and octave bridge
+
+**Branch:** `feat/phase8-mixed-block-octave`
+
+**Acceptance record:** [`PHASE8_RUN_RESULTS.md`](PHASE8_RUN_RESULTS.md)
+
+Phase 8 first closes the ordered mixed family left open in Phase 7. For an
+integral realization of `F_(r,s)=B^s composed with A^r`, the exact coordinate
+`u=(49x+73)/32^r` satisfies `v2(u)=2`, `u>=4`, and two CRT congruences. Direct
+expansion reduces strict descent to
+
+```text
+u*(Q-P)>108*(16^s-9^s).
+```
+
+Elementary inequalities and six exact CRT base cases cover the small regimes.
+The remaining `r>=4`, `1/2<P/Q<1` regime uses EXT05, the exact power-gap bound
+in Rozier--Terracol Lemma B.1. Its application begins at exponent 30, so it
+does not use that paper's finite check for exponents 13 through 18.
+
+**Status:** C02 changed from `CONJECTURE` to `VERIFIED_THEOREM`. This proves
+descent for every contracting ordered `A^rB^s` realization, not arbitrary
+interleavings.
+
+### Conditional octave consequences
+
+Under the Phase 7 least-counterexample and first-crossing framework, the exact
+normalization
+
+```text
+x_j=2^(theta_j+a_j)*(N+R_j),  0<=R_j<=j/3
+```
+
+connects boundary defect `a_j` to the actual octave of the odd iterate. Exact
+rational logarithm bounds prove `q0*eta<2`; after the two Denjoy--Koksma blocks,
+the integer exception count is at most 5. Consequently, under P58, X02, EXT04,
+and the Phase 7 contact certificates, at least 31,327,720,457 odd iterates,
+889,748,819 nonwrapping `h=12` pairs, and 7,308,576,455 consecutive short
+returns have the stated first-octave property.
+
+The short returns have exactly four maps:
+`(3x+1)/2`, `(3x+1)/4`, `(9x+5)/8`, and `(9x+5)/16`. Their source intervals and
+endpoint parity constraints are verified, but no global rank follows from the
+alphabet.
+
+### C03 bounded falsification
+
+The arbitrary-block conjecture C03 remains `OPEN`. Exact enumeration through
+block length 18 finds no counterexample among 79,184 contracting words. Of
+these, 79,166 contain both `A` and `B`; the difference consists of the 18 pure
+words `B^n`. The smallest mixed descent margin is 1,249 at `BBA`. A separate
+first-block-boundary crossing enumeration through length 22 reconstructs
+12,265 words with the specified length distribution.
+
+### What this result does not prove
+
+The bounded C03 search does not prove C03. The octave consequences retain
+their explicit conditional and external inputs. Phase 8 supplies neither an
+eventual lower bound for `M(k)` nor a proof of the Collatz conjecture.
+
+## 12. Predecessor-tree and density detour
 
 Strong external results count many predecessors or show descent for almost all
 starting values. A naive attempt to combine those densities with a least
@@ -427,7 +487,7 @@ designated exceptional integer or its thin arithmetic cylinder.
 would need an explicit transport, invariance, or intersection theorem for the
 least-counterexample set.
 
-## 12. Numerical consistency audit
+## 13. Numerical consistency audit
 
 The canonical figures above were resolved using this priority:
 
@@ -446,8 +506,11 @@ scopes:
   legacy labels were underspecified and are not universal theorem claims.
 - `H_q=O(q^5.117)` is contextual external arithmetic, not a verified internal
   result.
+- The Phase 8 values 79,184 and 79,166 count all contracting `{A,B}` words and
+  only genuinely mixed words, respectively; the 18-word difference is the
+  pure family `B^n` for lengths 1 through 18.
 
-## 13. Current strategy
+## 14. Current strategy
 
 The primary target is
 
@@ -458,7 +521,9 @@ M(K_q-1)>H_q\qquad\text{for all sufficiently large }q.
 Highest-priority directions are a deterministic separation between high affine
 correction and small inverse-parity representatives, recursive lower bounds for
 `M(k)`, and arithmetic structure at continued-fraction/`H_q` records. Phase 7
-shows that contact density and a finite macro alphabet alone are insufficient.
+shows that contact density and a finite macro alphabet alone are insufficient;
+Phase 8 additionally shows that exact octave localization and ordered-block
+descent do not yet control arbitrary block interleavings.
 Exact certificate extension remains useful for the finite remainder and for
 testing structural conjectures, but it is not the missing theorem.
 
@@ -466,7 +531,7 @@ Bounded finite-state and modular searches are now primarily falsification
 tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A`, `B`, and `A^rB^s`.
 
-## 14. Reproduction and immutable evidence
+## 15. Reproduction and immutable evidence
 
 - Phase 1–2: [`RUN_RESULTS.md`](RUN_RESULTS.md)
 - Phase 3: [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
@@ -474,19 +539,22 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Phase 5: [`PHASE5_RUN_RESULTS.md`](PHASE5_RUN_RESULTS.md)
 - Phase 6: [`PHASE6_RUN_RESULTS.md`](PHASE6_RUN_RESULTS.md)
 - Phase 7: [`PHASE7_RUN_RESULTS.md`](PHASE7_RUN_RESULTS.md)
+- Phase 8: [`PHASE8_RUN_RESULTS.md`](PHASE8_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
-The SHA-256 of `artifacts/SHA256SUMS` after Phase 7 is
-`aef9a88fa3af838e2625b80cafb18dee3274df8d1123a1aaf6379320f1be39df`.
+The current manifest hash is recorded in the latest phase acceptance report.
 Generated JSON/CSV/certificates must be regenerated, not hand edited.
 
-## 15. Current one-paragraph handoff
+## 16. Current one-paragraph handoff
 
 Phases 1–5 built a robust exact-computation framework and showed why bounded
 state, fixed period, fixed shadow, and finite mixed-modulus mechanisms leave
 large unresolved families. Phase 6 supplies the direct reduction
 `M(K_q-1) <= N <= H_q`; Phase 7 derives exact boundary-defect contact pressure
 but finds immediate counterexamples inside the resulting finite macro
-alphabet. Exact certificates cover substantial finite ranges, yet no eventual
-lower bound for `M(k)` is known. Future work should target a rigorous
-high-correction/least-positive-residue separation, not merely greater depth.
+alphabet. Phase 8 proves descent for every contracting ordered `A^rB^s` word
+and localizes almost all certified contacts to the first octave, yet arbitrary
+interleavings remain open. Exact certificates cover substantial finite ranges,
+but no eventual lower bound for `M(k)` is known. Future work should target a
+rigorous high-correction/least-positive-residue separation or a well-founded
+arbitrary-block potential, not merely greater depth.

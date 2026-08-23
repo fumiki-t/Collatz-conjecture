@@ -86,6 +86,30 @@ fixed-height, or four-center version; verify that the proposal also handles
 **Success criterion.** A proved lower bound on required shadow height that
 translates into an explicit lower bound for `M(k)` or a direct contradiction.
 
+## P2 — Arbitrary contracting mixed blocks
+
+**Target.** Resolve C03 for arbitrary finite words in `{A,B}*`, or find its
+smallest exact counterexample.
+
+**Why this helps Collatz.** Phase 8 proves descent for every contracting
+ordered word `A^rB^s`, but contact-return paths can interleave blocks. A common
+potential for all contracting interleavings would control a broader mandatory
+adversarial mechanism, though it would not by itself cover every Collatz word.
+
+**Missing theorem.** A well-founded rank, modular separation, or endpoint
+inequality for the partial integer dynamics
+`A:32u->81u`, `B:16u+108->9u+108`. Exact search through block length 18 has no
+counterexample, but finite survival cannot establish C03.
+
+**Fast falsification test.** Preserve the exact Phase 8 enumeration, whose
+79,184 contracting words include 79,166 genuinely mixed words, and test any
+candidate potential first on `BBA`, the minimum mixed-margin record, as well
+as long near-critical `A^rB^s` words and Phase 7 macro id 0.
+
+**Success criterion.** A symbolic proof accepted independently for every
+finite word, or an exact positive integral counterexample with its full parity
+and affine certificate.
+
 ## P2 — Extend exact barrier certificates
 
 **Target.** Extend independently verified coverage beyond `q=4960` and replace
