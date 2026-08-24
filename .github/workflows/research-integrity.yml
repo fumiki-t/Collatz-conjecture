@@ -1,0 +1,52 @@
+name: Research integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fast-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Compile research code
+        run: python -m compileall -q src verifier scripts
+      - name: Audit registry, claims, and artifacts
+        run: python scripts/research_health.py --strict
+      - name: Check generated claims index
+        run: python scripts/build_claim_index.py --check
+      - name: Run control-plane and latest tamper tests
+        run: >-
+          python -m pytest -q
+          tests/test_research_health.py
+          tests/test_phase12_verifier.py
+      - name: Verify tracked artifact manifest
+        working-directory: artifacts
+        run: sha256sum --check SHA256SUMS
+
+  full-acceptance:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Run complete repository suite
+        run: python -m pytest -q

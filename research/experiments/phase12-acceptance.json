@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "phase12-acceptance",
+  "status": "ACCEPTED",
+  "claim_ids": ["P72", "P73", "E20", "NG21", "H72"],
+  "objective": "Reconstruct the Phase 12 odd-orbit packing boundary, finite audit, all-contact exclusion, and mod-6-only obstruction without promoting them to a Collatz proof.",
+  "exact_scope": {
+    "quantifiers": [
+      "all S congruent to 3 modulo 4 with 3 <= S <= 100000 for E20",
+      "all 2144 generated mandatory adversarial instances",
+      "the first 512 odd positions of the all-contact mechanical word",
+      "the first 4096 terms of the exact abstract coprime-to-6 saturator"
+    ],
+    "bounds": {
+      "start_bound": 100000,
+      "max_odd": 96,
+      "contact_q": 512,
+      "adversarial_instances": 2144,
+      "packing_obstruction_terms": 4096
+    },
+    "completeness": "Exhaustive only over the stated finite domains; P72 and P73 use the separate symbolic argument recorded in PHASE12_RUN_RESULTS.md."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "No floating-point value is accepted as a proof decision."
+  },
+  "commands": {
+    "generator": [
+      ".venv/bin/python src/phase12_search.py --artifact-dir artifacts --start-bound 100000 --max-odd 96 --contact-q 512"
+    ],
+    "verifier": [
+      ".venv/bin/python verifier/verify_phase12.py --artifact-dir artifacts --output artifacts/phase12_verifier.json"
+    ],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase12_properties.py tests/test_phase12_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "ordinary shortcut orbit normalization",
+      "finite audit row digests",
+      "mandatory adversarial family enumeration",
+      "mechanical-prefix residues",
+      "packing-obstruction rows"
+    ],
+    "forbidden_imports": ["src.phase12_search", "from src", "import src"],
+    "tamper_tests": [
+      "tests/test_phase12_verifier.py"
+    ]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s"
+  ],
+  "artifacts": [
+    "artifacts/phase12_all_contact.json",
+    "artifacts/phase12_finite_orbits.json",
+    "artifacts/phase12_obstruction_report.md",
+    "artifacts/phase12_packing_obstruction.json",
+    "artifacts/phase12_packing_theorem.json",
+    "artifacts/phase12_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Stop and record the least exact obstruction if a symbolic identity, digest, or adversarial reconstruction fails.",
+    "Do not enlarge the finite range to compensate for a failed universal statement.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "P72 does not exclude every infinite coefficient-safe tail.",
+    "P73 excludes only the all-contact mechanical word.",
+    "E20 is a bounded audit and is not asymptotic evidence.",
+    "NG21 is an abstract non-orbit obstruction and does not prove dynamic optimality of exponent 1/9.",
+    "The nontrivial-cycle and finite-crossing renewal-ladder branches remain open."
+  ],
+  "recorded_result": {
+    "commit": "d589f69e46ab5a8ae2ad273e9f909dbe4d038cf3",
+    "full_tests": "199 passed",
+    "manifest_sha256": "17f7a3ecd7783156a8ad3263e31d12e7ef8121fb71909f3fed4f3ac5e8c95d9e",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

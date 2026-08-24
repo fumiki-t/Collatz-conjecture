@@ -115,6 +115,21 @@ hypothesis
 
 Run counterexample searches before investing heavily in a proof attempt.
 
+Before a large or acceptance-bound computation, create or update a manifest
+under `research/experiments/` conforming to
+`research/schemas/experiment.schema.json`. The manifest is an operational
+contract, not mathematical evidence: the exact claim statement and status
+remain canonical in `docs/CLAIMS_LEDGER.md`.
+
+Use `research/registry.json` to select an active obligation and scoped context
+pack. Run `scripts/research_health.py --strict` from a clean worktree before
+acceptance. A registry/ledger mismatch or an unexplained untracked file under
+`artifacts/` must be resolved rather than ignored.
+
+`research/claims-index.json` is generated from the ledger for AI retrieval.
+After changing the ledger, run `scripts/build_claim_index.py --write`; never
+edit the generated index by hand or treat it as a second claim authority.
+
 ## 7. Mandatory adversarial regression set
 
 All universal mechanisms should be tested against:
@@ -243,6 +258,10 @@ Every acceptance artifact set should have a SHA-256 manifest.
 Large disposable exploratory outputs should not be committed unless they are
 needed to reproduce a published claim.
 
+Exploratory files must not be left beside accepted evidence without an
+explicit ignore, quarantine, or experiment-manifest decision. The strict
+research-health check treats unexplained untracked artifact files as errors.
+
 ## 14. Human/AI handoff
 
 Before ending a major research session, ensure `docs/STATUS.md` answers:
@@ -258,6 +277,11 @@ What should not be attempted again without new information?
 ```
 
 A new researcher should not need the original ChatGPT conversation.
+
+For a primary obligation with a context pack under `docs/context/`, update the
+pack when its target, dependencies, fastest falsifier, or acceptance boundary
+changes. Context packs are scoped caches; they never override the claims
+ledger or phase proof record.
 
 ## 15. Current strategic rule
 

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "status": "OPEN",
+    "proves_collatz": false,
+    "latest_phase": 12,
+    "claim_source": "docs/CLAIMS_LEDGER.md",
+    "claim_index": "research/claims-index.json"
+  },
+  "canonical_documents": [
+    "README.md",
+    "AGENTS.md",
+    "docs/INDEX.md",
+    "docs/STATUS.md",
+    "docs/CLAIMS_LEDGER.md",
+    "docs/FAILED_APPROACHES.md",
+    "docs/LITERATURE.md",
+    "docs/ROADMAP.md",
+    "docs/HANDOFF.md",
+    "docs/AI_RESEARCH_GUIDE.md",
+    "RESEARCH_HISTORY.md"
+  ],
+  "latest_acceptance": {
+    "phase": 12,
+    "report": "PHASE12_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase12_verifier.json",
+    "expected_verifier_fields": {
+      "valid": true,
+      "proves_collatz": false
+    },
+    "experiment_manifest": "research/experiments/phase12-acceptance.json"
+  },
+  "active_obligations": [
+    {
+      "id": "H54",
+      "status": "OPEN",
+      "priority": "P0",
+      "context": "docs/context/H54.md",
+      "depends_on": ["P54", "E08", "E09", "E10"],
+      "success_scope": "Close the Phase 6 least-counterexample route only after an eventual bound and an independently checked finite remainder."
+    },
+    {
+      "id": "H70",
+      "status": "OPEN",
+      "priority": "P0",
+      "context": "docs/context/H70.md",
+      "depends_on": ["P69", "P70", "P71", "E18", "NG19", "NG20"],
+      "success_scope": "Eliminate only the finite-crossing renewal-ladder branch of P69."
+    },
+    {
+      "id": "H72",
+      "status": "OPEN",
+      "priority": "P0",
+      "context": "docs/context/H72.md",
+      "depends_on": ["P69", "P72", "P73", "E20", "NG21"],
+      "success_scope": "Eliminate only the infinite coefficient-safe-tail branch of P69."
+    },
+    {
+      "id": "C04",
+      "status": "OPEN",
+      "priority": "P1",
+      "depends_on": ["P60", "P63", "NG17"],
+      "success_scope": "Exclude the conditional q0 near-diagonal residue; this is not a full Collatz proof."
+    },
+    {
+      "id": "C05",
+      "status": "OPEN",
+      "priority": "P1",
+      "depends_on": ["P64", "P66", "P67", "P68", "P71", "NG18", "NG19", "NG20"],
+      "success_scope": "Exclude positive q0 gaps under the inherited conditional framework."
+    },
+    {
+      "id": "C03",
+      "status": "OPEN",
+      "priority": "P2",
+      "depends_on": ["C02", "E07", "NG09"],
+      "success_scope": "Resolve contracting mixed A/B interleavings only; this does not cover every Collatz word."
+    }
+  ],
+  "watch_claims": [
+    "P54",
+    "P69",
+    "P70",
+    "P71",
+    "P72",
+    "P73",
+    "E18",
+    "E19",
+    "E20",
+    "NG20",
+    "NG21"
+  ],
+  "mandatory_adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s"
+  ]
+}

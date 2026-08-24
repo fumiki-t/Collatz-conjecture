@@ -283,6 +283,10 @@ larger finite range. P73 removes only the all-contact extremal word.
 
 - Start with [`AI_RESEARCH_GUIDE.md`](AI_RESEARCH_GUIDE.md) and run
   `scripts/research_health.py` before modifying research code.
+- Select one obligation from `research/registry.json`, read its scoped context
+  pack when present, and register any large run under `research/experiments/`.
+- Run `scripts/research_health.py --strict` from a clean acceptance worktree;
+  untracked artifact warnings are not accepted evidence.
 - Formalize one precise candidate inequality for `M(k)` and search for its
   smallest exact counterexample before scaling.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
@@ -315,6 +319,9 @@ larger finite range. P73 removes only the all-contact extremal word.
 
 ## Immediate audit pointers
 
+- Machine-readable control plane: [`../research/registry.json`](../research/registry.json)
+- Experiment contract: [`../research/README.md`](../research/README.md)
+- Scoped AI contexts: [`context/README.md`](context/README.md)
 - Claim statuses: [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md)
 - Negative results: [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md)
 - Prioritized program: [`ROADMAP.md`](ROADMAP.md)

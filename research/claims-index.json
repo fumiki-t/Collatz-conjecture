@@ -1,0 +1,994 @@
+{
+  "claim_count": 72,
+  "claims": [
+    {
+      "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
+      "collatz_implication": "Supplies the exact language for all certificates; no descent theorem by itself.",
+      "dependencies": "Integer induction on shortcut steps.",
+      "dependency_ids": [],
+      "evidence": "`src/model.py`; independently reconstructed by `verifier/verify_certificate.py`; property tests.",
+      "first_introduced": "Pre-certificate / Phase 1",
+      "id": "E01",
+      "last_audited": "2026-08-22",
+      "notes": "Floating point is not used.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The Phase 1 depth-26 certificate has 190,069 `DESCENT`, 1,227,442 `SPLIT`, and 1,037,374 `OPEN` nodes, and agrees with literal iteration for all `2 <= n < 2^24`.",
+      "collatz_implication": "Verifies a bounded domain and leaves an explicit frontier.",
+      "dependencies": "E01; certificate rules.",
+      "dependency_ids": [
+        "E01"
+      ],
+      "evidence": "[`../RUN_RESULTS.md`](../RUN_RESULTS.md); independent verifier.",
+      "first_introduced": "Phase 1",
+      "id": "E02",
+      "last_audited": "2026-08-22",
+      "notes": "`proves_collatz=false`; 16,777,214 starts.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Find an unbounded arithmetic mechanism that closes or lower-bounds the generalized Ballot frontier of coefficient-safe words.",
+      "collatz_implication": "A sufficiently strong mechanism could control `M(k)`.",
+      "dependencies": "E01, E02.",
+      "dependency_ids": [
+        "E01",
+        "E02"
+      ],
+      "evidence": "[`../artifacts/phase3_obstruction_report.md`](../artifacts/phase3_obstruction_report.md).",
+      "first_introduced": "Phase 2",
+      "id": "H20",
+      "last_audited": "2026-08-22",
+      "notes": "Exact frontier identity is known at the represented depths; asymptotic closure is not. Legacy `H20` retained as a mnemonic, not a proved hypothesis.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "A dictionary of at least three prefix/suffix repetitions of blocks of length at most 16 explains every depth-26 survivor.",
+      "collatz_implication": "Rules out this fixed dictionary as universal proof language.",
+      "dependencies": "E02.",
+      "dependency_ids": [
+        "E02"
+      ],
+      "evidence": "[`../RUN_RESULTS.md`](../RUN_RESULTS.md).",
+      "first_introduced": "Phase 2",
+      "id": "NG04",
+      "last_audited": "2026-08-22",
+      "notes": "Representative 27; 123,908 unexplained survivors.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "The configured Phase 3 mixed search reconstructs exact binary/ternary splits and 43,198 reverse merges, leaving 79,350 `OPEN` records.",
+      "collatz_implication": "Adds valid local closure rules but not eventual closure.",
+      "dependencies": "E01; strict smaller-family dependency.",
+      "dependency_ids": [
+        "E01"
+      ],
+      "evidence": "[`../PHASE3_RUN_RESULTS.md`](../PHASE3_RUN_RESULTS.md); `verifier/verify_phase3.py`.",
+      "first_introduced": "Phase 3",
+      "id": "E03",
+      "last_audited": "2026-08-22",
+      "notes": "Smallest unresolved family starts at 27.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Bounded ternary refinement plus reverse merge is a standalone subcritical strategy.",
+      "collatz_implication": "Prevents promotion of Phase 3 growth to a proof route.",
+      "dependencies": "E03.",
+      "dependency_ids": [
+        "E03"
+      ],
+      "evidence": "[`../artifacts/phase3_obstruction_report.md`](../artifacts/phase3_obstruction_report.md).",
+      "first_introduced": "Phase 3",
+      "id": "NG07",
+      "last_audited": "2026-08-22",
+      "notes": "Unresolved counts 15,870 -> 31,740 -> 79,350.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Every positive orbit meets `2 mod 9`; every nontrivial cycle and divergent orbit meets `20 mod 27`.",
+      "collatz_implication": "Justifies the global relevance of the selected sections.",
+      "dependencies": "Monks et al.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 4 literature basis",
+      "id": "EXT01",
+      "last_audited": "2026-08-22",
+      "notes": "Not reproved in this repository.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "The configured Phase 4 mod-9 return system has a prefix-free Kraft-sum-one code, 52 templates, 10,335 closed records, and 23,785 `OPEN` records.",
+      "collatz_implication": "Exact finite return parametrization; no universal rank.",
+      "dependencies": "EXT01 for section relevance; exact return algebra internally reconstructed.",
+      "dependency_ids": [
+        "EXT01"
+      ],
+      "evidence": "[`../PHASE4_RUN_RESULTS.md`](../PHASE4_RUN_RESULTS.md); `verifier/verify_return9.py`.",
+      "first_introduced": "Phase 4",
+      "id": "E04",
+      "last_audited": "2026-08-22",
+      "notes": "Direct audit: 1,864,135 section elements.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Fixed return horizon or constants-only ranking on `1,5,21` closes every Phase 4 family.",
+      "collatz_implication": "Rules out the tested refill ranking.",
+      "dependencies": "E04.",
+      "dependency_ids": [
+        "E04"
+      ],
+      "evidence": "[`../artifacts/phase4_obstruction_report.md`](../artifacts/phase4_obstruction_report.md).",
+      "first_introduced": "Phase 4",
+      "id": "NG08",
+      "last_audited": "2026-08-22",
+      "notes": "`11 -> 20`, `47 -> 182`; smallest open family `47+18432t`.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "The Phase 5 mod-27 graph has 52 first-return templates, 108 labeled simple cycles, and exactly four noncontracting simple words; all other simple cycles have multiplier at most `27/32`.",
+      "collatz_implication": "Classifies the exact finite graph, not arbitrary shadow concatenations.",
+      "dependencies": "EXT01 for section relevance; finite graph enumeration.",
+      "dependency_ids": [
+        "EXT01"
+      ],
+      "evidence": "[`../PHASE5_RUN_RESULTS.md`](../PHASE5_RUN_RESULTS.md); `verifier/verify_phase5.py`.",
+      "first_introduced": "Phase 5",
+      "id": "E05",
+      "last_audited": "2026-08-22",
+      "notes": "Four words: `1`, `101`, `1101`, `011101`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "For positive 20-to-20 paths with no internal 20 or 26, `101` is the unique noncontracting simple path; every other such path is bounded by `(27x+46)/32 < x`.",
+      "collatz_implication": "Gives descent for one exact return class only.",
+      "dependencies": "E05; exact path decomposition and affine envelope.",
+      "dependency_ids": [
+        "E05"
+      ],
+      "evidence": "`artifacts/return20_domination.json`; independent Phase 5 verifier.",
+      "first_introduced": "Phase 5",
+      "id": "E06",
+      "last_audited": "2026-08-22",
+      "notes": "Does not rank arbitrary switching among sections.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The four Phase 5 simple-cycle shadow centers form a complete dictionary for all near-critical behavior.",
+      "collatz_implication": "Rules out fixed four-center completeness.",
+      "dependencies": "E05.",
+      "dependency_ids": [
+        "E05"
+      ],
+      "evidence": "[`../PHASE5_RUN_RESULTS.md`](../PHASE5_RUN_RESULTS.md).",
+      "first_introduced": "Phase 5 adversarial audit",
+      "id": "NG09",
+      "last_audited": "2026-08-22",
+      "notes": "`W=111011100` has `(729x+817)/512` and fixed point `-817/217`.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "The quantified bounded H5-A surrogate forces sufficient aligned repetition for the tested shadow rank.",
+      "collatz_implication": "Refutes only the configured surrogate.",
+      "dependencies": "E05; bounded beam definition.",
+      "dependency_ids": [
+        "E05"
+      ],
+      "evidence": "[`../PHASE5_RUN_RESULTS.md`](../PHASE5_RUN_RESULTS.md).",
+      "first_introduced": "Phase 5",
+      "id": "NG10",
+      "last_audited": "2026-08-22",
+      "notes": "2,141 counterexamples; legacy label `H5-A` was broader and underspecified.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Formulate and prove a switch-cost lemma valid for arbitrary precision and repetition count, or show no such lemma can control `M(k)`.",
+      "collatz_implication": "Could support a moving-shadow lower bound.",
+      "dependencies": "E05, NG09, E07.",
+      "dependency_ids": [
+        "E05",
+        "E07",
+        "NG09"
+      ],
+      "evidence": "[`../artifacts/phase5_obstruction_report.md`](../artifacts/phase5_obstruction_report.md).",
+      "first_introduced": "Phase 5",
+      "id": "H5B",
+      "last_audited": "2026-08-22",
+      "notes": "The bounded legacy `H5-B` test retains 80 candidates; it is not a theorem claim.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Eight exact `A^rB^s` record pairs with multiplier above one reduce the excess below `2^-13` through `r=184,s=297`.",
+      "collatz_implication": "Defeats fixed-margin and four-center bounded hypotheses over the tested records.",
+      "dependencies": "Exact affine composition for `A=11101`, `B=1100`.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/mod27_dangerous_cycles.json`; Phase 5/6 verifiers.",
+      "first_introduced": "Phase 5 adversarial addition",
+      "id": "E07",
+      "last_audited": "2026-08-22",
+      "notes": "Pairs: `(1,1),(2,3),(5,8),(18,29),(31,50),(44,71),(57,92),(184,297)`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Since the relevant logarithmic ratio is irrational, `A^rB^s` multipliers above one can approach one arbitrarily closely.",
+      "collatz_implication": "Rules out every fixed positive multiplier margin for this family.",
+      "dependencies": "Irrationality of `log 2/log 3`; density of irrational rotations; checked exact reduction.",
+      "dependency_ids": [],
+      "evidence": "Phase 5 verifier premises; named density theorem.",
+      "first_introduced": "Phase 5 adversarial addition",
+      "id": "EXT02",
+      "last_audited": "2026-08-22",
+      "notes": "The density theorem is not reproved here; finite records alone do not imply arbitrary closeness.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "Any indefinitely coefficient-safe positive path must generate rational shadow approximants of unbounded arithmetic height.",
+      "collatz_implication": "A quantitative version might force a lower bound for `M(k)`.",
+      "dependencies": "NG09, E07, exact bound `B_w <= q3^{q-1}`.",
+      "dependency_ids": [
+        "E07",
+        "NG09"
+      ],
+      "evidence": "Moving-shadow analysis in [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).",
+      "first_introduced": "Post-Phase 5",
+      "id": "C01",
+      "last_audited": "2026-08-22",
+      "notes": "No proved height-to-descent implication.",
+      "status": "CONJECTURE"
+    },
+    {
+      "claim": "If `N` is the least positive counterexample and its coefficient first crosses below one after `K_q` steps with `q` odd steps, then `M(K_q-1) <= N <= H_q`.",
+      "collatz_implication": "Converts an eventual `M>H_q` theorem plus finite checking into a route to Collatz.",
+      "dependencies": "Least counterexample; first-crossing hypothesis; definitions of `M`, `K_q`, `B_q^max`, `H_q`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE6_RUN_RESULTS.md`](../PHASE6_RUN_RESULTS.md); `verifier/verify_phase6.py`.",
+      "first_introduced": "Phase 6",
+      "id": "P54",
+      "last_audited": "2026-08-22",
+      "notes": "Legacy identifier `P54` is retained exactly. The hypotheses are not established by the verifier.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Exact scanning through `q=200000` finds 37 `H_q` record indices, ending at `q=190537`, `K_q=301994`, `floor(H_q)=710220447737`.",
+      "collatz_implication": "Selects the finite barrier cases requiring certificates.",
+      "dependencies": "Exact definitions in P54.",
+      "dependency_ids": [
+        "P54"
+      ],
+      "evidence": "`artifacts/Hq_records.csv`; Phase 6 verifier.",
+      "first_introduced": "Phase 6",
+      "id": "E08",
+      "last_audited": "2026-08-22",
+      "notes": "A finite record scan is not eventual record control.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Five binary-cylinder certificates prove 14 barrier-record inequalities and continuous coverage for every `94 <= q <= 4960`.",
+      "collatz_implication": "Excludes a finite range of first crossings.",
+      "dependencies": "P54; monotonicity of `M`; exact record maximality.",
+      "dependency_ids": [
+        "P54"
+      ],
+      "evidence": "`artifacts/M_lower_bound_certificates.json`; Phase 6 verifier.",
+      "first_introduced": "Phase 6",
+      "id": "E09",
+      "last_audited": "2026-08-22",
+      "notes": "Largest shared certificate: `M(232)>1358717`, 3,219 nodes.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Direct search through 1,500,000 determines `M(k)` exactly through `k=223` and finds 13 coefficient-stopping records.",
+      "collatz_implication": "Supplies exact early data and failures.",
+      "dependencies": "Exact shortcut iteration and exhaustive range.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/M_search_records.csv`; Phase 6 verifier.",
+      "first_introduced": "Phase 6",
+      "id": "E10",
+      "last_audited": "2026-08-22",
+      "notes": "Early barrier failures `(17,27),(29,27),(41,703)`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Thirty-five supplied record holders reproduce their stated dropping and coefficient-stopping times.",
+      "collatz_implication": "Conditionally extends evidence to `66 <= K_q <= 1005`; does not certify minimality.",
+      "dependencies": "External candidate list; internal recomputation of each entry.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/external_record_audit.csv`.",
+      "first_introduced": "Phase 6",
+      "id": "X01",
+      "last_audited": "2026-08-22",
+      "notes": "Global record minimality is not verified.",
+      "status": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "claim": "Wu–Wang give an effective irrationality-measure estimate for `log 3`.",
+      "collatz_implication": "Motivates a polynomial comparison scale for `H_q`.",
+      "dependencies": "Published paper.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 6 context",
+      "id": "EXT03",
+      "last_audited": "2026-08-22",
+      "notes": "The conversion to `H_q=O(q^5.117)`, constants, and exponent rounding are not internally audited or used by certificates.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "Prove `M(K_q-1)>H_q` for all sufficiently large `q`, then check every remaining finite case.",
+      "collatz_implication": "This is the current closest stated route to a full proof.",
+      "dependencies": "P54, a new eventual lower bound for `M(k)`, finite certificates.",
+      "dependency_ids": [
+        "P54"
+      ],
+      "evidence": "[`STATUS.md`](STATUS.md); [`ROADMAP.md`](ROADMAP.md).",
+      "first_introduced": "Phase 6",
+      "id": "H54",
+      "last_audited": "2026-08-22",
+      "notes": "No eventual lower bound for `M(k)` is known.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Naive intersection of predecessor abundance with almost-all forward descent controls a least counterexample.",
+      "collatz_implication": "Prevents an invalid density shortcut.",
+      "dependencies": "External density theorems.",
+      "dependency_ids": [],
+      "evidence": "[`FAILED_APPROACHES.md`](FAILED_APPROACHES.md).",
+      "first_introduced": "Post-Phase 6 strategy audit",
+      "id": "NG12",
+      "last_audited": "2026-08-22",
+      "notes": "Missing bridge from global density to one exceptional arithmetic set.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Early strong “mountain,” lower-bound, and kernel-map claims applied universally.",
+      "collatz_implication": "No valid Collatz implication remains.",
+      "dependencies": "Unchecked computation, cycle-only assumptions, or unproved equivalence.",
+      "dependency_ids": [],
+      "evidence": "[`FAILED_APPROACHES.md`](FAILED_APPROACHES.md).",
+      "first_introduced": "Pre-certificate",
+      "id": "RET01",
+      "last_audited": "2026-08-22",
+      "notes": "Exact early wording/counterexamples were not preserved; withdrawal is complete.",
+      "status": "RETRACTED"
+    },
+    {
+      "claim": "Under the least-positive-counterexample and first-crossing assumptions, the boundary-defect variables satisfy `S(a)>=3N delta` and `W(C)>=6N delta-S0`.",
+      "collatz_implication": "Converts endpoint non-descent into contact pressure; does not exclude the boundary path.",
+      "dependencies": "E01; least counterexample; first crossing; exact definitions of `a_j,w_j,S0,C`.",
+      "dependency_ids": [
+        "E01"
+      ],
+      "evidence": "[`../PHASE7_RUN_RESULTS.md`](../PHASE7_RUN_RESULTS.md); `verifier/verify_phase7.py`.",
+      "first_introduced": "Phase 7",
+      "id": "P57",
+      "last_audited": "2026-08-22",
+      "notes": "The symbolic algebra uses no external theorem, but its hypotheses are not established.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "A least positive Collatz counterexample, if one exists, exceeds `2075*2^60`.",
+      "collatz_implication": "Supplies the numerical scale for the first-crossing/contact certificate.",
+      "dependencies": "External exhaustive computation.",
+      "dependency_ids": [],
+      "evidence": "Phase 7 specification; isolated in `artifacts/phase7_boundary_defect.json`.",
+      "first_introduced": "Phase 7",
+      "id": "X02",
+      "last_audited": "2026-08-22",
+      "notes": "Global computation and provenance are not reproduced here.",
+      "status": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "claim": "Denjoy--Koksma bounds bounded-variation rotation sums at continued-fraction denominators.",
+      "collatz_implication": "Converts P57 into explicit contact and autocorrelation bounds under X02.",
+      "dependencies": "Classical theorem.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); exact denominator premises checked by the Phase 7 verifier.",
+      "first_introduced": "Phase 7",
+      "id": "EXT04",
+      "last_audited": "2026-08-22",
+      "notes": "The special case is not reproved in this repository.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "Exact rational enclosures and Farey-neighbor arithmetic certify `(q0,K0)=(72057431991,114208327604)` as the first possible crossing pair after X02; under EXT04 the contact lower bound is 31,327,720,462 and the genuine `h=12` pair lower bound is 889,748,829.",
+      "collatz_implication": "Forces a rigid finite scenario for a hypothetical least counterexample.",
+      "dependencies": "P57, X02, EXT04; exact log enclosures.",
+      "dependency_ids": [
+        "EXT04",
+        "P57",
+        "X02"
+      ],
+      "evidence": "`artifacts/phase7_symbolic_verifier.json`; `verifier/verify_phase7.py`.",
+      "first_introduced": "Phase 7",
+      "id": "E11",
+      "last_audited": "2026-08-22",
+      "notes": "The exact consequence is verified; the two named inputs remain external. No giant powers are constructed.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The Phase 7 exact contact-return alphabet has 13 mechanical factors and 87,015 12-odd macros; fixed layers `q=1,3,5,17` contain `1,2,7,312455` words with distinct 2-adic residues.",
+      "collatz_implication": "Supplies finite obstruction data but no uniform descent or residue bound.",
+      "dependencies": "Exact integer/rational enumeration and inverse-parity arithmetic.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase7_macro12.json`; `artifacts/phase7_arithmetic_frontier.json`; independent verifier.",
+      "first_introduced": "Phase 7",
+      "id": "E12",
+      "last_audited": "2026-08-22",
+      "notes": "Full artifact rows are reconstructed; tampered affine data are rejected by tests.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every 12-odd contact-return macro has multiplier below one.",
+      "collatz_implication": "Rules out uniform contraction of the finite macro alphabet.",
+      "dependencies": "E12.",
+      "dependency_ids": [
+        "E12"
+      ],
+      "evidence": "`artifacts/phase7_macro12.json`.",
+      "first_introduced": "Phase 7",
+      "id": "NG14",
+      "last_audited": "2026-08-22",
+      "notes": "Smallest stored counterexample is macro 0, word `1111111111110000000`, with multiplier `3^12/2^19>1`.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Every 12-odd contact-return macro decomposes into the four Phase 5 dangerous words.",
+      "collatz_implication": "Rules out compulsory four-word decomposition as the universal obstruction.",
+      "dependencies": "E05, E12.",
+      "dependency_ids": [
+        "E05",
+        "E12"
+      ],
+      "evidence": "`artifacts/phase7_macro12.json`.",
+      "first_introduced": "Phase 7",
+      "id": "NG15",
+      "last_audited": "2026-08-22",
+      "notes": "Macro 0 is the smallest stored counterexample.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Every 12-odd contact-return macro is arithmetically unrealizable over positive integers.",
+      "collatz_implication": "Rules out local positive unrealizability as a universal obstruction.",
+      "dependencies": "E12; exact inverse-parity residue.",
+      "dependency_ids": [
+        "E12"
+      ],
+      "evidence": "`artifacts/phase7_macro12.json`.",
+      "first_introduced": "Phase 7",
+      "id": "NG16",
+      "last_audited": "2026-08-22",
+      "notes": "Macro 0 has a positive exact residue realization.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Prove a `q`-uniform inequality separating high affine correction `B` from a small least positive inverse-parity representative `r2`.",
+      "collatz_implication": "A strong effective form could yield the missing lower bound for `M(k)`.",
+      "dependencies": "P54, P57, E12.",
+      "dependency_ids": [
+        "E12",
+        "P54",
+        "P57"
+      ],
+      "evidence": "[`STATUS.md`](STATUS.md); [`ROADMAP.md`](ROADMAP.md).",
+      "first_introduced": "Phase 7",
+      "id": "H57",
+      "last_audited": "2026-08-22",
+      "notes": "Finite Pareto fronts show no monotone or universal tradeoff.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "For positive `k,q` with `q>12`, `|2^k-3^q|>(64/25)^q/2`.",
+      "collatz_implication": "Supplies the Diophantine gap in the remaining C02 regime only.",
+      "dependencies": "Rozier--Terracol (2026), Lemma B.1; its `q>18` part is derived there from Ellison (1971).",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); exact Phase 8 exponent substitution in `verifier/verify_phase8.py`.",
+      "first_introduced": "Phase 8",
+      "id": "EXT05",
+      "last_audited": "2026-08-23",
+      "notes": "Not reproved here. C02 uses `q>=30`, so it does not depend on the paper's finite `13<=q<=18` computation.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "For every `r,s>=1`, every positive integral realization of `B^s composed with A^r` descends when `3^(4r+2s)<2^(5r+4s)`.",
+      "collatz_implication": "Closes the contracting ordered family `A^rB^s`, one mandatory adversarial family.",
+      "dependencies": "Exact affine algebra; integrality congruences; EXT05; six exact CRT base cases.",
+      "dependency_ids": [
+        "EXT05"
+      ],
+      "evidence": "`artifacts/phase8_c02_theorem.json`; `verifier/verify_phase8.py`; [`../PHASE8_RUN_RESULTS.md`](../PHASE8_RUN_RESULTS.md).",
+      "first_introduced": "Phase 7",
+      "id": "C02",
+      "last_audited": "2026-08-23",
+      "notes": "Transition: `CONJECTURE -> VERIFIED_THEOREM`. Does not cover arbitrary `{A,B}*`, noncontracting prefixes, H54, H57, or Collatz.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Under the least-positive-counterexample and first-crossing assumptions, `x_j=2^(theta_j+a_j)(N+R_j)`, `0<=R_j<=j/3`, and the defect `a_j` is the octave index except at a localized rotation interval.",
+      "collatz_implication": "Connects Phase 7 defect contacts to actual orbit amplitude, conditionally.",
+      "dependencies": "Exact affine normalization; P57 framework; least-counterexample and first-crossing assumptions.",
+      "dependency_ids": [
+        "P57"
+      ],
+      "evidence": "`artifacts/phase8_octave_bridge.json`; independent Phase 8 verifier.",
+      "first_introduced": "Phase 8",
+      "id": "P58",
+      "last_audited": "2026-08-23",
+      "notes": "Does not establish the assumptions or force descent.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Under P58, X02, EXT04, and the Phase 7 contact certificates, at most 5 octave exceptions occur; hence at least 31,327,720,457 first-octave odd iterates, 889,748,819 first-octave `h=12` pairs, and 7,308,576,455 first-octave consecutive returns of odd gap at most 2 occur.",
+      "collatz_implication": "Gives a large conditional finite-amplitude constraint on a hypothetical least counterexample.",
+      "dependencies": "P58; X02; EXT04; E11; exact rational logarithm enclosure and integer counting.",
+      "dependency_ids": [
+        "E11",
+        "EXT04",
+        "P58",
+        "X02"
+      ],
+      "evidence": "`artifacts/phase8_octave_bridge.json`; `artifacts/phase8_short_excursions.json`; independent verifier.",
+      "first_introduced": "Phase 8",
+      "id": "E13",
+      "last_audited": "2026-08-23",
+      "notes": "The numerical deduction is exact, but its named inputs remain conditional/external. The four return maps alone have no proved global rank.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every positive integral realization of an arbitrary finite word in `{A,B}*` with multiplier below one descends.",
+      "collatz_implication": "A proof would extend C02 from ordered to arbitrary block interleavings, but would still not prove Collatz by itself.",
+      "dependencies": "Exact partial integer dynamics in `U=49x+73`; no general potential known.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase8_ab_semigroup_search.json`; independent enumeration through block length 18.",
+      "first_introduced": "Phase 8",
+      "id": "C03",
+      "last_audited": "2026-08-23",
+      "notes": "No counterexample among 79,184 contracting words through length 18 (79,166 mixed); finite survival is not a theorem. Minimum mixed margin 1,249 at `BBA`.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Along a coefficient-safe defect path, `a_j=0,b_j=1` forces `e_j=1,a_(j+1)=0`, and the successor contact has exactly `2/3` of the original weight.",
+      "collatz_implication": "Strengthens the conditional contact pressure at q0.",
+      "dependencies": "Exact recurrence `a_(j+1)=a_j+b_j-e_j`; Phase 7/8 least-counterexample framework for the application.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase9_forced_contact.json`; `verifier/verify_phase9.py`; property tests.",
+      "first_introduced": "Phase 9",
+      "id": "P59",
+      "last_audited": "2026-08-24",
+      "notes": "The symbolic recurrence is exact; the status remains conditional because the q0 application assumes a least counterexample and first crossing.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Forced-contact closure plus weighted contact pressure alone excludes every finite critical word.",
+      "collatz_implication": "Rules out a contact-only completion of the Phase 7 route.",
+      "dependencies": "P59; contact pressure only.",
+      "dependency_ids": [
+        "P59"
+      ],
+      "evidence": "`artifacts/phase9_forced_contact.json`; independent truth-table and symbolic-witness reconstruction.",
+      "first_introduced": "Phase 9",
+      "id": "NG17",
+      "last_audited": "2026-08-24",
+      "notes": "Corrected domain requires `c_0=1`; the all-contact word obeys closure and pressure but imposes no endpoint or least-residue condition.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "The closure-aware contact certificate gives at least 16,848,437,652 first-octave consecutive returns of odd gap at most 2 after maximum exception damage.",
+      "collatz_implication": "Gives a stronger finite-amplitude constraint on a hypothetical least counterexample.",
+      "dependencies": "P58, P59/P57, X02, EXT04, Phase 7 contact certificate; exact denominator-at-most-256 dual search.",
+      "dependency_ids": [
+        "EXT04",
+        "P57",
+        "P58",
+        "P59",
+        "X02"
+      ],
+      "evidence": "`artifacts/phase9_contact_dual.json`; `artifacts/phase9_short_return_bound.json`; independent verifier.",
+      "first_introduced": "Phase 9",
+      "id": "E14",
+      "last_audited": "2026-08-24",
+      "notes": "Dependencies remain explicit and conditional/external; the selected `lambda=143/199` is optimal only on the audited rational grid.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "In the q0 least-counterexample near-return scenario, `S(a)=3N delta+3(1+delta)d` and `0<=d<=4142380786<2^32`.",
+      "collatz_implication": "Reduces the endpoint to an exact narrow diagonal strip.",
+      "dependencies": "P57/P58, X02, exact log intervals, `S(a)<=S0`, endpoint non-descent.",
+      "dependency_ids": [
+        "P57",
+        "P58",
+        "X02"
+      ],
+      "evidence": "`artifacts/phase9_endpoint_displacement.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 9",
+      "id": "P60",
+      "last_audited": "2026-08-24",
+      "notes": "Does not establish the least-counterexample scenario or exclude the strip.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "In the same scenario, `X=7 or 19 mod 36`, and the short map `G4=(9x+5)/16` is impossible on a first-octave return.",
+      "collatz_implication": "Removes one short-return map and adds endpoint residue constraints.",
+      "dependencies": "P60; least-positive-counterexample minimality; exact congruence and predecessor algebra.",
+      "dependency_ids": [
+        "P60"
+      ],
+      "evidence": "`artifacts/phase9_endpoint_displacement.json`; independent verifier.",
+      "first_introduced": "Phase 9",
+      "id": "P61",
+      "last_audited": "2026-08-24",
+      "notes": "The predecessor witness is `z=(2y-1)/3`; the conclusion is not unconditional for arbitrary orbits.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Every valid contracting reverse path before `(a,L)=(615582794569,975675645481)` violates least-counterexample minimality; the preceding insufficient pair is `(478054749257,757698850864)`.",
+      "collatz_implication": "Creates an enormous coefficient-only reverse barrier in the q0 scenario.",
+      "dependencies": "P60/P61; X02; exact logarithm intervals and continued-fraction/unimodular certificate.",
+      "dependency_ids": [
+        "P60",
+        "P61",
+        "X02"
+      ],
+      "evidence": "`artifacts/phase9_reverse_barrier.json`; independent verifier.",
+      "first_introduced": "Phase 9",
+      "id": "P62",
+      "last_audited": "2026-08-24",
+      "notes": "No valid reverse path is constructed. Arbitrary exponent-word residues are not exhaustively classified.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "No q0-critical first-crossing word has its canonical 2-adic/3-adic residue pair in the required near-diagonal box.",
+      "collatz_implication": "A proof would exclude the remaining q0 least-counterexample endpoint scenario.",
+      "dependencies": "P60/P61; exact identities `3^q r2+B=2^K r3`; a missing scalable residue-exclusion theorem.",
+      "dependency_ids": [
+        "P60",
+        "P61"
+      ],
+      "evidence": "`artifacts/phase9_two_sided_residues.json`; exhaustive independent audit through `q=21`.",
+      "first_introduced": "Phase 9",
+      "id": "C04",
+      "last_audited": "2026-08-24",
+      "notes": "22,475,497 finite words and their digests were verified; q0 was not enumerated and no asymptotic exclusion was obtained.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "In the q0 near-diagonal least-counterexample box, `rho=[B*P^(-1)]_D=d`, `m=(B-Q*rho)/D=N`, and `X=m+rho`; moreover `4|rho`.",
+      "collatz_implication": "Reduces C04 exactly from two endpoint residues to one gap residue.",
+      "dependencies": "P60/P61, X02; `D>W`; exact canonical residue ranges.",
+      "dependency_ids": [
+        "P60",
+        "P61",
+        "X02"
+      ],
+      "evidence": "`artifacts/phase10_gap_modulus.json`; `verifier/verify_phase10.py`; tamper tests.",
+      "first_introduced": "Phase 10",
+      "id": "P63",
+      "last_audited": "2026-08-24",
+      "notes": "The reduction does not determine the q0 affine constant `B` or exclude the required residue.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Every least-counterexample orbit point `N<=S<=N+W` is coefficient-safe through `K0-1=114208327603` steps.",
+      "collatz_implication": "If `d>0`, the q0 scenario would contain two distinct long-safe integers at distance at most W.",
+      "dependencies": "Least-counterexample minimality, X02, P63/P60; Phase 7 Stern--Brocot parents; exact logarithm enclosures.",
+      "dependency_ids": [
+        "P60",
+        "P63",
+        "X02"
+      ],
+      "evidence": "`artifacts/phase10_renewal_barrier.json`; independent verifier.",
+      "first_introduced": "Phase 10",
+      "id": "P64",
+      "last_audited": "2026-08-24",
+      "notes": "It excludes only first crossings with `q<q0`; q0 and later crossings remain possible.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Exact scanning of `2<=n<=1500000` reconstructs every safe-pair spacing layer; the deepest defined result is `Delta_213=268416` at `(1126015,1394431)`.",
+      "collatz_implication": "Supplies finite spacing records and an obstruction to the target proof attempt.",
+      "dependencies": "Exact coefficient stopping time; finite bound H.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase10_safe_pair_spacing.json`; independent reverse-activation verifier.",
+      "first_introduced": "Phase 10",
+      "id": "E15",
+      "last_audited": "2026-08-24",
+      "notes": "At `k=214` the finite prefix has one survivor; this is not a bound at `H=2^72`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Nested safe-set deletion forces strict spacing growth at every depth where the spacing is defined.",
+      "collatz_implication": "Rules out strict per-depth growth as the missing scalable spacing mechanism.",
+      "dependencies": "E15.",
+      "dependency_ids": [
+        "E15"
+      ],
+      "evidence": "`artifacts/phase10_safe_pair_spacing.json`; independent verifier.",
+      "first_introduced": "Phase 10",
+      "id": "NG18",
+      "last_audited": "2026-08-24",
+      "notes": "Smallest production counterexample: `Delta_2=Delta_3=4`; nondecrease survives.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "`Delta_(K0-1)(2^72)>4142380786`.",
+      "collatz_implication": "With P63/P64, this would exclude a positive q0 near-return gap.",
+      "dependencies": "A missing scalable safe-pair spacing or cylinder-difference certificate.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase10_safe_pair_spacing.json`; finite search only.",
+      "first_introduced": "Phase 10",
+      "id": "C05",
+      "last_audited": "2026-08-24",
+      "notes": "The target was not computationally evaluated; finite disappearance below 1,500,000 cannot be promoted.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "For a coefficient-safe first-crossing word, `z=B/(2^K-3^q)` is the minimum element of its formal rational affine cycle and `gcd(B,D)=gcd(d,D)`.",
+      "collatz_implication": "Supplies exact cycle arithmetic but no positive integral cycle or Collatz resolution.",
+      "dependencies": "Exact affine prefix identities and coefficient safety.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase10_rational_cycle.json`; independent symbolic and finite verification.",
+      "first_introduced": "Phase 10",
+      "id": "P65",
+      "last_audited": "2026-08-24",
+      "notes": "“Formal rational cycle” is essential; Christoffel extremality is not used.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Fernández--Ibáñez report that Christoffel words, up to rotation, uniquely maximize their `C_min` functional at fixed word length and density.",
+      "collatz_implication": "Provides external context for extremal rational-cycle words.",
+      "dependencies": "Fernández--Ibáñez (2026), arXiv:2607.24844v1.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 10 context",
+      "id": "EXT06",
+      "last_audited": "2026-08-24",
+      "notes": "Preprint result; not reproved and not a dependency of P65 or any Collatz implication.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "For `0<n<m` and `h=v2(m-n)`, the parity prefixes agree for exactly h steps, then split; after a common prefix with a odd steps the gap is the odd integer `3^a(m-n)/2^h`.",
+      "collatz_implication": "Gives a lossless first-divergence coordinate for C05 safe pairs.",
+      "dependencies": "Exact parity-residue bijection and affine prefix identity.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/branch_point_decomposition.json`; `verifier/verify_branch_point.py`; exhaustive regression.",
+      "first_introduced": "Phase 10 supplement",
+      "id": "P66",
+      "last_audited": "2026-08-24",
+      "notes": "The theorem supplies no bound on continuation after the split.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "A positive q0 near-return gap belongs to exactly one of the 30 branch cases `2<=h=v2(d)<=31`, with both endpoints safe through K0-1 and opposite parities after the common prefix.",
+      "collatz_implication": "Replaces the positive-gap part of C05 by 30 exact two-tail continuation obligations.",
+      "dependencies": "P63, P64, P66; least-counterexample/X02 framework inherited through P63/P64.",
+      "dependency_ids": [
+        "P63",
+        "P64",
+        "P66",
+        "X02"
+      ],
+      "evidence": "`artifacts/branch_point_decomposition.json`; independent verifier.",
+      "first_introduced": "Phase 10 supplement",
+      "id": "P67",
+      "last_audited": "2026-08-24",
+      "notes": "The tails inherit coefficient surplus and cannot be treated as fresh independent safe paths.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "For every `0<=h<=20`, the exact maximum joint-safe depth `R_h(1500000)` is independently reconstructed; its maximum is 213 at h=7 and pair `(1126015,1394431)`.",
+      "collatz_implication": "Supplies branch-state falsification data for a future C05 certificate.",
+      "dependencies": "P66; exact coefficient stopping times for `2<=n<=1500000`.",
+      "dependency_ids": [
+        "P66"
+      ],
+      "evidence": "`artifacts/branch_point_decomposition.json`; `artifacts/branch_point_verifier.json`.",
+      "first_introduced": "Phase 10 supplement",
+      "id": "E16",
+      "last_audited": "2026-08-24",
+      "notes": "No monotone continuation law or target-height bound follows; branch depths 21--31 are absent only because of the finite H.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "If a pair is coefficient-safe through its common branch prefix, then `(h,a,u,orientation,y mod 2^L)` determines both next-`L` parity words and every coefficient-safety decision during those `L` steps.",
+      "collatz_implication": "Gives a lossless finite-horizon state language for C05 continuation certificates.",
+      "dependencies": "P66; exact shortcut arithmetic; `u=(m-n)/2^h`, transformed gap `3^a u`.",
+      "dependency_ids": [
+        "P66"
+      ],
+      "evidence": "[`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md); `verifier/verify_two_tail.py`; property tests.",
+      "first_introduced": "Two-tail supplement",
+      "id": "P68",
+      "last_audited": "2026-08-24",
+      "notes": "The state grows with L; no fixed finite state is claimed sufficient for unbounded continuation.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At horizon `L=12`, some shorter residue window `b<L` in `(h,a,u,orientation,y mod 2^b)` universally decides joint coefficient safety for the next L steps.",
+      "collatz_implication": "Rules out every tested fixed shortening of the lossless 12-step state as a C05 certificate.",
+      "dependencies": "P68 state with truncated residue.",
+      "dependency_ids": [
+        "P68"
+      ],
+      "evidence": "`artifacts/two_tail_state_collisions.json`; independent verifier and tamper tests.",
+      "first_introduced": "Two-tail supplement",
+      "id": "NG19",
+      "last_audited": "2026-08-24",
+      "notes": "For every `b=0,...,11` an exact safe/non-safe collision occurs with `2<=n<m<=20000`, `m-n<=512`; the `b=11` witness has second upper endpoint 15807.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "The exact two-tail scan at `H=20000`, gap at most 512, and `L=12` contains 6,887,319 eligible pairs and reconstructs a minimal opposite-outcome collision for every residue width `0<=b<12`; 5,156 mandatory adversarial adjacent pairs also satisfy the P68 arithmetic.",
+      "collatz_implication": "Supplies minimal obstruction data for the next C05 state design.",
+      "dependencies": "P66, P68; exact coefficient stopping times and fixed enumeration order.",
+      "dependency_ids": [
+        "P66",
+        "P68"
+      ],
+      "evidence": "`artifacts/two_tail_state_collisions.json`; `artifacts/two_tail_verifier.json`.",
+      "first_introduced": "Two-tail supplement",
+      "id": "E17",
+      "last_audited": "2026-08-24",
+      "notes": "A bounded scan cannot establish a lower bound at `K0-1` or `2^72`; `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every Collatz counterexample is a nontrivial cycle, has an infinite coefficient-safe tail at a tail minimum, or has a finite-crossing renewal ladder `S_i` with `S_i=3 mod 4`, `S_i<=H_qi`, `4<=S_(i+1)-S_i<=d_i<=floor((q_i-1)/3)`, `q_i->infinity`, and reduced formal-cycle denominator `>3D_qi/q_i`.",
+      "collatz_implication": "Splits the full conjecture into three explicit obligations and gives a smaller renewal-ladder target.",
+      "dependencies": "Exact tail-minimum order; coefficient-safe affine prefix identities; P65 gcd arithmetic rederived.",
+      "dependency_ids": [
+        "P65"
+      ],
+      "evidence": "[`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md); `artifacts/phase11_renewal_ladder.json`; independent symbolic verifier.",
+      "first_introduced": "Phase 11",
+      "id": "P69",
+      "last_audited": "2026-08-24",
+      "notes": "`q_i` counts odd steps; it need not be odd-valued. The trichotomy does not eliminate any branch.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If `Delta_down_Kq(floor(H_q)+floor((q-1)/3))>floor((q-1)/3)` for all sufficiently large q, no finite-crossing renewal ladder exists.",
+      "collatz_implication": "Would eliminate one of P69's three counterexample branches.",
+      "dependencies": "P69; definition of dropping-safe spacing with infinity for fewer than two members.",
+      "dependency_ids": [
+        "P69"
+      ],
+      "evidence": "`artifacts/phase11_renewal_ladder.json`; `verifier/verify_phase11.py`.",
+      "first_introduced": "Phase 11",
+      "id": "P70",
+      "last_audited": "2026-08-24",
+      "notes": "Nontrivial cycles and infinite coefficient-safe tails must still be excluded separately.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Prove `Delta_down_Kq(floor(H_q)+floor((q-1)/3))>floor((q-1)/3)` for every sufficiently large q.",
+      "collatz_implication": "With P70, eliminates the finite-crossing renewal-ladder branch of P69.",
+      "dependencies": "A missing cross-cylinder ordinary-height spacing theorem.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md); finite E18 audit only.",
+      "first_introduced": "Phase 11",
+      "id": "H70",
+      "last_audited": "2026-08-24",
+      "notes": "Does not address cycles or infinite coefficient-safe tails; q>=141 finite passes are vacuous in E18.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Independent exact recomputation through `q=4961` finds failures exactly at `17,22,27,29,32,34`, each with least pair `(27,31)` and gap 4; every `35<=q<=4961` passes and the last height is 1,666,251.",
+      "collatz_implication": "Tests P70 over a finite q range.",
+      "dependencies": "Exact `B_q^max,D_q,H_q`; dropping times for every `n<=1666251`.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase11_dropping_pair_audit.json`; `artifacts/phase11_verifier.json`.",
+      "first_introduced": "Phase 11",
+      "id": "E18",
+      "last_audited": "2026-08-24",
+      "notes": "The first structurally vacuous q is 141; finite empty-set passes provide no eventual theorem.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "A height-free lower bound eventually forces spacing greater than 4 between all k-step dropping-safe integers.",
+      "collatz_implication": "Rules out discarding ordinary height in P70-style arguments.",
+      "dependencies": "None.",
+      "dependency_ids": [],
+      "evidence": "Exact universal pair `2^k-5,2^k-1`; symbolic formulas and verifier regression.",
+      "first_introduced": "Phase 11",
+      "id": "NG20",
+      "last_audited": "2026-08-24",
+      "notes": "For every `k>=3` both witnesses are k-step dropping-safe and differ by 4.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "On a fixed length-L parity cylinder, every margin `T^j(x)-x` is affine in the cylinder parameter, so the joint dropping-safe parameters of a fixed-gap pair form one exact integer interval; affine states compose under both shortcut branches.",
+      "collatz_implication": "Gives a composable local certificate rule for P70 pair searches.",
+      "dependencies": "E01; exact integer inequalities; P68 residue semantics.",
+      "dependency_ids": [
+        "E01",
+        "P68"
+      ],
+      "evidence": "`artifacts/phase11_pair_cylinder.json`; property tests and independent verifier.",
+      "first_introduced": "Phase 11",
+      "id": "P71",
+      "last_audited": "2026-08-24",
+      "notes": "It retains all `2^L` residue classes and proves no cross-cylinder dominance or eventual bound.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At `H=262144`, `L=12`, gap at most 64, 262,144 affine cylinders represent 16,775,072 pairs and exactly 48,822 dropping-safe pairs; a literal 523,728-pair cross-check and 5,156 mandatory adversarial pairs agree.",
+      "collatz_implication": "Audits the new certificate representation without extending raw search depth.",
+      "dependencies": "P71; exact affine margins.",
+      "dependency_ids": [
+        "P71"
+      ],
+      "evidence": "`artifacts/phase11_pair_cylinder.json`; `artifacts/phase11_verifier.json`.",
+      "first_introduced": "Phase 11",
+      "id": "E19",
+      "last_audited": "2026-08-24",
+      "notes": "The eventual target certificate was not found; NG19 blocks literal residue truncation.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "For a nonperiodic coefficient-safe tail at tail minimum `S`, the odd iterates satisfy `x_j=2^(a_j+theta_j)Y_j`, `Y_(j+1)=Y_j(1+1/(3x_j))`, `Y_j<=S exp(1/S)(1+3j/S)^(1/9)`, and the stated `a_i<=A` packing bound; hence `a_i>(8/9-epsilon)log2(i)` on a density-one index set. A finite first crossing also satisfies the stated strict displacement bound.",
+      "collatz_implication": "Gives the first quantitative restriction on P69's infinite coefficient-safe-tail branch.",
+      "dependencies": "Exact odd-position normalization; odd iterates are distinct; post-initial odd iterates are coprime to 6; elementary residue packing and logarithmic inequalities.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); `artifacts/phase12_packing_theorem.json`; independent verifier.",
+      "first_introduced": "Phase 12",
+      "id": "P72",
+      "last_audited": "2026-08-24",
+      "notes": "Does not exclude that branch; the density conclusion is not pointwise and `proves_collatz=false`.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The all-contact critical word with `d_j=floor(j log2(3))`, equivalently the upper mechanical word of slope `ln(2)/ln(3)`, is not the infinite parity word of a positive integer.",
+      "collatz_implication": "Removes one extremal infinite safe word and resolves the positive-integer meaning of the Phase 9 symbolic all-contact obstruction.",
+      "dependencies": "P72 with `A=0`; irrationality of `ln(2)/ln(3)`; exact finite inverse-parity residues.",
+      "dependency_ids": [
+        "P72"
+      ],
+      "evidence": "`artifacts/phase12_all_contact.json`; `verifier/verify_phase12.py`.",
+      "first_introduced": "Phase 12",
+      "id": "P73",
+      "last_audited": "2026-08-24",
+      "notes": "Every finite prefix remains 2-adically realizable; arbitrary safe words remain open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every `S=3 mod 4` through 100,000 and 2,144 mandatory adversarial instances satisfies the independently reconstructed Phase 12 normalization and first-crossing comparison; the longest recorded prefixes have 85 and 90 odd iterates respectively.",
+      "collatz_implication": "Regresses P72 conventions and all mandatory families.",
+      "dependencies": "Exact shortcut iteration, rational normalization, fixed enumeration orders.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase12_finite_orbits.json`; `artifacts/phase12_verifier.json`.",
+      "first_introduced": "Phase 12",
+      "id": "E20",
+      "last_audited": "2026-08-24",
+      "notes": "Finite orbit termination does not exclude an infinite safe tail or supply the theorem proof.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Distinctness, a fixed lower bound, and `gcd(x_i,6)=1` alone imply `Y_j=O(j^gamma)` for some `gamma<1/9`.",
+      "collatz_implication": "Shows that a stronger packing exponent requires orbit-specific transition information.",
+      "dependencies": "None.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase12_packing_obstruction.json`; exact coprime-to-6 saturator and independent verifier.",
+      "first_introduced": "Phase 12",
+      "id": "NG21",
+      "last_audited": "2026-08-24",
+      "notes": "The abstract saturator is not a Collatz orbit; it does not prove that `1/9` is dynamically optimal.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Use actual odd-orbit transition congruences beyond distinctness modulo 6 to strengthen P72 enough to exclude every infinite coefficient-safe tail.",
+      "collatz_implication": "Would eliminate the second branch of P69; cycles and the renewal ladder would remain separate.",
+      "dependencies": "P72, P73, NG21.",
+      "dependency_ids": [
+        "NG21",
+        "P72",
+        "P73"
+      ],
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md).",
+      "first_introduced": "Phase 12",
+      "id": "H72",
+      "last_audited": "2026-08-24",
+      "notes": "No orbit-specific packing closure or contradictory exponent is known.",
+      "status": "OPEN"
+    }
+  ],
+  "generated_from": "docs/CLAIMS_LEDGER.md",
+  "schema_version": 1,
+  "source_sha256": "a183cf9fd9ced23ab5823a0899a4be294c5ed6ae4e32643066ede67d9508aee1"
+}

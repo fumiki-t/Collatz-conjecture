@@ -40,6 +40,9 @@ Choose exactly one of `VERIFIED_THEOREM`, `VERIFIED_FINITE`, `CONDITIONAL`,
 `EXTERNAL_THEOREM`, `EXTERNAL_EVIDENCE`, `HEURISTIC`, `CONJECTURE`, `REFUTED`,
 `RETRACTED`, or `OPEN`. Explain every transition and update the canonical
 documents.
+Update `research/registry.json` only when an active status, dependency,
+priority, context pack, or latest acceptance boundary changes. The ledger
+remains the canonical claim source.
 
 ## What this result does not prove
 

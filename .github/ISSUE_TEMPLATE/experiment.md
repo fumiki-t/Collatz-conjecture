@@ -9,6 +9,8 @@ assignees: ""
 ## Hypothesis
 
 State the precise claim being tested and its current claim ID/status.
+Create `research/experiments/<experiment-id>.json` from the experiment schema
+before a large run and link it here.
 
 ## Exact finite scope
 
@@ -33,6 +35,8 @@ preserved minimal counterexamples where the hypothesis is universal.
 ## Expected artifact
 
 Name the certificate/report files, verifier output, and SHA-256 manifest.
+After acceptance, record the commit, manifest hash, and `proves_collatz=false`
+boundary in the experiment manifest.
 
 ## Interpretation boundary
 

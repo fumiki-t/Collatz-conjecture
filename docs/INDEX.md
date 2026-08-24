@@ -15,8 +15,12 @@ for the current state.
 | [`ROADMAP.md`](ROADMAP.md) | Ranked proof-oriented program with falsification tests | Any strategic change |
 | [`HANDOFF.md`](HANDOFF.md) | Ten-minute onboarding for a new researcher or AI | End of a major session |
 | [`AI_RESEARCH_GUIDE.md`](AI_RESEARCH_GUIDE.md) | Active dependency graph, exact next experiments, and machine health check | Every strategic or workflow change |
+| [`context/`](context/README.md) | Scoped AI briefings for primary proof obligations | Target, dependency, falsifier, or acceptance-boundary change |
 | [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md) | Chronological cumulative narrative | Every accepted phase |
 | [`../AGENTS.md`](../AGENTS.md) | Mandatory research and proof-claim protocol | Protocol changes |
+| [`../research/registry.json`](../research/registry.json) | Machine-readable active obligations and current acceptance boundary | Phase acceptance or active-priority change |
+| [`../research/claims-index.json`](../research/claims-index.json) | Generated machine-readable projection of every claim row | Regenerate after any claims-ledger edit |
+| [`../research/experiments/`](../research/README.md) | Reproducible experiment contracts and accepted provenance | Before a large run and after acceptance |
 
 ## Phase evidence
 
@@ -68,3 +72,6 @@ documentation.
 - Before implementation: read [`../AGENTS.md`](../AGENTS.md) and identify the
   claim ID, exact scope, independent verifier, adversarial set, and stop
   criterion.
+- Copy the experiment contract into `research/experiments/` before a large
+  run, and use `scripts/research_health.py --strict` in a clean acceptance
+  worktree.

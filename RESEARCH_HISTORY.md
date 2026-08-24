@@ -900,3 +900,29 @@ branch and rules out the all-contact critical word. NG21 shows that improving
 its exponent requires genuine transition information. No eventual lower bound
 for `M(k)`, cross-cylinder spacing theorem, or complete safe-tail exclusion is
 known.
+
+## 23. AI research control-plane audit
+
+The post-Phase 12 repository added an operational layer for long-running AI
+collaboration without changing any mathematical claim status. The claims
+ledger remains the single prose source of truth; `research/registry.json`
+contains only the machine-checkable current acceptance boundary, active
+obligations, dependencies, and mandatory adversarial set. Scoped context packs
+for H54, H70, and H72 reduce repeated context loading while explicitly
+deferring to the ledger. A deterministic `research/claims-index.json` projects
+all 72 ledger rows for AI retrieval and is rejected as stale whenever the
+source ledger hash changes.
+
+The Phase 12 acceptance was encoded as the reference experiment contract with
+exact scope, commands, independence boundary, artifacts, stop conditions, and
+interpretation limits. `research_health.py` now cross-checks the registry and
+experiment manifests against the ledger, resolves the latest verifier through
+the registry rather than a Phase 12 hard-code, inspects forbidden verifier
+imports, and reports untracked artifact files. Strict mode rejects those files
+in a clean acceptance worktree. A lightweight GitHub Actions gate runs these
+checks and latest tamper tests; the expensive full suite remains manually
+dispatchable.
+
+This infrastructure is not evidence for Collatz and introduces no new claim
+ID. Its purpose is to make stale context, provenance drift, unexplained
+artifacts, and finite-to-asymptotic promotion harder for future AI agents.

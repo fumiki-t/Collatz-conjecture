@@ -93,6 +93,13 @@ not overwrite committed evidence.
 - [`docs/INDEX.md`](docs/INDEX.md): canonical documentation map.
 - [`docs/AI_RESEARCH_GUIDE.md`](docs/AI_RESEARCH_GUIDE.md): active dependency
   graph, exact next experiments, known traps, and AI completion checklist.
+- [`research/registry.json`](research/registry.json): machine-readable current
+  acceptance boundary, active obligations, dependencies, and context packs.
+- [`research/claims-index.json`](research/claims-index.json): generated JSON
+  projection of all claim rows for AI retrieval; the Markdown ledger remains
+  canonical.
+- [`research/README.md`](research/README.md): experiment-contract and AI
+  control-plane conventions.
 - [`RESEARCH_HISTORY.md`](RESEARCH_HISTORY.md): chronological Phase 1–12 record.
 - [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md): claim IDs, statuses,
   dependencies, evidence, and counterexamples.
@@ -105,6 +112,10 @@ not overwrite committed evidence.
 - `verifier/`: logically separate certificate verifiers.
 - `tests/`: exact arithmetic, tamper rejection, and adversarial regressions.
 - `artifacts/`: generated evidence; do not edit it manually.
+
+GitHub pull requests and pushes to `main` run a lightweight integrity gate.
+The full acceptance suite is available as a manually dispatched workflow so
+large finite checks do not consume resources on every documentation edit.
 
 Acceptance records:
 

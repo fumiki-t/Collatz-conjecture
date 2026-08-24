@@ -163,6 +163,11 @@ should answer all of these before a large computation:
 4. Does it survive every mandatory adversarial family?
 5. What certificate can an implementation-independent verifier reconstruct?
 
+For H54, H70, or H72, use the scoped pack under [`context/`](context/README.md)
+and confirm its status against `CLAIMS_LEDGER.md`. Register a large experiment
+under `research/experiments/`; `research/registry.json` is the machine-readable
+entry point and is audited against the ledger.
+
 Good near-term work includes inverse-parity anti-concentration, recursive
 lower bounds, a cross-cylinder quotient/carry state extending P71, and an
 orbit-specific strengthening of P72 extending beyond mod-6 packing. Start
@@ -190,6 +195,10 @@ From the repository root:
 .venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
+
+Use `scripts/research_health.py --strict` in a clean acceptance worktree. The
+non-strict command deliberately reports local untracked artifacts as warnings
+without treating them as accepted evidence.
 
 The current manifest hash is recorded in
 [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md).

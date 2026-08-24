@@ -29,6 +29,17 @@ Run this before changing research code:
 
 It checks navigation freshness, claim-label uniqueness, tracked artifact
 hashes, active claim statuses, and the latest supplemental verifier boundary.
+From a clean acceptance worktree use `--strict`; this additionally rejects
+untracked files under `artifacts/`. Existing local exploratory files are
+reported as warnings in non-strict mode so they are not silently confused with
+manifested evidence.
+
+Machine-readable entry points are in [`../research/registry.json`](../research/registry.json)
+and [`../research/README.md`](../research/README.md). The registry is checked
+against the claims ledger and points to scoped context packs for H54, H70, and
+H72. `research/claims-index.json` is regenerated from the ledger for efficient
+AI lookup; it is not edited independently. The registry is an operational
+index, not a duplicate theorem source.
 
 ## Current dependency map
 
@@ -104,6 +115,11 @@ Every new experiment should state, before a large run:
 6. stop criterion and artifact size policy;
 7. “What this result does not prove.”
 
+Record these fields in `research/experiments/<experiment-id>.json` using
+`research/schemas/experiment.schema.json`. An accepted manifest must name all
+artifacts and preserve the recorded manifest hash. Phase 12 provides the
+reference accepted example.
+
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
 Use `CONDITIONAL` when a least-counterexample or external premise is retained.
 Do not introduce a new claim ID for a renamed copy of an existing obligation.
@@ -150,9 +166,10 @@ Before handing off a meaningful result:
 
 ```bash
 .venv/bin/python -m pytest -q
-.venv/bin/python scripts/research_health.py
+.venv/bin/python scripts/build_claim_index.py --check
 .venv/bin/python scripts/hash_artifacts.py artifacts \
   --write artifacts/SHA256SUMS
+.venv/bin/python scripts/research_health.py --strict
 git diff --check
 ```
 

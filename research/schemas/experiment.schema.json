@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fumiki-t/Collatz-conjecture/research/schemas/experiment.schema.json",
+  "title": "Exact Collatz research experiment",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "status",
+    "claim_ids",
+    "objective",
+    "exact_scope",
+    "arithmetic",
+    "commands",
+    "independence",
+    "adversarial_families",
+    "artifacts",
+    "stop_conditions",
+    "interpretation_boundary",
+    "proves_collatz"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "status": {
+      "enum": ["DRAFT", "RUNNING", "ACCEPTED", "FAILED", "ABANDONED"]
+    },
+    "claim_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[A-Z][A-Z0-9-]*$"}
+    },
+    "objective": {"type": "string", "minLength": 1},
+    "exact_scope": {
+      "type": "object",
+      "required": ["quantifiers", "bounds", "completeness"],
+      "properties": {
+        "quantifiers": {"type": "array", "items": {"type": "string"}},
+        "bounds": {"type": "object"},
+        "completeness": {"type": "string"}
+      }
+    },
+    "arithmetic": {
+      "type": "object",
+      "required": ["proof_decisions", "floating_point_role"],
+      "properties": {
+        "proof_decisions": {"const": "exact"},
+        "floating_point_role": {"type": "string"}
+      }
+    },
+    "commands": {
+      "type": "object",
+      "required": ["generator", "verifier", "tests"],
+      "properties": {
+        "generator": {"type": "array", "items": {"type": "string"}},
+        "verifier": {"type": "array", "items": {"type": "string"}},
+        "tests": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "independence": {
+      "type": "object",
+      "required": ["verifier_reconstructs", "forbidden_imports", "tamper_tests"],
+      "properties": {
+        "verifier_reconstructs": {"type": "array", "items": {"type": "string"}},
+        "forbidden_imports": {"type": "array", "items": {"type": "string"}},
+        "tamper_tests": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "adversarial_families": {"type": "array", "items": {"type": "string"}},
+    "artifacts": {"type": "array", "items": {"type": "string"}},
+    "stop_conditions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "interpretation_boundary": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "recorded_result": {"type": "object"},
+    "proves_collatz": {"const": false}
+  },
+  "additionalProperties": false
+}

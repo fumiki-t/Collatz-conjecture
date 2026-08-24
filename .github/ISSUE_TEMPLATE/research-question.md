@@ -19,6 +19,8 @@ direct implication from a useful partial result.
 
 Link rows in `docs/CLAIMS_LEDGER.md`, failures in
 `docs/FAILED_APPROACHES.md`, and any primary literature.
+If this is H54, H70, or H72, link the matching `docs/context/` pack and state
+what information, if any, would require that pack to change.
 
 ## Proposed route
 
