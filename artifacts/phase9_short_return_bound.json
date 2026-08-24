@@ -1,0 +1,31 @@
+{
+  "E14": {
+    "baseline_phase7_contacts": {
+      "contacts": 31327720462,
+      "exception_damage": 10,
+      "first_octave_lower": 10962864687,
+      "gap_at_most_2_lower": 10962864697,
+      "maximum_gaps_at_least_3": 20364855764
+    },
+    "conditional_dependencies": [
+      "P58",
+      "P59/P57",
+      "X02",
+      "EXT04",
+      "Phase 7 contact certificate"
+    ],
+    "exact_formula": "(M-1)-floor((q0-M)/2)",
+    "forced_closure_contacts": {
+      "contacts": 35251435772,
+      "exception_damage": 10,
+      "first_octave_lower": 16848437652,
+      "gap_at_most_2_lower": 16848437662,
+      "maximum_gaps_at_least_3": 18402998109
+    },
+    "repository_status": "VERIFIED_FINITE"
+  },
+  "format": "collatz-phase9-short-return-v1",
+  "phase8_octave_bridge_sha256": "918390145d9cb267e1b7dd9931670547124a32e86929201b87fba15efc2debd2",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "A large number of short returns does not supply a well-founded rank for their concatenations."
+}

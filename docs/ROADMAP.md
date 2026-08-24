@@ -66,6 +66,55 @@ scaling.
 bound strong enough to imply it after a union bound whose constants and
 dependencies are rigorous.
 
+## P1 — Two-sided near-diagonal residue exclusion
+
+**Target.** Prove C04: at the q0 first crossing, exclude canonical residues
+`r2,r3` satisfying `3^q*r2+B=2^K*r3`, `0<=r3-r2<=4142380786`, and
+`r3=7 or 19 mod 36` in the Phase 9 size window.
+
+**Why this helps Collatz.** Under P54, P57--P61, and their stated
+least-counterexample/external inputs, C04 would remove the q0 near-return
+endpoint. A parameterized theorem for all later barrier records, together with
+the finite remainder, would be needed for a full implication. C04 is the most
+direct new arithmetic prototype produced by Phase 9, not a complete route by
+itself.
+
+**Missing theorem.** A simultaneous Archimedean and 2-adic/3-adic
+anti-concentration theorem for generalized-Ballot parity words. Contact count
+and weighted pressure alone cannot supply it because NG17 is refuted.
+
+**Fast falsification test.** Reconstruct the exact q<=21 layer digests, attack
+any compressed state with examples that share its visible fields but have
+different carries, and include the full mandatory adversarial set. Never treat
+zero bounded survivors as an asymptotic conclusion.
+
+**Success criterion.** A lossless recursive or meet-in-the-middle exclusion
+certificate at q0 with an independent verifier, or an exact near-diagonal
+counterexample that determines which proposed state discarded necessary
+information.
+
+## P1 — Arbitrary reverse-residue barrier
+
+**Target.** Extend P62 from a coefficient barrier and the lower-mechanical
+family to every positive composition of reverse exponents.
+
+**Why this helps.** Phase 9 eliminates all reverse coefficients before
+`(a,L)=(615582794569,975675645481)` in the conditional q0 scenario, but only a
+valid-path residue theorem can turn coefficient scarcity into an orbit
+obstruction.
+
+**Missing theorem.** A recursive forbidden-residue invariant that retains the
+affine constant and endpoint minimality while compressing arbitrary exponent
+words without losing carries.
+
+**Fast falsification test.** Enumerate all compositions only at small `a`,
+compare them with the mechanical representative, and search for two words with
+the same proposed compressed state but opposite minimality classifications.
+
+**Success criterion.** An exact state recursion whose verifier covers every
+composition in a stated range and whose proof extends beyond that finite
+range; zero survivors in one mechanical subfamily is insufficient.
+
 ## P2 — Moving rational shadows and simultaneous 2-adic/3-adic constraints
 
 **Target.** Show that any indefinitely coefficient-safe positive path must

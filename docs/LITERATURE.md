@@ -1,6 +1,6 @@
 # Annotated literature
 
-**Metadata last checked:** 2026-08-23. Links below point to publishers, DOI
+**Metadata last checked:** 2026-08-24. Links below point to publishers, DOI
 records, author-hosted copies, or arXiv. An `EXTERNAL_THEOREM` label means the
 result is external to this repository; it does not mean its proof has been
 independently reproduced here.
@@ -160,12 +160,59 @@ paradoxical sequences, and the Collatz conjecture. Phase 8 uses the exact
 statement of Lemma B.1: for positive `k,q` with `q>12`,
 `|2^k-3^q|>(64/25)^q/2`.
 
+Theorem 1.3 in arXiv v5 reports exactly 593 paradoxical sequences with initial
+element at most 4,614 and proves that any additional one must start above
+`2.8*10^19`; it also states the conditional implication that if no additional
+paradoxical sequence exists, then Collatz is true. The stronger assertion that
+there is no sequence above 4,614 is presented by the authors as a
+heuristic/conjectural conclusion, not as the theorem.
+
 **Repository role.** Motivation for the critical-prefix language. The paper's
 empirical suggestion of finiteness is not imported as a theorem, and it is not
 an input to Phase 6 certificates. Phase 7 records substantial overlap with its
 paradoxical-sequence and continued-fraction setting. Phase 8 isolates Lemma
 B.1 as EXT05 and applies it only with exponent `q>=30`; therefore the C02 proof
 does not use the paper's separate finite check for `13<=q<=18`.
+Phase 9 independently enumerates only shortcut lengths through 21 and does not
+reprove Theorem 1.3, its `2.8*10^19` bound, or its conditional equivalence.
+
+### Winkler (2017; revised 2026)
+
+**Status:** `EXTERNAL_THEOREM`; finite coefficient-stopping structure, not an
+active proof dependency
+
+Mike Winkler, “Deterministic Structures in the Stopping Time Dynamics of the
+3x+1 Problem,” arXiv:1709.03385v8 (2017; revised 2026).
+[arXiv:1709.03385](https://arxiv.org/abs/1709.03385).
+
+**Result relevant here.** The current manuscript characterizes admissible odd
+position vectors at each finite order as a directed rooted tree, gives a
+Pascal-type exact recursion, and reconstructs the associated residue classes
+and periodic finite-order coverage.
+
+**Repository role.** This is direct prior overlap for Phase 9's small-layer
+first-crossing enumeration and for any future recursive state design. The
+paper explicitly limits the conclusions to finite coefficient-stopping
+structures; it does not prove that every start has finite coefficient stopping
+time or identify coefficient stopping with classical stopping time. Phase 9's
+independent q<=21 digests do not reproduce the full external manuscript.
+
+### Winkler (2015; revised 2021)
+
+**Status:** `EXTERNAL_EVIDENCE`; conjectural counting formula, not a proof
+dependency
+
+Mike Winkler, “New results on the stopping time behaviour of the Collatz 3x +
+1 function,” arXiv:1504.00212v4 (2015; revised 2021).
+[arXiv:1504.00212](https://arxiv.org/abs/1504.00212).
+
+**Result relevant here.** The manuscript studies the finite-order counts now
+listed as OEIS A100982 and proposes an iterative formula for them.
+
+**Repository role.** It is historical overlap for the Phase 7/9 layer counts,
+not an axiom: the current artifacts derive every audited count and row digest
+internally. The formula is recorded as conjectural in the source abstract and
+is not promoted here.
 
 ### Ellison (1971)
 

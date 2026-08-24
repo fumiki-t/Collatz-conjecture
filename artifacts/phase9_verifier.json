@@ -1,0 +1,59 @@
+{
+  "C04": "OPEN",
+  "contact_dual": {
+    "contact_lower": 35251435772,
+    "lambda": [
+      143,
+      199
+    ]
+  },
+  "endpoint": {
+    "G4_forbidden": true,
+    "dmax": 4142380786,
+    "endpoint_mod_36": [
+      7,
+      19
+    ]
+  },
+  "external_inputs_reproved": {
+    "EXT04": false,
+    "Rozier_Terracol_Theorem_1_3": false,
+    "Winkler_tree": false,
+    "X02": false
+  },
+  "forced_contact": {
+    "NG17": "REFUTED",
+    "P59": "CONDITIONAL"
+  },
+  "paradoxical_tree": {
+    "maximum_length": 21,
+    "new_rank": false,
+    "records": 5
+  },
+  "proves_collatz": false,
+  "reverse_barrier": {
+    "first_possible": [
+      615582794569,
+      975675645481
+    ],
+    "previous": [
+      478054749257,
+      757698850864
+    ]
+  },
+  "reverse_residues": {
+    "coefficient_pairs": 287,
+    "maximum_a": 30,
+    "mechanical_rows": 30
+  },
+  "short_returns": {
+    "baseline": 10962864687,
+    "closure": 16848437652
+  },
+  "two_sided_residues": {
+    "maximum_q": 21,
+    "nontrivial_paradoxical": 0,
+    "total_words": 22475497
+  },
+  "valid": true
+}

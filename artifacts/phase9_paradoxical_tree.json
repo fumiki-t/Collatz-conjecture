@@ -1,0 +1,229 @@
+{
+  "cylinder_identity": "F(r2+2^K*t)-(r2+2^K*t)=(r3-r2)-(2^K-3^q)*t",
+  "exact_counterexample_to_C04_found": false,
+  "external_target": {
+    "Rozier_Terracol_Theorem_1_3": "593 paradoxical sequences start at <=4614; any further one starts above 2.8e19; finiteness would imply Collatz",
+    "Winkler_overlap": "finite stopping-time parity/residue trees predate this bounded implementation",
+    "external_results_reproved": false,
+    "heuristic_conjecture": "no paradoxical sequence starts above 4614",
+    "repository_status": "EXTERNAL_EVIDENCE"
+  },
+  "format": "collatz-phase9-paradoxical-tree-v1",
+  "maximum_shortcut_length": 21,
+  "necessary_and_sufficient_condition": "a positive paradoxical realization exists iff the least positive canonical realization has nonnegative displacement",
+  "new_rank_found": false,
+  "paradoxical_records": [
+    {
+      "B": 746,
+      "D": 13,
+      "canonical_difference": 2,
+      "canonical_endpoint": 20,
+      "canonical_source": 18,
+      "largest_start_in_cylinder": 18,
+      "length": 8,
+      "parity_word": "01011101",
+      "positive_paradoxical_realizations": 1,
+      "q": 5
+    },
+    {
+      "B": 581,
+      "D": 13,
+      "canonical_difference": 1,
+      "canonical_endpoint": 26,
+      "canonical_source": 25,
+      "largest_start_in_cylinder": 25,
+      "length": 8,
+      "parity_word": "10110011",
+      "positive_paradoxical_realizations": 1,
+      "q": 5
+    },
+    {
+      "B": 373,
+      "D": 13,
+      "canonical_difference": 1,
+      "canonical_endpoint": 10,
+      "canonical_source": 9,
+      "largest_start_in_cylinder": 9,
+      "length": 8,
+      "parity_word": "10111010",
+      "positive_paradoxical_realizations": 1,
+      "q": 5
+    },
+    {
+      "B": 503,
+      "D": 13,
+      "canonical_difference": 1,
+      "canonical_endpoint": 20,
+      "canonical_source": 19,
+      "largest_start_in_cylinder": 19,
+      "length": 8,
+      "parity_word": "11001101",
+      "positive_paradoxical_realizations": 1,
+      "q": 5
+    },
+    {
+      "B": 347,
+      "D": 13,
+      "canonical_difference": 1,
+      "canonical_endpoint": 8,
+      "canonical_source": 7,
+      "largest_start_in_cylinder": 7,
+      "length": 8,
+      "parity_word": "11101001",
+      "positive_paradoxical_realizations": 1,
+      "q": 5
+    }
+  ],
+  "proves_collatz": false,
+  "repository_status": "VERIFIED_FINITE",
+  "summaries": [
+    {
+      "all_words": 2,
+      "contracting_words": 1,
+      "length": 1,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 4,
+      "contracting_words": 3,
+      "length": 2,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 8,
+      "contracting_words": 4,
+      "length": 3,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 16,
+      "contracting_words": 11,
+      "length": 4,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 32,
+      "contracting_words": 26,
+      "length": 5,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 64,
+      "contracting_words": 42,
+      "length": 6,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 128,
+      "contracting_words": 99,
+      "length": 7,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 256,
+      "contracting_words": 219,
+      "length": 8,
+      "paradoxical_cylinders": 5,
+      "paradoxical_realizations": 5
+    },
+    {
+      "all_words": 512,
+      "contracting_words": 382,
+      "length": 9,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 1024,
+      "contracting_words": 848,
+      "length": 10,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 2048,
+      "contracting_words": 1486,
+      "length": 11,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 4096,
+      "contracting_words": 3302,
+      "length": 12,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 8192,
+      "contracting_words": 7099,
+      "length": 13,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 16384,
+      "contracting_words": 12911,
+      "length": 14,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 32768,
+      "contracting_words": 27824,
+      "length": 15,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 65536,
+      "contracting_words": 58651,
+      "length": 16,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 131072,
+      "contracting_words": 109294,
+      "length": 17,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 262144,
+      "contracting_words": 230964,
+      "length": 18,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 524288,
+      "contracting_words": 430104,
+      "length": 19,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 1048576,
+      "contracting_words": 910596,
+      "length": 20,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    },
+    {
+      "all_words": 2097152,
+      "contracting_words": 1898712,
+      "length": 21,
+      "paradoxical_cylinders": 0,
+      "paradoxical_realizations": 0
+    }
+  ],
+  "what_this_result_does_not_prove": "The length-bounded tree has no asymptotic rank and neither reproduces the external search to 2.8e19 nor proves paradoxical-sequence finiteness."
+}

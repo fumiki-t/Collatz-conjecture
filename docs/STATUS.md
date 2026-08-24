@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-23
+**Last updated:** 2026-08-24
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -19,6 +19,10 @@ disproved by this repository.
 - `CONDITIONAL`: P57 independently gives
   `S(a)>=3N delta` and `W(C)>=6N delta-S0` under the same least-counterexample
   framework.
+- `CONDITIONAL`: Phase 9 verifies forced-contact closure, the exact endpoint
+  displacement bound `d<=4142380786<2^32`, endpoint congruences, G4
+  impossibility, and a reverse continued-fraction barrier inside that same
+  least-counterexample first-crossing framework.
 - `VERIFIED_FINITE`: the exact modular graphs, return templates, certificate
   nodes, and finite ranges listed below were independently reconstructed.
 
@@ -50,6 +54,15 @@ No item above proves the Collatz conjecture.
   search reconstructs all 79,184 contracting `{A,B}` words through block
   length 18 (79,166 mixed) and 12,265 first block-boundary crossings through
   length 22, with no counterexample.
+- Phase 9: the exact denominator-at-most-256 contact dual selects
+  `lambda=143/199`, giving 35,251,435,772 closure-aware contacts and
+  16,848,437,652 first-octave short returns after exception damage. Independent
+  enumeration rebuilds 22,475,497 coefficient-safe first-crossing words
+  through `q=21`, all 287 contracting reverse coefficient pairs through
+  `a=30`, 30 lower-mechanical reverse words, and every parity word through
+  shortcut length 21. No nontrivial paradoxical first-crossing word occurs in
+  the small layers; exactly five bounded paradoxical cylinders occur at length
+  8 in the unrestricted tree.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -71,6 +84,12 @@ the internally verified Phase 6 finite barrier range.
 Phase 8 closes C02 as a genuine theorem for the ordered contracting family
 `A^rB^s`. This is the strongest new universal block result, but it covers only
 one ordering family and therefore does not supersede the P54 barrier route.
+
+Phase 9 gives the strongest current localization of the q0 conditional
+endpoint: `0<=X-N<2^32`, `X=7 or 19 mod 36`, G4 is forbidden, and the first
+reverse coefficient pair not eliminated by the uniform threshold is
+`(a,L)=(615582794569,975675645481)`. These are conditional consequences, not
+an existence or exclusion theorem for the endpoint.
 
 ## Strongest conditional route
 
@@ -94,6 +113,11 @@ with an unusually small least positive inverse-parity residue.
 Phase 8 shows that even many exact first-octave returns do not yet supply a
 well-founded rank for arbitrary interleavings of the four short-return maps or
 the block alphabet `{A,B}`; C03 remains `OPEN`.
+Phase 9 further shows that contact closure and weighted pressure alone cannot
+finish the argument: NG17 is refuted by the exact all-contact construction.
+The remaining C04 bottleneck is a simultaneous Archimedean and 2-adic/3-adic
+near-diagonal exclusion at q0. The reverse coefficient barrier does not yet
+classify arbitrary exponent-word residues or prove that a valid path exists.
 The needed result must dominate `H_q`; the contextual estimate
 `H_q = O(q^5.117)` depends on an external Diophantine estimate and is not an
 input to current certificates.
@@ -102,6 +126,10 @@ input to current certificates.
 
 - Prove anti-concentration for inverse parity residues with an effective least
   representative bound.
+- Prove C04 by excluding the q0 near-diagonal canonical residue pair, with a
+  lossless carry-aware recursion or meet-in-the-middle certificate.
+- Upgrade the finite mechanical reverse-residue audit to a recursive forbidden
+  residue theorem for arbitrary positive exponent compositions.
 - Derive recursive or meet-in-the-middle lower bounds for `M(k)`.
 - Explain small `M(k)` using moving rational shadows of unbounded height and
   simultaneous 2-adic/3-adic constraints.
@@ -114,6 +142,10 @@ input to current certificates.
 
 ## What was recently refuted?
 
+- `REFUTED`: forced-contact closure plus weighted contact pressure alone is
+  sufficient. With the required correction `c_0=1`, the exact all-contact
+  construction still satisfies closure and pressure but carries no endpoint
+  or least-residue exclusion.
 - `REFUTED`: four fixed rational shadow centers are complete. The exact block
   `W=111011100` has map `(729x+817)/512` and fixed point `-817/217` outside the
   four centers.
@@ -132,14 +164,13 @@ input to current certificates.
 
 ## Next 3 concrete research questions
 
-1. Can high correction `B` be separated deterministically from a small least
-   positive inverse-parity residue strongly enough to imply
-   `M(k) >= k^{5.117+epsilon}` eventually?
-2. Do `H_q` record indices force a continued-fraction or discrepancy condition
-   that makes the associated admissible residue unusually large?
-3. Can a recursive decomposition of coefficient-safe words produce a
-   certificate-composable lower bound for `M(k)`, rather than only an
-   exponentially large word count?
+1. Can the q0 identities `3^q r2+B=2^K r3`, `0<=r3-r2<2^32`, and
+   `r3=7 or 19 mod 36` be turned into an exact near-diagonal exclusion?
+2. Can arbitrary reverse exponent compositions be summarized by a lossless
+   recursive forbidden-residue state, rather than only the mechanical family?
+3. Can high correction `B` be separated deterministically from a small least
+   positive inverse-parity residue strongly enough to imply an eventual lower
+   bound for `M(k)`?
 
 ## Codex tasks worth doing
 
@@ -156,6 +187,8 @@ input to current certificates.
 
 - Merely extend Phase 1–5 search depth or modulus.
 - Add another fixed finite shadow dictionary.
+- Retry contact closure plus weighted pressure without a new endpoint or
+  least-residue invariant; NG17 is an exact no-go for that information set.
 - Infer an asymptotic law from high finite coverage or a beam search.
 - Retry naive predecessor-density intersection without a theorem controlling
   the exceptional least counterexample.
@@ -169,4 +202,5 @@ input to current certificates.
 - Phase 6 acceptance: [`../PHASE6_RUN_RESULTS.md`](../PHASE6_RUN_RESULTS.md)
 - Phase 7 acceptance: [`../PHASE7_RUN_RESULTS.md`](../PHASE7_RUN_RESULTS.md)
 - Phase 8 acceptance: [`../PHASE8_RUN_RESULTS.md`](../PHASE8_RUN_RESULTS.md)
+- Phase 9 acceptance: [`../PHASE9_RUN_RESULTS.md`](../PHASE9_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

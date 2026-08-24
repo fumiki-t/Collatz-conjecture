@@ -1,0 +1,127 @@
+{
+  "NG17": {
+    "construction": "a_j=1-c_j; d_j=f_j-a_j; e_j=b_j+a_j-a_(j+1)",
+    "corrected_construction_domain": "c_0=1 is required for a zero-indexed parity word; arbitrary later c_j are allowed subject to closure",
+    "q0_symbolic_witness": {
+      "S0_lower": [
+        "347653358124694623764702768965644743643993185202918547803238971406453253118498950403662",
+        "6688413348832609071852825350525839211165888967632495550510238958784996414681"
+      ],
+      "contact_indicator": "c_j=1 for every 0<=j<q0",
+      "defects": "a_j=0",
+      "giant_parity_word_constructed": false,
+      "odd_positions": "d_j=floor(j*alpha)",
+      "required_weight_lower": [
+        "109322583399686755052858573732647362437325183816224282440151361431131561468169453973947830164090394913231058154320588485967687025511509405298518585",
+        "4030449699738298695559698551291305314652719997490660214007136904070997720034718306187709923597801533591855474159177412002230296513609728"
+      ],
+      "strictly_satisfies_pressure": true,
+      "weighted_contact_equals": "S0"
+    },
+    "repository_status": "REFUTED",
+    "statement": "forced-contact closure plus weighted contact pressure alone excludes every finite critical word",
+    "surviving_stronger_targets": [
+      "least positive inverse-parity representative",
+      "endpoint near-return condition",
+      "simultaneous 2-adic/3-adic residue box"
+    ],
+    "truth_table": [
+      {
+        "b_j": 1,
+        "c_j": 0,
+        "c_next": 0,
+        "closure_ok": true,
+        "e_j": 1,
+        "positive_when_closure_ok": true
+      },
+      {
+        "b_j": 1,
+        "c_j": 0,
+        "c_next": 1,
+        "closure_ok": true,
+        "e_j": 2,
+        "positive_when_closure_ok": true
+      },
+      {
+        "b_j": 2,
+        "c_j": 0,
+        "c_next": 0,
+        "closure_ok": true,
+        "e_j": 2,
+        "positive_when_closure_ok": true
+      },
+      {
+        "b_j": 2,
+        "c_j": 0,
+        "c_next": 1,
+        "closure_ok": true,
+        "e_j": 3,
+        "positive_when_closure_ok": true
+      },
+      {
+        "b_j": 1,
+        "c_j": 1,
+        "c_next": 0,
+        "closure_ok": false,
+        "e_j": 0,
+        "positive_when_closure_ok": true
+      },
+      {
+        "b_j": 1,
+        "c_j": 1,
+        "c_next": 1,
+        "closure_ok": true,
+        "e_j": 1,
+        "positive_when_closure_ok": true
+      },
+      {
+        "b_j": 2,
+        "c_j": 1,
+        "c_next": 0,
+        "closure_ok": true,
+        "e_j": 1,
+        "positive_when_closure_ok": true
+      },
+      {
+        "b_j": 2,
+        "c_j": 1,
+        "c_next": 1,
+        "closure_ok": true,
+        "e_j": 2,
+        "positive_when_closure_ok": true
+      }
+    ]
+  },
+  "P59": {
+    "forced_closure": "a_j=0 and b_j=1 imply e_j=1 and a_(j+1)=0",
+    "least_counterexample_role": "only the Phase 7/8 application is conditional",
+    "phase_interval": "b_j=1 iff 0<=theta_j<2-alpha",
+    "recurrence": "a_(j+1)=a_j+b_j-e_j",
+    "repository_status": "CONDITIONAL",
+    "successor_weight_ratio": [
+      2,
+      3
+    ],
+    "symbolic_algebra_valid_for": "every coefficient-safe defect path"
+  },
+  "format": "collatz-phase9-forced-contact-v1",
+  "phase_partition": {
+    "H": "[alpha-1,1)",
+    "L": "[0,2-alpha)",
+    "L_successor_is_H": true,
+    "M": "[2-alpha,alpha-1)",
+    "alpha_interval": {
+      "lower": [
+        "31802653041667484360024617427225806404601470301125784915901402331508724878691",
+        "20065240046497827215558476051577517633497666902897486651530716876354989244043"
+      ],
+      "upper": [
+        "127210612166669937440098469708903225618405881204503139663605609326034899514765",
+        "80260960185991308862233904206310070533990667611589946606122867505419956976171"
+      ]
+    },
+    "exact_weight_identity": "2^(-(theta+alpha-1))=(2/3)*2^(-theta)"
+  },
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "NG17 refutes only the contact-only mechanism. It does not refute a theorem that also uses endpoint or least-representative arithmetic."
+}

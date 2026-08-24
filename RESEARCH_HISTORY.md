@@ -476,7 +476,73 @@ The bounded C03 search does not prove C03. The octave consequences retain
 their explicit conditional and external inputs. Phase 8 supplies neither an
 eventual lower bound for `M(k)` nor a proof of the Collatz conjecture.
 
-## 12. Predecessor-tree and density detour
+## 12. Phase 9 — two-sided criticality and near-diagonal residues
+
+Phase 9 began from the exact Phase 8 commit
+`ad4f8848efa3aafc211cf80089563ae9406bc418` and kept the P54/P57
+least-positive-counterexample framework explicitly conditional. Its first
+result is the exact forced-contact recurrence P59: a zero defect in the low
+rotation phase forces the next defect to remain zero, with successor weight
+ratio `2/3`.
+
+### Contact sharpness and improved finite counts
+
+The proposed contact-only completion fails. After correcting the symbolic
+contact indicator to require `c_0=1`, the all-contact construction obeys every
+closure rule and strictly exceeds the required weighted pressure. NG17 is
+therefore `REFUTED`, but only for arguments that discard endpoint and
+least-positive-residue information.
+
+An exact search over all reduced dual parameters of denominator at most 256
+selects `lambda=143/199`. Under P58/P59/P57, X02, EXT04, and the Phase 7
+certificate, this raises the conditional contact lower bound from
+31,327,720,462 to 35,251,435,772. Exact gap counting and the five octave
+exceptions then give E14: at least 16,848,437,652 first-octave consecutive
+short returns of odd gap at most 2. The optimizer is finite-grid optimal, not a
+claimed global continuous optimum.
+
+### Endpoint and reverse localization
+
+The exact endpoint identity yields
+
+```text
+S(a)=3*N*delta+3*(1+delta)*d,
+0<=d<=4,142,380,786<2^32.
+```
+
+The same conditional setting forces `X=7 or 19 mod 36`. The map
+`G4=(9x+5)/16` has the smaller odd predecessor `z=(2y-1)/3`, so it is forbidden
+on a first-octave return of a least counterexample. Exact continued fractions
+then put the first reverse coefficient pair not excluded by the uniform
+minimality threshold at
+`(a,L)=(615582794569,975675645481)`; the previous semiconvergent
+`(478054749257,757698850864)` is still insufficient. No valid reverse path is
+claimed.
+
+### Two-sided finite audit and remaining obstruction
+
+The generator and logically independent verifier enumerate every
+coefficient-safe first-crossing word through `q=21`, 22,475,497 words in all.
+Each row is included in a deterministic binary SHA-256 digest. No nontrivial
+paradoxical canonical word occurs in this finite range. A separate exhaustive
+tree through shortcut length 21 finds exactly five positive paradoxical
+cylinders, all at length 8, and no new global rank.
+
+C04 remains `OPEN`: q0 was not enumerated, and there is no theorem excluding
+the canonical residues `r2,r3` from the strip
+`0<=r3-r2<=4,142,380,786`, `r3=7 or 19 mod 36`. The reverse residue audit
+covers all 287 contracting coefficient pairs through `a=30` but only 30
+explicit lower-mechanical exponent words; arbitrary compositions remain a
+combinatorial obstruction. The bounded results overlap prior finite-order work
+of Rozier--Terracol and Winkler and do not reprove those external results.
+
+### What this result does not prove
+
+Phase 9 does not prove C04, C03, H54, H57, or the Collatz conjecture. Its large
+numerical consequences retain their named conditional and external inputs.
+The q<=21 and length<=21 searches cannot establish an eventual result.
+
+## 13. Predecessor-tree and density detour
 
 Strong external results count many predecessors or show descent for almost all
 starting values. A naive attempt to combine those densities with a least
@@ -487,7 +553,7 @@ designated exceptional integer or its thin arithmetic cylinder.
 would need an explicit transport, invariance, or intersection theorem for the
 least-counterexample set.
 
-## 13. Numerical consistency audit
+## 14. Numerical consistency audit
 
 The canonical figures above were resolved using this priority:
 
@@ -509,8 +575,11 @@ scopes:
 - The Phase 8 values 79,184 and 79,166 count all contracting `{A,B}` words and
   only genuinely mixed words, respectively; the 18-word difference is the
   pure family `B^n` for lengths 1 through 18.
+- The Phase 9 value 22,475,497 counts first-crossing words through `q=21`; the
+  five paradoxical records instead come from the separate unrestricted
+  parity-word tree through shortcut length 21.
 
-## 14. Current strategy
+## 15. Current strategy
 
 The primary target is
 
@@ -524,6 +593,10 @@ correction and small inverse-parity representatives, recursive lower bounds for
 shows that contact density and a finite macro alphabet alone are insufficient;
 Phase 8 additionally shows that exact octave localization and ordered-block
 descent do not yet control arbitrary block interleavings.
+Phase 9 sharpens the conditional endpoint to a near-diagonal two-sided residue
+box and refutes contact pressure alone as a completion mechanism. C04 and a
+carry-aware arbitrary reverse-residue recursion are now the closest new
+arithmetic targets inside that framework.
 Exact certificate extension remains useful for the finite remainder and for
 testing structural conjectures, but it is not the missing theorem.
 
@@ -531,7 +604,7 @@ Bounded finite-state and modular searches are now primarily falsification
 tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A`, `B`, and `A^rB^s`.
 
-## 15. Reproduction and immutable evidence
+## 16. Reproduction and immutable evidence
 
 - Phase 1–2: [`RUN_RESULTS.md`](RUN_RESULTS.md)
 - Phase 3: [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
@@ -540,12 +613,13 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Phase 6: [`PHASE6_RUN_RESULTS.md`](PHASE6_RUN_RESULTS.md)
 - Phase 7: [`PHASE7_RUN_RESULTS.md`](PHASE7_RUN_RESULTS.md)
 - Phase 8: [`PHASE8_RUN_RESULTS.md`](PHASE8_RUN_RESULTS.md)
+- Phase 9: [`PHASE9_RUN_RESULTS.md`](PHASE9_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 The current manifest hash is recorded in the latest phase acceptance report.
 Generated JSON/CSV/certificates must be regenerated, not hand edited.
 
-## 16. Current one-paragraph handoff
+## 17. Current one-paragraph handoff
 
 Phases 1–5 built a robust exact-computation framework and showed why bounded
 state, fixed period, fixed shadow, and finite mixed-modulus mechanisms leave
@@ -554,7 +628,10 @@ large unresolved families. Phase 6 supplies the direct reduction
 but finds immediate counterexamples inside the resulting finite macro
 alphabet. Phase 8 proves descent for every contracting ordered `A^rB^s` word
 and localizes almost all certified contacts to the first octave, yet arbitrary
-interleavings remain open. Exact certificates cover substantial finite ranges,
-but no eventual lower bound for `M(k)` is known. Future work should target a
-rigorous high-correction/least-positive-residue separation or a well-founded
-arbitrary-block potential, not merely greater depth.
+interleavings remain open. Phase 9 strengthens the contact and short-return
+counts, confines the conditional endpoint to `d<2^32`, and creates an enormous
+reverse coefficient barrier, but C04 remains open because simultaneous
+2-adic/3-adic near-diagonal residues are not excluded. Exact certificates cover
+substantial finite ranges, but no eventual lower bound for `M(k)` is known.
+Future work should target C04 or a rigorous carry-aware residue recursion, not
+merely greater depth.

@@ -353,6 +353,37 @@ decide whether arbitrary macro concatenations remain globally compatible.
 **Weaker statement retained.** Arithmetic compatibility must be tested across
 transitions or unbounded concatenations, not one macro at a time.
 
+## NG17 — Contact closure plus weighted pressure is sufficient
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** The Phase 9 forced-contact closure rule, together with
+the Phase 7 weighted contact lower bound, excludes every finite critical defect
+word without using its endpoint or least positive inverse-parity residue.
+
+**Why it looked plausible.** A low-phase contact forces the next defect to
+remain zero and transfers exactly `2/3` of its weight to a high-phase contact.
+This increases the exact contact lower bound from 31,327,720,462 to
+35,251,435,772 and appears to impose strong local rigidity.
+
+**Smallest counterexample / failure.** The specification's arbitrary contact
+indicator needs the zero-index correction `c_0=1`. With that correction, the
+symbolic all-contact construction
+`c_j=1, a_j=0, d_j=floor(j*log_3(2)), e_j=b_j` obeys the exact recurrence and
+closure and strictly satisfies the q0 weighted pressure. It therefore survives
+every test available to a contact-only mechanism. The artifact stores exact
+rational-logarithm interval checks rather than a floating-point comparison.
+
+**Failure scope.** Fundamental for every argument whose only information is
+the contact indicator, the forced successor relation, and total weighted
+pressure. It is not a counterexample to Collatz and does not refute mechanisms
+that also use endpoint minimality, canonical 2-adic/3-adic residues, or the
+Archimedean near-diagonal condition.
+
+**Weaker statement retained.** P59's forced-contact closure is exact and gives
+a stronger conditional contact and short-return lower bound. Future work must
+combine it with the endpoint arithmetic represented by P60--P62 and C04.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
