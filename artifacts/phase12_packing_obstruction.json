@@ -1,0 +1,71 @@
+{
+  "H72": {
+    "repository_status": "OPEN",
+    "statement": "Use orbit-specific transition congruences beyond distinctness modulo six to strengthen P72 enough to exclude every infinite coefficient-safe tail."
+  },
+  "NG21": {
+    "abstract_countermodel": "enumerate the positive integers coprime to six and set Y_(i+1)=Y_i*(1+1/(3*x_i))",
+    "hypothesis": "Distinctness, a fixed lower bound, and gcd(x_i,6)=1 alone imply Y_j=O(j^gamma) for some gamma<1/9.",
+    "repository_status": "REFUTED",
+    "scope": "This refutes only an improvement using the packing premises alone; actual Collatz transition congruences may still yield a stronger exponent.",
+    "sharpness_proof": "two admissible integers per six-number block give sum 1/x_i=(1/3)log(j)+O(1); log(1+1/(3x))=1/(3x)+O(1/x^2), hence log(Y_j)=log(j)/9+O(1)"
+  },
+  "finite_regression": {
+    "exact_two_per_complete_six_block": true,
+    "maximum_terms": 4096,
+    "row_digest_sha256": "1724c2c4f9f8c22e08a19c946fcdbafda3459ba872ee36c5a8bfa47a7ee72bdc",
+    "selected_rows": [
+      {
+        "last_value": 1,
+        "product_denominator_bits": 2,
+        "product_numerator_bits": 3,
+        "terms": 1
+      },
+      {
+        "last_value": 5,
+        "product_denominator_bits": 6,
+        "product_numerator_bits": 7,
+        "terms": 2
+      },
+      {
+        "last_value": 11,
+        "product_denominator_bits": 12,
+        "product_numerator_bits": 13,
+        "terms": 4
+      },
+      {
+        "last_value": 47,
+        "product_denominator_bits": 49,
+        "product_numerator_bits": 50,
+        "terms": 16
+      },
+      {
+        "last_value": 191,
+        "product_denominator_bits": 197,
+        "product_numerator_bits": 198,
+        "terms": 64
+      },
+      {
+        "last_value": 767,
+        "product_denominator_bits": 800,
+        "product_numerator_bits": 801,
+        "terms": 256
+      },
+      {
+        "last_value": 3071,
+        "product_denominator_bits": 3087,
+        "product_numerator_bits": 3089,
+        "terms": 1024
+      },
+      {
+        "last_value": 12287,
+        "product_denominator_bits": 12308,
+        "product_numerator_bits": 12310,
+        "terms": 4096
+      }
+    ]
+  },
+  "format": "collatz-phase12-packing-obstruction-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "Sharpness of the coarse packing input is not an example of a Collatz orbit and does not show that exponent 1/9 is dynamically optimal."
+}

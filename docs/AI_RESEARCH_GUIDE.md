@@ -2,8 +2,8 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 11's renewal-ladder reduction and affine-margin
-pair cylinders are the latest research layer.
+proof of the conjecture. Phase 12's infinite-safe-tail odd-orbit packing is the
+latest research layer.
 
 ## Read in this order
 
@@ -12,7 +12,9 @@ pair cylinders are the latest research layer.
 3. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 4. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-5. [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md), after its inputs
+5. [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md), after its input
+   [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md) and the earlier
+   inputs
    [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md),
    [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md), and
    [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md).
@@ -50,7 +52,9 @@ flowchart TD
     P68 --> C05
 
     P69["P69 counterexample trichotomy"] --> Cycle["Exclude nontrivial cycles"]
-    P69 --> Infinite["Exclude infinite coefficient-safe tails"]
+    P69 --> P72["P72 odd-orbit packing"]
+    P72 --> P73["P73 excludes all-contact word"]
+    P72 --> H72["H72 orbit-specific packing improvement"]
     P69 --> P70["P70 renewal-ladder implication"]
     H70["H70 eventual dropping-safe spacing"] --> P70
     P71["P71 exact pair-cylinder intervals"] --> H70
@@ -59,8 +63,9 @@ flowchart TD
 Arrows mean “is an input to,” not “has been proved unconditionally.” X02 is
 external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P71 are unconditional reductions or
-finite-cylinder arithmetic, while H70 is open. C04, C05, H54, the other two
-P69 branches, and the Collatz conjecture remain open.
+finite-cylinder arithmetic. P72 and P73 are unconditional constraints on the
+infinite-safe-tail branch, while H70 and H72 are open. C04, C05, H54, every
+uneliminated P69 branch, and the Collatz conjecture remain open.
 
 ## Active proof obligations
 
@@ -68,6 +73,7 @@ P69 branches, and the Collatz conjecture remain open.
 |---|---|---|---|
 | H54 | `OPEN` | Prove `M(K_q-1)>H_q` eventually | Attack any proposed `M(k)` inequality with all stored record failures and mandatory adversarial families |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
+| H72 | `OPEN` | Strengthen P72 using actual odd-orbit transitions until infinite coefficient-safe tails are impossible | Reject mod-6-only improvements with NG21; test multi-step congruence exclusions on E20 and all mandatory families |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -91,7 +97,7 @@ rule before scaling it.
 Every new experiment should state, before a large run:
 
 1. claim ID and exact quantifiers;
-2. why success would advance H54, H70, C04, or C05;
+2. why success would advance H54, H70, H72, C04, or C05;
 3. smallest adversarial falsification range;
 4. exact acceptance arithmetic;
 5. logically independent reconstruction method;
@@ -108,6 +114,9 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   retaining ordinary height and explicitly separating every NG19 collision.
 - Attack H70 separately from the other two P69 branches; do not describe a
   renewal-ladder result as a full counterexample exclusion.
+- Attack H72 with actual successor congruences or forbidden multi-step
+  constellations. Distinctness and mod-6 density alone are exponent-sharp by
+  NG21.
 - Derive exact lower bounds on the ordinary size of a pair of inverse-parity
   residues from their odd normalized gap and common-prefix affine constant.
 - Test whether any proposed branch potential composes across the record
@@ -128,6 +137,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   `L=12` by NG19.
 - Height-free dropping-safe spacing greater than 4: refuted for every `k>=3`
   by NG20.
+- A packing exponent below `1/9` from distinctness and coprimality modulo six
+  alone: refuted by NG21's abstract saturator, which is not a Collatz orbit.
 - Treating finite disappearance of safe pairs below a bound as a larger-H
   spacing theorem.
 - Treating formal rational cycles as positive integral Collatz cycles.

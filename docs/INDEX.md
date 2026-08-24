@@ -32,6 +32,7 @@ for the current state.
 | 9 | [`../PHASE9_RUN_RESULTS.md`](../PHASE9_RUN_RESULTS.md) | [`../artifacts/phase9_obstruction_report.md`](../artifacts/phase9_obstruction_report.md) | `d101798` |
 | 10 | [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md) | [`../artifacts/phase10_obstruction_report.md`](../artifacts/phase10_obstruction_report.md) | `b3ab86a` |
 | 11 | [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md) | [`../artifacts/phase11_obstruction_report.md`](../artifacts/phase11_obstruction_report.md) | `feat/phase11-renewal-ladder` |
+| 12 | [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md) | [`../artifacts/phase12_obstruction_report.md`](../artifacts/phase12_obstruction_report.md) | `feat/phase12-infinite-safe-packing` |
 
 Research supplements:
 
@@ -41,7 +42,7 @@ Research supplements:
 | Two-tail state collisions | [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md) | `artifacts/two_tail_state_collisions.json`; independent verifier | P68 finite-horizon state, NG19 exact compression failures, E17 finite scan |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 11 and both the branch-point and two-tail
+documentation through Phase 12 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

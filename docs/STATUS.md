@@ -29,8 +29,18 @@ disproved by this repository.
 - `VERIFIED_THEOREM`: P70 proves that an eventual dropping-safe pair-spacing
   inequality excludes the renewal-ladder branch; P71 proves exact affine-margin
   interval closure on every fixed pair cylinder.
+- `VERIFIED_THEOREM`: P72 proves the exact normalized odd-orbit product and
+  mod-6 packing bounds for every nonperiodic infinite coefficient-safe tail.
+  Its octave defect satisfies
+  `a_i>(8/9-epsilon)log2(i)` on a density-one set for every epsilon>0.
+- `VERIFIED_THEOREM`: P73 rules out the single all-contact critical mechanical
+  word as the infinite parity word of a positive integer. It does not rule out
+  arbitrary infinite coefficient-safe tails.
 - `OPEN`: H70 is that eventual dropping-safe pair-spacing inequality. No
   threshold or cross-cylinder proof is known.
+- `OPEN`: H72 asks for an orbit-specific packing improvement strong enough to
+  exclude every infinite coefficient-safe tail. NG21 shows that distinctness
+  and coprimality modulo 6 alone cannot improve the `1/9` growth exponent.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -105,6 +115,12 @@ No item above proves the Collatz conjecture.
   pass, with final height 1,666,251. Passes from `q=141` are structurally
   vacuous in the finite scan. E19 represents 16,775,072 pairs by 262,144 exact
   affine cylinders and verifies 48,822 dropping-safe pairs at depth 12.
+- Phase 12: E20 checks all 25,000 starts `S=3 mod 4` through 100,000 and 2,144
+  mandatory adversarial instances. The longest recorded prefixes contain 85
+  and 90 odd iterates respectively; all normalization and rational
+  first-crossing comparisons agree with the independent verifier. The
+  all-contact audit reconstructs 512 finite canonical residues, and NG21's
+  sharpness regression contains 4,096 coprime-to-6 factors.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -189,6 +205,10 @@ to an integer interval on each fixed parity cylinder. It does not merge
 different cylinders, so the state count remains exponential. The new H70
 eventual dropping-safe barrier is unproved, and finite passes after `q=141` are
 empty-set statements rather than asymptotic progress.
+Phase 12 constrains the infinite-safe-tail branch using actual odd orbit
+values. The coarse mod-6 packing input is sharp at exponent `1/9`; excluding
+the branch requires an additional transition or congruence mechanism, not a
+larger finite range. P73 removes only the all-contact extremal word.
 
 ## Secondary directions
 
@@ -200,6 +220,9 @@ empty-set statements rather than asymptotic progress.
   certificate that scales jointly in depth and ordinary integer height.
 - Seek a sound cross-cylinder dominance or quotient/carry recursion extending
   P71; it must distinguish every stored NG19 collision.
+- Attack H72 by proving multi-step exclusions or residue-transition scarcity
+  among the actual odd iterates; any proposed exponent improvement must use
+  information absent from the NG21 coprime-to-6 saturator.
 - Upgrade the finite mechanical reverse-residue audit to a recursive forbidden
   residue theorem for arbitrary positive exponent compositions.
 - Derive recursive or meet-in-the-middle lower bounds for `M(k)`.
@@ -214,6 +237,9 @@ empty-set statements rather than asymptotic progress.
 
 ## What was recently refuted?
 
+- `REFUTED`: distinctness, a lower height, and `gcd(x_i,6)=1` alone force a
+  growth exponent below `1/9`. The exact abstract coprime-to-6 saturator has
+  logarithmic product exponent `1/9`; it is not a Collatz orbit.
 - `REFUTED`: height-free dropping-safe spacing eventually exceeds 4. For every
   `k>=3`, `2^k-5` and `2^k-1` are k-step dropping-safe and differ by 4.
 - `REFUTED`: for `L=12`, some shortened residue window `b<L` universally
@@ -249,8 +275,9 @@ empty-set statements rather than asymptotic progress.
 2. Can P71's exact per-cylinder margin interval be merged across residue
    cylinders by a sound dominance/carry rule strong enough to prove the
    eventual H70 dropping-safe barrier?
-3. Can arbitrary reverse exponent compositions be summarized by a lossless
-   recursive forbidden-residue state, rather than only the mechanical family?
+3. Which exact successor congruences among actual odd iterates strengthen
+   P72 beyond the NG21 mod-6 saturator, and can they exclude the infinite-safe
+   branch rather than merely improve a finite profile?
 
 ## Codex tasks worth doing
 
@@ -260,6 +287,8 @@ empty-set statements rather than asymptotic progress.
   smallest exact counterexample before scaling.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
+- Extend P72 only with an orbit-specific transition invariant; test it first
+  against NG21 and E20 before claiming an exponent improvement.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -275,6 +304,8 @@ empty-set statements rather than asymptotic progress.
   already structurally empty from q=141 in its finite height.
 - Retry height-free dropping-safe spacing greater than 4; NG20 refutes it for
   every depth k>=3.
+- Retry a packing exponent below `1/9` using only distinctness and
+  coprimality modulo six; NG21 is sharp for exactly that information set.
 - Retry contact closure plus weighted pressure without a new endpoint or
   least-residue invariant; NG17 is an exact no-go for that information set.
 - Infer an asymptotic law from high finite coverage or a beam search.
@@ -295,4 +326,5 @@ empty-set statements rather than asymptotic progress.
 - Branch-point supplement: [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md)
 - Two-tail supplement: [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md)
 - Phase 11 acceptance: [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md)
+- Phase 12 acceptance: [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

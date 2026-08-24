@@ -286,6 +286,12 @@ survive NG19/NG20, and seek cross-cylinder structure beyond P71. Even a proof
 of H70 does not eliminate the separate nontrivial-cycle or infinite
 coefficient-safe-tail branches of P69.
 
+Phase 12 adds `H72` as a secondary exact target for the infinite-safe-tail
+branch. Any improvement of P72's `1/9` packing exponent must use actual orbit
+transition information and explicitly survive NG21; mod-6 packing alone is
+sharp. Ruling out the all-contact mechanical word must not be promoted to an
+exclusion of the full coefficient-safe language.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

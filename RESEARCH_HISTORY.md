@@ -706,7 +706,70 @@ Phase 11 does not prove H70, exclude the other two P69 branches, prove C04,
 C05, H54, or Collatz. Its finite passes and exact local cylinder closure are not
 an eventual theorem.
 
-## 17. Predecessor-tree and density detour
+## 17. Phase 12 — infinite-safe-tail odd-orbit packing
+
+P72 attacks the second branch of P69 without assuming a least global
+counterexample. For a nonperiodic coefficient-safe tail beginning at tail
+minimum `S`, let `x_j=T^(d_j)(S)` be the j-th odd iterate and set
+
+```text
+a_j=floor(j*log2(3))-d_j,
+theta_j=fractional_part(j*log2(3)),
+Y_j=2^d_j*x_j/3^j.
+```
+
+Exact affine normalization gives
+
+```text
+x_j=2^(a_j+theta_j)Y_j,
+Y_(j+1)=Y_j(1+1/(3x_j)).
+```
+
+The odd values are distinct, and every value after the first is coprime to
+six. Packing those values in the two admissible residue classes per six and
+bounding the reciprocal sum by an integral proves
+
+```text
+Y_j<=S*exp(1/S)*(1+3j/S)^(1/9),
+#{i<j:a_i<=A}
+ <=3+[2^(A+1)S exp(1/S)/3]*(1+3j/S)^(1/9).
+```
+
+Consequently, for every epsilon>0,
+`a_i>(8/9-epsilon)log2(i)` on a density-one set of indices. At any finite
+coefficient first crossing the same normalization gives the strict endpoint
+bound requested in the Phase 12 specification. These are theorem-level
+deductions, not extrapolations from finite orbit data.
+
+P73 applies the count with `A=0` to the all-contact positions
+`d_j=floor(j log2(3))`. This is the critical upper mechanical word of slope
+`ln(2)/ln(3)`, and it cannot be the infinite forward parity word of a positive
+integer, although every finite prefix retains an exact canonical 2-adic
+residue. The result is explicitly separated from the earlier symbolic NG17
+construction, which used only contact closure and pressure.
+
+The overlap audit records Lagarias's critical parity-density restriction,
+Monks--Yazinski's rational 2-adic extension, and Lopez--Stoll's work on
+critical Sturmian parity words. Phase 12 makes no novelty claim against that
+literature and does not import it as proof input.
+
+E20 independently audits 25,000 starts `S=3 mod 4` through 100,000 and 2,144
+mandatory adversarial instances. The longest recorded prefixes contain 85 and
+90 odd iterates. The all-contact residue audit reaches 512 odd inputs.
+
+NG21 preserves the main obstruction: the abstract ordered list of all integers
+coprime to six has exactly the reciprocal density needed for product exponent
+`1/9`. Thus no smaller exponent follows from the packing premises alone. The
+abstract list is not a Collatz orbit; H72 remains open for an orbit-specific
+transition or congruence improvement.
+
+### What this result does not prove
+
+Phase 12 does not eliminate arbitrary infinite coefficient-safe tails,
+nontrivial cycles, the renewal ladder, H70, C04, C05, H54, or Collatz.
+`proves_collatz=false`.
+
+## 18. Predecessor-tree and density detour
 
 Strong external results count many predecessors or show descent for almost all
 starting values. A naive attempt to combine those densities with a least
@@ -717,7 +780,7 @@ designated exceptional integer or its thin arithmetic cylinder.
 would need an explicit transport, invariance, or intersection theorem for the
 least-counterexample set.
 
-## 18. Numerical consistency audit
+## 19. Numerical consistency audit
 
 The canonical figures above were resolved using this priority:
 
@@ -752,7 +815,7 @@ scopes:
   affine cylinders; 262,144 is the cylinder count and 48,822 is the exact
   depth-12 dropping-safe pair count. They are not first-crossing words.
 
-## 19. Current strategy
+## 20. Current strategy
 
 The primary target is
 
@@ -778,6 +841,10 @@ from C05 to 30 cases and specifies a lossless candidate state. Global C05 is
 stronger. Phase 11 adds the exhaustive counterexample trichotomy and H70 as an
 alternate spacing target. P71 gives exact local interval closure, but no
 cross-cylinder state bound; NG20 proves height cannot be discarded.
+Phase 12 constrains the infinite-safe-tail branch and eliminates its
+all-contact mechanical extreme. NG21 shows that the coarse packing exponent is
+sharp, so H72 must use actual orbit transitions rather than another mod-6-only
+count.
 Exact certificate extension remains useful for the finite remainder and for
 testing structural conjectures, but it is not the missing theorem.
 
@@ -785,7 +852,7 @@ Bounded finite-state and modular searches are now primarily falsification
 tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A`, `B`, and `A^rB^s`.
 
-## 20. Reproduction and immutable evidence
+## 21. Reproduction and immutable evidence
 
 - Phase 1–2: [`RUN_RESULTS.md`](RUN_RESULTS.md)
 - Phase 3: [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
@@ -799,12 +866,13 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Branch-point supplement: [`BRANCH_POINT_RUN_RESULTS.md`](BRANCH_POINT_RUN_RESULTS.md)
 - Two-tail supplement: [`TWO_TAIL_RUN_RESULTS.md`](TWO_TAIL_RUN_RESULTS.md)
 - Phase 11: [`PHASE11_RUN_RESULTS.md`](PHASE11_RUN_RESULTS.md)
+- Phase 12: [`PHASE12_RUN_RESULTS.md`](PHASE12_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 The current manifest hash is recorded in the latest phase acceptance report.
 Generated JSON/CSV/certificates must be regenerated, not hand edited.
 
-## 21. Current one-paragraph handoff
+## 22. Current one-paragraph handoff
 
 Phases 1–5 built a robust exact-computation framework and showed why bounded
 state, fixed period, fixed shadow, and finite mixed-modulus mechanisms leave
@@ -826,5 +894,9 @@ stored collisions show that no shorter literal residue window works at
 `L=12`. Phase 11 splits every counterexample into a cycle, an infinite
 coefficient-safe tail, or a finite-crossing renewal ladder. H70 would eliminate
 only the ladder branch. Its exact affine-margin cylinders compose locally, but
-NG19 blocks literal residue truncation and NG20 blocks height-free spacing. No
-eventual lower bound for `M(k)` or cross-cylinder spacing theorem is known.
+NG19 blocks literal residue truncation and NG20 blocks height-free spacing.
+Phase 12 proves a density-one octave-defect bound for the infinite-safe-tail
+branch and rules out the all-contact critical word. NG21 shows that improving
+its exponent requires genuine transition information. No eventual lower bound
+for `M(k)`, cross-cylinder spacing theorem, or complete safe-tail exclusion is
+known.

@@ -488,6 +488,44 @@ depth-only progress.
 `floor(H_q)+floor((q-1)/3)`. P71 closes margin inequalities on each fixed
 parity cylinder, but a new cross-cylinder dominance theorem is required.
 
+## Phase 12 — improving the packing exponent from mod 6 alone
+
+**Status:** `REFUTED` (NG21)
+
+**Exact hypothesis.** Distinct odd values bounded below by a fixed `S`, with
+every value after the first coprime to six, force the normalized product
+`Y_j` to grow like `O(j^gamma)` for some `gamma<1/9`.
+
+**Why it looked plausible.** Actual odd Collatz iterates obey congruence
+restrictions, and the first packing estimate leaves a large density-one octave
+defect. A better exponent would strengthen `8/9` toward a pointwise or
+contradictory lower bound for `a_i`.
+
+**Exact countermodel.** Enumerate all positive integers coprime to six and set
+
+```text
+Y_(i+1)=Y_i*(1+1/(3x_i)).
+```
+
+Every complete block of six contributes exactly two values. Elementary
+harmonic estimates give
+
+```text
+sum 1/x_i=(1/3)log j+O(1),
+log Y_j=(1/9)log j+O(1).
+```
+
+The artifact independently reconstructs the first 4,096 exact product factors.
+
+**Failure scope.** Fundamental only for arguments using distinctness, a lower
+height, and coprimality modulo six as their complete input. The countermodel is
+not a Collatz orbit and does not show that exponent `1/9` is dynamically
+optimal.
+
+**Weaker statement retained.** P72 proves the `1/9` upper envelope and the
+density-one `8/9-epsilon` octave-defect bound. H72 must exploit actual
+successive-transition congruences or another orbit-specific invariant.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

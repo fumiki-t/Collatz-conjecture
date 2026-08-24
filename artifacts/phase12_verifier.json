@@ -1,0 +1,18 @@
+{
+  "E20": "VERIFIED_FINITE",
+  "H72": "OPEN",
+  "NG21": "REFUTED",
+  "P72": "VERIFIED_THEOREM",
+  "P73": "VERIFIED_THEOREM",
+  "adversarial_instances": 2144,
+  "all_contact_q": 512,
+  "packing_obstruction_terms": 4096,
+  "proves_collatz": false,
+  "remaining_P69_branches": [
+    "nontrivial cycle",
+    "infinite coefficient-safe tail",
+    "finite-crossing renewal ladder"
+  ],
+  "start_bound": 100000,
+  "valid": true
+}

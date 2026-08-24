@@ -1,0 +1,96 @@
+{
+  "P73": {
+    "aperiodicity": "alpha is irrational because 2^p=3^q has no positive integer solution",
+    "finite_prefix_warning": "every finite prefix still has one canonical residue modulo its power-of-two length",
+    "mechanical_identification": "odd positions d_j=floor(j*log2(3)); equivalently the upper mechanical word 1c_alpha with alpha=ln(2)/ln(3)",
+    "packing_contradiction": "a_j=0 for every j makes the P72 A=0 counting bound read j=O(j^(1/9))",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "The all-contact critical mechanical parity word cannot be the infinite forward parity word of a positive integer."
+  },
+  "finite_prefix_regression": {
+    "maximum_q": 512,
+    "row_digest_sha256": "ec3e75cb3d03207eae84ddf5307cb6781f38f69b7aaaf79285ca53a454d2b816",
+    "selected_rows": [
+      {
+        "canonical_residue": 1,
+        "length": 1,
+        "q": 1,
+        "word_prefix": "1",
+        "word_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+      },
+      {
+        "canonical_residue": 3,
+        "length": 3,
+        "q": 2,
+        "word_prefix": "110",
+        "word_sha256": "9bdb2af6799204a299c603994b8e400e4b1fd625efdb74066cc869fee42c9df3"
+      },
+      {
+        "canonical_residue": 11,
+        "length": 4,
+        "q": 3,
+        "word_prefix": "1101",
+        "word_sha256": "36ab771eba23f49d7ae43af88c601f3de8fccb201250906a4085444ae765f2db"
+      },
+      {
+        "canonical_residue": 59,
+        "length": 6,
+        "q": 4,
+        "word_prefix": "110110",
+        "word_sha256": "1b527626476d0b34565bc1ed5db94a5afbd946fa618ea3441dd5bae7dc84a97a"
+      },
+      {
+        "canonical_residue": 3067,
+        "length": 12,
+        "q": 8,
+        "word_prefix": "110110110101",
+        "word_sha256": "7ee244a6734aeed73196c127f0adf58bb3a54b1029172a985ba577c4c6bd5b4b"
+      },
+      {
+        "canonical_residue": 29252603,
+        "length": 25,
+        "q": 16,
+        "word_prefix": "1101101101011011010110110",
+        "word_sha256": "0ec43a483bce5aed2a5cdde8294eecc1dc3f4b82a4492e93d4b7b81b9662f514"
+      },
+      {
+        "canonical_residue": 352581544991739,
+        "length": 50,
+        "q": 32,
+        "word_prefix": "11011011010110110101101101101011011010110110110101",
+        "word_sha256": "b63a8d62e7ff39d990e54bb5d19b66c5bee656eabcbd7a92934d89d1c96dfb4b"
+      },
+      {
+        "canonical_residue": 1510484455329212443883586083835,
+        "length": 101,
+        "q": 64,
+        "word_prefix": "110110110101101101011011011010110110101101101101011011010110110110101101101011011010110110110101",
+        "word_sha256": "15bb48921b6ef951da217699911a3f966a107ce1d5397b6d03f831f77e110635"
+      },
+      {
+        "canonical_residue": 96222072063316577789641721966578802856813671322093352803323,
+        "length": 202,
+        "q": 128,
+        "word_prefix": "110110110101101101011011011010110110101101101101011011010110110110101101101011011010110110110101",
+        "word_sha256": "0aaee813bdfe4b4323d7805b471af21f22531ea159265010ff5392f5d01ce7ed"
+      },
+      {
+        "canonical_residue": 79329208809729934633296236130443581522685673206062237045345885102375692965109168738651993451108066818909239099123971283963,
+        "length": 405,
+        "q": 256,
+        "word_prefix": "110110110101101101011011011010110110101101101101011011010110110110101101101011011010110110110101",
+        "word_sha256": "b752a7100bf43693305822db50fc623d553f75d97d68b2d453858e42eb360678"
+      },
+      {
+        "canonical_residue": 6066984891219092503566831795044061745466224181953083274898732872421771406463353513992445088091444372442271531825558978095215909430691433206412324591866633099842640814593457961525601911434439663226272326638592912048875059795091799229332258184187,
+        "length": 811,
+        "q": 512,
+        "word_prefix": "110110110101101101011011011010110110101101101101011011010110110110101101101011011010110110110101",
+        "word_sha256": "380ba8a0f08dd2eb0696b27ca40b500d0da13d2795c58dafe12f07fa25f57ec6"
+      }
+    ]
+  },
+  "format": "collatz-phase12-all-contact-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "Ruling out one critical mechanical word does not rule out arbitrary infinite coefficient-safe tails."
+}

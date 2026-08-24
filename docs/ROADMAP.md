@@ -52,6 +52,33 @@ empty-set finite pass as vacuous.
 effective threshold and independently certified finite remainder. Separately
 state which argument excludes the other two P69 branches.
 
+## P1 — Infinite-safe-tail transition packing
+
+**Target.** Prove H72: strengthen P72 using actual odd-orbit transitions until
+no infinite coefficient-safe positive-integer tail can satisfy the resulting
+packing law.
+
+**Why this helps.** This would eliminate the second branch of P69. Together
+with a cycle exclusion and H70/P70, it would close the unconditional
+trichotomy.
+
+**Missing theorem.** P72 uses only distinctness, the tail-minimum height, and
+the fact that post-initial odd iterates are coprime to six. NG21 proves these
+inputs are sharp at growth exponent `1/9`. A successful improvement must use
+successive congruences, forbidden local constellations, or a composable
+multi-step packing rule.
+
+**Fast falsification test.** Apply the proposed exclusion to the exact finite
+orbits, all-contact prefixes, the NG21 abstract saturator, and every mandatory
+adversarial family. Reject any proof that silently treats the abstract
+coprime-to-6 list as an actual Collatz orbit or promotes finite scarcity to an
+eventual statement.
+
+**Success criterion.** An orbit-specific bound that contradicts coefficient
+safety for every sufficiently long tail, with an independently checkable
+finite remainder. A stronger exponent unsupported by new transition data does
+not meet this criterion.
+
 ## P1 — Structural lower bounds for `M(k)`
 
 **Target.** Derive recursive, combinatorial, or Diophantine inequalities that

@@ -107,6 +107,40 @@ finite return dictionaries, not the global strongly-sufficient theorem.
 
 ## Parity vectors and critical density
 
+### Lagarias (1985)
+
+**Status:** `EXTERNAL_THEOREM`
+
+Jeffrey C. Lagarias, “The 3x + 1 Problem and Its Generalizations,” *The
+American Mathematical Monthly* **92**(1) (1985), 3–23.
+[DOI 10.2307/2322189](https://doi.org/10.2307/2322189).
+
+**Result relevant here.** Relation (2.31) records that an integer trajectory
+tending to infinity has lower limiting parity-one density at least
+`ln(2)/ln(3)`.
+
+**Repository role.** This is direct prior overlap for critical parity density.
+Phase 12 does not claim the density threshold as new and does not use the
+external result to accept P72; its added statement packs distinct positive odd
+orbit values and controls the octave defect `a_i`.
+
+### Monks and Yazinski (2004)
+
+**Status:** `EXTERNAL_THEOREM`
+
+Kenneth G. Monks and Jonathan Yazinski, “The Autoconjugacy of the 3x + 1
+Function,” *Discrete Mathematics* **275**(1–3) (2004), 219–236.
+[DOI 10.1016/S0012-365X(03)00125-0](https://doi.org/10.1016/S0012-365X(03)00125-0),
+[author-hosted manuscript](https://monks.scranton.edu/files/pubs/AutoConjV13.pdf).
+
+**Result relevant here.** Theorem 2.7(b) extends the lower bound
+`ln(2)/ln(3)` to the lower parity-one density of a divergent rational 2-adic
+orbit.
+
+**Repository role.** This extends the domain of the classical density
+restriction. P72 is instead an internally proved positive-integer
+odd-value-packing result and does not depend on the 2-adic theorem.
+
 ### López and Stoll (2009)
 
 **Status:** `EXTERNAL_THEOREM`
@@ -119,7 +153,10 @@ Word,” *Integers* **9**(2) (2009), 141–162.
 parity words, including continued-fraction structure in that low-complexity
 class.
 
-**Repository role.** Context and adversarial model only. A hypothetical
+**Repository role.** Context and adversarial model only. Phase 12 identifies
+its all-contact word with the upper mechanical word of critical slope, but
+proves positive-integer impossibility from P72 rather than importing a
+Sturmian theorem. A hypothetical
 critical trajectory is not known to be Sturmian, so this cannot be used as a
 full reduction.
 
@@ -140,7 +177,8 @@ with a noncyclic trajectory must have lower limiting parity-one density
 **Repository role.** Context for the critical density. Before this result is
 made a proof dependency, a human specialist should audit the precise map,
 notion of rationality, and quantifiers against this repository's positive
-integer setting.
+integer setting. Phase 12 treats it only as overlap context and makes no
+literature-wide novelty claim.
 
 ## Almost-everywhere results
 

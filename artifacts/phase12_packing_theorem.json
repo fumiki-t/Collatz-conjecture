@@ -1,0 +1,86 @@
+{
+  "P72": {
+    "counting_bound": "#{i<j:a_i<=A}<=3+(2^(A+1)*S*exp(1/S)/3)*(1+3*j/S)^(1/9)",
+    "definitions": {
+      "Y_j": "2^d_j*x_j/3^j",
+      "a_j": "floor(j*log2(3))-d_j",
+      "theta_j": "fractional_part(j*log2(3))"
+    },
+    "density_consequence": "for every epsilon>0, a_i>(8/9-epsilon)*log2(i) on a density-one set of positive indices",
+    "exact_identities": [
+      "x_j=2^(a_j+theta_j)*Y_j",
+      "Y_0=S",
+      "Y_(j+1)=Y_j*(1+1/(3*x_j))",
+      "a_j>=0"
+    ],
+    "finite_crossing_derivation": "at first crossing 3^q/2^K<1, so S+d=(3^q/2^K)*Y_q<Y_q",
+    "finite_first_crossing": "d<S*(exp(1/S)*(1+3*q/S)^(1/9)-1)",
+    "growth_bound": "Y_j<=S*exp(1/S)*(1+3*j/S)^(1/9)",
+    "hypotheses": [
+      "S is a positive tail minimum of a nonperiodic Collatz orbit",
+      "the tail is coefficient-safe at every ordinary shortcut prefix",
+      "x_j=T^(d_j)(S) is the j-th odd iterate and d_0=0"
+    ],
+    "packing_lemmas": [
+      "the x_j are distinct",
+      "gcd(x_j,6)=1 for j>=1",
+      "the r-th ordered post-initial value z_r satisfies z_r>=S+3*(r-1) for r>=2",
+      "sum_(i<j) 1/x_i <= 3/S+(1/3)*log(1+3*j/S)"
+    ],
+    "proves_collatz": false,
+    "repository_status": "VERIFIED_THEOREM"
+  },
+  "exact_exponent_arithmetic": {
+    "coprime_to_six_harmonic_coefficient": {
+      "denominator": 3,
+      "numerator": 1
+    },
+    "density_threshold_coefficient": {
+      "denominator": 9,
+      "numerator": 8
+    },
+    "growth_exponent": {
+      "denominator": 9,
+      "numerator": 1
+    },
+    "normalized_log_recurrence_coefficient": {
+      "denominator": 3,
+      "numerator": 1
+    },
+    "threshold_plus_growth": {
+      "denominator": 1,
+      "numerator": 1
+    }
+  },
+  "format": "collatz-phase12-packing-theorem-v1",
+  "literature_overlap": {
+    "Lagarias_1985": {
+      "overlap": "critical parity density only; no a_j packing bound is imported",
+      "result": "a trajectory tending to infinity has lower parity-one density at least ln(2)/ln(3)",
+      "url": "https://doi.org/10.2307/2322189"
+    },
+    "Lopez_Stoll_2009_2021": {
+      "overlap": "the all-contact word is the upper mechanical word of slope ln(2)/ln(3), but positivity is ruled out here by P72 rather than imported",
+      "result": "critical-slope Sturmian parity words are studied; the 2021 preprint states equality of lower density for a divergent rational 2-adic orbit",
+      "urls": [
+        "https://doi.org/10.1515/INTEG.2009.014",
+        "https://arxiv.org/abs/2101.12747"
+      ]
+    },
+    "Monks_Yazinski_2004": {
+      "overlap": "extends the known density domain; Phase 12 uses positive integer odd-value packing instead",
+      "result": "the same lower-density restriction holds for divergent rational 2-adic orbits",
+      "url": "https://doi.org/10.1016/S0012-365X(03)00125-0"
+    },
+    "novelty_boundary": "No claim of literature-wide novelty is made; the inspected sources do not state the P72 odd-value packing inequality in this notation."
+  },
+  "proof_certificate": {
+    "counting_step": "a_i<=A implies x_i<2^(A+1)*Y_i<=2^(A+1)*Y_j",
+    "density_step": "with A=floor((8/9-epsilon)log2(j)), the exceptional count is O(j^(1-epsilon))",
+    "integral_step": "sum_(r=1)^m 1/(S+3r)<=integral_0^m dt/(S+3t)",
+    "log_product_step": "log(Y_j/S)=sum_(i<j) log(1+1/(3*x_i))<=sum_(i<j)1/(3*x_i)",
+    "packing_count": "each complete interval of six integers contains exactly two residues coprime to six"
+  },
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "P72 constrains but does not exclude an infinite coefficient-safe tail, a nontrivial cycle, the renewal ladder, or a Collatz counterexample."
+}
