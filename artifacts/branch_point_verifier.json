@@ -1,0 +1,9 @@
+{
+  "C05": "OPEN",
+  "E16_bound_H": 1500000,
+  "P66": "VERIFIED_THEOREM",
+  "P67": "CONDITIONAL",
+  "maximum_branch_depth_present": 20,
+  "proves_collatz": false,
+  "valid": true
+}

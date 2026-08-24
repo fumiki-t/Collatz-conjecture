@@ -593,7 +593,40 @@ Phase 10 does not prove C04, C05, H54, H57, or the Collatz conjecture. Its
 renewal application retains the least-counterexample and X02 inputs. Finite
 disappearance below 1,500,000 cannot establish a spacing bound at `2^72`.
 
-## 14. Predecessor-tree and density detour
+## 14. Phase 10 supplement — first-divergence branch coordinates
+
+The supplement starts from Phase 10 commit
+`b3ab86a102c0df3f2e7ded72b8dd32dc1fa53312` and asks for a lossless state
+behind C05 rather than a larger raw scan. P66 proves the exact branch identity:
+for `d=m-n>0`, two integer trajectories share exactly `h=v2(d)` parity steps,
+then split, and their transformed gap is the odd integer
+`3^a(d/2^h)` after a common prefix with a odd steps.
+
+Combining P66 with P63/P64 gives conditional P67. Since `4|d` and
+`0<d<=W<2^32`, every positive q0 near-return belongs to exactly one of the 30
+cases `2<=h<=31`. Both endpoints remain safe through K0-1, but their tails
+inherit a common-prefix coefficient surplus and cannot be treated as fresh
+independent safe paths.
+
+E16 exhausts `2<=n<=1,500,000` and reconstructs the maximum joint-safe depth
+`R_h(H)` for every finite branch depth `0<=h<=20`. The profile peaks at 213 for
+`h=7`, pair `(1126015,1394431)`, and is nonmonotone in h. An implementation-
+independent verifier proves each finite upper bound by ruling out opposite
+residue sides one depth higher. It also rebuilds 32,385 small-pair rows and
+5,156 mandatory adversarial pairs.
+
+This does not prove C05. It identifies the minimum information a future
+certificate must preserve: h, common odd count, odd normalized gap, inherited
+coefficient surplus, and both tail residue states. The branch-depth coordinate
+alone is recorded as an obstruction rather than promoted from finite data.
+
+### What this result does not prove
+
+The supplement does not prove C04, C05, H54, H57, or Collatz. Branch depths
+21--31 are absent from E16 only because `H=1,500,000`; no target-height case is
+excluded.
+
+## 15. Predecessor-tree and density detour
 
 Strong external results count many predecessors or show descent for almost all
 starting values. A naive attempt to combine those densities with a least
@@ -604,7 +637,7 @@ designated exceptional integer or its thin arithmetic cylinder.
 would need an explicit transport, invariance, or intersection theorem for the
 least-counterexample set.
 
-## 15. Numerical consistency audit
+## 16. Numerical consistency audit
 
 The canonical figures above were resolved using this priority:
 
@@ -632,8 +665,11 @@ scopes:
 - The Phase 10 value 81,118 counts first-crossing words only through `q=15` in
   its independent gap/rational-cycle audit; it does not replace the deeper
   Phase 9 enumeration or evaluate q0.
+- The branch supplement's 32,385 and 5,156 counts refer to exhaustive small
+  integer pairs and mandatory adversarial adjacent pairs, not first-crossing
+  words.
 
-## 16. Current strategy
+## 17. Current strategy
 
 The primary target is
 
@@ -654,6 +690,10 @@ arithmetic targets inside that framework.
 Phase 10 reduces C04 to a single gap residue and proves the conditional renewal
 barrier. Its new C05 spacing target is a concrete alternative formulation, but
 finite neighbor-gap deletion has not produced a scalable proof.
+The branch supplement reduces the q0-specific positive-gap consequence needed
+from C05 to 30 cases and specifies a lossless candidate state. Global C05 is
+stronger. State-collision mining at small height is now more valuable than
+extending the undifferentiated spacing profile.
 Exact certificate extension remains useful for the finite remainder and for
 testing structural conjectures, but it is not the missing theorem.
 
@@ -661,7 +701,7 @@ Bounded finite-state and modular searches are now primarily falsification
 tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A`, `B`, and `A^rB^s`.
 
-## 17. Reproduction and immutable evidence
+## 18. Reproduction and immutable evidence
 
 - Phase 1–2: [`RUN_RESULTS.md`](RUN_RESULTS.md)
 - Phase 3: [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
@@ -672,12 +712,13 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Phase 8: [`PHASE8_RUN_RESULTS.md`](PHASE8_RUN_RESULTS.md)
 - Phase 9: [`PHASE9_RUN_RESULTS.md`](PHASE9_RUN_RESULTS.md)
 - Phase 10: [`PHASE10_RUN_RESULTS.md`](PHASE10_RUN_RESULTS.md)
+- Branch-point supplement: [`BRANCH_POINT_RUN_RESULTS.md`](BRANCH_POINT_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 The current manifest hash is recorded in the latest phase acceptance report.
 Generated JSON/CSV/certificates must be regenerated, not hand edited.
 
-## 18. Current one-paragraph handoff
+## 19. Current one-paragraph handoff
 
 Phases 1–5 built a robust exact-computation framework and showed why bounded
 state, fixed period, fixed shadow, and finite mixed-modulus mechanisms leave
@@ -693,6 +734,8 @@ reverse coefficient barrier, but C04 remains open because simultaneous
 substantial finite ranges. Phase 10 turns the q0 endpoint into one gap residue
 and proves that a positive gap would give two integers safe through K0-1 within
 distance W, but C05 is unproved and its finite spacing recursion stalls far
-below the target. No eventual lower bound for `M(k)` is known. Future work
-should target a carry-aware gap-residue or safe-pair cylinder theorem, not
+below the target. P66/P67 now decompose positive gaps into 30 exact first-
+divergence cases and show which surplus and residue data a continuation state
+must retain. No eventual lower bound for `M(k)` is known. Future work should
+mine state collisions and target a carry-aware two-tail cylinder theorem, not
 merely greater depth.

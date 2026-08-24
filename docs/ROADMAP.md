@@ -119,6 +119,14 @@ recursion with all mandatory adversarial families before increasing depth.
 independent verifier at `(k,H)=(K0-1,2^72)`, or the least exact safe pair at
 distance at most W with its full cylinder witnesses.
 
+P66/P67 now split every positive target gap into the 30 cases
+`2<=h=v2(d)<=31`. A lossless continuation state must retain at least the
+common odd count, odd normalized gap, inherited coefficient surplus, and both
+tail residue states. E16 supplies exact finite witnesses for falsifying a
+proposed compression: `R_h(1500000)` is nonmonotone in h and peaks at 213 for
+`h=7`. The next useful experiment is state-collision mining, not a larger
+undifferentiated spacing scan.
+
 ## P1 — Arbitrary reverse-residue barrier
 
 **Target.** Extend P62 from a coefficient barrier and the lower-mechanical

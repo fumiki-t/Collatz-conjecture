@@ -14,6 +14,7 @@ for the current state.
 | [`LITERATURE.md`](LITERATURE.md) | Primary-source bibliography and actual use | Any new external dependency |
 | [`ROADMAP.md`](ROADMAP.md) | Ranked proof-oriented program with falsification tests | Any strategic change |
 | [`HANDOFF.md`](HANDOFF.md) | Ten-minute onboarding for a new researcher or AI | End of a major session |
+| [`AI_RESEARCH_GUIDE.md`](AI_RESEARCH_GUIDE.md) | Active dependency graph, exact next experiments, and machine health check | Every strategic or workflow change |
 | [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md) | Chronological cumulative narrative | Every accepted phase |
 | [`../AGENTS.md`](../AGENTS.md) | Mandatory research and proof-claim protocol | Protocol changes |
 
@@ -27,10 +28,19 @@ for the current state.
 | 5 | [`../PHASE5_RUN_RESULTS.md`](../PHASE5_RUN_RESULTS.md) | [`../artifacts/phase5_obstruction_report.md`](../artifacts/phase5_obstruction_report.md) | `39c90b4`, `4444d7c` |
 | 6 | [`../PHASE6_RUN_RESULTS.md`](../PHASE6_RUN_RESULTS.md) | [`../artifacts/phase6_obstruction_report.md`](../artifacts/phase6_obstruction_report.md) | `8684d53` |
 | 7 | [`../PHASE7_RUN_RESULTS.md`](../PHASE7_RUN_RESULTS.md) | [`../artifacts/phase7_obstruction_report.md`](../artifacts/phase7_obstruction_report.md) | `0d58dd1` |
+| 8 | [`../PHASE8_RUN_RESULTS.md`](../PHASE8_RUN_RESULTS.md) | [`../artifacts/phase8_obstruction_report.md`](../artifacts/phase8_obstruction_report.md) | `ad4f884` |
+| 9 | [`../PHASE9_RUN_RESULTS.md`](../PHASE9_RUN_RESULTS.md) | [`../artifacts/phase9_obstruction_report.md`](../artifacts/phase9_obstruction_report.md) | `d101798` |
+| 10 | [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md) | [`../artifacts/phase10_obstruction_report.md`](../artifacts/phase10_obstruction_report.md) | `b3ab86a` |
 
-The phase branches are reproducible milestones. Phase 7 integrates the
-canonical documentation branch so that the next `main` contains all seven
-phases, the claims ledger, and the cumulative research history.
+Research supplements:
+
+| Topic | Result record | Evidence | Main contribution |
+|---|---|---|---|
+| Phase 10 branch points | [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md) | `artifacts/branch_point_decomposition.json`; independent verifier | P66 first-divergence theorem, P67 thirty q0 cases, E16 finite profile |
+
+The phase branches are reproducible milestones. Main currently contains the
+canonical documentation through Phase 7; Phases 8–10 and the supplement remain
+auditable branch milestones until their integration policy is decided.
 
 ## Evidence boundaries
 

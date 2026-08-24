@@ -44,7 +44,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the seven phases established
+## 3. What the ten phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -69,6 +69,21 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   `(q0,K0)`, 31,327,720,462 contacts, and 889,748,829 genuine `h=12` pairs.
   Its 87,015 exact macros contain immediate counterexamples to uniform descent,
   compulsory four-word decomposition, and local unrealizability.
+- Phase 8 proves C02 for every contracting ordered `A^rB^s` realization,
+  localizes almost all conditional q0 contacts to the first octave, and leaves
+  arbitrary contracting `{A,B}*` interleavings C03 `OPEN`.
+- Phase 9 strengthens contact and short-return counts, confines the conditional
+  endpoint to `0<=d<=4,142,380,786` with `X=7 or 19 mod 36`, and creates a
+  large reverse coefficient barrier. Contact-only closure is refuted; C04 is
+  the remaining two-sided residue obstruction.
+- Phase 10 reduces C04 to one gap residue `rho`, proves `4|rho`, and derives a
+  conditional renewal barrier: every point in `[N,N+W]` is coefficient-safe
+  through `K0-1=114,208,327,603`. The exact finite spacing target C05 remains
+  `OPEN`. P65 proves only a formal rational-cycle minimum, not an integer cycle.
+- The Phase 10 branch supplement proves P66 and conditionally reduces every
+  positive q0 gap to 30 cases `2<=v2(d)<=31`. E16's finite branch profile peaks
+  at joint-safe depth 213 for `h=7`; it supplies falsification data, not a q0
+  bound.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -98,9 +113,19 @@ What is already finite and exact:
 What is missing: a `q`-uniform high-correction/least-positive-residue
 separation strong enough to imply an eventual lower bound for `M(k)`.
 
+The closest q0 subroute is now:
+
+```text
+P63 single gap residue
+  -> P64 two long-safe endpoints
+  -> P66/P67 thirty first-divergence cases
+  -> C05 two-tail spacing certificate (OPEN).
+```
+
 ## 5. Where to work next
 
-Start with [`ROADMAP.md`](ROADMAP.md), priority P0/P1. A useful new proposal
+Start with [`AI_RESEARCH_GUIDE.md`](AI_RESEARCH_GUIDE.md) and
+[`ROADMAP.md`](ROADMAP.md), priority P0/P1. A useful new proposal
 should answer all of these before a large computation:
 
 1. What precise inequality about `M(k)` is proposed?
@@ -110,8 +135,10 @@ should answer all of these before a large computation:
 5. What certificate can an implementation-independent verifier reconstruct?
 
 Good near-term work includes inverse-parity anti-concentration, recursive
-lower bounds, and arithmetic structure at `H_q` records. Certificate extension
-is useful when it tests such structure; raw depth extension is secondary.
+lower bounds, and a lossless two-tail continuation state retaining branch
+depth, normalized odd gap, inherited coefficient surplus, and both residues.
+Mine state collisions at small height before scaling. Certificate extension is
+useful when it tests such structure; raw depth extension is secondary.
 
 ## 6. Reproduce and audit
 
@@ -119,13 +146,16 @@ From the repository root:
 
 ```bash
 .venv/bin/python -m pytest -q
-.venv/bin/python verifier/verify_phase7.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase7_verifier.json
+.venv/bin/python verifier/verify_phase10.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase10_verifier.json
+.venv/bin/python verifier/verify_branch_point.py \
+  --artifact-dir artifacts --output /tmp/collatz_branch_verifier.json
+.venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
 
 The manifest hash is
-`aef9a88fa3af838e2625b80cafb18dee3274df8d1123a1aaf6379320f1be39df`.
+`ac70fa231476c86edc0f3d88be53b310aacca2939a9ee981c70574f05001a39a`.
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 
@@ -138,4 +168,5 @@ Before changing a claim status, read its row in
 
 The current bottleneck is not finite verification or contact density. It is a
 rigorous asymptotic link from high affine correction to a large least positive
-inverse-parity representative, strong enough to make `M(k)` dominate `H_q`.
+inverse-parity representative, or a lossless two-tail spacing certificate
+strong enough to close all 30 q0 branch cases. Neither is established.

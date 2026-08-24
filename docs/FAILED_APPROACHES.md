@@ -409,6 +409,24 @@ nesting proves `Delta_(k+1)(H)>=Delta_k(H)`. Phase 10 verifies the deletion and
 neighbor-gap rule exactly, but it finds no composable certificate reaching
 `K0-1` and `H=2^72`.
 
+## Phase 10 supplement — branch depth alone is not a certificate
+
+**Status:** research obstruction; no new universal claim is marked refuted
+
+The exact first-divergence coordinate `h=v2(m-n)` is useful but does not by
+itself rank joint coefficient-safe continuation. In E16 the finite envelope
+`R_h(1500000)` is highly nonmonotone: it reaches 213 at `h=7`, falls, and rises
+again at several later h values. This is evidence against treating a larger
+common 2-adic prefix as a standalone monotone potential, but a bounded profile
+is not a universal counterexample to every function of h.
+
+The surviving exact state must also retain the common-prefix odd count, the
+odd normalized gap, inherited coefficient surplus, and both tail residue
+states. Future compression proposals should be rejected as soon as two
+histories share the proposed state but have different exact continuation
+behavior. Merely extending H without specifying such a state is not a new
+mechanism.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

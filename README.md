@@ -19,15 +19,19 @@ open proof obligations so that the work can be audited and continued.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture.**
 
-Phases 1–7 provide exact finite searches and independent verification. The
-strongest route remains the `CONDITIONAL` Phase 6 reduction; Phase 7 sharpens
-its first-crossing arithmetic and exposes the missing high-correction versus
-small-positive-residue theorem. Bounded searches, high coverage, and external
-inputs are never promoted to asymptotic claims.
+Phases 1–10 provide exact finite searches, symbolic lemmas, independent
+verification, and preserved failures. The strongest route remains the
+`CONDITIONAL` Phase 6 reduction. Phases 7–10 localize its first possible large
+crossing, reduce the endpoint to one gap residue, derive a renewal barrier, and
+split every positive q0 near-gap pair into 30 first-divergence cases. C04, C05,
+and the eventual lower bound remain `OPEN`. Bounded searches, high coverage,
+and external inputs are never promoted to asymptotic claims.
 
 Current status: [`docs/STATUS.md`](docs/STATUS.md)
 
 Ten-minute handoff: [`docs/HANDOFF.md`](docs/HANDOFF.md)
+
+AI continuation guide: [`docs/AI_RESEARCH_GUIDE.md`](docs/AI_RESEARCH_GUIDE.md)
 
 ## Current strongest route
 
@@ -60,20 +64,25 @@ root is:
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
 .venv/bin/python -m pytest -q
-.venv/bin/python verifier/verify_phase7.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase7_verifier.json
+.venv/bin/python verifier/verify_phase10.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase10_verifier.json
+.venv/bin/python verifier/verify_branch_point.py \
+  --artifact-dir artifacts --output /tmp/collatz_branch_verifier.json
+.venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
 
 The final command should report
-`aef9a88fa3af838e2625b80cafb18dee3274df8d1123a1aaf6379320f1be39df`.
+`ac70fa231476c86edc0f3d88be53b310aacca2939a9ee981c70574f05001a39a`.
 The verifier output path is outside `artifacts/` so a reproduction check does
 not overwrite committed evidence.
 
 ## Repository guide
 
 - [`docs/INDEX.md`](docs/INDEX.md): canonical documentation map.
-- [`RESEARCH_HISTORY.md`](RESEARCH_HISTORY.md): chronological Phase 1–7 record.
+- [`docs/AI_RESEARCH_GUIDE.md`](docs/AI_RESEARCH_GUIDE.md): active dependency
+  graph, exact next experiments, known traps, and AI completion checklist.
+- [`RESEARCH_HISTORY.md`](RESEARCH_HISTORY.md): chronological Phase 1–10 record.
 - [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md): claim IDs, statuses,
   dependencies, evidence, and counterexamples.
 - [`docs/FAILED_APPROACHES.md`](docs/FAILED_APPROACHES.md): approaches that
@@ -94,6 +103,10 @@ Acceptance records:
 - [Phase 5](PHASE5_RUN_RESULTS.md)
 - [Phase 6](PHASE6_RUN_RESULTS.md)
 - [Phase 7](PHASE7_RUN_RESULTS.md)
+- [Phase 8](PHASE8_RUN_RESULTS.md)
+- [Phase 9](PHASE9_RUN_RESULTS.md)
+- [Phase 10](PHASE10_RUN_RESULTS.md)
+- [Branch-point supplement](BRANCH_POINT_RUN_RESULTS.md)
 - [SHA-256 manifest](artifacts/SHA256SUMS)
 
 ## Important disclaimer

@@ -16,6 +16,9 @@ disproved by this repository.
 - `VERIFIED_THEOREM`: P65 proves that `z=B/(2^K-3^q)` is the minimum of the
   formal rational affine cycle of every coefficient-safe first-crossing word,
   and `gcd(B,D)=gcd(d,D)`. It asserts no positive integral cycle.
+- `VERIFIED_THEOREM`: P66 proves that two integer trajectories share exactly
+  `v2(m-n)` parity steps and then split, with exact transformed odd gap
+  `3^a(m-n)/2^h` after their common prefix.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -29,6 +32,9 @@ disproved by this repository.
 - `CONDITIONAL`: Phase 10 reduces the q0 endpoint pair to the single residue
   `rho=d`, proves `4|rho`, and proves renewal coefficient safety through
   `K0-1=114208327603` for every orbit point in `[N,N+W]` in that framework.
+- `CONDITIONAL`: P67 decomposes every positive q0 near-return gap into exactly
+  one of 30 first-divergence cases `2<=h<=31`. Both post-split tails retain a
+  shared coefficient-surplus budget; their simultaneous continuation is open.
 - `VERIFIED_FINITE`: the exact modular graphs, return templates, certificate
   nodes, and finite ranges listed below were independently reconstructed.
 
@@ -73,6 +79,10 @@ No item above proves the Collatz conjecture.
   through `q=15`. Exact spacing for every `2<=n<=1,500,000` reaches
   `Delta_213=268416` at `(1126015,1394431)`; at `k=214` only one safe value
   remains in that finite prefix. The target at `H=2^72` was not evaluated.
+- Phase 10 branch supplement: E16 reconstructs `R_h(1500000)` for every
+  `0<=h<=20`. The largest joint-safe depth is 213 at `h=7`, witnessed by
+  `(1126015,1394431)`. Its independent verifier also checks 32,385 small pairs
+  and 5,156 mandatory adversarial pairs.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -140,6 +150,9 @@ Phase 10 makes the same obstruction one-dimensional via
 `rho=[B*P^(-1)]_D`, but neither determines this residue for the unknown q0 word
 nor proves `Delta_(K0-1)(2^72)>W`. The finite neighbor-gap recursion does not
 scale to the required depth and height.
+P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
+cases. The missing scalable state must retain the common-prefix surplus, odd
+normalized gap, and both tail residues; branch depth alone is insufficient.
 
 ## Secondary directions
 
@@ -149,6 +162,9 @@ scale to the required depth and height.
   lossless carry-aware recursion or meet-in-the-middle certificate.
 - Prove or refute C05 with a recursive safe-pair cylinder/difference-state
   certificate that scales jointly in depth and ordinary integer height.
+- Falsify a minimal two-tail state compression on the E16 profile before
+  extending it; histories merged into one state must have identical exact
+  continuation behavior.
 - Upgrade the finite mechanical reverse-residue audit to a recursive forbidden
   residue theorem for arbitrary positive exponent compositions.
 - Derive recursive or meet-in-the-middle lower bounds for `M(k)`.
@@ -197,6 +213,8 @@ scale to the required depth and height.
 
 ## Codex tasks worth doing
 
+- Start with [`AI_RESEARCH_GUIDE.md`](AI_RESEARCH_GUIDE.md) and run
+  `scripts/research_health.py` before modifying research code.
 - Formalize one precise candidate inequality for `M(k)` and search for its
   smallest exact counterexample before scaling.
 - Build an independent verifier for any new lower-bound certificate format.
@@ -227,4 +245,5 @@ scale to the required depth and height.
 - Phase 8 acceptance: [`../PHASE8_RUN_RESULTS.md`](../PHASE8_RUN_RESULTS.md)
 - Phase 9 acceptance: [`../PHASE9_RUN_RESULTS.md`](../PHASE9_RUN_RESULTS.md)
 - Phase 10 acceptance: [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md)
+- Branch-point supplement: [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

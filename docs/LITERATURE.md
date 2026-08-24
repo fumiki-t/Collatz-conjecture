@@ -33,9 +33,10 @@ Journal of Mathematics* **48** (1996), 1154–1169.
 **Result relevant here.** The 2-adic parity-vector/conjugacy framework and the
 unique reconstruction of a 2-adic integer from its parity vector.
 
-**Repository role.** Structural background for affine cylinders and parity
-words. Current finite certificates reconstruct their own arithmetic and do not
-delegate acceptance to this paper.
+**Repository role.** Structural background for affine cylinders, parity words,
+and Phase 10 supplement P66's prefix-agreement criterion. P66 gives its own
+finite integer/modulo-power proof and verifier; acceptance is not delegated to
+this paper.
 
 ### Fernández and Ibáñez (2026 preprint)
 
