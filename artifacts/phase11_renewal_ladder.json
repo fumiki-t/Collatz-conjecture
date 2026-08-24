@@ -1,0 +1,76 @@
+{
+  "H70": {
+    "eventual_threshold_found": false,
+    "repository_status": "OPEN",
+    "statement": "Delta_down_Kq(floor(H_q)+floor((q-1)/3))>floor((q-1)/3) for every sufficiently large q"
+  },
+  "P69": {
+    "exact_identities": [
+      "T^K(S)=(3^q*S+B)/2^K=S+d",
+      "B=D*S+2^K*d",
+      "B/3^q=(1/3)*sum_r 2^p_r/3^r<=q/3",
+      "d=(3^q/2^K)*(B/3^q)-(1-3^q/2^K)*S<B/3^q",
+      "gcd(B,D)=gcd(d,D)",
+      "den(B/D)=D/gcd(d,D)>3D/q because 0<d<q/3"
+    ],
+    "finite_crossing_properties": [
+      "K_q=bitlength(3^q)",
+      "S_i<=H_q=B_q_max/D_q",
+      "4<=S_(i+1)-S_i<=d_i=T^Kq(S_i)-S_i<=floor((q_i-1)/3)",
+      "q_i tends to infinity",
+      "reduced denominator of B_i/D_q is greater than 3*D_q/q_i"
+    ],
+    "nonperiodic_properties": [
+      "S_0<S_1<...",
+      "S_i=3 (mod 4)",
+      "every future iterate of S_i is at least S_i"
+    ],
+    "odd_count_clarification": "q_i counts odd shortcut steps; q_i is not asserted to be an odd-valued integer",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "Every Collatz counterexample falls into a nontrivial cycle, an infinite coefficient-safe tail, or a finite-crossing renewal ladder of successive tail minima.",
+    "symbolic_regression": {
+      "layer_counts": [
+        1,
+        1,
+        2,
+        3,
+        7,
+        12,
+        30,
+        85,
+        173,
+        476,
+        961,
+        2652
+      ],
+      "maximum_q": 12,
+      "repository_status": "VERIFIED_FINITE",
+      "role": "regression of the exact P69 position argument; the theorem is not inferred from this finite audit",
+      "row_digest_sha256": "f0966ca7f73c586b3cba4ccebda78564b107a9b60729d66d5223c2644db9a16d",
+      "total_words": 4403
+    },
+    "tail_minimum_definition": "the successive distinct values of min{x_t:t>=r} along an injective positive orbit"
+  },
+  "P70": {
+    "eventual_barrier": "Delta_down_Kq(floor(H_q)+floor((q-1)/3))>floor((q-1)/3)",
+    "proof": [
+      "q_i tends to infinity, so an eventual bound applies to some ladder rung",
+      "both S_i and S_(i+1) lie in D_Kq at the displayed height",
+      "their gap is at most floor((q_i-1)/3), contradicting the spacing bound"
+    ],
+    "relation_to_C05": "a separate renewal-ladder target; it does not by itself settle the cycle or infinite coefficient-safe-tail alternatives",
+    "remaining_branches": [
+      "nontrivial cycle",
+      "infinite coefficient-safe tail"
+    ],
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "If the displayed dropping-safe spacing inequality holds for every sufficiently large q, then no finite-crossing renewal ladder exists."
+  },
+  "dependencies": {
+    "phase10_rational_cycle_sha256": "5504f03c2c8f450cae0a8aa9eca5ef2e06b8424a81e6235cb423a6cfcc867e93",
+    "two_tail_state_collisions_sha256": "4fe9acbec6dafcf394c18e9fe84a007b262f9ea2a09832ef636f72810ea6a3ef"
+  },
+  "format": "collatz-phase11-renewal-ladder-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The trichotomy is a reduction. Neither remaining alternative nor the eventual dropping-safe spacing inequality is proved here."
+}

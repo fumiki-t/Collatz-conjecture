@@ -662,7 +662,51 @@ every alternative compression fails. NG19 refutes only the entire tested
 family of literal shorter residue windows at `L=12`. C04, C05, H54, and the
 Collatz conjecture remain open; `proves_collatz=false`.
 
-## 16. Predecessor-tree and density detour
+## 16. Phase 11 — renewal ladder and affine-margin cylinders
+
+P69 replaces the least-global-counterexample viewpoint by the successive tail
+minima of any nonperiodic counterexample orbit. These minima strictly increase,
+are all `3 mod 4`, and never drop below themselves. At a finite coefficient
+first crossing with q odd steps, exact affine arithmetic gives
+
+```text
+S_i<=H_q,
+4<=S_(i+1)-S_i<=d_i<=floor((q-1)/3),
+q_i->infinity,
+den(B_i/D_q)>3D_q/q.
+```
+
+Here q counts odd steps and need not be odd-valued. The formal denominator is
+not an integer-cycle claim. Together with the periodic and infinite-
+coefficient-safe alternatives, this yields the unconditional three-branch
+counterexample trichotomy.
+
+P70 proves that the eventual H70 dropping-safe spacing inequality eliminates
+the finite-crossing ladder branch. It leaves nontrivial cycles and infinite
+coefficient-safe tails as separate obligations. E18 independently recomputes
+every `q<=4961`: exactly `17,22,27,29,32,34` fail, all at pair `(27,31)` and
+gap 4, while every `35<=q<=4961` passes. The final height is 1,666,251. The
+first structurally vacuous q is 141, so the later empty finite sets are not
+evidence of eventuality.
+
+NG20 is a universal no-go: for every `k>=3`, the k-step dropping-safe integers
+`2^k-5` and `2^k-1` differ by 4. Any spacing argument must retain ordinary
+height.
+
+P71 adds the requested composable exact margins. On a fixed length-L parity
+cylinder, every margin `T^j(x)-x` is affine in the cylinder parameter; all
+inequalities for a fixed-gap pair intersect to one exact integer interval.
+E19 represents 16,775,072 pairs by 262,144 cylinders at `H=262144`, depth 12,
+and gap at most 64, finding 48,822 safe pairs. The rule composes locally but
+does not merge the `2^L` residue classes; H70 remains open.
+
+### What this result does not prove
+
+Phase 11 does not prove H70, exclude the other two P69 branches, prove C04,
+C05, H54, or Collatz. Its finite passes and exact local cylinder closure are not
+an eventual theorem.
+
+## 17. Predecessor-tree and density detour
 
 Strong external results count many predecessors or show descent for almost all
 starting values. A naive attempt to combine those densities with a least
@@ -673,7 +717,7 @@ designated exceptional integer or its thin arithmetic cylinder.
 would need an explicit transport, invariance, or intersection theorem for the
 least-counterexample set.
 
-## 17. Numerical consistency audit
+## 18. Numerical consistency audit
 
 The canonical figures above were resolved using this priority:
 
@@ -704,8 +748,11 @@ scopes:
 - The branch supplement's 32,385 and 5,156 counts refer to exhaustive small
   integer pairs and mandatory adversarial adjacent pairs, not first-crossing
   words.
+- Phase 11's 16,775,072 count is the number of fixed-gap pairs represented by
+  affine cylinders; 262,144 is the cylinder count and 48,822 is the exact
+  depth-12 dropping-safe pair count. They are not first-crossing words.
 
-## 18. Current strategy
+## 19. Current strategy
 
 The primary target is
 
@@ -728,8 +775,9 @@ barrier. Its new C05 spacing target is a concrete alternative formulation, but
 finite neighbor-gap deletion has not produced a scalable proof.
 The branch supplement reduces the q0-specific positive-gap consequence needed
 from C05 to 30 cases and specifies a lossless candidate state. Global C05 is
-stronger. State-collision mining at small height is now more valuable than
-extending the undifferentiated spacing profile.
+stronger. Phase 11 adds the exhaustive counterexample trichotomy and H70 as an
+alternate spacing target. P71 gives exact local interval closure, but no
+cross-cylinder state bound; NG20 proves height cannot be discarded.
 Exact certificate extension remains useful for the finite remainder and for
 testing structural conjectures, but it is not the missing theorem.
 
@@ -737,7 +785,7 @@ Bounded finite-state and modular searches are now primarily falsification
 tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A`, `B`, and `A^rB^s`.
 
-## 19. Reproduction and immutable evidence
+## 20. Reproduction and immutable evidence
 
 - Phase 1–2: [`RUN_RESULTS.md`](RUN_RESULTS.md)
 - Phase 3: [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
@@ -750,12 +798,13 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Phase 10: [`PHASE10_RUN_RESULTS.md`](PHASE10_RUN_RESULTS.md)
 - Branch-point supplement: [`BRANCH_POINT_RUN_RESULTS.md`](BRANCH_POINT_RUN_RESULTS.md)
 - Two-tail supplement: [`TWO_TAIL_RUN_RESULTS.md`](TWO_TAIL_RUN_RESULTS.md)
+- Phase 11: [`PHASE11_RUN_RESULTS.md`](PHASE11_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 The current manifest hash is recorded in the latest phase acceptance report.
 Generated JSON/CSV/certificates must be regenerated, not hand edited.
 
-## 20. Current one-paragraph handoff
+## 21. Current one-paragraph handoff
 
 Phases 1–5 built a robust exact-computation framework and showed why bounded
 state, fixed period, fixed shadow, and finite mixed-modulus mechanisms leave
@@ -774,6 +823,8 @@ distance W, but C05 is unproved and its finite spacing recursion stalls far
 below the target. P66/P67 now decompose positive gaps into 30 exact first-
 divergence cases. P68 supplies the exact finite-horizon state, while NG19's
 stored collisions show that no shorter literal residue window works at
-`L=12`. No eventual lower bound for `M(k)` is known. Future work should target
-a composable carry-aware two-tail cylinder theorem that separates those
-collisions, not merely greater depth.
+`L=12`. Phase 11 splits every counterexample into a cycle, an infinite
+coefficient-safe tail, or a finite-crossing renewal ladder. H70 would eliminate
+only the ladder branch. Its exact affine-margin cylinders compose locally, but
+NG19 blocks literal residue truncation and NG20 blocks height-free spacing. No
+eventual lower bound for `M(k)` or cross-cylinder spacing theorem is known.

@@ -280,6 +280,12 @@ M(K_q-1)>H_q
 
 eventually.
 
+Phase 11 adds `H70` as a secondary exact target for the finite-crossing
+renewal-ladder branch. Work on H70 must retain ordinary height, explicitly
+survive NG19/NG20, and seek cross-cylinder structure beyond P71. Even a proof
+of H70 does not eliminate the separate nontrivial-cycle or infinite
+coefficient-safe-tail branches of P69.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

@@ -22,6 +22,15 @@ disproved by this repository.
 - `VERIFIED_THEOREM`: P68 proves that, after a coefficient-safe common prefix,
   `(h,a,u,orientation,y mod 2^L)` losslessly determines both tails' next `L`
   parity bits and their coefficient-safety decisions over that finite horizon.
+- `VERIFIED_THEOREM`: P69 splits every possible counterexample into a
+  nontrivial cycle, an infinite coefficient-safe tail, or a finite-crossing
+  renewal ladder of increasing `3 mod 4` tail minima with exact height, gap,
+  odd-count growth, and formal rational-denominator bounds.
+- `VERIFIED_THEOREM`: P70 proves that an eventual dropping-safe pair-spacing
+  inequality excludes the renewal-ladder branch; P71 proves exact affine-margin
+  interval closure on every fixed pair cylinder.
+- `OPEN`: H70 is that eventual dropping-safe pair-spacing inequality. No
+  threshold or cross-cylinder proof is known.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -91,6 +100,11 @@ No item above proves the Collatz conjecture.
   `b=0,...,11`, it retains the first exact collision between a jointly safe
   and non-safe continuation. The mandatory adversarial audit covers 5,156
   adjacent family pairs.
+- Phase 11: E18 independently recomputes every `q<=4961`. The only failures are
+  `17,22,27,29,32,34`, all at pair `(27,31)` and gap 4; all `35<=q<=4961`
+  pass, with final height 1,666,251. Passes from `q=141` are structurally
+  vacuous in the finite scan. E19 represents 16,775,072 pairs by 262,144 exact
+  affine cylinders and verifies 48,822 dropping-safe pairs at depth 12.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -137,6 +151,11 @@ M(K_q-1)\le N\le H_q.
 Thus an eventual proof of `M(K_q-1) > H_q`, plus the finite remainder, would
 rule out such a counterexample and close the conjecture through this route.
 
+P69 adds a logically exhaustive alternate decomposition. P70 would exclude
+its finite-crossing renewal-ladder branch, but nontrivial cycles and infinite
+coefficient-safe tails would still require independent exclusion. Therefore
+P70 alone is not a complete Collatz route.
+
 ## Current main bottleneck
 
 No asymptotic lower bound is known for the least coefficient-safe
@@ -165,6 +184,11 @@ P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
 `L=12` none of the shorter windows `b<L` retains enough information even in a
 small exact domain. The open problem is therefore a composable symbolic state,
 not a fixed truncation of the future residue.
+Phase 11 supplies one such local composition rule: exact affine margins close
+to an integer interval on each fixed parity cylinder. It does not merge
+different cylinders, so the state count remains exponential. The new H70
+eventual dropping-safe barrier is unproved, and finite passes after `q=141` are
+empty-set statements rather than asymptotic progress.
 
 ## Secondary directions
 
@@ -174,9 +198,8 @@ not a fixed truncation of the future residue.
   lossless carry-aware recursion or meet-in-the-middle certificate.
 - Prove or refute C05 with a recursive safe-pair cylinder/difference-state
   certificate that scales jointly in depth and ordinary integer height.
-- Falsify a minimal two-tail state compression on the E16 profile before
-  extending it; histories merged into one state must have identical exact
-  continuation behavior.
+- Seek a sound cross-cylinder dominance or quotient/carry recursion extending
+  P71; it must distinguish every stored NG19 collision.
 - Upgrade the finite mechanical reverse-residue audit to a recursive forbidden
   residue theorem for arbitrary positive exponent compositions.
 - Derive recursive or meet-in-the-middle lower bounds for `M(k)`.
@@ -191,6 +214,8 @@ not a fixed truncation of the future residue.
 
 ## What was recently refuted?
 
+- `REFUTED`: height-free dropping-safe spacing eventually exceeds 4. For every
+  `k>=3`, `2^k-5` and `2^k-1` are k-step dropping-safe and differ by 4.
 - `REFUTED`: for `L=12`, some shortened residue window `b<L` universally
   decides two-tail joint coefficient safety. Every `b=0,...,11` has an exact
   opposite-outcome collision below `H=20000` and gap 512.
@@ -221,9 +246,9 @@ not a fixed truncation of the future residue.
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can the lossless horizon-dependent P68 state be replaced by a composable
-   symbolic/carry state whose size does not grow one bit per future step, and
-   which is strong enough to prove C05?
+2. Can P71's exact per-cylinder margin interval be merged across residue
+   cylinders by a sound dominance/carry rule strong enough to prove the
+   eventual H70 dropping-safe barrier?
 3. Can arbitrary reverse exponent compositions be summarized by a lossless
    recursive forbidden-residue state, rather than only the mechanical family?
 
@@ -233,6 +258,8 @@ not a fixed truncation of the future residue.
   `scripts/research_health.py` before modifying research code.
 - Formalize one precise candidate inequality for `M(k)` and search for its
   smallest exact counterexample before scaling.
+- Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
+  test it first on NG19 and NG20.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -244,6 +271,10 @@ not a fixed truncation of the future residue.
 
 - Merely extend Phase 1–5 search depth or modulus.
 - Add another fixed finite shadow dictionary.
+- Extend the Phase 11 q-limit without a nonvacuous asymptotic mechanism; E18 is
+  already structurally empty from q=141 in its finite height.
+- Retry height-free dropping-safe spacing greater than 4; NG20 refutes it for
+  every depth k>=3.
 - Retry contact closure plus weighted pressure without a new endpoint or
   least-residue invariant; NG17 is an exact no-go for that information set.
 - Infer an asymptotic law from high finite coverage or a beam search.
@@ -263,4 +294,5 @@ not a fixed truncation of the future residue.
 - Phase 10 acceptance: [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md)
 - Branch-point supplement: [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md)
 - Two-tail supplement: [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md)
+- Phase 11 acceptance: [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

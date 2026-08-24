@@ -24,6 +24,34 @@ the known failures `(17,27),(29,27),(41,703)`, and generated prefixes from
 or a finite certificate format for the remainder, independently audited
 without external record-minimality assumptions.
 
+## P1 — Renewal-ladder dropping-safe barrier
+
+**Target.** Prove H70, the eventual inequality used by P70:
+
+```text
+Delta_down_Kq(floor(H_q)+floor((q-1)/3))
+  > floor((q-1)/3).
+```
+
+**Why this helps.** P69 is unconditional and exhaustive: this target would
+eliminate every nonperiodic counterexample whose tail minima have finite
+coefficient crossings. A complete Collatz proof would still have to exclude a
+nontrivial cycle and an infinite coefficient-safe tail.
+
+**Missing theorem.** A cross-cylinder ordinary-height lower bound for
+dropping-safe pairs. P71 closes all affine margin inequalities inside one fixed
+parity cylinder, but retains all `2^L` residue classes. No sound quotient/carry
+state merges them.
+
+**Fast falsification test.** Rebuild the exact failures
+`q=17,22,27,29,32,34`, all witnessed by `(27,31)`, and require every proposed
+merge to survive NG19 plus the universal NG20 pairs `2^k-5,2^k-1`. Treat every
+empty-set finite pass as vacuous.
+
+**Success criterion.** A repository proof of the eventual inequality with an
+effective threshold and independently certified finite remainder. Separately
+state which argument excludes the other two P69 branches.
+
 ## P1 — Structural lower bounds for `M(k)`
 
 **Target.** Derive recursive, combinatorial, or Diophantine inequalities that
@@ -132,6 +160,9 @@ window `b<L` has an exact opposite-outcome collision below `H=20000`. The next
 useful experiment must therefore add composable arithmetic structure—such as
 carry intervals, cylinder transitions, or a provable dominance relation—rather
 than merely choosing a smaller fixed residue window or extending the same scan.
+P71 supplies exact interval closure inside each fixed residue cylinder, but no
+cross-cylinder dominance; that merge is now the precise next certificate
+problem shared by C05 and the new H70 route.
 
 ## P1 — Arbitrary reverse-residue barrier
 

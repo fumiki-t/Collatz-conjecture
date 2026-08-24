@@ -44,7 +44,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the ten phases established
+## 3. What the eleven phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -88,6 +88,12 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   by `(h,a,u,orientation,y mod 2^L)`. E17 finds, for every `b<12`, a minimal
   safe/non-safe collision when that residue is shortened to b bits. Thus the
   literal fixed-window compression NG19 is refuted; C05 remains open.
+- Phase 11 proves the unconditional P69 counterexample trichotomy. Its
+  finite-crossing branch is an infinite ladder of `3 mod 4` tail minima with
+  exact height and gap bounds. P70 reduces that branch to H70, an eventual
+  dropping-safe pair spacing inequality. E18 finds exactly six failures through
+  q=4961, while NG20 proves height-free spacing impossible. P71 closes exact
+  affine margins inside each fixed pair cylinder but not across cylinders.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -127,25 +133,36 @@ P63 single gap residue
   -> C05 two-tail spacing certificate (OPEN).
 ```
 
+The logically exhaustive Phase 11 route is:
+
+```text
+P69 counterexample trichotomy
+  -> exclude nontrivial cycles (OPEN)
+  -> exclude infinite coefficient-safe tails (OPEN)
+  -> H70 eventual dropping-safe spacing via P70 (OPEN).
+```
+
+H70 would settle only its third branch through P70, so it must never be described as a
+complete proof route by itself.
+
 ## 5. Where to work next
 
 Start with [`AI_RESEARCH_GUIDE.md`](AI_RESEARCH_GUIDE.md) and
 [`ROADMAP.md`](ROADMAP.md), priority P0/P1. A useful new proposal
 should answer all of these before a large computation:
 
-1. What precise inequality about `M(k)` is proposed?
-2. Why would it dominate `H_q`?
+1. What precise inequality about `M(k)` or dropping-safe pair spacing is proposed?
+2. Why would it dominate the relevant `H_q` height and gap allowance?
 3. What is the fastest exact falsification test?
 4. Does it survive every mandatory adversarial family?
 5. What certificate can an implementation-independent verifier reconstruct?
 
 Good near-term work includes inverse-parity anti-concentration, recursive
-lower bounds, and a composable two-tail continuation state retaining branch
-depth, normalized odd gap, inherited coefficient surplus, and residue/carry
-information equivalent to both tails. Start from the stored NG19 collisions:
-any proposed state merge must distinguish them or prove a sound dominance
-relation. Certificate extension is useful when it tests such structure; raw
-depth extension is secondary.
+lower bounds, and a cross-cylinder quotient/carry state extending P71. Start
+from the stored NG19 collisions and universal NG20 pair: any proposed merge
+must distinguish them or prove a sound dominance relation. Certificate
+extension is useful when it tests such structure; raw depth extension is
+secondary.
 
 ## 6. Reproduce and audit
 
@@ -159,12 +176,14 @@ From the repository root:
   --artifact-dir artifacts --output /tmp/collatz_branch_verifier.json
 .venv/bin/python verifier/verify_two_tail.py \
   --artifact-dir artifacts --output /tmp/collatz_two_tail_verifier.json
+.venv/bin/python verifier/verify_phase11.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase11_verifier.json
 .venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
 
 The current manifest hash is recorded in
-[`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md).
+[`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md).
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 
@@ -176,7 +195,8 @@ Before changing a claim status, read its row in
 ## If you only remember one thing
 
 The current bottleneck is not finite verification or contact density. It is a
-rigorous asymptotic link from high affine correction to a large least positive
-inverse-parity representative, or a composable two-tail spacing certificate
-strong enough to close all 30 q0 branch cases. P68 solves only a chosen finite
-horizon, and NG19 shows why simply shortening that residue window fails.
+rigorous asymptotic link from high affine correction to ordinary height, or a
+cross-cylinder spacing theorem. P71 solves exact margins only inside a fixed
+finite cylinder; NG19 prevents literal truncation, and NG20 prevents discarding
+height. Even a proof of P70 would leave the cycle and infinite
+coefficient-safe-tail branches open.

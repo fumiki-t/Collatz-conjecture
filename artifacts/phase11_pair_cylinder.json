@@ -1,0 +1,63 @@
+{
+  "E19": {
+    "literal_cross_check": {
+      "bound_H": 16384,
+      "cylinder_rule_agrees": true,
+      "depth_L": 12,
+      "dropping_safe_pairs": 1421,
+      "gap_cap": 32,
+      "pairs_checked": 523728,
+      "row_digest_sha256": "70b115ed2e4dfcfde7c5e26447d1711cf63a3bee21e78fa4e0701153a6bf87cf"
+    },
+    "production_cylinder_audit": {
+      "all_safe_cylinders": 763,
+      "bound_H": 262144,
+      "cylinder_row_digest_sha256": "ac18d1031b59d310e498bf62ae0bcd58be5b3e91a000d83a21fc651a5b039265",
+      "depth_L": 12,
+      "dropping_safe_pairs": 48822,
+      "empty_safe_cylinders": 261381,
+      "first_partially_safe_cylinder": null,
+      "gap_cap": 64,
+      "negative_slope_constraints": 4530432,
+      "nonempty_input_cylinders": 262144,
+      "partially_safe_cylinders": 0,
+      "positive_slope_constraints": 1761024,
+      "represented_pairs": 16775072,
+      "residue_modulus": 4096,
+      "zero_slope_constraints": 0
+    },
+    "repository_status": "VERIFIED_FINITE"
+  },
+  "P71": {
+    "affine_margin": "((3^a_j-2^j)*x+B_j)/2^j",
+    "endpoint_dominance": "use the lower t endpoint for positive slope and the upper t endpoint for negative slope",
+    "pair_rule": "intersect the two tails' exact integer t intervals",
+    "parameter_slope": "(3^a_j-2^j)*2^(L-j)",
+    "repository_status": "VERIFIED_THEOREM",
+    "scope": "fixed finite parity cylinders; no cross-cylinder merge or eventual closure is claimed",
+    "statement": "On a fixed length-L parity cylinder x=r+2^L*t, every exact margin T^j(x)-x is affine in t; all k-step dropping-safety inequalities therefore close to one exact integer interval in t.",
+    "transition_one": "(A,B,Q)->(3A,3B+Q,2Q)",
+    "transition_zero": "(A,B,Q)->(A,B,2Q)"
+  },
+  "format": "collatz-phase11-pair-cylinder-v1",
+  "mandatory_adversarial_audit": {
+    "depth": 12,
+    "pairs_checked": {
+      "(110|111)^star": 4095,
+      "2^m_minus_1": 63,
+      "8^m_minus_5": 31,
+      "A^rB^s": 966,
+      "A_and_B": 1
+    },
+    "repository_status": "VERIFIED_FINITE",
+    "row_digest_sha256": "5fd9ce47f4a16dcd581877ddb7d017874d53ec5054fa28a55736e2eafd73af39",
+    "total_pairs_checked": 5156
+  },
+  "proves_collatz": false,
+  "scalability_boundary": {
+    "next_required_mechanism": "a sound cross-cylinder dominance, carry interval, or recursive quotient state that separates all stored NG19 collisions",
+    "reason": "the exact rule closes each fixed cylinder but retains all 2^L residue classes; NG19 forbids replacing the L-bit residue by any literal b<L truncation at L=12",
+    "target_certificate_found": false
+  },
+  "what_this_result_does_not_prove": "Finite cylinder compression does not prove the eventual dropping-pair barrier, C04, C05, H54, or Collatz."
+}

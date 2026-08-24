@@ -1,0 +1,27 @@
+{
+  "E18": "VERIFIED_FINITE",
+  "E19": "VERIFIED_FINITE",
+  "H70": "OPEN",
+  "NG20": "REFUTED",
+  "P69": "VERIFIED_THEOREM",
+  "P70": "VERIFIED_THEOREM",
+  "P71": "VERIFIED_THEOREM",
+  "failure_q": [
+    17,
+    22,
+    27,
+    29,
+    32,
+    34
+  ],
+  "pair_cylinders": 262144,
+  "proves_collatz": false,
+  "q_limit": 4961,
+  "remaining_branches": [
+    "nontrivial cycle",
+    "infinite coefficient-safe tail",
+    "eventual dropping-pair barrier"
+  ],
+  "represented_pairs": 16775072,
+  "valid": true
+}

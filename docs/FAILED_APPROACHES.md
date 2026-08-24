@@ -457,6 +457,37 @@ L-step decision. A future certificate must retain equivalent carry/residue
 information or prove a dominance relation that safely merges the recorded
 opposite-outcome histories.
 
+## Phase 11 — height-free dropping-safe spacing
+
+**Status:** `REFUTED` (NG20)
+
+**Exact hypothesis.** Dropping-safe spacing can be bounded from below as a
+function of depth alone, eventually by a value greater than 4, without an
+ordinary-height restriction.
+
+**Why it looked plausible.** Longer non-dropping prefixes become rare in every
+fixed finite height, and Phase 11's renewal gaps grow like `q/3`. A depth-only
+spacing estimate would have removed the difficult dependence on `H_q`.
+
+**Universal counterexample.** For every `k>=3`, both
+
+```text
+2^k-5 and 2^k-1
+```
+
+are k-step dropping-safe and differ by 4. The first word follows the repeating
+parity pattern `(110)^*`; the second follows `1^k`. Closed orbit formulas in
+the Phase 11 result prove the claim for all k, while the verifier directly
+regresses through k=256.
+
+**Failure scope.** Fundamental for every height-free spacing bound exceeding
+4. It also explains why finite disappearance at fixed H cannot be treated as
+depth-only progress.
+
+**Weaker statement retained.** P70 retains the exact coupled height
+`floor(H_q)+floor((q-1)/3)`. P71 closes margin inequalities on each fixed
+parity cylinder, but a new cross-cylinder dominance theorem is required.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
