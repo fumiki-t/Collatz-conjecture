@@ -542,7 +542,58 @@ Phase 9 does not prove C04, C03, H54, H57, or the Collatz conjecture. Its large
 numerical consequences retain their named conditional and external inputs.
 The q<=21 and length<=21 searches cannot establish an eventual result.
 
-## 13. Predecessor-tree and density detour
+## 13. Phase 10 — gap reduction and renewal spacing
+
+Phase 10 began from the exact Phase 9 commit
+`d1017982290e71b92438d07c6949f282e5bd1d96`. It preserves the
+least-positive-counterexample and X02 dependencies explicitly rather than
+promoting their consequences to unconditional statements.
+
+### One-residue gap reduction
+
+From `3^q r2+B=2^K r3`, `D=2^K-3^q`, and `d=r3-r2`, exact algebra gives
+`B=D r2+2^K d` and hence `d=B*3^(-q) mod D`. In the Phase 9 q0 box, exact
+logarithm intervals prove `D>W`, so the least residue `rho` equals `d`, the
+integer quotient `m` equals `N`, and `X=m+rho`. Canonical ranges are certified
+without constructing the giant q0 powers. Least-counterexample minimality and
+P61 also force `4|rho`. P63 is `CONDITIONAL`; C04 remains `OPEN` because the
+unknown word still determines `B mod D`.
+
+### Renewal barrier
+
+For any orbit point `N<=S<=N+W`, a first coefficient crossing must obey
+`V/(V+W)<=(3+1/V)^q/2^K`. Phase 10 reconstructs the Phase 7 Stern--Brocot
+parents and two strictly positive rational-logarithm margins at the preceding
+upper parent. This excludes `q<q0`; the exact first-crossing index rule then
+proves P64: every such S is conditionally safe through
+`K0-1=114208327603`. A positive endpoint gap would therefore create two
+distinct long-safe integers within W.
+
+### Finite spacing and rational cycles
+
+The exact spacing scan through `H=1,500,000` gives
+`Delta_213=268416`, witnessed by `(1126015,1394431)`. At the next depth the
+finite prefix contains only one safe value. The generator's forward deletion
+and heap implementation is independently reconstructed by reverse activation
+and a Fenwick tree. NG18 records the smallest shortcut obstruction
+`Delta_2=Delta_3=4`: nesting gives nondecrease, not strict growth. No scalable
+cylinder certificate proves C05 at `(K0-1,2^72)`, so C05 is `OPEN`.
+
+P65 is an exact theorem about the formal rational affine cycle of a
+coefficient-safe first-crossing word. The fixed point `z=B/D` is minimal
+because every prefix difference has numerator
+`(3^a_j-2^j)B+B_jD>=0`, and `gcd(B,D)=gcd(d,D)`. It asserts neither a positive
+integer cycle nor Christoffel extremality. The latter is recorded separately
+as external preprint context. Independent finite audits cover all 81,118
+first-crossing words through `q=15` and the mandatory adversarial families.
+
+### What this result does not prove
+
+Phase 10 does not prove C04, C05, H54, H57, or the Collatz conjecture. Its
+renewal application retains the least-counterexample and X02 inputs. Finite
+disappearance below 1,500,000 cannot establish a spacing bound at `2^72`.
+
+## 14. Predecessor-tree and density detour
 
 Strong external results count many predecessors or show descent for almost all
 starting values. A naive attempt to combine those densities with a least
@@ -553,7 +604,7 @@ designated exceptional integer or its thin arithmetic cylinder.
 would need an explicit transport, invariance, or intersection theorem for the
 least-counterexample set.
 
-## 14. Numerical consistency audit
+## 15. Numerical consistency audit
 
 The canonical figures above were resolved using this priority:
 
@@ -578,8 +629,11 @@ scopes:
 - The Phase 9 value 22,475,497 counts first-crossing words through `q=21`; the
   five paradoxical records instead come from the separate unrestricted
   parity-word tree through shortcut length 21.
+- The Phase 10 value 81,118 counts first-crossing words only through `q=15` in
+  its independent gap/rational-cycle audit; it does not replace the deeper
+  Phase 9 enumeration or evaluate q0.
 
-## 15. Current strategy
+## 16. Current strategy
 
 The primary target is
 
@@ -597,6 +651,9 @@ Phase 9 sharpens the conditional endpoint to a near-diagonal two-sided residue
 box and refutes contact pressure alone as a completion mechanism. C04 and a
 carry-aware arbitrary reverse-residue recursion are now the closest new
 arithmetic targets inside that framework.
+Phase 10 reduces C04 to a single gap residue and proves the conditional renewal
+barrier. Its new C05 spacing target is a concrete alternative formulation, but
+finite neighbor-gap deletion has not produced a scalable proof.
 Exact certificate extension remains useful for the finite remainder and for
 testing structural conjectures, but it is not the missing theorem.
 
@@ -604,7 +661,7 @@ Bounded finite-state and modular searches are now primarily falsification
 tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A`, `B`, and `A^rB^s`.
 
-## 16. Reproduction and immutable evidence
+## 17. Reproduction and immutable evidence
 
 - Phase 1–2: [`RUN_RESULTS.md`](RUN_RESULTS.md)
 - Phase 3: [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
@@ -614,12 +671,13 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Phase 7: [`PHASE7_RUN_RESULTS.md`](PHASE7_RUN_RESULTS.md)
 - Phase 8: [`PHASE8_RUN_RESULTS.md`](PHASE8_RUN_RESULTS.md)
 - Phase 9: [`PHASE9_RUN_RESULTS.md`](PHASE9_RUN_RESULTS.md)
+- Phase 10: [`PHASE10_RUN_RESULTS.md`](PHASE10_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 The current manifest hash is recorded in the latest phase acceptance report.
 Generated JSON/CSV/certificates must be regenerated, not hand edited.
 
-## 17. Current one-paragraph handoff
+## 18. Current one-paragraph handoff
 
 Phases 1–5 built a robust exact-computation framework and showed why bounded
 state, fixed period, fixed shadow, and finite mixed-modulus mechanisms leave
@@ -632,6 +690,9 @@ interleavings remain open. Phase 9 strengthens the contact and short-return
 counts, confines the conditional endpoint to `d<2^32`, and creates an enormous
 reverse coefficient barrier, but C04 remains open because simultaneous
 2-adic/3-adic near-diagonal residues are not excluded. Exact certificates cover
-substantial finite ranges, but no eventual lower bound for `M(k)` is known.
-Future work should target C04 or a rigorous carry-aware residue recursion, not
+substantial finite ranges. Phase 10 turns the q0 endpoint into one gap residue
+and proves that a positive gap would give two integers safe through K0-1 within
+distance W, but C05 is unproved and its finite spacing recursion stalls far
+below the target. No eventual lower bound for `M(k)` is known. Future work
+should target a carry-aware gap-residue or safe-pair cylinder theorem, not
 merely greater depth.

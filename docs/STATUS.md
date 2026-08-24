@@ -13,6 +13,9 @@ disproved by this repository.
 - `VERIFIED_THEOREM`: C02 now proves exact descent for every positive integral
   contracting realization of the ordered family `A^rB^s`, using six internal
   CRT cases and the isolated external gap theorem EXT05.
+- `VERIFIED_THEOREM`: P65 proves that `z=B/(2^K-3^q)` is the minimum of the
+  formal rational affine cycle of every coefficient-safe first-crossing word,
+  and `gcd(B,D)=gcd(d,D)`. It asserts no positive integral cycle.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -23,6 +26,9 @@ disproved by this repository.
   displacement bound `d<=4142380786<2^32`, endpoint congruences, G4
   impossibility, and a reverse continued-fraction barrier inside that same
   least-counterexample first-crossing framework.
+- `CONDITIONAL`: Phase 10 reduces the q0 endpoint pair to the single residue
+  `rho=d`, proves `4|rho`, and proves renewal coefficient safety through
+  `K0-1=114208327603` for every orbit point in `[N,N+W]` in that framework.
 - `VERIFIED_FINITE`: the exact modular graphs, return templates, certificate
   nodes, and finite ranges listed below were independently reconstructed.
 
@@ -63,6 +69,10 @@ No item above proves the Collatz conjecture.
   shortcut length 21. No nontrivial paradoxical first-crossing word occurs in
   the small layers; exactly five bounded paradoxical cylinders occur at length
   8 in the unrestricted tree.
+- Phase 10: independent enumeration reconstructs 81,118 first-crossing words
+  through `q=15`. Exact spacing for every `2<=n<=1,500,000` reaches
+  `Delta_213=268416` at `(1126015,1394431)`; at `k=214` only one safe value
+  remains in that finite prefix. The target at `H=2^72` was not evaluated.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -90,6 +100,11 @@ endpoint: `0<=X-N<2^32`, `X=7 or 19 mod 36`, G4 is forbidden, and the first
 reverse coefficient pair not eliminated by the uniform threshold is
 `(a,L)=(615582794569,975675645481)`. These are conditional consequences, not
 an existence or exclusion theorem for the endpoint.
+
+Phase 10 gives the strongest renewal consequence of that localization: every
+`S` in `[N,N+W]` is conditionally coefficient-safe through `K0-1`. Thus a
+positive q0 gap would create two long-safe integers within distance `W`, but
+the required global spacing lower bound C05 is still open.
 
 ## Strongest conditional route
 
@@ -121,6 +136,10 @@ classify arbitrary exponent-word residues or prove that a valid path exists.
 The needed result must dominate `H_q`; the contextual estimate
 `H_q = O(q^5.117)` depends on an external Diophantine estimate and is not an
 input to current certificates.
+Phase 10 makes the same obstruction one-dimensional via
+`rho=[B*P^(-1)]_D`, but neither determines this residue for the unknown q0 word
+nor proves `Delta_(K0-1)(2^72)>W`. The finite neighbor-gap recursion does not
+scale to the required depth and height.
 
 ## Secondary directions
 
@@ -128,6 +147,8 @@ input to current certificates.
   representative bound.
 - Prove C04 by excluding the q0 near-diagonal canonical residue pair, with a
   lossless carry-aware recursion or meet-in-the-middle certificate.
+- Prove or refute C05 with a recursive safe-pair cylinder/difference-state
+  certificate that scales jointly in depth and ordinary integer height.
 - Upgrade the finite mechanical reverse-residue audit to a recursive forbidden
   residue theorem for arbitrary positive exponent compositions.
 - Derive recursive or meet-in-the-middle lower bounds for `M(k)`.
@@ -142,6 +163,9 @@ input to current certificates.
 
 ## What was recently refuted?
 
+- `REFUTED`: nested safe-set deletion forces strict spacing growth at every
+  depth. The exact Phase 10 prefix has `Delta_2=Delta_3=4`; only nondecrease
+  survives without a stronger state invariant.
 - `REFUTED`: forced-contact closure plus weighted contact pressure alone is
   sufficient. With the required correction `c_0=1`, the exact all-contact
   construction still satisfies closure and pressure but carries no endpoint
@@ -164,13 +188,12 @@ input to current certificates.
 
 ## Next 3 concrete research questions
 
-1. Can the q0 identities `3^q r2+B=2^K r3`, `0<=r3-r2<2^32`, and
-   `r3=7 or 19 mod 36` be turned into an exact near-diagonal exclusion?
-2. Can arbitrary reverse exponent compositions be summarized by a lossless
+1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
+   `[0,W]` for every q0-critical word by a scalable exact recursion?
+2. Can C05, `Delta_(K0-1)(2^72)>W`, be proved by a lossless cylinder or
+   difference-state certificate rather than finite-prefix disappearance?
+3. Can arbitrary reverse exponent compositions be summarized by a lossless
    recursive forbidden-residue state, rather than only the mechanical family?
-3. Can high correction `B` be separated deterministically from a small least
-   positive inverse-parity residue strongly enough to imply an eventual lower
-   bound for `M(k)`?
 
 ## Codex tasks worth doing
 
@@ -203,4 +226,5 @@ input to current certificates.
 - Phase 7 acceptance: [`../PHASE7_RUN_RESULTS.md`](../PHASE7_RUN_RESULTS.md)
 - Phase 8 acceptance: [`../PHASE8_RUN_RESULTS.md`](../PHASE8_RUN_RESULTS.md)
 - Phase 9 acceptance: [`../PHASE9_RUN_RESULTS.md`](../PHASE9_RUN_RESULTS.md)
+- Phase 10 acceptance: [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

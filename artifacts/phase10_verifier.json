@@ -1,0 +1,42 @@
+{
+  "C04": "OPEN",
+  "C05": "OPEN",
+  "external_inputs_reproved": {
+    "Christoffel_extremality": false,
+    "X02": false
+  },
+  "gap_modulus": {
+    "maximum_q": 15,
+    "total_words": 81118
+  },
+  "proves_collatz": false,
+  "rational_cycle": {
+    "maximum_q": 15,
+    "total_words": 81118
+  },
+  "renewal_barrier": {
+    "parent_margin_positive": true,
+    "right_parent": [
+      10439860591,
+      6586818670
+    ],
+    "safe_through": 114208327603
+  },
+  "safe_pair_spacing": {
+    "bound": 1500000,
+    "deepest": {
+      "common_parity_prefix_length": 7,
+      "delta": 268416,
+      "k": 213,
+      "left": 1126015,
+      "left_parity_prefix": "111111101111110001111101010111111010110000111001001100111111111110011010011111111110011101101001011111001100010111111110011111100100111101111000111101011110101011111011100111101010011111000001110010100111111100001",
+      "left_stopping_time": 224,
+      "right": 1394431,
+      "right_parity_prefix": "111111110110011110100101011111101101111111001000111101111101011010011010111111001010000111101011101111111001110011011111100010101010010011101000101111001101111101111110100010101101110111110010010001011011111100100",
+      "right_stopping_time": 214,
+      "safe_count": 2
+    },
+    "target": "OPEN"
+  },
+  "valid": true
+}

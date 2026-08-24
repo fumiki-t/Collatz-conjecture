@@ -93,6 +93,32 @@ certificate at q0 with an independent verifier, or an exact near-diagonal
 counterexample that determines which proposed state discarded necessary
 information.
 
+Phase 10 gives the exact one-residue formulation
+`rho=[B*3^(-q)]_(2^K-3^q)`, with `rho=d`, `m=N`, `X=m+rho`, and `4|rho` in the
+q0 box. This removes one residue variable but does not determine `B mod D`.
+
+## P1 — Long-safe pair spacing
+
+**Target.** Prove C05,
+`Delta_(K0-1)(2^72)>4142380786`, or find an exact counterexample.
+
+**Why this helps.** P64 conditionally makes both `N` and `X=N+d` safe through
+`K0-1`; C05 would therefore exclude every positive q0 gap `d<=W`. The `d=0`
+case would still require the gap/rational-cycle arithmetic.
+
+**Missing theorem.** A scalable cylinder or difference-state lower bound that
+connects coefficient-safe depth with ordinary spacing up to height `2^72`.
+Nested-set deletion gives only nondecrease; NG18 refutes strict growth at every
+depth.
+
+**Fast falsification test.** Reconstruct the Phase 10 spacing records through
+`H=1,500,000`, beginning with `Delta_2=Delta_3=4`, and attack any proposed
+recursion with all mandatory adversarial families before increasing depth.
+
+**Success criterion.** An exact certificate accepted by a logically
+independent verifier at `(k,H)=(K0-1,2^72)`, or the least exact safe pair at
+distance at most W with its full cylinder witnesses.
+
 ## P1 — Arbitrary reverse-residue barrier
 
 **Target.** Extend P62 from a coefficient barrier and the lower-mechanical

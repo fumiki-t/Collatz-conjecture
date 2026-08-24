@@ -1,0 +1,147 @@
+{
+  "P65": {
+    "fixed_point_identity": "F_w(B/D)=B/D because D=Q-P",
+    "gcd_reason": "B=P*d (mod D) and gcd(P,D)=1",
+    "minimum_reason": "coefficient safety gives 3^a_j>=2^j and B_j,D>=0",
+    "parity_semantics": "formal rational cycle of the prescribed affine branches; no new positive-integer cycle is asserted",
+    "prefix_difference_numerator": "(3^a_j-2^j)*B+B_j*D>=0 for every j<K",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "For a coefficient-safe first-crossing word, z=B/D is the minimum element of its formal rational affine cycle, and gcd(B,D)=gcd(d,D)."
+  },
+  "external_context": {
+    "Christoffel_extremality_status": "EXTERNAL_CONTEXT",
+    "claim_of_novelty": false,
+    "theorem_used": false
+  },
+  "finite_audit": {
+    "layers": [
+      {
+        "K": 2,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "32892b4f9965b5104a0e89ae2af2bbce66989d687b41e79406638198a6d07793",
+        "enumerated_words": 1,
+        "q": 1
+      },
+      {
+        "K": 4,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "ed9fb53bffc2ffcb406baf151dc0c4dca957d58a531eacab57c9059e4c1d9636",
+        "enumerated_words": 1,
+        "q": 2
+      },
+      {
+        "K": 5,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "7db871f66bd961e4ec4221dc31781ffddf4a7b454019dc866218215365b0c0fc",
+        "enumerated_words": 2,
+        "q": 3
+      },
+      {
+        "K": 7,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "8f7f216f8fdf10e02967848c1385331a1d075bbaf0a5d75c553f640221e70edf",
+        "enumerated_words": 3,
+        "q": 4
+      },
+      {
+        "K": 8,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "14060bd91cba85f2a723def55912b1d0052fab389391a8d896d30e1105066caa",
+        "enumerated_words": 7,
+        "q": 5
+      },
+      {
+        "K": 10,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "1dd14ac8a7ff01a40d9322846fac43907ed62617384867df03a05a5fdb6a18ac",
+        "enumerated_words": 12,
+        "q": 6
+      },
+      {
+        "K": 12,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "1f560d380cdda536167ecc3a2e5570a81956d72a8f40ff15445b8033f96897f2",
+        "enumerated_words": 30,
+        "q": 7
+      },
+      {
+        "K": 13,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "bc696244d6fb873fd6c5be75fae1cce550fa0585dc0ed22c1e7fe694c11a2cf4",
+        "enumerated_words": 85,
+        "q": 8
+      },
+      {
+        "K": 15,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "e73674a87d5ff8571e961483ba110f622914a037ce752d2df5bcf52404c91a16",
+        "enumerated_words": 173,
+        "q": 9
+      },
+      {
+        "K": 16,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "351ac173c8c2968f4651c077719a7d91b814b7d3c13908f7222abcb2b7781026",
+        "enumerated_words": 476,
+        "q": 10
+      },
+      {
+        "K": 18,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "0c14cf2e1c52ee8a56affdd5c6268c281371b64108b5b8e2d53cf4b9148c163c",
+        "enumerated_words": 961,
+        "q": 11
+      },
+      {
+        "K": 20,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "9d1e863497ca074cb67351fc15ec8246dd7b331eb54831cd39e2b8daf00abaa3",
+        "enumerated_words": 2652,
+        "q": 12
+      },
+      {
+        "K": 21,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "915402dd0d2b70f4809bdb38a08852551cb34394601c6b1383880ee6d14ef571",
+        "enumerated_words": 8045,
+        "q": 13
+      },
+      {
+        "K": 23,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "8a8700f685a19da0b7b5bc609dc8a5a0322a052ee756923f6d1815d4ee1311a2",
+        "enumerated_words": 17637,
+        "q": 14
+      },
+      {
+        "K": 24,
+        "all_formal_cycles_close": true,
+        "all_sources_are_cycle_minima": true,
+        "cycle_digest_sha256": "467e21d9007e5de505536513ae3f2e8d0e91499eb79c8897e65d83e90e37fa5e",
+        "enumerated_words": 51033,
+        "q": 15
+      }
+    ],
+    "maximum_q": 15,
+    "repository_status": "VERIFIED_FINITE",
+    "row_encoding": "q|K|odd_positions|min-prefix-numerator|strict-above-count|terminal-numerator|gcd(B,D) newline",
+    "total_words": 81118
+  },
+  "format": "collatz-phase10-rational-cycle-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The rational fixed point is not a positive-integer Collatz cycle, and no Christoffel extremality theorem is proved or used."
+}

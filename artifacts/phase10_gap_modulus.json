@@ -1,0 +1,833 @@
+{
+  "D_gt_W_certificate": {
+    "direct_q0_powers_constructed": false,
+    "exp_x_minus_1_gt_x": true,
+    "q0_at_least_44": true,
+    "three_power_times_x_lower_gt_W": true,
+    "three_power_used": 44,
+    "x_Kln2_minus_qln3": {
+      "lower": [
+        "638117477746392351542681335226700048712592478013574456424901677169",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ],
+      "upper": [
+        "159529369436598087885670333806675012178148119503393614152791859191",
+        "28948022309329048855892746252171976963317496166410141009864396001978282409984"
+      ]
+    }
+  },
+  "P63": {
+    "definitions": [
+      "P=3^q",
+      "Q=2^K",
+      "D=Q-P",
+      "rho=[B*P^(-1)]_D",
+      "m=(B-Q*rho)/D"
+    ],
+    "endpoint_mod_4_dependency": "P61 gives X=3 mod 4",
+    "exact_identities": [
+      "B=D*r2+Q*d",
+      "B=P*d (mod D)",
+      "d=B*P^(-1) (mod D)"
+    ],
+    "least_counterexample_mod_4": "N=3 mod 4 because N=1 mod 4 would give T^2(N)=(3N+1)/4<N",
+    "near_box_conditions": [
+      "q=q0",
+      "K=K0",
+      "V<N<2^72",
+      "0<=d=X-N<=W",
+      "X<2^72"
+    ],
+    "proves_C04": false,
+    "q0_near_box_equivalence": "under the near-box conditions, D>W gives rho=d; then m=r2=N and X=m+rho. Conversely 0<=rho<=W, 0<m,m+rho<2^72 and P*m+B=Q*(m+rho) reconstruct the canonical residues r2=m, r3=m+rho, hence N=m, d=rho and X=m+rho",
+    "repository_status": "CONDITIONAL",
+    "rho_mod_4": 0
+  },
+  "canonical_residue_range_certificate": {
+    "K0_gt_72": true,
+    "conclusion": "0<m,m+rho<2^72 implies m<Q=2^K0 and m+rho<P=3^q0, so both residues are canonical",
+    "q0_at_least_46": true,
+    "three_power_46_gt_two_power_72": true
+  },
+  "dependencies": {
+    "X02_reproved": false,
+    "phase9_endpoint_sha256": "73f65a53de2744b80bc2e8476e11b2cd594c432e2d16c338a421a1e5a5c9b04c",
+    "phase9_two_sided_sha256": "a62dd80bfc96d42f40f0458c075c384a4f7346b7c8ed06945360aae55a445e12"
+  },
+  "finite_first_crossing_audit": {
+    "layers": [
+      {
+        "K": 2,
+        "both_endpoints_3_mod_4_count": 0,
+        "enumerated_words": 1,
+        "maximum_d_record": {
+          "B": 1,
+          "D": 1,
+          "d": 0,
+          "gcd_B_D": 1,
+          "m": 1,
+          "odd_positions": [
+            0
+          ],
+          "parity_word": "10",
+          "r2": 1,
+          "r3": 1,
+          "rho": 0
+        },
+        "minimum_d_record": {
+          "B": 1,
+          "D": 1,
+          "d": 0,
+          "gcd_B_D": 1,
+          "m": 1,
+          "odd_positions": [
+            0
+          ],
+          "parity_word": "10",
+          "r2": 1,
+          "r3": 1,
+          "rho": 0
+        },
+        "nonnegative_gap_count": 1,
+        "phase10_near_box_count": 0,
+        "q": 1,
+        "row_digest_sha256": "1785578e41be45e51f86ff360bf50c391e9f21b7b35d606cbfe902c84dc9d62d"
+      },
+      {
+        "K": 4,
+        "both_endpoints_3_mod_4_count": 0,
+        "enumerated_words": 1,
+        "maximum_d_record": {
+          "B": 5,
+          "D": 7,
+          "d": -1,
+          "gcd_B_D": 1,
+          "m": -13,
+          "odd_positions": [
+            0,
+            1
+          ],
+          "parity_word": "1100",
+          "r2": 3,
+          "r3": 2,
+          "rho": 6
+        },
+        "minimum_d_record": {
+          "B": 5,
+          "D": 7,
+          "d": -1,
+          "gcd_B_D": 1,
+          "m": -13,
+          "odd_positions": [
+            0,
+            1
+          ],
+          "parity_word": "1100",
+          "r2": 3,
+          "r3": 2,
+          "rho": 6
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 2,
+        "row_digest_sha256": "7db61e2ec3f19dd0e4d585ce8022e8fcccd34b40eb1bf1d3a992a22401005e6f"
+      },
+      {
+        "K": 5,
+        "both_endpoints_3_mod_4_count": 0,
+        "enumerated_words": 2,
+        "maximum_d_record": {
+          "B": 23,
+          "D": 5,
+          "d": -1,
+          "gcd_B_D": 1,
+          "m": -21,
+          "odd_positions": [
+            0,
+            1,
+            3
+          ],
+          "parity_word": "11010",
+          "r2": 11,
+          "r3": 10,
+          "rho": 4
+        },
+        "minimum_d_record": {
+          "B": 19,
+          "D": 5,
+          "d": -3,
+          "gcd_B_D": 1,
+          "m": -9,
+          "odd_positions": [
+            0,
+            1,
+            2
+          ],
+          "parity_word": "11100",
+          "r2": 23,
+          "r3": 20,
+          "rho": 2
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 3,
+        "row_digest_sha256": "b8378e6627d3ad5e13b8e0c7834b4127ee42de806bff5a2c4a63142dd1e130eb"
+      },
+      {
+        "K": 7,
+        "both_endpoints_3_mod_4_count": 0,
+        "enumerated_words": 3,
+        "maximum_d_record": {
+          "B": 73,
+          "D": 47,
+          "d": -2,
+          "gcd_B_D": 1,
+          "m": -121,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "parity_word": "1110100",
+          "r2": 7,
+          "r3": 5,
+          "rho": 45
+        },
+        "minimum_d_record": {
+          "B": 85,
+          "D": 47,
+          "d": -21,
+          "gcd_B_D": 1,
+          "m": -69,
+          "odd_positions": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "parity_word": "1101100",
+          "r2": 59,
+          "r3": 38,
+          "rho": 26
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 4,
+        "row_digest_sha256": "ab806778a575bcd54f4b1f00ad18f35f359de685ab3c1aae97ee8d9f4034e071"
+      },
+      {
+        "K": 8,
+        "both_endpoints_3_mod_4_count": 2,
+        "enumerated_words": 7,
+        "maximum_d_record": {
+          "B": 251,
+          "D": 13,
+          "d": -1,
+          "gcd_B_D": 1,
+          "m": -217,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "parity_word": "11101100",
+          "r2": 39,
+          "r3": 38,
+          "rho": 12
+        },
+        "minimum_d_record": {
+          "B": 287,
+          "D": 13,
+          "d": -10,
+          "gcd_B_D": 1,
+          "m": -37,
+          "odd_positions": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "parity_word": "11011100",
+          "r2": 219,
+          "r3": 209,
+          "rho": 3
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 5,
+        "row_digest_sha256": "00782287736f4d73206e3477ce30c51325e74c4d27c3188bf730feab6068918d"
+      },
+      {
+        "K": 10,
+        "both_endpoints_3_mod_4_count": 1,
+        "enumerated_words": 12,
+        "maximum_d_record": {
+          "B": 697,
+          "D": 295,
+          "d": -82,
+          "gcd_B_D": 1,
+          "m": -737,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "parity_word": "1111101000",
+          "r2": 287,
+          "r3": 205,
+          "rho": 213
+        },
+        "minimum_d_record": {
+          "B": 817,
+          "D": 295,
+          "d": -287,
+          "gcd_B_D": 1,
+          "m": -25,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "parity_word": "1110111000",
+          "r2": 999,
+          "r3": 712,
+          "rho": 8
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 6,
+        "row_digest_sha256": "4c510622fb00862c790ca7cb6e2c29d1dadc50c1d9dad226af27a39001a0b6ef"
+      },
+      {
+        "K": 12,
+        "both_endpoints_3_mod_4_count": 5,
+        "enumerated_words": 30,
+        "maximum_d_record": {
+          "B": 2707,
+          "D": 1909,
+          "d": -107,
+          "gcd_B_D": 1,
+          "m": -3865,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            8
+          ],
+          "parity_word": "111011101000",
+          "r2": 231,
+          "r3": 124,
+          "rho": 1802
+        },
+        "minimum_d_record": {
+          "B": 2539,
+          "D": 1909,
+          "d": -1893,
+          "gcd_B_D": 1,
+          "m": -33,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8
+          ],
+          "parity_word": "111110011000",
+          "r2": 4063,
+          "r3": 2170,
+          "rho": 16
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 7,
+        "row_digest_sha256": "a934de161463f77507f6600a5805ff07c4489d2954727c5f5d2ad14492c6ede0"
+      },
+      {
+        "K": 13,
+        "both_endpoints_3_mod_4_count": 22,
+        "enumerated_words": 85,
+        "maximum_d_record": {
+          "B": 8417,
+          "D": 1631,
+          "d": -37,
+          "gcd_B_D": 1,
+          "m": -8001,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            11
+          ],
+          "parity_word": "1111110100010",
+          "r2": 191,
+          "r3": 154,
+          "rho": 1594
+        },
+        "minimum_d_record": {
+          "B": 10489,
+          "D": 1631,
+          "d": -1612,
+          "gcd_B_D": 1,
+          "m": -89,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            9,
+            10
+          ],
+          "parity_word": "1110110101100",
+          "r2": 8103,
+          "r3": 6491,
+          "rho": 19
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 8,
+        "row_digest_sha256": "b014f04cdb845c5df0fda0b10ada6d96fdb60eea98b6eb4f4d356b09ec6eb827"
+      },
+      {
+        "K": 15,
+        "both_endpoints_3_mod_4_count": 43,
+        "enumerated_words": 173,
+        "maximum_d_record": {
+          "B": 23395,
+          "D": 13085,
+          "d": -50,
+          "gcd_B_D": 5,
+          "m": -32641,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            12
+          ],
+          "parity_word": "111111101000100",
+          "r2": 127,
+          "r3": 77,
+          "rho": 13035
+        },
+        "minimum_d_record": {
+          "B": 36431,
+          "D": 13085,
+          "d": -13018,
+          "gcd_B_D": 1,
+          "m": -165,
+          "odd_positions": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            7,
+            9,
+            10,
+            11
+          ],
+          "parity_word": "110111010111000",
+          "r2": 32603,
+          "r3": 19585,
+          "rho": 67
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 9,
+        "row_digest_sha256": "dd541542e5b5fdf378542657bceb7e65b621856878c80a55858714c1761873d0"
+      },
+      {
+        "K": 16,
+        "both_endpoints_3_mod_4_count": 118,
+        "enumerated_words": 476,
+        "maximum_d_record": {
+          "B": 100609,
+          "D": 6487,
+          "d": -34,
+          "gcd_B_D": 1,
+          "m": -65177,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            12,
+            14
+          ],
+          "parity_word": "1110111110001010",
+          "r2": 359,
+          "r3": 325,
+          "rho": 6453
+        },
+        "minimum_d_record": {
+          "B": 91657,
+          "D": 6487,
+          "d": -6476,
+          "gcd_B_D": 1,
+          "m": -97,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            10,
+            11,
+            14
+          ],
+          "parity_word": "1111101100110010",
+          "r2": 65439,
+          "r3": 58963,
+          "rho": 11
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 10,
+        "row_digest_sha256": "34c86f94022de3d3b21c12a5adb5001eaba10d9e2571f829cfa50cc1109c769b"
+      },
+      {
+        "K": 18,
+        "both_endpoints_3_mod_4_count": 223,
+        "enumerated_words": 961,
+        "maximum_d_record": {
+          "B": 179707,
+          "D": 84997,
+          "d": -165,
+          "gcd_B_D": 11,
+          "m": -261633,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10,
+            12
+          ],
+          "parity_word": "111111111010100000",
+          "r2": 511,
+          "r3": 346,
+          "rho": 84832
+        },
+        "minimum_d_record": {
+          "B": 242363,
+          "D": 84997,
+          "d": -84975,
+          "gcd_B_D": 11,
+          "m": -65,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            11,
+            12,
+            15
+          ],
+          "parity_word": "111111011001100100",
+          "r2": 262079,
+          "r3": 177104,
+          "rho": 22
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 11,
+        "row_digest_sha256": "0cbf951def68ef51267c5e4df93bddc12d9eeb7a25753ec56e812ae1d3c183e0"
+      },
+      {
+        "K": 20,
+        "both_endpoints_3_mod_4_count": 660,
+        "enumerated_words": 2652,
+        "maximum_d_record": {
+          "B": 911873,
+          "D": 517135,
+          "d": -117,
+          "gcd_B_D": 1,
+          "m": -1048337,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            13,
+            15,
+            17
+          ],
+          "parity_word": "11110111110001010100",
+          "r2": 239,
+          "r3": 122,
+          "rho": 517018
+        },
+        "minimum_d_record": {
+          "B": 686161,
+          "D": 517135,
+          "d": -516834,
+          "gcd_B_D": 1,
+          "m": -609,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            14
+          ],
+          "parity_word": "11111011011011100000",
+          "r2": 1047967,
+          "r3": 531133,
+          "rho": 301
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 12,
+        "row_digest_sha256": "16d2708efeb2b321c04a5209434a62b6350ef30cc59809a0076bcb2b19b9bdc1"
+      },
+      {
+        "K": 21,
+        "both_endpoints_3_mod_4_count": 2019,
+        "enumerated_words": 8045,
+        "maximum_d_record": {
+          "B": 2355187,
+          "D": 502829,
+          "d": -37,
+          "gcd_B_D": 1,
+          "m": -2096993,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            14,
+            16,
+            18
+          ],
+          "parity_word": "111110111110001010100",
+          "r2": 159,
+          "r3": 122,
+          "rho": 502792
+        },
+        "minimum_d_record": {
+          "B": 3236867,
+          "D": 502829,
+          "d": -502762,
+          "gcd_B_D": 1,
+          "m": -273,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            11,
+            13,
+            14,
+            17,
+            19
+          ],
+          "parity_word": "111101111001011001010",
+          "r2": 2096879,
+          "r3": 1594117,
+          "rho": 67
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 13,
+        "row_digest_sha256": "e41274c4c2efc822b4efb3e07ebbde2ecd6d5c537062e5976b425e7a829adaa8"
+      },
+      {
+        "K": 23,
+        "both_endpoints_3_mod_4_count": 4405,
+        "enumerated_words": 17637,
+        "maximum_d_record": {
+          "B": 5524729,
+          "D": 3605639,
+          "d": -274,
+          "gcd_B_D": 1,
+          "m": -8387969,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            13,
+            15,
+            18
+          ],
+          "parity_word": "11111110110111010010000",
+          "r2": 639,
+          "r3": 365,
+          "rho": 3605365
+        },
+        "minimum_d_record": {
+          "B": 9187153,
+          "D": 3605639,
+          "d": -3605132,
+          "gcd_B_D": 1,
+          "m": -1177,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            13,
+            14,
+            15,
+            18,
+            20
+          ],
+          "parity_word": "11101111110001110010100",
+          "r2": 8387431,
+          "r3": 4782299,
+          "rho": 507
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 14,
+        "row_digest_sha256": "d89d3bd2e8eb2dc76a49eab9130ad9a074c77ff90613dd4ec2b95d4522977f8d"
+      },
+      {
+        "K": 24,
+        "both_endpoints_3_mod_4_count": 12732,
+        "enumerated_words": 51033,
+        "maximum_d_record": {
+          "B": 32900023,
+          "D": 2428309,
+          "d": -39,
+          "gcd_B_D": 13,
+          "m": -16776933,
+          "odd_positions": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            11,
+            12,
+            13,
+            14,
+            18,
+            20,
+            22
+          ],
+          "parity_word": "110111111001111000101010",
+          "r2": 283,
+          "r3": 244,
+          "rho": 2428270
+        },
+        "minimum_d_record": {
+          "B": 23157275,
+          "D": 2428309,
+          "d": -2428194,
+          "gcd_B_D": 1,
+          "m": -785,
+          "odd_positions": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            14,
+            15,
+            16,
+            19,
+            21
+          ],
+          "parity_word": "111101111110001110010100",
+          "r2": 16776431,
+          "r3": 14348237,
+          "rho": 115
+        },
+        "nonnegative_gap_count": 0,
+        "phase10_near_box_count": 0,
+        "q": 15,
+        "row_digest_sha256": "8a271c0c500f4afa740cd51399b0900b2098d1867fd0a4812b2ed9bd904d4660"
+      }
+    ],
+    "maximum_q": 15,
+    "repository_status": "VERIFIED_FINITE",
+    "row_encoding": "q|K|odd_positions|B|D|r2|r3|d|rho|m|gcd(B,D) newline",
+    "total_words": 81118
+  },
+  "format": "collatz-phase10-gap-modulus-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The gap reduction is exact but supplies no theorem excluding the q0 residue rho or proving C04."
+}

@@ -37,6 +37,24 @@ unique reconstruction of a 2-adic integer from its parity vector.
 words. Current finite certificates reconstruct their own arithmetic and do not
 delegate acceptance to this paper.
 
+### Fernández and Ibáñez (2026 preprint)
+
+**Status:** `EXTERNAL_THEOREM`; preprint, not an active proof dependency
+
+Carlos Fernández and Santiago Ibáñez, “Christoffel words as extremal
+structures in Collatz dynamics,” arXiv:2607.24844v1 (2026).
+[arXiv:2607.24844](https://arxiv.org/abs/2607.24844).
+
+**Result relevant here.** The authors report that, at fixed word length and
+number of odd symbols, Christoffel words are, up to rotation, the unique
+maximizers of their rotation-class functional `C_min`, and derive cycle
+restrictions from that extremality.
+
+**Repository role.** This is external context for Phase 10's formal
+rational-cycle minimum lemma P65. Phase 10 proves its own prefix-minimum and
+gcd identities directly and does not reprove or use Christoffel extremality to
+accept any certificate. No novelty claim is made against the preprint.
+
 ### Garner (1981)
 
 **Status:** `EXTERNAL_THEOREM`

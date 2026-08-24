@@ -1,0 +1,123 @@
+{
+  "P64": {
+    "conclusion": "no coefficient first crossing with q<72057431991; S is coefficient-safe through K0-1 steps",
+    "distinct_pair_consequence": "if d>0, N and X=N+d are distinct K0-1-step coefficient-safe integers at distance at most W",
+    "necessary_inequality": "V/(V+W)<=(3+1/V)^q/2^K",
+    "repository_status": "CONDITIONAL",
+    "scope": "least-counterexample orbit point S with N<=S<=N+W and every earlier orbit value at least N>V"
+  },
+  "dependencies": {
+    "X02_reproved": false,
+    "phase7_symbolic_sha256": "a902d726a1779dc4abc1d67c19f2ea30cc0ea82516dd665271092c0777b35ea7",
+    "phase9_endpoint_sha256": "73f65a53de2744b80bc2e8476e11b2cd594c432e2d16c338a421a1e5a5c9b04c"
+  },
+  "exact_margins": {
+    "all_lower_bounds_strictly_positive": true,
+    "ln2": {
+      "lower": [
+        "80260960185991308862233904206310070533990667611589946606122867505419956976171",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ],
+      "upper": [
+        "20065240046497827215558476051577517633497666902897486651530716876354989244043",
+        "28948022309329048855892746252171976963317496166410141009864396001978282409984"
+      ]
+    },
+    "ln2_over_right_denominator_minus_required_margin": {
+      "lower": [
+        "78940313105643713161414508732515354180156171673823064867420265947171693943921",
+        "762701495226660376709345922125515623651158355546254974724429831016415630050460822405120"
+      ],
+      "upper": [
+        "2466884784551366036294203397891104818129880364806970777106883310849321273831",
+        "23834421725833136772167060066422363239098698610820467960138432219262988439076900700160"
+      ]
+    },
+    "ln3": {
+      "lower": [
+        "31802653041667484360024617427225806404601470301125784915901402331508724878691",
+        "28948022309329048855892746252171976963317496166410141009864396001978282409984"
+      ],
+      "upper": [
+        "127210612166669937440098469708903225618405881204503139663605609326034899514765",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ]
+    },
+    "ln_1_plus_W_over_V": {
+      "lower": [
+        "100249236126883974234210661350627127088842111526267485567702864837",
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ],
+      "upper": [
+        "200498472253767948468421322701254254177684223052534971135405729675",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ]
+    },
+    "ln_3_plus_1_over_V": {
+      "lower": [
+        "127210612166669937440114603625010243593059915844471101927308981111505838449275",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ],
+      "upper": [
+        "31802653041667484360028650906252560898264978961117775481827245277876459612319",
+        "28948022309329048855892746252171976963317496166410141009864396001978282409984"
+      ]
+    },
+    "right_parent_gap": {
+      "lower": [
+        "1065906650658487454224560647026907974784544129804279228748144194141",
+        "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+      ],
+      "upper": [
+        "532953325329243727112280323513453987392272064902139614382585436701",
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ]
+    },
+    "right_parent_gap_minus_required_margin": {
+      "lower": [
+        "432704089202359752878069662162826860303429953375872128806369232233",
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ],
+      "upper": [
+        "54088011150294969109758707770353357537928744171984016101860321483",
+        "7237005577332262213973186563042994240829374041602535252466099000494570602496"
+      ]
+    }
+  },
+  "first_crossing_index_rule": {
+    "q0_gap_strictly_between_zero_and_ln2": true,
+    "q0_index": [
+      114208327604,
+      72057431991
+    ],
+    "rule": "for q>0, a coefficient first crossing occurs at K=ceil(q*log2(3)); these indices strictly increase with q",
+    "safe_through": 114208327603,
+    "strict_increase_reason": "multiplication by 3 raises log2 by more than 1"
+  },
+  "format": "collatz-phase10-renewal-barrier-v1",
+  "lattice_case_split": {
+    "h_definition": "h=q_R*K-K_R*q>=0 for every crossing ratio K/q>=K_R/q_R",
+    "h_positive": "the logarithmic gap is q*g_R/q_R+h*ln(2)/q_R and exceeds ln(1+W/V)",
+    "h_zero": "coprimality forces (K,q)=t*(K_R,q_R), so the logarithmic gap is at least the right-parent gap",
+    "q_zero": "2^(-K)<=1/2<V/(V+W)"
+  },
+  "proves_collatz": false,
+  "stern_brocot_certificate": {
+    "denominator_minimum_inside_parent_interval": 72057431991,
+    "farey_determinant": 1,
+    "left_parent": [
+      103768467013,
+      65470613321
+    ],
+    "mediant": [
+      114208327604,
+      72057431991
+    ],
+    "ordering": "left<log2(3)<K0/q0<log2(3+1/V)<right",
+    "right_upper_parent": [
+      10439860591,
+      6586818670
+    ]
+  },
+  "what_this_result_does_not_prove": "P64 is conditional on the least-counterexample orbit and X02; it neither proves that N exists nor excludes a q0 or later crossing."
+}

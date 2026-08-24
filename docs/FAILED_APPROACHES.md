@@ -384,6 +384,31 @@ Archimedean near-diagonal condition.
 a stronger conditional contact and short-return lower bound. Future work must
 combine it with the endpoint arithmetic represented by P60--P62 and C04.
 
+## NG18 — Strict per-depth safe-pair spacing growth
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** For fixed finite `H`, nested coefficient-safe sets force
+`Delta_(k+1)(H)>Delta_k(H)` whenever both spacings are defined.
+
+**Why it looked plausible.** Passing to the next depth only deletes safe
+starts, and deletion merges its two adjacent gaps by exact addition. Repeated
+mergers therefore appear to create a direct depth-by-depth growth mechanism.
+
+**Smallest counterexample / failure.** In the independently verified Phase 10
+production prefix `H=1,500,000`, `Delta_2=Delta_3=4`. The minimizing pair can
+survive a layer even while other points are deleted, so the minimum need not
+increase. The same value persists at further early depths.
+
+**Failure scope.** Fundamental for strict growth at every depth. It does not
+refute nondecrease, growth at selected record depths, or a stronger recursive
+cylinder certificate carrying more state.
+
+**Weaker statement retained.** Whenever both finite spacings are defined,
+nesting proves `Delta_(k+1)(H)>=Delta_k(H)`. Phase 10 verifies the deletion and
+neighbor-gap rule exactly, but it finds no composable certificate reaching
+`K0-1` and `H=2^72`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
