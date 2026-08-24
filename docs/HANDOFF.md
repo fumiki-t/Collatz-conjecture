@@ -84,6 +84,10 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   positive q0 gap to 30 cases `2<=v2(d)<=31`. E16's finite branch profile peaks
   at joint-safe depth 213 for `h=7`; it supplies falsification data, not a q0
   bound.
+- The two-tail supplement proves P68: the next L steps are exactly determined
+  by `(h,a,u,orientation,y mod 2^L)`. E17 finds, for every `b<12`, a minimal
+  safe/non-safe collision when that residue is shortened to b bits. Thus the
+  literal fixed-window compression NG19 is refuted; C05 remains open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -119,6 +123,7 @@ The closest q0 subroute is now:
 P63 single gap residue
   -> P64 two long-safe endpoints
   -> P66/P67 thirty first-divergence cases
+  -> P68 exact finite-horizon two-tail state
   -> C05 two-tail spacing certificate (OPEN).
 ```
 
@@ -135,10 +140,12 @@ should answer all of these before a large computation:
 5. What certificate can an implementation-independent verifier reconstruct?
 
 Good near-term work includes inverse-parity anti-concentration, recursive
-lower bounds, and a lossless two-tail continuation state retaining branch
-depth, normalized odd gap, inherited coefficient surplus, and both residues.
-Mine state collisions at small height before scaling. Certificate extension is
-useful when it tests such structure; raw depth extension is secondary.
+lower bounds, and a composable two-tail continuation state retaining branch
+depth, normalized odd gap, inherited coefficient surplus, and residue/carry
+information equivalent to both tails. Start from the stored NG19 collisions:
+any proposed state merge must distinguish them or prove a sound dominance
+relation. Certificate extension is useful when it tests such structure; raw
+depth extension is secondary.
 
 ## 6. Reproduce and audit
 
@@ -150,12 +157,14 @@ From the repository root:
   --artifact-dir artifacts --output /tmp/collatz_phase10_verifier.json
 .venv/bin/python verifier/verify_branch_point.py \
   --artifact-dir artifacts --output /tmp/collatz_branch_verifier.json
+.venv/bin/python verifier/verify_two_tail.py \
+  --artifact-dir artifacts --output /tmp/collatz_two_tail_verifier.json
 .venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
 
-The manifest hash is
-`ac70fa231476c86edc0f3d88be53b310aacca2939a9ee981c70574f05001a39a`.
+The current manifest hash is recorded in
+[`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md).
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 
@@ -168,5 +177,6 @@ Before changing a claim status, read its row in
 
 The current bottleneck is not finite verification or contact density. It is a
 rigorous asymptotic link from high affine correction to a large least positive
-inverse-parity representative, or a lossless two-tail spacing certificate
-strong enough to close all 30 q0 branch cases. Neither is established.
+inverse-parity representative, or a composable two-tail spacing certificate
+strong enough to close all 30 q0 branch cases. P68 solves only a chosen finite
+horizon, and NG19 shows why simply shortening that residue window fails.

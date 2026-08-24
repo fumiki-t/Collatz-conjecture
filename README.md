@@ -23,9 +23,11 @@ Phases 1–10 provide exact finite searches, symbolic lemmas, independent
 verification, and preserved failures. The strongest route remains the
 `CONDITIONAL` Phase 6 reduction. Phases 7–10 localize its first possible large
 crossing, reduce the endpoint to one gap residue, derive a renewal barrier, and
-split every positive q0 near-gap pair into 30 first-divergence cases. C04, C05,
-and the eventual lower bound remain `OPEN`. Bounded searches, high coverage,
-and external inputs are never promoted to asymptotic claims.
+split every positive q0 near-gap pair into 30 first-divergence cases. P68 adds
+an exact finite-horizon two-tail state; NG19 preserves explicit counterexamples
+to every shorter residue window at horizon 12. C04, C05, and the eventual lower
+bound remain `OPEN`. Bounded searches, high coverage, and external inputs are
+never promoted to asymptotic claims.
 
 Current status: [`docs/STATUS.md`](docs/STATUS.md)
 
@@ -68,12 +70,14 @@ python3 -m venv .venv
   --artifact-dir artifacts --output /tmp/collatz_phase10_verifier.json
 .venv/bin/python verifier/verify_branch_point.py \
   --artifact-dir artifacts --output /tmp/collatz_branch_verifier.json
+.venv/bin/python verifier/verify_two_tail.py \
+  --artifact-dir artifacts --output /tmp/collatz_two_tail_verifier.json
 .venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
 
-The final command should report
-`ac70fa231476c86edc0f3d88be53b310aacca2939a9ee981c70574f05001a39a`.
+The expected manifest hash is recorded in
+[`TWO_TAIL_RUN_RESULTS.md`](TWO_TAIL_RUN_RESULTS.md).
 The verifier output path is outside `artifacts/` so a reproduction check does
 not overwrite committed evidence.
 
@@ -107,6 +111,7 @@ Acceptance records:
 - [Phase 9](PHASE9_RUN_RESULTS.md)
 - [Phase 10](PHASE10_RUN_RESULTS.md)
 - [Branch-point supplement](BRANCH_POINT_RUN_RESULTS.md)
+- [Two-tail supplement](TWO_TAIL_RUN_RESULTS.md)
 - [SHA-256 manifest](artifacts/SHA256SUMS)
 
 ## Important disclaimer

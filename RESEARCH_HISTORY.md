@@ -626,7 +626,43 @@ The supplement does not prove C04, C05, H54, H57, or Collatz. Branch depths
 21--31 are absent from E16 only because `H=1,500,000`; no target-height case is
 excluded.
 
-## 15. Predecessor-tree and density detour
+## 15. Two-tail finite-state theorem and collision mining
+
+The next supplement tests the explicit state suggested by P66/P67 instead of
+extending the safe-pair depth. Let `h` be the common-prefix length, `a` its odd
+count, `u=(m-n)/2^h`, and `y=T^h(n)`. P68 proves that, for a pair already
+coefficient-safe through the common prefix,
+
+```text
+(h, a, u, branch orientation, y mod 2^L)
+```
+
+determines both next-L parity words and all coefficient-safety decisions during
+those L steps. The reason is exact: the other tail starts at `y+3^a u`, a
+length-L parity word is determined by the start modulo `2^L`, and the inherited
+coefficient is `3^a/2^h`.
+
+The theorem gives a lossless finite-horizon description, but its state grows
+with L. NG19 therefore tests whether any literal shortening `b<L` remains
+lossless at `L=12`. E17 scans all 6,887,319 eligible pairs with
+`2<=n<m<=20,000` and `m-n<=512` in a fixed minimality order. Every
+`b=0,...,11` has an exact collision between opposite joint-safety outcomes. The
+last required collision occurs for `b=11` at `(1407,1663)` versus
+`(15551,15807)`.
+
+The generator and independent verifier separately reconstruct coefficient
+stopping times, transformed gaps, parity tails, collision minimality, and the
+5,156-pair mandatory adversarial digest. Tamper tests reject changes to P68,
+NG19 witnesses, finite digests, adversarial data, and the C05 status.
+
+### What this result does not prove
+
+P68 does not give an unbounded finite automaton, and E17 cannot prove that
+every alternative compression fails. NG19 refutes only the entire tested
+family of literal shorter residue windows at `L=12`. C04, C05, H54, and the
+Collatz conjecture remain open; `proves_collatz=false`.
+
+## 16. Predecessor-tree and density detour
 
 Strong external results count many predecessors or show descent for almost all
 starting values. A naive attempt to combine those densities with a least
@@ -637,7 +673,7 @@ designated exceptional integer or its thin arithmetic cylinder.
 would need an explicit transport, invariance, or intersection theorem for the
 least-counterexample set.
 
-## 16. Numerical consistency audit
+## 17. Numerical consistency audit
 
 The canonical figures above were resolved using this priority:
 
@@ -669,7 +705,7 @@ scopes:
   integer pairs and mandatory adversarial adjacent pairs, not first-crossing
   words.
 
-## 17. Current strategy
+## 18. Current strategy
 
 The primary target is
 
@@ -701,7 +737,7 @@ Bounded finite-state and modular searches are now primarily falsification
 tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A`, `B`, and `A^rB^s`.
 
-## 18. Reproduction and immutable evidence
+## 19. Reproduction and immutable evidence
 
 - Phase 1–2: [`RUN_RESULTS.md`](RUN_RESULTS.md)
 - Phase 3: [`PHASE3_RUN_RESULTS.md`](PHASE3_RUN_RESULTS.md)
@@ -713,12 +749,13 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Phase 9: [`PHASE9_RUN_RESULTS.md`](PHASE9_RUN_RESULTS.md)
 - Phase 10: [`PHASE10_RUN_RESULTS.md`](PHASE10_RUN_RESULTS.md)
 - Branch-point supplement: [`BRANCH_POINT_RUN_RESULTS.md`](BRANCH_POINT_RUN_RESULTS.md)
+- Two-tail supplement: [`TWO_TAIL_RUN_RESULTS.md`](TWO_TAIL_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 The current manifest hash is recorded in the latest phase acceptance report.
 Generated JSON/CSV/certificates must be regenerated, not hand edited.
 
-## 19. Current one-paragraph handoff
+## 20. Current one-paragraph handoff
 
 Phases 1–5 built a robust exact-computation framework and showed why bounded
 state, fixed period, fixed shadow, and finite mixed-modulus mechanisms leave
@@ -735,7 +772,8 @@ substantial finite ranges. Phase 10 turns the q0 endpoint into one gap residue
 and proves that a positive gap would give two integers safe through K0-1 within
 distance W, but C05 is unproved and its finite spacing recursion stalls far
 below the target. P66/P67 now decompose positive gaps into 30 exact first-
-divergence cases and show which surplus and residue data a continuation state
-must retain. No eventual lower bound for `M(k)` is known. Future work should
-mine state collisions and target a carry-aware two-tail cylinder theorem, not
-merely greater depth.
+divergence cases. P68 supplies the exact finite-horizon state, while NG19's
+stored collisions show that no shorter literal residue window works at
+`L=12`. No eventual lower bound for `M(k)` is known. Future work should target
+a composable carry-aware two-tail cylinder theorem that separates those
+collisions, not merely greater depth.

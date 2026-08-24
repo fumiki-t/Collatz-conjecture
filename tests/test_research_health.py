@@ -18,5 +18,7 @@ def test_repository_research_health() -> None:
     assert result["latest_phase"] == 10
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
+    assert result["active_focus"]["P68"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["NG19"] == "REFUTED"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["proves_collatz"] is False

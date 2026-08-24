@@ -37,10 +37,11 @@ Research supplements:
 | Topic | Result record | Evidence | Main contribution |
 |---|---|---|---|
 | Phase 10 branch points | [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md) | `artifacts/branch_point_decomposition.json`; independent verifier | P66 first-divergence theorem, P67 thirty q0 cases, E16 finite profile |
+| Two-tail state collisions | [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md) | `artifacts/two_tail_state_collisions.json`; independent verifier | P68 finite-horizon state, NG19 exact compression failures, E17 finite scan |
 
-The phase branches are reproducible milestones. Main currently contains the
-canonical documentation through Phase 7; Phases 8–10 and the supplement remain
-auditable branch milestones until their integration policy is decided.
+The phase branches are reproducible milestones. Main contains the canonical
+documentation through Phase 10 and both the branch-point and two-tail
+supplements after their independent acceptance checks.
 
 ## Evidence boundaries
 

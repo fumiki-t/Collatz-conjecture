@@ -427,6 +427,36 @@ histories share the proposed state but have different exact continuation
 behavior. Merely extending H without specifying such a state is not a new
 mechanism.
 
+## Two-tail supplement — shortening the exact future residue
+
+**Status:** `REFUTED` (NG19)
+
+**Exact hypothesis.** For horizon `L=12`, there exists a width `b<L` such that
+the state `(h,a,u,orientation,y mod 2^b)` decides whether both post-branch tails
+remain coefficient-safe through the next L steps.
+
+**Why it looked plausible.** P66 fixes the transformed odd gap as `3^a u`,
+the branch orientation fixes the first split, and much of the coefficient
+decision appears to depend only on a short suffix of each tail. A truncated
+residue would have produced a small finite transition system suitable for C05.
+
+**Smallest counterexamples.** E17 enumerates pairs in increasing upper endpoint
+and then increasing positive gap. It stores an opposite-outcome collision for
+every `b=0,...,11`. For `b=0,1`, `(3,7)` and `(27,31)` already share the state
+but disagree. The hardest tested truncation, `b=11`, collides at pairs
+`(1407,1663)` and `(15551,15807)`, both with `h=8`, `a=7`, `u=1`, orientation
+`01`, and left-tail residue 1788 modulo 2048.
+
+**Failure scope.** Fundamental for this exact state family at `L=12`: no
+choice `b<L` is lossless, because one explicit collision refutes each choice.
+It does not prove that every possible finite automaton fails, nor that all
+unbounded descriptions require storing a literal growing residue window.
+
+**Weaker statement retained.** P68 proves that `b=L` is sufficient for an
+L-step decision. A future certificate must retain equivalent carry/residue
+information or prove a dominance relation that safely merges the recorded
+opposite-outcome histories.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

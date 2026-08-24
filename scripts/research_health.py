@@ -24,7 +24,7 @@ ALLOWED_STATUSES = {
     "RETRACTED",
     "OPEN",
 }
-FOCUS_IDS = ("P54", "H54", "C04", "C05", "P63", "P64", "P66", "P67")
+FOCUS_IDS = ("P54", "H54", "C04", "C05", "P63", "P64", "P66", "P67", "P68", "NG19", "E17")
 NAVIGATION_FILES = (Path("README.md"), Path("docs/INDEX.md"), Path("docs/HANDOFF.md"), Path("docs/AI_RESEARCH_GUIDE.md"))
 
 
@@ -115,7 +115,7 @@ def run(root: Path) -> dict[str, object]:
     claim_map, claim_errors = claims(root)
     manifest_hash, tracked_count, manifest_errors = manifest_audit(root)
     errors = claim_errors + manifest_errors + navigation_audit(root, phase)
-    verifier_path = root / "artifacts/branch_point_verifier.json"
+    verifier_path = root / "artifacts/two_tail_verifier.json"
     if not verifier_path.exists():
         errors.append("latest supplemental verifier artifact missing")
         verifier = None

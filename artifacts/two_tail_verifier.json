@@ -1,0 +1,13 @@
+{
+  "C05": "OPEN",
+  "E17": "VERIFIED_FINITE",
+  "NG19": "REFUTED",
+  "P68": "VERIFIED_THEOREM",
+  "bound_H": 20000,
+  "eligible_pairs": 6887319,
+  "gap_cap": 512,
+  "horizon_L": 12,
+  "mandatory_pairs_checked": 5156,
+  "proves_collatz": false,
+  "valid": true
+}

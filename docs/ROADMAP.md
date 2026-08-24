@@ -124,8 +124,14 @@ P66/P67 now split every positive target gap into the 30 cases
 common odd count, odd normalized gap, inherited coefficient surplus, and both
 tail residue states. E16 supplies exact finite witnesses for falsifying a
 proposed compression: `R_h(1500000)` is nonmonotone in h and peaks at 213 for
-`h=7`. The next useful experiment is state-collision mining, not a larger
-undifferentiated spacing scan.
+`h=7`.
+
+P68 now proves that `(h,a,u,orientation,y mod 2^L)` is lossless for the next
+`L` steps. NG19 records the matching obstruction: at `L=12`, every shortened
+window `b<L` has an exact opposite-outcome collision below `H=20000`. The next
+useful experiment must therefore add composable arithmetic structure—such as
+carry intervals, cylinder transitions, or a provable dominance relation—rather
+than merely choosing a smaller fixed residue window or extending the same scan.
 
 ## P1 — Arbitrary reverse-residue barrier
 

@@ -2,8 +2,8 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 10 and its branch-point supplement are the
-latest research layer.
+proof of the conjecture. Phase 10 and its branch-point/two-tail supplements are
+the latest research layer.
 
 ## Read in this order
 
@@ -13,8 +13,9 @@ latest research layer.
    falsification tests.
 4. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
 5. [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md) and
-   [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md) — latest
-   accepted computations and obstruction.
+   [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md), then
+   [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md) — latest accepted
+   computations and obstruction.
 6. [`../AGENTS.md`](../AGENTS.md) — mandatory exact-arithmetic and proof-claim
    protocol.
 
@@ -45,11 +46,14 @@ flowchart TD
     P63 --> P67
     P64 --> P67
     P67 --> C05
+    P67 --> P68["P68 exact finite-horizon state"]
+    P68 --> C05
 ```
 
 Arrows mean “is an input to,” not “has been proved unconditionally.” X02 is
-external evidence; P54, P60, P63, P64, and P67 are conditional. C04, C05,
-H54, and the Collatz conjecture remain open.
+external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
+unconditional finite-horizon theorem. C04, C05, H54, and the Collatz conjecture
+remain open.
 
 ## Active proof obligations
 
@@ -61,16 +65,17 @@ H54, and the Collatz conjecture remain open.
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
 
 The current best direct target is not a larger raw enumeration. It is a
-lossless continuation certificate for a branch state of the form
+composable continuation certificate extending the finite-horizon P68 state
 
 ```text
 (h, a, odd normalized gap, inherited coefficient surplus,
  left tail residue state, right tail residue state).
 ```
 
-The first prototype should be small enough for an independent verifier to
-exhaust every transition. Search for two histories with the same proposed
-compressed state but different continuation behavior before scaling it.
+NG19 already supplies exact safe/non-safe collisions for every fixed shortening
+`y mod 2^b`, `b<12`, of the 12-step state. Any next prototype must separate
+those histories, retain equivalent carry information, or prove a sound
+dominance rule before scaling it.
 
 ## Experiment contract
 
@@ -90,8 +95,9 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 
 ## High-value next experiments
 
-- Build a two-tail continuation automaton for branch depths `2<=h<=31` that
-  retains coefficient surplus exactly; falsify state compression at small H.
+- Build a composable two-tail continuation automaton for branch depths
+  `2<=h<=31` that retains coefficient surplus exactly and explicitly separates
+  every stored NG19 collision.
 - Derive exact lower bounds on the ordinary size of a pair of inverse-parity
   residues from their odd normalized gap and common-prefix affine constant.
 - Test whether any proposed branch potential composes across the record
@@ -108,6 +114,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 - Strict spacing growth at every depth: refuted by NG18.
 - A fixed dictionary of dangerous words or shadow centers: refuted by
   NG04/NG09/NG15 and `A^rB^s`.
+- A fixed `b<L` tail-residue window for an L-step safety decision: refuted at
+  `L=12` by NG19.
 - Treating finite disappearance of safe pairs below a bound as a larger-H
   spacing theorem.
 - Treating formal rational cycles as positive integral Collatz cycles.

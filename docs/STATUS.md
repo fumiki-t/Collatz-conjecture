@@ -19,6 +19,9 @@ disproved by this repository.
 - `VERIFIED_THEOREM`: P66 proves that two integer trajectories share exactly
   `v2(m-n)` parity steps and then split, with exact transformed odd gap
   `3^a(m-n)/2^h` after their common prefix.
+- `VERIFIED_THEOREM`: P68 proves that, after a coefficient-safe common prefix,
+  `(h,a,u,orientation,y mod 2^L)` losslessly determines both tails' next `L`
+  parity bits and their coefficient-safety decisions over that finite horizon.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -83,6 +86,11 @@ No item above proves the Collatz conjecture.
   `0<=h<=20`. The largest joint-safe depth is 213 at `h=7`, witnessed by
   `(1126015,1394431)`. Its independent verifier also checks 32,385 small pairs
   and 5,156 mandatory adversarial pairs.
+- Two-tail supplement: E17 scans 6,887,319 eligible pairs with
+  `2<=n<m<=20000`, `m-n<=512`, and `L=12`. For every shortened residue width
+  `b=0,...,11`, it retains the first exact collision between a jointly safe
+  and non-safe continuation. The mandatory adversarial audit covers 5,156
+  adjacent family pairs.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -153,6 +161,10 @@ scale to the required depth and height.
 P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
 cases. The missing scalable state must retain the common-prefix surplus, odd
 normalized gap, and both tail residues; branch depth alone is insufficient.
+P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
+`L=12` none of the shorter windows `b<L` retains enough information even in a
+small exact domain. The open problem is therefore a composable symbolic state,
+not a fixed truncation of the future residue.
 
 ## Secondary directions
 
@@ -179,6 +191,9 @@ normalized gap, and both tail residues; branch depth alone is insufficient.
 
 ## What was recently refuted?
 
+- `REFUTED`: for `L=12`, some shortened residue window `b<L` universally
+  decides two-tail joint coefficient safety. Every `b=0,...,11` has an exact
+  opposite-outcome collision below `H=20000` and gap 512.
 - `REFUTED`: nested safe-set deletion forces strict spacing growth at every
   depth. The exact Phase 10 prefix has `Delta_2=Delta_3=4`; only nondecrease
   survives without a stronger state invariant.
@@ -206,8 +221,9 @@ normalized gap, and both tail residues; branch depth alone is insufficient.
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can C05, `Delta_(K0-1)(2^72)>W`, be proved by a lossless cylinder or
-   difference-state certificate rather than finite-prefix disappearance?
+2. Can the lossless horizon-dependent P68 state be replaced by a composable
+   symbolic/carry state whose size does not grow one bit per future step, and
+   which is strong enough to prove C05?
 3. Can arbitrary reverse exponent compositions be summarized by a lossless
    recursive forbidden-residue state, rather than only the mechanical family?
 
@@ -246,4 +262,5 @@ normalized gap, and both tail residues; branch depth alone is insufficient.
 - Phase 9 acceptance: [`../PHASE9_RUN_RESULTS.md`](../PHASE9_RUN_RESULTS.md)
 - Phase 10 acceptance: [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md)
 - Branch-point supplement: [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md)
+- Two-tail supplement: [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)
