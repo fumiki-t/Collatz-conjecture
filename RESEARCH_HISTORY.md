@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–8 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–13 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -867,6 +867,7 @@ tools. Every universal proposal must survive `2^m-1`, `8^m-5`,
 - Two-tail supplement: [`TWO_TAIL_RUN_RESULTS.md`](TWO_TAIL_RUN_RESULTS.md)
 - Phase 11: [`PHASE11_RUN_RESULTS.md`](PHASE11_RUN_RESULTS.md)
 - Phase 12: [`PHASE12_RUN_RESULTS.md`](PHASE12_RUN_RESULTS.md)
+- Phase 13: [`PHASE13_RUN_RESULTS.md`](PHASE13_RUN_RESULTS.md)
 - Current manifest: [`artifacts/SHA256SUMS`](artifacts/SHA256SUMS)
 
 The current manifest hash is recorded in the latest phase acceptance report.
@@ -897,9 +898,13 @@ only the ladder branch. Its exact affine-margin cylinders compose locally, but
 NG19 blocks literal residue truncation and NG20 blocks height-free spacing.
 Phase 12 proves a density-one octave-defect bound for the infinite-safe-tail
 branch and rules out the all-contact critical word. NG21 shows that improving
-its exponent requires genuine transition information. No eventual lower bound
-for `M(k)`, cross-cylinder spacing theorem, or complete safe-tail exclusion is
-known.
+its exponent requires genuine transition information. Phase 13 gives the
+renewal prefix code, exact pressure identities, universal companion threshold,
+and valuation-conditioned ordinary-source transfer. P80 states a sufficient
+canonical-residue anti-concentration target, while NG23 refutes substituting
+raw Haar volume for deterministic ordinary representatives. No eventual lower
+bound for `M(k)`, cross-cylinder spacing theorem, or complete safe-tail
+exclusion is known.
 
 ## 23. AI research control-plane audit
 
@@ -971,3 +976,54 @@ The audit does not prove or disprove Collatz, does not eliminate a
 permanent-safe positive orbit, and does not prove a nontrivial-cycle theorem.
 EXT07 is an external theorem whose Heppner input is not reproved here. The
 formal NG22 source is not a positive ordinary Collatz orbit.
+
+## 25. Phase 13 — renewal-code pressure and canonical residues
+
+**Branch:** `feat/phase13-renewal-code-pressure`
+
+**Acceptance record:** [`PHASE13_RUN_RESULTS.md`](PHASE13_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/renewal-code-pressure/REPORT.md`](research/audits/renewal-code-pressure/REPORT.md)
+
+Phase 13 treated the two preceding scratch audits as untrusted hypotheses and
+implemented a fresh generator plus a verifier that imports no generator code.
+P77 proves that strict suffix-minimum blocks of a permanent-safe discrepancy
+word reverse to a prefix-free first-upcrossing code. P78 proves the exact
+weighted stopping identity and strict bounds
+
+```text
+kappa < 3/4,
+sigma < 7/12,
+tau < 19/96,
+nu < 9/32.
+```
+
+P79 reconstructs the universal `R(w)>=13/9` threshold, equality only for
+`w=110`, and the positive ordinary divisibility bridge. The additional
+normalization `C_w=(B_w+2^L-3^q)/4` is integral on renewal blocks; for
+nontrivial `w`, it satisfies `C_w>=2^(L-3)` and `v2(C_w)=r-2`, where `r` is
+the initial one-run. This is a genuine orbit-specific transfer rule but does
+not by itself yield a global count.
+
+P80 isolates the missing theorem. Either a uniformly subexponential endpoint
+canonical-representative count with mass `sigma^i`, or its two-sided analogue
+with mass `tau^i`, would combine with boundary growth to exclude a positive
+permanent-safe orbit. The exact decay factors are `7/8` and `57/128`. Both
+counting premises remain unproved, so H72 remains open.
+
+NG23 records the least failure of the raw Haar shortcut. For `u=1,H=2`, the
+canonical count is one while endpoint and two-sided volume predictions are
+both `2/3`. Local Haar measure therefore cannot be silently substituted for
+ordinary least positive representatives or a designated positive source.
+
+E22 independently reconstructs the length-512 DP, every address with total
+`Q<=12` and one through four blocks, heights through 2048, 2144 mandatory
+adversarial convention instances, and a 4096-step square-root countermodel.
+The latter is added to NG22's evidence without creating a duplicate claim ID.
+Its coherent 2-adic source is not known to be a positive ordinary integer.
+
+### What this result does not prove
+
+Phase 13 does not prove either anti-concentration premise, does not prove H72,
+does not eliminate nontrivial cycles, and does not prove or disprove the
+Collatz conjecture. `proves_collatz=false`.

@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-25
+**Last updated:** 2026-08-26
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -40,6 +40,13 @@ disproved by this repository.
   rational shadows for every reciprocal-summable positive odd orbit. The
   shadows converge to `h_0` over the reals and `-x_0` over the 2-adics, but no
   effective reduced-height contradiction is known.
+- `VERIFIED_THEOREM`: P77--P79 give the unique renewal first-upcrossing code,
+  its exact weighted stopping/pressure bounds, the universal `13/9` companion
+  threshold, and the normalized ordinary-integrality rule
+  `v2(C_w)=r-2` for a nontrivial block's initial one-run.
+- `CONDITIONAL`: P80 proves that either a quantified endpoint or two-sided
+  canonical-representative anti-concentration estimate would exclude the
+  permanent-safe positive branch. Neither estimate is proved.
 - `OPEN`: H70 is that eventual dropping-safe pair-spacing inequality. No
   threshold or cross-cylinder proof is known.
 - `OPEN`: H72 asks for an orbit-specific packing improvement strong enough to
@@ -136,6 +143,11 @@ No item above proves the Collatz conjecture.
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
   source below `2^1174` realizes the audited prefix. This finite exclusion is
   not an infinite-source theorem.
+- Phase 13: E22 independently rebuilds the first-passage DP through length
+  512, 3,331 codewords and every 1--4 block address with total `Q<=12`, all
+  ordinary heights through 2,048, 2,144 adversarial convention instances, and
+  a 4,096-step square-root countermodel. The finite absence of duplicate
+  endpoint cylinders and all finite ratios remain non-asymptotic.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -230,11 +242,17 @@ shows that those analytic conditions remain consistent with a formal exponent
 word and a genuine odd 2-adic source. The new boundary is therefore positive
 ordinary-integrality or effective rational-shadow height, not mere 2-adic
 coherence.
+Phase 13 converts that boundary into a precise counting target. P78 supplies
+local masses `sigma^i` and `tau^i`, while P79 couples the source to each
+block's initial run through an exact 2-adic valuation. P80 shows the needed
+ordinary-height decay, but NG23 proves that raw Haar mass cannot supply it:
+the per-address lattice error and deterministic least representative must be
+controlled arithmetically.
 
 ## Secondary directions
 
-- Prove anti-concentration for inverse parity residues with an effective least
-  representative bound.
+- Prove one of P80's canonical-residue anti-concentration estimates using the
+  coupled `(B,r2,r3,C_w)` recurrence and per-address ordinary lattice errors.
 - Prove C04 by excluding the q0 near-diagonal canonical residue pair, with a
   lossless carry-aware recursion or meet-in-the-middle certificate.
 - Prove or refute C05 with a recursive safe-pair cylinder/difference-state
@@ -258,6 +276,9 @@ coherence.
 
 ## What was recently refuted?
 
+- `REFUTED`: coefficient-one raw Haar endpoint or product volume controls the
+  canonical least positive representative count. NG23's minimum obstruction
+  is `u=1,H=2`: the count is 1 and both volume predictions are `2/3`.
 - `REFUTED`: the conditions `a_j->infinity`, `sum 2^-a_j<infinity`,
   `h_j>1`, and `sum 1/h_j=infinity`, even with a coherent odd 2-adic source,
   are contradictory by themselves. NG22 gives an exact invariant formal
@@ -297,9 +318,9 @@ coherence.
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can positivity or ordinary-integrality force an effective lower bound on
-   the reduced height/gcd of P76's moving rational shadows, ruling out the
-   NG22-style formal 2-adic source for every permanent-safe tail?
+2. Can P79's valuation-conditioned `(U,V,C_w)` transfer prove one of P80's
+   subexponential canonical-residue counts after retaining every ordinary
+   lattice `+1`, thereby separating positive sources from both NG22 models?
 3. Can P71's exact per-cylinder margin interval be merged across residue
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
@@ -318,7 +339,8 @@ coherence.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
 - Extend P72 only with an orbit-specific transition invariant; test it first
-  against NG21, NG22, and E20 before claiming an exponent improvement.
+  against NG21, NG22, NG23, E20, and E22 before claiming an exponent or
+  anti-concentration improvement.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -339,6 +361,9 @@ coherence.
 - Seek a contradiction from only summable octave defects, `h_j>1`, divergent
   companion reciprocals, and a general odd 2-adic source; NG22 realizes all
   four analytic conditions exactly.
+- Replace deterministic canonical representatives by Haar cylinder volume or
+  discard the per-address ordinary lattice `+1`; NG23 refutes that step at the
+  first codeword.
 - Retry contact closure plus weighted pressure without a new endpoint or
   least-residue invariant; NG17 is an exact no-go for that information set.
 - Infer an asymptotic law from high finite coverage or a beam search.
@@ -363,4 +388,5 @@ coherence.
 - Two-tail supplement: [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md)
 - Phase 11 acceptance: [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md)
 - Phase 12 acceptance: [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md)
+- Phase 13 acceptance: [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

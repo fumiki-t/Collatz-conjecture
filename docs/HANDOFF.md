@@ -44,7 +44,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the twelve phases established
+## 3. What the thirteen phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -106,6 +106,12 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   defects, and P76 gives real/2-adic moving shadows. NG22 shows these analytic
   conditions plus a general odd 2-adic source are still consistent; positivity
   and effective ordinary height are now the H72 boundary.
+- Phase 13 proves the renewal first-upcrossing code P77, exact weighted
+  pressure bounds P78, and the `13/9` threshold plus valuation-conditioned
+  positive-source transfer P79. P80 isolates two sufficient but unproved
+  canonical-residue anti-concentration estimates. NG23 refutes substituting
+  raw Haar volume for deterministic least positive representatives at the
+  minimum word `u=1,H=2`; H72 remains open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -151,7 +157,9 @@ The logically exhaustive Phase 11 route is:
 P69 counterexample trichotomy
   -> exclude nontrivial cycles (OPEN)
   -> EXT07/P74 conditional permanent-safe reduction
-  -> P72/P75/P76 -> positivity or height obstruction -> H72 (OPEN)
+  -> P72/P75/P76/P77/P78/P79
+  -> P80 canonical-residue anti-concentration (CONDITIONAL)
+  -> H72 (OPEN)
   -> H70 eventual dropping-safe spacing via P70 (OPEN).
 ```
 
@@ -179,10 +187,11 @@ entry point and is audited against the ledger.
 Good near-term work includes inverse-parity anti-concentration, recursive
 lower bounds, a cross-cylinder quotient/carry state extending P71, and a
 positive ordinary-integrality or effective shadow-height obstruction extending
-P75/P76. Start from the stored NG19 collisions, universal NG20 pair, and NG22
-formal 2-adic source: any proposed merge must distinguish them or prove a sound
-dominance relation. Certificate extension is useful when it tests such
-structure; raw depth extension is secondary.
+P75--P79. Start from the stored NG19 collisions, universal NG20 pair, both
+NG22 formal 2-adic sources, and NG23's raw-volume obstruction: any proposed
+merge must distinguish them or prove a sound dominance relation. Certificate
+extension is useful when it tests such structure; raw depth extension is
+secondary.
 
 ## 6. Reproduce and audit
 
@@ -200,6 +209,8 @@ From the repository root:
   --artifact-dir artifacts --output /tmp/collatz_phase11_verifier.json
 .venv/bin/python verifier/verify_phase12.py \
   --artifact-dir artifacts --output /tmp/collatz_phase12_verifier.json
+.venv/bin/python verifier/verify_phase13.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase13_verifier.json
 .venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
@@ -209,7 +220,7 @@ non-strict command deliberately reports local untracked artifacts as warnings
 without treating them as accepted evidence.
 
 The current manifest hash is recorded in
-[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md).
+[`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md).
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 
@@ -226,5 +237,7 @@ cross-cylinder spacing theorem. P71 solves exact margins only inside a fixed
 finite cylinder; NG19 prevents literal truncation, and NG20 prevents discarding
 height. EXT07/P74 conditionally collapses the nonperiodic alternatives to a
 permanent-safe tail, but P75/P76 do not exclude it: NG22 satisfies their
-analytic consequences at the formal/2-adic level. The remaining distinction
-is positivity or effective ordinary height. Collatz remains open.
+analytic consequences at the formal/2-adic level. P77--P79 expose exact
+renewal pressure and valuation structure, while NG23 shows Haar volume alone
+cannot control an ordinary representative. The remaining distinction is a
+deterministic positive-height anti-concentration theorem. Collatz remains open.

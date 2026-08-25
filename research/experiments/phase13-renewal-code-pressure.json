@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "phase13-renewal-code-pressure",
+  "status": "ACCEPTED",
+  "claim_ids": ["P77", "P78", "P79", "P80", "E22", "NG23", "H72", "NG22"],
+  "objective": "Independently reconstruct the renewal-code, pressure, companion-threshold, formal-countermodel, and canonical-residue results from two scratch audits, accepting only separately proved or verified statements and preserving the anti-concentration gap.",
+  "exact_scope": {
+    "quantifiers": [
+      "all first strict upcrossing words for the symbolic theorem statements",
+      "all finite-DP states through full-word length 512",
+      "all renewal addresses with total odd count Q at most 12 and block count from 1 through 4",
+      "all ordinary heights from 1 through 2048 in the canonical-residue finite audit",
+      "the first 4096 odd exponents of the square-root critical countermodel"
+    ],
+    "bounds": {
+      "dp_length": 512,
+      "maximum_total_q": 12,
+      "maximum_blocks": 4,
+      "ordinary_height": 2048,
+      "critical_odd_steps": 4096
+    },
+    "completeness": "The finite computations are exhaustive only in the stated domains. P77-P79 use separate exact proofs. P80 is only a quantified conditional implication and does not assert either anti-concentration premise."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "Decimal approximations are reporting-only; integers, Fraction, and exact power comparisons decide acceptance."
+  },
+  "commands": {
+    "generator": [
+      ".venv/bin/python src/phase13_search.py --artifact-dir artifacts --dp-length 512 --max-total-q 12 --max-blocks 4 --height 2048 --critical-steps 4096"
+    ],
+    "verifier": [
+      ".venv/bin/python verifier/verify_phase13.py --artifact-dir artifacts --output artifacts/phase13_verifier.json"
+    ],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase13_properties.py tests/test_phase13_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "first-upcrossing orientation and prefix-free status",
+      "finite pressure DP and analytic-bound witnesses",
+      "universal threshold extrema and equality word",
+      "critical recurrence, inverse residue digest, and finite height exclusion",
+      "canonical source and endpoint residues, finite counts, lattice errors, and cylinder compatibility",
+      "raw coefficient-one Haar-volume counterexample and exact pressure factors"
+    ],
+    "forbidden_imports": ["src.phase13_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase13_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "NG21",
+    "NG22"
+  ],
+  "artifacts": [
+    "artifacts/phase13_renewal_code.json",
+    "artifacts/phase13_pressure_bounds.json",
+    "artifacts/phase13_threshold_bridge.json",
+    "artifacts/phase13_critical_countermodel.json",
+    "artifacts/phase13_residue_audit.json",
+    "artifacts/phase13_conditional_pressure.json",
+    "artifacts/phase13_obstruction_report.md",
+    "artifacts/phase13_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Stop and preserve the least exact obstruction if a symbolic identity, digest, or independent reconstruction fails.",
+    "Do not enlarge a finite range to conceal a failed universal statement or promote finite trends to asymptotic claims.",
+    "Keep H72 open unless ordinary-positive anti-concentration itself is proved and independently audited.",
+    "Enter the proof-claim emergency protocol before any change to proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The endpoint and two-sided anti-concentration estimates are premises, not Phase 13 conclusions.",
+    "A coherent 2-adic source is not a positive ordinary integer.",
+    "Haar measure does not control a designated least positive canonical representative.",
+    "The nontrivial-cycle branch remains separate.",
+    "No finite DP or address enumeration proves an asymptotic theorem."
+  ],
+  "recorded_result": {
+    "commit": "be2e5221dbc12bd99a1cdff8e4eaab68e11255b8",
+    "full_tests": "218 passed",
+    "manifest_sha256": "65a762785fc2eeb0e795446d66997ccf2636eb639fef9e4b005a804718bf851d",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

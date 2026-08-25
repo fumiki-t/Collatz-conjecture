@@ -76,11 +76,20 @@ odd 2-adic source are still mutually compatible. A successful proof must use
 positive ordinary-integrality, effective reduced height/gcd, or a genuinely
 stronger orbit-transition invariant.
 
+Phase 13 now supplies the exact renewal code P77, pressure bounds P78, and the
+valuation-conditioned positive-source transfer P79. P80 proves that either a
+uniform endpoint bound
+`N_i^(3)(H)<=exp(epsilon*i)H*sigma^i` or its two-sided analogue with
+`H^2*tau^i` would close this branch. NG23 shows that raw Haar volume cannot
+replace that missing deterministic ordinary-height theorem: `u=1,H=2`
+already has count 1 and predicted volume `2/3`.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
-orbits, all-contact prefixes, NG21, the NG22 formal exponent/2-adic source, and
-every mandatory adversarial family. Reject any proof that identifies a general
-2-adic source with a positive ordinary integer or promotes finite scarcity to
-an eventual statement.
+orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
+the NG23 `u=1,H=2` obstruction, and every mandatory adversarial family. Reject
+any proof that identifies a general 2-adic source with a positive ordinary
+integer, drops the per-address lattice `+1`, or promotes finite scarcity to an
+eventual statement.
 
 **Success criterion.** An orbit-specific arithmetic theorem that excludes
 every positive ordinary integer permanent-safe source, with an independently
@@ -121,10 +130,17 @@ needed lower bound for `M(k)` directly.
 the generalized Ballot language. Phase 7 fixed-layer Pareto fronts and
 fixed-`(k,q)` rigidity do not supply this Archimedean minimum bound.
 
-**Fast falsification test.** Measure the joint `(B,r2)` Pareto frontier in exact
-dynamic-programming/meet-in-the-middle slices, beginning with Phase 7's
-`q=1,3,5,17` records; attack monotonicity with macro id 0 and `A^rB^s` before
-scaling.
+Phase 13 gives a more focused infinite-tail version. Renewal address masses
+factor as `sigma^i` and `tau^i`, and the ordinary source determines the initial
+one-run through `v2((S+1)/4)=v2(C_w)`. What remains missing is a theorem that
+turns this coupled valuation/affine recurrence into subexponential endpoint or
+two-sided canonical-representative counts. Standard Haar measure is
+insufficient by NG23.
+
+**Fast falsification test.** First reconstruct NG23 and all E22 finite ratios,
+then measure the joint `(B,r2,r3,C_w)` Pareto frontier in exact
+dynamic-programming/meet-in-the-middle slices. Attack every proposed constant
+or monotonicity with macro id 0, NG22, and `A^rB^s` before scaling.
 
 **Success criterion.** An effective inequality for the minimum, or a tail
 bound strong enough to imply it after a union bound whose constants and

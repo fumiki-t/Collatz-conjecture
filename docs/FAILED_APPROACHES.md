@@ -565,6 +565,48 @@ hypothetical permanent-safe positive orbit. H72 must add positivity,
 ordinary-integrality/effective height, or transition information that fails on
 the NG22 source.
 
+## Phase 13 — raw Haar volume controls canonical representatives
+
+**Status:** `REFUTED` (NG23)
+
+**Exact hypothesis.** For renewal addresses, the raw endpoint Haar mass
+`sum 3^(-Q)` or two-sided product mass `sum 2^(-L)3^(-Q)`, with coefficient
+one, controls the count of canonical least positive representatives below
+ordinary height `H`.
+
+**Why it looked plausible.** The address masses factor exactly as `sigma^i`
+and `tau^i`, while positive renewal boundaries grow by at most `(3/2)^i`.
+If local Haar mass directly transferred to ordinary representatives, the exact
+pressure products `7/8` and `57/128` would exclude a permanent-safe orbit.
+
+**Smallest counterexample.** The first codeword `u=1` has `L=Q=B=1`, least
+positive source representative 1, and least positive endpoint representative
+2. At `H=2`, the canonical endpoint and two-sided counts are both one, while
+
+```text
+H*3^(-Q) = 2/3,
+H^2*2^(-L)*3^(-Q) = 2/3.
+```
+
+**Failure scope.** Exact refutation of coefficient one and of the logical step
+from local Haar measure to one designated ordinary representative. It does not
+refute an estimate with an unspecified fixed constant, a subexponential
+factor, or an arithmetic separation theorem using the coupled affine
+recurrence.
+
+**Weaker statement retained.** P78's mass factorizations are exact, and P80
+proves that either explicitly quantified anti-concentration estimate would be
+sufficient. P79 adds the orbit-specific valuation rule
+`v2(C_w)=r-2`. The estimates themselves remain open.
+
+**Rules out.** Summing local cylinder volumes, discarding the per-address
+ordinary lattice `+1` error, and concluding that a particular positive source
+cannot exist. Endpoint 3-adic cylinders can also be nested, so the sum of
+address masses is not automatically a union measure.
+
+**Evidence.** [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md),
+`artifacts/phase13_residue_audit.json`, and the independent Phase 13 verifier.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

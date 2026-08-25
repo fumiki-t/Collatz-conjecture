@@ -124,6 +124,19 @@ def commit_exists(root: Path, commit: str) -> bool:
     return completed.returncode == 0
 
 
+def file_digest_at_commit(root: Path, commit: str, relative: str) -> str | None:
+    """Return the SHA-256 of a repository file at an accepted result commit."""
+    completed = subprocess.run(
+        ["git", "show", f"{commit}:{relative}"],
+        cwd=root,
+        check=False,
+        capture_output=True,
+    )
+    if completed.returncode != 0:
+        return None
+    return hashlib.sha256(completed.stdout).hexdigest()
+
+
 def manifest_audit(root: Path) -> tuple[str, int, list[str]]:
     manifest = root / "artifacts/SHA256SUMS"
     rows = {}
@@ -379,12 +392,17 @@ def validate_experiment_manifest(
         result = manifest.get("recorded_result")
         if isinstance(result, dict):
             recorded_hash = result.get("manifest_sha256")
-            manifest_path = root / "artifacts/SHA256SUMS"
-            if recorded_hash != digest(manifest_path):
-                errors.append(f"accepted experiment {experiment_id} manifest hash mismatch")
             commit = result.get("commit")
             if not isinstance(commit, str) or not commit_exists(root, commit):
                 errors.append(f"accepted experiment {experiment_id} commit is not available: {commit}")
+            else:
+                historical_hash = file_digest_at_commit(root, commit, "artifacts/SHA256SUMS")
+                if historical_hash is None:
+                    errors.append(
+                        f"accepted experiment {experiment_id} manifest is absent at result commit"
+                    )
+                elif recorded_hash != historical_hash:
+                    errors.append(f"accepted experiment {experiment_id} manifest hash mismatch")
     return errors
 
 

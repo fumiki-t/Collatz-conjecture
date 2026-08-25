@@ -2,8 +2,8 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 12's infinite-safe-tail odd-orbit packing is the
-latest research layer.
+proof of the conjecture. Phase 13's renewal pressure and canonical-residue
+audit is the latest research layer.
 
 ## Read in this order
 
@@ -12,10 +12,10 @@ latest research layer.
 3. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 4. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-5. [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md) and the subsequent
+5. [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md), then its inputs:
+   [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md), the accompanying
    [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md),
-   after their input [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md)
-   and the earlier
+   [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md), and the earlier
    inputs
    [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md),
    [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md), and
@@ -72,6 +72,11 @@ flowchart TD
     P72 --> P75
     P75 --> H72["H72 positivity or height obstruction"]
     P76["P76 real and 2-adic shadows"] --> H72
+    P77["P77 renewal prefix code"] --> P78["P78 pressure bounds"]
+    P78 --> P80["P80 conditional anti-concentration"]
+    P79["P79 threshold and valuation transfer"] --> P80
+    P80 --> H72
+    NG23["NG23 raw Haar failure"] --> H72
     NG22["NG22 formal 2-adic obstruction"] --> H72
     P69 --> P70["P70 renewal-ladder implication"]
     H70["H70 eventual dropping-safe spacing"] --> P70
@@ -81,10 +86,11 @@ flowchart TD
 Arrows mean “is an input to,” not “has been proved unconditionally.” X02 is
 external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
-or exact reductions. EXT07 is external; P74/P75 are conditional on it. NG22 is
-a formal/2-adic countermodel, not a positive integer orbit. H70 and H72 remain
-open. C04, C05, H54, every uneliminated P69 branch, and the Collatz conjecture
-remain open.
+or exact reductions. EXT07 is external; P74/P75 are conditional on it.
+P77--P79 are exact renewal theorems; P80 is only a sufficient conditional
+implication. NG22 is a formal/2-adic countermodel and NG23 is a raw-volume
+failure. H70 and H72 remain open. C04, C05, H54, every uneliminated P69 branch,
+and the Collatz conjecture remain open.
 
 ## Active proof obligations
 
@@ -92,7 +98,7 @@ remain open.
 |---|---|---|---|
 | H54 | `OPEN` | Prove `M(K_q-1)>H_q` eventually | Attack any proposed `M(k)` inequality with all stored record failures and mandatory adversarial families |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
-| H72 | `OPEN` | Add positivity, effective ordinary-height, or stronger transition information to P72/P75/P76 until permanent-safe positive tails are impossible | Reject mod-6-only improvements with NG21 and analytic/2-adic-only contradictions with NG22; test on E20 and all mandatory families |
+| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, or an equivalent positivity/height obstruction extending P72/P75--P79 | Reject mod-6-only improvements with NG21, analytic/2-adic-only contradictions with NG22, and raw Haar substitution with NG23; test on E20/E22 and all mandatory families |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -125,7 +131,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 12 provides the
+artifacts and preserve the recorded manifest hash. Phase 13 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -139,9 +145,9 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 - Attack H70 separately from the other two P69 branches; do not describe a
   renewal-ladder result as a full counterexample exclusion.
 - Attack H72 through positive ordinary-integrality, effective reduced
-  shadow-height/gcd, or actual successor congruences. Mod-6 density is blocked
-  by NG21, and the strengthened analytic conditions plus general 2-adic
-  coherence are blocked by NG22.
+  shadow-height/gcd, or P79's valuation-conditioned successor congruences.
+  Mod-6 density is blocked by NG21, analytic/general-2-adic coherence by NG22,
+  and raw local-volume counting by NG23.
 - Derive exact lower bounds on the ordinary size of a pair of inverse-parity
   residues from their odd normalized gap and common-prefix affine constant.
 - Test whether any proposed branch potential composes across the record
@@ -166,6 +172,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   companion reciprocals, and an odd 2-adic source: refuted by NG22.
 - A packing exponent below `1/9` from distinctness and coprimality modulo six
   alone: refuted by NG21's abstract saturator, which is not a Collatz orbit.
+- Replacing deterministic least positive representatives by Haar cylinder
+  volume or discarding one lattice error per address: refuted by NG23.
 - Treating finite disappearance of safe pairs below a bound as a larger-H
   spacing theorem.
 - Treating formal rational cycles as positive integral Collatz cycles.

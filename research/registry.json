@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 12,
+    "latest_phase": 13,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -21,14 +21,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 12,
-    "report": "PHASE12_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase12_verifier.json",
+    "phase": 13,
+    "report": "PHASE13_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase13_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase12-acceptance.json"
+    "experiment_manifest": "research/experiments/phase13-renewal-code-pressure.json"
   },
   "active_obligations": [
     {
@@ -52,8 +52,8 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "P75", "P76", "E20", "E21", "NG21", "NG22"],
-      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; under EXT07/P74 the finite-crossing nonperiodic branch is conditionally absent, while cycles remain separate."
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "E20", "E21", "E22", "NG21", "NG22", "NG23"],
+      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; P80 gives sufficient but unproved canonical-residue estimates, and cycles remain separate."
     },
     {
       "id": "C04",
@@ -94,7 +94,13 @@
     "P75",
     "P76",
     "E21",
-    "NG22"
+    "NG22",
+    "P77",
+    "P78",
+    "P79",
+    "P80",
+    "E22",
+    "NG23"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

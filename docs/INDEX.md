@@ -37,6 +37,7 @@ for the current state.
 | 10 | [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md) | [`../artifacts/phase10_obstruction_report.md`](../artifacts/phase10_obstruction_report.md) | `b3ab86a` |
 | 11 | [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md) | [`../artifacts/phase11_obstruction_report.md`](../artifacts/phase11_obstruction_report.md) | `feat/phase11-renewal-ladder` |
 | 12 | [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md) | [`../artifacts/phase12_obstruction_report.md`](../artifacts/phase12_obstruction_report.md) | `feat/phase12-infinite-safe-packing` |
+| 13 | [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md) | [`../artifacts/phase13_obstruction_report.md`](../artifacts/phase13_obstruction_report.md) | `feat/phase13-renewal-code-pressure` |
 
 Research supplements:
 
@@ -45,9 +46,10 @@ Research supplements:
 | Phase 10 branch points | [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md) | `artifacts/branch_point_decomposition.json`; independent verifier | P66 first-divergence theorem, P67 thirty q0 cases, E16 finite profile |
 | Two-tail state collisions | [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md) | `artifacts/two_tail_state_collisions.json`; independent verifier | P68 finite-horizon state, NG19 exact compression failures, E17 finite scan |
 | Garcia--Tal / Phase 12 audit | [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md) | audit-local exact certificate, independent inverse-series verifier, tamper tests, SHA-256 manifest | EXT07 boundary, conditional P74/P75, companion P76, NG22 obstruction, E21 finite audit |
+| Renewal-code pressure audit | [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md) | Phase 13 exact artifacts, independent verifier, tamper tests, SHA-256 manifests | P77--P79 renewal theorems, conditional P80, E22 finite audit, NG23 raw-Haar obstruction |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 12 and both the branch-point and two-tail
+documentation through Phase 13 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

@@ -19,7 +19,7 @@ open proof obligations so that the work can be audited and continued.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture.**
 
-Phases 1–12 provide exact finite searches, symbolic lemmas, independent
+Phases 1–13 provide exact finite searches, symbolic lemmas, independent
 verification, and preserved failures. The strongest route remains the
 `CONDITIONAL` Phase 6 reduction. Phases 7–10 localize its first possible large
 crossing, reduce the endpoint to one gap residue, derive a renewal barrier, and
@@ -29,8 +29,13 @@ to every shorter residue window at horizon 12. Phase 11 gives the full
 counterexample trichotomy and a dropping-safe renewal-ladder barrier. Phase 12
 adds an odd-orbit packing theorem for its infinite-safe-tail branch and rules
 out the single all-contact mechanical word, but does not eliminate that branch
-or the cycle alternative. C04, C05, H54, H70, and H72 remain open. Bounded searches, high
-coverage, and external inputs are never promoted to asymptotic claims.
+or the cycle alternative. Phase 13 adds an exact renewal code, weighted
+pressure bounds, a valuation-conditioned positive-source transfer, and a
+precise conditional anti-concentration target; raw Haar volume is refuted as a
+substitute for ordinary representative control. It does not eliminate the
+safe-tail or cycle alternative. C04, C05, H54, H70, and H72 remain open.
+Bounded searches, high coverage, and external inputs are never promoted to
+asymptotic claims.
 
 Current status: [`docs/STATUS.md`](docs/STATUS.md)
 
@@ -79,12 +84,14 @@ python3 -m venv .venv
   --artifact-dir artifacts --output /tmp/collatz_phase11_verifier.json
 .venv/bin/python verifier/verify_phase12.py \
   --artifact-dir artifacts --output /tmp/collatz_phase12_verifier.json
+.venv/bin/python verifier/verify_phase13.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase13_verifier.json
 .venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
 
 The expected manifest hash is recorded in
-[`PHASE12_RUN_RESULTS.md`](PHASE12_RUN_RESULTS.md).
+[`PHASE13_RUN_RESULTS.md`](PHASE13_RUN_RESULTS.md).
 The verifier output path is outside `artifacts/` so a reproduction check does
 not overwrite committed evidence.
 
@@ -100,7 +107,7 @@ not overwrite committed evidence.
   canonical.
 - [`research/README.md`](research/README.md): experiment-contract and AI
   control-plane conventions.
-- [`RESEARCH_HISTORY.md`](RESEARCH_HISTORY.md): chronological Phase 1–12 record.
+- [`RESEARCH_HISTORY.md`](RESEARCH_HISTORY.md): chronological Phase 1–13 record.
 - [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md): claim IDs, statuses,
   dependencies, evidence, and counterexamples.
 - [`docs/FAILED_APPROACHES.md`](docs/FAILED_APPROACHES.md): approaches that
@@ -132,6 +139,7 @@ Acceptance records:
 - [Two-tail supplement](TWO_TAIL_RUN_RESULTS.md)
 - [Phase 11](PHASE11_RUN_RESULTS.md)
 - [Phase 12](PHASE12_RUN_RESULTS.md)
+- [Phase 13](PHASE13_RUN_RESULTS.md)
 - [SHA-256 manifest](artifacts/SHA256SUMS)
 
 ## Important disclaimer

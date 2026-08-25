@@ -1,5 +1,5 @@
 {
-  "claim_count": 78,
+  "claim_count": 84,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -974,19 +974,25 @@
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, or ordinary-integrality information to strengthen P72/P75 enough to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
-      "dependencies": "P72, P73, P75, NG21, NG22.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, NG21, NG22, NG23.",
       "dependency_ids": [
         "NG21",
         "NG22",
+        "NG23",
         "P72",
         "P73",
-        "P75"
+        "P75",
+        "P76",
+        "P77",
+        "P78",
+        "P79",
+        "P80"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-08-25",
-      "notes": "P75 strengthens defect sparsity conditionally, but NG22 shows those analytic conditions and an odd 2-adic source are still compatible.",
+      "last_audited": "2026-08-26",
+      "notes": "P80 identifies sufficient canonical-residue estimates, but does not prove them. NG23 blocks raw Haar volume; NG22 blocks analytic/general-2-adic contradiction.",
       "status": "OPEN"
     },
     {
@@ -1046,13 +1052,13 @@
     {
       "claim": "The analytic conditions `a_j->infinity`, `sum 2^(-a_j)<infinity`, `h_j>1`, and `sum 1/h_j=infinity`, even together with a coherent odd 2-adic source, are contradictory by themselves.",
       "collatz_implication": "Rules out closing H72 from those analytic conditions without positivity or stronger ordinary-integrality/height input.",
-      "dependencies": "Exact invariant policy from `h_0=3/2`; inverse 2-adic series.",
+      "dependencies": "Exact invariant policy from `h_0=3/2`; inverse 2-adic series; independent square-root-defect model.",
       "dependency_ids": [],
-      "evidence": "[`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md), Section 7; independent certificate verifier.",
+      "evidence": "[`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md), Section 7; [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md), Section 6; independent verifiers.",
       "first_introduced": "Garcia--Tal audit",
       "id": "NG22",
-      "last_audited": "2026-08-25",
-      "notes": "The formal 2-adic source is not known to be a positive ordinary integer and is not a Collatz counterexample.",
+      "last_audited": "2026-08-26",
+      "notes": "Phase 13 adds a critical-density square-root-scale model and 4,096-step audit. Neither formal 2-adic source is known to be a positive ordinary integer or a Collatz counterexample.",
       "status": "REFUTED"
     },
     {
@@ -1068,9 +1074,88 @@
       "last_audited": "2026-08-25",
       "notes": "Finite prefix coherence neither proves an infinite positive source exists nor excludes all positive ordinary sources. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "If a full shortcut word satisfies `Delta_n>0` for every `n>0` and `Delta_n->infinity`, its unique strict-suffix-minimum blocks reverse to the prefix-free first strict-upcrossing code; every nontrivial forward block starts `1`, ends `0`, and the sole length-one exception is `1`.",
+      "collatz_implication": "Supplies the canonical renewal address language for H72.",
+      "dependencies": "Unique factorization of powers of 2 and 3; exact discrepancy differences.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md), Section 2; `artifacts/phase13_renewal_code.json`; independent convention tests.",
+      "first_introduced": "Phase 13",
+      "id": "P77",
+      "last_audited": "2026-08-26",
+      "notes": "The discrepancy hypotheses are conditional for a hypothetical nonperiodic positive orbit through EXT07/P74; P77 does not establish them unconditionally for all starts.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For the first-upcrossing code, `1<c(u)<=3/2`, `sum 2^-L c=1`, `kappa<3/4`, `sigma<7/12`, `tau<19/96`, and `nu=sum 4^-L<9/32`; i-block address masses factor as `kappa^i,sigma^i,tau^i`.",
+      "collatz_implication": "Gives exponentially decaying local pressure factors for a possible H72 anti-concentration theorem.",
+      "dependencies": "P77; fair Bernoulli martingale; bounded stopped process; strong law on non-stopping paths; nonnegative Tonelli factorization.",
+      "dependency_ids": [
+        "P77"
+      ],
+      "evidence": "[`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md), Section 3; `artifacts/phase13_pressure_bounds.json`; independent DP verifier.",
+      "first_introduced": "Phase 13",
+      "id": "P78",
+      "last_audited": "2026-08-26",
+      "notes": "Local pressure does not control ordinary least positive canonical representatives. No literature-wide novelty is claimed.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a renewal block `w`, fixed-type `B` is minimized by `1^q0^(L-q)` with `B_min=3^q-2^q`; if `w!=1`, then `R(w)>=(13/9)` with equality only at `110`, yielding the positive-source companion bridge. Moreover `C_w=(B+2^L-3^q)/4` is integral, `C_w>=2^(L-3)`, and `v2(C_w)=r-2` for initial 1-run `r`.",
+      "collatz_implication": "Adds ordinary-integrality and valuation-conditioned transitions to H72.",
+      "dependencies": "P77, P76; adjacent exchange; exact power cases; positive ordinary divisibility `2^r|(S+1)`; normalized affine algebra.",
+      "dependency_ids": [
+        "P76",
+        "P77"
+      ],
+      "evidence": "[`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md), Sections 4--5; `artifacts/phase13_threshold_bridge.json`; independent verifier and property tests.",
+      "first_introduced": "Phase 13",
+      "id": "P79",
+      "last_audited": "2026-08-26",
+      "notes": "The threshold and decreasing companion ratio do not exclude an infinite renewal sequence or prove anti-concentration.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If, for every `epsilon>0` and all sufficiently large `i`, either `N_i^(3)(H)<=exp(epsilon i)H sigma^i` or `N_i^(2,3)(H)<=exp(epsilon i)H^2 tau^i` uniformly for ordinary `H>=1`, then no positive permanent-safe nonperiodic orbit exists.",
+      "collatz_implication": "Either premise would close H72's permanent-safe branch; nontrivial cycles remain.",
+      "dependencies": "P76--P79; canonical least-positive source/endpoint counts with address multiplicity; `S_i+h_i<=(S_0+h_0)(3/2)^i`.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md), Section 7; `artifacts/phase13_conditional_pressure.json`; independent exact pressure-factor verifier.",
+      "first_introduced": "Phase 13",
+      "id": "P80",
+      "last_audited": "2026-08-26",
+      "notes": "Neither anti-concentration premise is proved. Exact factors are `(3/2)(7/12)=7/8` and `(9/4)(19/96)=57/128`.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Independent exact recomputation verifies the length-512 pressure DP, 4,096-step square-root model, all first-upcrossing addresses with total `Q<=12` and 1--4 blocks, every height `H<=2048`, and 2,144 mandatory adversarial convention instances.",
+      "collatz_implication": "Audits every Phase 13 convention and finite obstruction used by P77--P80/NG23.",
+      "dependencies": "P77--P79; arbitrary-precision integer/Fraction enumeration; fixed digests and extrema.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); `artifacts/phase13_pressure_bounds.json`; `artifacts/phase13_critical_countermodel.json`; `artifacts/phase13_residue_audit.json`; `artifacts/phase13_verifier.json`.",
+      "first_introduced": "Phase 13",
+      "id": "E22",
+      "last_audited": "2026-08-26",
+      "notes": "Finite ratios, zero duplicate cylinders, and late residue changes are not asymptotic theorems. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "A coefficient-one raw endpoint Haar-volume or two-sided product-volume bound controls canonical least positive representatives.",
+      "collatz_implication": "Rules out closing H72 by replacing deterministic ordinary representatives with local Haar volume.",
+      "dependencies": "P78 address masses and canonical residue definitions.",
+      "dependency_ids": [
+        "P78"
+      ],
+      "evidence": "`artifacts/phase13_residue_audit.json`; `artifacts/phase13_obstruction_report.md`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 13",
+      "id": "NG23",
+      "last_audited": "2026-08-26",
+      "notes": "Least counterexample: `u=1`, `H=2`; canonical count is 1 while both raw predictions are `2/3`. This does not refute an unspecified fixed constant or stronger arithmetic anti-concentration.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "fb2df02753783945c96664997ce13a40b1793908523f7fc335e7f1bf6eb7796d"
+  "source_sha256": "b974b46fb8e88dce35ab8f52e328419d00160d6201ad2d997e709b4f8ce50427"
 }
