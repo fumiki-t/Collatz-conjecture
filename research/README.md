@@ -12,6 +12,9 @@ a second source of mathematical truth.
   experiment.
 - `experiments/` stores one manifest per accepted or actively developed
   experiment. `phase12-acceptance.json` is the reference example.
+- `audits/` stores scoped theoretical/literature audits and their local finite
+  evidence. These do not supersede an accepted phase manifest or the global
+  `artifacts/SHA256SUMS`; each audit must state its own acceptance boundary.
 
 The canonical statement and status of a claim remain in
 [`../docs/CLAIMS_LEDGER.md`](../docs/CLAIMS_LEDGER.md). If a registry entry and

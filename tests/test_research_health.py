@@ -31,6 +31,12 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["E20"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG21"] == "REFUTED"
     assert result["active_focus"]["H72"] == "OPEN"
+    assert result["active_focus"]["EXT07"] == "EXTERNAL_THEOREM"
+    assert result["active_focus"]["P74"] == "CONDITIONAL"
+    assert result["active_focus"]["P75"] == "CONDITIONAL"
+    assert result["active_focus"]["P76"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E21"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG22"] == "REFUTED"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
@@ -57,10 +63,10 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 72
+    assert committed["claim_count"] == 78
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
-    assert set(rows["H72"]["dependency_ids"]) == {"P72", "P73", "NG21"}
+    assert set(rows["H72"]["dependency_ids"]) == {"P72", "P73", "P75", "NG21", "NG22"}
 
 
 def test_experiment_contract_rejects_overclaim_and_missing_family() -> None:

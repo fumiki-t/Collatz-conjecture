@@ -926,3 +926,48 @@ dispatchable.
 This infrastructure is not evidence for Collatz and introduces no new claim
 ID. Its purpose is to make stale context, provenance drift, unexplained
 artifacts, and finite-to-asymptotic promotion harder for future AI agents.
+
+## 24. Garcia--Tal--Heppner independent audit
+
+**Milestone:** 2026-08-25 audit from `main` at
+`e1eb31bdf13c7084f3ac575ec0b9e3c1f09e6c0b`
+
+**Audit record:**
+[`research/audits/garcia-tal-phase12/REPORT.md`](research/audits/garcia-tal-phase12/REPORT.md)
+
+The audit checked Garcia--Tal Proposition 1, equation (6), and Corollary 1 at
+the primary-source level. For `d=2,m=3,R={0,-1}`, their Hasse map is exactly
+the shortcut Collatz map. Assuming the Heppner quantitative input quoted by
+Garcia--Tal, equation (6) gives a location-uniform
+`O(X^beta log(2X))`, `beta<1`, interval bound for every nonperiodic orbit.
+Dyadic shells then give reciprocal orbit summability. Banach density zero by
+itself would not suffice.
+
+P74 records the conditional direct consequence: coefficient discrepancy tends
+to infinity, so a global suffix minimum yields an odd permanent
+coefficient-safe tail minimum. Thus, if EXT07 is admitted, P69's nonperiodic
+finite-crossing renewal ladder cannot occur. This does not prove H70 and does
+not eliminate nontrivial cycles or the permanent-safe tail.
+
+P75 strengthens Phase 12 conditionally: `sum 2^-a_j` converges, `a_j` tends to
+infinity, and the Garcia--Tal interval estimate yields
+`#{j:a_j<=A}=O((A+1)2^(beta A))`. P76 independently derives the negative-real
+companion and moving rational shadows, with exact real limit `h_0`, 2-adic
+limit `-x_0`, error identities, and reduced-denominator formula. No effective
+height/gcd estimate strong enough for Roth, Ridout, the subspace theorem, or a
+product-formula contradiction was obtained.
+
+NG22 preserves the decisive failure. An exact invariant exponent policy from
+`h_0=3/2` satisfies all requested analytic conditions and has a coherent odd
+2-adic source. E21 reconstructs the first 1,026 exponents independently; at
+1,024 steps `E=1174` and `a=449`, while the 1,026-step canonical residue renews
+the prior residue by `2*2^1174`. Consequently no positive ordinary source
+below `2^1174` realizes the audited prefix, but no global positive-source
+nonexistence theorem follows.
+
+### What this result does not prove
+
+The audit does not prove or disprove Collatz, does not eliminate a
+permanent-safe positive orbit, and does not prove a nontrivial-cycle theorem.
+EXT07 is an external theorem whose Heppner input is not reproved here. The
+formal NG22 source is not a positive ordinary Collatz orbit.

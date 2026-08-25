@@ -22,6 +22,35 @@ residue structure underlying the coefficient-safe language.
 unconverged/admissible parity-vector count in complementary notation. Phase 7
 does not claim this language or its counts as new.
 
+### Heppner (1978) and Garcia--Tal (1999)
+
+**Status:** `EXTERNAL_THEOREM`; active conditional input EXT07
+
+Ernst Heppner, “Eine Bemerkung zum Hasse--Syracuse-Algorithmus,”
+*Archiv der Mathematik* **31** (1978), 317--320, MR 80d:10007.
+
+Manuel V. P. Garcia and Fabio A. Tal, “A note on the generalized 3n+1
+problem,” *Acta Arithmetica* **90**(3) (1999), 245--250.
+[DOI 10.4064/aa-90-3-245-250](https://doi.org/10.4064/aa-90-3-245-250),
+[publisher PDF](https://matwbn.icm.edu.pl/ksiazki/aa/aa90/aa9033.pdf).
+
+**Result relevant here.** Garcia--Tal Proposition 1 quotes Heppner's
+quantitative estimate for generalized Hasse maps when
+`m<d^(d/(d-1))`. Their Fundamental Lemma and equation (6) then bound, uniformly
+in the interval location, the number of equal-time collision-free
+representatives in an interval. Corollary 1 gives zero Banach density.
+
+For `d=2`, `m=3`, and `R={0,-1}`, the Hasse map is exactly the repository's
+shortcut Collatz map. Equation (6), not merely the Banach-density corollary,
+gives EXT07 with an unspecified `beta<1` and an orbit-dependent constant.
+
+**Repository role.** The audit in
+[`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md)
+checks the specialization, interval quantifiers, and direct consequences.
+The repository does not reprove Heppner's proposition. P74 and P75 are
+therefore recorded as `CONDITIONAL`, and no numerical value of `beta` is
+assumed.
+
 ### Bernstein and Lagarias (1996)
 
 **Status:** `EXTERNAL_THEOREM`

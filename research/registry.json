@@ -52,8 +52,8 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "E20", "NG21"],
-      "success_scope": "Eliminate only the infinite coefficient-safe-tail branch of P69."
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "E20", "E21", "NG21", "NG22"],
+      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; under EXT07/P74 the finite-crossing nonperiodic branch is conditionally absent, while cycles remain separate."
     },
     {
       "id": "C04",
@@ -88,7 +88,13 @@
     "E19",
     "E20",
     "NG20",
-    "NG21"
+    "NG21",
+    "EXT07",
+    "P74",
+    "P75",
+    "P76",
+    "E21",
+    "NG22"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

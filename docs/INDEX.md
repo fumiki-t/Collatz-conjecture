@@ -44,6 +44,7 @@ Research supplements:
 |---|---|---|---|
 | Phase 10 branch points | [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md) | `artifacts/branch_point_decomposition.json`; independent verifier | P66 first-divergence theorem, P67 thirty q0 cases, E16 finite profile |
 | Two-tail state collisions | [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md) | `artifacts/two_tail_state_collisions.json`; independent verifier | P68 finite-horizon state, NG19 exact compression failures, E17 finite scan |
+| Garcia--Tal / Phase 12 audit | [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md) | audit-local exact certificate, independent inverse-series verifier, tamper tests, SHA-256 manifest | EXT07 boundary, conditional P74/P75, companion P76, NG22 obstruction, E21 finite audit |
 
 The phase branches are reproducible milestones. Main contains the canonical
 documentation through Phase 12 and both the branch-point and two-tail

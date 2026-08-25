@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-24
+**Last updated:** 2026-08-25
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -36,11 +36,21 @@ disproved by this repository.
 - `VERIFIED_THEOREM`: P73 rules out the single all-contact critical mechanical
   word as the infinite parity word of a positive integer. It does not rule out
   arbitrary infinite coefficient-safe tails.
+- `VERIFIED_THEOREM`: P76 reconstructs the negative-real companion and moving
+  rational shadows for every reciprocal-summable positive odd orbit. The
+  shadows converge to `h_0` over the reals and `-x_0` over the 2-adics, but no
+  effective reduced-height contradiction is known.
 - `OPEN`: H70 is that eventual dropping-safe pair-spacing inequality. No
   threshold or cross-cylinder proof is known.
 - `OPEN`: H72 asks for an orbit-specific packing improvement strong enough to
-  exclude every infinite coefficient-safe tail. NG21 shows that distinctness
-  and coprimality modulo 6 alone cannot improve the `1/9` growth exponent.
+  exclude every infinite coefficient-safe tail. NG21 blocks a mod-6-only
+  improvement, while NG22 blocks a contradiction from the strengthened
+  analytic conditions plus a general odd 2-adic source alone.
+- `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
+  sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
+  reciprocal orbit summability and an odd permanent-safe tail minimum for
+  every nonperiodic positive orbit; P75 gives summable octave defects and
+  `#{j:a_j<=A}=O((A+1)2^(beta A))` for some external `beta<1`.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -121,6 +131,11 @@ No item above proves the Collatz conjecture.
   first-crossing comparisons agree with the independent verifier. The
   all-contact audit reconstructs 512 finite canonical residues, and NG21's
   sharpness regression contains 4,096 coprime-to-6 factors.
+- Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
+  policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
+  and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
+  source below `2^1174` realizes the audited prefix. This finite exclusion is
+  not an infinite-source theorem.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -207,8 +222,14 @@ eventual dropping-safe barrier is unproved, and finite passes after `q=141` are
 empty-set statements rather than asymptotic progress.
 Phase 12 constrains the infinite-safe-tail branch using actual odd orbit
 values. The coarse mod-6 packing input is sharp at exponent `1/9`; excluding
-the branch requires an additional transition or congruence mechanism, not a
-larger finite range. P73 removes only the all-contact extremal word.
+the branch requires an additional transition, positivity, or ordinary-height
+mechanism, not a larger finite range. P73 removes only the all-contact
+extremal word. The Garcia--Tal audit conditionally upgrades every nonperiodic
+positive orbit to a permanent-safe tail and gives summable defects, but NG22
+shows that those analytic conditions remain consistent with a formal exponent
+word and a genuine odd 2-adic source. The new boundary is therefore positive
+ordinary-integrality or effective rational-shadow height, not mere 2-adic
+coherence.
 
 ## Secondary directions
 
@@ -237,6 +258,10 @@ larger finite range. P73 removes only the all-contact extremal word.
 
 ## What was recently refuted?
 
+- `REFUTED`: the conditions `a_j->infinity`, `sum 2^-a_j<infinity`,
+  `h_j>1`, and `sum 1/h_j=infinity`, even with a coherent odd 2-adic source,
+  are contradictory by themselves. NG22 gives an exact invariant formal
+  policy. It is not a positive ordinary Collatz orbit.
 - `REFUTED`: distinctness, a lower height, and `gcd(x_i,6)=1` alone force a
   growth exponent below `1/9`. The exact abstract coprime-to-6 saturator has
   logarithmic product exponent `1/9`; it is not a Collatz orbit.
@@ -272,12 +297,13 @@ larger finite range. P73 removes only the all-contact extremal word.
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can P71's exact per-cylinder margin interval be merged across residue
-   cylinders by a sound dominance/carry rule strong enough to prove the
-   eventual H70 dropping-safe barrier?
-3. Which exact successor congruences among actual odd iterates strengthen
-   P72 beyond the NG21 mod-6 saturator, and can they exclude the infinite-safe
-   branch rather than merely improve a finite profile?
+2. Can positivity or ordinary-integrality force an effective lower bound on
+   the reduced height/gcd of P76's moving rational shadows, ruling out the
+   NG22-style formal 2-adic source for every permanent-safe tail?
+3. Can P71's exact per-cylinder margin interval be merged across residue
+   cylinders by a sound dominance/carry rule strong enough to prove H70
+   without relying on EXT07, or can an exact successor rule separate actual
+   odd orbits from both NG21 and NG22?
 
 ## Codex tasks worth doing
 
@@ -292,7 +318,7 @@ larger finite range. P73 removes only the all-contact extremal word.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
 - Extend P72 only with an orbit-specific transition invariant; test it first
-  against NG21 and E20 before claiming an exponent improvement.
+  against NG21, NG22, and E20 before claiming an exponent improvement.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -310,6 +336,9 @@ larger finite range. P73 removes only the all-contact extremal word.
   every depth k>=3.
 - Retry a packing exponent below `1/9` using only distinctness and
   coprimality modulo six; NG21 is sharp for exactly that information set.
+- Seek a contradiction from only summable octave defects, `h_j>1`, divergent
+  companion reciprocals, and a general odd 2-adic source; NG22 realizes all
+  four analytic conditions exactly.
 - Retry contact closure plus weighted pressure without a new endpoint or
   least-residue invariant; NG17 is an exact no-go for that information set.
 - Infer an asymptotic law from high finite coverage or a beam search.

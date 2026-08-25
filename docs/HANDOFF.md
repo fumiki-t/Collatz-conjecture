@@ -99,6 +99,13 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   `a_i>(8/9-epsilon)log2(i)` on a density-one index set. P73 rules out the
   all-contact critical mechanical word. NG21 shows the `1/9` exponent cannot
   be improved from distinctness and mod-6 packing alone; H72 remains open.
+- The Garcia--Tal audit isolates EXT07 as an external interval-sparsity input.
+  Assuming it, P74 gives reciprocal summability and a permanent-safe odd tail
+  minimum for every nonperiodic positive orbit, so the renewal ladder is
+  conditionally bypassed rather than H70 being proved. P75 strengthens octave
+  defects, and P76 gives real/2-adic moving shadows. NG22 shows these analytic
+  conditions plus a general odd 2-adic source are still consistent; positivity
+  and effective ordinary height are now the H72 boundary.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -143,7 +150,8 @@ The logically exhaustive Phase 11 route is:
 ```text
 P69 counterexample trichotomy
   -> exclude nontrivial cycles (OPEN)
-  -> P72/P73 odd-orbit packing -> H72 (OPEN)
+  -> EXT07/P74 conditional permanent-safe reduction
+  -> P72/P75/P76 -> positivity or height obstruction -> H72 (OPEN)
   -> H70 eventual dropping-safe spacing via P70 (OPEN).
 ```
 
@@ -169,12 +177,12 @@ under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
 
 Good near-term work includes inverse-parity anti-concentration, recursive
-lower bounds, a cross-cylinder quotient/carry state extending P71, and an
-orbit-specific strengthening of P72 extending beyond mod-6 packing. Start
-from the stored NG19 collisions and universal NG20 pair: any proposed merge
-must distinguish them or prove a sound dominance relation. Certificate
-extension is useful when it tests such structure; raw depth extension is
-secondary.
+lower bounds, a cross-cylinder quotient/carry state extending P71, and a
+positive ordinary-integrality or effective shadow-height obstruction extending
+P75/P76. Start from the stored NG19 collisions, universal NG20 pair, and NG22
+formal 2-adic source: any proposed merge must distinguish them or prove a sound
+dominance relation. Certificate extension is useful when it tests such
+structure; raw depth extension is secondary.
 
 ## 6. Reproduce and audit
 
@@ -216,6 +224,7 @@ The current bottleneck is not finite verification or contact density. It is a
 rigorous asymptotic link from high affine correction to ordinary height, or a
 cross-cylinder spacing theorem. P71 solves exact margins only inside a fixed
 finite cylinder; NG19 prevents literal truncation, and NG20 prevents discarding
-height. P72 now constrains the infinite-safe-tail branch, but NG21 proves its
-coarse packing input is exponent-sharp. Even proofs of P70 and H70 would leave
-the cycle and infinite coefficient-safe-tail branches open.
+height. EXT07/P74 conditionally collapses the nonperiodic alternatives to a
+permanent-safe tail, but P75/P76 do not exclude it: NG22 satisfies their
+analytic consequences at the formal/2-adic level. The remaining distinction
+is positivity or effective ordinary height. Collatz remains open.

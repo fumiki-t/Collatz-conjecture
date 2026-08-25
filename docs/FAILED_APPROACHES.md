@@ -526,9 +526,48 @@ optimal.
 density-one `8/9-epsilon` octave-defect bound. H72 must exploit actual
 successive-transition congruences or another orbit-specific invariant.
 
+## Garcia--Tal audit — analytic-only companion contradiction
+
+**Status:** `REFUTED` (NG22)
+
+**Exact hypothesis.** The four conditions
+
+```text
+a_j -> infinity
+sum 2^(-a_j) < infinity
+h_j > 1
+sum 1/h_j = infinity
+```
+
+are already contradictory, possibly after also requiring a coherent odd
+2-adic source with the same exponent sequence.
+
+**Why it looked plausible.** P75 conditionally makes the positive-orbit defect
+summable, while P76 produces a negative-real companion whose reciprocal sum
+diverges. The opposite real growth behavior and common parity/exponent data
+suggest a product-formula or simultaneous-approximation contradiction.
+
+**Exact countermodel.** Start with `h_0=3/2`. Use `e_j=1` on
+`1<h_j<=5/3`, `e_j=2` on `5/3<h_j<=2`, and
+`h_(j+1)=(3h_j-1)/2^e_j`. The interval `(1,2]` is invariant. The construction
+has linearly growing defect, summable `2^-a_j`, divergent `1/h_j`, and a unique
+coherent odd 2-adic inverse-series source. E21 independently reconstructs
+1,026 steps and rejects every positive ordinary source below `2^1174` for
+that prefix.
+
+**Failure scope.** Fundamental for the four analytic conditions, even after
+adding general 2-adic coherence. It is not a Collatz counterexample: the
+2-adic source has not been shown to be a positive ordinary integer. The finite
+height exclusion is not an infinite nonexistence theorem.
+
+**Weaker statement retained.** P75 and P76 are valid necessary structure for a
+hypothetical permanent-safe positive orbit. H72 must add positivity,
+ordinary-integrality/effective height, or transition information that fails on
+the NG22 source.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
-`(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, and all exact
-counterexamples above. Passing a bounded regression is necessary evidence,
-never a proof of universality.
+`(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
+and all exact counterexamples above. Passing a bounded regression is necessary
+evidence, never a proof of universality.

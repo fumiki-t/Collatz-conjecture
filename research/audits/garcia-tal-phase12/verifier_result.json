@@ -1,0 +1,8 @@
+{
+  "E21": "VERIFIED_FINITE",
+  "NG22": "REFUTED",
+  "ordinary_source_exclusion": "no positive ordinary source below 2^1174",
+  "proves_collatz": false,
+  "valid": true,
+  "verified_depth": 1026
+}

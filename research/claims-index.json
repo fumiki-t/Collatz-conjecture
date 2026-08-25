@@ -1,5 +1,5 @@
 {
-  "claim_count": 72,
+  "claim_count": 78,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -972,23 +972,105 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Use actual odd-orbit transition congruences beyond distinctness modulo 6 to strengthen P72 enough to exclude every infinite coefficient-safe tail.",
-      "collatz_implication": "Would eliminate the second branch of P69; cycles and the renewal ladder would remain separate.",
-      "dependencies": "P72, P73, NG21.",
+      "claim": "Use actual odd-orbit transition congruences, positivity, or ordinary-integrality information to strengthen P72/P75 enough to exclude every infinite coefficient-safe tail.",
+      "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
+      "dependencies": "P72, P73, P75, NG21, NG22.",
       "dependency_ids": [
         "NG21",
+        "NG22",
         "P72",
-        "P73"
+        "P73",
+        "P75"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-08-24",
-      "notes": "No orbit-specific packing closure or contradictory exponent is known.",
+      "last_audited": "2026-08-25",
+      "notes": "P75 strengthens defect sparsity conditionally, but NG22 shows those analytic conditions and an odd 2-adic source are still compatible.",
       "status": "OPEN"
+    },
+    {
+      "claim": "For the shortcut Collatz map, every non-eventually-periodic positive orbit has a location-uniform interval bound `#(O intersect [a,a+X)) <= C X^beta log(2X)` for some `beta<1`.",
+      "collatz_implication": "Supplies a strong external sparsity input for the nonperiodic branch.",
+      "dependencies": "Garcia--Tal equation (6), with the quantitative Heppner proposition quoted there; exact specialization `d=2,m=3,R={0,-1}`.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md).",
+      "first_introduced": "Garcia--Tal audit",
+      "id": "EXT07",
+      "last_audited": "2026-08-25",
+      "notes": "The repository audits the map and quantifiers but does not reprove Heppner's proposition. Banach density zero alone is insufficient.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "Assuming EXT07, every non-eventually-periodic positive shortcut orbit has `sum 1/x_k<infinity`, coefficient discrepancy tending to infinity, and an odd tail minimum whose every later prefix is coefficient-safe.",
+      "collatz_implication": "Under EXT07, the finite-crossing renewal-ladder alternative of P69 cannot describe a nonperiodic positive orbit; cycles and permanent-safe tails remain.",
+      "dependencies": "EXT07; exact shortcut product formula; injectivity of a nonperiodic deterministic orbit.",
+      "dependency_ids": [
+        "EXT07"
+      ],
+      "evidence": "[`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md), Sections 1--2.",
+      "first_introduced": "Garcia--Tal audit",
+      "id": "P74",
+      "last_audited": "2026-08-25",
+      "notes": "This does not prove that every orbit terminates or eliminate any infinite permanent-safe tail.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Under P74, the Phase 12 defects satisfy `sum 2^(-a_j)<infinity`, `a_j->infinity`, and `#{j:a_j<=A}=O((A+1)2^(beta A))`; hence for every `c<1/beta`, `a_j>c log2(j)` on a density-one set.",
+      "collatz_implication": "Strictly strengthens the known necessary conditions on an infinite safe tail, conditionally.",
+      "dependencies": "P74; P72 normalization; EXT07 interval bound.",
+      "dependency_ids": [
+        "EXT07",
+        "P72",
+        "P74"
+      ],
+      "evidence": "[`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md), Section 3.",
+      "first_introduced": "Garcia--Tal audit",
+      "id": "P75",
+      "last_audited": "2026-08-25",
+      "notes": "It is density-one rather than pointwise and gives no last-small-defect time. NG22 shows it is not itself contradictory.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "For any permanent coefficient-safe positive odd orbit with `sum 1/x_j<infinity`, the tail product defines `h_j>1` with the same exponent sequence on the negative real orbit and `sum 1/h_j=infinity`; its prefix rational shadows converge to `h_0` over the reals and to `-x_0` over the 2-adics with the stated exact errors and denominator identity.",
+      "collatz_implication": "Exposes a real/2-adic companion structure that a future height or positivity theorem might exploit.",
+      "dependencies": "Exact product, affine-prefix, real-series, and 2-adic congruence identities; reciprocal convergence and the stated permanent-safety hypothesis.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md), Sections 4--5.",
+      "first_introduced": "Garcia--Tal audit",
+      "id": "P76",
+      "last_audited": "2026-08-25",
+      "notes": "No effective reduced-height lower bound follows, and Roth, Ridout, the product formula, and the subspace theorem give no immediate contradiction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The analytic conditions `a_j->infinity`, `sum 2^(-a_j)<infinity`, `h_j>1`, and `sum 1/h_j=infinity`, even together with a coherent odd 2-adic source, are contradictory by themselves.",
+      "collatz_implication": "Rules out closing H72 from those analytic conditions without positivity or stronger ordinary-integrality/height input.",
+      "dependencies": "Exact invariant policy from `h_0=3/2`; inverse 2-adic series.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md), Section 7; independent certificate verifier.",
+      "first_introduced": "Garcia--Tal audit",
+      "id": "NG22",
+      "last_audited": "2026-08-25",
+      "notes": "The formal 2-adic source is not known to be a positive ordinary integer and is not a Collatz counterexample.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "The NG22 policy is independently reconstructed through 1,026 odd exponents: `E_1024=1174`, `a_1024=449`, and the canonical residues at 1,024 and 1,026 differ by `2*2^1174`, excluding every positive ordinary source below `2^1174` for the audited prefix.",
+      "collatz_implication": "Supplies an exact obstruction regression for future H72 proposals.",
+      "dependencies": "NG22 construction; exact rationals, arbitrary-precision integers, independent affine/inverse-series implementations.",
+      "dependency_ids": [
+        "NG22"
+      ],
+      "evidence": "[`../research/audits/garcia-tal-phase12/formal_obstruction.json`](../research/audits/garcia-tal-phase12/formal_obstruction.json); `verifier/verify_garcia_tal_formal_obstruction.py`; tamper tests; local SHA-256 manifest.",
+      "first_introduced": "Garcia--Tal audit",
+      "id": "E21",
+      "last_audited": "2026-08-25",
+      "notes": "Finite prefix coherence neither proves an infinite positive source exists nor excludes all positive ordinary sources. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "a183cf9fd9ced23ab5823a0899a4be294c5ed6ae4e32643066ede67d9508aee1"
+  "source_sha256": "fb2df02753783945c96664997ce13a40b1793908523f7fc335e7f1bf6eb7796d"
 }

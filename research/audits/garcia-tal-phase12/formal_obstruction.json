@@ -1,0 +1,52 @@
+{
+  "classification": {
+    "E21": "VERIFIED_FINITE",
+    "NG22": "REFUTED",
+    "finite_statement": "the formal policy has a coherent odd 2-adic source through the audited prefix, but no positive ordinary source below 2^1174",
+    "refuted_statement": "a_j->infinity, sum(2^-a_j)<infinity, h_j>1, and sum(1/h_j)=infinity alone yield a contradiction"
+  },
+  "finite_certificate": {
+    "checkpoints": [
+      {
+        "canonical_residue_bit_length": 71,
+        "canonical_residue_sha256_big_endian": "e2a41d2308bc2e35c818c2a81379e338366db6f1ce8084c8e623e82fe1d15840",
+        "defect_a": 27,
+        "exponent_sum": 74,
+        "index": 64,
+        "state_in_open_closed_interval": true
+      },
+      {
+        "canonical_residue_bit_length": 1172,
+        "canonical_residue_sha256_big_endian": "a0cd4f2a2fe7583b916ce674299893ad6daec01b933739878b7c18aa49c1ac65",
+        "defect_a": 449,
+        "exponent_sum": 1174,
+        "index": 1024,
+        "state_in_open_closed_interval": true
+      },
+      {
+        "canonical_residue_bit_length": 1176,
+        "canonical_residue_sha256_big_endian": "068447aa2534b43f468e288d16ccfe5cf164886d9d8f409811b007974b242953",
+        "defect_a": 450,
+        "exponent_sum": 1176,
+        "index": 1026,
+        "state_in_open_closed_interval": true
+      }
+    ],
+    "first_64_exponents": "1211111121111111121111211111121111211112111111112111112111112111",
+    "positive_ordinary_source_excluded_below": "2^1174",
+    "residue_1026_minus_residue_1024": "513150675785116869749646714212078913556931160254737434438861513626597544289879370313807861126543467440795031757115172975915221193159123093634593781314155976315125926484346117999693152204753611204220863116355434841851761498100774562653677873791395622036909573547227203211622792118272226476587080135275360183596215031929950800306424981514183117029473517568",
+    "residue_delta_formula": "2*2^1174"
+  },
+  "format": "collatz-garcia-tal-formal-obstruction-v1",
+  "parameters": {
+    "depth": 1026,
+    "initial_h": {
+      "denominator": 2,
+      "numerator": 3
+    },
+    "policy": "e=1 for 1<h<=5/3; e=2 for 5/3<h<=2",
+    "state_interval": "1<h<=2"
+  },
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The formal 2-adic source is not shown to be a positive ordinary integer. The certificate neither constructs a Collatz counterexample nor proves the conjecture."
+}

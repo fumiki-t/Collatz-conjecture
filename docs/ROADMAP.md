@@ -38,6 +38,12 @@ eliminate every nonperiodic counterexample whose tail minima have finite
 coefficient crossings. A complete Collatz proof would still have to exclude a
 nontrivial cycle and an infinite coefficient-safe tail.
 
+EXT07/P74 now provide a separate conditional bypass: if the external
+Garcia--Tal--Heppner sparsity input is admitted, every nonperiodic positive
+orbit is eventually permanently coefficient-safe. H70 remains valuable as an
+internal, external-input-independent theorem and must not be reported as
+proved by that bypass.
+
 **Missing theorem.** A cross-cylinder ordinary-height lower bound for
 dropping-safe pairs. P71 closes all affine margin inequalities inside one fixed
 parity cylinder, but retains all `2^L` residue classes. No sound quotient/carry
@@ -54,30 +60,33 @@ state which argument excludes the other two P69 branches.
 
 ## P1 — Infinite-safe-tail transition packing
 
-**Target.** Prove H72: strengthen P72 using actual odd-orbit transitions until
-no infinite coefficient-safe positive-integer tail can satisfy the resulting
-packing law.
+**Target.** Prove H72: combine P72/P75 with actual odd-orbit transitions,
+positivity, or effective ordinary-height information until no infinite
+coefficient-safe positive-integer tail can satisfy the resulting law.
 
-**Why this helps.** This would eliminate the second branch of P69. Together
-with a cycle exclusion and H70/P70, it would close the unconditional
-trichotomy.
+**Why this helps.** This would eliminate the permanent-safe nonperiodic branch
+of P69. Under EXT07/P74 the finite-crossing nonperiodic branch is conditionally
+absent; a nontrivial-cycle exclusion remains separate.
 
-**Missing theorem.** P72 uses only distinctness, the tail-minimum height, and
-the fact that post-initial odd iterates are coprime to six. NG21 proves these
-inputs are sharp at growth exponent `1/9`. A successful improvement must use
-successive congruences, forbidden local constellations, or a composable
-multi-step packing rule.
+**Missing theorem.** P75 conditionally upgrades P72 to reciprocal summability,
+`a_j->infinity`, and an external `O((A+1)2^(beta A))` small-defect count. P76
+adds exact real/2-adic rational shadows. NG21 shows mod-6 packing is
+exponent-sharp, while NG22 shows the strengthened analytic conditions and an
+odd 2-adic source are still mutually compatible. A successful proof must use
+positive ordinary-integrality, effective reduced height/gcd, or a genuinely
+stronger orbit-transition invariant.
 
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
-orbits, all-contact prefixes, the NG21 abstract saturator, and every mandatory
-adversarial family. Reject any proof that silently treats the abstract
-coprime-to-6 list as an actual Collatz orbit or promotes finite scarcity to an
-eventual statement.
+orbits, all-contact prefixes, NG21, the NG22 formal exponent/2-adic source, and
+every mandatory adversarial family. Reject any proof that identifies a general
+2-adic source with a positive ordinary integer or promotes finite scarcity to
+an eventual statement.
 
-**Success criterion.** An orbit-specific bound that contradicts coefficient
-safety for every sufficiently long tail, with an independently checkable
-finite remainder. A stronger exponent unsupported by new transition data does
-not meet this criterion.
+**Success criterion.** An orbit-specific arithmetic theorem that excludes
+every positive ordinary integer permanent-safe source, with an independently
+checkable finite remainder. A stronger exponent unsupported by new transition
+data, or a contradiction that also rejects NG22 without using positivity,
+does not meet this criterion.
 
 ## P1 — Structural lower bounds for `M(k)`
 
