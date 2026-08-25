@@ -1,0 +1,119 @@
+{
+  "H72_transfer_assessment": {
+    "result": "The valuation-conditioned transfer is exact and orbit-specific, but no subexponential canonical-residue anti-concentration or closed transfer-operator estimate follows from it here.",
+    "status": "OPEN"
+  },
+  "P79": {
+    "companion_legality": "the next renewal companion h' is greater than 1 iff h>R(w)",
+    "fixed_type_minimum": "at fixed (L,q), adjacent 01->10 strictly decreases B; the unique minimum is 1^q0^(L-q) with B_min=3^q-2^q",
+    "normalized_transfer": {
+      "C_integrality": "C_1=0; for w!=1, C_w is a positive integer and C_w>=2^(L-3), with equality only for 110",
+      "definitions": "U=(S+1)/4, V=(h-1)/4, C_w=(B_w+2^L-3^q)/4",
+      "equations": [
+        "2^L U'=3^q U+C_w",
+        "2^L V'=3^q V-C_w"
+      ],
+      "one_block": "w=1 is possible between S=3 mod 4 renewal boundaries iff U is even, and then U'=3U/2",
+      "ratio": "for little_u=(h-1)/(S+1), little_u'=(h-R)/(S+R) and little_u-little_u'=(R-1)(S+h)/((S+1)(S+R))",
+      "valuation": "if r is the initial 1-run of nontrivial w, then v2(C_w)=r-2; if U and U' are integers, v2(U)=r-2"
+    },
+    "ordinary_integrality_use": "the Archimedean comparison 2^r<=S+1 uses that S is a positive ordinary integer",
+    "positive_source_bridge": "h<=13/9 forces w=1; repeated one-blocks give 2^r|(S+1), hence h-1>(4/9)(S+1)^(-log_2(3/2))",
+    "repository_status": "VERIFIED_THEOREM",
+    "threshold": "for renewal w!=1, R(w)=(B_w+2^L)/3^q>=13/9, with equality only for w=110; q=3 is impossible"
+  },
+  "finite_block_audit": {
+    "R_13_over_9_words": [
+      "110"
+    ],
+    "block_count": 3331,
+    "maximum_q": 12,
+    "q3_count": 0,
+    "q_distribution": {
+      "1": 1,
+      "2": 1,
+      "4": 2,
+      "6": 7,
+      "7": 30,
+      "9": 113,
+      "11": 525,
+      "12": 2652
+    },
+    "row_digest_sha256": "bc6fd65320928ee1a6eb9188138e68fff0f45e9ef942c0050d5177030a991112",
+    "selected_rows": [
+      {
+        "B": 1,
+        "C": 0,
+        "L": 1,
+        "R": {
+          "decimal": "1.000000000000000000000000",
+          "denominator": "1",
+          "numerator": "1"
+        },
+        "code": "1",
+        "forward": "1",
+        "initial_one_run": 1,
+        "q": 1
+      },
+      {
+        "B": 5,
+        "C": 1,
+        "L": 3,
+        "R": {
+          "decimal": "1.444444444444444444444444",
+          "denominator": "9",
+          "numerator": "13"
+        },
+        "code": "011",
+        "forward": "110",
+        "initial_one_run": 2,
+        "q": 2
+      },
+      {
+        "B": 65,
+        "C": 12,
+        "L": 6,
+        "R": {
+          "decimal": "1.592592592592592592592593",
+          "denominator": "27",
+          "numerator": "43"
+        },
+        "code": "001111",
+        "forward": "111100",
+        "initial_one_run": 4,
+        "q": 4
+      },
+      {
+        "B": 73,
+        "C": 14,
+        "L": 6,
+        "R": {
+          "decimal": "1.691358024691358024691358",
+          "denominator": "81",
+          "numerator": "137"
+        },
+        "code": "010111",
+        "forward": "111010",
+        "initial_one_run": 3,
+        "q": 4
+      },
+      {
+        "B": 817,
+        "C": 150,
+        "L": 9,
+        "R": {
+          "decimal": "1.823045267489711934156379",
+          "denominator": "243",
+          "numerator": "443"
+        },
+        "code": "001110111",
+        "forward": "111011100",
+        "initial_one_run": 3,
+        "q": 6
+      }
+    ]
+  },
+  "format": "collatz-phase13-threshold-bridge-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The threshold and monotone companion ratio do not exclude an infinite positive renewal sequence or prove H72."
+}

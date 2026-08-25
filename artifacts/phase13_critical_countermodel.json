@@ -1,0 +1,74 @@
+{
+  "NG22_additional_evidence": {
+    "positive_ordinary_source": "OPEN",
+    "properties": [
+      "e_j belongs to {1,2}",
+      "floor(sqrt(j))-1<=A_j<=floor(sqrt(j))",
+      "E_j=floor(j log2 3)-A_j",
+      "every positive full shortcut prefix is coefficient-safe",
+      "E_j/j tends to log2 3",
+      "sum 2^-A_j converges",
+      "a coherent odd 2-adic inverse source exists",
+      "the real companion satisfies h_j>1 and h_j=O(sqrt(j))",
+      "sum 1/h_j diverges"
+    ],
+    "relation_to_existing_claim": "This square-root-defect model is additional evidence for existing NG22, not a new claim ID.",
+    "repository_status": "REFUTED"
+  },
+  "finite_audit": {
+    "checkpoints": [
+      {
+        "A": 8,
+        "E": 93,
+        "f": 101,
+        "odd_index": 64,
+        "residue_bit_length": 93,
+        "residue_sha256_big_endian": "b5eb934e18c2973c0c3db54346342916aae10ccbc3cced2dabfd5aad1ae841db"
+      },
+      {
+        "A": 15,
+        "E": 390,
+        "f": 405,
+        "odd_index": 256,
+        "residue_bit_length": 389,
+        "residue_sha256_big_endian": "28a57f01821429ea6fdfdfe823236d8fe495707fb4457189b3fabe41dd8df3d3"
+      },
+      {
+        "A": 32,
+        "E": 1591,
+        "f": 1623,
+        "odd_index": 1024,
+        "residue_bit_length": 1591,
+        "residue_sha256_big_endian": "518260747840641acac60fe7dfb484e42910caa734429d0da9940562824a58ba"
+      },
+      {
+        "A": 64,
+        "E": 6428,
+        "f": 6492,
+        "odd_index": 4096,
+        "residue_bit_length": 6427,
+        "residue_sha256_big_endian": "dcd32b0409c2d063a639037299c93504d043f0cd4df81e9a3bbba806262acddd"
+      }
+    ],
+    "final_A": 64,
+    "final_E": 6428,
+    "final_f": 6492,
+    "finite_source_exclusion": "no positive ordinary source below 2^6425 realizes the first 4095 exponents",
+    "finite_source_exclusion_power": 6425,
+    "first_64_exponents": "1111122111221211122121221112122121211212122121221112212121221211",
+    "full_shortcut_length": 6428,
+    "last_lift_changed": false,
+    "latest_residue_change_index": 4095,
+    "maximum_consecutive_unchanged_lifts": 6,
+    "odd_steps": 4096,
+    "partial_sum_2_minus_A": {
+      "decimal": "6.539781188606316233264629",
+      "denominator": "18446744073709551616",
+      "numerator": "120637669884280771417"
+    },
+    "row_digest_sha256": "74c420192b087e29bc46346dad0c6af1642453993ec0125c980e40e5348aa63b"
+  },
+  "format": "collatz-phase13-critical-countermodel-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "Finite late residue changes do not prove eventual non-stabilization, and the coherent 2-adic source is not known to be a positive ordinary integer."
+}

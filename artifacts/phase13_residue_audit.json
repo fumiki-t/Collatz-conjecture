@@ -1,0 +1,323 @@
+{
+  "E22": {
+    "address_families": [
+      {
+        "address_count": 3331,
+        "block_count": 1,
+        "canonical_endpoint_max_ratio": {
+          "count": 1,
+          "height": 2,
+          "ratio": {
+            "decimal": "0.987848945495912472257230",
+            "denominator": "179326",
+            "numerator": "177147"
+          }
+        },
+        "canonical_two_sided_max_ratio": {
+          "count": 1,
+          "height": 2,
+          "ratio": {
+            "decimal": "1.381465867535169345150445",
+            "denominator": "2100939673",
+            "numerator": "2902376448"
+          }
+        },
+        "endpoint_cylinders": {
+          "compatible_unordered_pairs": 3620,
+          "exact_duplicate_unordered_pairs": 0,
+          "maximum_exact_multiplicity": 1,
+          "total_unordered_pairs": 5546115
+        },
+        "endpoint_error_height": 590,
+        "endpoint_mass": {
+          "decimal": "0.506150259389094932457225",
+          "denominator": "177147",
+          "numerator": "89663"
+        },
+        "endpoint_max_plus_one_error": {
+          "decimal": "3.371346960433989850237373",
+          "denominator": "177147",
+          "numerator": "597224"
+        },
+        "ordinary_height_limit": 2048,
+        "product_mass": {
+          "decimal": "0.180967192802275661244616",
+          "denominator": "11609505792",
+          "numerator": "2100939673"
+        },
+        "q_distribution": {
+          "1": 1,
+          "2": 1,
+          "4": 2,
+          "6": 7,
+          "7": 30,
+          "9": 113,
+          "11": 525,
+          "12": 2652
+        },
+        "row_digest_sha256": "cc70b0d37af3cbe91240ae764ddfa69e623d5c9a7247d709e700dd30382118ab",
+        "two_sided_error_height": 2003,
+        "two_sided_max_plus_one_error": {
+          "decimal": "996.993772534826605649192479",
+          "denominator": "11609505792",
+          "numerator": "11574604976831"
+        }
+      },
+      {
+        "address_count": 1863,
+        "block_count": 2,
+        "canonical_endpoint_max_ratio": {
+          "count": 2,
+          "height": 13,
+          "ratio": {
+            "decimal": "0.617509828675738813726624",
+            "denominator": "1721239",
+            "numerator": "1062882"
+          }
+        },
+        "canonical_two_sided_max_ratio": {
+          "count": 1,
+          "height": 8,
+          "ratio": {
+            "decimal": "0.477112053914848313738015",
+            "denominator": "4562413207",
+            "numerator": "2176782336"
+          }
+        },
+        "endpoint_cylinders": {
+          "compatible_unordered_pairs": 1474,
+          "exact_duplicate_unordered_pairs": 0,
+          "maximum_exact_multiplicity": 1,
+          "total_unordered_pairs": 1734453
+        },
+        "endpoint_error_height": 668,
+        "endpoint_mass": {
+          "decimal": "0.249139603455510583489042",
+          "denominator": "531441",
+          "numerator": "132403"
+        },
+        "endpoint_max_plus_one_error": {
+          "decimal": "2.574744891718930229319906",
+          "denominator": "531441",
+          "numerator": "1368325"
+        },
+        "ordinary_height_limit": 2048,
+        "product_mass": {
+          "decimal": "0.032749120194705126456888",
+          "denominator": "139314069504",
+          "numerator": "4562413207"
+        },
+        "q_distribution": {
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 4,
+          "6": 4,
+          "7": 14,
+          "8": 78,
+          "9": 60,
+          "10": 254,
+          "11": 346,
+          "12": 1099
+        },
+        "row_digest_sha256": "ea7b6574568c310a33577e45d415ec9a6475ccdd71bb7a14a006354238c75696",
+        "two_sided_error_height": 1403,
+        "two_sided_max_plus_one_error": {
+          "decimal": "145.337066660676736123606619",
+          "denominator": "139314069504",
+          "numerator": "20247498206273"
+        }
+      },
+      {
+        "address_count": 2053,
+        "block_count": 3,
+        "canonical_endpoint_max_ratio": {
+          "count": 2,
+          "height": 26,
+          "ratio": {
+            "decimal": "0.632749963983421658286611",
+            "denominator": "839891",
+            "numerator": "531441"
+          }
+        },
+        "canonical_two_sided_max_ratio": {
+          "count": 2,
+          "height": 26,
+          "ratio": {
+            "decimal": "0.499210890364037771408399",
+            "denominator": "69767142601",
+            "numerator": "34828517376"
+          }
+        },
+        "endpoint_cylinders": {
+          "compatible_unordered_pairs": 1422,
+          "exact_duplicate_unordered_pairs": 0,
+          "maximum_exact_multiplicity": 1,
+          "total_unordered_pairs": 2106378
+        },
+        "endpoint_error_height": 1000,
+        "endpoint_mass": {
+          "decimal": "0.121569468671028392615549",
+          "denominator": "531441",
+          "numerator": "64607"
+        },
+        "endpoint_max_plus_one_error": {
+          "decimal": "1.430531328971607384450955",
+          "denominator": "531441",
+          "numerator": "760243"
+        },
+        "ordinary_height_limit": 2048,
+        "product_mass": {
+          "decimal": "0.005926513100504137865257",
+          "denominator": "69657034752",
+          "numerator": "412823329"
+        },
+        "q_distribution": {
+          "3": 1,
+          "4": 3,
+          "5": 3,
+          "6": 7,
+          "7": 12,
+          "8": 27,
+          "9": 144,
+          "10": 213,
+          "11": 513,
+          "12": 1130
+        },
+        "row_digest_sha256": "328eae04b23f88736ff615b67c87224d2d95498e034cebd32d5e4db7a7221bdd",
+        "two_sided_error_height": 1647,
+        "two_sided_max_plus_one_error": {
+          "decimal": "51.687224954571089463305898",
+          "denominator": "95551488",
+          "numerator": "4938791255"
+        }
+      },
+      {
+        "address_count": 1860,
+        "block_count": 4,
+        "canonical_endpoint_max_ratio": {
+          "count": 16,
+          "height": 263,
+          "ratio": {
+            "decimal": "1.054501350516767986427865",
+            "denominator": "671965",
+            "numerator": "708588"
+          }
+        },
+        "canonical_two_sided_max_ratio": {
+          "count": 4,
+          "height": 107,
+          "ratio": {
+            "decimal": "0.325757753788982672036226",
+            "denominator": "427661561033",
+            "numerator": "139314069504"
+          }
+        },
+        "endpoint_cylinders": {
+          "compatible_unordered_pairs": 935,
+          "exact_duplicate_unordered_pairs": 0,
+          "maximum_exact_multiplicity": 1,
+          "total_unordered_pairs": 1728870
+        },
+        "endpoint_error_height": 425,
+        "endpoint_mass": {
+          "decimal": "0.057692199134052510062265",
+          "denominator": "177147",
+          "numerator": "10220"
+        },
+        "endpoint_max_plus_one_error": {
+          "decimal": "5.480815368027683223537514",
+          "denominator": "177147",
+          "numerator": "970910"
+        },
+        "ordinary_height_limit": 2048,
+        "product_mass": {
+          "decimal": "0.001072500922067386713671",
+          "denominator": "34828517376",
+          "numerator": "37353617"
+        },
+        "q_distribution": {
+          "4": 1,
+          "5": 4,
+          "6": 6,
+          "7": 12,
+          "8": 25,
+          "9": 52,
+          "10": 236,
+          "11": 492,
+          "12": 1032
+        },
+        "row_digest_sha256": "1611ce2c120c1a8e25ecf58d3e0249579eb3ea30ed357a1715534bdc8f74f084",
+        "two_sided_error_height": 1457,
+        "two_sided_max_plus_one_error": {
+          "decimal": "27.242490090170182270350801",
+          "denominator": "34828517376",
+          "numerator": "948815539471"
+        }
+      }
+    ],
+    "adversarial_conventions": {
+      "family_counts": {
+        "(110|111)^*": 2046,
+        "2^m-1": 22,
+        "8^m-5": 10,
+        "A=11101": 1,
+        "A^rB^s": 64,
+        "B=1100": 1
+      },
+      "instance_count": 2144,
+      "prefix_length": 24,
+      "row_digest_sha256": "423b3aa47da1d8fe6e10902c2a9b71ddcbb43ff04d241dea71173fce53dddbef"
+    },
+    "codeword_count": 3331,
+    "codeword_q_distribution": {
+      "1": 1,
+      "2": 1,
+      "4": 2,
+      "6": 7,
+      "7": 30,
+      "9": 113,
+      "11": 525,
+      "12": 2652
+    },
+    "maximum_blocks": 4,
+    "maximum_total_q": 12,
+    "ordinary_height_limit": 2048,
+    "repository_status": "VERIFIED_FINITE"
+  },
+  "NG23": {
+    "failure_scope": "This refutes coefficient one and the inference from Haar mass to a designated ordinary representative. It does not refute an unspecified uniform constant or a stronger arithmetic anti-concentration theorem.",
+    "hypothesis": "Coefficient-one Haar cylinder volume controls the canonical least positive representative count.",
+    "least_counterexample": {
+      "B": 1,
+      "L": 1,
+      "Q": 1,
+      "canonical_count": 1,
+      "codeword": "1",
+      "endpoint_positive": 2,
+      "endpoint_volume_prediction": {
+        "decimal": "0.666666666666666666666667",
+        "denominator": "3",
+        "numerator": "2"
+      },
+      "forward_word": "1",
+      "height": 2,
+      "source_positive": 1,
+      "two_sided_volume_prediction": {
+        "decimal": "0.666666666666666666666667",
+        "denominator": "3",
+        "numerator": "2"
+      }
+    },
+    "repository_status": "REFUTED"
+  },
+  "canonical_formulas": {
+    "composition": "B(ab)=3^Q(b)B(a)+2^L(a)B(b)",
+    "endpoint": "r3=[B*2^(-L)]_(3^Q)",
+    "lift_identity": "3^Q r2+B=2^L(r3+k*3^Q) for an integer k",
+    "source": "r2=[-B*3^(-Q)]_(2^L)"
+  },
+  "format": "collatz-phase13-residue-audit-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "Finite ratios, absence of duplicate cylinders, and bounded fluctuation are not general anti-concentration theorems."
+}

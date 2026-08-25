@@ -1,0 +1,17 @@
+{
+  "E22": "VERIFIED_FINITE",
+  "H72": "OPEN",
+  "NG22": "REFUTED",
+  "NG23": "REFUTED",
+  "P77": "VERIFIED_THEOREM",
+  "P78": "VERIFIED_THEOREM",
+  "P79": "VERIFIED_THEOREM",
+  "P80": "CONDITIONAL",
+  "critical_odd_steps": 4096,
+  "dp_length": 512,
+  "maximum_blocks": 4,
+  "maximum_total_q": 12,
+  "ordinary_height": 2048,
+  "proves_collatz": false,
+  "valid": true
+}

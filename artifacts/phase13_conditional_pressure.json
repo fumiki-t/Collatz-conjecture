@@ -1,0 +1,31 @@
+{
+  "H72": {
+    "repository_status": "OPEN"
+  },
+  "Haar_warning": "Standard Haar measure and Tonelli identities average local cylinders but do not exclude one designated positive ordinary integer or absorb one lattice-point error per address.",
+  "P80": {
+    "conclusion": "Either premise excludes a positive permanent-safe nonperiodic orbit and would close H72's branch, but neither premise is proved in Phase 13.",
+    "counts": {
+      "N23": "number with address multiplicity of a in U^i whose least positive source representative modulo 2^L(a) and endpoint representative modulo 3^Q(a) are both at most H",
+      "N3": "number with address multiplicity of a in U^i whose least positive endpoint representative modulo 3^Q(a) is at most H"
+    },
+    "endpoint_factor": {
+      "decimal": "0.875000000000000000000000",
+      "denominator": "8",
+      "numerator": "7"
+    },
+    "endpoint_premise": "for every epsilon>0 there is i0(epsilon) such that for every i>=i0 and every ordinary H>=1, N_i^(3)(H)<=exp(epsilon*i)*H*sigma^i",
+    "epsilon_choice": "choose epsilon strictly below -log(7/8) for endpoint or -log(57/128) for two-sided; the corresponding exponential upper bound tends to zero although the actual address count is at least one",
+    "orbit_growth": "S_i+h_i=(S_0+h_0)*product_(j<i)c(u_j), hence S_i<(S_0+h_0)*(3/2)^i",
+    "repository_status": "CONDITIONAL",
+    "two_sided_factor": {
+      "decimal": "0.445312500000000000000000",
+      "denominator": "128",
+      "numerator": "57"
+    },
+    "two_sided_premise": "for every epsilon>0 there is i0(epsilon) such that for every i>=i0 and every ordinary H>=1, N_i^(2,3)(H)<=exp(epsilon*i)*H^2*tau^i"
+  },
+  "format": "collatz-phase13-conditional-pressure-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "P80 does not prove either anti-concentration premise, eliminate nontrivial cycles, or prove the Collatz conjecture."
+}

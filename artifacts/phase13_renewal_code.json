@@ -1,0 +1,19 @@
+{
+  "P77": {
+    "affine_recurrence": "scan forward bits at positions j from zero; on bit 1 replace B by 3B+2^j and on bit 0 leave B unchanged",
+    "code_property": "the first-upcrossing family U is prefix-free",
+    "endpoint_bits": "every nontrivial forward block starts with 1 and ends with 0; w=u=1 is the unique length-one exception",
+    "first_upcrossing": "every nonempty proper prefix p of u_i has 3^q(p)<2^L(p), while 3^q(u_i)>2^L(u_i)",
+    "hypotheses": [
+      "Delta_n>0 for every n>0",
+      "Delta_n tends to positive infinity"
+    ],
+    "orientation": "w_i=s_[t_i,t_(i+1)) is the forward block and u_i=reverse(w_i)",
+    "repository_status": "VERIFIED_THEOREM",
+    "strict_suffix_minimum": "t_0=0 and t_(i+1) is the unique argmin of Delta_n over n>t_i",
+    "uniqueness_boundary": "the forward infinite decomposition is unique because the strict suffix-minimum times are unique, not because reverse(U) is prefix-free"
+  },
+  "format": "collatz-phase13-renewal-code-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "P77 supplies a symbolic decomposition under permanent safety and discrepancy escape; it does not prove either hypothesis for every Collatz orbit without P74's external input."
+}
