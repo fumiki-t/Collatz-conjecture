@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase14-coalescent-rewrite",
-  "status": "DRAFT",
+  "status": "ACCEPTED",
   "claim_ids": ["P81", "P82", "P83", "P84", "P85", "E23", "NG24", "P80", "H72"],
   "objective": "Independently audit coalescent Collatz rewrites, their least-permanent-safe-source implication, finite irreducible address pressure, transfer closure, companion thresholds, ratio decrement, and moving-shadow denominator bounds without promoting finite confluence or pressure to H72.",
   "exact_scope": {
@@ -82,5 +82,11 @@
     "The moving-shadow bounds are accepted for a_n>=1 and eventually under P76, not unconditionally at a_n=0.",
     "Nontrivial cycles remain separate."
   ],
+  "recorded_result": {
+    "commit": "cb9f9b2da4faec3e785bbf49f5e3a12745f19603",
+    "full_tests": "228 passed",
+    "manifest_sha256": "bfcbc79f937f67ffc55bb15c591e6eaa10b50a35ea8138bb51cb4b4b1e64ba50",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }

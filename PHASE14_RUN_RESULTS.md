@@ -85,6 +85,16 @@ The verifier contains none of `phase14_search`, `from src`, or `import src`.
 Tamper tests alter theorem examples, finite collision counts, threshold
 constants, and the adversarial digest and require rejection.
 
+Acceptance checks:
+
+```text
+focused Phase 14 suite: 9 passed in 52.25s
+complete repository suite: 228 passed in 278.87s
+independent verifier: valid=true
+global artifact manifest SHA-256:
+bfcbc79f937f67ffc55bb15c591e6eaa10b50a35ea8138bb51cb4b4b1e64ba50
+```
+
 ## What this result does not prove
 
 - general rewrite confluence or a unique normal form at unbounded `Q`;
