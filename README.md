@@ -22,14 +22,16 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 13 is the latest accepted phase. It gives an exact renewal code,
-weighted pressure bounds, a valuation-conditioned positive-source transfer,
-and a precise conditional anti-concentration target. The anti-concentration
-premise is not proved; H54, H70, H72, C03, C04, C05, the permanent-safe-tail
-branch, and the nontrivial-cycle branch remain open.
+Phase 14 is the latest accepted phase. It gives exact coalescent rewrite
+theorems, restricts a least permanent-safe counterexample source to an
+irreducible initial-address tree, and records a complete finite `Q<=13`
+rewrite/pressure audit. General confluence, asymptotic irreducible pressure,
+and the ordinary anti-concentration premise are not proved; H54, H70, H72,
+C03, C04, C05, the permanent-safe-tail branch, and the nontrivial-cycle
+branch remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–13, separates internal and external
+map and conventions, summarizes Phases 1–14, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -70,12 +72,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase13.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase13_verifier.json
+.venv/bin/python verifier/verify_phase14.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase14_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 13 result](PHASE13_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 14 result](PHASE14_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

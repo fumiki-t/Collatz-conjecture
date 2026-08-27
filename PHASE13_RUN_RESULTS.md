@@ -30,6 +30,10 @@ The detailed proof audit is
 - 4096 odd steps of the square-root critical countermodel;
 - 2144 mandatory adversarial convention instances.
 
+The duplicate check compared addresses separately inside each fixed
+block-count layer. Phase 14 later found cross-layer collisions; Phase 13 did
+not establish injectivity of the combined address universe.
+
 The independent verifier reports:
 
 ```json

@@ -1053,3 +1053,53 @@ This is repository integrity work, not a new mathematics phase.
 The synthesis does not validate a new theorem, resolve H54/H70/H72/C03/C04/C05,
 exclude nontrivial cycles, or prove or disprove Collatz.
 `proves_collatz=false`.
+
+## 27. Phase 14 — coalescent rewrites and H72 reduction
+
+**Branch:** `feat/phase14-coalescent-rewrite`
+
+**Acceptance record:** [`PHASE14_RUN_RESULTS.md`](PHASE14_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/coalescent-rewrite/REPORT.md`](research/audits/coalescent-rewrite/REPORT.md)
+
+Phase 14 treated the attached research note as an untrusted proposal and
+rederived its usable claims under the repository's full shortcut convention.
+P81 gives the exact necessary-and-sufficient criterion
+
+```text
+Q(a)=Q(d),  L(d)=L(a)+k,
+2^k B(a)-B(d)=m 3^Q
+```
+
+for `F_d(2^k x+m)=F_a(x)`, with cylinder legality and positivity audited
+separately. P82 shows that a least positive discrepancy-escaping
+permanent-safe counterexample source would have only rewrite-irreducible
+initial renewal addresses. Common right suffixes preserve a rewrite, and the
+least positive source is a terminating potential, but confluence is not
+proved.
+
+P83 sharpens the companion threshold by initial one-run, with exact equality
+words `110`, `111010`, and `111100`. P84 gives a positive decrement for every
+nontrivial renewal block. P85 gives reduced-denominator and gcd bounds whenever
+the octave defect is positive, hence eventually in the P76 setting; the
+unqualified zero-defect case remains outside the theorem.
+
+E23 independently exhausts all 30,084 renewal addresses with total `Q<=13`.
+They form 24,197 endpoint classes and 5,949 positive downward rewrite pairs;
+5,887 addresses are reducible. The minimum collision is
+`1|110|1=11101` versus `111100`, satisfying
+`F_111100(2x+1)=F_11101(x)`. No finite rewrite cycle or nonunique normal form
+occurs in this bound.
+
+NG24 records the structural obstruction: coalescence is a right congruence but
+not a left congruence. Prefixing the minimum pair by `110` gives distinct
+endpoint residues 263 and 587 modulo `3^6`. Thus `(Q,r3)` is not a closed
+prefix-transfer state, and the finite normal forms do not imply eventual
+reducibility.
+
+### What this result does not prove
+
+Phase 14 does not prove rewrite confluence, eventual reducibility, an
+asymptotic irreducible pressure bound, either P80 anti-concentration premise,
+H72, exclusion of nontrivial cycles, or the Collatz conjecture.
+`proves_collatz=false`.

@@ -1,0 +1,142 @@
+{
+  "NG24": {
+    "counterexample": {
+      "base_a": "11101",
+      "base_d": "111100",
+      "common_endpoint_residue_mod_3^4": 20,
+      "left_prefix": "110",
+      "prefixed_a_endpoint_residue_mod_3^6": 263,
+      "prefixed_d_endpoint_residue_mod_3^6": 587
+    },
+    "hypothesis": "Coalescent endpoint equivalence is a two-sided congruence under renewal-block concatenation.",
+    "repository_status": "REFUTED",
+    "surviving_statement": "Right concatenation is exact; left concatenation can destroy equivalence."
+  },
+  "P81": {
+    "cylinder_legality": "Under the identity, every integer x in the a-cylinder maps to 2^k*x+m in the d-cylinder; positivity and source descent are separate inequalities.",
+    "repository_status": "VERIFIED_THEOREM",
+    "safety_boundary": "Affine equality does not imply renewal legality. If a and d are renewal addresses, a is coefficient-safe; after coalescence its coefficient surplus is k*log(2) above d, so a safe common future remains safe.",
+    "sign_cases": {
+      "k_zero": "The relation becomes the translation identity B(a)-B(d)=m*3^Q.",
+      "m_negative": "Require y>0 and (2^k-1)*x>-m; affine equality alone supplies neither condition.",
+      "m_positive": "For k>=1 and x>0, y=2^k*x+m is positive and larger.",
+      "m_zero": "For k>=1 this is the leading-zero lift y=2^k*x; it is affine-legal but a renewal forward address cannot start with zero."
+    },
+    "statement": "F_d(2^k*x+m)=F_a(x) identically iff Q(a)=Q(d), L(d)=L(a)+k, and 2^k*B(a)-B(d)=m*3^Q."
+  },
+  "P82": {
+    "external_boundary": "Applying this reduction to every nonperiodic counterexample uses EXT07/P74 to supply a permanent-safe discrepancy-escaping source.",
+    "repository_status": "VERIFIED_THEOREM",
+    "right_ideal": "If d rewrites to a, then d|b rewrites to a|b for every common renewal suffix b; reducibility is a right ideal.",
+    "statement": "If positive counterexample sources with Delta_n>0 for all n and Delta_n->infinity exist, the least such source has no initial renewal address admitting a uniform positive downward coalescent rewrite.",
+    "termination": "Every accepted edge strictly decreases the least positive source representative, so directed rewrite cycles are impossible."
+  },
+  "examples": {
+    "fixed_three_block_Q13": {
+      "a": {
+        "B": 2280275,
+        "L": 19,
+        "Q": 13,
+        "block_count": 3,
+        "codes": [
+          "1",
+          "000111111",
+          "010011111"
+        ],
+        "endpoint_positive": 1100380,
+        "forward": "1111111000111110010",
+        "r2": 361855,
+        "r3": 1100380,
+        "source_positive": 361855
+      },
+      "correction_identity": "2^1*B(a)-B(d)=1*3^13",
+      "d": {
+        "B": 2966227,
+        "L": 20,
+        "Q": 13,
+        "block_count": 3,
+        "codes": [
+          "00001011111111",
+          "011",
+          "011"
+        ],
+        "endpoint_positive": 1100380,
+        "forward": "11111111010000110110",
+        "r2": 723711,
+        "r3": 1100380,
+        "source_positive": 723711
+      },
+      "instances": [
+        {
+          "endpoint": 1100380,
+          "literal_a": "1111111000111110010",
+          "literal_d": "11111111010000110110",
+          "trace_a_sha256": "990f3f2f2651a6739660cfb72ec880cd7708a8858cfb20c45bdae7bcdbbcaca6",
+          "trace_d_sha256": "e69208f5b0c5b2acc299621b811cab03da7dc858d5721c1ee184500ee76f6b16",
+          "x": 361855,
+          "y": 723711
+        },
+        {
+          "endpoint": 2694703,
+          "literal_a": "1111111000111110010",
+          "literal_d": "11111111010000110110",
+          "trace_a_sha256": "851bbca020e2fe74baf3414263681ee7236ea7b28d98c875a75c5fc7ea7499e9",
+          "trace_d_sha256": "99c1f9efa660928fb8f5f0db738751441eb0f2a4d97c27ebf82a2ff7d29511f5",
+          "x": 886143,
+          "y": 1772287
+        }
+      ],
+      "k": 1,
+      "m": 1
+    },
+    "minimum_Q4": {
+      "a": {
+        "B": 73,
+        "L": 5,
+        "Q": 4,
+        "block_count": 3,
+        "codes": [
+          "1",
+          "011",
+          "1"
+        ],
+        "endpoint_positive": 20,
+        "forward": "11101",
+        "r2": 7,
+        "r3": 20,
+        "source_positive": 7
+      },
+      "correction_identity": "2^1*B(a)-B(d)=1*3^4",
+      "d": {
+        "B": 65,
+        "L": 6,
+        "Q": 4,
+        "block_count": 1,
+        "codes": [
+          "001111"
+        ],
+        "endpoint_positive": 20,
+        "forward": "111100",
+        "r2": 15,
+        "r3": 20,
+        "source_positive": 15
+      },
+      "instances": [
+        {
+          "endpoint": 20,
+          "literal_a": "11101",
+          "literal_d": "111100",
+          "trace_a_sha256": "2984992b76ec00550f115e02cfbb38e0a6456690b052bbd6607e206d3c8dcdc5",
+          "trace_d_sha256": "53fbbafef17af83a61a2149d620dc7daf5747bdb950438d1fc9f51d533235a14",
+          "x": 7,
+          "y": 15
+        }
+      ],
+      "k": 1,
+      "m": 1
+    }
+  },
+  "format": "collatz-phase14-coalescent-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The rewrite reduction does not prove that every renewal address is reducible, establish global confluence, prove P80, exclude H72, or address nontrivial cycles."
+}

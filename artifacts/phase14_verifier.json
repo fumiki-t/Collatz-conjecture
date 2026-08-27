@@ -1,0 +1,19 @@
+{
+  "E23": "VERIFIED_FINITE",
+  "H72": "OPEN",
+  "NG24": "REFUTED",
+  "P80": "CONDITIONAL",
+  "P81": "VERIFIED_THEOREM",
+  "P82": "VERIFIED_THEOREM",
+  "P83": "VERIFIED_THEOREM",
+  "P84": "VERIFIED_THEOREM",
+  "P85": "VERIFIED_THEOREM",
+  "address_count": 30084,
+  "adversarial_instance_count": 2144,
+  "collision_pair_count": 5949,
+  "irreducible_address_count": 24197,
+  "maximum_total_Q": 13,
+  "proves_collatz": false,
+  "threshold_maximum_Q": 14,
+  "valid": true
+}

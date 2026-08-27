@@ -1,0 +1,184 @@
+{
+  "P83": {
+    "proof_boundary": "The proof minimizes B by adjacent exchange at fixed initial run. For Q>r it obtains R>5/3+(2/3)^r-2(2/3)^Q, an increasing bound in Q; Q=3,5 are impossible and the exact boundary cases Q=2,4,6 give the stated unique equalities.",
+    "repository_status": "VERIFIED_THEOREM",
+    "thresholds": {
+      "general": "R(w)>5/3-(2/3)^r",
+      "r=2": "R(w)>=13/9, equality iff w=110",
+      "r=3": "R(w)>=137/81, equality iff w=111010",
+      "r>=4": "R(w)>=43/27, equality iff w=111100"
+    }
+  },
+  "P84": {
+    "H72_boundary": "This is compatible with rapidly growing U_i and supplies no divergent lower bound, so it does not exclude H72.",
+    "proof_boundary": "Use R>=13/9, h>R, the exact Phase 13 decrement, and 4/[9(S+1)]>1/(3S+4).",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "For a legal nontrivial renewal block, z-z'>1/(12U+1), where z=(h-1)/(S+1), U=(S+1)/4.",
+    "summability": "Along an infinite legal renewal orbit, sum over nontrivial blocks of 1/(12U_i+1) is at most z_0 and hence finite."
+  },
+  "P85": {
+    "diophantine_boundary": "The bound is only exponential in E_n with an orbit-dependent constant and gives neither algebraicity nor a height exponent exceeding two; Roth, Ridout, and the subspace theorem still do not yield a contradiction.",
+    "eventual_scope": "Under the reciprocal-summability hypothesis, a_n tends to infinity, so the inequalities hold for every sufficiently large n.",
+    "hypotheses": "P76 positive nonperiodic permanent-safe odd orbit with sum 1/x_n finite; n>=1 and a_n>=1.",
+    "proof_boundary": "a_n>=1 gives lambda_n<1/2 and H_n<2h_0. The positive integer q_n(H_n+x_0) is divisible by 2^(E_n+1). The gcd bound follows from D_n/q_n and 2^(a_n+theta_n)-1<2^(a_n+1).",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": [
+      "If H_n=b_n/q_n is reduced, then q_n>2^(E_n+1)/(x_0+2h_0).",
+      "gcd(B_n,3^n-2^E_n)<(x_0+2h_0)2^a_n."
+    ],
+    "unqualified_small_n_candidate": "OPEN; this phase does not accept the same denominator bound for exceptional indices with a_n=0."
+  },
+  "finite_threshold_audit": {
+    "block_count": 14764,
+    "general_bound_violation_count": 0,
+    "maximum_Q": 14,
+    "minimum_by_initial_one_run": [
+      {
+        "L": 3,
+        "Q": 2,
+        "R": {
+          "decimal": "1.444444444444444444444444",
+          "denominator": "9",
+          "numerator": "13"
+        },
+        "r": 2,
+        "word": "110"
+      },
+      {
+        "L": 6,
+        "Q": 4,
+        "R": {
+          "decimal": "1.691358024691358024691358",
+          "denominator": "81",
+          "numerator": "137"
+        },
+        "r": 3,
+        "word": "111010"
+      },
+      {
+        "L": 6,
+        "Q": 4,
+        "R": {
+          "decimal": "1.592592592592592592592593",
+          "denominator": "27",
+          "numerator": "43"
+        },
+        "r": 4,
+        "word": "111100"
+      },
+      {
+        "L": 9,
+        "Q": 6,
+        "R": {
+          "decimal": "1.658436213991769547325103",
+          "denominator": "243",
+          "numerator": "403"
+        },
+        "r": 5,
+        "word": "111110100"
+      },
+      {
+        "L": 9,
+        "Q": 6,
+        "R": {
+          "decimal": "1.614540466392318244170096",
+          "denominator": "729",
+          "numerator": "1177"
+        },
+        "r": 6,
+        "word": "111111000"
+      },
+      {
+        "L": 17,
+        "Q": 11,
+        "R": {
+          "decimal": "1.775310899987016432680203",
+          "denominator": "177147",
+          "numerator": "314491"
+        },
+        "r": 7,
+        "word": "11111110111100000"
+      },
+      {
+        "L": 17,
+        "Q": 11,
+        "R": {
+          "decimal": "1.755801678831704742389089",
+          "denominator": "177147",
+          "numerator": "311035"
+        },
+        "r": 8,
+        "word": "11111111011100000"
+      },
+      {
+        "L": 17,
+        "Q": 11,
+        "R": {
+          "decimal": "1.742795531394830282195013",
+          "denominator": "177147",
+          "numerator": "308731"
+        },
+        "r": 9,
+        "word": "11111111101100000"
+      },
+      {
+        "L": 17,
+        "Q": 11,
+        "R": {
+          "decimal": "1.734124766436913975398962",
+          "denominator": "177147",
+          "numerator": "307195"
+        },
+        "r": 10,
+        "word": "11111111110100000"
+      },
+      {
+        "L": 17,
+        "Q": 11,
+        "R": {
+          "decimal": "1.728344256464969770868262",
+          "denominator": "19683",
+          "numerator": "34019"
+        },
+        "r": 11,
+        "word": "11111111111000000"
+      },
+      {
+        "L": 22,
+        "Q": 14,
+        "R": {
+          "decimal": "1.877781143887823650958223",
+          "denominator": "4782969",
+          "numerator": "8981369"
+        },
+        "r": 12,
+        "word": "1111111111110110000000"
+      },
+      {
+        "L": 22,
+        "Q": 14,
+        "R": {
+          "decimal": "1.875212028344737337833467",
+          "denominator": "4782969",
+          "numerator": "8969081"
+        },
+        "r": 13,
+        "word": "1111111111111010000000"
+      },
+      {
+        "L": 22,
+        "Q": 14,
+        "R": {
+          "decimal": "1.873499284649346462416963",
+          "denominator": "1594323",
+          "numerator": "2986963"
+        },
+        "r": 14,
+        "word": "1111111111111100000000"
+      }
+    ],
+    "row_digest_sha256": "a1a810f63b993fe8ebf076209cf62e9288134a3b4ad85362e559d7f820eb1964"
+  },
+  "format": "collatz-phase14-auxiliary-lemmas-v1",
+  "proves_collatz": false
+}

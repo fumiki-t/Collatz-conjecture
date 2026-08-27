@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 13
+# Collatz research synthesis through Phase 14
 
 **Audit date:** 2026-08-27
 
-**Audited `main`:** `6a08972be1069cc00475b3e1bbb7a474527d2037`
+**Audited `main`:** `7e6f637cb0bed954a5f50f71a1aa6c45b127dc8f`
 
-**Latest accepted phase:** Phase 13
+**Latest accepted phase:** Phase 14
 
 **Problem status:** `OPEN`
 
@@ -214,6 +214,10 @@ flowchart TD
     P74 -. "bypasses, does not prove" .-> H70
 
     H72 --> P80["P80 sufficient anti-concentration targets"]
+    ST --> P81["P81 exact coalescent rewrites"]
+    P81 --> P82["P82 least-source irreducibility"]
+    P82 --> H72
+    NG24["NG24 left-congruence failure"] --> H72
     CY --> CP["Separate cycle exclusion still required"]
 ```
 
@@ -424,6 +428,30 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   not a local measure surrogate. See [`PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md)
   and the [`Phase 13 audit`](../research/audits/renewal-code-pressure/REPORT.md).
 
+### Phase 14 — coalescent rewrites and H72 reduction
+
+- **Purpose:** determine exactly when distinct renewal addresses coalesce after
+  an affine source rewrite, then test whether downward rewriting can eliminate
+  a hypothetical least positive permanent-safe source.
+- **Accepted:** P81 is the necessary-and-sufficient integer rewrite identity.
+  P82 reduces a least positive permanent-safe counterexample source to a
+  P81-irreducible address. P83 gives sharp run-sensitive companion thresholds;
+  P84 gives a universal positive nontrivial-block decrement; P85 gives eventual
+  rational-shadow denominator/gcd bounds for positive octave defect. E23
+  exhausts all 30,084 addresses with total `Q<=13`, finding 5,949 positive
+  downward rewrite pairs and 24,197 finite normal forms.
+- **External input:** P81/P83/P84 are internal. The counterexample application
+  in P82 uses EXT07/P74 to cover every nonperiodic positive orbit. P85 assumes
+  the reciprocal-summable permanent-safe setting of P76.
+- **Obstacle:** finite acyclicity and uniqueness do not imply eventual
+  reducibility or confluence. NG24 proves endpoint coalescence is a right
+  congruence under common suffixes but not a left congruence under prefixing.
+  The missing state must retain the lost affine carry information.
+- **Handoff:** construct a carry-aware left-extension operator or prove one of
+  P80's deterministic height bounds. See
+  [`PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md) and the
+  [`Phase 14 audit`](../research/audits/coalescent-rewrite/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -431,8 +459,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG23.
+- P65/P66/P68/P69–P73/P76–P79/P81–P85 with their exact hypotheses;
+- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG24.
 
 None is a full convergence theorem.
 
@@ -455,6 +483,10 @@ None is a full convergence theorem.
    uniformly for every ordinary `H>=1`, every `epsilon>0`, and all sufficiently
    large `i`, would exclude the permanent-safe positive branch. Neither bound
    is proved.
+4. **P82 target.** If every positive renewal address were eventually reducible
+   by a P81 rewrite, well-ordering would exclude a least positive permanent-safe
+   source. P82 proves the implication, but NG24 prevents propagation by endpoint
+   classes alone and eventual reducibility is unproved.
 
 ### Nontrivial cycles
 
@@ -482,7 +514,9 @@ The complete obstruction archive is
 | Identify real and 2-adic limits | P76 gives different limits with no contradiction | A genuine height/product theorem could use both places |
 | Haar mass equals ordinary representative count | NG23 fails at the first codeword | Deterministic anti-concentration with lattice error control is open |
 | Ignore one lattice `+1` per cylinder | Address count can make the errors dominant | Aggregate cancellation or arithmetic separation must be proved |
-| Promote finite injectivity/scarcity | E22 has no finite duplicate endpoint cylinders only in its bound | Cross-`Q` nesting and eventual multiplicity remain open |
+| Promote finite injectivity/scarcity | E22 found no duplicates only within its bounded fixed-block-count layers; E23 finds cross-layer collisions | Cross-`Q` nesting and eventual multiplicity remain open |
+| Treat endpoint coalescence as a two-sided congruence | NG24: `11101~111100`, but prefixing both by `110` gives distinct residues modulo `3^6` | Common right suffixes preserve P81 rewrites; a carry-aware left state remains possible |
+| Promote finite rewrite acyclicity/confluence | E23 has unique finite normal forms only through total `Q<=13` | A proved well-founded global rewrite or eventual-reducibility theorem could close P82 |
 
 ## 7. External inputs and literature boundary
 
@@ -510,10 +544,11 @@ External-source proof bodies were not rederived during this documentation audit.
 ### H72 — permanent-safe positive source
 
 **Target:** exclude every positive ordinary-integer permanent coefficient-safe
-tail. **Known traps:** NG21/NG22/NG23, 2-adic versus ordinary positivity,
-per-address lattice errors, and cross-`Q` endpoint nesting. **Acceptance:** an
-orbit-specific arithmetic theorem proving one P80 bound or an equivalent
-positive-height obstruction, plus a checked finite remainder. See
+tail. **Known traps:** NG21/NG22/NG23/NG24, 2-adic versus ordinary positivity,
+per-address lattice errors, cross-`Q` endpoint nesting, and loss of left-prefix
+carry data. **Acceptance:** an orbit-specific arithmetic theorem proving one
+P80 bound, eventual P81 reducibility, or an equivalent positive-height
+obstruction, plus a checked finite remainder. See
 [`context/H72.md`](context/H72.md).
 
 ### H54 — eventual critical-prefix barrier
@@ -549,7 +584,8 @@ scoped obligation rather than a complete proof by itself.
 
 | Priority experiment | Target statement | Must survive | Minimum useful experiment | Success implication | Stop condition |
 |---|---|---|---|---|---|
-| Carry-aware canonical separation | A deterministic lower bound for least positive `(r2,r3)` representatives | NG19, NG23, E22, all mandatory families | Exact meet-in-the-middle slices retaining `B`, carries, and ordinary height | May prove P80 or lower-bound `M(k)` | Preserve the first opposite-outcome collision; do not enlarge after state loss |
+| Coalescent left-extension state | Propagate P81 downward rewrites across renewal prefixes | NG24, all E23 collisions, all mandatory families | Derive the exact prefix carry recurrence and search for a finite dominance quotient | Eventual reducibility would close the least-source H72 branch by P82 | Stop if the state identifies NG24's two distinct prefixed endpoints |
+| Carry-aware canonical separation | A deterministic lower bound for least positive `(r2,r3)` representatives | NG19, NG23, NG24, E22/E23, all mandatory families | Exact meet-in-the-middle slices retaining `B`, carries, and ordinary height | May prove P80 or lower-bound `M(k)` | Preserve the first opposite-outcome collision; do not enlarge after state loss |
 | Valuation-conditioned transfer operator | Use P79's `v2(C_w)=r-2` to control address multiplicity | both NG22 models and one-block runs | Exact transition matrix with symbolic valuation guards | Could close H72 through P80 | Stop if a formal NG22 source satisfies every retained state |
 | Cross-`Q` 3-adic nesting | Bound multiplicity of endpoint cylinders across different `Q` | NG23 and E22 compatible/nested pairs | Enumerate exact containment poset, then state a provable recursion | Supplies endpoint anti-concentration | Finite injectivity without a recursion is not progress |
 | Fourier/large-sieve anti-concentration | Prove cancellation beyond Haar mass | per-address `+1`, deterministic least representatives | Small exact character sums with explicit constants and carry classes | Could prove either P80 premise | Stop if constants grow exponentially or discard the lattice error |
@@ -562,7 +598,7 @@ statement is not a priority experiment.
 
 ## 10. Scratch index
 
-No post-Phase-13 unintegrated mathematical candidate was present at this
+No post-Phase-14 unintegrated mathematical candidate was accepted at this
 audit. The eight current scratch inputs are classified
 `SUPERSEDED_BY_ACCEPTED_RESULT`:
 
@@ -570,7 +606,8 @@ audit. The eight current scratch inputs are classified
   [`research/audits/garcia-tal-phase12`](../research/audits/garcia-tal-phase12/REPORT.md);
 - the two renewal Markdown audits and their two scripts/two JSON outputs are
   superseded by Phase 13's independent generator, verifier, artifacts, and
-  audit.
+  audit. The Phase 14 pasted proposal is separately preserved by its recorded
+  SHA-256 provenance and was independently rederived before acceptance.
 
 They remain untracked local provenance and are not accepted evidence. No file
 was classified `PROMISING_UNVERIFIED` or `FAILED_OR_COUNTEREXAMPLE` in this
@@ -608,8 +645,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase13.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase13_verifier.json
+.venv/bin/python verifier/verify_phase14.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase14_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

@@ -428,6 +428,12 @@ because
 Therefore either premise excludes the permanent-safe positive branch.  This
 is a conditional implication only.  Phase 13 does not prove either premise.
 
+The finite duplicate audit in this report was performed separately at each
+fixed block count. It did not assert injectivity after different block counts
+are combined. Phase 14 records the resulting cross-layer collisions and the
+first same-layer collision at `Q=13`; this clarification changes no P77--P80
+claim status.
+
 ## 8. Raw Haar failure
 
 For `u=1`,

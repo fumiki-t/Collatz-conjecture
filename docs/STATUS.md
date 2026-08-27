@@ -5,7 +5,7 @@
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
 
-For the self-contained Phase 1–13 map, conventions, dependency branches, and
+For the self-contained Phase 1–14 map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
 ## What is currently proved?
@@ -47,6 +47,16 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   its exact weighted stopping/pressure bounds, the universal `13/9` companion
   threshold, and the normalized ordinary-integrality rule
   `v2(C_w)=r-2` for a nontrivial block's initial one-run.
+- `VERIFIED_THEOREM`: P81 gives the necessary-and-sufficient integer identity
+  for two parity words to coalesce after an affine source rewrite. P82 shows
+  that, if positive permanent-safe counterexample sources exist, their least
+  source is irreducible under every uniform positive downward rewrite. This is
+  a structural reduction, not an existence or termination proof for H72.
+- `VERIFIED_THEOREM`: P83 sharpens the renewal companion threshold by initial
+  one-run (`13/9`, `137/81`, and `43/27` in the audited cases), and P84 gives a
+  universal positive decrement for every nontrivial renewal block. P85 gives
+  an eventual reduced-denominator and gcd bound when the octave defect is
+  positive; the zero-defect case remains outside P85.
 - `CONDITIONAL`: P80 proves that either a quantified endpoint or two-sided
   canonical-representative anti-concentration estimate would exclude the
   permanent-safe positive branch. Neither estimate is proved.
@@ -57,6 +67,8 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   improvement, while NG22 blocks a contradiction from the strengthened
   analytic conditions plus a general odd 2-adic source alone, and NG23 blocks
   replacement of deterministic ordinary representatives by raw Haar volume.
+  NG24 additionally shows that endpoint coalescence classes are a right
+  congruence under a common suffix but not a left congruence under prefixing.
 - `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
   sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
   reciprocal orbit summability and an odd permanent-safe tail minimum for
@@ -150,8 +162,15 @@ No item above proves the Collatz conjecture.
 - Phase 13: E22 independently rebuilds the first-passage DP through length
   512, 3,331 codewords and every 1--4 block address with total `Q<=12`, all
   ordinary heights through 2,048, 2,144 adversarial convention instances, and
-  a 4,096-step square-root countermodel. The finite absence of duplicate
-  endpoint cylinders and all finite ratios remain non-asymptotic.
+  a 4,096-step square-root countermodel. Its duplicate audit was restricted to
+  fixed block-count layers; all finite ratios remain non-asymptotic.
+- Phase 14: E23 exhausts all 30,084 renewal addresses with total odd count
+  `Q<=13`. It finds 24,197 endpoint classes, 5,829 nontrivial collision
+  classes, 5,949 positive downward rewrite pairs, 5,887 reducible addresses,
+  and 24,197 finite normal forms. The smallest collision is
+  `1|110|1=11101` versus `111100`, with `F_111100(2x+1)=F_11101(x)`.
+  No finite rewrite cycle or nonunique normal form occurs in this scope, but
+  neither observation is an asymptotic theorem.
 
 These are `VERIFIED_FINITE`; none supplies an eventual statement.
 
@@ -252,11 +271,22 @@ block's initial run through an exact 2-adic valuation. P80 shows the needed
 ordinary-height decay, but NG23 proves that raw Haar mass cannot supply it:
 the per-address lattice error and deterministic least representative must be
 controlled arithmetically.
+Phase 14 adds an exact coalescent rewrite relation. P82 reduces a hypothetical
+positive permanent-safe counterexample to an irreducible renewal address, and
+E23 shows that the finite relation removes many addresses. NG24 blocks the
+tempting finite-state shortcut: endpoint equality does not survive arbitrary
+left extension, so an asymptotic proof still needs a carry-aware lift or a
+different well-founded invariant. P85 narrows the rational-shadow height
+problem only after the octave defect becomes positive.
 
 ## Secondary directions
 
+- Lift P81 coalescence through left extension with enough exact carry data to
+  prove that every positive renewal address is eventually reducible, while
+  explicitly surviving NG24.
 - Prove one of P80's canonical-residue anti-concentration estimates using the
-  coupled `(B,r2,r3,C_w)` recurrence and per-address ordinary lattice errors.
+  coupled `(B,r2,r3,C_w)` recurrence, P85's eventual height bounds, and every
+  per-address ordinary lattice error.
 - Prove C04 by excluding the q0 near-diagonal canonical residue pair, with a
   lossless carry-aware recursion or meet-in-the-middle certificate.
 - Prove or refute C05 with a recursive safe-pair cylinder/difference-state
@@ -280,6 +310,10 @@ controlled arithmetically.
 
 ## What was recently refuted?
 
+- `REFUTED`: coalescent endpoint equivalence is a two-sided congruence under
+  renewal concatenation. The exact pair `11101~111100` stays equivalent under
+  a common suffix, but prefixing both by `110` gives endpoint residues 263 and
+  587 modulo `3^6`. Endpoint `(Q,r3)` alone is not a closed transfer state.
 - `REFUTED`: coefficient-one raw Haar endpoint or product volume controls the
   canonical least positive representative count. NG23's minimum obstruction
   is `u=1,H=2`: the count is 1 and both volume predictions are `2/3`.
@@ -322,9 +356,9 @@ controlled arithmetically.
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can P79's valuation-conditioned `(U,V,C_w)` transfer prove one of P80's
-   subexponential canonical-residue counts after retaining every ordinary
-   lattice `+1`, thereby separating positive sources from both NG22 models?
+2. Can P81's exact right-congruence rewrite be lifted across prefixes with a
+   finite or well-founded carry state that distinguishes the NG24 obstruction
+   and proves eventual reducibility of every positive renewal address?
 3. Can P71's exact per-cylinder margin interval be merged across residue
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
@@ -343,7 +377,7 @@ controlled arithmetically.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
 - Extend P72 only with an orbit-specific transition invariant; test it first
-  against NG21, NG22, NG23, E20, and E22 before claiming an exponent or
+  against NG21--NG24 and E20/E22/E23 before claiming an exponent or
   anti-concentration improvement.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
@@ -393,4 +427,5 @@ controlled arithmetically.
 - Phase 11 acceptance: [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md)
 - Phase 12 acceptance: [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md)
 - Phase 13 acceptance: [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md)
+- Phase 14 acceptance: [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

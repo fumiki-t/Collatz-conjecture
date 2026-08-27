@@ -4,7 +4,7 @@ The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
 
-The global branch map and uniform Phase 1–13 terminology are in
+The global branch map and uniform Phase 1–14 terminology are in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md). This file remains the
 operational ranking; the synthesis remains the orientation layer.
 
@@ -88,12 +88,21 @@ uniform endpoint bound
 replace that missing deterministic ordinary-height theorem: `u=1,H=2`
 already has count 1 and predicted volume `2/3`.
 
+Phase 14 supplies a second exact reduction. P81 classifies every affine
+coalescent source rewrite, and P82 says that a least positive permanent-safe
+counterexample source must be irreducible under all positive downward P81
+rewrites. E23 finds 5,949 such rewrite pairs through total `Q<=13`. P83--P85
+add run-sensitive thresholds, block decrement, and eventual rational-height
+bounds. NG24 shows why this is not yet a recursive proof: coalescent endpoint
+classes are stable under common right suffixes but not under common prefixes.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
-the NG23 `u=1,H=2` obstruction, and every mandatory adversarial family. Reject
-any proof that identifies a general 2-adic source with a positive ordinary
-integer, drops the per-address lattice `+1`, or promotes finite scarcity to an
-eventual statement.
+the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, and every
+mandatory adversarial family. Reject any proof that identifies a general
+2-adic source with a positive ordinary integer, drops the per-address lattice
+`+1`, treats `(Q,r3)` as a prefix-closed state, or promotes finite scarcity to
+an eventual statement.
 
 **Success criterion.** An orbit-specific arithmetic theorem that excludes
 every positive ordinary integer permanent-safe source, with an independently
@@ -141,8 +150,14 @@ turns this coupled valuation/affine recurrence into subexponential endpoint or
 two-sided canonical-representative counts. Standard Haar measure is
 insufficient by NG23.
 
-**Fast falsification test.** First reconstruct NG23 and all E22 finite ratios,
-then measure the joint `(B,r2,r3,C_w)` Pareto frontier in exact
+Phase 14 gives a finite reduction mechanism rather than a volume bound. Any
+proof that every sufficiently long positive address admits a P81 downward
+rewrite would eliminate the least-source branch by P82, but it must carry
+enough prefix information to survive NG24. The finite normal forms in E23 do
+not establish such eventual reducibility.
+
+**Fast falsification test.** First reconstruct NG23, NG24, and all E22/E23
+finite ratios, then measure the joint `(B,r2,r3,C_w)` Pareto frontier in exact
 dynamic-programming/meet-in-the-middle slices. Attack every proposed constant
 or monotonicity with macro id 0, NG22, and `A^rB^s` before scaling.
 

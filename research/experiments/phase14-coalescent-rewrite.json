@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "phase14-coalescent-rewrite",
+  "status": "DRAFT",
+  "claim_ids": ["P81", "P82", "P83", "P84", "P85", "E23", "NG24", "P80", "H72"],
+  "objective": "Independently audit coalescent Collatz rewrites, their least-permanent-safe-source implication, finite irreducible address pressure, transfer closure, companion thresholds, ratio decrement, and moving-shadow denominator bounds without promoting finite confluence or pressure to H72.",
+  "exact_scope": {
+    "quantifiers": [
+      "all binary words in the symbolic coalescent identity",
+      "all first-upcrossing renewal addresses of every block count with total odd count Q at most 13",
+      "all collision pairs and positive canonical rewrites in that complete address universe",
+      "all first-upcrossing words through Q=14 for the finite threshold regression",
+      "2144 mandatory adversarial convention instances plus Phase 7 macro id 0 and explicit NG21-NG23 boundaries"
+    ],
+    "bounds": {
+      "maximum_total_q": 13,
+      "maximum_block_count": 13,
+      "threshold_maximum_q": 14,
+      "adversarial_prefix_length": 24
+    },
+    "completeness": "The rewrite graph, its minimum under the recorded order, and its normal forms are exhaustive only for total Q<=13. P81-P85 use separate exact proofs. General confluence, asymptotic irreducible pressure, P80, and H72 remain unproved."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "Decimal pressure fields are reporting-only; integers, Fraction, modular inverses, literal parity traces, and exact power inequalities decide acceptance."
+  },
+  "commands": {
+    "generator": [
+      ".venv/bin/python src/phase14_search.py --artifact-dir artifacts --max-total-q 13 --threshold-q 14"
+    ],
+    "verifier": [
+      ".venv/bin/python verifier/verify_phase14.py --artifact-dir artifacts --output artifacts/phase14_verifier.json"
+    ],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase14_properties.py tests/test_phase14_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "the Q=4 and Q=13 affine identities, source cylinders, literal words, endpoints, and trace hashes",
+      "every first-upcrossing block and every Q<=13 address using a separate tuple representation",
+      "all endpoint classes, collision pairs, positive reductions, finite normal forms, and pressure fractions",
+      "the initial-run threshold minima and equality words through Q=14",
+      "all mandatory adversarial residues, Phase 7 macro id 0, and NG24's left-congruence counterexample"
+    ],
+    "forbidden_imports": ["src.phase14_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase14_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "Phase 7 macro id 0",
+    "NG21",
+    "NG22",
+    "NG23"
+  ],
+  "artifacts": [
+    "artifacts/phase14_coalescent_theory.json",
+    "artifacts/phase14_rewrite_search.json",
+    "artifacts/phase14_auxiliary_lemmas.json",
+    "artifacts/phase14_adversarial_regression.json",
+    "artifacts/phase14_obstruction_report.md",
+    "artifacts/phase14_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Stop and preserve the least collision if either implementation disagrees on a word, correction, residue, literal endpoint, or normal form.",
+    "Do not infer global confluence or asymptotic pressure from Q<=13.",
+    "Do not use a quotient that fails NG24's left-composition regression.",
+    "Keep P80 conditional and H72 open unless ordinary-positive anti-concentration itself is proved.",
+    "Enter the proof-claim emergency protocol before any change to proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "An affine collision is not automatically a positive downward rewrite or a legal renewal address.",
+    "The least-source reduction applies to a least permanent-safe discrepancy-escaping counterexample source, conditionally supplied to the nonperiodic branch by EXT07/P74.",
+    "Finite unique normal forms do not imply Church-Rosser or an all-depth transfer operator.",
+    "The moving-shadow bounds are accepted for a_n>=1 and eventually under P76, not unconditionally at a_n=0.",
+    "Nontrivial cycles remain separate."
+  ],
+  "proves_collatz": false
+}

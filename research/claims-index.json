@@ -1,5 +1,5 @@
 {
-  "claim_count": 84,
+  "claim_count": 91,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -972,13 +972,15 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Use actual odd-orbit transition congruences, positivity, or ordinary-integrality information to strengthen P72/P75 enough to exclude every infinite coefficient-safe tail.",
+      "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, or coalescent irreducibility to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, NG21, NG22, NG23.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, E23, NG21, NG22, NG23, NG24.",
       "dependency_ids": [
+        "E23",
         "NG21",
         "NG22",
         "NG23",
+        "NG24",
         "P72",
         "P73",
         "P75",
@@ -986,13 +988,18 @@
         "P77",
         "P78",
         "P79",
-        "P80"
+        "P80",
+        "P81",
+        "P82",
+        "P83",
+        "P84",
+        "P85"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md); [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-08-26",
-      "notes": "P80 identifies sufficient canonical-residue estimates, but does not prove them. NG23 blocks raw Haar volume; NG22 blocks analytic/general-2-adic contradiction.",
+      "last_audited": "2026-08-27",
+      "notes": "P82 restricts a least permanent-safe counterexample source to irreducible initial addresses, but E23 is finite and NG24 blocks a naive two-sided quotient. P80 remains unproved.",
       "status": "OPEN"
     },
     {
@@ -1136,8 +1143,8 @@
       "evidence": "[`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); `artifacts/phase13_pressure_bounds.json`; `artifacts/phase13_critical_countermodel.json`; `artifacts/phase13_residue_audit.json`; `artifacts/phase13_verifier.json`.",
       "first_introduced": "Phase 13",
       "id": "E22",
-      "last_audited": "2026-08-26",
-      "notes": "Finite ratios, zero duplicate cylinders, and late residue changes are not asymptotic theorems. `proves_collatz=false`.",
+      "last_audited": "2026-08-27",
+      "notes": "Finite ratios, the absence of duplicates inside each bounded fixed-block-count layer, and late residue changes are not asymptotic theorems. Cross-layer collisions are recorded by E23. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
     },
     {
@@ -1153,9 +1160,113 @@
       "last_audited": "2026-08-26",
       "notes": "Least counterexample: `u=1`, `H=2`; canonical count is 1 while both raw predictions are `2/3`. This does not refute an unspecified fixed constant or stronger arithmetic anti-concentration.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "For binary words `a,d`, `F_d(2^k x+m)=F_a(x)` identically iff they have the same odd count `Q`, `L(d)=L(a)+k`, and `2^kB(a)-B(d)=m3^Q`; the identity maps the full `a` parity cylinder into the `d` cylinder, while positivity and descent require separate sign inequalities.",
+      "collatz_implication": "Supplies exact coalescent rewrites that can exclude reducible prefixes of a least permanent-safe counterexample source.",
+      "dependencies": "E01; unique factorization of powers of 2 and 3; exact cylinder congruence.",
+      "dependency_ids": [
+        "E01"
+      ],
+      "evidence": "[`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md), Section 3; `artifacts/phase14_coalescent_theory.json`; independent verifier.",
+      "first_introduced": "Phase 14",
+      "id": "P81",
+      "last_audited": "2026-08-27",
+      "notes": "Affine equality alone does not imply positivity, renewal legality, safety, or a Collatz contradiction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If positive counterexample sources with `Delta_n>0` for all `n>0` and `Delta_n->infinity` exist, the least such source has no initial renewal address with a uniform positive downward P81 rewrite. Reducibility is preserved by a common right suffix and accepted rewrite edges terminate.",
+      "collatz_implication": "Restricts the H72 branch to an irreducible initial-address tree, conditional only in its EXT07/P74 application.",
+      "dependencies": "P77, P81; well-ordering; renewal-prefix safety; shared-future counterexample property. The nonperiodic Collatz application uses EXT07/P74.",
+      "dependency_ids": [
+        "EXT07",
+        "P74",
+        "P77",
+        "P81"
+      ],
+      "evidence": "[`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md), Section 4; `artifacts/phase14_coalescent_theory.json`; independent verifier.",
+      "first_introduced": "Phase 14",
+      "id": "P82",
+      "last_audited": "2026-08-27",
+      "notes": "Does not prove every address reducible, global confluence, P80, H72, or cycle exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a nontrivial renewal word with initial one-run `r`, `R(w)>5/3-(2/3)^r`; moreover `r=2` gives `R>=13/9` with equality only at `110`, `r=3` gives `R>=137/81` only at `111010`, and `r>=4` gives `R>=43/27` only at `111100`.",
+      "collatz_implication": "Strengthens the companion threshold by the ordinary-source valuation class.",
+      "dependencies": "P77/P79; exact affine expansion with fixed initial run; first-upcrossing power inequalities and finite exact small-q cases.",
+      "dependency_ids": [
+        "P77",
+        "P79"
+      ],
+      "evidence": "[`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md), Section 7; `artifacts/phase14_auxiliary_lemmas.json`; independent finite regression through `Q=14`.",
+      "first_introduced": "Phase 14",
+      "id": "P83",
+      "last_audited": "2026-08-27",
+      "notes": "Threshold separation alone does not force termination or anti-concentration.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "On every legal nontrivial renewal block, with `z=(h-1)/(S+1)` and `U=(S+1)/4`, `z-z'>1/(12U+1)`; hence the sum of these reciprocals over all nontrivial blocks is finite.",
+      "collatz_implication": "Adds a quantitative renewal constraint for H72.",
+      "dependencies": "P79 exact ratio formula and `R>=13/9`; positivity `h>R`; telescoping.",
+      "dependency_ids": [
+        "P79"
+      ],
+      "evidence": "[`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md), Section 8; `artifacts/phase14_auxiliary_lemmas.json`; property tests.",
+      "first_introduced": "Phase 14",
+      "id": "P84",
+      "last_audited": "2026-08-27",
+      "notes": "Rapid growth of `U_i` is compatible with the finite sum, so the result does not exclude an infinite tail.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Under P76, at every `n>=1` with `a_n>=1`, the reduced denominator of `H_n=B_n/(3^n-2^E_n)` satisfies `q_n>2^(E_n+1)/(x_0+2h_0)`, and `gcd(B_n,3^n-2^E_n)<(x_0+2h_0)2^a_n`; therefore both hold eventually.",
+      "collatz_implication": "Supplies the first effective eventual reduced-denominator lower bound in the H72 shadow route.",
+      "dependencies": "P76; positive inverse-series tail; `a_n>=1`; exact real and 2-adic shadow identities; nonperiodicity.",
+      "dependency_ids": [
+        "P76"
+      ],
+      "evidence": "[`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md), Section 9; `artifacts/phase14_auxiliary_lemmas.json`; independent boundary checks.",
+      "first_introduced": "Phase 14",
+      "id": "P85",
+      "last_audited": "2026-08-27",
+      "notes": "The unqualified exceptional `a_n=0` case is not proved; the orbit-dependent constant and exponent do not trigger Roth/Ridout/Subspace contradictions.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Exhaustive independent recomputation of every renewal address of every block count with total `Q<=13` finds 30,084 addresses, 24,197 `(Q,r3)` classes, 5,949 collision pairs/positive rewrites, 5,887 reducible addresses, and one finite normal form per class; it also verifies pressure layers, the fixed-three-block `Q=13` collision, and 2,144 adversarial instances.",
+      "collatz_implication": "Supplies exact falsification and finite quotient data for a possible irreducible-pressure theorem.",
+      "dependencies": "P77, P81, P82; arbitrary-precision integers/Fraction; complete enumeration in the recorded order and domain.",
+      "dependency_ids": [
+        "P77",
+        "P81",
+        "P82"
+      ],
+      "evidence": "[`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); `artifacts/phase14_rewrite_search.json`; `artifacts/phase14_adversarial_regression.json`; `artifacts/phase14_verifier.json`.",
+      "first_introduced": "Phase 14",
+      "id": "E23",
+      "last_audited": "2026-08-27",
+      "notes": "Minimum cross-block collision is `1|110|1 ~ 111100` at `Q=4`; finite confluence and pressure do not imply asymptotic closure. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Coalescent endpoint equivalence is a two-sided congruence under renewal-block concatenation, so `(Q,r3)` alone defines a closed block transfer operator.",
+      "collatz_implication": "Rules out the naive coalescent quotient as the missing P80 transfer operator.",
+      "dependencies": "P81.",
+      "dependency_ids": [
+        "P81"
+      ],
+      "evidence": "`artifacts/phase14_coalescent_theory.json`; `artifacts/phase14_obstruction_report.md`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 14",
+      "id": "NG24",
+      "last_audited": "2026-08-27",
+      "notes": "`11101~111100` modulo `3^4`, but prefixing `110` gives endpoint residues 263 and 587 modulo `3^6`. Common right suffixes remain valid.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "20578c5a966e399b073f3fb8dee69697a55c0453007e27d0594e755120f3373a"
+  "source_sha256": "fcef9ebaed99ec2c3154c56651f9dacf5aaf786590cc608544dd0899027ed69c"
 }

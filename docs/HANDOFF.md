@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the thirteen phases established
+## 3. What the fourteen phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -113,6 +113,14 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   canonical-residue anti-concentration estimates. NG23 refutes substituting
   raw Haar volume for deterministic least positive representatives at the
   minimum word `u=1,H=2`; H72 remains open.
+- Phase 14 proves the exact coalescent rewrite criterion P81 and reduces any
+  least positive permanent-safe counterexample source to a P81-irreducible
+  renewal address (P82). P83 sharpens block thresholds, P84 proves a positive
+  decrement at every nontrivial renewal block, and P85 gives eventual
+  rational-shadow denominator/gcd bounds once the octave defect is positive.
+  E23 exhausts total odd count `Q<=13`: 30,084 addresses form 24,197 endpoint
+  classes and 5,949 positive downward rewrite pairs. NG24 refutes left
+  congruence, so endpoint classes alone do not form a closed prefix transfer.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -160,6 +168,8 @@ P69 counterexample trichotomy
   -> EXT07/P74 conditional permanent-safe reduction
   -> P72/P75/P76/P77/P78/P79
   -> P80 canonical-residue anti-concentration (CONDITIONAL)
+  -> P81/P82 least-source irreducibility reduction
+  -> P83/P84/P85 threshold, decrement, and height constraints
   -> H72 (OPEN)
   -> H70 eventual dropping-safe spacing via P70 (OPEN).
 ```
@@ -185,12 +195,13 @@ and confirm its status against `CLAIMS_LEDGER.md`. Register a large experiment
 under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
 
-Good near-term work includes inverse-parity anti-concentration, recursive
-lower bounds, a cross-cylinder quotient/carry state extending P71, and a
-positive ordinary-integrality or effective shadow-height obstruction extending
-P75--P79. Start from the stored NG19 collisions, universal NG20 pair, both
-NG22 formal 2-adic sources, and NG23's raw-volume obstruction: any proposed
-merge must distinguish them or prove a sound dominance relation. Certificate
+Good near-term work includes a carry-aware left-extension state for P81,
+inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
+quotient/carry state extending P71, and a positive ordinary-integrality or
+effective shadow-height obstruction extending P75--P85. Start from the stored
+NG19 collisions, universal NG20 pair, both NG22 formal 2-adic sources, NG23's
+raw-volume obstruction, and NG24's left-congruence failure: any proposed merge
+must distinguish them or prove a sound dominance relation. Certificate
 extension is useful when it tests such structure; raw depth extension is
 secondary.
 
@@ -212,6 +223,8 @@ From the repository root:
   --artifact-dir artifacts --output /tmp/collatz_phase12_verifier.json
 .venv/bin/python verifier/verify_phase13.py \
   --artifact-dir artifacts --output /tmp/collatz_phase13_verifier.json
+.venv/bin/python verifier/verify_phase14.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase14_verifier.json
 .venv/bin/python scripts/build_claim_index.py --check
 .venv/bin/python scripts/check_markdown_links.py
 .venv/bin/python scripts/research_health.py
@@ -223,7 +236,7 @@ non-strict command deliberately reports local untracked artifacts as warnings
 without treating them as accepted evidence.
 
 The current manifest hash is recorded in
-[`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md).
+[`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md).
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 
@@ -233,9 +246,8 @@ Before changing a claim status, read its row in
 [`LITERATURE.md`](LITERATURE.md).
 
 The current local `scratch/` inventory is superseded by the accepted
-Garcia--Tal and Phase 13 audits; it is not accepted evidence. No post-Phase-13
-unverified mathematical candidate was found by the 2026-08-27 synthesis
-audit. See the scratch index in
+Garcia--Tal, Phase 13, and Phase 14 audits; it is not accepted evidence. No
+post-Phase-14 scratch candidate is accepted evidence. See the scratch index in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md#10-scratch-index).
 
 ## If you only remember one thing
@@ -248,5 +260,8 @@ height. EXT07/P74 conditionally collapses the nonperiodic alternatives to a
 permanent-safe tail, but P75/P76 do not exclude it: NG22 satisfies their
 analytic consequences at the formal/2-adic level. P77--P79 expose exact
 renewal pressure and valuation structure, while NG23 shows Haar volume alone
-cannot control an ordinary representative. The remaining distinction is a
-deterministic positive-height anti-concentration theorem. Collatz remains open.
+cannot control an ordinary representative. P81/P82 expose exact downward
+coalescence and least-source irreducibility, but NG24 prevents a prefix-closed
+endpoint quotient. The remaining distinction is a carry-aware deterministic
+positive-height anti-concentration or eventual-reducibility theorem. Collatz
+remains open.

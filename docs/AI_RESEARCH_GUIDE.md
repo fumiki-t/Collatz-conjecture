@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 13's renewal pressure and canonical-residue
-audit is the latest research layer.
+proof of the conjecture. Phase 14's coalescent-rewrite and H72 audit is the
+latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–13 evidence boundaries, and current obligations.
+   branch map, Phase 1–14 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md), then its inputs:
+   [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md),
    [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md), the accompanying
    [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md),
    [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md), and the earlier
@@ -79,6 +80,12 @@ flowchart TD
     P78 --> P80["P80 conditional anti-concentration"]
     P79["P79 threshold and valuation transfer"] --> P80
     P80 --> H72
+    P81["P81 exact coalescent rewrite"] --> P82["P82 least-source irreducibility"]
+    P82 --> H72
+    P83["P83 run-sensitive thresholds"] --> H72
+    P84["P84 block decrement"] --> H72
+    P85["P85 eventual shadow height"] --> H72
+    NG24["NG24 left-congruence failure"] --> H72
     NG23["NG23 raw Haar failure"] --> H72
     NG22["NG22 formal 2-adic obstruction"] --> H72
     P69 --> P70["P70 renewal-ladder implication"]
@@ -90,9 +97,10 @@ Arrows mean “is an input to,” not “has been proved unconditionally.” X02
 external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
-P77--P79 are exact renewal theorems; P80 is only a sufficient conditional
-implication. NG22 is a formal/2-adic countermodel and NG23 is a raw-volume
-failure. H70 and H72 remain open. C04, C05, H54, every uneliminated P69 branch,
+P77--P79 and P81--P85 are exact renewal theorems; P80 is only a sufficient
+conditional implication. NG22 is a formal/2-adic countermodel, NG23 is a
+raw-volume failure, and NG24 is a left-congruence failure. H70 and H72 remain
+open. C04, C05, H54, every uneliminated P69 branch,
 and the Collatz conjecture remain open.
 
 ## Active proof obligations
@@ -101,7 +109,7 @@ and the Collatz conjecture remain open.
 |---|---|---|---|
 | H54 | `OPEN` | Prove `M(K_q-1)>H_q` eventually | Attack any proposed `M(k)` inequality with all stored record failures and mandatory adversarial families |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
-| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, or an equivalent positivity/height obstruction extending P72/P75--P79 | Reject mod-6-only improvements with NG21, analytic/2-adic-only contradictions with NG22, and raw Haar substitution with NG23; test on E20/E22 and all mandatory families |
+| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P81 reducibility, or an equivalent positivity/height obstruction extending P72/P75--P85 | Reject mod-6-only improvements with NG21, analytic/2-adic-only contradictions with NG22, raw Haar substitution with NG23, and prefix-closed endpoint states with NG24; test on E20/E22/E23 and all mandatory families |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -134,7 +142,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 13 provides the
+artifacts and preserve the recorded manifest hash. Phase 14 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -148,9 +156,11 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 - Attack H70 separately from the other two P69 branches; do not describe a
   renewal-ladder result as a full counterexample exclusion.
 - Attack H72 through positive ordinary-integrality, effective reduced
-  shadow-height/gcd, or P79's valuation-conditioned successor congruences.
+  shadow-height/gcd, P79's valuation-conditioned successor congruences, or a
+  P81 rewrite state retaining the carries lost in NG24.
   Mod-6 density is blocked by NG21, analytic/general-2-adic coherence by NG22,
-  and raw local-volume counting by NG23.
+  raw local-volume counting by NG23, and endpoint-only prefix propagation by
+  NG24.
 - Derive exact lower bounds on the ordinary size of a pair of inverse-parity
   residues from their odd normalized gap and common-prefix affine constant.
 - Test whether any proposed branch potential composes across the record
@@ -173,6 +183,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   by NG20.
 - Contradiction from only summable octave defects, `h_j>1`, divergent
   companion reciprocals, and an odd 2-adic source: refuted by NG22.
+- Coalescent endpoint equivalence as a two-sided concatenation congruence:
+  refuted by NG24; only common right suffixes preserve it.
 - A packing exponent below `1/9` from distinctness and coprimality modulo six
   alone: refuted by NG21's abstract saturator, which is not a Collatz orbit.
 - Replacing deterministic least positive representatives by Haar cylinder

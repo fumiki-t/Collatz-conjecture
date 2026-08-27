@@ -1,0 +1,29 @@
+{
+  "E23_regression": {
+    "family_counts": {
+      "(110|111)^*": 2046,
+      "2^m-1": 22,
+      "8^m-5": 10,
+      "A=11101": 1,
+      "A^rB^s": 64,
+      "B=1100": 1
+    },
+    "instance_count": 2144,
+    "named_obstruction_boundaries": {
+      "NG21": "The coprime-to-6 saturator is not a renewal-address source and is not excluded.",
+      "NG22": "The formal odd 2-adic sources are not positive ordinary sources and are not excluded.",
+      "NG23": "The u=1,H=2 raw-Haar obstruction remains valid; rewrites do not remove the one-block address."
+    },
+    "phase7_macro_zero": {
+      "B": 527345,
+      "L": 19,
+      "Q": 12,
+      "source_residue": 69631,
+      "word": "1111111111110000000"
+    },
+    "prefix_length": 24,
+    "row_digest_sha256": "423b3aa47da1d8fe6e10902c2a9b71ddcbb43ff04d241dea71173fce53dddbef"
+  },
+  "format": "collatz-phase14-adversarial-v1",
+  "proves_collatz": false
+}

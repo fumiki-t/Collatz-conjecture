@@ -1,0 +1,1092 @@
+{
+  "E23": {
+    "address_count": 30084,
+    "address_rows_sha256": "a2666fa506e25b91119a81e403b3efe9aa8e28605dce37e1887bbfa350d9ce51",
+    "codeword_count": 3331,
+    "collision_group_count": 5829,
+    "collision_pair_count": 5949,
+    "equivalence_class_count": 24197,
+    "equivalence_class_size_distribution": {
+      "1": 18368,
+      "2": 5775,
+      "3": 50,
+      "4": 4
+    },
+    "finite_normal_forms": {
+      "directed_cycle_count": 0,
+      "interpretation": "Finite confluence is verified only for the complete Q<=13 address universe.",
+      "nonunique_normal_form_count": 0,
+      "unique_normal_form_count": 24197
+    },
+    "fixed_block_count_layers": [
+      {
+        "address_count": 3331,
+        "block_count": 1,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 9089,
+        "block_count": 2,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 4474,
+        "block_count": 3,
+        "duplicate_pairs": 1,
+        "maximum_multiplicity": 2
+      },
+      {
+        "address_count": 4424,
+        "block_count": 4,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 3492,
+        "block_count": 5,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 2488,
+        "block_count": 6,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 1352,
+        "block_count": 7,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 739,
+        "block_count": 8,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 418,
+        "block_count": 9,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 196,
+        "block_count": 10,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 67,
+        "block_count": 11,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 13,
+        "block_count": 12,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      },
+      {
+        "address_count": 1,
+        "block_count": 13,
+        "duplicate_pairs": 0,
+        "maximum_multiplicity": 1
+      }
+    ],
+    "irreducible_address_count": 24197,
+    "least_collision": {
+      "a": {
+        "B": 73,
+        "L": 5,
+        "Q": 4,
+        "block_count": 3,
+        "codes": [
+          "1",
+          "011",
+          "1"
+        ],
+        "endpoint_positive": 20,
+        "forward": "11101",
+        "r2": 7,
+        "r3": 20,
+        "source_positive": 7
+      },
+      "canonical_larger_source": 15,
+      "canonical_target_source": 7,
+      "common_endpoint": 20,
+      "d": {
+        "B": 65,
+        "L": 6,
+        "Q": 4,
+        "block_count": 1,
+        "codes": [
+          "001111"
+        ],
+        "endpoint_positive": 20,
+        "forward": "111100",
+        "r2": 15,
+        "r3": 20,
+        "source_positive": 15
+      },
+      "identity": "F_d(2*x+1)=F_a(x)",
+      "k": 1,
+      "m": 1
+    },
+    "maximum_collision_multiplicity": 4,
+    "minimal_reducible_Q_distribution": {
+      "10": 40,
+      "11": 153,
+      "12": 690,
+      "13": 708,
+      "4": 1,
+      "5": 1,
+      "6": 3,
+      "7": 10,
+      "8": 10,
+      "9": 40
+    },
+    "minimal_reducible_prefix_count": 1656,
+    "positive_rewrite_edge_count": 5949,
+    "pressure_by_block_count": [
+      {
+        "all_addresses": 3331,
+        "block_count": 1,
+        "irreducible": 2647,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.700531005859375000000000",
+              "denominator": "32768",
+              "numerator": "22955"
+            },
+            "irreducible": {
+              "decimal": "0.673875808715820312500000",
+              "denominator": "524288",
+              "numerator": "353305"
+            },
+            "retained_ratio": {
+              "decimal": "0.961950010890873448050534",
+              "denominator": "73456",
+              "numerator": "70661"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.506150259389094932457225",
+              "denominator": "177147",
+              "numerator": "89663"
+            },
+            "irreducible": {
+              "decimal": "0.484699148165083235956578",
+              "denominator": "59049",
+              "numerator": "28621"
+            },
+            "retained_ratio": {
+              "decimal": "0.957619084795289026688824",
+              "denominator": "89663",
+              "numerator": "85863"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.180967192802275661244616",
+              "denominator": "11609505792",
+              "numerator": "2100939673"
+            },
+            "irreducible": {
+              "decimal": "0.180767270543173178340234",
+              "denominator": "30958682112",
+              "numerator": "5596316465"
+            },
+            "retained_ratio": {
+              "decimal": "0.998895256891557590192643",
+              "denominator": "16807517384",
+              "numerator": "16788949395"
+            }
+          }
+        },
+        "rewrite_reducible": 684,
+        "scaled_endpoint_mass": {
+          "decimal": "0.727048722247624853934868",
+          "denominator": "39366",
+          "numerator": "28621"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.406726358722139651265527",
+          "denominator": "13759414272",
+          "numerator": "5596316465"
+        }
+      },
+      {
+        "all_addresses": 9089,
+        "block_count": 2,
+        "irreducible": 7197,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.487539291381835937500000",
+              "denominator": "524288",
+              "numerator": "255611"
+            },
+            "irreducible": {
+              "decimal": "0.456168174743652343750000",
+              "denominator": "1048576",
+              "numerator": "478327"
+            },
+            "retained_ratio": {
+              "decimal": "0.935654177637112643822058",
+              "denominator": "511222",
+              "numerator": "478327"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.253671934733426037258448",
+              "denominator": "1594323",
+              "numerator": "404435"
+            },
+            "irreducible": {
+              "decimal": "0.236139728273379986364118",
+              "denominator": "1594323",
+              "numerator": "376483"
+            },
+            "retained_ratio": {
+              "decimal": "0.930886298169050650908057",
+              "denominator": "404435",
+              "numerator": "376483"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.032749124517073059649574",
+              "denominator": "835884417024",
+              "numerator": "27374482855"
+            },
+            "irreducible": {
+              "decimal": "0.032679624784434387900754",
+              "denominator": "1671768834048",
+              "numerator": "54632778223"
+            },
+            "retained_ratio": {
+              "decimal": "0.997877814028205867270255",
+              "denominator": "54748965710",
+              "numerator": "54632778223"
+            }
+          }
+        },
+        "rewrite_reducible": 1892,
+        "scaled_endpoint_mass": {
+          "decimal": "0.531314388615104969319266",
+          "denominator": "708588",
+          "numerator": "376483"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.165440600471199088747567",
+          "denominator": "330225942528",
+          "numerator": "54632778223"
+        }
+      },
+      {
+        "all_addresses": 4474,
+        "block_count": 3,
+        "irreducible": 3512,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.330496788024902343750000",
+              "denominator": "1048576",
+              "numerator": "346551"
+            },
+            "irreducible": {
+              "decimal": "0.304081916809082031250000",
+              "denominator": "1048576",
+              "numerator": "318853"
+            },
+            "retained_ratio": {
+              "decimal": "0.920075255878644124530011",
+              "denominator": "346551",
+              "numerator": "318853"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.123087981544517641657305",
+              "denominator": "531441",
+              "numerator": "65414"
+            },
+            "irreducible": {
+              "decimal": "0.112876750821508565077465",
+              "denominator": "1594323",
+              "numerator": "179962"
+            },
+            "retained_ratio": {
+              "decimal": "0.917041204227433474995159",
+              "denominator": "98121",
+              "numerator": "89981"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.005926515578717581986112",
+              "denominator": "185752092672",
+              "numerator": "1100862671"
+            },
+            "irreducible": {
+              "decimal": "0.005908385300545923148591",
+              "denominator": "1671768834048",
+              "numerator": "9877454405"
+            },
+            "retained_ratio": {
+              "decimal": "0.996940819958903746758881",
+              "denominator": "9907764039",
+              "numerator": "9877454405"
+            }
+          }
+        },
+        "rewrite_reducible": 962,
+        "scaled_endpoint_mass": {
+          "decimal": "0.380959034022591407136446",
+          "denominator": "236196",
+          "numerator": "89981"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.067300201314030905864421",
+          "denominator": "146767085568",
+          "numerator": "9877454405"
+        }
+      },
+      {
+        "all_addresses": 4424,
+        "block_count": 4,
+        "irreducible": 3500,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.222442626953125000000000",
+              "denominator": "32768",
+              "numerator": "7289"
+            },
+            "irreducible": {
+              "decimal": "0.202427864074707031250000",
+              "denominator": "1048576",
+              "numerator": "212261"
+            },
+            "retained_ratio": {
+              "decimal": "0.910022808341336260117986",
+              "denominator": "233248",
+              "numerator": "212261"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.059300405250379000992898",
+              "denominator": "1594323",
+              "numerator": "94544"
+            },
+            "irreducible": {
+              "decimal": "0.053907520621605534135806",
+              "denominator": "1594323",
+              "numerator": "85946"
+            },
+            "retained_ratio": {
+              "decimal": "0.909058216280250465391775",
+              "denominator": "47272",
+              "numerator": "42973"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.001072503917696864907550",
+              "denominator": "26121388032",
+              "numerator": "28015291"
+            },
+            "irreducible": {
+              "decimal": "0.001068297559223861997871",
+              "denominator": "1671768834048",
+              "numerator": "1785946565"
+            },
+            "retained_ratio": {
+              "decimal": "0.996078001764286510534551",
+              "denominator": "1792978624",
+              "numerator": "1785946565"
+            }
+          }
+        },
+        "rewrite_reducible": 924,
+        "scaled_endpoint_mass": {
+          "decimal": "0.272906823146878016562516",
+          "denominator": "157464",
+          "numerator": "42973"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.027379297992452181906367",
+          "denominator": "65229815808",
+          "numerator": "1785946565"
+        }
+      },
+      {
+        "all_addresses": 3492,
+        "block_count": 5,
+        "irreducible": 2876,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.146083831787109375000000",
+              "denominator": "262144",
+              "numerator": "38295"
+            },
+            "irreducible": {
+              "decimal": "0.132366180419921875000000",
+              "denominator": "262144",
+              "numerator": "34699"
+            },
+            "retained_ratio": {
+              "decimal": "0.906097401749575662619141",
+              "denominator": "38295",
+              "numerator": "34699"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.027621755441024183932616",
+              "denominator": "1594323",
+              "numerator": "44038"
+            },
+            "irreducible": {
+              "decimal": "0.025082746720708413539791",
+              "denominator": "531441",
+              "numerator": "13330"
+            },
+            "retained_ratio": {
+              "decimal": "0.908079385984831282074572",
+              "denominator": "22019",
+              "numerator": "19995"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000194086936777219419700",
+              "denominator": "139314069504",
+              "numerator": "27039041"
+            },
+            "irreducible": {
+              "decimal": "0.000193171695406021523321",
+              "denominator": "139314069504",
+              "numerator": "26911535"
+            },
+            "retained_ratio": {
+              "decimal": "0.995284374175844476140999",
+              "denominator": "27039041",
+              "numerator": "26911535"
+            }
+          }
+        },
+        "rewrite_reducible": 616,
+        "scaled_endpoint_mass": {
+          "decimal": "0.190472107910379515317787",
+          "denominator": "34992",
+          "numerator": "6665"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.011139253361357582939996",
+          "denominator": "2415919104",
+          "numerator": "26911535"
+        }
+      },
+      {
+        "all_addresses": 2488,
+        "block_count": 6,
+        "irreducible": 2087,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.092861175537109375000000",
+              "denominator": "262144",
+              "numerator": "24343"
+            },
+            "irreducible": {
+              "decimal": "0.084217071533203125000000",
+              "denominator": "262144",
+              "numerator": "22077"
+            },
+            "retained_ratio": {
+              "decimal": "0.906913691821057388160868",
+              "denominator": "2213",
+              "numerator": "2007"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.012336270630229884408617",
+              "denominator": "531441",
+              "numerator": "6556"
+            },
+            "irreducible": {
+              "decimal": "0.011231726569835597930909",
+              "denominator": "531441",
+              "numerator": "5969"
+            },
+            "retained_ratio": {
+              "decimal": "0.910463697376449054301403",
+              "denominator": "6556",
+              "numerator": "5969"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000035122274565811250684",
+              "denominator": "46438023168",
+              "numerator": "1631009"
+            },
+            "irreducible": {
+              "decimal": "0.000034931152448032360365",
+              "denominator": "139314069504",
+              "numerator": "4866401"
+            },
+            "retained_ratio": {
+              "decimal": "0.994558378688693113690155",
+              "denominator": "4893027",
+              "numerator": "4866401"
+            }
+          }
+        },
+        "rewrite_reducible": 401,
+        "scaled_endpoint_mass": {
+          "decimal": "0.127936385459533607681756",
+          "denominator": "46656",
+          "numerator": "5969"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.004532189108431339263916",
+          "denominator": "1073741824",
+          "numerator": "4866401"
+        }
+      },
+      {
+        "all_addresses": 1352,
+        "block_count": 7,
+        "irreducible": 1107,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.056051254272460937500000",
+              "denominator": "524288",
+              "numerator": "29387"
+            },
+            "irreducible": {
+              "decimal": "0.050951004028320312500000",
+              "denominator": "524288",
+              "numerator": "26713"
+            },
+            "retained_ratio": {
+              "decimal": "0.909007384217511144383571",
+              "denominator": "29387",
+              "numerator": "26713"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.005168337908943168981442",
+              "denominator": "1594323",
+              "numerator": "8240"
+            },
+            "irreducible": {
+              "decimal": "0.004733670655193458289192",
+              "denominator": "1594323",
+              "numerator": "7547"
+            },
+            "retained_ratio": {
+              "decimal": "0.915898058252427184466019",
+              "denominator": "8240",
+              "numerator": "7547"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000006354853484303540398",
+              "denominator": "278628139008",
+              "numerator": "1770641"
+            },
+            "irreducible": {
+              "decimal": "0.000006316147175941925076",
+              "denominator": "835884417024",
+              "numerator": "5279569"
+            },
+            "retained_ratio": {
+              "decimal": "0.993909173758731065943539",
+              "denominator": "5311923",
+              "numerator": "5279569"
+            }
+          }
+        },
+        "rewrite_reducible": 245,
+        "scaled_endpoint_mass": {
+          "decimal": "0.080879200960219478737997",
+          "denominator": "93312",
+          "numerator": "7547"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.001843868172727525234222",
+          "denominator": "8589934592",
+          "numerator": "15838707"
+        }
+      },
+      {
+        "all_addresses": 739,
+        "block_count": 8,
+        "irreducible": 631,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.032043457031250000000000",
+              "denominator": "16384",
+              "numerator": "525"
+            },
+            "irreducible": {
+              "decimal": "0.029541015625000000000000",
+              "denominator": "4096",
+              "numerator": "121"
+            },
+            "retained_ratio": {
+              "decimal": "0.921904761904761904761905",
+              "denominator": "525",
+              "numerator": "484"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.002062944585256563444170",
+              "denominator": "1594323",
+              "numerator": "3289"
+            },
+            "irreducible": {
+              "decimal": "0.001919937177096485467499",
+              "denominator": "1594323",
+              "numerator": "3061"
+            },
+            "retained_ratio": {
+              "decimal": "0.930678017634539373669808",
+              "denominator": "3289",
+              "numerator": "3061"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000001149096669871788841",
+              "denominator": "408146688",
+              "numerator": "469"
+            },
+            "irreducible": {
+              "decimal": "0.000001141554957319658564",
+              "denominator": "26121388032",
+              "numerator": "29819"
+            },
+            "retained_ratio": {
+              "decimal": "0.993436833688699360341151",
+              "denominator": "30016",
+              "numerator": "29819"
+            }
+          }
+        },
+        "rewrite_reducible": 108,
+        "scaled_endpoint_mass": {
+          "decimal": "0.049205889917695473251029",
+          "denominator": "62208",
+          "numerator": "3061"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.000749819912016391754150",
+          "denominator": "1073741824",
+          "numerator": "805113"
+        }
+      },
+      {
+        "all_addresses": 418,
+        "block_count": 9,
+        "irreducible": 373,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.017562866210937500000000",
+              "denominator": "65536",
+              "numerator": "1151"
+            },
+            "irreducible": {
+              "decimal": "0.016464233398437500000000",
+              "denominator": "65536",
+              "numerator": "1079"
+            },
+            "retained_ratio": {
+              "decimal": "0.937445699391833188531712",
+              "denominator": "1151",
+              "numerator": "1079"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.000767723980648839664234",
+              "denominator": "177147",
+              "numerator": "136"
+            },
+            "irreducible": {
+              "decimal": "0.000728208775762502328575",
+              "denominator": "59049",
+              "numerator": "43"
+            },
+            "retained_ratio": {
+              "decimal": "0.948529411764705882352941",
+              "denominator": "136",
+              "numerator": "129"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000000207330100275124614",
+              "denominator": "11609505792",
+              "numerator": "2407"
+            },
+            "irreducible": {
+              "decimal": "0.000000205951919301131264",
+              "denominator": "3869835264",
+              "numerator": "797"
+            },
+            "retained_ratio": {
+              "decimal": "0.993352721229746572496884",
+              "denominator": "2407",
+              "numerator": "2391"
+            }
+          }
+        },
+        "rewrite_reducible": 45,
+        "scaled_endpoint_mass": {
+          "decimal": "0.027994791666666666666667",
+          "denominator": "1536",
+          "numerator": "43"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.000304374669212847948074",
+          "denominator": "17179869184",
+          "numerator": "5229117"
+        }
+      },
+      {
+        "all_addresses": 196,
+        "block_count": 10,
+        "irreducible": 186,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.008605957031250000000000",
+              "denominator": "16384",
+              "numerator": "141"
+            },
+            "irreducible": {
+              "decimal": "0.008300781250000000000000",
+              "denominator": "2048",
+              "numerator": "17"
+            },
+            "retained_ratio": {
+              "decimal": "0.964539007092198581560284",
+              "denominator": "141",
+              "numerator": "136"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.000245872385959432310768",
+              "denominator": "1594323",
+              "numerator": "392"
+            },
+            "irreducible": {
+              "decimal": "0.000239600131215569241615",
+              "denominator": "1594323",
+              "numerator": "382"
+            },
+            "retained_ratio": {
+              "decimal": "0.974489795918367346938776",
+              "denominator": "196",
+              "numerator": "191"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000000037019472273654711",
+              "denominator": "26121388032",
+              "numerator": "967"
+            },
+            "irreducible": {
+              "decimal": "0.000000036828058249488968",
+              "denominator": "13060694016",
+              "numerator": "481"
+            },
+            "retained_ratio": {
+              "decimal": "0.994829369183040330920372",
+              "denominator": "967",
+              "numerator": "962"
+            }
+          }
+        },
+        "rewrite_reducible": 10,
+        "scaled_endpoint_mass": {
+          "decimal": "0.013816550925925925925926",
+          "denominator": "13824",
+          "numerator": "191"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.000122462748549878597260",
+          "denominator": "8589934592",
+          "numerator": "1051947"
+        }
+      },
+      {
+        "all_addresses": 67,
+        "block_count": 11,
+        "irreducible": 67,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.003509521484375000000000",
+              "denominator": "32768",
+              "numerator": "115"
+            },
+            "irreducible": {
+              "decimal": "0.003509521484375000000000",
+              "denominator": "32768",
+              "numerator": "115"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.000060840871015471770777",
+              "denominator": "1594323",
+              "numerator": "97"
+            },
+            "irreducible": {
+              "decimal": "0.000060840871015471770777",
+              "denominator": "1594323",
+              "numerator": "97"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000000006335804199886096",
+              "denominator": "52242776064",
+              "numerator": "331"
+            },
+            "irreducible": {
+              "decimal": "0.000000006335804199886096",
+              "denominator": "52242776064",
+              "numerator": "331"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          }
+        },
+        "rewrite_reducible": 0,
+        "scaled_endpoint_mass": {
+          "decimal": "0.005262586805555555555556",
+          "denominator": "18432",
+          "numerator": "97"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.000047403395001310855150",
+          "denominator": "137438953472",
+          "numerator": "6515073"
+        }
+      },
+      {
+        "all_addresses": 13,
+        "block_count": 12,
+        "irreducible": 13,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.000976562500000000000000",
+              "denominator": "1024",
+              "numerator": "1"
+            },
+            "irreducible": {
+              "decimal": "0.000976562500000000000000",
+              "denominator": "1024",
+              "numerator": "1"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.000009408382115794603728",
+              "denominator": "531441",
+              "numerator": "5"
+            },
+            "irreducible": {
+              "decimal": "0.000009408382115794603728",
+              "denominator": "531441",
+              "numerator": "5"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000000000918787315995567",
+              "denominator": "1088391168",
+              "numerator": "1"
+            },
+            "irreducible": {
+              "decimal": "0.000000000918787315995567",
+              "denominator": "1088391168",
+              "numerator": "1"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          }
+        },
+        "rewrite_reducible": 0,
+        "scaled_endpoint_mass": {
+          "decimal": "0.001220703125000000000000",
+          "denominator": "4096",
+          "numerator": "5"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.000015466968761757016182",
+          "denominator": "34359738368",
+          "numerator": "531441"
+        }
+      },
+      {
+        "all_addresses": 1,
+        "block_count": 13,
+        "irreducible": 1,
+        "masses": {
+          "kappa": {
+            "all": {
+              "decimal": "0.000122070312500000000000",
+              "denominator": "8192",
+              "numerator": "1"
+            },
+            "irreducible": {
+              "decimal": "0.000122070312500000000000",
+              "denominator": "8192",
+              "numerator": "1"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          },
+          "sigma": {
+            "all": {
+              "decimal": "0.000000627225474386306915",
+              "denominator": "1594323",
+              "numerator": "1"
+            },
+            "irreducible": {
+              "decimal": "0.000000627225474386306915",
+              "denominator": "1594323",
+              "numerator": "1"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          },
+          "tau": {
+            "all": {
+              "decimal": "0.000000000076565609666297",
+              "denominator": "13060694016",
+              "numerator": "1"
+            },
+            "irreducible": {
+              "decimal": "0.000000000076565609666297",
+              "denominator": "13060694016",
+              "numerator": "1"
+            },
+            "retained_ratio": {
+              "decimal": "1.000000000000000000000000",
+              "denominator": "1",
+              "numerator": "1"
+            }
+          }
+        },
+        "rewrite_reducible": 0,
+        "scaled_endpoint_mass": {
+          "decimal": "0.000122070312500000000000",
+          "denominator": "8192",
+          "numerator": "1"
+        },
+        "scaled_two_sided_mass": {
+          "decimal": "0.000002900056642829440534",
+          "denominator": "549755813888",
+          "numerator": "1594323"
+        }
+      }
+    ],
+    "reducible_address_count": 5887,
+    "repository_status": "VERIFIED_FINITE",
+    "rewrite_k_distribution": {
+      "1": 5887,
+      "2": 58,
+      "3": 4
+    },
+    "rewrite_m_range": [
+      1,
+      7
+    ],
+    "rewrite_m_sign_distribution": {
+      "positive": 5949
+    },
+    "rewrite_rows_sha256": "84eead61870aa32defcd9ceee78ae2cec600041940cbdcd8ffe1c8daa63c49cc",
+    "scope": {
+      "block_counts": [
+        1,
+        13
+      ],
+      "maximum_total_Q": 13,
+      "ordering_for_minimum": [
+        "total Q",
+        "larger L",
+        "smaller L",
+        "larger block count",
+        "smaller block count",
+        "lexicographic forward words"
+      ]
+    }
+  },
+  "format": "collatz-phase14-rewrite-search-v1",
+  "interpretation_boundary": {
+    "asymptotic_irreducible_pressure": "OPEN",
+    "general_confluence": "OPEN",
+    "transfer_operator": "No finite closed transfer operator is accepted; right closure alone changes a finite prefix mass, not an asymptotic exponent."
+  },
+  "proves_collatz": false
+}

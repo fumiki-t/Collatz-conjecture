@@ -611,6 +611,40 @@ address masses is not automatically a union measure.
 **Evidence.** [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md),
 `artifacts/phase13_residue_audit.json`, and the independent Phase 13 verifier.
 
+## Phase 14 — coalescent equivalence as a two-sided quotient
+
+**Status:** `REFUTED` (NG24)
+
+**Exact hypothesis.** Equality of the canonical endpoint state `(Q,r3)` is
+preserved when the same renewal block is concatenated on either side, so a
+coalescent class alone supplies a closed block transfer operator.
+
+**Why it looked plausible.** If two words reach the same endpoint, appending
+the same future word plainly preserves coalescence. The complete `Q<=13`
+graph also has one finite normal form in every endpoint class.
+
+**Smallest counterexample.** The minimum collision is
+
+```text
+11101 ~ 111100, endpoint residue 20 modulo 3^4.
+```
+
+After prefixing both by the renewal block `110`, the endpoint residues become
+263 and 587 modulo `3^6`, respectively. They are no longer coalescent.
+
+**Failure scope.** Fundamental for a state containing only the current
+coalescent endpoint class and treating block composition as two-sided. It
+does not refute the exact right-ideal statement in P82 or a larger state that
+retains the missing 3-adic lift/carry and affine data.
+
+**Weaker statement retained.** Appending the same right suffix preserves every
+P81 rewrite exactly. The `Q<=13` finite graph terminates and is confluent, but
+no all-depth confluence or asymptotic pressure theorem follows.
+
+**Evidence.** [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md),
+`artifacts/phase14_coalescent_theory.json`, and the independent Phase 14
+verifier.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
