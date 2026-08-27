@@ -1,1 +1,7 @@
-AUDIT_HASHES_PENDING
+39d85595707be8166e6444c16c4a0695e54f913d3c75f229e2819d0748f1c5b6  REPORT.md
+08b35a569e1daf1c65e249a85ee4ea697195c236ff63100eb859ceff0ad7a77c  PROVENANCE.md
+def53417cfe9c02e9d82e61c09e8423d16ad255aaf1c8f4a939bf49d0161a8ef  ../../../docs/RESEARCH_SYNTHESIS.md
+a1c7cf233f1d824b0b7f9bb6f07bad006222dd3aa33e4e4ad422d27fc2217cbb  ../../../README.md
+a92369c5ff8b65bd635e16e43977da0bbd17021dd11fc7833b809b696846127c  ../../../research/registry.json
+ca7a1f64f56ee96fd98f2317cb1482060cac9473348b8ef76188068be0226d6d  ../../../research/claims-index.json
+cb61f036bcfc9b6a16a450e052e5d10f1a3ebdc02b84d91495d897ddd691d292  ../../../scripts/check_markdown_links.py
