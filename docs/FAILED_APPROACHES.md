@@ -4,6 +4,10 @@ Failures are retained as research assets. Each entry states the precise scope
 that failed; it must not be read as a theorem excluding every possible
 strengthening of the idea.
 
+The cross-phase lesson map is in
+[`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md#6-failed-mechanisms-and-surviving-lessons).
+This file remains the detailed canonical failure archive.
+
 ## NG01 — Local parity exchange `01 <-> 10`
 
 **Status:** `REFUTED`

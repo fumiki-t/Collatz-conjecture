@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 from scripts.build_claim_index import build_index
+from scripts.check_markdown_links import audit_markdown
 from scripts.research_health import load_registry, validate_experiment_manifest
 
 
@@ -60,6 +61,7 @@ def test_registry_matches_context_and_claim_sources() -> None:
     assert registry["repository"]["status"] == "OPEN"
     assert registry["repository"]["proves_collatz"] is False
     assert registry["repository"]["claim_source"] == "docs/CLAIMS_LEDGER.md"
+    assert "docs/RESEARCH_SYNTHESIS.md" in registry["canonical_documents"]
     obligations = registry["active_obligations"]
     assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "C03", "C04", "C05"}
     for row in obligations:
@@ -115,3 +117,17 @@ def test_experiment_contract_rejects_overclaim_and_missing_family() -> None:
     bad_hash["recorded_result"]["manifest_sha256"] = "0" * 64
     errors = validate_experiment_manifest(root, bad_hash, claim_map, required)
     assert any("manifest hash mismatch" in error for error in errors)
+
+
+def test_markdown_audit_rejects_missing_and_private_targets(tmp_path: Path) -> None:
+    good = tmp_path / "good.md"
+    target = tmp_path / "target.md"
+    target.write_text("# Target\n", encoding="utf-8")
+    good.write_text("[target](target.md)\n", encoding="utf-8")
+    assert audit_markdown(tmp_path, [good]) == []
+
+    bad = tmp_path / "bad.md"
+    bad.write_text("[missing](nope.md)\n`/Users/example/private`\n", encoding="utf-8")
+    errors = audit_markdown(tmp_path, [bad])
+    assert any("missing local link target" in error for error in errors)
+    assert any("private or local-only path" in error for error in errors)

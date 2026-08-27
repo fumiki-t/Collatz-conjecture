@@ -4,6 +4,10 @@ The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
 
+The global branch map and uniform Phase 1–13 terminology are in
+[`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md). This file remains the
+operational ranking; the synthesis remains the orientation layer.
+
 ## P0 — Eventual critical-prefix barrier
 
 **Target.** Prove `M(K_q-1) > H_q` for all sufficiently large `q`.

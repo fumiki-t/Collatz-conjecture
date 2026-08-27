@@ -26,7 +26,13 @@ ALLOWED_STATUSES = {
     "RETRACTED",
     "OPEN",
 }
-NAVIGATION_FILES = (Path("README.md"), Path("docs/INDEX.md"), Path("docs/HANDOFF.md"), Path("docs/AI_RESEARCH_GUIDE.md"))
+NAVIGATION_FILES = (
+    Path("README.md"),
+    Path("docs/INDEX.md"),
+    Path("docs/RESEARCH_SYNTHESIS.md"),
+    Path("docs/HANDOFF.md"),
+    Path("docs/AI_RESEARCH_GUIDE.md"),
+)
 REGISTRY_PATH = Path("research/registry.json")
 EXPERIMENT_REQUIRED_KEYS = {
     "schema_version",
@@ -170,6 +176,21 @@ def navigation_audit(root: Path, phase: int) -> list[str]:
         elif marker not in path.read_text(encoding="utf-8"):
             errors.append(f"{relative} does not mention {marker}")
     return errors
+
+
+def markdown_audit(root: Path) -> list[str]:
+    completed = subprocess.run(
+        [sys.executable, "scripts/check_markdown_links.py"],
+        cwd=root,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if completed.returncode == 0:
+        return []
+    return [row for row in completed.stdout.splitlines() if row] or [
+        completed.stderr.strip() or "Markdown link audit failed"
+    ]
 
 
 def load_registry(root: Path) -> dict[str, object]:
@@ -453,6 +474,7 @@ def run(root: Path, strict: bool = False) -> dict[str, object]:
         claim_errors
         + manifest_errors
         + navigation_audit(root, phase)
+        + markdown_audit(root)
         + registry_errors
         + claim_index_audit(root, claim_map)
         + experiment_errors

@@ -1027,3 +1027,29 @@ Its coherent 2-adic source is not known to be a positive ordinary integer.
 Phase 13 does not prove either anti-concentration premise, does not prove H72,
 does not eliminate nontrivial cycles, and does not prove or disprove the
 Collatz conjecture. `proves_collatz=false`.
+
+## 26. Research synthesis and repository integrity audit
+
+**Branch:** `docs/research-synthesis-through-phase13`
+
+The 2026-08-27 synthesis audit added
+[`docs/RESEARCH_SYNTHESIS.md`](docs/RESEARCH_SYNTHESIS.md) as a single
+self-contained map over Phases 1–13. It defines conventions, distinguishes the
+P54/H54 and EXT07/P74/H72 routes, keeps nontrivial cycles separate, classifies
+the local scratch inventory, and links every detail back to the existing
+claims ledger, phase reports, audits, literature, and failure archive.
+
+No mathematical claim status changed. X02's evidence row gained a direct
+primary-source literature pointer and an updated audit date; its statement and
+`EXTERNAL_EVIDENCE` status are unchanged. The live source still reported the
+completed boundary `2075*2^60` at audit time.
+
+The audit also added a public Markdown link/private-path checker to the
+research health gate and updated CI to run the latest Phase 13 tamper tests.
+This is repository integrity work, not a new mathematics phase.
+
+### What this result does not prove
+
+The synthesis does not validate a new theorem, resolve H54/H70/H72/C03/C04/C05,
+exclude nontrivial cycles, or prove or disprove Collatz.
+`proves_collatz=false`.

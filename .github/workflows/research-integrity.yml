@@ -27,11 +27,13 @@ jobs:
         run: python scripts/research_health.py --strict
       - name: Check generated claims index
         run: python scripts/build_claim_index.py --check
+      - name: Check public Markdown links and paths
+        run: python scripts/check_markdown_links.py
       - name: Run control-plane and latest tamper tests
         run: >-
           python -m pytest -q
           tests/test_research_health.py
-          tests/test_phase12_verifier.py
+          tests/test_phase13_verifier.py
       - name: Verify tracked artifact manifest
         working-directory: artifacts
         run: sha256sum --check SHA256SUMS

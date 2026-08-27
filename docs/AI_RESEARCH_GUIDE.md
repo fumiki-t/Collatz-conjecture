@@ -7,12 +7,14 @@ audit is the latest research layer.
 
 ## Read in this order
 
-1. [`STATUS.md`](STATUS.md) — current mathematical state.
-2. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
-3. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
+1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
+   branch map, Phase 1–13 evidence boundaries, and current obligations.
+2. [`STATUS.md`](STATUS.md) — current mathematical state.
+3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
+4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
-4. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-5. [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md), then its inputs:
+5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
+6. [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md), then its inputs:
    [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md), the accompanying
    [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md),
    [`../PHASE11_RUN_RESULTS.md`](../PHASE11_RUN_RESULTS.md), and the earlier
@@ -20,7 +22,7 @@ audit is the latest research layer.
    [`../PHASE10_RUN_RESULTS.md`](../PHASE10_RUN_RESULTS.md),
    [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md), and
    [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md).
-6. [`../AGENTS.md`](../AGENTS.md) — mandatory exact-arithmetic and proof-claim
+7. [`../AGENTS.md`](../AGENTS.md) — mandatory exact-arithmetic and proof-claim
    protocol.
 
 Run this before changing research code:
@@ -29,8 +31,9 @@ Run this before changing research code:
 .venv/bin/python scripts/research_health.py
 ```
 
-It checks navigation freshness, claim-label uniqueness, tracked artifact
-hashes, active claim statuses, and the latest supplemental verifier boundary.
+It checks navigation freshness, public Markdown links/private paths,
+claim-label uniqueness, tracked artifact hashes, active claim statuses, and
+the latest supplemental verifier boundary.
 From a clean acceptance worktree use `--strict`; this additionally rejects
 untracked files under `artifacts/`. Existing local exploratory files are
 reported as warnings in non-strict mode so they are not silently confused with
@@ -186,6 +189,7 @@ Before handing off a meaningful result:
 ```bash
 .venv/bin/python -m pytest -q
 .venv/bin/python scripts/build_claim_index.py --check
+.venv/bin/python scripts/check_markdown_links.py
 .venv/bin/python scripts/hash_artifacts.py artifacts \
   --write artifacts/SHA256SUMS
 .venv/bin/python scripts/research_health.py --strict

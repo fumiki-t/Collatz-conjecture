@@ -1,7 +1,8 @@
 # Research handoff
 
-Read this file first. It is a compact orientation for a technically competent
-researcher or AI continuing the project without the original chat.
+Read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) first for the complete
+map. This file is the compact ten-minute orientation for a technically
+competent researcher or AI continuing the project without the original chat.
 
 ## 1. Safety boundary
 
@@ -211,6 +212,8 @@ From the repository root:
   --artifact-dir artifacts --output /tmp/collatz_phase12_verifier.json
 .venv/bin/python verifier/verify_phase13.py \
   --artifact-dir artifacts --output /tmp/collatz_phase13_verifier.json
+.venv/bin/python scripts/build_claim_index.py --check
+.venv/bin/python scripts/check_markdown_links.py
 .venv/bin/python scripts/research_health.py
 shasum -a 256 artifacts/SHA256SUMS
 ```
@@ -228,6 +231,12 @@ Before changing a claim status, read its row in
 [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md), its failure history in
 [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md), and any external dependency in
 [`LITERATURE.md`](LITERATURE.md).
+
+The current local `scratch/` inventory is superseded by the accepted
+Garcia--Tal and Phase 13 audits; it is not accepted evidence. No post-Phase-13
+unverified mathematical candidate was found by the 2026-08-27 synthesis
+audit. See the scratch index in
+[`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md#10-scratch-index).
 
 ## If you only remember one thing
 

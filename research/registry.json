@@ -10,6 +10,7 @@
   "canonical_documents": [
     "README.md",
     "AGENTS.md",
+    "docs/RESEARCH_SYNTHESIS.md",
     "docs/INDEX.md",
     "docs/STATUS.md",
     "docs/CLAIMS_LEDGER.md",

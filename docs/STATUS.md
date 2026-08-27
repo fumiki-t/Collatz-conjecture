@@ -1,9 +1,12 @@
 # Current research status
 
-**Last updated:** 2026-08-26
+**Last updated:** 2026-08-27
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
+
+For the self-contained Phase 1–13 map, conventions, dependency branches, and
+proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
 ## What is currently proved?
 
@@ -52,7 +55,8 @@ disproved by this repository.
 - `OPEN`: H72 asks for an orbit-specific packing improvement strong enough to
   exclude every infinite coefficient-safe tail. NG21 blocks a mod-6-only
   improvement, while NG22 blocks a contradiction from the strengthened
-  analytic conditions plus a general odd 2-adic source alone.
+  analytic conditions plus a general odd 2-adic source alone, and NG23 blocks
+  replacement of deterministic ordinary representatives by raw Haar volume.
 - `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
   sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
   reciprocal orbit summability and an odd permanent-safe tail minimum for

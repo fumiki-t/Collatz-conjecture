@@ -1,6 +1,6 @@
 # Annotated literature
 
-**Metadata last checked:** 2026-08-24. Links below point to publishers, DOI
+**Metadata last checked:** 2026-08-27. Links below point to publishers, DOI
 records, author-hosted copies, or arXiv. An `EXTERNAL_THEOREM` label means the
 result is external to this repository; it does not mean its proof has been
 independently reproduced here.
@@ -359,6 +359,30 @@ repository theorem.
 including `a(26)=1037374`. Phase 7 reproduces selected A100982 terms
 `1,2,7,312455` at `q=1,3,5,17`. The internally verified enumerations do not
 depend on OEIS, and the known sequence identities limit the newness claim.
+
+## Computational verification bound
+
+### Barina convergence-verification project
+
+**Status:** `EXTERNAL_EVIDENCE`; active numerical input X02
+
+David Barina, [“Convergence verification of the Collatz
+problem”](https://pcbarina.fit.vut.cz/), live project status and public source
+code. The related published algorithmic reports include “Improved verification
+limit for the convergence of the Collatz conjecture,” *The Journal of
+Supercomputing* **81** (2025), article 810,
+[DOI 10.1007/s11227-025-07337-0](https://doi.org/10.1007/s11227-025-07337-0).
+
+**Result relevant here.** On 2026-08-27 the live primary status page stated
+that every positive start below `2075*2^60` had been verified to converge and
+that the next block was still in progress.
+
+**Repository role.** X02 uses only the completed lower boundary
+`2075*2^60`. Phase 7 onward checks exact consequences after substituting it,
+but this repository does not reproduce the distributed global computation or
+certify its work-unit provenance. Progress toward `2076*2^60` is not imported
+until the completed boundary changes and is re-audited. No finite verification
+bound proves Collatz.
 
 ## Rotation sums
 

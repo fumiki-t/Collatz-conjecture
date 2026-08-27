@@ -1,13 +1,15 @@
 # Research documentation index
 
 This is the canonical map of the research archive. Start with
-[`HANDOFF.md`](HANDOFF.md) for a short orientation or [`STATUS.md`](STATUS.md)
-for the current state.
+[`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) for the complete map,
+[`HANDOFF.md`](HANDOFF.md) for a short orientation, or
+[`STATUS.md`](STATUS.md) for the current state.
 
 ## Canonical layer
 
 | Document | Role | Update trigger |
 |---|---|---|
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–13, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |

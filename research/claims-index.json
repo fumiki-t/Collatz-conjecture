@@ -368,11 +368,11 @@
       "collatz_implication": "Supplies the numerical scale for the first-crossing/contact certificate.",
       "dependencies": "External exhaustive computation.",
       "dependency_ids": [],
-      "evidence": "Phase 7 specification; isolated in `artifacts/phase7_boundary_defect.json`.",
+      "evidence": "[`LITERATURE.md`](LITERATURE.md#computational-verification-bound); isolated in `artifacts/phase7_boundary_defect.json`.",
       "first_introduced": "Phase 7",
       "id": "X02",
-      "last_audited": "2026-08-22",
-      "notes": "Global computation and provenance are not reproduced here.",
+      "last_audited": "2026-08-27",
+      "notes": "The live project's stated boundary was rechecked; its global computation is not reproduced here.",
       "status": "EXTERNAL_EVIDENCE"
     },
     {
@@ -1157,5 +1157,5 @@
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "b974b46fb8e88dce35ab8f52e328419d00160d6201ad2d997e709b4f8ce50427"
+  "source_sha256": "20578c5a966e399b073f3fb8dee69697a55c0453007e27d0594e755120f3373a"
 }
