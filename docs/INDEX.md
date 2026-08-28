@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–14, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–15, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -41,6 +41,7 @@ This is the canonical map of the research archive. Start with
 | 12 | [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md) | [`../artifacts/phase12_obstruction_report.md`](../artifacts/phase12_obstruction_report.md) | `feat/phase12-infinite-safe-packing` |
 | 13 | [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md) | [`../artifacts/phase13_obstruction_report.md`](../artifacts/phase13_obstruction_report.md) | `feat/phase13-renewal-code-pressure` |
 | 14 | [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md) | [`../artifacts/phase14_obstruction_report.md`](../artifacts/phase14_obstruction_report.md) | `feat/phase14-coalescent-rewrite` |
+| 15 | [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md) | [`../artifacts/phase15_obstruction_report.md`](../artifacts/phase15_obstruction_report.md) | `feat/phase15-surplus-dominance` |
 
 Research supplements:
 
@@ -51,9 +52,10 @@ Research supplements:
 | Garcia--Tal / Phase 12 audit | [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md) | audit-local exact certificate, independent inverse-series verifier, tamper tests, SHA-256 manifest | EXT07 boundary, conditional P74/P75, companion P76, NG22 obstruction, E21 finite audit |
 | Renewal-code pressure audit | [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md) | Phase 13 exact artifacts, independent verifier, tamper tests, SHA-256 manifests | P77--P79 renewal theorems, conditional P80, E22 finite audit, NG23 raw-Haar obstruction |
 | Coalescent rewrite audit | [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md) | Phase 14 exact rewrite/pressure artifacts, independent verifier, tamper tests, SHA-256 manifests | P81--P85 theorems, E23 finite quotient, NG24 left-congruence obstruction, H72 boundary |
+| Surplus-dominance audit | [`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md) | Phase 15 cross-Q frontier, strict-valley, gap-core, adversarial artifacts, independent verifier, tamper tests, SHA-256 manifest | P86--P88 theorems, E24 finite Q<=17 audit, NG25/NG26 obstructions, H72 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 14 and both the branch-point and two-tail
+documentation through Phase 15 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

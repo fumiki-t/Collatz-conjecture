@@ -1,11 +1,11 @@
 # Current research status
 
-**Last updated:** 2026-08-27
+**Last updated:** 2026-08-28
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
 
-For the self-contained Phase 1–14 map, conventions, dependency branches, and
+For the self-contained Phase 1–15 map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
 ## What is currently proved?
@@ -57,6 +57,12 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   universal positive decrement for every nontrivial renewal block. P85 gives
   an eventual reduced-denominator and gcd bound when the octave defect is
   positive; the zero-defect case remains outside P85.
+- `VERIFIED_THEOREM`: P86 strengthens least-source coalescent pruning across
+  different odd counts: a smaller safe path to the same endpoint is forbidden
+  whenever its terminal coefficient is at least the target's. P87 proves the
+  strict-valley suffix extraction that makes unsafe coalescent targets usable,
+  with positivity and source descent checked separately. P88 proves endpoint
+  injectivity for every fixed finite `{1,2}` odd-gap word.
 - `CONDITIONAL`: P80 proves that either a quantified endpoint or two-sided
   canonical-representative anti-concentration estimate would exclude the
   permanent-safe positive branch. Neither estimate is proved.
@@ -154,6 +160,12 @@ No item above proves the Collatz conjecture.
   first-crossing comparisons agree with the independent verifier. The
   all-contact audit reconstructs 512 finite canonical residues, and NG21's
   sharpness regression contains 4,096 coprime-to-6 factors.
+- Phase 15: E24 exhausts every coefficient-safe word and surplus dominator
+  through `Q<=17`, plus every relevant shorter same-Q arbitrary target. At
+  Q=17 there are 663,535 safe words, of which 320,168 are dominated by
+  `Q_b<=Q_d`; all 32,596 safe `{1,2}`-gap words survive that test. Strict-valley
+  extraction adds exactly 12, 90, and 233 reductions at Q=15,16,17 beyond
+  same-Q safe targets. These are cutoff facts, not an asymptotic theorem.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -310,6 +322,13 @@ problem only after the octave defect becomes positive.
 
 ## What was recently refuted?
 
+- `REFUTED`: same-Q safe-target rewrites are complete for surplus dominance
+  (NG25). The Q=1 word `1` maps 273 to the same endpoint 410 reached by
+  `111110100` from 287 and has larger coefficient. A Q=5 ancestor also
+  dominates a Q=4 target.
+- `REFUTED`: an arbitrary coalescent target must itself be safe (NG26). The
+  named unsafe Q=15 word has a strict-valley safe suffix that coalesces from
+  527131 below the safe target source 1874247.
 - `REFUTED`: coalescent endpoint equivalence is a two-sided congruence under
   renewal concatenation. The exact pair `11101~111100` stays equivalent under
   a common suffix, but prefixing both by `110` gives endpoint residues 263 and
@@ -356,9 +375,9 @@ problem only after the octave defect becomes positive.
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can P81's exact right-congruence rewrite be lifted across prefixes with a
-   finite or well-founded carry state that distinguishes the NG24 obstruction
-   and proves eventual reducibility of every positive renewal address?
+2. Can P86/P87 surplus fronts be propagated across Q with a finite or
+   well-founded carry state that distinguishes NG24--NG26 and proves eventual
+   reducibility of every positive renewal address, including the `{1,2}` core?
 3. Can P71's exact per-cylinder margin interval be merged across residue
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
@@ -377,7 +396,7 @@ problem only after the octave defect becomes positive.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
 - Extend P72 only with an orbit-specific transition invariant; test it first
-  against NG21--NG24 and E20/E22/E23 before claiming an exponent or
+  against NG21--NG26 and E20/E22/E23/E24 before claiming an exponent or
   anti-concentration improvement.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
@@ -428,4 +447,5 @@ problem only after the octave defect becomes positive.
 - Phase 12 acceptance: [`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md)
 - Phase 13 acceptance: [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md)
 - Phase 14 acceptance: [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md)
+- Phase 15 acceptance: [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

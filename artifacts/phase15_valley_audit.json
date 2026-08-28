@@ -1,0 +1,189 @@
+{
+  "certificate_digest_sha256": "403c4c1f59d3dd1b133e0c7cb5c7d632d2f08c0576adf8f6796fce50bac3d5c3",
+  "counts_by_Q": {
+    "10": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 1365,
+      "unsafe_words_with_proper_valley": 880
+    },
+    "11": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 6188,
+      "unsafe_words_with_proper_valley": 4497
+    },
+    "12": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 27132,
+      "unsafe_words_with_proper_valley": 21739
+    },
+    "13": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 38760,
+      "unsafe_words_with_proper_valley": 29168
+    },
+    "14": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 170544,
+      "unsafe_words_with_proper_valley": 137148
+    },
+    "15": {
+      "additional_reductions_beyond_same_Q_safe_targets": 12,
+      "arbitrary_shorter_words_examined": 245157,
+      "unsafe_words_with_proper_valley": 187240
+    },
+    "16": {
+      "additional_reductions_beyond_same_Q_safe_targets": 90,
+      "arbitrary_shorter_words_examined": 1081575,
+      "unsafe_words_with_proper_valley": 878070
+    },
+    "17": {
+      "additional_reductions_beyond_same_Q_safe_targets": 233,
+      "arbitrary_shorter_words_examined": 1562275,
+      "unsafe_words_with_proper_valley": 1211195
+    },
+    "4": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 6,
+      "unsafe_words_with_proper_valley": 2
+    },
+    "5": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 7,
+      "unsafe_words_with_proper_valley": 2
+    },
+    "6": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 36,
+      "unsafe_words_with_proper_valley": 18
+    },
+    "7": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 165,
+      "unsafe_words_with_proper_valley": 110
+    },
+    "8": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 220,
+      "unsafe_words_with_proper_valley": 132
+    },
+    "9": {
+      "additional_reductions_beyond_same_Q_safe_targets": 0,
+      "arbitrary_shorter_words_examined": 1001,
+      "unsafe_words_with_proper_valley": 698
+    }
+  },
+  "finite_boundary": "These counts enumerate shorter same-Q arbitrary targets only through the stated Q cutoff.",
+  "format": "collatz-phase15-valley-audit-v1",
+  "least_examples": {
+    "Q15": {
+      "arbitrary_target": {
+        "B": 50128565,
+        "L": 22,
+        "Q": 15,
+        "endpoint": 655652,
+        "source": 191649,
+        "word": "1010110111111011101100"
+      },
+      "target": {
+        "B": 28512595,
+        "L": 23,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 8388608,
+          "numerator": 14348907
+        },
+        "endpoint": 655652,
+        "source": 383303,
+        "word": "11101011111111011000001"
+      },
+      "valley_prefix_length": 4,
+      "valley_source": 107803,
+      "valley_suffix": {
+        "B": 2435519,
+        "L": 18,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 1594323
+        },
+        "endpoint": 655652,
+        "source": 107803,
+        "word": "110111111011101100"
+      }
+    },
+    "Q16": {
+      "arbitrary_target": {
+        "B": 246110519,
+        "L": 24,
+        "Q": 16,
+        "endpoint": 203330,
+        "source": 79241,
+        "word": "101110110001111010111101"
+      },
+      "target": {
+        "B": 104800549,
+        "L": 25,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 33554432,
+          "numerator": 43046721
+        },
+        "endpoint": 203330,
+        "source": 158491,
+        "word": "1101111111010010100111100"
+      },
+      "valley_prefix_length": 11,
+      "valley_source": 28207,
+      "valley_suffix": {
+        "B": 84217,
+        "L": 13,
+        "Q": 10,
+        "coefficient": {
+          "denominator": 8192,
+          "numerator": 59049
+        },
+        "endpoint": 26183,
+        "source": 3631,
+        "word": "1111010111101"
+      }
+    },
+    "Q17": {
+      "arbitrary_target": {
+        "B": 486710365,
+        "L": 25,
+        "Q": 17,
+        "endpoint": 863723,
+        "source": 224417,
+        "word": "1010110111111010110111100"
+      },
+      "target": {
+        "B": 327719915,
+        "L": 26,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 67108864,
+          "numerator": 129140163
+        },
+        "endpoint": 863723,
+        "source": 448839,
+        "word": "11101011111111010001001101"
+      },
+      "valley_prefix_length": 4,
+      "valley_source": 126235,
+      "valley_suffix": {
+        "B": 24141751,
+        "L": 21,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 2097152,
+          "numerator": 14348907
+        },
+        "endpoint": 863723,
+        "source": 126235,
+        "word": "110111111010110111100"
+      }
+    }
+  },
+  "maximum_Q": 17,
+  "proves_collatz": false
+}

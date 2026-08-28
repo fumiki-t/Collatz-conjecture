@@ -1,0 +1,22 @@
+{
+  "family_counts": {
+    "(110|111)^*": 2046,
+    "2^m-1": 22,
+    "8^m-5": 10,
+    "A=11101": 1,
+    "A^rB^s": 64,
+    "B=1100": 1
+  },
+  "format": "collatz-phase15-adversarial-v1",
+  "instance_count": 2144,
+  "prefix_length": 24,
+  "preserved_boundaries": {
+    "NG19": "Literal fixed-gap pairs survive without an ordinary-height bridge.",
+    "NG21": "Mod-6 packing alone cannot improve the Phase 12 exponent.",
+    "NG22": "Formal coherent 2-adic sources need not be positive ordinary integers.",
+    "NG23": "Haar volume does not bound an individual canonical representative.",
+    "NG24": "Left concatenation is not a coalescent congruence."
+  },
+  "proves_collatz": false,
+  "row_digest_sha256": "423b3aa47da1d8fe6e10902c2a9b71ddcbb43ff04d241dea71173fce53dddbef"
+}

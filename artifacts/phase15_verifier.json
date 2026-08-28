@@ -1,0 +1,13 @@
+{
+  "E24": "VERIFIED_FINITE",
+  "H72": "OPEN",
+  "NG25": "REFUTED",
+  "NG26": "REFUTED",
+  "P86": "VERIFIED_THEOREM",
+  "P87": "VERIFIED_THEOREM",
+  "P88": "VERIFIED_THEOREM",
+  "format": "collatz-phase15-verifier-v1",
+  "maximum_Q": 17,
+  "proves_collatz": false,
+  "valid": true
+}

@@ -121,6 +121,13 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   E23 exhausts total odd count `Q<=13`: 30,084 addresses form 24,197 endpoint
   classes and 5,949 positive downward rewrite pairs. NG24 refutes left
   congruence, so endpoint classes alone do not form a closed prefix transfer.
+- Phase 15 proves P86 surplus dominance across different odd counts and P87
+  strict-valley extraction from unsafe coalescent targets. E24 exhausts every
+  safe target and competitor through Q=17 and reproduces 12, 90, and 233 new
+  valley reductions at Q=15,16,17. NG25/NG26 refute same-Q and safe-target
+  completeness. P88 proves finite endpoint injectivity for `{1,2}` odd-gap
+  words; all 32,596 such safe Q=17 words survive `Q_b<=Q_d` dominance, so H72
+  remains open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -170,6 +177,8 @@ P69 counterexample trichotomy
   -> P80 canonical-residue anti-concentration (CONDITIONAL)
   -> P81/P82 least-source irreducibility reduction
   -> P83/P84/P85 threshold, decrement, and height constraints
+  -> P86/P87 cross-Q surplus and strict-valley reduction
+  -> P88/E24 finite {1,2}-gap hard core
   -> H72 (OPEN)
   -> H70 eventual dropping-safe spacing via P70 (OPEN).
 ```
@@ -195,12 +204,14 @@ and confirm its status against `CLAIMS_LEDGER.md`. Register a large experiment
 under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
 
-Good near-term work includes a carry-aware left-extension state for P81,
+Good near-term work includes a cross-Q carry recursion for P86's endpoint
+Pareto frontier,
 inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
 quotient/carry state extending P71, and a positive ordinary-integrality or
 effective shadow-height obstruction extending P75--P85. Start from the stored
 NG19 collisions, universal NG20 pair, both NG22 formal 2-adic sources, NG23's
-raw-volume obstruction, and NG24's left-congruence failure: any proposed merge
+raw-volume obstruction, NG24's left-congruence failure, and the NG25/NG26
+cross-Q/unsafe-target witnesses: any proposed merge
 must distinguish them or prove a sound dominance relation. Certificate
 extension is useful when it tests such structure; raw depth extension is
 secondary.

@@ -1103,3 +1103,42 @@ Phase 14 does not prove rewrite confluence, eventual reducibility, an
 asymptotic irreducible pressure bound, either P80 anti-concentration premise,
 H72, exclusion of nontrivial cycles, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 28. Phase 15 — surplus-dominating ancestors
+
+**Branch:** `feat/phase15-surplus-dominance`
+
+**Acceptance record:** [`PHASE15_RUN_RESULTS.md`](PHASE15_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/surplus-dominance/REPORT.md`](research/audits/surplus-dominance/REPORT.md)
+
+Phase 15 treated the supplied surplus-dominance note as an untrusted proposal.
+P86 proves that a least positive permanent-safe discrepancy-escaping source
+cannot have a smaller safe path to the same endpoint whose terminal
+coefficient is at least the original prefix's. This extends P82 beyond same-Q
+renewal rewrites. P87 proves that an unsafe shorter coalescent target can be
+cut at its unique negative discrepancy valley to obtain a strictly safe
+suffix; positivity and source descent remain separate exact checks. P88 proves
+fixed-Q endpoint injectivity for odd-gap words with every exponent in `{1,2}`.
+
+E24 independently exhausts every coefficient-safe word and every competitor
+through Q=17, plus every relevant shorter same-Q arbitrary target. It
+reproduces the supplied safe-word and lower-Q dominance counts. At Q=17 there
+are 663,535 safe words, with 320,168 dominated by competitors satisfying
+`Q_b<=Q_d`; 343,367 survive. The `{1,2}`-gap layer contains 32,596 safe words,
+all endpoint-distinct and all surviving that lower-or-equal-Q test. Valley
+extraction adds exactly 12, 90, and 233 reductions at Q=15,16,17 beyond
+same-Q safe targets.
+
+NG25 preserves the cross-Q witness `111110100` from source 287 versus the
+one-bit ancestor `1` from 273 at common endpoint 410, refuting same-Q
+completeness. NG26 preserves the Q=15 unsafe target whose strict-valley suffix
+coalesces from 527131 below the safe target source 1874247. These failures
+define the minimum search language for a future all-depth frontier recursion.
+
+### What this result does not prove
+
+Phase 15 does not prove eventual surplus-frontier extinction, persistent
+survival of the finite gap core, either P80 anti-concentration premise, H72,
+exclusion of nontrivial cycles, or the Collatz conjecture.
+`proves_collatz=false`.

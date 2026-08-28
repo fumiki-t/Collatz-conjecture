@@ -115,6 +115,27 @@ bound of at least `x^0.84` integers below `x` whose orbit contains 1.
 does not control a single hypothetical exceptional least counterexample, so it
 does not repair NG12 by itself.
 
+### Stérin (2020; arXiv 2019)
+
+**Status:** `EXTERNAL_THEOREM`; predecessor-language context, not a Phase 15
+proof dependency
+
+Tristan Stérin, “Binary expression of ancestors in the Collatz graph,” in
+*Reachability Problems 2020*; [arXiv:1907.00775v4](https://arxiv.org/abs/1907.00775)
+(submitted 2019, revised 2020; accepted at RP 2020).
+
+**Result relevant here.** For a fixed budget `k` of odd shortcut steps, the
+binary expressions of ancestors of a fixed integer form a regular language.
+The paper constructs a regular expression in time exponential in `k` and
+describes the associated binary carry propagation.
+
+**Repository role.** Phase 15's finite cross-Q source/endpoint enumeration and
+P88's `{1,2}`-gap backward residue decoder overlap the broad predecessor and
+carry-language setting. The repository does not claim novelty for that finite
+encoding. Stérin's result does not provide P86's least-source surplus theorem,
+an ordinary-height anti-concentration estimate, or eventual extinction of the
+H72 frontier, and it is not used to accept P86--P88 or E24.
+
 ## Sufficient sets and modular dynamics
 
 ### Monks, Monks, Monks, and Monks (2013; arXiv 2012)

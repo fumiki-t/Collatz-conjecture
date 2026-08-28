@@ -1,0 +1,1312 @@
+{
+  "certificate_digest_sha256": "7d94107ac27459a09d680c340e265ad60a084dba51f9388d6c493cbe3eadfed4",
+  "counts_by_target_Q": {
+    "1": {
+      "Qb_le_Qd_dominated": 0,
+      "Qb_le_Qd_survivors": 1,
+      "Qb_le_cutoff_dominated": 0,
+      "Qb_le_cutoff_survivors": 1,
+      "safe_words": 1,
+      "same_Q_dominated": 0
+    },
+    "10": {
+      "Qb_le_Qd_dominated": 417,
+      "Qb_le_Qd_survivors": 544,
+      "Qb_le_cutoff_dominated": 690,
+      "Qb_le_cutoff_survivors": 271,
+      "safe_words": 961,
+      "same_Q_dominated": 193
+    },
+    "11": {
+      "Qb_le_Qd_dominated": 1306,
+      "Qb_le_Qd_survivors": 1346,
+      "Qb_le_cutoff_dominated": 1953,
+      "Qb_le_cutoff_survivors": 699,
+      "safe_words": 2652,
+      "same_Q_dominated": 524
+    },
+    "12": {
+      "Qb_le_Qd_dominated": 4419,
+      "Qb_le_Qd_survivors": 3626,
+      "Qb_le_cutoff_dominated": 6086,
+      "Qb_le_cutoff_survivors": 1959,
+      "safe_words": 8045,
+      "same_Q_dominated": 1581
+    },
+    "13": {
+      "Qb_le_Qd_dominated": 8704,
+      "Qb_le_Qd_survivors": 8933,
+      "Qb_le_cutoff_dominated": 12919,
+      "Qb_le_cutoff_survivors": 4718,
+      "safe_words": 17637,
+      "same_Q_dominated": 3428
+    },
+    "14": {
+      "Qb_le_Qd_dominated": 27739,
+      "Qb_le_Qd_survivors": 23294,
+      "Qb_le_cutoff_dominated": 38173,
+      "Qb_le_cutoff_survivors": 12860,
+      "safe_words": 51033,
+      "same_Q_dominated": 9841
+    },
+    "15": {
+      "Qb_le_Qd_dominated": 53041,
+      "Qb_le_Qd_survivors": 55909,
+      "Qb_le_cutoff_dominated": 77839,
+      "Qb_le_cutoff_survivors": 31111,
+      "safe_words": 108950,
+      "same_Q_dominated": 20793
+    },
+    "16": {
+      "Qb_le_Qd_dominated": 167037,
+      "Qb_le_Qd_survivors": 145418,
+      "Qb_le_cutoff_dominated": 215667,
+      "Qb_le_cutoff_survivors": 96788,
+      "safe_words": 312455,
+      "same_Q_dominated": 59191
+    },
+    "17": {
+      "Qb_le_Qd_dominated": 320168,
+      "Qb_le_Qd_survivors": 343367,
+      "Qb_le_cutoff_dominated": 320168,
+      "Qb_le_cutoff_survivors": 343367,
+      "safe_words": 663535,
+      "same_Q_dominated": 124513
+    },
+    "2": {
+      "Qb_le_Qd_dominated": 0,
+      "Qb_le_Qd_survivors": 2,
+      "Qb_le_cutoff_dominated": 0,
+      "Qb_le_cutoff_survivors": 2,
+      "safe_words": 2,
+      "same_Q_dominated": 0
+    },
+    "3": {
+      "Qb_le_Qd_dominated": 0,
+      "Qb_le_Qd_survivors": 3,
+      "Qb_le_cutoff_dominated": 1,
+      "Qb_le_cutoff_survivors": 2,
+      "safe_words": 3,
+      "same_Q_dominated": 0
+    },
+    "4": {
+      "Qb_le_Qd_dominated": 1,
+      "Qb_le_Qd_survivors": 6,
+      "Qb_le_cutoff_dominated": 2,
+      "Qb_le_cutoff_survivors": 5,
+      "safe_words": 7,
+      "same_Q_dominated": 1
+    },
+    "5": {
+      "Qb_le_Qd_dominated": 2,
+      "Qb_le_Qd_survivors": 10,
+      "Qb_le_cutoff_dominated": 8,
+      "Qb_le_cutoff_survivors": 4,
+      "safe_words": 12,
+      "same_Q_dominated": 2
+    },
+    "6": {
+      "Qb_le_Qd_dominated": 10,
+      "Qb_le_Qd_survivors": 20,
+      "Qb_le_cutoff_dominated": 24,
+      "Qb_le_cutoff_survivors": 6,
+      "safe_words": 30,
+      "same_Q_dominated": 6
+    },
+    "7": {
+      "Qb_le_Qd_dominated": 39,
+      "Qb_le_Qd_survivors": 46,
+      "Qb_le_cutoff_dominated": 70,
+      "Qb_le_cutoff_survivors": 15,
+      "safe_words": 85,
+      "same_Q_dominated": 18
+    },
+    "8": {
+      "Qb_le_Qd_dominated": 72,
+      "Qb_le_Qd_survivors": 101,
+      "Qb_le_cutoff_dominated": 127,
+      "Qb_le_cutoff_survivors": 46,
+      "safe_words": 173,
+      "same_Q_dominated": 36
+    },
+    "9": {
+      "Qb_le_Qd_dominated": 234,
+      "Qb_le_Qd_survivors": 242,
+      "Qb_le_cutoff_dominated": 358,
+      "Qb_le_cutoff_survivors": 118,
+      "safe_words": 476,
+      "same_Q_dominated": 98
+    }
+  },
+  "cutoff_boundary": "Qb<=maximum_Q is a finite search cutoff, not an all-depth dominance theorem.",
+  "format": "collatz-phase15-surplus-frontier-v1",
+  "global_pareto_front_size_distribution": {
+    "1": 1166057
+  },
+  "least_certificate_examples": {
+    "global_Q10": {
+      "ancestor": {
+        "B": 208043,
+        "L": 12,
+        "Q": 11,
+        "coefficient": {
+          "denominator": 4096,
+          "numerator": 177147
+        },
+        "endpoint": 54674,
+        "source": 1263,
+        "word": "111101111111"
+      },
+      "ancestor_source_at_target_endpoint": 1263,
+      "target": {
+        "B": 74497,
+        "L": 11,
+        "Q": 10,
+        "coefficient": {
+          "denominator": 2048,
+          "numerator": 59049
+        },
+        "endpoint": 54674,
+        "source": 1895,
+        "word": "11101111111"
+      }
+    },
+    "global_Q11": {
+      "ancestor": {
+        "B": 2286527,
+        "L": 14,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 16384,
+          "numerator": 1594323
+        },
+        "endpoint": 177146,
+        "source": 1819,
+        "word": "11011111111111"
+      },
+      "ancestor_source_at_target_endpoint": 1819,
+      "target": {
+        "B": 175099,
+        "L": 11,
+        "Q": 11,
+        "coefficient": {
+          "denominator": 2048,
+          "numerator": 177147
+        },
+        "endpoint": 177146,
+        "source": 2047,
+        "word": "11111111111"
+      }
+    },
+    "global_Q12": {
+      "ancestor": {
+        "B": 20148979,
+        "L": 17,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 131072,
+          "numerator": 14348907
+        },
+        "endpoint": 347732,
+        "source": 3175,
+        "word": "11101111011111111"
+      },
+      "ancestor_source_at_target_endpoint": 3175,
+      "target": {
+        "B": 628225,
+        "L": 13,
+        "Q": 12,
+        "coefficient": {
+          "denominator": 8192,
+          "numerator": 531441
+        },
+        "endpoint": 347732,
+        "source": 5359,
+        "word": "1111011111111"
+      }
+    },
+    "global_Q13": {
+      "ancestor": {
+        "B": 217897963,
+        "L": 19,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 524288,
+          "numerator": 129140163
+        },
+        "endpoint": 1594322,
+        "source": 6471,
+        "word": "1110101111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 6471,
+      "target": {
+        "B": 1586131,
+        "L": 13,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 8192,
+          "numerator": 1594323
+        },
+        "endpoint": 1594322,
+        "source": 8191,
+        "word": "1111111111111"
+      }
+    },
+    "global_Q14": {
+      "ancestor": {
+        "B": 18534899,
+        "L": 16,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 65536,
+          "numerator": 14348907
+        },
+        "endpoint": 2657204,
+        "source": 12135,
+        "word": "1110111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 12135,
+      "target": {
+        "B": 6875965,
+        "L": 15,
+        "Q": 14,
+        "coefficient": {
+          "denominator": 32768,
+          "numerator": 4782969
+        },
+        "endpoint": 2657204,
+        "source": 18203,
+        "word": "110111111111111"
+      }
+    },
+    "global_Q15": {
+      "ancestor": {
+        "B": 237029839,
+        "L": 19,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 524288,
+          "numerator": 129140163
+        },
+        "endpoint": 11160260,
+        "source": 45307,
+        "word": "1101101111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 45307,
+      "target": {
+        "B": 20660663,
+        "L": 16,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 65536,
+          "numerator": 14348907
+        },
+        "endpoint": 11160260,
+        "source": 50971,
+        "word": "1101111111111111"
+      }
+    },
+    "global_Q16": {
+      "ancestor": {
+        "B": 167141771,
+        "L": 18,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 129140163
+        },
+        "endpoint": 38263751,
+        "source": 77671,
+        "word": "111011111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 77671,
+      "target": {
+        "B": 62047525,
+        "L": 17,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 131072,
+          "numerator": 43046721
+        },
+        "endpoint": 38263751,
+        "source": 116507,
+        "word": "11011111111111111"
+      }
+    },
+    "global_Q17": {
+      "ancestor": {
+        "B": 167141771,
+        "L": 18,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 129140163
+        },
+        "endpoint": 38263751,
+        "source": 77671,
+        "word": "111011111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 77671,
+      "target": {
+        "B": 205143379,
+        "L": 19,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 524288,
+          "numerator": 129140163
+        },
+        "endpoint": 38263751,
+        "source": 155343,
+        "word": "1111001111111111111"
+      }
+    },
+    "global_Q3": {
+      "ancestor": {
+        "B": 73,
+        "L": 5,
+        "Q": 4,
+        "coefficient": {
+          "denominator": 32,
+          "numerator": 81
+        },
+        "endpoint": 20,
+        "source": 7,
+        "word": "11101"
+      },
+      "ancestor_source_at_target_endpoint": 7,
+      "target": {
+        "B": 23,
+        "L": 4,
+        "Q": 3,
+        "coefficient": {
+          "denominator": 16,
+          "numerator": 27
+        },
+        "endpoint": 20,
+        "source": 11,
+        "word": "1101"
+      }
+    },
+    "global_Q4": {
+      "ancestor": {
+        "B": 251,
+        "L": 7,
+        "Q": 5,
+        "coefficient": {
+          "denominator": 128,
+          "numerator": 243
+        },
+        "endpoint": 76,
+        "source": 39,
+        "word": "1110110"
+      },
+      "ancestor_source_at_target_endpoint": 39,
+      "target": {
+        "B": 85,
+        "L": 6,
+        "Q": 4,
+        "coefficient": {
+          "denominator": 64,
+          "numerator": 81
+        },
+        "endpoint": 76,
+        "source": 59,
+        "word": "110110"
+      }
+    },
+    "global_Q5": {
+      "ancestor": {
+        "B": 2903,
+        "L": 8,
+        "Q": 7,
+        "coefficient": {
+          "denominator": 256,
+          "numerator": 2187
+        },
+        "endpoint": 242,
+        "source": 27,
+        "word": "11011111"
+      },
+      "ancestor_source_at_target_endpoint": 27,
+      "target": {
+        "B": 211,
+        "L": 5,
+        "Q": 5,
+        "coefficient": {
+          "denominator": 32,
+          "numerator": 243
+        },
+        "endpoint": 242,
+        "source": 31,
+        "word": "11111"
+      }
+    },
+    "global_Q6": {
+      "ancestor": {
+        "B": 81349669,
+        "L": 21,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 2097152,
+          "numerator": 43046721
+        },
+        "endpoint": 593,
+        "source": 27,
+        "word": "110111110101101110111"
+      },
+      "ancestor_source_at_target_endpoint": 27,
+      "target": {
+        "B": 817,
+        "L": 7,
+        "Q": 6,
+        "coefficient": {
+          "denominator": 128,
+          "numerator": 729
+        },
+        "endpoint": 593,
+        "source": 103,
+        "word": "1110111"
+      }
+    },
+    "global_Q7": {
+      "ancestor": {
+        "B": 246146159,
+        "L": 22,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 4194304,
+          "numerator": 129140163
+        },
+        "endpoint": 890,
+        "source": 27,
+        "word": "1101111101011011101111"
+      },
+      "ancestor_source_at_target_endpoint": 27,
+      "target": {
+        "B": 2579,
+        "L": 8,
+        "Q": 7,
+        "coefficient": {
+          "denominator": 256,
+          "numerator": 2187
+        },
+        "endpoint": 890,
+        "source": 103,
+        "word": "11101111"
+      }
+    },
+    "global_Q8": {
+      "ancestor": {
+        "B": 713345,
+        "L": 14,
+        "Q": 12,
+        "coefficient": {
+          "denominator": 16384,
+          "numerator": 531441
+        },
+        "endpoint": 3644,
+        "source": 111,
+        "word": "11110110111111"
+      },
+      "ancestor_source_at_target_endpoint": 111,
+      "target": {
+        "B": 8965,
+        "L": 9,
+        "Q": 8,
+        "coefficient": {
+          "denominator": 512,
+          "numerator": 6561
+        },
+        "endpoint": 3644,
+        "source": 283,
+        "word": "110111111"
+      }
+    },
+    "global_Q9": {
+      "ancestor": {
+        "B": 62040785,
+        "L": 20,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 1048576,
+          "numerator": 43046721
+        },
+        "endpoint": 4616,
+        "source": 111,
+        "word": "11110110111111001111"
+      },
+      "ancestor_source_at_target_endpoint": 111,
+      "target": {
+        "B": 22547,
+        "L": 10,
+        "Q": 9,
+        "coefficient": {
+          "denominator": 1024,
+          "numerator": 19683
+        },
+        "endpoint": 4616,
+        "source": 239,
+        "word": "1111011111"
+      }
+    },
+    "leq_Q10": {
+      "ancestor": {
+        "B": 74497,
+        "L": 11,
+        "Q": 10,
+        "coefficient": {
+          "denominator": 2048,
+          "numerator": 59049
+        },
+        "endpoint": 54674,
+        "source": 1895,
+        "word": "11101111111"
+      },
+      "ancestor_source_at_target_endpoint": 1895,
+      "target": {
+        "B": 89945,
+        "L": 12,
+        "Q": 10,
+        "coefficient": {
+          "denominator": 4096,
+          "numerator": 59049
+        },
+        "endpoint": 54674,
+        "source": 3791,
+        "word": "111100111111"
+      }
+    },
+    "leq_Q11": {
+      "ancestor": {
+        "B": 225539,
+        "L": 12,
+        "Q": 11,
+        "coefficient": {
+          "denominator": 4096,
+          "numerator": 177147
+        },
+        "endpoint": 170585,
+        "source": 3943,
+        "word": "111011111111"
+      },
+      "ancestor_source_at_target_endpoint": 3943,
+      "target": {
+        "B": 273931,
+        "L": 13,
+        "Q": 11,
+        "coefficient": {
+          "denominator": 8192,
+          "numerator": 177147
+        },
+        "endpoint": 170585,
+        "source": 7887,
+        "word": "1111001111111"
+      }
+    },
+    "leq_Q12": {
+      "ancestor": {
+        "B": 680713,
+        "L": 13,
+        "Q": 12,
+        "coefficient": {
+          "denominator": 8192,
+          "numerator": 531441
+        },
+        "endpoint": 255878,
+        "source": 3943,
+        "word": "1110111111111"
+      },
+      "ancestor_source_at_target_endpoint": 3943,
+      "target": {
+        "B": 829985,
+        "L": 14,
+        "Q": 12,
+        "coefficient": {
+          "denominator": 16384,
+          "numerator": 531441
+        },
+        "endpoint": 255878,
+        "source": 7887,
+        "word": "11110011111111"
+      }
+    },
+    "leq_Q13": {
+      "ancestor": {
+        "B": 2050331,
+        "L": 14,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 16384,
+          "numerator": 1594323
+        },
+        "endpoint": 1180979,
+        "source": 12135,
+        "word": "11101111111111"
+      },
+      "ancestor_source_at_target_endpoint": 12135,
+      "target": {
+        "B": 2506339,
+        "L": 15,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 32768,
+          "numerator": 1594323
+        },
+        "endpoint": 1180979,
+        "source": 24271,
+        "word": "111100111111111"
+      }
+    },
+    "leq_Q14": {
+      "ancestor": {
+        "B": 6167377,
+        "L": 15,
+        "Q": 14,
+        "coefficient": {
+          "denominator": 32768,
+          "numerator": 4782969
+        },
+        "endpoint": 1771469,
+        "source": 12135,
+        "word": "111011111111111"
+      },
+      "ancestor_source_at_target_endpoint": 12135,
+      "target": {
+        "B": 7551785,
+        "L": 16,
+        "Q": 14,
+        "coefficient": {
+          "denominator": 65536,
+          "numerator": 4782969
+        },
+        "endpoint": 1771469,
+        "source": 24271,
+        "word": "1111001111111111"
+      }
+    },
+    "leq_Q15": {
+      "ancestor": {
+        "B": 18534899,
+        "L": 16,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 65536,
+          "numerator": 14348907
+        },
+        "endpoint": 2657204,
+        "source": 12135,
+        "word": "1110111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 12135,
+      "target": {
+        "B": 22720891,
+        "L": 17,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 131072,
+          "numerator": 14348907
+        },
+        "endpoint": 2657204,
+        "source": 24271,
+        "word": "11110011111111111"
+      }
+    },
+    "leq_Q16": {
+      "ancestor": {
+        "B": 55670233,
+        "L": 17,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 131072,
+          "numerator": 43046721
+        },
+        "endpoint": 25509167,
+        "source": 77671,
+        "word": "11101111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 77671,
+      "target": {
+        "B": 68293745,
+        "L": 18,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 43046721
+        },
+        "endpoint": 25509167,
+        "source": 155343,
+        "word": "111100111111111111"
+      }
+    },
+    "leq_Q17": {
+      "ancestor": {
+        "B": 167141771,
+        "L": 18,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 129140163
+        },
+        "endpoint": 38263751,
+        "source": 77671,
+        "word": "111011111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 77671,
+      "target": {
+        "B": 205143379,
+        "L": 19,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 524288,
+          "numerator": 129140163
+        },
+        "endpoint": 38263751,
+        "source": 155343,
+        "word": "1111001111111111111"
+      }
+    },
+    "leq_Q4": {
+      "ancestor": {
+        "B": 73,
+        "L": 5,
+        "Q": 4,
+        "coefficient": {
+          "denominator": 32,
+          "numerator": 81
+        },
+        "endpoint": 20,
+        "source": 7,
+        "word": "11101"
+      },
+      "ancestor_source_at_target_endpoint": 7,
+      "target": {
+        "B": 65,
+        "L": 6,
+        "Q": 4,
+        "coefficient": {
+          "denominator": 64,
+          "numerator": 81
+        },
+        "endpoint": 20,
+        "source": 15,
+        "word": "111100"
+      }
+    },
+    "leq_Q5": {
+      "ancestor": {
+        "B": 251,
+        "L": 6,
+        "Q": 5,
+        "coefficient": {
+          "denominator": 64,
+          "numerator": 243
+        },
+        "endpoint": 152,
+        "source": 39,
+        "word": "111011"
+      },
+      "ancestor_source_at_target_endpoint": 39,
+      "target": {
+        "B": 259,
+        "L": 7,
+        "Q": 5,
+        "coefficient": {
+          "denominator": 128,
+          "numerator": 243
+        },
+        "endpoint": 152,
+        "source": 79,
+        "word": "1111001"
+      }
+    },
+    "leq_Q6": {
+      "ancestor": {
+        "B": 817,
+        "L": 7,
+        "Q": 6,
+        "coefficient": {
+          "denominator": 128,
+          "numerator": 729
+        },
+        "endpoint": 593,
+        "source": 103,
+        "word": "1110111"
+      },
+      "ancestor_source_at_target_endpoint": 103,
+      "target": {
+        "B": 905,
+        "L": 8,
+        "Q": 6,
+        "coefficient": {
+          "denominator": 256,
+          "numerator": 729
+        },
+        "endpoint": 593,
+        "source": 207,
+        "word": "11110011"
+      }
+    },
+    "leq_Q7": {
+      "ancestor": {
+        "B": 2579,
+        "L": 8,
+        "Q": 7,
+        "coefficient": {
+          "denominator": 256,
+          "numerator": 2187
+        },
+        "endpoint": 890,
+        "source": 103,
+        "word": "11101111"
+      },
+      "ancestor_source_at_target_endpoint": 103,
+      "target": {
+        "B": 2971,
+        "L": 9,
+        "Q": 7,
+        "coefficient": {
+          "denominator": 512,
+          "numerator": 2187
+        },
+        "endpoint": 890,
+        "source": 207,
+        "word": "111100111"
+      }
+    },
+    "leq_Q8": {
+      "ancestor": {
+        "B": 7993,
+        "L": 9,
+        "Q": 8,
+        "coefficient": {
+          "denominator": 512,
+          "numerator": 6561
+        },
+        "endpoint": 4616,
+        "source": 359,
+        "word": "111011111"
+      },
+      "ancestor_source_at_target_endpoint": 359,
+      "target": {
+        "B": 9425,
+        "L": 10,
+        "Q": 8,
+        "coefficient": {
+          "denominator": 1024,
+          "numerator": 6561
+        },
+        "endpoint": 4616,
+        "source": 719,
+        "word": "1111001111"
+      }
+    },
+    "leq_Q9": {
+      "ancestor": {
+        "B": 24491,
+        "L": 10,
+        "Q": 9,
+        "coefficient": {
+          "denominator": 1024,
+          "numerator": 19683
+        },
+        "endpoint": 16766,
+        "source": 871,
+        "word": "1110111111"
+      },
+      "ancestor_source_at_target_endpoint": 871,
+      "target": {
+        "B": 29299,
+        "L": 11,
+        "Q": 9,
+        "coefficient": {
+          "denominator": 2048,
+          "numerator": 19683
+        },
+        "endpoint": 16766,
+        "source": 1743,
+        "word": "11110011111"
+      }
+    },
+    "same_Q10": {
+      "ancestor": {
+        "B": 74497,
+        "L": 11,
+        "Q": 10,
+        "coefficient": {
+          "denominator": 2048,
+          "numerator": 59049
+        },
+        "endpoint": 54674,
+        "source": 1895,
+        "word": "11101111111"
+      },
+      "ancestor_source_at_target_endpoint": 1895,
+      "target": {
+        "B": 89945,
+        "L": 12,
+        "Q": 10,
+        "coefficient": {
+          "denominator": 4096,
+          "numerator": 59049
+        },
+        "endpoint": 54674,
+        "source": 3791,
+        "word": "111100111111"
+      }
+    },
+    "same_Q11": {
+      "ancestor": {
+        "B": 225539,
+        "L": 12,
+        "Q": 11,
+        "coefficient": {
+          "denominator": 4096,
+          "numerator": 177147
+        },
+        "endpoint": 170585,
+        "source": 3943,
+        "word": "111011111111"
+      },
+      "ancestor_source_at_target_endpoint": 3943,
+      "target": {
+        "B": 273931,
+        "L": 13,
+        "Q": 11,
+        "coefficient": {
+          "denominator": 8192,
+          "numerator": 177147
+        },
+        "endpoint": 170585,
+        "source": 7887,
+        "word": "1111001111111"
+      }
+    },
+    "same_Q12": {
+      "ancestor": {
+        "B": 680713,
+        "L": 13,
+        "Q": 12,
+        "coefficient": {
+          "denominator": 8192,
+          "numerator": 531441
+        },
+        "endpoint": 255878,
+        "source": 3943,
+        "word": "1110111111111"
+      },
+      "ancestor_source_at_target_endpoint": 3943,
+      "target": {
+        "B": 829985,
+        "L": 14,
+        "Q": 12,
+        "coefficient": {
+          "denominator": 16384,
+          "numerator": 531441
+        },
+        "endpoint": 255878,
+        "source": 7887,
+        "word": "11110011111111"
+      }
+    },
+    "same_Q13": {
+      "ancestor": {
+        "B": 2050331,
+        "L": 14,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 16384,
+          "numerator": 1594323
+        },
+        "endpoint": 1180979,
+        "source": 12135,
+        "word": "11101111111111"
+      },
+      "ancestor_source_at_target_endpoint": 12135,
+      "target": {
+        "B": 2506339,
+        "L": 15,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 32768,
+          "numerator": 1594323
+        },
+        "endpoint": 1180979,
+        "source": 24271,
+        "word": "111100111111111"
+      }
+    },
+    "same_Q14": {
+      "ancestor": {
+        "B": 6167377,
+        "L": 15,
+        "Q": 14,
+        "coefficient": {
+          "denominator": 32768,
+          "numerator": 4782969
+        },
+        "endpoint": 1771469,
+        "source": 12135,
+        "word": "111011111111111"
+      },
+      "ancestor_source_at_target_endpoint": 12135,
+      "target": {
+        "B": 7551785,
+        "L": 16,
+        "Q": 14,
+        "coefficient": {
+          "denominator": 65536,
+          "numerator": 4782969
+        },
+        "endpoint": 1771469,
+        "source": 24271,
+        "word": "1111001111111111"
+      }
+    },
+    "same_Q15": {
+      "ancestor": {
+        "B": 18534899,
+        "L": 16,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 65536,
+          "numerator": 14348907
+        },
+        "endpoint": 2657204,
+        "source": 12135,
+        "word": "1110111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 12135,
+      "target": {
+        "B": 22720891,
+        "L": 17,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 131072,
+          "numerator": 14348907
+        },
+        "endpoint": 2657204,
+        "source": 24271,
+        "word": "11110011111111111"
+      }
+    },
+    "same_Q16": {
+      "ancestor": {
+        "B": 55670233,
+        "L": 17,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 131072,
+          "numerator": 43046721
+        },
+        "endpoint": 25509167,
+        "source": 77671,
+        "word": "11101111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 77671,
+      "target": {
+        "B": 68293745,
+        "L": 18,
+        "Q": 16,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 43046721
+        },
+        "endpoint": 25509167,
+        "source": 155343,
+        "word": "111100111111111111"
+      }
+    },
+    "same_Q17": {
+      "ancestor": {
+        "B": 167141771,
+        "L": 18,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 129140163
+        },
+        "endpoint": 38263751,
+        "source": 77671,
+        "word": "111011111111111111"
+      },
+      "ancestor_source_at_target_endpoint": 77671,
+      "target": {
+        "B": 205143379,
+        "L": 19,
+        "Q": 17,
+        "coefficient": {
+          "denominator": 524288,
+          "numerator": 129140163
+        },
+        "endpoint": 38263751,
+        "source": 155343,
+        "word": "1111001111111111111"
+      }
+    },
+    "same_Q4": {
+      "ancestor": {
+        "B": 73,
+        "L": 5,
+        "Q": 4,
+        "coefficient": {
+          "denominator": 32,
+          "numerator": 81
+        },
+        "endpoint": 20,
+        "source": 7,
+        "word": "11101"
+      },
+      "ancestor_source_at_target_endpoint": 7,
+      "target": {
+        "B": 65,
+        "L": 6,
+        "Q": 4,
+        "coefficient": {
+          "denominator": 64,
+          "numerator": 81
+        },
+        "endpoint": 20,
+        "source": 15,
+        "word": "111100"
+      }
+    },
+    "same_Q5": {
+      "ancestor": {
+        "B": 251,
+        "L": 6,
+        "Q": 5,
+        "coefficient": {
+          "denominator": 64,
+          "numerator": 243
+        },
+        "endpoint": 152,
+        "source": 39,
+        "word": "111011"
+      },
+      "ancestor_source_at_target_endpoint": 39,
+      "target": {
+        "B": 259,
+        "L": 7,
+        "Q": 5,
+        "coefficient": {
+          "denominator": 128,
+          "numerator": 243
+        },
+        "endpoint": 152,
+        "source": 79,
+        "word": "1111001"
+      }
+    },
+    "same_Q6": {
+      "ancestor": {
+        "B": 817,
+        "L": 7,
+        "Q": 6,
+        "coefficient": {
+          "denominator": 128,
+          "numerator": 729
+        },
+        "endpoint": 593,
+        "source": 103,
+        "word": "1110111"
+      },
+      "ancestor_source_at_target_endpoint": 103,
+      "target": {
+        "B": 905,
+        "L": 8,
+        "Q": 6,
+        "coefficient": {
+          "denominator": 256,
+          "numerator": 729
+        },
+        "endpoint": 593,
+        "source": 207,
+        "word": "11110011"
+      }
+    },
+    "same_Q7": {
+      "ancestor": {
+        "B": 2579,
+        "L": 8,
+        "Q": 7,
+        "coefficient": {
+          "denominator": 256,
+          "numerator": 2187
+        },
+        "endpoint": 890,
+        "source": 103,
+        "word": "11101111"
+      },
+      "ancestor_source_at_target_endpoint": 103,
+      "target": {
+        "B": 2971,
+        "L": 9,
+        "Q": 7,
+        "coefficient": {
+          "denominator": 512,
+          "numerator": 2187
+        },
+        "endpoint": 890,
+        "source": 207,
+        "word": "111100111"
+      }
+    },
+    "same_Q8": {
+      "ancestor": {
+        "B": 7993,
+        "L": 9,
+        "Q": 8,
+        "coefficient": {
+          "denominator": 512,
+          "numerator": 6561
+        },
+        "endpoint": 4616,
+        "source": 359,
+        "word": "111011111"
+      },
+      "ancestor_source_at_target_endpoint": 359,
+      "target": {
+        "B": 9425,
+        "L": 10,
+        "Q": 8,
+        "coefficient": {
+          "denominator": 1024,
+          "numerator": 6561
+        },
+        "endpoint": 4616,
+        "source": 719,
+        "word": "1111001111"
+      }
+    },
+    "same_Q9": {
+      "ancestor": {
+        "B": 24491,
+        "L": 10,
+        "Q": 9,
+        "coefficient": {
+          "denominator": 1024,
+          "numerator": 19683
+        },
+        "endpoint": 16766,
+        "source": 871,
+        "word": "1110111111"
+      },
+      "ancestor_source_at_target_endpoint": 871,
+      "target": {
+        "B": 29299,
+        "L": 11,
+        "Q": 9,
+        "coefficient": {
+          "denominator": 2048,
+          "numerator": 19683
+        },
+        "endpoint": 16766,
+        "source": 1743,
+        "word": "11110011111"
+      }
+    }
+  },
+  "maximum_Q": 17,
+  "proves_collatz": false,
+  "safe_row_digest_sha256": "d987c0596250c515fdd4da4e96ad6988d09d127f18d9644b17c31dfd301e4573"
+}

@@ -4,7 +4,7 @@ The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
 
-The global branch map and uniform Phase 1–14 terminology are in
+The global branch map and uniform Phase 1–15 terminology are in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md). This file remains the
 operational ranking; the synthesis remains the orientation layer.
 
@@ -96,10 +96,18 @@ add run-sensitive thresholds, block decrement, and eventual rational-height
 bounds. NG24 shows why this is not yet a recursive proof: coalescent endpoint
 classes are stable under common right suffixes but not under common prefixes.
 
+Phase 15 broadens the least-source reduction to P86 surplus dominance across
+different odd counts and P87 safe suffixes extracted from unsafe targets. E24
+exhausts this frontier through Q=17, while NG25/NG26 refute same-Q and
+safe-target completeness. P88 identifies the `{1,2}`-gap endpoint-injective
+core; all 32,596 safe words in its Q=17 layer survive competitors with
+`Q_b<=Q_d`. This is a cutoff fact, not a persistent-core theorem.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
-the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, and every
-mandatory adversarial family. Reject any proof that identifies a general
+the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
+cross-Q/unsafe-target witnesses, the `{1,2}` core, and every mandatory
+adversarial family. Reject any proof that identifies a general
 2-adic source with a positive ordinary integer, drops the per-address lattice
 `+1`, treats `(Q,r3)` as a prefix-closed state, or promotes finite scarcity to
 an eventual statement.
@@ -156,7 +164,13 @@ rewrite would eliminate the least-source branch by P82, but it must carry
 enough prefix information to survive NG24. The finite normal forms in E23 do
 not establish such eventual reducibility.
 
-**Fast falsification test.** First reconstruct NG23, NG24, and all E22/E23
+Phase 15 replaces same-Q irreducibility by the stronger Pareto state
+`(ordinary source, terminal coefficient)` at each endpoint and permits valley
+suffixes of unsafe targets. An all-depth recursion must retain cross-Q carry
+data, distinguish NG24--NG26, and explain the endpoint-injective `{1,2}` core.
+Finite survivor counts alone do not imply pressure decay.
+
+**Fast falsification test.** First reconstruct NG23--NG26 and all E22--E24
 finite ratios, then measure the joint `(B,r2,r3,C_w)` Pareto frontier in exact
 dynamic-programming/meet-in-the-middle slices. Attack every proposed constant
 or monotonicity with macro id 0, NG22, and `A^rB^s` before scaling.

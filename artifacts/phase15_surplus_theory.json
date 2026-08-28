@@ -1,0 +1,109 @@
+{
+  "P86": {
+    "quantifier_boundary": "The internal least-source theorem is exact. Applying it to every nonperiodic Collatz counterexample uses EXT07/P74; nontrivial cycles are separate.",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "Let S be the least positive source in any shared-future counterexample class whose full shortcut discrepancy is positive at every nonempty prefix and tends to infinity. If an initial safe word d from S reaches Y and a smaller positive V reaches Y through a coefficient-safe word b with c(b)>=c(d), then b followed by the common future has the same two discrepancy properties, contradicting minimality of S."
+  },
+  "P87": {
+    "repository_status": "VERIFIED_THEOREM",
+    "right_ideal_boundary": "A dominated d remains dominated after a common suffix u whenever d|u is coefficient-safe. The unqualified all-suffix statement is not asserted.",
+    "statement": "For an arbitrary coalescent target a, cut after its unique proper global discrepancy minimum. The nonempty suffix b is strictly coefficient-safe. If a has negative minimum and c(a)>c(d), then c(b)>c(d); positivity, V<S, and literal coalescence remain separate checks."
+  },
+  "P88": {
+    "boundary": "No coefficient-safety assumption is needed for injectivity, and no positive ordinary infinite source follows.",
+    "decoder": "e_j=1 when r_j=2 mod 3, e_j=2 when r_j=1 mod 3, and r_(j-1)=(2^e_j*r_j-1)/3 mod 3^(j-1).",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "For odd-to-odd gaps e_j in {1,2}, r_j=B_j*2^(-E_j) mod 3^j determines the last exponent from r_j mod 3 and recursively determines the entire finite exponent word; hence the endpoint map is injective at fixed Q."
+  },
+  "examples": {
+    "Q15_unsafe_target": {
+      "arbitrary_target_B": 50054837,
+      "arbitrary_target_source": 937121,
+      "arbitrary_target_word": "1010110111111101011100",
+      "common_endpoint": 3205946,
+      "safe_suffix": {
+        "B": 2430911,
+        "L": 18,
+        "Q": 13,
+        "coefficient": {
+          "denominator": 262144,
+          "numerator": 1594323
+        },
+        "endpoint": 17300,
+        "source": 2843,
+        "word": "110111111101011100"
+      },
+      "strict_valley_prefix": "1010",
+      "target": {
+        "B": 28365139,
+        "L": 23,
+        "Q": 15,
+        "coefficient": {
+          "denominator": 8388608,
+          "numerator": 14348907
+        },
+        "endpoint": 3205946,
+        "source": 1874247,
+        "word": "11101011111111101000001"
+      },
+      "valley_source": 527131
+    },
+    "Q4_higher_Q": {
+      "ancestor": {
+        "B": 251,
+        "L": 7,
+        "Q": 5,
+        "coefficient": {
+          "denominator": 128,
+          "numerator": 243
+        },
+        "endpoint": 76,
+        "source": 39,
+        "word": "1110110"
+      },
+      "ancestor_source_at_target_endpoint": 39,
+      "target": {
+        "B": 85,
+        "L": 6,
+        "Q": 4,
+        "coefficient": {
+          "denominator": 64,
+          "numerator": 81
+        },
+        "endpoint": 76,
+        "source": 59,
+        "word": "110110"
+      }
+    },
+    "Q6_cross_Q": {
+      "ancestor": {
+        "B": 1,
+        "L": 1,
+        "Q": 1,
+        "coefficient": {
+          "denominator": 2,
+          "numerator": 3
+        },
+        "endpoint": 2,
+        "source": 1,
+        "word": "1"
+      },
+      "ancestor_source_at_target_endpoint": 273,
+      "target": {
+        "B": 697,
+        "L": 9,
+        "Q": 6,
+        "coefficient": {
+          "denominator": 512,
+          "numerator": 729
+        },
+        "endpoint": 410,
+        "source": 287,
+        "word": "111110100"
+      }
+    }
+  },
+  "format": "collatz-phase15-surplus-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "Surplus dominance does not show every safe prefix has a dominating ancestor, convert the Q<=17 cutoff into an eventual theorem, prove P80 or H72, exclude cycles, or prove the Collatz conjecture."
+}

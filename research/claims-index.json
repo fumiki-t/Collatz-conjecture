@@ -1,5 +1,5 @@
 {
-  "claim_count": 91,
+  "claim_count": 97,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -972,15 +972,18 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, or coalescent irreducibility to exclude every infinite coefficient-safe tail.",
+      "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, or surplus/coalescent irreducibility to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, E23, NG21, NG22, NG23, NG24.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, E23, E24, NG21, NG22, NG23, NG24, NG25, NG26.",
       "dependency_ids": [
         "E23",
+        "E24",
         "NG21",
         "NG22",
         "NG23",
         "NG24",
+        "NG25",
+        "NG26",
         "P72",
         "P73",
         "P75",
@@ -993,13 +996,16 @@
         "P82",
         "P83",
         "P84",
-        "P85"
+        "P85",
+        "P86",
+        "P87",
+        "P88"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md); [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md); [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md); [`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-08-27",
-      "notes": "P82 restricts a least permanent-safe counterexample source to irreducible initial addresses, but E23 is finite and NG24 blocks a naive two-sided quotient. P80 remains unproved.",
+      "last_audited": "2026-08-28",
+      "notes": "P86/P87 enlarge least-source pruning across Q and unsafe targets, but E24 is finite; its Q=17 `{1,2}`-gap core remains fully undominated for `Q_b<=Q_d`. P80 remains unproved.",
       "status": "OPEN"
     },
     {
@@ -1264,9 +1270,94 @@
       "last_audited": "2026-08-27",
       "notes": "`11101~111100` modulo `3^4`, but prefixing `110` gives endpoint residues 263 and 587 modulo `3^6`. Common right suffixes remain valid.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "If a safe initial word `d` of the least positive permanent-safe discrepancy-escaping shared-future source reaches `Y`, then no smaller positive source can reach `Y` through a safe word `b` with `c(b)>=c(d)`.",
+      "collatz_implication": "Strengthens P82 from same-Q affine rewrites to every surplus-dominating safe ancestor.",
+      "dependencies": "P77; well-ordering; deterministic shared future. The nonperiodic Collatz application uses EXT07/P74.",
+      "dependency_ids": [
+        "EXT07",
+        "P74",
+        "P77"
+      ],
+      "evidence": "[`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md), Section 2; `artifacts/phase15_surplus_theory.json`; independent verifier.",
+      "first_introduced": "Phase 15",
+      "id": "P86",
+      "last_audited": "2026-08-28",
+      "notes": "Does not prove that every safe prefix has such an ancestor; cycles remain separate.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Cutting an arbitrary coalescent target after its unique proper negative discrepancy minimum gives a strictly coefficient-safe suffix; when the target has larger terminal coefficient than `d`, the suffix does too. Positivity, literal coalescence, and source descent are separate conditions.",
+      "collatz_implication": "Allows unsafe same-Q targets to yield valid P86 certificates after valley extraction.",
+      "dependencies": "Unique factorization of powers of 2 and 3; P81/P86 conventions.",
+      "dependency_ids": [
+        "P81",
+        "P86"
+      ],
+      "evidence": "[`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md), Section 3; `artifacts/phase15_surplus_theory.json`; property tests.",
+      "first_introduced": "Phase 15",
+      "id": "P87",
+      "last_audited": "2026-08-28",
+      "notes": "Right-ideal closure is asserted only for common suffixes that keep the target path coefficient-safe.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For fixed finite odd count `Q`, the endpoint residue modulo `3^Q` is injective on odd-to-odd exponent words with every exponent in `{1,2}`; the last exponent and then the whole word are recovered backwards.",
+      "collatz_implication": "Identifies an endpoint-injective hard core for future H72 separation arguments.",
+      "dependencies": "Exact recurrence `r_j=(3r_(j-1)+1)2^(-e_j) mod 3^j`; integer division.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md), Section 4; `artifacts/phase15_gap12_core.json`; independent verifier.",
+      "first_introduced": "Phase 15",
+      "id": "P88",
+      "last_audited": "2026-08-28",
+      "notes": "It does not produce or exclude a positive ordinary infinite source; no novelty claim is made against predecessor-language literature.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Exhaustive independent recomputation through `Q<=17` enumerates every coefficient-safe word, every surplus dominator with `Q_b<=17`, every relevant shorter same-Q arbitrary target, and every safe `{1,2}`-gap word. It reproduces the supplied dominance counts and finds 12, 90, and 233 additional valley reductions at Q=15,16,17.",
+      "collatz_implication": "Supplies a larger exact pruning frontier and preserves the surviving `{1,2}`-gap core.",
+      "dependencies": "P86--P88; arbitrary-precision integers; complete enumerations in the recorded cutoffs.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); `artifacts/phase15_surplus_frontier.json`; `artifacts/phase15_valley_audit.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 15",
+      "id": "E24",
+      "last_audited": "2026-08-28",
+      "notes": "At Q=17 there are 663,535 safe words, 320,168 dominated by `Q_b<=Q_d`, and 32,596 safe `{1,2}`-gap words with no such dominator. Competitors above the cutoff remain untested.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Same-Q safe-target rewrites are complete for every useful surplus-dominance reduction.",
+      "collatz_implication": "Requires cross-Q ancestors in any eventual rewrite/frontier theorem.",
+      "dependencies": "P86, E24.",
+      "dependency_ids": [
+        "E24",
+        "P86"
+      ],
+      "evidence": "`artifacts/phase15_surplus_theory.json`; `artifacts/phase15_obstruction_report.md`; independent literal traces.",
+      "first_introduced": "Phase 15",
+      "id": "NG25",
+      "last_audited": "2026-08-28",
+      "notes": "`111110100` from 287 reaches 410, while the Q=1 word `1` reaches 410 from 273 with coefficient `3/2>729/512`; a Q=5 ancestor also dominates the Q=4 target `110110`.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "A useful shorter same-Q coalescent target must itself be coefficient-safe.",
+      "collatz_implication": "Requires strict-valley extraction before rejecting arbitrary coalescent targets.",
+      "dependencies": "P87, E24.",
+      "dependency_ids": [
+        "E24",
+        "P87"
+      ],
+      "evidence": "`artifacts/phase15_valley_audit.json`; `artifacts/phase15_obstruction_report.md`; independent verifier.",
+      "first_introduced": "Phase 15",
+      "id": "NG26",
+      "last_audited": "2026-08-28",
+      "notes": "The Q=15 unsafe target `1010110111111101011100` yields the safe suffix `110111111101011100` from source 527131, below target source 1874247, at common endpoint 3205946.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "fcef9ebaed99ec2c3154c56651f9dacf5aaf786590cc608544dd0899027ed69c"
+  "source_sha256": "fae08a4a2fa96d9716073503dcca5af5bf57d4027f1f5fee20ff72a00c4555f8"
 }

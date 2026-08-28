@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 14
+    assert result["latest_phase"] == 15
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -51,6 +51,12 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["P85"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["E23"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG24"] == "REFUTED"
+    assert result["active_focus"]["P86"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P87"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P88"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E24"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG25"] == "REFUTED"
+    assert result["active_focus"]["NG26"] == "REFUTED"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
@@ -82,7 +88,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 91
+    assert committed["claim_count"] == 97
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert set(rows["H72"]["dependency_ids"]) == {
@@ -99,11 +105,17 @@ def test_generated_claim_index_is_complete() -> None:
         "P83",
         "P84",
         "P85",
+        "P86",
+        "P87",
+        "P88",
         "E23",
+        "E24",
         "NG21",
         "NG22",
         "NG23",
         "NG24",
+        "NG25",
+        "NG26",
     }
 
 

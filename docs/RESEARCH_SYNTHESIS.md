@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 14
+# Collatz research synthesis through Phase 15
 
-**Audit date:** 2026-08-27
+**Audit date:** 2026-08-28
 
-**Audited `main`:** `7e6f637cb0bed954a5f50f71a1aa6c45b127dc8f`
+**Audited base:** `a246c97200df61030b0c6874cbf150fd9b152f0c`
 
-**Latest accepted phase:** Phase 14
+**Latest accepted phase:** Phase 15
 
 **Problem status:** `OPEN`
 
@@ -452,6 +452,28 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md) and the
   [`Phase 14 audit`](../research/audits/coalescent-rewrite/REPORT.md).
 
+### Phase 15 — surplus-dominating ancestors
+
+- **Purpose:** enlarge P82's least-source pruning beyond same-Q renewal
+  rewrites and test the exact cross-Q frontier before proposing an asymptotic
+  recursion.
+- **Accepted:** P86 forbids every smaller safe coalescent ancestor with at
+  least the target's terminal coefficient. P87 extracts a strictly safe suffix
+  at the unique negative discrepancy valley of an unsafe target. P88 proves
+  fixed-Q endpoint injectivity for `{1,2}` odd-gap words. E24 exhausts every
+  safe target and competitor through Q=17 and all relevant shorter same-Q
+  arbitrary targets.
+- **External input:** P86--P88 are internal. Applying P86 to every
+  nonperiodic counterexample uses EXT07/P74 exactly as P82 did.
+- **Obstacle:** NG25 refutes same-Q completeness and NG26 refutes filtering out
+  unsafe targets before valley extraction. At Q=17, 343,367 of 663,535 safe
+  words survive competitors with `Q_b<=Q_d`, including all 32,596 safe
+  `{1,2}`-gap words. Higher-Q ancestors remain outside the top cutoff.
+- **Handoff:** construct an all-depth cross-Q Pareto/carry recursion, or prove
+  an ordinary-height separation theorem for the endpoint-injective gap core.
+  See [`PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md) and the
+  [`Phase 15 audit`](../research/audits/surplus-dominance/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -459,8 +481,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P85 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG24.
+- P65/P66/P68/P69–P73/P76–P79/P81–P88 with their exact hypotheses;
+- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG26.
 
 None is a full convergence theorem.
 
@@ -483,10 +505,11 @@ None is a full convergence theorem.
    uniformly for every ordinary `H>=1`, every `epsilon>0`, and all sufficiently
    large `i`, would exclude the permanent-safe positive branch. Neither bound
    is proved.
-4. **P82 target.** If every positive renewal address were eventually reducible
-   by a P81 rewrite, well-ordering would exclude a least positive permanent-safe
-   source. P82 proves the implication, but NG24 prevents propagation by endpoint
-   classes alone and eventual reducibility is unproved.
+4. **P86 target.** If every positive renewal address were eventually
+   surplus-dominated, well-ordering would exclude a least positive
+   permanent-safe source. P86 proves the implication, but NG24--NG26 require a
+   cross-Q carry state and strict-valley handling; eventual reducibility is
+   unproved.
 
 ### Nontrivial cycles
 
@@ -517,6 +540,8 @@ The complete obstruction archive is
 | Promote finite injectivity/scarcity | E22 found no duplicates only within its bounded fixed-block-count layers; E23 finds cross-layer collisions | Cross-`Q` nesting and eventual multiplicity remain open |
 | Treat endpoint coalescence as a two-sided congruence | NG24: `11101~111100`, but prefixing both by `110` gives distinct residues modulo `3^6` | Common right suffixes preserve P81 rewrites; a carry-aware left state remains possible |
 | Promote finite rewrite acyclicity/confluence | E23 has unique finite normal forms only through total `Q<=13` | A proved well-founded global rewrite or eventual-reducibility theorem could close P82 |
+| Restrict dominance to same-Q safe targets | NG25 has cross-Q witnesses; NG26 has a useful unsafe target after valley extraction | P86/P87 give the correct larger exact language |
+| Promote the Q<=17 frontier to an eventual core | E24's top layer cannot see Q>17 ancestors | An all-depth carry recursion or separation theorem remains possible |
 
 ## 7. External inputs and literature boundary
 
@@ -535,6 +560,7 @@ The annotated source is [`LITERATURE.md`](LITERATURE.md). Its role map is:
 | Fernández–Ibáñez | EXT06 Christoffel extremality context | that P65 proves or uses the external extremality theorem |
 | Tao | almost-everywhere descent context | exclusion of one exceptional least counterexample |
 | Wu–Wang | contextual irrationality scale | an audited effective `H_q` bound used by current certificates |
+| Stérin | fixed-odd-budget binary ancestor regular languages and carry context | P86 surplus dominance, ordinary-height anti-concentration, or H72 |
 
 External verification and publication metadata were rechecked on 2026-08-27.
 External-source proof bodies were not rederived during this documentation audit.
@@ -544,10 +570,10 @@ External-source proof bodies were not rederived during this documentation audit.
 ### H72 — permanent-safe positive source
 
 **Target:** exclude every positive ordinary-integer permanent coefficient-safe
-tail. **Known traps:** NG21/NG22/NG23/NG24, 2-adic versus ordinary positivity,
+tail. **Known traps:** NG21--NG26, 2-adic versus ordinary positivity,
 per-address lattice errors, cross-`Q` endpoint nesting, and loss of left-prefix
 carry data. **Acceptance:** an orbit-specific arithmetic theorem proving one
-P80 bound, eventual P81 reducibility, or an equivalent positive-height
+P80 bound, eventual P86 surplus reducibility, or an equivalent positive-height
 obstruction, plus a checked finite remainder. See
 [`context/H72.md`](context/H72.md).
 
@@ -584,8 +610,8 @@ scoped obligation rather than a complete proof by itself.
 
 | Priority experiment | Target statement | Must survive | Minimum useful experiment | Success implication | Stop condition |
 |---|---|---|---|---|---|
-| Coalescent left-extension state | Propagate P81 downward rewrites across renewal prefixes | NG24, all E23 collisions, all mandatory families | Derive the exact prefix carry recurrence and search for a finite dominance quotient | Eventual reducibility would close the least-source H72 branch by P82 | Stop if the state identifies NG24's two distinct prefixed endpoints |
-| Carry-aware canonical separation | A deterministic lower bound for least positive `(r2,r3)` representatives | NG19, NG23, NG24, E22/E23, all mandatory families | Exact meet-in-the-middle slices retaining `B`, carries, and ordinary height | May prove P80 or lower-bound `M(k)` | Preserve the first opposite-outcome collision; do not enlarge after state loss |
+| Cross-Q surplus recursion | Propagate P86 endpoint Pareto fronts across Q and prefixes | NG24--NG26, E23/E24, `{1,2}` core, all mandatory families | Derive an exact carry recurrence retaining source and terminal surplus | Eventual dominance would close the least-source H72 branch | Stop if the state loses a named cross-Q or valley certificate |
+| Carry-aware canonical separation | A deterministic lower bound for least positive `(r2,r3)` representatives | NG19, NG23--NG26, E22--E24, all mandatory families | Exact meet-in-the-middle slices retaining `B`, carries, surplus, and ordinary height | May prove P80 or lower-bound `M(k)` | Preserve the first opposite-outcome collision; do not enlarge after state loss |
 | Valuation-conditioned transfer operator | Use P79's `v2(C_w)=r-2` to control address multiplicity | both NG22 models and one-block runs | Exact transition matrix with symbolic valuation guards | Could close H72 through P80 | Stop if a formal NG22 source satisfies every retained state |
 | Cross-`Q` 3-adic nesting | Bound multiplicity of endpoint cylinders across different `Q` | NG23 and E22 compatible/nested pairs | Enumerate exact containment poset, then state a provable recursion | Supplies endpoint anti-concentration | Finite injectivity without a recursion is not progress |
 | Fourier/large-sieve anti-concentration | Prove cancellation beyond Haar mass | per-address `+1`, deterministic least representatives | Small exact character sums with explicit constants and carry classes | Could prove either P80 premise | Stop if constants grow exponentially or discard the lattice error |
@@ -598,7 +624,7 @@ statement is not a priority experiment.
 
 ## 10. Scratch index
 
-No post-Phase-14 unintegrated mathematical candidate was accepted at this
+No post-Phase-15 unintegrated mathematical candidate was accepted at this
 audit. The eight current scratch inputs are classified
 `SUPERSEDED_BY_ACCEPTED_RESULT`:
 
@@ -606,8 +632,9 @@ audit. The eight current scratch inputs are classified
   [`research/audits/garcia-tal-phase12`](../research/audits/garcia-tal-phase12/REPORT.md);
 - the two renewal Markdown audits and their two scripts/two JSON outputs are
   superseded by Phase 13's independent generator, verifier, artifacts, and
-  audit. The Phase 14 pasted proposal is separately preserved by its recorded
-  SHA-256 provenance and was independently rederived before acceptance.
+  audit. The Phase 14 and Phase 15 proposals are separately preserved by their
+  recorded SHA-256 provenance and were independently rederived before
+  acceptance.
 
 They remain untracked local provenance and are not accepted evidence. No file
 was classified `PROMISING_UNVERIFIED` or `FAILED_OR_COUNTEREXAMPLE` in this
@@ -645,8 +672,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase14.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase14_verifier.json
+.venv/bin/python verifier/verify_phase15.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase15_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

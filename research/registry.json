@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 14,
+    "latest_phase": 15,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 14,
-    "report": "PHASE14_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase14_verifier.json",
+    "phase": 15,
+    "report": "PHASE15_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase15_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase14-coalescent-rewrite.json"
+    "experiment_manifest": "research/experiments/phase15-surplus-dominance.json"
   },
   "active_obligations": [
     {
@@ -53,8 +53,8 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "E20", "E21", "E22", "E23", "NG21", "NG22", "NG23", "NG24"],
-      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; P82 restricts a least source to irreducible prefixes, but P80 and the all-depth irreducible pressure/height theorem remain unproved, and cycles remain separate."
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "E20", "E21", "E22", "E23", "E24", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26"],
+      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; P86/P87 strengthen least-source pruning across Q and unsafe targets, but E24 is finite, P80 and an all-depth surplus/height theorem remain unproved, and cycles remain separate."
     },
     {
       "id": "C04",
@@ -108,7 +108,13 @@
     "P84",
     "P85",
     "E23",
-    "NG24"
+    "NG24",
+    "P86",
+    "P87",
+    "P88",
+    "E24",
+    "NG25",
+    "NG26"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

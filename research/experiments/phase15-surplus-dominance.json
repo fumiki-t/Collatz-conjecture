@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "phase15-surplus-dominance",
+  "status": "DRAFT",
+  "claim_ids": ["P86", "P87", "P88", "E24", "NG25", "NG26", "H72"],
+  "objective": "Audit surplus-dominating coalescent ancestors across different odd-count layers, the strict-valley suffix reduction, and endpoint injectivity for odd gaps in {1,2}, without promoting a finite cutoff to H72.",
+  "exact_scope": {
+    "quantifiers": [
+      "all finite binary words for the symbolic surplus-dominance and strict-valley proofs",
+      "all coefficient-safe words with 1<=Q<=17 and every admissible length",
+      "all coefficient-safe ancestors with Q_b<=17 reaching each audited canonical endpoint",
+      "all same-Q shorter arbitrary target words needed for the valley audit through Q=17",
+      "all odd-gap words with exponents in {1,2} through Q=17",
+      "the mandatory adversarial regression families"
+    ],
+    "bounds": {"maximum_q": 17, "adversarial_prefix_length": 24},
+    "completeness": "The finite frontier is exhaustive only under Q_b<=17 and Q_d<=17. P86-P88 use separate exact proofs; no all-depth cutoff theorem is assumed."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "none in generator or verifier acceptance decisions"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase15_search.py --artifact-dir artifacts --max-q 17"],
+    "verifier": [".venv/bin/python verifier/verify_phase15.py --artifact-dir artifacts --output artifacts/phase15_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase15_properties.py tests/test_phase15_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "safe words, affine corrections, canonical source and endpoint representatives",
+      "same-Q, lower-or-equal-Q, and cutoff-Q surplus dominance",
+      "strict-valley suffix certificates from arbitrary shorter targets",
+      "the {1,2}-gap backward decoder and endpoint injectivity",
+      "all theorem examples and mandatory adversarial residues"
+    ],
+    "forbidden_imports": ["src.phase15_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase15_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG19", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26"],
+  "artifacts": [
+    "artifacts/phase15_surplus_theory.json",
+    "artifacts/phase15_surplus_frontier.json",
+    "artifacts/phase15_valley_audit.json",
+    "artifacts/phase15_gap12_core.json",
+    "artifacts/phase15_adversarial_regression.json",
+    "artifacts/phase15_obstruction_report.md",
+    "artifacts/phase15_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Stop and preserve the least mismatch if generator and verifier disagree.",
+    "Do not extrapolate Q<=17 survivor counts to unbounded Q.",
+    "Do not call an arbitrary coalescent target safe before extracting and checking its strict-valley suffix.",
+    "Keep H72 open unless an all-depth positive-source exclusion is proved.",
+    "Enter the proof-claim emergency protocol before any change to proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "P86 is a least-source theorem, not a proof that a dominating ancestor always exists.",
+    "P87 requires separate positivity, literal coalescence, and V<S checks.",
+    "Q<=17 survivor and Pareto counts are finite and cutoff-sensitive.",
+    "P88 finite endpoint injectivity does not provide a positive ordinary infinite source or exclude one.",
+    "Nontrivial cycles remain separate from H72."
+  ],
+  "proves_collatz": false
+}

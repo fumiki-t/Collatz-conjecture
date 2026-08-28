@@ -645,9 +645,56 @@ no all-depth confluence or asymptotic pressure theorem follows.
 `artifacts/phase14_coalescent_theory.json`, and the independent Phase 14
 verifier.
 
+## Phase 15 — same-Q safe targets are a complete dominance language
+
+**Status:** `REFUTED` (NG25)
+
+**Exact hypothesis.** Every smaller coefficient-safe path that coalesces with
+a safe target and preserves at least its terminal coefficient surplus can be
+found among safe competitors with the same odd count.
+
+**Why it looked plausible.** P81's affine rewrite identity and E23's finite
+graph are organized by fixed `(Q,r3)` endpoint classes, and same-Q source
+relations are especially simple.
+
+**Smallest recorded cross-Q witness.** The safe word `111110100` maps 287 to
+410 with coefficient `729/512`. The one-bit word `1` maps 273 to the same 410
+with coefficient `3/2`. Thus the smaller useful ancestor has Q=1 rather than
+Q=6. A separate witness has the Q=5 word `1110110` dominate the Q=4 target
+`110110`.
+
+**Failure scope.** Fundamental for same-Q completeness. It does not refute
+P81 or same-Q rewrites; they remain a valid subset of P86 dominance.
+
+**Weaker statement retained.** P86 gives the exact cross-Q condition. E24
+enumerates it through `Q_b,Q_d<=17`, but no eventual frontier theorem follows.
+
+## Phase 15 — arbitrary coalescent targets must already be safe
+
+**Status:** `REFUTED` (NG26)
+
+**Exact hypothesis.** An unsafe shorter same-Q target can be discarded before
+testing whether it yields a downward coalescent reduction.
+
+**Why it looked plausible.** P82 needs a coefficient-safe replacement path,
+so an unsafe target appears unusable if treated as an indivisible word.
+
+**Counterexample.** The unsafe Q=15 target
+`1010110111111101011100` maps 937121 to 3205946. Its unique strict valley is
+after `1010`; the suffix `110111111101011100` is coefficient-safe and maps
+527131 to the same endpoint, below safe target source 1874247, with larger
+terminal coefficient surplus.
+
+**Failure scope.** Fundamental for pre-valley filtering, not for safe-suffix
+dominance. Positivity and `V<S` still require explicit checks.
+
+**Weaker statement retained.** P87 proves exact valley extraction. E24 finds
+12, 90, and 233 additional reductions at Q=15,16,17 beyond same-Q safe
+targets; zero in lower audited layers is finite evidence only.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-and all exact counterexamples above. Passing a bounded regression is necessary
+NG23, NG24, NG25, NG26, and all exact counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.
