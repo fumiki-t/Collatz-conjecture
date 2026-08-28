@@ -42,14 +42,43 @@ least counterexample `N`.
 exact carry and dominance rules, but no all-depth recursion proves sufficient
 ancestral pruning or residue growth.
 
-**Fast falsification test.** Reconstruct NG24--NG27, especially the Q=19
-gain-four pair, and require the proposed state to preserve P91 prefix carries,
+Phase 16 adds P97's signed carry bound and P98's geodesic criterion. For
+distinct odd values, P101 reduces a finite crossing to H97 (G250 geodesic) or
+H98 (the ultra-low two-sided box). These are sharper subtargets, not proofs of
+H89, and P102 keeps the repeated periodic branch separate.
+
+**Fast falsification test.** Reconstruct NG24--NG28, especially the Q=19
+gain-four pair and Q=26 carry -3 pair, and require the proposed state to preserve P91/P97 signed prefix carries,
 literal positivity, safety, and ordinary source order. Run the mandatory
-families before extending E25/E26.
+families before extending E25--E27.
 
 **Success criterion.** An explicit eventual H89 proof and independently
 verified finite remainder. Finite record growth, Haar measure, or a bounded
 compression gain is insufficient.
+
+## P0 — Phase 16 G250/H250 exclusions
+
+**Targets.** Prove H97 and H98. H97 excludes positive ordinary-source
+all-prefix same-Q geodesic critical words in G250. H98 excludes the H250 box
+`N<q/250`, `X<q/125`, `Z<2q/125`.
+
+**Why this helps.** P101 makes the two branches exhaustive for a
+least-counterexample finite crossing with distinct odd values and
+`N>=100000`. Proving both removes that branch. P102 leaves repeated periodic
+values as a separate cycle obligation.
+
+**Missing theorem.** H97 needs a positivity/ordinary-height invariant absent
+from the formal all-contact 2-adic word. H98 needs a two-sided
+source/endpoint certificate for a length-Theta(q) history whose two ordinary
+heights are O(q).
+
+**Fast falsification test.** H97 must survive NG17, P73, NG24--NG28, and E27.
+H98 must retain both canonical residues, signed carry, literal safety, and
+ordinary height; reject a state at the first NG19 or NG24--NG28 collision.
+
+**Success criterion.** Repository proofs for both branches with an effective
+finite remainder. A contact/geodesic-only contradiction, raw address count,
+or a proof that silently assumes odd-value distinctness on a cycle fails.
 
 ## P1 — Renewal-ladder dropping-safe barrier
 
@@ -132,10 +161,15 @@ jump classes. E25 proves only `M_star(210)>5000000`; E26 remains bounded at
 Q=17/19. P96's 3-adic complement is distributional, and NG27 refutes a
 universal gain-three compression bound.
 
+Phase 16 adds actual local transition restrictions P99 and the P100 mod-72
+packing law. These close neither infinite-safe H72 nor the periodic branch;
+P100's distinctness and finite-crossing hypotheses must not be imported into
+an infinite/repeated setting without proof.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
-cross-Q/unsafe-target witnesses, NG27, the `{1,2}` core, and every mandatory
+  cross-Q/unsafe-target witnesses, NG27/NG28, the `{1,2}` core, and every mandatory
 adversarial family. Reject any proof that identifies a general
 2-adic source with a positive ordinary integer, drops the per-address lattice
 `+1`, treats `(Q,r3)` as a prefix-closed state, or promotes finite scarcity to
@@ -203,7 +237,10 @@ Phase 15B strengthens the candidate minimum from `M` to `M_star` and exposes
 the exact P91 carry plus P95 jump state. Any useful recursion must distinguish
 NG27's gain-four collision rather than impose a bounded compression gain.
 
-**Fast falsification test.** First reconstruct NG23--NG27 and all E22--E26
+P97/NG28 additionally require a signed carry state; Q<=17 carry positivity is
+only E27 finite evidence.
+
+**Fast falsification test.** First reconstruct NG23--NG28 and all E22--E27
 finite ratios, then measure the joint `(B,r2,r3,C_w)` Pareto frontier in exact
 dynamic-programming/meet-in-the-middle slices. Attack every proposed constant
 or monotonicity with macro id 0, NG22, and `A^rB^s` before scaling.

@@ -725,9 +725,39 @@ claims must state their ordering and composition law and survive this witness.
 **Evidence.** [`../PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md),
 `artifacts/phase15b_compression.json`, and the independent Phase 15B verifier.
 
+## Phase 16 — same-Q endpoint carry is always positive
+
+**Status:** `REFUTED` (NG28)
+
+**Exact hypothesis.** If two coefficient-safe words have the same odd count
+and endpoint, with `d` longer than `a`, then the integer carry in
+`S_d=2^kS_a+m` is positive.
+
+**Why it looked plausible.** All 225,943 same-Q endpoint pairs through Q=17
+have positive carry, and shorter paths amplify the normalized affine
+correction by `2^k`.
+
+**Smallest stored counterexample (by the supplied audited witness).** At
+Q=26, the length-39 word
+`111111111101111110101011110010001001100` and length-40 word
+`1101101101110011100111011101010101101101` are both safe and reach endpoint
+716727426419. Their sources are 155014110207 and 310028220411, with
+`S_d=2S_a-3`.
+
+**Failure scope.** Fundamental for positivity, not for quantitative carry
+bounds. A common legal suffix preserves the endpoint relation when both
+extended paths remain safe.
+
+**Weaker statement retained.** P97 proves `m>-q/3` and
+`m>(2^k-q)/3`; negative carry can occur only when `2^k<q`. Future recurrences
+must store signed carry and survive this Q=26 pair.
+
+**Evidence.** [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md),
+`artifacts/phase16_theory.json`, and the independent Phase 16 verifier.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, and all exact counterexamples above. Passing a bounded regression is necessary
+NG23, NG24, NG25, NG26, NG27, NG28, and all exact counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

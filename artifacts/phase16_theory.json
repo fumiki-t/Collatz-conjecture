@@ -1,0 +1,433 @@
+{
+  "carry_bound": {
+    "negative_carry_requires": "2^k<q",
+    "proposal_repair": "The proposed strict upper bound is false at q=1 (word 1); no distinct-length safe same-Q pair exists there.",
+    "safe_correction": "B(w)/3^q=1/3 for q=1; 1/3<B(w)/3^q<q/3 for q>=2",
+    "same_Q": "m=(2^k B(a)-B(d))/3^q > -q/3 and > (2^k-q)/3"
+  },
+  "claims": {
+    "H97": "OPEN",
+    "H98": "OPEN",
+    "NG28": "REFUTED",
+    "P100": "VERIFIED_THEOREM",
+    "P101": "VERIFIED_THEOREM",
+    "P102": "VERIFIED_THEOREM",
+    "P103": "CONDITIONAL",
+    "P97": "VERIFIED_THEOREM",
+    "P98": "VERIFIED_THEOREM",
+    "P99": "VERIFIED_THEOREM"
+  },
+  "dichotomy": {
+    "G250": "q<=250N => Y_q<2N => all-prefix same-Q geodesic",
+    "H250": "q>250N => N<q/250, X<q/125, Z<2q/125",
+    "hypotheses": [
+      "least positive counterexample",
+      "finite coefficient first crossing",
+      "N>=100000",
+      "odd inputs before crossing are distinct"
+    ],
+    "periodic_boundary": "Without distinctness only q<3N gives all-prefix geodesic; otherwise N<=q/3 and X<2q/3.",
+    "q0_consequence": {
+      "external_lower_bound": "2075*2^60",
+      "q0": 72057431991,
+      "q0_less_than_three_times_bound": true,
+      "status": "CONDITIONAL"
+    }
+  },
+  "external_literature_role": "Angeltveit Section 2.3 supplies context for the merge sieve; P99 is proved internally and does not depend on it.",
+  "format": "collatz-phase16-theory-v1",
+  "local_merges": {
+    "all_odd_samples": [
+      {
+        "r": 1,
+        "u": 3,
+        "x": 5
+      },
+      {
+        "r": 2,
+        "u": 7,
+        "x": 17
+      },
+      {
+        "r": 3,
+        "u": 15,
+        "x": 53
+      },
+      {
+        "r": 4,
+        "u": 31,
+        "x": 161
+      },
+      {
+        "r": 5,
+        "u": 63,
+        "x": 485
+      },
+      {
+        "r": 6,
+        "u": 127,
+        "x": 1457
+      }
+    ],
+    "literal_sample_limit": 500,
+    "mod3_first_samples": [
+      [
+        5,
+        3
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        17,
+        11
+      ],
+      [
+        23,
+        15
+      ],
+      [
+        29,
+        19
+      ],
+      [
+        35,
+        23
+      ],
+      [
+        41,
+        27
+      ],
+      [
+        47,
+        31
+      ]
+    ],
+    "mod9_eight_first_samples": [
+      [
+        17,
+        7
+      ],
+      [
+        35,
+        15
+      ],
+      [
+        53,
+        23
+      ],
+      [
+        71,
+        31
+      ],
+      [
+        89,
+        39
+      ],
+      [
+        107,
+        47
+      ],
+      [
+        125,
+        55
+      ],
+      [
+        143,
+        63
+      ]
+    ],
+    "mod9_four_first_samples": [
+      [
+        13,
+        11
+      ],
+      [
+        31,
+        27
+      ],
+      [
+        49,
+        43
+      ],
+      [
+        67,
+        59
+      ],
+      [
+        85,
+        75
+      ],
+      [
+        103,
+        91
+      ],
+      [
+        121,
+        107
+      ],
+      [
+        139,
+        123
+      ]
+    ],
+    "odd_even_even_first_samples": [
+      [
+        5,
+        2,
+        2
+      ],
+      [
+        13,
+        6,
+        5
+      ],
+      [
+        21,
+        10,
+        8
+      ],
+      [
+        29,
+        14,
+        11
+      ],
+      [
+        37,
+        18,
+        14
+      ],
+      [
+        45,
+        22,
+        17
+      ],
+      [
+        53,
+        26,
+        20
+      ],
+      [
+        61,
+        30,
+        23
+      ]
+    ]
+  },
+  "log_certificate": {
+    "comparison": "Phi(250)+75/100000<3log(2)",
+    "exact_positive_margin_after_reduction": {
+      "denominator": "895591687449215540731438622245882577592548756997048933379860732756123637964140486115077290157626704364758973536078377023759506973894419741810947229695472116903344288757271808000",
+      "numerator": "2859038383725264240303468045834098803264617742055435709211829948052413063767122353527023416895812381105883408665501929550206059511593652459180437752943285089117692830197146039"
+    },
+    "log2": {
+      "lower": {
+        "denominator": "500063617986634845",
+        "numerator": "346617686907988864"
+      },
+      "upper": {
+        "denominator": "10001272359732696900",
+        "numerator": "6932353738160839627"
+      }
+    },
+    "log9_over_8": {
+      "lower": {
+        "denominator": "56150700668262562587557335896198735",
+        "numerator": "6613599978940883677847912031182368"
+      },
+      "upper": {
+        "denominator": "1497352017820335002334862290565299600",
+        "numerator": "176362666105090231409277654164883977"
+      }
+    },
+    "method": "log(x)=2*sum(z^(2n+1)/(2n+1)), z=(x-1)/(x+1), with a geometric tail",
+    "reduced_large_ratio": {
+      "lower": {
+        "denominator": "15128320933557165590046537871926146715731046998821077824423359076613608051452186081942803643286161037832663044460338881578508551561",
+        "numerator": "8376881922182108819144573286637768372693070416300182765341365925681125988652294598581784613152495949706939677132010947087127885920"
+      },
+      "ratio": {
+        "denominator": "82944",
+        "numerator": "144299"
+      },
+      "removed_power_of_two": 8,
+      "upper": {
+        "denominator": "40237085166637647743596806789999901500210112835473294092038546683015993864086509557646093529708437021458307075836399539110041291438708021248",
+        "numerator": "22280153416500460327177967976757380683804226654101985858050128132881190719484760546481935716080566863697097996402129912166149479206016705185"
+      }
+    },
+    "terms": 12
+  },
+  "negative_carry": {
+    "a": {
+      "B": 2830029652969,
+      "L": 39,
+      "Q": 26,
+      "endpoint": 716727426419,
+      "safe": true,
+      "source": 155014110207,
+      "word": "111111111101111110101011110010001001100"
+    },
+    "carry": -3,
+    "claim": "NG28",
+    "d": {
+      "B": 13285656790925,
+      "L": 40,
+      "Q": 26,
+      "endpoint": 716727426419,
+      "safe": true,
+      "source": 310028220411,
+      "word": "1101101101110011100111011101010101101101"
+    },
+    "hypothesis": "Every shorter safe same-Q predecessor of a safe endpoint has positive carry.",
+    "identity": "S_d=2*S_a-3",
+    "k": 1,
+    "scaled_B_difference": -7625597484987,
+    "status": "REFUTED"
+  },
+  "normalized_correction": {
+    "first_crossing": "X=(3^q/2^K_q)Y_q<Y_q and Z=2X",
+    "geodesic_criterion": "Y_q<2N implies every prefix is shortest in its same-Q safe endpoint class",
+    "identity": "Y_j=N+B_j/3^j"
+  },
+  "proves_collatz": false,
+  "residue_packing": {
+    "Phi": "13/36 log(9/8)+1/3 log(4/3)+1/3 log((3t+299/192)/(9/4))",
+    "continuous_count_below_9N_over_4": {
+      "denominator": "576",
+      "numerator": "133"
+    },
+    "cutoff_ratio": "H/N=3t+299/192",
+    "initial_point_plus_errors": 75,
+    "intervals": [
+      {
+        "count": 6,
+        "density": {
+          "denominator": "12",
+          "numerator": "1"
+        },
+        "interval": "[N,9N/8)",
+        "residues": [
+          1,
+          7,
+          19,
+          25,
+          43,
+          55
+        ]
+      },
+      {
+        "count": 9,
+        "density": {
+          "denominator": "8",
+          "numerator": "1"
+        },
+        "interval": "[9N/8,3N/2)",
+        "residues": [
+          1,
+          7,
+          19,
+          25,
+          31,
+          43,
+          49,
+          55,
+          67
+        ]
+      },
+      {
+        "count": 15,
+        "density": {
+          "denominator": "24",
+          "numerator": "5"
+        },
+        "interval": "[3N/2,2N)",
+        "residues": [
+          1,
+          7,
+          11,
+          19,
+          23,
+          25,
+          31,
+          41,
+          43,
+          47,
+          49,
+          55,
+          59,
+          65,
+          67
+        ]
+      },
+      {
+        "count": 20,
+        "density": {
+          "denominator": "18",
+          "numerator": "5"
+        },
+        "interval": "[2N,9N/4)",
+        "residues": [
+          1,
+          5,
+          7,
+          11,
+          13,
+          19,
+          23,
+          25,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47,
+          49,
+          55,
+          59,
+          61,
+          65,
+          67
+        ]
+      },
+      {
+        "count": 24,
+        "density": {
+          "denominator": "3",
+          "numerator": "1"
+        },
+        "interval": "[9N/4,infinity)",
+        "residues": [
+          1,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          25,
+          29,
+          31,
+          35,
+          37,
+          41,
+          43,
+          47,
+          49,
+          53,
+          55,
+          59,
+          61,
+          65,
+          67,
+          71
+        ]
+      }
+    ],
+    "modulus": 72,
+    "periodic_error_sum": 74
+  },
+  "what_this_result_does_not_prove": "Neither G250 nor H250 is excluded. The periodic branch, H89, H72, and the Collatz conjecture remain open."
+}

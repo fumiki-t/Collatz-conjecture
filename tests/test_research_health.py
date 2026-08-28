@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 15
+    assert result["latest_phase"] == 16
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -64,17 +64,28 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["E25"] == "VERIFIED_FINITE"
     assert result["active_focus"]["E26"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG27"] == "REFUTED"
+    assert result["active_focus"]["P97"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P101"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P103"] == "CONDITIONAL"
+    assert result["active_focus"]["E27"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG28"] == "REFUTED"
+    assert result["active_focus"]["H97"] == "OPEN"
+    assert result["active_focus"]["H98"] == "OPEN"
     assert result["latest_supplemental_verifier"]["valid"] is True
-    assert result["latest_supplemental_verifier"]["H89"] == "OPEN"
+    assert result["latest_supplemental_verifier"]["claims"]["H97"] == "OPEN"
+    assert result["latest_supplemental_verifier"]["claims"]["H98"] == "OPEN"
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
-    assert result["accepted_experiments"] == [
+    required_accepted = {
         "phase12-acceptance",
         "phase13-renewal-code-pressure",
         "phase14-coalescent-rewrite",
         "phase15-surplus-dominance",
         "phase15b-ancestral-frontier",
-    ]
+    }
+    assert required_accepted.issubset(result["accepted_experiments"])
+    phase16 = json.loads(Path("research/experiments/phase16-critical-dichotomy.json").read_text(encoding="utf-8"))
+    assert ("phase16-critical-dichotomy" in result["accepted_experiments"]) == (phase16["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -87,7 +98,7 @@ def test_registry_matches_context_and_claim_sources() -> None:
     assert registry["repository"]["claim_source"] == "docs/CLAIMS_LEDGER.md"
     assert "docs/RESEARCH_SYNTHESIS.md" in registry["canonical_documents"]
     obligations = registry["active_obligations"]
-    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "C03", "C04", "C05"}
+    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H97", "H98", "C03", "C04", "C05"}
     for row in obligations:
         if "context" in row:
             assert (root / row["context"]).is_file()
@@ -98,7 +109,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 109
+    assert committed["claim_count"] == 120
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert set(rows["H72"]["dependency_ids"]) == {

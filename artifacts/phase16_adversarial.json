@@ -1,0 +1,631 @@
+{
+  "families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "Phase 7 all-contact prefixes",
+    "NG27",
+    "NG28"
+  ],
+  "format": "collatz-phase16-adversarial-v1",
+  "interpretation": "These bounded rows are regression tests for conventions and theorem hypotheses, not evidence of asymptotic exclusion.",
+  "proves_collatz": false,
+  "row_digest_sha256": "9c996bcaf0384e27deb87d44d556c08589ddc0db6aca3e0c731ae8da227495ef",
+  "rows": [
+    {
+      "B": 8460794429,
+      "L": 32,
+      "Q": 16,
+      "name": "2^2-1",
+      "safe_prefix_length": 3,
+      "whole_word_safe": false,
+      "word": "11000101010101010101010101010101"
+    },
+    {
+      "B": 3448381783,
+      "L": 32,
+      "Q": 15,
+      "name": "8^2-5",
+      "safe_prefix_length": 6,
+      "whole_word_safe": false,
+      "word": "11011000110011010010001010101010"
+    },
+    {
+      "B": 8288607545,
+      "L": 32,
+      "Q": 16,
+      "name": "2^3-1",
+      "safe_prefix_length": 6,
+      "whole_word_safe": false,
+      "word": "11101001000101010101010101010101"
+    },
+    {
+      "B": 6164969309,
+      "L": 32,
+      "Q": 14,
+      "name": "8^3-5",
+      "safe_prefix_length": 9,
+      "whole_word_safe": false,
+      "word": "11011011000100001010010001010101"
+    },
+    {
+      "B": 4079733691,
+      "L": 32,
+      "Q": 15,
+      "name": "2^4-1",
+      "safe_prefix_length": 6,
+      "whole_word_safe": false,
+      "word": "11110000100010101010101010101010"
+    },
+    {
+      "B": 20626242005,
+      "L": 32,
+      "Q": 20,
+      "name": "8^4-5",
+      "safe_prefix_length": 12,
+      "whole_word_safe": false,
+      "word": "11011011011000111011110011110100"
+    },
+    {
+      "B": 169642942187,
+      "L": 32,
+      "Q": 23,
+      "name": "2^5-1",
+      "safe_prefix_length": 32,
+      "whole_word_safe": true,
+      "word": "11111010110111011110100111011011"
+    },
+    {
+      "B": 73082871167,
+      "L": 32,
+      "Q": 21,
+      "name": "8^5-5",
+      "safe_prefix_length": 15,
+      "whole_word_safe": false,
+      "word": "11011011011011000101111110010111"
+    },
+    {
+      "B": 80282579417,
+      "L": 32,
+      "Q": 22,
+      "name": "2^6-1",
+      "safe_prefix_length": 32,
+      "whole_word_safe": true,
+      "word": "11111100011011101111010011101101"
+    },
+    {
+      "B": 6626313031,
+      "L": 32,
+      "Q": 19,
+      "name": "8^6-5",
+      "safe_prefix_length": 19,
+      "whole_word_safe": false,
+      "word": "11011011011011011000110110111000"
+    },
+    {
+      "B": 3123001025,
+      "L": 32,
+      "Q": 16,
+      "name": "2^7-1",
+      "safe_prefix_length": 14,
+      "whole_word_safe": false,
+      "word": "11111110100010010010011010010001"
+    },
+    {
+      "B": 12331352903,
+      "L": 32,
+      "Q": 19,
+      "name": "8^7-5",
+      "safe_prefix_length": 22,
+      "whole_word_safe": false,
+      "word": "11011011011011011011000100110011"
+    },
+    {
+      "B": 635996011,
+      "L": 32,
+      "Q": 15,
+      "name": "2^8-1",
+      "safe_prefix_length": 12,
+      "whole_word_safe": false,
+      "word": "11111111000001001001001101001000"
+    },
+    {
+      "B": 15001225685,
+      "L": 32,
+      "Q": 20,
+      "name": "8^8-5",
+      "safe_prefix_length": 25,
+      "whole_word_safe": false,
+      "word": "11011011011011011011011000111100"
+    },
+    {
+      "B": 5,
+      "L": 3,
+      "Q": 2,
+      "name": "(110|111)^*:110",
+      "safe_prefix_length": 3,
+      "whole_word_safe": true,
+      "word": "110"
+    },
+    {
+      "B": 19,
+      "L": 3,
+      "Q": 3,
+      "name": "(110|111)^*:111",
+      "safe_prefix_length": 3,
+      "whole_word_safe": true,
+      "word": "111"
+    },
+    {
+      "B": 85,
+      "L": 6,
+      "Q": 4,
+      "name": "(110|111)^*:110110",
+      "safe_prefix_length": 6,
+      "whole_word_safe": true,
+      "word": "110110"
+    },
+    {
+      "B": 287,
+      "L": 6,
+      "Q": 5,
+      "name": "(110|111)^*:110111",
+      "safe_prefix_length": 6,
+      "whole_word_safe": true,
+      "word": "110111"
+    },
+    {
+      "B": 211,
+      "L": 6,
+      "Q": 5,
+      "name": "(110|111)^*:111110",
+      "safe_prefix_length": 6,
+      "whole_word_safe": true,
+      "word": "111110"
+    },
+    {
+      "B": 665,
+      "L": 6,
+      "Q": 6,
+      "name": "(110|111)^*:111111",
+      "safe_prefix_length": 6,
+      "whole_word_safe": true,
+      "word": "111111"
+    },
+    {
+      "B": 1085,
+      "L": 9,
+      "Q": 6,
+      "name": "(110|111)^*:110110110",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "110110110"
+    },
+    {
+      "B": 3511,
+      "L": 9,
+      "Q": 7,
+      "name": "(110|111)^*:110110111",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "110110111"
+    },
+    {
+      "B": 2903,
+      "L": 9,
+      "Q": 7,
+      "name": "(110|111)^*:110111110",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "110111110"
+    },
+    {
+      "B": 8965,
+      "L": 9,
+      "Q": 8,
+      "name": "(110|111)^*:110111111",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "110111111"
+    },
+    {
+      "B": 2219,
+      "L": 9,
+      "Q": 7,
+      "name": "(110|111)^*:111110110",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "111110110"
+    },
+    {
+      "B": 6913,
+      "L": 9,
+      "Q": 8,
+      "name": "(110|111)^*:111110111",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "111110111"
+    },
+    {
+      "B": 6305,
+      "L": 9,
+      "Q": 8,
+      "name": "(110|111)^*:111111110",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "111111110"
+    },
+    {
+      "B": 19171,
+      "L": 9,
+      "Q": 9,
+      "name": "(110|111)^*:111111111",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "111111111"
+    },
+    {
+      "B": 12325,
+      "L": 12,
+      "Q": 8,
+      "name": "(110|111)^*:110110110110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110110110110"
+    },
+    {
+      "B": 39023,
+      "L": 12,
+      "Q": 9,
+      "name": "(110|111)^*:110110110111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110110110111"
+    },
+    {
+      "B": 34159,
+      "L": 12,
+      "Q": 9,
+      "name": "(110|111)^*:110110111110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110110111110"
+    },
+    {
+      "B": 104525,
+      "L": 12,
+      "Q": 10,
+      "name": "(110|111)^*:110110111111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110110111111"
+    },
+    {
+      "B": 28687,
+      "L": 12,
+      "Q": 9,
+      "name": "(110|111)^*:110111110110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110111110110"
+    },
+    {
+      "B": 88109,
+      "L": 12,
+      "Q": 10,
+      "name": "(110|111)^*:110111110111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110111110111"
+    },
+    {
+      "B": 83245,
+      "L": 12,
+      "Q": 10,
+      "name": "(110|111)^*:110111111110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110111111110"
+    },
+    {
+      "B": 251783,
+      "L": 12,
+      "Q": 11,
+      "name": "(110|111)^*:110111111111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "110111111111"
+    },
+    {
+      "B": 22531,
+      "L": 12,
+      "Q": 9,
+      "name": "(110|111)^*:111110110110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111110110110"
+    },
+    {
+      "B": 69641,
+      "L": 12,
+      "Q": 10,
+      "name": "(110|111)^*:111110110111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111110110111"
+    },
+    {
+      "B": 64777,
+      "L": 12,
+      "Q": 10,
+      "name": "(110|111)^*:111110111110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111110111110"
+    },
+    {
+      "B": 196379,
+      "L": 12,
+      "Q": 11,
+      "name": "(110|111)^*:111110111111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111110111111"
+    },
+    {
+      "B": 59305,
+      "L": 12,
+      "Q": 10,
+      "name": "(110|111)^*:111111110110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111111110110"
+    },
+    {
+      "B": 179963,
+      "L": 12,
+      "Q": 11,
+      "name": "(110|111)^*:111111110111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111111110111"
+    },
+    {
+      "B": 175099,
+      "L": 12,
+      "Q": 11,
+      "name": "(110|111)^*:111111111110",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111111111110"
+    },
+    {
+      "B": 527345,
+      "L": 12,
+      "Q": 12,
+      "name": "(110|111)^*:111111111111",
+      "safe_prefix_length": 12,
+      "whole_word_safe": true,
+      "word": "111111111111"
+    },
+    {
+      "B": 73,
+      "L": 5,
+      "Q": 4,
+      "name": "A=11101",
+      "safe_prefix_length": 5,
+      "whole_word_safe": true,
+      "word": "11101"
+    },
+    {
+      "B": 5,
+      "L": 4,
+      "Q": 2,
+      "name": "B=1100",
+      "safe_prefix_length": 3,
+      "whole_word_safe": false,
+      "word": "1100"
+    },
+    {
+      "B": 817,
+      "L": 9,
+      "Q": 6,
+      "name": "W=AB",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "111011100"
+    },
+    {
+      "B": 817,
+      "L": 9,
+      "Q": 6,
+      "name": "A^1B^1",
+      "safe_prefix_length": 9,
+      "whole_word_safe": true,
+      "word": "111011100"
+    },
+    {
+      "B": 9913,
+      "L": 13,
+      "Q": 8,
+      "name": "A^1B^2",
+      "safe_prefix_length": 12,
+      "whole_word_safe": false,
+      "word": "1110111001100"
+    },
+    {
+      "B": 130177,
+      "L": 17,
+      "Q": 10,
+      "name": "A^1B^3",
+      "safe_prefix_length": 12,
+      "whole_word_safe": false,
+      "word": "11101110011001100"
+    },
+    {
+      "B": 1826953,
+      "L": 21,
+      "Q": 12,
+      "name": "A^1B^4",
+      "safe_prefix_length": 12,
+      "whole_word_safe": false,
+      "word": "111011100110011001100"
+    },
+    {
+      "B": 79361,
+      "L": 14,
+      "Q": 10,
+      "name": "A^2B^1",
+      "safe_prefix_length": 14,
+      "whole_word_safe": true,
+      "word": "11101111011100"
+    },
+    {
+      "B": 796169,
+      "L": 18,
+      "Q": 12,
+      "name": "A^2B^2",
+      "safe_prefix_length": 18,
+      "whole_word_safe": true,
+      "word": "111011110111001100"
+    },
+    {
+      "B": 8476241,
+      "L": 22,
+      "Q": 14,
+      "name": "A^2B^3",
+      "safe_prefix_length": 22,
+      "whole_word_safe": true,
+      "word": "1110111101110011001100"
+    },
+    {
+      "B": 97257689,
+      "L": 26,
+      "Q": 16,
+      "name": "A^2B^4",
+      "safe_prefix_length": 25,
+      "whole_word_safe": false,
+      "word": "11101111011100110011001100"
+    },
+    {
+      "B": 6850129,
+      "L": 19,
+      "Q": 14,
+      "name": "A^3B^1",
+      "safe_prefix_length": 19,
+      "whole_word_safe": true,
+      "word": "1110111101111011100"
+    },
+    {
+      "B": 64272601,
+      "L": 23,
+      "Q": 16,
+      "name": "A^3B^2",
+      "safe_prefix_length": 23,
+      "whole_word_safe": true,
+      "word": "11101111011110111001100"
+    },
+    {
+      "B": 620396449,
+      "L": 27,
+      "Q": 18,
+      "name": "A^3B^3",
+      "safe_prefix_length": 27,
+      "whole_word_safe": true,
+      "word": "111011110111101110011001100"
+    },
+    {
+      "B": 6254656681,
+      "L": 31,
+      "Q": 20,
+      "name": "A^3B^4",
+      "safe_prefix_length": 31,
+      "whole_word_safe": true,
+      "word": "1110111101111011100110011001100"
+    },
+    {
+      "B": 568360865,
+      "L": 24,
+      "Q": 18,
+      "name": "A^4B^1",
+      "safe_prefix_length": 24,
+      "whole_word_safe": true,
+      "word": "111011110111101111011100"
+    },
+    {
+      "B": 5199133865,
+      "L": 28,
+      "Q": 20,
+      "name": "A^4B^2",
+      "safe_prefix_length": 28,
+      "whole_word_safe": true,
+      "word": "1110111101111011110111001100"
+    },
+    {
+      "B": 48134382065,
+      "L": 32,
+      "Q": 22,
+      "name": "A^4B^3",
+      "safe_prefix_length": 32,
+      "whole_word_safe": true,
+      "word": "11101111011110111101110011001100"
+    },
+    {
+      "B": 454684275065,
+      "L": 36,
+      "Q": 24,
+      "name": "A^4B^4",
+      "safe_prefix_length": 36,
+      "whole_word_safe": true,
+      "word": "111011110111101111011100110011001100"
+    },
+    {
+      "B": 527345,
+      "L": 19,
+      "Q": 12,
+      "name": "Phase7-all-contact-prefix",
+      "safe_prefix_length": 19,
+      "whole_word_safe": true,
+      "word": "1111111111110000000"
+    },
+    {
+      "B": 1431778267,
+      "L": 29,
+      "Q": 19,
+      "name": "NG27-d",
+      "safe_prefix_length": 29,
+      "whole_word_safe": true,
+      "word": "11111111111111101110000000001"
+    },
+    {
+      "B": 1179106267,
+      "L": 25,
+      "Q": 19,
+      "name": "NG27-a",
+      "safe_prefix_length": 25,
+      "whole_word_safe": true,
+      "word": "1111111111101111110100100"
+    },
+    {
+      "B": 2830029652969,
+      "L": 39,
+      "Q": 26,
+      "name": "NG28-a",
+      "safe_prefix_length": 39,
+      "whole_word_safe": true,
+      "word": "111111111101111110101011110010001001100"
+    },
+    {
+      "B": 13285656790925,
+      "L": 40,
+      "Q": 26,
+      "name": "NG28-d",
+      "safe_prefix_length": 40,
+      "whole_word_safe": true,
+      "word": "1101101101110011100111011101010101101101"
+    }
+  ]
+}

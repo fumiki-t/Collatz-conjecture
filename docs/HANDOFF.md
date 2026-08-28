@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the fourteen phases established
+## 3. What the sixteen phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -135,6 +135,13 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   only `M_star(210)>5000000`; E26 is bounded at Q=17/19; NG27 records a
   gain-four compression witness. P90's eventual H89 route is conditional and
   H89 remains open.
+- Phase 16 repairs the q=1 correction boundary, proves P97--P102 carry,
+  normalized-geodesic, local-merge, mod-72 packing, and finite-crossing
+  dichotomy results, and retains P103 as a conditional q0 consequence. For
+  distinct odd values and `N>=100000`, G250 is all-prefix same-Q geodesic and
+  H250 has `N<q/250`, `X<q/125`, `Z<2q/125`. H97 and H98 remain open. NG28's
+  exact Q=26 carry -3 witness forbids positive-carry recurrences; E27 is finite
+  through Q=17.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -174,6 +181,14 @@ P89 ancestral minimality
 ```
 
 E25 is a depth-210 finite datum, not the missing eventual theorem.
+
+Phase 16 gives a new finite-crossing split inside this route:
+
+```text
+distinct odd values -> G250 all-prefix geodesic (H97 OPEN)
+                    or H250 ultra-low source/endpoint box (H98 OPEN)
+repeated values     -> P102 factor-3 boundary; cycle branch remains separate.
+```
 
 The closest q0 subroute is now:
 
@@ -219,7 +234,7 @@ should answer all of these before a large computation:
 5. What certificate can an implementation-independent verifier reconstruct?
 
 For H54, H70, or H72, use the scoped pack under [`context/`](context/README.md);
-for H89, use the Phase 15B audit. Confirm status against `CLAIMS_LEDGER.md`. Register a large experiment
+for H89/H97/H98, use the Phase 15B and Phase 16 audits. Confirm status against `CLAIMS_LEDGER.md`. Register a large experiment
 under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
 
@@ -229,7 +244,7 @@ inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
 quotient/carry state extending P71, and a positive ordinary-integrality or
 effective shadow-height obstruction extending P75--P85. Start from the stored
 NG19 collisions, universal NG20 pair, both NG22 formal 2-adic sources, NG23's
-raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG27
+raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG28
 cross-Q/unsafe-target witnesses: any proposed merge
 must distinguish them or prove a sound dominance relation. Certificate
 extension is useful when it tests such structure; raw depth extension is
@@ -282,7 +297,8 @@ post-Phase-14 scratch candidate is accepted evidence. See the scratch index in
 
 ## If you only remember one thing
 
-The current bottleneck is not finite verification or contact density. It is a
+The current bottleneck is not finite verification, contact density, or the
+Phase 16 dichotomy. It is a
 rigorous asymptotic link from high affine correction to ordinary height, or a
 cross-cylinder spacing theorem. P71 solves exact margins only inside a fixed
 finite cylinder; NG19 prevents literal truncation, and NG20 prevents discarding

@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 15,
+    "latest_phase": 16,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 15,
-    "report": "PHASE15B_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase15b_verifier.json",
+    "phase": 16,
+    "report": "PHASE16_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase16_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase15b-ancestral-frontier.json"
+    "experiment_manifest": "research/experiments/phase16-critical-dichotomy.json"
   },
   "active_obligations": [
     {
@@ -45,8 +45,22 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H89.md",
-      "depends_on": ["P54", "P89", "P91", "P92", "P95", "E25", "E26", "NG27"],
-      "success_scope": "Prove M_star(K_q-1)>H_q eventually and independently check the finite first-crossing remainder; P90 then covers both finite- and never-crossing least-counterexample cases."
+      "depends_on": ["P54", "P89", "P91", "P92", "P95", "P97", "P98", "E25", "E26", "E27", "NG27", "NG28"],
+      "success_scope": "Prove M_star(K_q-1)>H_q eventually and independently check the finite first-crossing remainder; Phase 16 additionally splits distinct finite crossings into H97/H98 without closing either branch."
+    },
+    {
+      "id": "H97",
+      "status": "OPEN",
+      "priority": "P0",
+      "depends_on": ["P89", "P97", "P98", "P101", "E27", "NG17", "NG28"],
+      "success_scope": "Exclude the G250 positive ordinary-source all-prefix same-Q geodesic branch; contact density and geodesicity alone are insufficient."
+    },
+    {
+      "id": "H98",
+      "status": "OPEN",
+      "priority": "P0",
+      "depends_on": ["P99", "P100", "P101", "E27", "NG28"],
+      "success_scope": "Exclude the H250 two-sided ordinary-height box while retaining exact source, endpoint, carry, literal safety, and the separate periodic branch."
     },
     {
       "id": "H70",
@@ -134,7 +148,18 @@
     "P96",
     "E25",
     "E26",
-    "NG27"
+    "NG27",
+    "P97",
+    "P98",
+    "P99",
+    "P100",
+    "P101",
+    "P102",
+    "P103",
+    "E27",
+    "NG28",
+    "H97",
+    "H98"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

@@ -69,6 +69,18 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   decomposition and its Beatty support, P95 gives shifted-defect jump classes,
   and P96 gives the exact 3-adic measure bound inherited from P78. The measure
   statement is not a pointwise ordinary-integer exclusion.
+- `VERIFIED_THEOREM`: P97 repairs the q=1 correction boundary and proves exact
+  signed same-Q carry lower bounds. P98 proves normalized correction and the
+  prefix-closed same-Q geodesic criterion. P99/P100 give internally proved
+  local merges and distinct-odd-value mod-72 reciprocal packing. P101 gives
+  the nonperiodic G250/H250 dichotomy; P102 separately retains the weaker
+  distinctness-free factor-3 boundary.
+- `CONDITIONAL`: P103 applies P102 to the Phase 7 q0 scenario using X02 and
+  makes the q0 critical word all-prefix same-Q geodesic. This retains every
+  earlier conditional/external input and is not a contradiction.
+- `OPEN`: H97 is exclusion of the positive ordinary-source G250 geodesic
+  branch. H98 is exclusion of the H250 box `N<q/250`, `X<q/125`,
+  `Z<2q/125`. Neither is proved, and neither covers repeated periodic values.
 - `CONDITIONAL` / `OPEN`: P90 shows that eventual H89,
   `M_star(K_q-1)>H_q`, plus a finite first-crossing remainder would exclude
   both finite and never-crossing least-counterexample cases. H89 is unproved;
@@ -181,6 +193,11 @@ No item above proves the Collatz conjecture.
   occurrences and proving `M_star(210)>5000000`. E26 audits 663,535 safe Q=17
   words, 72,804 renewal blocks through Q=17, and 5,936,673 safe Q=19 words for
   same-Q compression. All are finite statements.
+- Phase 16: E27 independently enumerates all safe/critical words through
+  Q=17 and 68 adversarial rows. At Q=17, 253,018 of 312,455 critical words
+  are same-Q geodesic and 27,949 are also contact-rich. All 225,943 same-Q
+  endpoint pairs through the cutoff have positive carry; NG28 at Q=26 shows
+  that the finite sign pattern is not universal.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -219,6 +236,11 @@ the internally verified Phase 6 finite barrier range.
 Phase 8 closes C02 as a genuine theorem for the ordered contracting family
 `A^rB^s`. This is the strongest new universal block result, but it covers only
 one ordering family and therefore does not supersede the P54 barrier route.
+
+Phase 16 gives the strongest current finite-first-crossing localization for
+distinct odd values: G250 is all-prefix same-Q geodesic, while H250 has
+`N<q/250`, `X<q/125`, and `Z<2q/125`. This is a dichotomy rather than an
+exclusion and does not supersede the Phase 6 barrier certificates.
 
 Phase 9 gives the strongest current localization of the q0 conditional
 endpoint: `0<=X-N<2^32`, `X=7 or 19 mod 36`, G4 is forbidden, and the first
@@ -285,7 +307,9 @@ empty-set statements rather than asymptotic progress.
 Phase 12 constrains the infinite-safe-tail branch using actual odd orbit
 values. The coarse mod-6 packing input is sharp at exponent `1/9`; excluding
 the branch requires an additional transition, positivity, or ordinary-height
-mechanism, not a larger finite range. P73 removes only the all-contact
+mechanism, not a larger finite range. Phase 16 makes the finite-crossing
+analogue explicit: H97 needs a positive ordinary-source geodesic exclusion,
+while H98 needs a two-sided ultra-low-height exclusion. P73 removes only the all-contact
 extremal word. The Garcia--Tal audit conditionally upgrades every nonperiodic
 positive orbit to a permanent-safe tail and gives summable defects, but NG22
 shows that those analytic conditions remain consistent with a formal exponent
@@ -337,6 +361,9 @@ problem only after the octave defect becomes positive.
 
 ## What was recently refuted?
 
+- `REFUTED`: every shorter safe same-Q endpoint predecessor has positive carry
+  (NG28). The exact Q=26 pair has common endpoint 716,727,426,419 and carry
+  -3, despite positive carry for every E27 pair through Q=17.
 - `REFUTED`: same-Q total compression gain is universally at most three
   (NG27). At Q=19 an exact gain-four pair has sources 44,466,175 and 2,779,135
   with `y+1=16(x+1)`. This does not supply a composable gain theorem.
@@ -389,14 +416,17 @@ problem only after the octave defect becomes positive.
 - `RETRACTED`: early strong numerical claims based on cycle-only assumptions,
   unchecked computations, or invalid equivalences.
 
-## Next 3 concrete research questions
+## Next 4 concrete research questions
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can P91/P92/P95 propagate ancestral-minimal fronts across Q with a
-   well-founded carry state that survives NG24--NG27 and proves H89, or at
+2. Can P91/P92/P95/P97 propagate ancestral-minimal fronts across Q with a
+   well-founded signed-carry state that survives NG24--NG28 and proves H89, or at
    least an effective lower bound for `M_star(K_q-1)` beyond E25?
-3. Can P71's exact per-cylinder margin interval be merged across residue
+3. Can H97's positive ordinary-source geodesic words be excluded while the
+   formal all-contact 2-adic prefixes remain allowed, or can H98 be excluded
+   with an exact two-sided source/endpoint-height automaton?
+4. Can P71's exact per-cylinder margin interval be merged across residue
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
    odd orbits from both NG21 and NG22?
@@ -411,12 +441,15 @@ problem only after the octave defect becomes positive.
   untracked artifact warnings are not accepted evidence.
 - Formalize one precise candidate inequality for `M(k)` and search for its
   smallest exact counterexample before scaling.
-- Formalize an H89 recursion in `(Q,L,B,r2,r3,D,carry)` and reject it first on
-  NG24--NG27 before extending the E25/E26 bounds.
+- Formalize an H89 recursion in `(Q,L,B,r2,r3,D,signed carry)` and reject it first on
+  NG24--NG28 before extending the E25--E27 bounds.
+- Prototype H97 and H98 separately. Preserve a fixed positive ordinary source
+  for H97 and both ordinary heights for H98; never apply P100 to a repeated
+  cycle segment.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
 - Extend P72 only with an orbit-specific transition invariant; test it first
-  against NG21--NG27 and E20/E22/E23/E24/E25/E26 before claiming an exponent or
+  against NG21--NG28 and E20/E22/E23/E24/E25/E26/E27 before claiming an exponent or
   anti-concentration improvement.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.

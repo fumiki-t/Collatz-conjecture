@@ -1,0 +1,39 @@
+{
+  "adversarial_rows": 68,
+  "claims": {
+    "E27": "VERIFIED_FINITE",
+    "H97": "OPEN",
+    "H98": "OPEN",
+    "NG28": "REFUTED",
+    "P100": "VERIFIED_THEOREM",
+    "P101": "VERIFIED_THEOREM",
+    "P102": "VERIFIED_THEOREM",
+    "P103": "CONDITIONAL",
+    "P97": "VERIFIED_THEOREM",
+    "P98": "VERIFIED_THEOREM",
+    "P99": "VERIFIED_THEOREM"
+  },
+  "finite": {
+    "critical_words_at_maximum_Q": 312455,
+    "geodesic_at_maximum_Q": 253018,
+    "maximum_Q": 17
+  },
+  "format": "collatz-phase16-verifier-v1",
+  "independence": "literal-string enumeration and explicit odd-position affine sums; no generator import",
+  "proves_collatz": false,
+  "theory": {
+    "log_margin": [
+      2859038383725264240303468045834098803264617742055435709211829948052413063767122353527023416895812381105883408665501929550206059511593652459180437752943285089117692830197146039,
+      895591687449215540731438622245882577592548756997048933379860732756123637964140486115077290157626704364758973536078377023759506973894419741810947229695472116903344288757271808000
+    ],
+    "negative_carry": -3,
+    "residue_counts": [
+      6,
+      9,
+      15,
+      20,
+      24
+    ]
+  },
+  "valid": true
+}

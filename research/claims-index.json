@@ -1,5 +1,5 @@
 {
-  "claim_count": 109,
+  "claim_count": 120,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -1530,9 +1530,163 @@
       "last_audited": "2026-08-28",
       "notes": "At Q=19 a gain-four pair has sources 44,466,175 and 2,779,135 with `y+1=16(x+1)`. One finite gain does not prove linear or composable compression.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "For a safe word, `B/3^q=1/3` at `q=1`, while `1/3<B/3^q<q/3` for `q>=2`. For distinct-length safe same-Q words to one endpoint, the carry satisfies `m>-q/3` and `m>(2^k-q)/3`; hence negative carry requires `2^k<q`.",
+      "collatz_implication": "Retains a quantitative carry barrier after NG28 refutes positivity.",
+      "dependencies": "Exact odd-position expansion of `B`; coefficient safety.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Sections 2--4; `artifacts/phase16_theory.json`; independent verifier.",
+      "first_introduced": "Phase 16",
+      "id": "P97",
+      "last_audited": "2026-08-28",
+      "notes": "The supplied proposal's strict `q=1` upper bound was false and is explicitly repaired. The bound does not force nonnegative carry.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Odd-orbit normalization satisfies `Y_j=N+B_j/3^j`; at first crossing `X=(3^q/2^K)Y_q<Y_q` and `Z=2X`. Under P89, `Y_q<2N` makes the critical safe word and every prefix shortest in its exact same-Q safe endpoint class; this geodesic language is prefix-closed.",
+      "collatz_implication": "Converts an Archimedean correction bound into an exact ancestral restriction.",
+      "dependencies": "P89; least-positive-counterexample prefix; positive literal competitors.",
+      "dependency_ids": [
+        "P89"
+      ],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Section 5; exact finite prefix-closure reconstruction.",
+      "first_introduced": "Phase 16",
+      "id": "P98",
+      "last_audited": "2026-08-28",
+      "notes": "Same-Q geodesicity alone does not exclude the all-contact formal word or prove a smaller source exists.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Along a least-counterexample orbit, exact mod-3/mod-9 preimages, the odd-even-even merge, and the all-odd inverse imply the height-conditioned exclusions (5.1)--(5.4) and `x+1>=(3/2)^r(N+1)` when `x=-1 mod 3^r`.",
+      "collatz_implication": "Supplies orbit-specific residue exclusions for P100 and future merge automata.",
+      "dependencies": "Least-positive-counterexample hypothesis; literal shortcut algebra.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Section 6; `artifacts/phase16_theory.json`; literal independent traces.",
+      "first_introduced": "Phase 16",
+      "id": "P99",
+      "last_audited": "2026-08-28",
+      "notes": "Angeltveit is overlap context only; the repository proof is internal. Local merges do not form a complete global sieve.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For distinct odd inputs above a least-counterexample tail minimum, mod-72 packing gives allowed-residue counts `6,9,15,20,24`; for `t=q/N>=133/576`, `sum_(i<q)1/x_i<=75/N+Phi(t)` and `log(Y_q/N)<=25/N+Phi(t)/3` with the stored exact `Phi`.",
+      "collatz_implication": "Sharpens finite-first-crossing growth using actual local transitions.",
+      "dependencies": "P99; all odd inputs after `N` are coprime to 6; odd inputs before crossing are distinct.",
+      "dependency_ids": [
+        "P99"
+      ],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Section 7; exact residue lists and rational capacity in `artifacts/phase16_theory.json`.",
+      "first_introduced": "Phase 16",
+      "id": "P100",
+      "last_audited": "2026-08-28",
+      "notes": "The 75 includes all residue-class endpoint errors plus `N`; the estimate is not valid on a repeated periodic segment.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If `N>=100000` and the odd inputs before a finite coefficient first crossing are distinct, then either G250: `q<=250N` and every safe prefix is same-Q geodesic, or H250: `q>250N`, `N<q/250`, `X<q/125`, and `Z<2q/125`.",
+      "collatz_implication": "Replaces the earlier factor-3 split by a factor-250 nonperiodic dichotomy.",
+      "dependencies": "P97--P100; exact atanh-series log enclosure; least-positive-counterexample first crossing.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Section 8; `artifacts/phase16_theory.json`; independent exact log verifier.",
+      "first_introduced": "Phase 16",
+      "id": "P101",
+      "last_audited": "2026-08-28",
+      "notes": "It is a dichotomy, not an exclusion. The `t<133/576` subcase is handled by P97 rather than extending `Phi` outside its domain.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Without odd-value distinctness, every least-counterexample first crossing satisfies: if `q<3N`, every safe prefix is same-Q geodesic; otherwise `N<=q/3` and `X<2q/3`.",
+      "collatz_implication": "Preserves a valid periodic/nonperiodic scope boundary.",
+      "dependencies": "P97/P98; least-positive-counterexample first crossing; no nonperiodicity assumption.",
+      "dependency_ids": [
+        "P97",
+        "P98"
+      ],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Section 9.",
+      "first_introduced": "Phase 16",
+      "id": "P102",
+      "last_audited": "2026-08-28",
+      "notes": "It does not exclude a nontrivial cycle or produce the 250 constants in a repeated orbit.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "In the Phase 7 q0 scenario, `q0<3N`; hence P102 makes the q0 critical word all-prefix same-Q geodesic, whether periodic or nonperiodic.",
+      "collatz_implication": "Adds geodesicity to the conditional q0 contact-pressure target.",
+      "dependencies": "P54/P57 q0 framework; X02 external lower bound; P102.",
+      "dependency_ids": [
+        "P102",
+        "P54",
+        "P57",
+        "X02"
+      ],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Section 9; exact integer comparison in `artifacts/phase16_theory.json`.",
+      "first_introduced": "Phase 16",
+      "id": "P103",
+      "last_audited": "2026-08-28",
+      "notes": "The least-counterexample and first-crossing framework and X02 remain inputs; high contact plus geodesicity is not a contradiction.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Exact independent enumeration covers every safe and critical word through Q=17, all 225,943 same-Q endpoint pairs in that cutoff, and 68 mandatory/adversarial rows. At Q=17, 253,018 of 312,455 critical words are geodesic and 27,949 are both geodesic and contact-rich.",
+      "collatz_implication": "Supplies bounded falsification data for H97/H98 and checks prefix closure.",
+      "dependencies": "P97/P98 definitions; arbitrary-precision integer enumeration; contact-rich means exactly `100*c>43Q`.",
+      "dependency_ids": [
+        "P97",
+        "P98"
+      ],
+      "evidence": "[`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md); `artifacts/phase16_finite_layers.json`; `artifacts/phase16_adversarial.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 16",
+      "id": "E27",
+      "last_audited": "2026-08-28",
+      "notes": "No negative carry occurs through Q=17, but NG28 occurs at Q=26. No asymptotic geodesic/contact conclusion follows.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every shorter safe same-Q predecessor of a safe endpoint has positive carry.",
+      "collatz_implication": "Requires signed carry in every future ancestral-prefix recursion.",
+      "dependencies": "Exact Q=26 literal pair.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase16_theory.json`; [`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Section 3; independent verifier.",
+      "first_introduced": "Phase 16",
+      "id": "NG28",
+      "last_audited": "2026-08-28",
+      "notes": "The words of lengths 39 and 40 have sources 155,014,110,207 and 310,028,220,411, common endpoint 716,727,426,419, and carry -3. P97's lower bounds survive.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Exclude every positive ordinary-source, all-prefix same-Q geodesic critical word in G250, using the actual source/carry/contact data rather than geodesicity or contact density alone.",
+      "collatz_implication": "Would eliminate the G250 side of nonperiodic finite first crossings.",
+      "dependencies": "P98/P101; NG17, P73, NG24--NG28; all mandatory families.",
+      "dependency_ids": [
+        "NG17",
+        "P101",
+        "P73",
+        "P98"
+      ],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Sections 8 and 12; `artifacts/phase16_obstruction_report.md`.",
+      "first_introduced": "Phase 16",
+      "id": "H97",
+      "last_audited": "2026-08-28",
+      "notes": "Formal all-contact prefixes can be geodesic and 2-adically coherent; positive ordinary integrality must be retained.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Exclude the H250 two-sided box `N<q/250`, `X<q/125`, `Z<2q/125` for every positive literal critical path.",
+      "collatz_implication": "Would eliminate the H250 side of nonperiodic finite first crossings.",
+      "dependencies": "P101; exact source and endpoint residues, safety, and ordinary height.",
+      "dependency_ids": [
+        "P101"
+      ],
+      "evidence": "[`../research/audits/critical-dichotomy/REPORT.md`](../research/audits/critical-dichotomy/REPORT.md), Sections 8 and 12; `artifacts/phase16_obstruction_report.md`.",
+      "first_introduced": "Phase 16",
+      "id": "H98",
+      "last_audited": "2026-08-28",
+      "notes": "No accepted transducer, pumping, or meet-in-the-middle certificate currently empties the box; the periodic branch remains separate.",
+      "status": "OPEN"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "bf5f8e0e4ecf82525431a8d2eea02e145269891595f1318d6a7dd4e7f1b198ed"
+  "source_sha256": "47fc86510c30a719d419872848345b685b694ec694563b56e0e8946e916791a7"
 }

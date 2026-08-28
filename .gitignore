@@ -4,3 +4,13 @@ __pycache__/
 .hypothesis/
 *.pyc
 .DS_Store
+
+# Locally regenerated Phase 1--2 evidence.  These large files are not part of
+# the accepted artifact manifest; RUN_RESULTS.md records their reproducible
+# generator boundary.  Keep the exact names visible here rather than ignoring
+# arbitrary future evidence under artifacts/.
+artifacts/baseline_certificate.json
+artifacts/canonical_signatures.json
+artifacts/obstruction_report.md
+artifacts/repeated_blocks.json
+artifacts/survivor_stats.csv

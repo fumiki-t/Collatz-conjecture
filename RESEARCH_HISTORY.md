@@ -1178,3 +1178,36 @@ sources 44,466,175 and 2,779,135 satisfying `y+1=16(x+1)`.
 Phase 15B does not prove H89, an eventual ancestral-frontier contraction,
 P80, H72, exclusion of nontrivial cycles, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 30. Phase 16 — critical geodesic / ultra-low-height dichotomy
+
+**Branch:** `feat/phase16-critical-dichotomy`
+
+**Acceptance record:** [`PHASE16_RUN_RESULTS.md`](PHASE16_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/critical-dichotomy/REPORT.md`](research/audits/critical-dichotomy/REPORT.md)
+
+Phase 16 treated the supplied note as untrusted and repaired two boundary
+errors: `B/3^q<q/3` has equality at q=1, and the displayed `Phi(t)` packing
+formula begins only at `t=133/576`. P97 retains the corrected carry bounds;
+NG28 refutes universal carry positivity with an exact safe Q=26 pair of carry
+-3. P98 proves normalized correction and the prefix-closed same-Q geodesic
+criterion. P99 internally proves the mod-3/mod-9, odd-even-even, and all-odd
+merges; Angeltveit is recorded only as primary-source overlap context.
+
+P100 gives the exact mod-72 counts `6,9,15,20,24` and reciprocal packing
+bound for distinct odd inputs. An exact rational atanh-series enclosure proves
+P101's nonperiodic 250 dichotomy: either all prefixes are same-Q geodesic, or
+`N<q/250`, `X<q/125`, and `Z<2q/125`. P102 separately retains the weaker
+distinctness-free factor-3 bound. P103 conditionally adds all-prefix
+geodesicity to the Phase 7 q0 scenario under X02.
+
+E27 exhausts Q<=17. At Q=17, 253,018 of 312,455 critical words are geodesic;
+27,949 are also contact-rich under the exact Phase 7 threshold. The finite
+cutoff has 225,943 same-Q endpoint pairs and no negative carry, demonstrating
+why the separately stored Q=26 NG28 witness is required.
+
+### What this result does not prove
+
+Phase 16 does not exclude G250/H97, H250/H98, the periodic branch, H89, H72,
+nontrivial cycles, or the Collatz conjecture. `proves_collatz=false`.

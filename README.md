@@ -22,17 +22,16 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 15B is the latest accepted research layer. It proves ancestral
-minimality for safe prefixes of a least counterexample, exact cross-Q
-carry/uniform-dominance and shifted-jump rules, and records the finite bound
-`M_star(210)>5000000`. Its Q=17/19 frontier and 3-adic measure results remain
-bounded or non-pointwise. No eventual H89 inequality, asymptotic frontier
-contraction, or ordinary anti-concentration theorem is proved; H54, H70, H72,
-H89, C03, C04, C05, the
-permanent-safe-tail branch, and the nontrivial-cycle branch remain open.
+Phase 16 is the latest accepted research layer. It repairs and proves exact
+carry/geodesic/local-merge lemmas and splits every distinct-odd-value finite
+first crossing with `N>=100000` into G250 (all-prefix same-Q geodesic) or H250
+(`N<q/250`, `X<q/125`, `Z<2q/125`). Neither branch is excluded. NG28 records
+an exact negative-carry counterexample; E27 is bounded at Q=17. H54, H70, H72,
+H89, H97, H98, C03, C04, C05, the periodic/nontrivial-cycle branch, and the
+permanent-safe-tail branch remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–15B, separates internal and external
+map and conventions, summarizes Phases 1–16, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -73,12 +72,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase15b.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase15b_verifier.json
+.venv/bin/python verifier/verify_phase16.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase16_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 15B result](PHASE15B_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 16 result](PHASE16_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

@@ -251,6 +251,24 @@ current certificate.
 
 ## Coefficient stopping and paradoxical behavior
 
+### Angeltveit (2026 preprint)
+
+**Status:** primary-source context; not an active external proof dependency
+
+Vigleik Angeltveit, “An improved algorithm for checking the Collatz
+conjecture for all `n < 2^N`,” arXiv:2602.10466 (2026).
+[arXiv:2602.10466](https://arxiv.org/abs/2602.10466).
+
+**Result relevant here.** Section 2.3, especially Lemmas 2.6--2.9, states
+mod-3/mod-9 preimage sieves, a path-merging sieve, and the odd-even-even
+sieve. Lemma 2.9 is attributed there to Christian Hercher's 2023 cycle paper.
+
+**Repository role.** Phase 16 independently proves the exact shortcut-map
+formulas used in P99 by literal traces and algebra. The paper establishes the
+overlap/newness boundary and motivates a future merge automaton; it is not an
+input to P99, P100, or P101. No algorithmic finite verification result from
+the preprint is imported as evidence here.
+
 ### Rozier and Terracol (2026; first posted 2025)
 
 **Status:** `EXTERNAL_THEOREM`; publication metadata updated from the original

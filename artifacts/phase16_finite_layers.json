@@ -1,0 +1,337 @@
+{
+  "contact_definition": "odd position d_j is a contact iff d_j=floor(log2(3^j)); contact-rich means 100*contacts>43*Q",
+  "counts_by_Q": {
+    "1": {
+      "all_prefix_same_Q_geodesic": 1,
+      "contact_rich": 1,
+      "contact_rich_geodesic": 1,
+      "critical_words": 1,
+      "maximum_contacts": 1,
+      "minimum_endpoint": {
+        "source": 1,
+        "value": 2,
+        "word": "1"
+      },
+      "minimum_source": {
+        "endpoint": 2,
+        "value": 1,
+        "word": "1"
+      },
+      "safe_words_all_lengths": 1,
+      "same_Q_geodesic": 1
+    },
+    "10": {
+      "all_prefix_same_Q_geodesic": 377,
+      "contact_rich": 179,
+      "contact_rich_geodesic": 149,
+      "critical_words": 476,
+      "maximum_contacts": 10,
+      "minimum_endpoint": {
+        "source": 91,
+        "value": 167,
+        "word": "110111011110100"
+      },
+      "minimum_source": {
+        "endpoint": 167,
+        "value": 91,
+        "word": "110111011110100"
+      },
+      "safe_words_all_lengths": 961,
+      "same_Q_geodesic": 377
+    },
+    "11": {
+      "all_prefix_same_Q_geodesic": 767,
+      "contact_rich": 379,
+      "contact_rich_geodesic": 314,
+      "critical_words": 961,
+      "maximum_contacts": 11,
+      "minimum_endpoint": {
+        "source": 239,
+        "value": 325,
+        "word": "11110111110001010"
+      },
+      "minimum_source": {
+        "endpoint": 325,
+        "value": 239,
+        "word": "11110111110001010"
+      },
+      "safe_words_all_lengths": 2652,
+      "same_Q_geodesic": 767
+    },
+    "12": {
+      "all_prefix_same_Q_geodesic": 2121,
+      "contact_rich": 665,
+      "contact_rich_geodesic": 562,
+      "critical_words": 2652,
+      "maximum_contacts": 12,
+      "minimum_endpoint": {
+        "source": 239,
+        "value": 244,
+        "word": "1111011111000101010"
+      },
+      "minimum_source": {
+        "endpoint": 244,
+        "value": 239,
+        "word": "1111011111000101010"
+      },
+      "safe_words_all_lengths": 8045,
+      "same_Q_geodesic": 2121
+    },
+    "13": {
+      "all_prefix_same_Q_geodesic": 6447,
+      "contact_rich": 2096,
+      "contact_rich_geodesic": 1763,
+      "critical_words": 8045,
+      "maximum_contacts": 13,
+      "minimum_endpoint": {
+        "source": 159,
+        "value": 244,
+        "word": "11111011111000101010"
+      },
+      "minimum_source": {
+        "endpoint": 244,
+        "value": 159,
+        "word": "11111011111000101010"
+      },
+      "safe_words_all_lengths": 17637,
+      "same_Q_geodesic": 6447
+    },
+    "14": {
+      "all_prefix_same_Q_geodesic": 14186,
+      "contact_rich": 2796,
+      "contact_rich_geodesic": 2378,
+      "critical_words": 17637,
+      "maximum_contacts": 14,
+      "minimum_endpoint": {
+        "source": 283,
+        "value": 325,
+        "word": "1101111110011110001010"
+      },
+      "minimum_source": {
+        "endpoint": 325,
+        "value": 283,
+        "word": "1101111110011110001010"
+      },
+      "safe_words_all_lengths": 51033,
+      "same_Q_geodesic": 14186
+    },
+    "15": {
+      "all_prefix_same_Q_geodesic": 41124,
+      "contact_rich": 8481,
+      "contact_rich_geodesic": 7185,
+      "critical_words": 51033,
+      "maximum_contacts": 15,
+      "minimum_endpoint": {
+        "source": 251,
+        "value": 433,
+        "word": "11011011111100111100010"
+      },
+      "minimum_source": {
+        "endpoint": 433,
+        "value": 251,
+        "word": "11011011111100111100010"
+      },
+      "safe_words_all_lengths": 108950,
+      "same_Q_geodesic": 41124
+    },
+    "16": {
+      "all_prefix_same_Q_geodesic": 88068,
+      "contact_rich": 19051,
+      "contact_rich_geodesic": 16078,
+      "critical_words": 108950,
+      "maximum_contacts": 16,
+      "minimum_endpoint": {
+        "source": 251,
+        "value": 325,
+        "word": "1101101111110011110001010"
+      },
+      "minimum_source": {
+        "endpoint": 325,
+        "value": 251,
+        "word": "1101101111110011110001010"
+      },
+      "safe_words_all_lengths": 312455,
+      "same_Q_geodesic": 88068
+    },
+    "17": {
+      "all_prefix_same_Q_geodesic": 253018,
+      "contact_rich": 32813,
+      "contact_rich_geodesic": 27949,
+      "critical_words": 312455,
+      "maximum_contacts": 17,
+      "minimum_endpoint": {
+        "source": 167,
+        "value": 325,
+        "word": "11101101111110011110001010"
+      },
+      "minimum_source": {
+        "endpoint": 325,
+        "value": 167,
+        "word": "11101101111110011110001010"
+      },
+      "safe_words_all_lengths": 663535,
+      "same_Q_geodesic": 253018
+    },
+    "2": {
+      "all_prefix_same_Q_geodesic": 1,
+      "contact_rich": 1,
+      "contact_rich_geodesic": 1,
+      "critical_words": 1,
+      "maximum_contacts": 2,
+      "minimum_endpoint": {
+        "source": 3,
+        "value": 4,
+        "word": "110"
+      },
+      "minimum_source": {
+        "endpoint": 4,
+        "value": 3,
+        "word": "110"
+      },
+      "safe_words_all_lengths": 2,
+      "same_Q_geodesic": 1
+    },
+    "3": {
+      "all_prefix_same_Q_geodesic": 2,
+      "contact_rich": 2,
+      "contact_rich_geodesic": 2,
+      "critical_words": 2,
+      "maximum_contacts": 3,
+      "minimum_endpoint": {
+        "source": 7,
+        "value": 13,
+        "word": "1110"
+      },
+      "minimum_source": {
+        "endpoint": 13,
+        "value": 7,
+        "word": "1110"
+      },
+      "safe_words_all_lengths": 3,
+      "same_Q_geodesic": 2
+    },
+    "4": {
+      "all_prefix_same_Q_geodesic": 2,
+      "contact_rich": 3,
+      "contact_rich_geodesic": 2,
+      "critical_words": 3,
+      "maximum_contacts": 4,
+      "minimum_endpoint": {
+        "source": 7,
+        "value": 10,
+        "word": "111010"
+      },
+      "minimum_source": {
+        "endpoint": 10,
+        "value": 7,
+        "word": "111010"
+      },
+      "safe_words_all_lengths": 7,
+      "same_Q_geodesic": 2
+    },
+    "5": {
+      "all_prefix_same_Q_geodesic": 5,
+      "contact_rich": 5,
+      "contact_rich_geodesic": 4,
+      "critical_words": 7,
+      "maximum_contacts": 5,
+      "minimum_endpoint": {
+        "source": 39,
+        "value": 76,
+        "word": "1110110"
+      },
+      "minimum_source": {
+        "endpoint": 76,
+        "value": 39,
+        "word": "1110110"
+      },
+      "safe_words_all_lengths": 12,
+      "same_Q_geodesic": 5
+    },
+    "6": {
+      "all_prefix_same_Q_geodesic": 9,
+      "contact_rich": 9,
+      "contact_rich_geodesic": 7,
+      "critical_words": 12,
+      "maximum_contacts": 6,
+      "minimum_endpoint": {
+        "source": 63,
+        "value": 91,
+        "word": "111111000"
+      },
+      "minimum_source": {
+        "endpoint": 91,
+        "value": 63,
+        "word": "111111000"
+      },
+      "safe_words_all_lengths": 30,
+      "same_Q_geodesic": 9
+    },
+    "7": {
+      "all_prefix_same_Q_geodesic": 23,
+      "contact_rich": 16,
+      "contact_rich_geodesic": 13,
+      "critical_words": 30,
+      "maximum_contacts": 7,
+      "minimum_endpoint": {
+        "source": 155,
+        "value": 167,
+        "word": "11011110100"
+      },
+      "minimum_source": {
+        "endpoint": 167,
+        "value": 155,
+        "word": "11011110100"
+      },
+      "safe_words_all_lengths": 85,
+      "same_Q_geodesic": 23
+    },
+    "8": {
+      "all_prefix_same_Q_geodesic": 66,
+      "contact_rich": 47,
+      "contact_rich_geodesic": 38,
+      "critical_words": 85,
+      "maximum_contacts": 8,
+      "minimum_endpoint": {
+        "source": 63,
+        "value": 103,
+        "word": "111111000110"
+      },
+      "minimum_source": {
+        "endpoint": 103,
+        "value": 63,
+        "word": "111111000110"
+      },
+      "safe_words_all_lengths": 173,
+      "same_Q_geodesic": 66
+    },
+    "9": {
+      "all_prefix_same_Q_geodesic": 136,
+      "contact_rich": 99,
+      "contact_rich_geodesic": 80,
+      "critical_words": 173,
+      "maximum_contacts": 9,
+      "minimum_endpoint": {
+        "source": 127,
+        "value": 154,
+        "word": "11111110100010"
+      },
+      "minimum_source": {
+        "endpoint": 154,
+        "value": 127,
+        "word": "11111110100010"
+      },
+      "safe_words_all_lengths": 476,
+      "same_Q_geodesic": 136
+    }
+  },
+  "critical_definition": "safe word with Q=q and L=floor(log2(3^q)); appending one zero is the coefficient first crossing",
+  "critical_row_digest_sha256": "ec53893c1f7ee91d468df30ddf2a72167068b79de867a200b2b580eb9b7a331e",
+  "finite_boundary": "Complete through Q<=maximum_Q only; no eventual geodesic or contact theorem follows.",
+  "format": "collatz-phase16-finite-layers-v1",
+  "maximum_Q": 17,
+  "minimum_carry_in_cutoff": 1,
+  "negative_carry_pair_count_in_cutoff": 0,
+  "proves_collatz": false,
+  "same_Q_endpoint_pair_count": 225943
+}
