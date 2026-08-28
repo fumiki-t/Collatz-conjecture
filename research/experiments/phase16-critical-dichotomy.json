@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase16-critical-dichotomy",
-  "status": "DRAFT",
+  "status": "ACCEPTED",
   "claim_ids": ["P97", "P98", "P99", "P100", "P101", "P102", "P103", "E27", "NG28", "H97", "H98"],
   "objective": "Audit the proposed carry bound, normalized correction, same-Q geodesic criterion, local merge packing, and nonperiodic 250 dichotomy while preserving the periodic branch and the positive-ordinary-source obstruction.",
   "exact_scope": {
@@ -30,5 +30,15 @@
   "artifacts": ["artifacts/phase16_theory.json", "artifacts/phase16_finite_layers.json", "artifacts/phase16_adversarial.json", "artifacts/phase16_obstruction_report.md", "artifacts/phase16_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Stop if the Q=26 pair is not literally safe or does not share its endpoint.", "Stop if any exact log enclosure has nonpositive margin.", "Do not apply distinct-orbit packing to a periodic prefix.", "Do not promote Q<=17 counts to an eventual theorem.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
   "interpretation_boundary": ["G250 and H250 are a dichotomy, not exclusions.", "The q0 conclusion remains conditional on P54 and external X02.", "High contact plus geodesicity does not exclude the coherent all-contact 2-adic source.", "The periodic branch, H89, H72, and Collatz remain open.", "proves_collatz remains false."],
+  "recorded_result": {
+    "commit": "e313a13e8d85bf79925d5eedd33ca125e5fe619a",
+    "generator": "completed at Q<=17 in 45.35s",
+    "verifier": "valid=true at Q<=17 in 177.05s",
+    "focused_tests": "16 passed in 5.19s",
+    "full_tests": "258 passed in 318.81s",
+    "strict_research_health": "valid=true with zero untracked artifacts",
+    "manifest_sha256": "05f8bf81c23007386ca3b683eff300864f73319280ea4873962520f5c7a728e0",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
