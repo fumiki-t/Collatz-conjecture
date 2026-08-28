@@ -4,7 +4,7 @@ Branch: `feat/phase15b-ancestral-frontier`
 
 Base commit: `0fb6eaae467374806720626bbbf9d757c7674db7`
 
-Result commit: `RESULT_COMMIT_PENDING`
+Result commit: `1044f0dd0f7a08c4e5e8c41d54cf7c5a4383ba1a`
 
 Phase 15B proves the least-counterexample ancestral-minimality theorem and
 exact cross-Q carry, uniform cylinder dominance, finite renewal decomposition,

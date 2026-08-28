@@ -57,7 +57,15 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["E24"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG25"] == "REFUTED"
     assert result["active_focus"]["NG26"] == "REFUTED"
+    assert result["active_focus"]["P89"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P90"] == "CONDITIONAL"
+    assert result["active_focus"]["H89"] == "OPEN"
+    assert result["active_focus"]["P96"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E25"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["E26"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG27"] == "REFUTED"
     assert result["latest_supplemental_verifier"]["valid"] is True
+    assert result["latest_supplemental_verifier"]["H89"] == "OPEN"
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     assert result["accepted_experiments"] == [
@@ -65,6 +73,7 @@ def test_repository_research_health() -> None:
         "phase13-renewal-code-pressure",
         "phase14-coalescent-rewrite",
         "phase15-surplus-dominance",
+        "phase15b-ancestral-frontier",
     ]
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False

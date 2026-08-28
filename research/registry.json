@@ -23,13 +23,13 @@
   ],
   "latest_acceptance": {
     "phase": 15,
-    "report": "PHASE15_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase15_verifier.json",
+    "report": "PHASE15B_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase15b_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase15-surplus-dominance.json"
+    "experiment_manifest": "research/experiments/phase15b-ancestral-frontier.json"
   },
   "active_obligations": [
     {

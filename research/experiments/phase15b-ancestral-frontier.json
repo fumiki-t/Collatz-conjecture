@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase15b-ancestral-frontier",
-  "status": "DRAFT",
+  "status": "ACCEPTED",
   "claim_ids": ["P89", "P90", "P91", "P92", "P93", "P94", "P95", "P96", "H89", "E25", "E26", "NG27"],
   "objective": "Audit the least-counterexample ancestral-minimal barrier, exact cross-Q/carry/renewal identities, the endpoint-cylinder frontier, and bounded M_star data without recycling Phase 15 claim IDs or conflating finite and eventual statements.",
   "exact_scope": {
@@ -32,5 +32,14 @@
   "artifacts": ["artifacts/phase15b_theory.json", "artifacts/phase15b_ancestral_scan.json", "artifacts/phase15b_frontier.json", "artifacts/phase15b_renewal_trie.json", "artifacts/phase15b_compression.json", "artifacts/phase15b_adversarial.json", "artifacts/phase15b_obstruction_report.md", "artifacts/phase15b_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Stop at the first disagreement in source minima, literal words, endpoint heights, or record depth.", "Do not reuse P86-P88 for different Phase 15B statements.", "Do not infer an eventual M_star bound from source<=5000000.", "Keep the permanent-safe no-crossing case explicit in any full-route implication.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
   "interpretation_boundary": ["P90 is a conditional route whose eventual H89 inequality remains open.", "Finite endpoint coverage is not a pointwise ordinary-integer theorem.", "A 3-adic positive-measure complement need not omit a positive ordinary integer.", "Finite compression gain need not compose or grow linearly.", "proves_collatz remains false."],
+  "recorded_result": {
+    "commit": "1044f0dd0f7a08c4e5e8c41d54cf7c5a4383ba1a",
+    "generator": "completed at full bounds",
+    "verifier": "valid=true at full bounds",
+    "focused_tests": "15 passed in 55.57s",
+    "full_tests": "247 passed in 343.21s",
+    "manifest_sha256": "3b250ae2ecd6faee326ba49cdf43aa6f26233029b9d984191e1e76f7b178c2a1",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
