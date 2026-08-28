@@ -64,6 +64,7 @@ def test_repository_research_health() -> None:
         "phase12-acceptance",
         "phase13-renewal-code-pressure",
         "phase14-coalescent-rewrite",
+        "phase15-surplus-dominance",
     ]
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False

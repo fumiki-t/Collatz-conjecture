@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase15-surplus-dominance",
-  "status": "DRAFT",
+  "status": "ACCEPTED",
   "claim_ids": ["P86", "P87", "P88", "E24", "NG25", "NG26", "H72"],
   "objective": "Audit surplus-dominating coalescent ancestors across different odd-count layers, the strict-valley suffix reduction, and endpoint injectivity for odd gaps in {1,2}, without promoting a finite cutoff to H72.",
   "exact_scope": {
@@ -64,5 +64,14 @@
     "P88 finite endpoint injectivity does not provide a positive ordinary infinite source or exclude one.",
     "Nontrivial cycles remain separate from H72."
   ],
+  "recorded_result": {
+    "commit": "99559f06cfbc42ffdeed1ded9d9b7a2c138666d1",
+    "generator_seconds": "180.89",
+    "verifier_seconds": "191.83",
+    "focused_tests": "14 passed",
+    "full_tests": "237 passed",
+    "manifest_sha256": "fa7d3dc8ceb6c48e7ab570fb6a6f09c9a5ca70908542389f23095ec56088114a",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }

@@ -5,6 +5,7 @@
 - Base: `origin/main` at
   `a246c97200df61030b0c6874cbf150fd9b152f0c`.
 - Branch: `feat/phase15-surplus-dominance`.
+- Result commit: `99559f06cfbc42ffdeed1ded9d9b7a2c138666d1`.
 - The supplied note was treated as an untrusted specification, not evidence.
 - Supplied-note SHA-256:
 
