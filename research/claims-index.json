@@ -1,5 +1,5 @@
 {
-  "claim_count": 97,
+  "claim_count": 109,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -1355,9 +1355,184 @@
       "last_audited": "2026-08-28",
       "notes": "The Q=15 unsafe target `1010110111111101011100` yields the safe suffix `110111111101011100` from source 527131, below target source 1874247, at common endpoint 3205946.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "Along every coefficient-safe prefix of a least positive Collatz counterexample `N`, the least positive coefficient-safe ancestor of the endpoint is `N`; equivalently every such prefix is ancestrally minimal.",
+      "collatz_implication": "Replaces coefficient safety by the stronger exact ancestral-safe state in both finite- and never-crossing least-counterexample branches.",
+      "dependencies": "Least-positive-counterexample hypothesis; deterministic shared future; positivity.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 2; `artifacts/phase15b_theory.json`; independent verifier.",
+      "first_introduced": "Phase 15B",
+      "id": "P89",
+      "last_audited": "2026-08-28",
+      "notes": "Does not prove that an arbitrary integer is a counterexample or has unbounded ancestral depth. No nonperiodicity assumption is used.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Under P54's finite-first-crossing hypotheses, `M_star(K_q-1)<=N<=H_q`. If H89 holds eventually and the finite first-crossing remainder is checked, then finite crossing is impossible; never crossing is also impossible because P89 gives `M_star(K_q-1)<=N` for every `q` while Phase 6 proves `H_q>q/6`.",
+      "collatz_implication": "Gives a repaired two-case least-counterexample route if H89 is proved.",
+      "dependencies": "P54, P89, Phase 6 exact `H_q>q/6`; eventual H89 and finite remainder remain premises.",
+      "dependency_ids": [
+        "H89",
+        "P54",
+        "P89"
+      ],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 3; `artifacts/phase15b_theory.json`.",
+      "first_introduced": "Phase 15B",
+      "id": "P90",
+      "last_audited": "2026-08-28",
+      "notes": "The supplied proposal omitted the explicit never-crossing argument. H89 is not proved here.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Prove `M_star(K_q-1)>H_q` for all sufficiently large `q`, where `M_star(k)` is the least source with ancestral-safe depth at least `k`, then independently check the finite first-crossing remainder.",
+      "collatz_implication": "Together with P90 and a finite remainder, this would exclude a least positive counterexample.",
+      "dependencies": "P54, P89; an eventual ancestral-frontier lower bound.",
+      "dependency_ids": [
+        "P54",
+        "P89"
+      ],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Sections 3 and 9; `artifacts/phase15b_obstruction_report.md`.",
+      "first_introduced": "Phase 15B",
+      "id": "H89",
+      "last_audited": "2026-08-28",
+      "notes": "E25 proves only `M_star(210)>5000000`; finite record growth is not an eventual theorem.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "If `Q(d)=Q(a)+s` and `L(d)=L(a)+k`, then `F_d(y)=F_a(x)` with `3^s y=2^k x+m` iff `2^kB(a)-B(d)=3^Q(a)m`. A common left prefix `p` lifts the relation exactly when `3^Q(p)` divides `(2^k-3^s)B(p)+2^L(p)m`.",
+      "collatz_implication": "Supplies the carry-aware cross-Q identity needed by an eventual ancestral-frontier recursion.",
+      "dependencies": "E01; exact affine composition and integer divisibility.",
+      "dependency_ids": [
+        "E01"
+      ],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 4; `artifacts/phase15b_theory.json`; property tests.",
+      "first_introduced": "Phase 15B",
+      "id": "P91",
+      "last_audited": "2026-08-28",
+      "notes": "Divisibility alone does not establish positivity, literal legality, source descent, or safety.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If endpoint cylinder `C_d` is contained in `C_a`, `c(a)>=c(d)`, and the positive `a` source is smaller at the first positive `d` endpoint, then it remains smaller at every later `d` occurrence.",
+      "collatz_implication": "Turns one legal endpoint comparison into uniform cylinder dominance.",
+      "dependencies": "P91 conventions; exact affine source functions.",
+      "dependency_ids": [
+        "P91"
+      ],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 5; `artifacts/phase15b_theory.json`; independent finite reconstruction.",
+      "first_introduced": "Phase 15B",
+      "id": "P92",
+      "last_audited": "2026-08-28",
+      "notes": "It does not provide the required cylinder inclusion or prove every target dominated.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every finite coefficient-safe word has a unique decomposition at successive strict future discrepancy minima into safe renewal blocks whose reversals are first-upcrossing words.",
+      "collatz_implication": "Gives a canonical finite renewal language for ancestral and endpoint-cylinder arguments.",
+      "dependencies": "Irrationality of `log 3/log 2` in the elementary form `3^u!=2^v` for nonzero integers; exact power comparisons.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 6; `artifacts/phase15b_theory.json`; property tests.",
+      "first_introduced": "Phase 15B",
+      "id": "P93",
+      "last_audited": "2026-08-28",
+      "notes": "Finite unique decomposition does not imply all-depth contraction or ordinary-source exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "A nontrivial renewal block with odd count `q` can exist only at a Beatty-support jump `floor(q beta)=floor((q-1)beta)+1`, `beta=log2(3/2)`, and then its length is `floor(q log2 3)`.",
+      "collatz_implication": "Restricts renewal support exactly without a floating-point proof decision.",
+      "dependencies": "P93; first-upcrossing inequalities; exact comparisons of powers of 2 and 3.",
+      "dependency_ids": [
+        "P93"
+      ],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 6; `artifacts/phase15b_renewal_trie.json`; independent verifier.",
+      "first_introduced": "Phase 15B",
+      "id": "P94",
+      "last_audited": "2026-08-28",
+      "notes": "It restricts lengths, not endpoint residues or positive ordinary sources.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "`D(w)=B(w)+2^L-3^Q` satisfies `D(ab)=3^Q(b)D(a)+2^L(a)D(b)`; if the initial one-run `r` is followed by zero then `v2(D)=r`. Equal-Q jump coalescence `y+1=2^k(x+1)` is equivalent to `D(d)=2^kD(a)`, and its normalized class is stable under a common right suffix or left all-one prefix.",
+      "collatz_implication": "Compresses one exact cross-Q jump family while retaining the carry boundary.",
+      "dependencies": "E01, P81; exact affine composition and 2-adic valuation.",
+      "dependency_ids": [
+        "E01",
+        "P81"
+      ],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 7; `artifacts/phase15b_theory.json`; property tests.",
+      "first_introduced": "Phase 15B",
+      "id": "P95",
+      "last_audited": "2026-08-28",
+      "notes": "General left prefixes still require P91; NG24 is not refuted.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The 3-adic endpoints having a nonempty safe predecessor are covered by renewal-block endpoint cylinders, so their Haar measure is at most `sigma<7/12`; inside the 3-adic unit space the uncovered conditional proportion is greater than `1/8`.",
+      "collatz_implication": "Supplies a distributional obstruction that a future ordinary-height theorem may exploit.",
+      "dependencies": "P78 weighted pressure bound; P93 finite renewal decomposition.",
+      "dependency_ids": [
+        "P78",
+        "P93"
+      ],
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Section 8; `artifacts/phase15b_renewal_trie.json`; independent exact trie audit.",
+      "first_introduced": "Phase 15B",
+      "id": "P96",
+      "last_audited": "2026-08-28",
+      "notes": "Haar measure cannot exclude any specified positive ordinary integer and does not prove P80 or H72.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Exhaustive scanning of every odd source at most 5,000,000 through its complete coefficient-safe prefix, with no endpoint-height cutoff, finds maximum ancestral depth 209 and proves `M_star(210)>5000000`.",
+      "collatz_implication": "Gives a stronger finite barrier datum than coefficient depth alone.",
+      "dependencies": "P89 definitions; arbitrary-precision literal iteration; every smaller competitor source lies inside the scan.",
+      "dependency_ids": [
+        "P89"
+      ],
+      "evidence": "[`../PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md); `artifacts/phase15b_ancestral_scan.json`; descending-order independent verifier and tamper tests.",
+      "first_introduced": "Phase 15B",
+      "id": "E25",
+      "last_audited": "2026-08-28",
+      "notes": "12,443,880 safe occurrences and 5,297,663 endpoints are finite; no eventual growth follows.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Exact independent enumeration covers every safe target and endpoint competitor through `Q<=17`, every primitive renewal endpoint cylinder through Q=17, and same-Q endpoint compression through Q=19.",
+      "collatz_implication": "Measures the finite ancestral frontier and preserves the first bounded compression obstruction.",
+      "dependencies": "P91, P92, P93, P94, P95, P96; arbitrary-precision integer/Fraction enumeration.",
+      "dependency_ids": [
+        "P91",
+        "P92",
+        "P93",
+        "P94",
+        "P95",
+        "P96"
+      ],
+      "evidence": "[`../PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md); `artifacts/phase15b_frontier.json`; `artifacts/phase15b_renewal_trie.json`; `artifacts/phase15b_compression.json`; independent verifier.",
+      "first_introduced": "Phase 15B",
+      "id": "E26",
+      "last_audited": "2026-08-28",
+      "notes": "At Q=17, 320,168 of 663,535 safe words have a uniform ancestor with no larger Q. Higher-Q competitors and all-depth closure remain open.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Same-Q endpoint compression gain is universally at most three.",
+      "collatz_implication": "Rules out a bounded-gain invariant as the eventual ancestral-frontier mechanism.",
+      "dependencies": "P95, E26.",
+      "dependency_ids": [
+        "E26",
+        "P95"
+      ],
+      "evidence": "`artifacts/phase15b_compression.json`; `artifacts/phase15b_obstruction_report.md`; independent verifier.",
+      "first_introduced": "Phase 15B",
+      "id": "NG27",
+      "last_audited": "2026-08-28",
+      "notes": "At Q=19 a gain-four pair has sources 44,466,175 and 2,779,135 with `y+1=16(x+1)`. One finite gain does not prove linear or composable compression.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "fae08a4a2fa96d9716073503dcca5af5bf57d4027f1f5fee20ff72a00c4555f8"
+  "source_sha256": "bf5f8e0e4ecf82525431a8d2eea02e145269891595f1318d6a7dd4e7f1b198ed"
 }

@@ -63,6 +63,16 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   strict-valley suffix extraction that makes unsafe coalescent targets usable,
   with positivity and source descent checked separately. P88 proves endpoint
   injectivity for every fixed finite `{1,2}` odd-gap word.
+- `VERIFIED_THEOREM`: P89 upgrades a least counterexample's every safe prefix
+  to ancestral minimality. P91/P92 give the exact cross-Q carry and uniform
+  endpoint-cylinder dominance rules. P93/P94 give unique finite renewal
+  decomposition and its Beatty support, P95 gives shifted-defect jump classes,
+  and P96 gives the exact 3-adic measure bound inherited from P78. The measure
+  statement is not a pointwise ordinary-integer exclusion.
+- `CONDITIONAL` / `OPEN`: P90 shows that eventual H89,
+  `M_star(K_q-1)>H_q`, plus a finite first-crossing remainder would exclude
+  both finite and never-crossing least-counterexample cases. H89 is unproved;
+  E25 is only the finite bound `M_star(210)>5000000`.
 - `CONDITIONAL`: P80 proves that either a quantified endpoint or two-sided
   canonical-representative anti-concentration estimate would exclude the
   permanent-safe positive branch. Neither estimate is proved.
@@ -166,6 +176,11 @@ No item above proves the Collatz conjecture.
   `Q_b<=Q_d`; all 32,596 safe `{1,2}`-gap words survive that test. Strict-valley
   extraction adds exactly 12, 90, and 233 reductions at Q=15,16,17 beyond
   same-Q safe targets. These are cutoff facts, not an asymptotic theorem.
+- Phase 15B: E25 scans 2,500,000 odd sources through their complete safe
+  prefixes without an endpoint-height cutoff, reconstructing 12,443,880 safe
+  occurrences and proving `M_star(210)>5000000`. E26 audits 663,535 safe Q=17
+  words, 72,804 renewal blocks through Q=17, and 5,936,673 safe Q=19 words for
+  same-Q compression. All are finite statements.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -322,6 +337,9 @@ problem only after the octave defect becomes positive.
 
 ## What was recently refuted?
 
+- `REFUTED`: same-Q total compression gain is universally at most three
+  (NG27). At Q=19 an exact gain-four pair has sources 44,466,175 and 2,779,135
+  with `y+1=16(x+1)`. This does not supply a composable gain theorem.
 - `REFUTED`: same-Q safe-target rewrites are complete for surplus dominance
   (NG25). The Q=1 word `1` maps 273 to the same endpoint 410 reached by
   `111110100` from 287 and has larger coefficient. A Q=5 ancestor also
@@ -375,9 +393,9 @@ problem only after the octave defect becomes positive.
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
-2. Can P86/P87 surplus fronts be propagated across Q with a finite or
-   well-founded carry state that distinguishes NG24--NG26 and proves eventual
-   reducibility of every positive renewal address, including the `{1,2}` core?
+2. Can P91/P92/P95 propagate ancestral-minimal fronts across Q with a
+   well-founded carry state that survives NG24--NG27 and proves H89, or at
+   least an effective lower bound for `M_star(K_q-1)` beyond E25?
 3. Can P71's exact per-cylinder margin interval be merged across residue
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
@@ -393,10 +411,12 @@ problem only after the octave defect becomes positive.
   untracked artifact warnings are not accepted evidence.
 - Formalize one precise candidate inequality for `M(k)` and search for its
   smallest exact counterexample before scaling.
+- Formalize an H89 recursion in `(Q,L,B,r2,r3,D,carry)` and reject it first on
+  NG24--NG27 before extending the E25/E26 bounds.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
 - Extend P72 only with an orbit-specific transition invariant; test it first
-  against NG21--NG26 and E20/E22/E23/E24 before claiming an exponent or
+  against NG21--NG27 and E20/E22/E23/E24/E25/E26 before claiming an exponent or
   anti-concentration improvement.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.

@@ -1,0 +1,95 @@
+{
+  "P89": {
+    "repository_status": "VERIFIED_THEOREM",
+    "scope": "Uses only least-counterexample minimality and deterministic shared future; it applies to finite prefixes of cyclic and nonperiodic branches.",
+    "statement": "For a least positive Collatz counterexample N, every endpoint along a coefficient-safe prefix has N as its minimum positive coefficient-safe ancestor."
+  },
+  "P90": {
+    "missing_target": "H89 is OPEN: no eventual M_star lower bound is proved.",
+    "repository_status": "CONDITIONAL",
+    "statement": "Under P54's finite-first-crossing hypotheses, M_star(K_q-1)<=N<=H_q. An eventual M_star(K_q-1)>H_q theorem plus a finite remainder also excludes a never-crossing least counterexample because P89 gives M_star(k)<=N for every k while Phase 6 proves H_q>q/6."
+  },
+  "P91": {
+    "cross_Q_identity": "If Q(d)=Q(a)+s and L(d)=L(a)+k, then F_d(y)=F_a(x) on 3^s*y=2^k*x+m iff 2^k*B(a)-B(d)=3^Q(a)*m.",
+    "legality_boundary": "Positivity, literal cylinders, source descent, and safety are separate.",
+    "prefix_lift": "A common left prefix p lifts the relation iff 3^Q(p) divides (2^k-3^s)B(p)+2^L(p)m; the quotient is the lifted carry M.",
+    "repository_status": "VERIFIED_THEOREM"
+  },
+  "P92": {
+    "proof": "The source difference g_d(Y)-g_a(Y) is affine with nonnegative slope 1/c(d)-1/c(a).",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "If C_d is contained in C_a, c(a)>=c(d), and the positive a-source at d's first positive endpoint is smaller than the d-source, then the a-source stays smaller at every later d occurrence."
+  },
+  "P93": {
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "Every finite coefficient-safe word has a unique decomposition at successive strict future discrepancy minima into coefficient-safe renewal blocks whose reversals are first-upcrossing codewords."
+  },
+  "P94": {
+    "exact_decision": "The proof uses only strict comparisons between powers of 2 and 3; decimal logarithms are not certificate inputs.",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "A nontrivial renewal block of odd count q exists only when floor(q*beta)=floor((q-1)*beta)+1, beta=log2(3/2), and then L=floor(q*log2(3))."
+  },
+  "P95": {
+    "closure": "Jump classes (Q,L-r,D/2^r) are preserved by a common right suffix and by a common left all-one prefix.",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "D(w)=B(w)+2^L-3^Q satisfies the shifted affine identity and D(ab)=3^Q(b)D(a)+2^L(a)D(b); if the initial one-run r is followed by zero then v2(D)=r. Same-Q jump coalescence y+1=2^k(x+1) is equivalent to D(d)=2^kD(a)."
+  },
+  "P96": {
+    "boundary": "This distributional result does not exclude any specified positive ordinary integer.",
+    "repository_status": "VERIFIED_THEOREM",
+    "statement": "The 3-adic union of endpoints with a nonempty safe predecessor is covered by renewal-block cylinders, so its Haar mass is at most sigma<7/12 by P78; inside the unit space the uncovered conditional proportion exceeds 1/8."
+  },
+  "cross_Q_example": {
+    "a": {
+      "B": 1,
+      "D": 0,
+      "L": 1,
+      "Q": 1,
+      "endpoint": 2,
+      "safe": true,
+      "source": 1,
+      "word": "1"
+    },
+    "d": {
+      "B": 697,
+      "D": 480,
+      "L": 9,
+      "Q": 6,
+      "endpoint": 410,
+      "safe": true,
+      "source": 287,
+      "word": "111110100"
+    },
+    "k": 8,
+    "m": -147,
+    "relation": "3^5*287=2^8*273-147",
+    "s": 5
+  },
+  "format": "collatz-phase15b-theory-v1",
+  "gap12_dependency": "The finite {1,2}-gap endpoint injectivity theorem is already P88 and is not assigned a new claim ID.",
+  "jump_example": {
+    "a": {
+      "B": 73,
+      "D": 24,
+      "L": 5,
+      "Q": 4,
+      "endpoint": 20,
+      "safe": true,
+      "source": 7,
+      "word": "11101"
+    },
+    "d": {
+      "B": 65,
+      "D": 48,
+      "L": 6,
+      "Q": 4,
+      "endpoint": 20,
+      "safe": true,
+      "source": 15,
+      "word": "111100"
+    },
+    "k": 1
+  },
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "H89, P80, H72, a composable linear compression gain, cycle exclusion, and Collatz remain unproved."
+}

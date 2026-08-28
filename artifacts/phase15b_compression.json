@@ -1,0 +1,297 @@
+{
+  "NG27": {
+    "counterexample": {
+      "Q": 19,
+      "a": "1111111111101111110100100",
+      "a_source": 2779135,
+      "d": "11111111111111101110000000001",
+      "d_source": 44466175,
+      "endpoint": 96263966,
+      "gain": 4
+    },
+    "hypothesis": "Same-Q total compression gain is always at most three.",
+    "repository_status": "REFUTED"
+  },
+  "asymptotic_boundary": "A bounded maximum gain through Q=19 gives no composable or linear gain theorem.",
+  "by_Q": {
+    "1": {
+      "endpoint_classes": 1,
+      "maximum_gain": 0,
+      "safe_words": 1,
+      "witness": {
+        "Q": 1,
+        "a": "1",
+        "a_source": 1,
+        "d": "1",
+        "d_source": 1,
+        "endpoint": 2,
+        "gain": 0
+      }
+    },
+    "10": {
+      "endpoint_classes": 768,
+      "maximum_gain": 1,
+      "safe_words": 961,
+      "witness": {
+        "Q": 10,
+        "a": "1111101011011",
+        "a_source": 31,
+        "d": "11111100011011",
+        "d_source": 63,
+        "endpoint": 233,
+        "gain": 1
+      }
+    },
+    "11": {
+      "endpoint_classes": 2128,
+      "maximum_gain": 1,
+      "safe_words": 2652,
+      "witness": {
+        "Q": 11,
+        "a": "11111010110111",
+        "a_source": 31,
+        "d": "111111000110111",
+        "d_source": 63,
+        "endpoint": 350,
+        "gain": 1
+      }
+    },
+    "12": {
+      "endpoint_classes": 6464,
+      "maximum_gain": 2,
+      "safe_words": 8045,
+      "witness": {
+        "Q": 12,
+        "a": "1111101110111100",
+        "a_source": 30367,
+        "d": "111111101100001101",
+        "d_source": 121471,
+        "endpoint": 246260,
+        "gain": 2
+      }
+    },
+    "13": {
+      "endpoint_classes": 14209,
+      "maximum_gain": 3,
+      "safe_words": 17637,
+      "witness": {
+        "Q": 13,
+        "a": "11111111101011100",
+        "a_source": 74239,
+        "d": "11111111111100000001",
+        "d_source": 593919,
+        "endpoint": 903035,
+        "gain": 3
+      }
+    },
+    "14": {
+      "endpoint_classes": 41192,
+      "maximum_gain": 3,
+      "safe_words": 51033,
+      "witness": {
+        "Q": 14,
+        "a": "111111101110111100",
+        "a_source": 42623,
+        "d": "111111111100100001101",
+        "d_source": 340991,
+        "endpoint": 777701,
+        "gain": 3
+      }
+    },
+    "15": {
+      "endpoint_classes": 88157,
+      "maximum_gain": 3,
+      "safe_words": 108950,
+      "witness": {
+        "Q": 15,
+        "a": "1111111101110111100",
+        "a_source": 28415,
+        "d": "1111111111100100001101",
+        "d_source": 227327,
+        "endpoint": 777701,
+        "gain": 3
+      }
+    },
+    "16": {
+      "endpoint_classes": 253264,
+      "maximum_gain": 3,
+      "safe_words": 312455,
+      "witness": {
+        "Q": 16,
+        "a": "11111111101110111100",
+        "a_source": 18943,
+        "d": "11111111111100100001101",
+        "d_source": 151551,
+        "endpoint": 777701,
+        "gain": 3
+      }
+    },
+    "17": {
+      "endpoint_classes": 539022,
+      "maximum_gain": 3,
+      "safe_words": 663535,
+      "witness": {
+        "Q": 17,
+        "a": "111111111011101111001",
+        "a_source": 18943,
+        "d": "111111111111001000011011",
+        "d_source": 151551,
+        "endpoint": 1166552,
+        "gain": 3
+      }
+    },
+    "18": {
+      "endpoint_classes": 1546178,
+      "maximum_gain": 3,
+      "safe_words": 1900470,
+      "witness": {
+        "Q": 18,
+        "a": "1111111101011111100111",
+        "a_source": 29439,
+        "d": "1111111111100000011101111",
+        "d_source": 235519,
+        "endpoint": 2719331,
+        "gain": 3
+      }
+    },
+    "19": {
+      "endpoint_classes": 4834817,
+      "maximum_gain": 4,
+      "safe_words": 5936673,
+      "witness": {
+        "Q": 19,
+        "a": "1111111111101111110100100",
+        "a_source": 2779135,
+        "d": "11111111111111101110000000001",
+        "d_source": 44466175,
+        "endpoint": 96263966,
+        "gain": 4
+      }
+    },
+    "2": {
+      "endpoint_classes": 2,
+      "maximum_gain": 0,
+      "safe_words": 2,
+      "witness": {
+        "Q": 2,
+        "a": "11",
+        "a_source": 3,
+        "d": "11",
+        "d_source": 3,
+        "endpoint": 8,
+        "gain": 0
+      }
+    },
+    "3": {
+      "endpoint_classes": 3,
+      "maximum_gain": 0,
+      "safe_words": 3,
+      "witness": {
+        "Q": 3,
+        "a": "111",
+        "a_source": 7,
+        "d": "111",
+        "d_source": 7,
+        "endpoint": 26,
+        "gain": 0
+      }
+    },
+    "4": {
+      "endpoint_classes": 6,
+      "maximum_gain": 1,
+      "safe_words": 7,
+      "witness": {
+        "Q": 4,
+        "a": "11101",
+        "a_source": 7,
+        "d": "111100",
+        "d_source": 15,
+        "endpoint": 20,
+        "gain": 1
+      }
+    },
+    "5": {
+      "endpoint_classes": 10,
+      "maximum_gain": 1,
+      "safe_words": 12,
+      "witness": {
+        "Q": 5,
+        "a": "111011",
+        "a_source": 39,
+        "d": "1111001",
+        "d_source": 79,
+        "endpoint": 152,
+        "gain": 1
+      }
+    },
+    "6": {
+      "endpoint_classes": 24,
+      "maximum_gain": 1,
+      "safe_words": 30,
+      "witness": {
+        "Q": 6,
+        "a": "1111101",
+        "a_source": 31,
+        "d": "11111100",
+        "d_source": 63,
+        "endpoint": 182,
+        "gain": 1
+      }
+    },
+    "7": {
+      "endpoint_classes": 67,
+      "maximum_gain": 1,
+      "safe_words": 85,
+      "witness": {
+        "Q": 7,
+        "a": "111110101",
+        "a_source": 31,
+        "d": "1111110001",
+        "d_source": 63,
+        "endpoint": 137,
+        "gain": 1
+      }
+    },
+    "8": {
+      "endpoint_classes": 137,
+      "maximum_gain": 1,
+      "safe_words": 173,
+      "witness": {
+        "Q": 8,
+        "a": "1111101011",
+        "a_source": 31,
+        "d": "11111100011",
+        "d_source": 63,
+        "endpoint": 206,
+        "gain": 1
+      }
+    },
+    "9": {
+      "endpoint_classes": 378,
+      "maximum_gain": 1,
+      "safe_words": 476,
+      "witness": {
+        "Q": 9,
+        "a": "111110101101",
+        "a_source": 31,
+        "d": "1111110001101",
+        "d_source": 63,
+        "endpoint": 155,
+        "gain": 1
+      }
+    }
+  },
+  "format": "collatz-phase15b-compression-v1",
+  "maximum_Q": 19,
+  "maximum_layer_witness": {
+    "Q": 19,
+    "a": "1111111111101111110100100",
+    "a_source": 2779135,
+    "d": "11111111111111101110000000001",
+    "d_source": 44466175,
+    "endpoint": 96263966,
+    "gain": 4
+  },
+  "proves_collatz": false,
+  "row_digest_sha256": "bf2b249b0be471323e60550ad6718b6747426e5f8d8c43ce8d51c5fd2c19d2d6"
+}

@@ -692,9 +692,42 @@ dominance. Positivity and `V<S` still require explicit checks.
 12, 90, and 233 additional reductions at Q=15,16,17 beyond same-Q safe
 targets; zero in lower audited layers is finite evidence only.
 
+## Phase 15B — same-Q total compression gain is at most three
+
+**Status:** `REFUTED` (NG27)
+
+**Exact hypothesis.** If two coefficient-safe words have the same odd count
+and endpoint residue, replacing the longer by the shortest word in that class
+always saves at most three shortcut steps.
+
+**Why it looked plausible.** The shifted correction
+`D=B+2^L-3^Q` exposes exact power-of-two jump classes, and every audited layer
+below Q=19 had maximum total gain at most three.
+
+**Smallest-source maximum-gain counterexample in the audited Q=19 layer.**
+
+```text
+d=11111111111111101110000000001, source 44,466,175
+a=1111111111101111110100100,     source  2,779,135
+common endpoint 96,263,966
+d_source+1 = 16*(a_source+1)
+length gain = 4.
+```
+
+**Failure scope.** Exact refutation of the universal gain-three bound. It
+does not refute P95 jump classes, and it neither proves nor disproves an
+unbounded, linear, or composable gain theorem.
+
+**Weaker statement retained.** P95 gives the exact normalized jump invariant;
+E26 records every same-Q endpoint class through Q=19. Future compression
+claims must state their ordering and composition law and survive this witness.
+
+**Evidence.** [`../PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md),
+`artifacts/phase15b_compression.json`, and the independent Phase 15B verifier.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, and all exact counterexamples above. Passing a bounded regression is necessary
+NG23, NG24, NG25, NG26, NG27, and all exact counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

@@ -1,0 +1,174 @@
+{
+  "M_star_210_lower_bound": 5000001,
+  "completeness": "Every odd competitor source below each tested n<=bound was scanned through its full coefficient-safe prefix; safe paths cannot start at an even source, and endpoint height was not truncated.",
+  "endpoint_height_cutoff": null,
+  "endpoint_minima_digest_sha256": "a4ea5cacf6a8a3c50c5ad3a2a28b11870934eb3b4d47c0ee1bdb34e6d0e16a1a",
+  "endpoint_minimum_count": 5297663,
+  "format": "collatz-phase15b-ancestral-scan-v1",
+  "maximum_ancestral_safe_depth_in_range": 209,
+  "maximum_endpoint": 659401147466,
+  "minimum_update_count": 5297663,
+  "named_domination_witnesses": {
+    "1126015": {
+      "ancestral_safe_depth": 66,
+      "competitor": 1042431,
+      "competitor_steps": 13,
+      "competitor_word": "1111111111101",
+      "competitor_word_is_safe": true,
+      "domination_step": 67,
+      "endpoint": 67625867,
+      "source": 1126015,
+      "source_coefficient_safe_depth": 223,
+      "source_word": "1111111011111100011111010101111110101100001110010011001111111111100"
+    },
+    "1394431": {
+      "ancestral_safe_depth": 209,
+      "competitor": 1278879,
+      "competitor_steps": 7,
+      "competitor_word": "1111101",
+      "competitor_word_is_safe": true,
+      "domination_step": 210,
+      "endpoint": 7283621,
+      "source": 1394431,
+      "source_coefficient_safe_depth": 213,
+      "source_word": "111111110110011110100101011111101101111111001000111101111101011010011010111111001010000111101011101111111001110011011111100010101010010011101000101111001101111101111110100010101101110111110010010001011011111100"
+    },
+    "270271": {
+      "ancestral_safe_depth": 160,
+      "competitor": 169435,
+      "competitor_steps": 5,
+      "competitor_word": "11011",
+      "competitor_word_is_safe": true,
+      "domination_step": 161,
+      "endpoint": 428885,
+      "source": 270271,
+      "source_coefficient_safe_depth": 163,
+      "source_word": "11111101100111001111110111111110011101101111011111000111011110100111110110010101101011101111011011110100001011111110111011110010111001100000101010110010001010000"
+    },
+    "381727": {
+      "ancestral_safe_depth": 8,
+      "competitor": 362343,
+      "competitor_steps": 1,
+      "competitor_word": "1",
+      "competitor_word_is_safe": true,
+      "domination_step": 9,
+      "endpoint": 543515,
+      "source": 381727,
+      "source_coefficient_safe_depth": 172,
+      "source_word": "111110100"
+    }
+  },
+  "odd_sources_scanned": 2500000,
+  "proves_collatz": false,
+  "record_table": [
+    {
+      "ancestral_safe_depth": 3,
+      "coefficient_safe_depth": 3,
+      "first_source": 3,
+      "termination": "coefficient_crossing",
+      "termination_step": 4
+    },
+    {
+      "ancestral_safe_depth": 6,
+      "coefficient_safe_depth": 6,
+      "first_source": 7,
+      "termination": "coefficient_crossing",
+      "termination_step": 7
+    },
+    {
+      "ancestral_safe_depth": 58,
+      "coefficient_safe_depth": 58,
+      "first_source": 27,
+      "termination": "coefficient_crossing",
+      "termination_step": 59
+    },
+    {
+      "ancestral_safe_depth": 80,
+      "coefficient_safe_depth": 80,
+      "first_source": 703,
+      "termination": "coefficient_crossing",
+      "termination_step": 81
+    },
+    {
+      "ancestral_safe_depth": 134,
+      "coefficient_safe_depth": 134,
+      "first_source": 35655,
+      "termination": "coefficient_crossing",
+      "termination_step": 135
+    },
+    {
+      "ancestral_safe_depth": 160,
+      "coefficient_safe_depth": 163,
+      "domination": {
+        "ancestral_safe_depth": 160,
+        "competitor": 169435,
+        "competitor_steps": 5,
+        "competitor_word": "11011",
+        "competitor_word_is_safe": true,
+        "domination_step": 161,
+        "endpoint": 428885,
+        "source": 270271,
+        "source_coefficient_safe_depth": 163,
+        "source_word": "11111101100111001111110111111110011101101111011111000111011110100111110110010101101011101111011011110100001011111110111011110010111001100000101010110010001010000"
+      },
+      "first_source": 270271,
+      "termination": "domination",
+      "termination_step": 161
+    },
+    {
+      "ancestral_safe_depth": 164,
+      "coefficient_safe_depth": 164,
+      "first_source": 362343,
+      "termination": "coefficient_crossing",
+      "termination_step": 165
+    },
+    {
+      "ancestral_safe_depth": 166,
+      "coefficient_safe_depth": 166,
+      "first_source": 401151,
+      "termination": "coefficient_crossing",
+      "termination_step": 167
+    },
+    {
+      "ancestral_safe_depth": 182,
+      "coefficient_safe_depth": 182,
+      "first_source": 1027431,
+      "termination": "coefficient_crossing",
+      "termination_step": 183
+    },
+    {
+      "ancestral_safe_depth": 187,
+      "coefficient_safe_depth": 187,
+      "first_source": 1327743,
+      "termination": "coefficient_crossing",
+      "termination_step": 188
+    },
+    {
+      "ancestral_safe_depth": 209,
+      "coefficient_safe_depth": 213,
+      "domination": {
+        "ancestral_safe_depth": 209,
+        "competitor": 1278879,
+        "competitor_steps": 7,
+        "competitor_word": "1111101",
+        "competitor_word_is_safe": true,
+        "domination_step": 210,
+        "endpoint": 7283621,
+        "source": 1394431,
+        "source_coefficient_safe_depth": 213,
+        "source_word": "111111110110011110100101011111101101111111001000111101111101011010011010111111001010000111101011101111111001110011011111100010101010010011101000101111001101111101111110100010101101110111110010010001011011111100"
+      },
+      "first_source": 1394431,
+      "termination": "domination",
+      "termination_step": 210
+    }
+  ],
+  "safe_occurrence_count": 12443880,
+  "source_bound": 5000000,
+  "source_depth_digest_sha256": "a8e090e49685688d3ae18eedad8d865a37b5aa8d3197c0a98bd58f10dff979ba",
+  "termination_counts": {
+    "coefficient_crossing": 1114526,
+    "domination": 1385473
+  },
+  "what_this_result_does_not_prove": "The finite source bound gives no eventual lower bound for M_star and does not prove Collatz."
+}

@@ -1,0 +1,128 @@
+{
+  "classification_boundary": "Uniform dominance uses endpoint-cylinder inclusion and Q_ancestor<=Q_target. Endpoint-specific dominance additionally admits higher-Q cylinders only for the recorded ordinary endpoint and only through the cutoff.",
+  "counts_by_target_Q": {
+    "1": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 0,
+      "endpoint_specific_Q_le_cutoff_dominated": 0,
+      "safe_words": 1,
+      "same_Q_uniform_dominated": 0,
+      "shifted_jump_dominated": 0
+    },
+    "10": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 417,
+      "endpoint_specific_Q_le_cutoff_dominated": 690,
+      "safe_words": 961,
+      "same_Q_uniform_dominated": 193,
+      "shifted_jump_dominated": 193
+    },
+    "11": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 1306,
+      "endpoint_specific_Q_le_cutoff_dominated": 1953,
+      "safe_words": 2652,
+      "same_Q_uniform_dominated": 524,
+      "shifted_jump_dominated": 524
+    },
+    "12": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 4419,
+      "endpoint_specific_Q_le_cutoff_dominated": 6086,
+      "safe_words": 8045,
+      "same_Q_uniform_dominated": 1581,
+      "shifted_jump_dominated": 1581
+    },
+    "13": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 8704,
+      "endpoint_specific_Q_le_cutoff_dominated": 12919,
+      "safe_words": 17637,
+      "same_Q_uniform_dominated": 3428,
+      "shifted_jump_dominated": 3428
+    },
+    "14": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 27739,
+      "endpoint_specific_Q_le_cutoff_dominated": 38173,
+      "safe_words": 51033,
+      "same_Q_uniform_dominated": 9841,
+      "shifted_jump_dominated": 9841
+    },
+    "15": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 53041,
+      "endpoint_specific_Q_le_cutoff_dominated": 77839,
+      "safe_words": 108950,
+      "same_Q_uniform_dominated": 20793,
+      "shifted_jump_dominated": 20793
+    },
+    "16": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 167037,
+      "endpoint_specific_Q_le_cutoff_dominated": 215667,
+      "safe_words": 312455,
+      "same_Q_uniform_dominated": 59191,
+      "shifted_jump_dominated": 59189
+    },
+    "17": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 320168,
+      "endpoint_specific_Q_le_cutoff_dominated": 320168,
+      "safe_words": 663535,
+      "same_Q_uniform_dominated": 124513,
+      "shifted_jump_dominated": 124509
+    },
+    "2": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 0,
+      "endpoint_specific_Q_le_cutoff_dominated": 0,
+      "safe_words": 2,
+      "same_Q_uniform_dominated": 0,
+      "shifted_jump_dominated": 0
+    },
+    "3": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 0,
+      "endpoint_specific_Q_le_cutoff_dominated": 1,
+      "safe_words": 3,
+      "same_Q_uniform_dominated": 0,
+      "shifted_jump_dominated": 0
+    },
+    "4": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 1,
+      "endpoint_specific_Q_le_cutoff_dominated": 2,
+      "safe_words": 7,
+      "same_Q_uniform_dominated": 1,
+      "shifted_jump_dominated": 1
+    },
+    "5": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 2,
+      "endpoint_specific_Q_le_cutoff_dominated": 8,
+      "safe_words": 12,
+      "same_Q_uniform_dominated": 2,
+      "shifted_jump_dominated": 2
+    },
+    "6": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 10,
+      "endpoint_specific_Q_le_cutoff_dominated": 24,
+      "safe_words": 30,
+      "same_Q_uniform_dominated": 6,
+      "shifted_jump_dominated": 6
+    },
+    "7": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 39,
+      "endpoint_specific_Q_le_cutoff_dominated": 70,
+      "safe_words": 85,
+      "same_Q_uniform_dominated": 18,
+      "shifted_jump_dominated": 18
+    },
+    "8": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 72,
+      "endpoint_specific_Q_le_cutoff_dominated": 127,
+      "safe_words": 173,
+      "same_Q_uniform_dominated": 36,
+      "shifted_jump_dominated": 36
+    },
+    "9": {
+      "Q_ancestor_le_Q_target_uniform_dominated": 234,
+      "endpoint_specific_Q_le_cutoff_dominated": 358,
+      "safe_words": 476,
+      "same_Q_uniform_dominated": 98,
+      "shifted_jump_dominated": 98
+    }
+  },
+  "format": "collatz-phase15b-frontier-v1",
+  "maximum_Q": 17,
+  "proves_collatz": false,
+  "row_digest_sha256": "e6dfa0503f28dfecf274356a5e7727765ab72e235219c5151466fa8e85591cb2"
+}

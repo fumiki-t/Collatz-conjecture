@@ -128,6 +128,13 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   completeness. P88 proves finite endpoint injectivity for `{1,2}` odd-gap
   words; all 32,596 such safe Q=17 words survive `Q_b<=Q_d` dominance, so H72
   remains open.
+- Phase 15B proves P89 ancestral minimality for every safe prefix of a least
+  counterexample. P91/P92 give cross-Q prefix carries and uniform-cylinder
+  dominance; P93--P96 give finite renewal decomposition, Beatty support,
+  shifted jump classes, and a non-pointwise 3-adic measure bound. E25 proves
+  only `M_star(210)>5000000`; E26 is bounded at Q=17/19; NG27 records a
+  gain-four compression witness. P90's eventual H89 route is conditional and
+  H89 remains open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -157,6 +164,17 @@ What is already finite and exact:
 What is missing: a `q`-uniform high-correction/least-positive-residue
 separation strong enough to imply an eventual lower bound for `M(k)`.
 
+Phase 15B adds a parallel, stronger-state route:
+
+```text
+P89 ancestral minimality
+  -> P91/P92/P95 exact carry/dominance language
+  -> H89 eventual M_star(K_q-1)>H_q (OPEN)
+  -> P90 plus a finite remainder excludes both crossing cases.
+```
+
+E25 is a depth-210 finite datum, not the missing eventual theorem.
+
 The closest q0 subroute is now:
 
 ```text
@@ -179,6 +197,7 @@ P69 counterexample trichotomy
   -> P83/P84/P85 threshold, decrement, and height constraints
   -> P86/P87 cross-Q surplus and strict-valley reduction
   -> P88/E24 finite {1,2}-gap hard core
+  -> P89/P91--P96 ancestral/carry constraints and E25/E26 finite data
   -> H72 (OPEN)
   -> H70 eventual dropping-safe spacing via P70 (OPEN).
 ```
@@ -199,18 +218,18 @@ should answer all of these before a large computation:
 4. Does it survive every mandatory adversarial family?
 5. What certificate can an implementation-independent verifier reconstruct?
 
-For H54, H70, or H72, use the scoped pack under [`context/`](context/README.md)
-and confirm its status against `CLAIMS_LEDGER.md`. Register a large experiment
+For H54, H70, or H72, use the scoped pack under [`context/`](context/README.md);
+for H89, use the Phase 15B audit. Confirm status against `CLAIMS_LEDGER.md`. Register a large experiment
 under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
 
-Good near-term work includes a cross-Q carry recursion for P86's endpoint
-Pareto frontier,
+Good near-term work includes a P91/P92/P95 recursion aimed at H89, a cross-Q
+carry recursion for P86's endpoint Pareto frontier,
 inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
 quotient/carry state extending P71, and a positive ordinary-integrality or
 effective shadow-height obstruction extending P75--P85. Start from the stored
 NG19 collisions, universal NG20 pair, both NG22 formal 2-adic sources, NG23's
-raw-volume obstruction, NG24's left-congruence failure, and the NG25/NG26
+raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG27
 cross-Q/unsafe-target witnesses: any proposed merge
 must distinguish them or prove a sound dominance relation. Certificate
 extension is useful when it tests such structure; raw depth extension is

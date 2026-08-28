@@ -1,0 +1,20 @@
+{
+  "E25": "VERIFIED_FINITE",
+  "E26": "VERIFIED_FINITE",
+  "H89": "OPEN",
+  "NG27": "REFUTED",
+  "P89": "VERIFIED_THEOREM",
+  "P90": "CONDITIONAL",
+  "P91": "VERIFIED_THEOREM",
+  "P92": "VERIFIED_THEOREM",
+  "P93": "VERIFIED_THEOREM",
+  "P94": "VERIFIED_THEOREM",
+  "P95": "VERIFIED_THEOREM",
+  "P96": "VERIFIED_THEOREM",
+  "compression_maximum_Q": 19,
+  "format": "collatz-phase15b-verifier-v1",
+  "frontier_maximum_Q": 17,
+  "proves_collatz": false,
+  "source_bound": 5000000,
+  "valid": true
+}

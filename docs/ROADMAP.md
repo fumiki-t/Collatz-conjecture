@@ -28,6 +28,29 @@ the known failures `(17,27),(29,27),(41,703)`, and generated prefixes from
 or a finite certificate format for the remainder, independently audited
 without external record-minimality assumptions.
 
+## P0 — Eventual ancestral-prefix barrier
+
+**Target.** Prove H89, `M_star(K_q-1)>H_q`, for all sufficiently large `q`,
+and certify the finite first-crossing remainder.
+
+**Why this would solve Collatz.** P90 repairs both cases. P54 handles a finite
+coefficient first crossing. If no crossing occurs, P89 gives
+`M_star(K_q-1)<=N` for every `q`, while `H_q>q/6` eventually exceeds the fixed
+least counterexample `N`.
+
+**Missing theorem.** E25 proves only `M_star(210)>5000000`. P91/P92/P95 give
+exact carry and dominance rules, but no all-depth recursion proves sufficient
+ancestral pruning or residue growth.
+
+**Fast falsification test.** Reconstruct NG24--NG27, especially the Q=19
+gain-four pair, and require the proposed state to preserve P91 prefix carries,
+literal positivity, safety, and ordinary source order. Run the mandatory
+families before extending E25/E26.
+
+**Success criterion.** An explicit eventual H89 proof and independently
+verified finite remainder. Finite record growth, Haar measure, or a bounded
+compression gain is insufficient.
+
 ## P1 — Renewal-ladder dropping-safe barrier
 
 **Target.** Prove H70, the eventual inequality used by P70:
@@ -103,10 +126,16 @@ safe-target completeness. P88 identifies the `{1,2}`-gap endpoint-injective
 core; all 32,596 safe words in its Q=17 layer survive competitors with
 `Q_b<=Q_d`. This is a cutoff fact, not a persistent-core theorem.
 
+Phase 15B adds P89 ancestral minimality, P91/P92 carry-aware uniform cylinder
+dominance, P93/P94 canonical finite renewal decomposition, and P95 shifted
+jump classes. E25 proves only `M_star(210)>5000000`; E26 remains bounded at
+Q=17/19. P96's 3-adic complement is distributional, and NG27 refutes a
+universal gain-three compression bound.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
-cross-Q/unsafe-target witnesses, the `{1,2}` core, and every mandatory
+cross-Q/unsafe-target witnesses, NG27, the `{1,2}` core, and every mandatory
 adversarial family. Reject any proof that identifies a general
 2-adic source with a positive ordinary integer, drops the per-address lattice
 `+1`, treats `(Q,r3)` as a prefix-closed state, or promotes finite scarcity to
@@ -170,7 +199,11 @@ suffixes of unsafe targets. An all-depth recursion must retain cross-Q carry
 data, distinguish NG24--NG26, and explain the endpoint-injective `{1,2}` core.
 Finite survivor counts alone do not imply pressure decay.
 
-**Fast falsification test.** First reconstruct NG23--NG26 and all E22--E24
+Phase 15B strengthens the candidate minimum from `M` to `M_star` and exposes
+the exact P91 carry plus P95 jump state. Any useful recursion must distinguish
+NG27's gain-four collision rather than impose a bounded compression gain.
+
+**Fast falsification test.** First reconstruct NG23--NG27 and all E22--E26
 finite ratios, then measure the joint `(B,r2,r3,C_w)` Pareto frontier in exact
 dynamic-programming/meet-in-the-middle slices. Attack every proposed constant
 or monotonicity with macro id 0, NG22, and `A^rB^s` before scaling.

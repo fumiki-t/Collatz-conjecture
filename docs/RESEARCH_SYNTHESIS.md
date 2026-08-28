@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 15
+# Collatz research synthesis through Phase 15B
 
 **Audit date:** 2026-08-28
 
 **Audited base:** `a246c97200df61030b0c6874cbf150fd9b152f0c`
 
-**Latest accepted phase:** Phase 15
+**Latest accepted phase:** Phase 15B
 
 **Problem status:** `OPEN`
 
@@ -474,6 +474,27 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   See [`PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md) and the
   [`Phase 15 audit`](../research/audits/surplus-dominance/REPORT.md).
 
+### Phase 15B — ancestral-minimal frontier
+
+- **Purpose:** strengthen a least counterexample's safe-prefix state from
+  coefficient minimality to ancestral minimality and test an exact carry-aware
+  frontier before claiming an eventual `M_star` theorem.
+- **Accepted:** P89 proves ancestral minimality. P91/P92 give the exact cross-Q
+  prefix carry and uniform-cylinder dominance rule. P93/P94 give unique finite
+  renewal decomposition and Beatty support; P95 gives shifted jump classes;
+  P96 gives a 3-adic endpoint-measure bound using P78. E25 proves the bounded
+  result `M_star(210)>5000000`; E26 covers Q=17/19 finite frontiers.
+- **Conditional route:** P90 repairs both coefficient cases: eventual H89
+  plus a finite remainder would exclude finite first crossing by P54 and never
+  crossing by P89 with `H_q>q/6`. H89 remains open.
+- **Obstacle:** NG27 refutes universal same-Q gain at most three. The P96
+  positive-measure complement is not a pointwise ordinary-integer exclusion,
+  and no all-depth carry recursion follows from E25/E26.
+- **Handoff:** seek an exact well-founded recurrence in
+  `(Q,L,B,r2,r3,D,carry)` that proves H89 and survives NG24--NG27. See
+  [`PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md) and the
+  [`Phase 15B audit`](../research/audits/ancestral-frontier/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -481,8 +502,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P88 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG26.
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P96 with their exact hypotheses;
+- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG27.
 
 None is a full convergence theorem.
 
@@ -510,6 +531,10 @@ None is a full convergence theorem.
    permanent-safe source. P86 proves the implication, but NG24--NG26 require a
    cross-Q carry state and strict-valley handling; eventual reducibility is
    unproved.
+5. **P90/H89 target.** Eventual `M_star(K_q-1)>H_q` plus a finite remainder
+   would exclude a least counterexample in both finite- and never-crossing
+   cases. P90 proves this implication; E25 is only a bounded datum and H89 is
+   open.
 
 ### Nontrivial cycles
 
@@ -610,8 +635,9 @@ scoped obligation rather than a complete proof by itself.
 
 | Priority experiment | Target statement | Must survive | Minimum useful experiment | Success implication | Stop condition |
 |---|---|---|---|---|---|
-| Cross-Q surplus recursion | Propagate P86 endpoint Pareto fronts across Q and prefixes | NG24--NG26, E23/E24, `{1,2}` core, all mandatory families | Derive an exact carry recurrence retaining source and terminal surplus | Eventual dominance would close the least-source H72 branch | Stop if the state loses a named cross-Q or valley certificate |
-| Carry-aware canonical separation | A deterministic lower bound for least positive `(r2,r3)` representatives | NG19, NG23--NG26, E22--E24, all mandatory families | Exact meet-in-the-middle slices retaining `B`, carries, surplus, and ordinary height | May prove P80 or lower-bound `M(k)` | Preserve the first opposite-outcome collision; do not enlarge after state loss |
+| Ancestral `M_star` recursion | Prove eventual H89 in the P91/P92/P95 carry state | NG24--NG27, E25/E26, all mandatory families | Derive one composable exact inequality beyond the depth-210 record | H89 plus finite checking closes P90's least-counterexample route | Stop at the first lost carry, positivity, or source-order distinction |
+| Cross-Q surplus recursion | Propagate P86 endpoint Pareto fronts across Q and prefixes | NG24--NG27, E23--E26, `{1,2}` core, all mandatory families | Derive an exact carry recurrence retaining source and terminal surplus | Eventual dominance would close the least-source H72 branch | Stop if the state loses a named cross-Q or valley certificate |
+| Carry-aware canonical separation | A deterministic lower bound for least positive `(r2,r3)` representatives | NG19, NG23--NG27, E22--E26, all mandatory families | Exact meet-in-the-middle slices retaining `B`, carries, surplus, and ordinary height | May prove P80 or lower-bound `M(k)` | Preserve the first opposite-outcome collision; do not enlarge after state loss |
 | Valuation-conditioned transfer operator | Use P79's `v2(C_w)=r-2` to control address multiplicity | both NG22 models and one-block runs | Exact transition matrix with symbolic valuation guards | Could close H72 through P80 | Stop if a formal NG22 source satisfies every retained state |
 | Cross-`Q` 3-adic nesting | Bound multiplicity of endpoint cylinders across different `Q` | NG23 and E22 compatible/nested pairs | Enumerate exact containment poset, then state a provable recursion | Supplies endpoint anti-concentration | Finite injectivity without a recursion is not progress |
 | Fourier/large-sieve anti-concentration | Prove cancellation beyond Haar mass | per-address `+1`, deterministic least representatives | Small exact character sums with explicit constants and carry classes | Could prove either P80 premise | Stop if constants grow exponentially or discard the lattice error |
@@ -624,7 +650,7 @@ statement is not a priority experiment.
 
 ## 10. Scratch index
 
-No post-Phase-15 unintegrated mathematical candidate was accepted at this
+No post-Phase-15B unintegrated mathematical candidate was accepted at this
 audit. The eight current scratch inputs are classified
 `SUPERSEDED_BY_ACCEPTED_RESULT`:
 
@@ -632,7 +658,7 @@ audit. The eight current scratch inputs are classified
   [`research/audits/garcia-tal-phase12`](../research/audits/garcia-tal-phase12/REPORT.md);
 - the two renewal Markdown audits and their two scripts/two JSON outputs are
   superseded by Phase 13's independent generator, verifier, artifacts, and
-  audit. The Phase 14 and Phase 15 proposals are separately preserved by their
+  audit. The Phase 14, Phase 15, and Phase 15B proposals are separately preserved by their
   recorded SHA-256 provenance and were independently rederived before
   acceptance.
 
@@ -672,8 +698,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase15.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase15_verifier.json
+.venv/bin/python verifier/verify_phase15b.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase15b_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

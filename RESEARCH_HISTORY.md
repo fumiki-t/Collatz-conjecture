@@ -1142,3 +1142,39 @@ Phase 15 does not prove eventual surplus-frontier extinction, persistent
 survival of the finite gap core, either P80 anti-concentration premise, H72,
 exclusion of nontrivial cycles, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 29. Phase 15B — ancestral-minimal frontier
+
+**Branch:** `feat/phase15b-ancestral-frontier`
+
+**Acceptance record:** [`PHASE15B_RUN_RESULTS.md`](PHASE15B_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/ancestral-frontier/REPORT.md`](research/audits/ancestral-frontier/REPORT.md)
+
+Phase 15B treated the supplied ancestral-frontier note as an untrusted
+proposal and did not recycle its P86--P88 labels. P89 proves that every safe
+prefix of a least positive counterexample is ancestrally minimal. P90 repairs
+the proposed full route: an eventual H89 inequality excludes finite crossings
+through P54 and excludes a never-crossing least counterexample by combining
+P89 with Phase 6's `H_q>q/6`. H89 itself remains open.
+
+P91 reconstructs the exact cross-Q affine identity and common-prefix carry;
+P92 turns a first positive source comparison into uniform cylinder dominance.
+P93/P94 give the unique finite safe renewal decomposition and Beatty support.
+P95 gives shifted-correction composition, exact initial-run valuation, and
+jump coalescence. P96 bounds the covered 3-adic endpoint union by
+`sigma<7/12`, while explicitly preserving the measure/ordinary-point gap.
+
+E25 scans every odd source through 5,000,000 without endpoint-height
+truncation. It reconstructs 12,443,880 safe occurrences at 5,297,663
+endpoints, finds maximum ancestral depth 209, and proves only the finite result
+`M_star(210)>5000000`. E26 independently enumerates safe/frontier and renewal
+data through Q=17 and same-Q compression through Q=19. NG27 records the first
+audited gain-four obstruction to the universal gain-three hypothesis, with
+sources 44,466,175 and 2,779,135 satisfying `y+1=16(x+1)`.
+
+### What this result does not prove
+
+Phase 15B does not prove H89, an eventual ancestral-frontier contraction,
+P80, H72, exclusion of nontrivial cycles, or the Collatz conjecture.
+`proves_collatz=false`.

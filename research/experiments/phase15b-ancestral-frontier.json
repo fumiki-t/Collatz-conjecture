@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "phase15b-ancestral-frontier",
+  "status": "DRAFT",
+  "claim_ids": ["P89", "P90", "P91", "P92", "P93", "P94", "P95", "P96", "H89", "E25", "E26", "NG27"],
+  "objective": "Audit the least-counterexample ancestral-minimal barrier, exact cross-Q/carry/renewal identities, the endpoint-cylinder frontier, and bounded M_star data without recycling Phase 15 claim IDs or conflating finite and eventual statements.",
+  "exact_scope": {
+    "quantifiers": [
+      "all finite binary words for P91, P93, and P95 symbolic identities",
+      "all least-positive-counterexample prefixes for P89 and the two-branch conditional P90 implication",
+      "all odd sources at most 5000000 with every coefficient-safe endpoint and no endpoint-height cutoff",
+      "all coefficient-safe words and endpoint frontier competitors through Q=17",
+      "all renewal endpoint cylinders through Q=17",
+      "the explicit Q=19 compression witness and the recorded bounded gain audit",
+      "all mandatory adversarial regression families"
+    ],
+    "bounds": {"source_bound": 5000000, "frontier_maximum_q": 17, "compression_maximum_q": 19, "adversarial_prefix_length": 24},
+    "completeness": "E25 is complete for source<=5000000 because every competing safe source is smaller than the tested source and all such sources are enumerated without endpoint cutoff. E26 is finite in Q and supplies no eventual frontier theorem."
+  },
+  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "decimal coverage is reporting-only; Fraction and integers decide acceptance"},
+  "commands": {
+    "generator": [".venv/bin/python src/phase15b_search.py --artifact-dir artifacts --source-bound 5000000 --frontier-max-q 17 --compression-max-q 19"],
+    "verifier": [".venv/bin/python verifier/verify_phase15b.py --artifact-dir artifacts --output artifacts/phase15b_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase15b_properties.py tests/test_phase15b_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["all safe occurrences and endpoint minima in a separate pass order", "every ancestral-depth record and literal witness", "cross-Q, carry, renewal, Beatty, shifted-correction, and measure examples", "bounded endpoint frontier and mandatory adversarial digests"],
+    "forbidden_imports": ["src.phase15b_search", "phase15b_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase15b_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "Phase 7 macro id 0", "NG19", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "all-one prefixes", "{1,2}-gap core"],
+  "artifacts": ["artifacts/phase15b_theory.json", "artifacts/phase15b_ancestral_scan.json", "artifacts/phase15b_frontier.json", "artifacts/phase15b_renewal_trie.json", "artifacts/phase15b_compression.json", "artifacts/phase15b_adversarial.json", "artifacts/phase15b_obstruction_report.md", "artifacts/phase15b_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["Stop at the first disagreement in source minima, literal words, endpoint heights, or record depth.", "Do not reuse P86-P88 for different Phase 15B statements.", "Do not infer an eventual M_star bound from source<=5000000.", "Keep the permanent-safe no-crossing case explicit in any full-route implication.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
+  "interpretation_boundary": ["P90 is a conditional route whose eventual H89 inequality remains open.", "Finite endpoint coverage is not a pointwise ordinary-integer theorem.", "A 3-adic positive-measure complement need not omit a positive ordinary integer.", "Finite compression gain need not compose or grow linearly.", "proves_collatz remains false."],
+  "proves_collatz": false
+}

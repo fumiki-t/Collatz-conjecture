@@ -78,7 +78,7 @@ def test_registry_matches_context_and_claim_sources() -> None:
     assert registry["repository"]["claim_source"] == "docs/CLAIMS_LEDGER.md"
     assert "docs/RESEARCH_SYNTHESIS.md" in registry["canonical_documents"]
     obligations = registry["active_obligations"]
-    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "C03", "C04", "C05"}
+    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "C03", "C04", "C05"}
     for row in obligations:
         if "context" in row:
             assert (root / row["context"]).is_file()
@@ -89,7 +89,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 97
+    assert committed["claim_count"] == 109
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert set(rows["H72"]["dependency_ids"]) == {

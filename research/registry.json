@@ -41,6 +41,14 @@
       "success_scope": "Close the Phase 6 least-counterexample route only after an eventual bound and an independently checked finite remainder."
     },
     {
+      "id": "H89",
+      "status": "OPEN",
+      "priority": "P0",
+      "context": "docs/context/H89.md",
+      "depends_on": ["P54", "P89", "P91", "P92", "P95", "E25", "E26", "NG27"],
+      "success_scope": "Prove M_star(K_q-1)>H_q eventually and independently check the finite first-crossing remainder; P90 then covers both finite- and never-crossing least-counterexample cases."
+    },
+    {
       "id": "H70",
       "status": "OPEN",
       "priority": "P0",
@@ -114,7 +122,19 @@
     "P88",
     "E24",
     "NG25",
-    "NG26"
+    "NG26",
+    "P89",
+    "P90",
+    "H89",
+    "P91",
+    "P92",
+    "P93",
+    "P94",
+    "P95",
+    "P96",
+    "E25",
+    "E26",
+    "NG27"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

@@ -1,0 +1,39 @@
+{
+  "analytic_upper_bound": "The full union has Haar mass at most sigma<7/12 by P78, hence conditional unit complement greater than 1/8.",
+  "beatty_length_violation_count": 0,
+  "finite_conditional_unit_coverage": {
+    "decimal": "0.700883001053669105249619",
+    "denominator": "14348907",
+    "numerator": "10056905"
+  },
+  "finite_union_Haar_mass": {
+    "decimal": "0.467255334035779403499746",
+    "denominator": "43046721",
+    "numerator": "20113810"
+  },
+  "format": "collatz-phase15b-renewal-trie-v1",
+  "maximum_Q": 17,
+  "new_primitive_cylinders_by_Q": {
+    "1": 1,
+    "10": 0,
+    "11": 124,
+    "12": 602,
+    "13": 0,
+    "14": 2498,
+    "15": 0,
+    "16": 12319,
+    "17": 0,
+    "2": 1,
+    "3": 0,
+    "4": 1,
+    "5": 0,
+    "6": 2,
+    "7": 8,
+    "8": 0,
+    "9": 28
+  },
+  "pointwise_boundary": "A positive-measure 3-adic complement does not imply that any positive ordinary integer is outside the covered set.",
+  "primitive_digest_sha256": "0c35044fc934192d90abbd8d1e0a661b11d0a905bd457055fc25d2f7952a0926",
+  "proves_collatz": false,
+  "renewal_block_count": 72804
+}
