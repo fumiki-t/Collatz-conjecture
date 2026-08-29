@@ -1,0 +1,51 @@
+{
+  "claims": {
+    "P125": {
+      "proof": "At one step, the output difference is an odd multiple of (a-b)/2 when inputs have equal parity; induction gives both directions and the first differing bit.",
+      "statement": "For integers a!=b, LCP(v(a),v(b))=v2(a-b); equivalently equal first n input parities iff a==b mod 2^n.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P126": {
+      "growth": "(x_t+1)2^h(t)<=(N+1)3^h(t)",
+      "statement": "For a positive non-eventually-periodic orbit, a repeated width-n factor at i<j obeys 2^(n+h(j)) < (N+1)3^h(j).",
+      "status": "VERIFIED_THEOREM",
+      "strictness": "state distinctness gives 2^n<=abs(x_j-x_i)<max(x_i,x_j); replacing < by <= is invalid"
+    },
+    "P127": {
+      "exact_acceptance": "2^(n+h(p(n))) < (N+1)3^h(p(n)); logarithms only restate the exact integer inequality",
+      "statement": "Every positive non-eventually-periodic orbit parity word satisfies p(n)>(n-log2(N+1))/log2(3/2), hence liminf p(n)/n>=1/log2(3/2).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P128": {
+      "dependency": "EXT08 supplies only a subsequence h(m_k)/m_k->log(2)/log(3)",
+      "statement": "Assuming EXT08, every positive rational noncyclic parity word satisfies limsup p(n)/n>=log(3)/log(3/2).",
+      "status": "CONDITIONAL"
+    },
+    "P129": {
+      "definition_repair": "Condition (*) uses increasing |V_n^w_n|. Non-eventual periodicity forces |U_nV_n|->infinity along the relevant sequence, so log2(N+1)/|U_nV_n| vanishes.",
+      "statement": "The Adamczewski-Bugeaud Diophantine exponent of a positive non-eventually-periodic orbit parity word is at most log2(3).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P130": {
+      "scope": "internal powers require the local source x_i and are not bounded by the original N alone",
+      "statement": "If a positive non-eventually-periodic orbit begins with W^r, then N+1>2^((r-1)|W|)(2/3)^|W|_1; in particular a square period d has d<log_(4/3)(N+1).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P131": {
+      "consequences": "polynomial complexity forces stretched-exponential peaks; zero entropy forces log(H_m)/log(m)->infinity",
+      "statement": "For distinct first m+1 orbit states with peak H_m, p(n)>=ceil((m+1)/(1+floor((H_m-1)/2^n))); hence p(ceil(log2 H_m))>=m+1.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P132": {
+      "scope": "an exact finite rejection rule, not an eventual H89 theorem",
+      "statement": "Under P54, a critical-word repeat is impossible when 2^(n+h(j)) >= (H_q+1)3^h(j); equivalently 2^(n+h(j))D_q >= (B_q_max+D_q)3^h(j).",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "format": "collatz-phase21-theory-v1",
+  "map": "T(x)=x/2 for even x and (3x+1)/2 for odd x; v_t=x_t mod 2; h(t)=sum_(r<t)v_r",
+  "open_target": "Force repeats violating P132, or force P115 nonzero lifts from their absence, on every relevant infinite critical branch.",
+  "proves_collatz": false,
+  "supersession": "P127 unconditionally strengthens the positive-integer conclusions of conditional P123/P124; their external historical statements remain in the ledger.",
+  "what_this_result_does_not_prove": "No peak upper bound, repeat-forces-lift theorem, eventual H89 certificate, positive-source exclusion, nontrivial-cycle exclusion, or Collatz proof is obtained."
+}

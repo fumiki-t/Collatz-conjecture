@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 20's parity-complexity audit is the
+proof of the conjecture. Phase 21's repetition-complexity audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–20 evidence boundaries, and current obligations.
+   branch map, Phase 1–21 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md), then its inputs:
+   [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md),
    [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md),
    [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md),
    [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md),
@@ -129,6 +130,13 @@ flowchart TD
     P121 --> H72
     P123["P123 no quasi-Sturmian tail"] --> P124["P124 excess tends to infinity"]
     P124 --> H112
+    P125["P125 exact parity LCP"] --> P126["P126 repeat-height bound"]
+    P126 --> P127["P127 linear factor complexity"]
+    EXT08 --> P128["P128 critical limsup slope"]
+    P126 --> P128
+    P126 --> P132["P132 H89 repeat certificate"]
+    P132 --> H89
+    P127 --> H112
     H112 --> H72
     NG28["NG28 negative carry"] --> H89
     NG24["NG24 left-congruence failure"] --> H72
@@ -143,9 +151,10 @@ Arrows mean “is an input to,” not “has been proved unconditionally.” X02
 external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
-P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, and P122 are
+P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
+and P129--P132 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
-P110, P119, P121, P123, and P124 are conditional implications.
+P110, P119, P121, P123, P124, and P128 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
 left-congruence failure, and NG25--NG31 delimit the finite ancestral/affine
 search language. H54, H70, H72, H89, H104, H105, H112, C04, C05, every uneliminated P69 branch,
@@ -156,12 +165,12 @@ and the Collatz conjecture remain open.
 | ID | Status | Exact missing step | Fastest useful next test |
 |---|---|---|---|
 | H54 | `OPEN` | Prove `M(K_q-1)>H_q` eventually | Attack any proposed `M(k)` inequality with all stored record failures and mandatory adversarial families |
-| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Preserve signed P91/P97 carry and reject NG27--NG29 before extending E25--E29 |
+| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Combine signed P91/P97 carry with P132 repeat rejection; explain E33 survivors and reject NG27--NG29 before extending Q |
 | H104 | `OPEN` | Exclude every positive ordinary-source all-prefix same-Q geodesic G270 word | Retain fixed source plus affine/carry state; reject contact/all-contact/Haar-only shortcuts with NG17/P73/NG29 |
 | H105 | `OPEN` | Empty the H270 box `N<q/270`, `X<q/135`, `Z<2q/135` | Use a two-sided exact state and keep the periodic branch separate; test NG19 and NG24--NG29 |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
-| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P124 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E32, the `{1,2}` core, and all mandatory families |
-| H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Add exact lift/carry/ordinary-height or right-special-factor state; reject bounded zero-run rules on source 167 and finite-complexity inference on E32 |
+| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
+| H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -194,7 +203,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 20 provides the
+artifacts and preserve the recorded manifest hash. Phase 21 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -218,14 +227,15 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   finite-mean affine averaging by NG31.
 - Attack H112 with P115's exact lift digit plus signed carry and ordinary
   height. Source 167 must reject any rule based only on a bounded terminal
-  zero-lift run; P116 already handles ultimately periodic noncycles. P121/
-  P124 may be used only through a proved implication from balance/right-special
+  zero-lift run; P116 already handles ultimately periodic noncycles. P127/
+  P131 may be used only through a proved implication from repeat/right-special
   structure to a lift, carry, or ordinary-height event.
 - Attack H104 and H105 as separate obligations. A proof of one branch does not
   close P104, and neither branch applies to repeated periodic values.
-- Attack H89 only with a proposed all-depth P91/P92/P95/P97 recurrence. E25's
+- Attack H89 only with a proposed all-depth P91/P92/P95/P97/P132 recurrence. E25's
   `M_star(210)>5000000` and P96's 3-adic complement are not asymptotic or
-  pointwise substitutes.
+  pointwise substitutes; E33 shows that repeat rejection alone leaves most
+  bounded critical words alive.
 - Derive exact lower bounds on the ordinary size of a pair of inverse-parity
   residues from their odd normalized gap and common-prefix affine constant.
 - Test whether any proposed branch potential composes across the record

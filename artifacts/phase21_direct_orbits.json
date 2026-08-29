@@ -1,0 +1,52 @@
+{
+  "all_repeats_covered_by": "for each second start j, the largest v2(x_j-x_i) over i<j; checking the largest width implies every smaller repeated width",
+  "claim": {
+    "E33": "VERIFIED_FINITE",
+    "P125": "VERIFIED_THEOREM",
+    "P126": "VERIFIED_THEOREM"
+  },
+  "covered_repeated_second_start_widths": 127023524,
+  "eventual_cycle_counts": {
+    "1,2": 1,
+    "2,1": 299998
+  },
+  "finite_boundary": "The interval audit does not prove that all positive integers converge and is not the proof of P125 or P126.",
+  "format": "collatz-phase21-direct-orbits-v1",
+  "largest_state": {
+    "least_source": 270271,
+    "value": 12324038948
+  },
+  "maximum_distinct_states": {
+    "count": 279,
+    "least_source": 230631
+  },
+  "maximum_lcp": {
+    "earlier_start": 3,
+    "later_start": 33,
+    "length": 20,
+    "source": 33019
+  },
+  "maximum_prefix_power": {
+    "exponent": 18,
+    "period": 1,
+    "source": 262143
+  },
+  "maximum_repeat_width": 64,
+  "minimum_strict_height_margin": {
+    "repeat_width": 1,
+    "second_start": 1,
+    "source": 4,
+    "value": 3
+  },
+  "periodic_exception": "Every audited positive source enters the 1,2 cycle. The non-eventually-periodic theorems are applied only to the distinct precycle segment for finite sanity checks, never to the periodic tail.",
+  "prefix_power_witnesses": 299948,
+  "proves_collatz": false,
+  "row_digest_sha256": "41cdc3470a18733362e56601a15b6ba157b80c39fe2851a4be925a60c31b4c57",
+  "row_storage": "omitted; verifier rebuilds every source independently from literal states",
+  "source_interval": [
+    1,
+    300000
+  ],
+  "sources_checked": 299999,
+  "upper_endpoint_exclusive": true
+}

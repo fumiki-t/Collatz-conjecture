@@ -231,9 +231,72 @@ the input parity, `Q_odd` is the rational 2-adic subring, and the conclusion is
 `liminf` above and below the critical density.
 
 **Repository role.** EXT08 is an explicit external input to P119/P121/P123/
-P124. The repository does not reproduce the paper's real-conjugacy proof.
+P124 and P128. The repository does not reproduce the paper's real-conjugacy proof.
 Positive integers lie in the rational 2-adics, but this input does not prove
 that their orbits terminate; the cyclic branch remains separate.
+
+## Phase 21 parity correspondence and repetition terminology
+
+### Bernstein and Lagarias (1996)
+
+**Status:** `EXTERNAL_THEOREM`; EXT14, context only for the internal P125
+
+Daniel J. Bernstein and Jeffrey C. Lagarias, “The 3x+1 Conjugacy Map,”
+*Canadian Journal of Mathematics* **48**(6) (1996), 1154--1169.
+[DOI 10.4153/CJM-1996-060-x](https://doi.org/10.4153/CJM-1996-060-x).
+
+**Result relevant here.** The shortcut-map parity vector extends to a
+homeomorphism of the 2-adic integers conjugating the shortcut map to the
+2-adic shift. Finite parity prefixes therefore parameterize residues modulo
+powers of two.
+
+**Repository role.** Phase 21 records this as standard context but proves the
+finite integer equivalence and exact `v2(a-b)` LCP formula directly in P125.
+No claim depends on importing the full conjugacy proof.
+
+### Adamczewski and Bugeaud (2007)
+
+**Status:** terminology/definition; not a separate theorem dependency
+
+Boris Adamczewski and Yann Bugeaud, “On the complexity of algebraic numbers
+II. Continued fractions,” *Ergodic Theory and Dynamical Systems* **28**(2)
+(2008), 355--376.
+[DOI 10.1017/S0143385707000223](https://doi.org/10.1017/S0143385707000223).
+
+**Result relevant here.** Condition `(*)` defines the Diophantine exponent
+using prefixes `U_n V_n^{w_n}`, a uniform lower ratio, and increasing
+periodic-part lengths `|V_n^{w_n}|`. Phase 21 uses only this definition.
+
+**Repository role.** P129 derives its upper bound internally from P126. The
+audit explicitly proves that `|U_nV_n|` must diverge for a non-eventually-
+periodic word; omitting that step would not justify passage to the exponent.
+
+### Bugeaud--Kim and Nicholson--Rampersad
+
+Yann Bugeaud and Dong Han Kim, “A new complexity function, repetitions in
+Sturmian words, and irrationality exponents of Sturmian numbers,” arXiv
+preprint (2015). [arXiv:1510.00279](https://arxiv.org/abs/1510.00279).
+
+James Nicholson and Narad Rampersad, “Initial non-repetitive complexity of
+infinite words,” *Discrete Applied Mathematics* **208** (2016), 114--122.
+[DOI 10.1016/j.dam.2016.03.010](https://doi.org/10.1016/j.dam.2016.03.010).
+
+**Repository role.** These sources fix adjacent repetition-complexity
+terminology. Bugeaud--Kim's `r(n,x)` is the shortest prefix containing two
+length-`n` occurrences; the Phase 21 zero-based second-start quantity is
+`r(n,x)-n`. Neither paper supplies P126--P132.
+
+### Stérin (2019)
+
+Thomas Stérin, “On the Collatz conjecture: a binary approach,” arXiv preprint
+(2019). [arXiv:1907.00775](https://arxiv.org/abs/1907.00775).
+
+**Repository role.** Binary ancestor/carry ideas are related context for
+source residues. They are not used to accept any Phase 21 theorem.
+
+**Novelty boundary.** Targeted primary-source searches did not locate the
+exact P127/P128 slopes. The repository therefore calls them direct
+derivations, not literature-wide new theorems, and makes no priority claim.
 
 ## Word frequency and low complexity
 

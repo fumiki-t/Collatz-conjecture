@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 20
+# Collatz research synthesis through Phase 21
 
 **Audit date:** 2026-08-29
 
-**Audited base:** `2fbcad3fbcfb8ecabc4522ec3acfb81467daf8df`
+**Audited base:** `f4a9b6818fad5d406f6d4db9785a98cc830f8b82`
 
-**Latest accepted phase:** Phase 20
+**Latest accepted phase:** Phase 21
 
 **Problem status:** `OPEN`
 
@@ -607,6 +607,25 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   See [`PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md) and the
   [`Phase 20 audit`](../research/audits/parity-complexity/REPORT.md).
 
+### Phase 21 — repetition-complexity barriers
+
+- **Purpose:** use exact separation of integer shortcut trajectories to turn
+  repeated symbolic factors into arithmetic height constraints.
+- **Accepted internally:** P125 gives parity LCP `v2(a-b)`; P126 gives the
+  strict repeat-height inequality; P127 forces
+  `liminf p(n)/n>=1/log2(3/2)` unconditionally. P129--P131 bound prefix
+  stammering/powers and give an exact height/complexity capacity tradeoff.
+- **Conditional:** P128 uses EXT08 only to raise a necessary limsup slope to
+  `log(3)/log(3/2)`. P132 uses P54's conditional height box to reject a
+  critical prefix when one repeat crosses the exact integer threshold.
+- **Finite evidence:** E33 rebuilds 299,999 direct sources, 502,523 critical
+  words, 406,353 same-Q geodesic words, 11 controls, and 132 mandatory-family
+  rows. P132 rejects 160,429 critical and 120,982 geodesic words.
+- **Obstacle:** most finite words survive. Diversity and peak lower bounds do
+  not force nonzero P115 lifts or bound peaks above. H89/H112/H72 remain open.
+  See [`PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md) and the
+  [`Phase 21 audit`](../research/audits/repetition-complexity/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -614,7 +633,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P132 with their exact hypotheses;
 - explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG31.
 
 None is a full convergence theorem.
@@ -659,6 +678,11 @@ None is a full convergence theorem.
    removes periodic noncycles. H112 still requires an all-depth theorem
    forcing infinitely many nonzero lifts; source 167 blocks every bounded
    zero-run surrogate.
+9. **P125--P132 repetition boundary.** Every positive nonperiodic integer
+   orbit has a linear factor-complexity lower bound and exact repeat-height
+   constraints. E33 shows repeat rejection is not yet eventual; a proof must
+   connect repeat avoidance to signed carry, source lifts, or an upper height
+   obstruction.
 
 ### Nontrivial cycles
 
@@ -839,8 +863,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase20.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase20_verifier.json
+.venv/bin/python verifier/verify_phase21.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase21_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

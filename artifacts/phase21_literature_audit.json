@@ -1,0 +1,58 @@
+{
+  "dependency_boundary": "P125-P127 and P129-P132 are repository derivations; P128 alone uses EXT08. Terminology citations are not promoted to proof dependencies.",
+  "format": "collatz-phase21-literature-audit-v1",
+  "novelty_search": "Targeted searches found the standard parity conjugacy and word-complexity definitions but no primary source for the exact Collatz factor-complexity slopes. Absence from this search is not a literature-wide novelty claim.",
+  "proves_collatz": false,
+  "sources": [
+    {
+      "authors": "Daniel J. Bernstein and Jeffrey C. Lagarias",
+      "classification": "EXTERNAL_THEOREM",
+      "doi": "10.4153/CJM-1996-060-x",
+      "id": "EXT14",
+      "title": "The 3x + 1 Conjugacy Map",
+      "used_for": "novelty context only; P125 is rederived internally",
+      "year": 1996
+    },
+    {
+      "authors": "Boris Adamczewski and Yann Bugeaud",
+      "classification": "DEFINITION_CONTEXT",
+      "doi": "10.1017/S0143385707000223",
+      "title": "Dynamics for beta-shifts and Diophantine approximation",
+      "used_for": "Condition (*) and Diophantine exponent convention in P129",
+      "year": 2007
+    },
+    {
+      "arxiv": "1510.00279",
+      "authors": "Yann Bugeaud and Dong Han Kim",
+      "classification": "DEFINITION_CONTEXT",
+      "title": "A new complexity function, repetitions in Sturmian words, and irrationality exponents of Sturmian numbers",
+      "used_for": "r(n,x) smallest-prefix convention; R_v(n)=r(n,v)-n",
+      "year": 2018
+    },
+    {
+      "authors": "Jeremy Nicholson and Narad Rampersad",
+      "classification": "DEFINITION_CONTEXT",
+      "doi": "10.1016/j.dam.2016.03.010",
+      "title": "Initial non-repetitive complexity of infinite words",
+      "used_for": "initial nonrepetitive-complexity terminology",
+      "year": 2016
+    },
+    {
+      "arxiv": "1907.00775",
+      "authors": "Tristan Sterin",
+      "classification": "RELATED_CONTEXT",
+      "title": "Binary expression of ancestors in the Collatz graph",
+      "used_for": "binary carry and first-source context; not an input to P125-P132",
+      "year": 2019
+    },
+    {
+      "arxiv": "2101.12747",
+      "authors": "Luis Lopez and Peter Stoll",
+      "classification": "EXTERNAL_THEOREM",
+      "id": "EXT08",
+      "title": "The 3x+1 function on the rationals",
+      "used_for": "the liminf density input to conditional P128 only",
+      "year": 2021
+    }
+  ]
+}

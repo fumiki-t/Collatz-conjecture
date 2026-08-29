@@ -109,6 +109,17 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   P124 force unbounded balance, exclude quasi-Sturmian tails, and give
   `p(n)-n -> infinity` in a positive permanent-safe noncyclic candidate.
   These conclusions retain their external dependencies.
+- `VERIFIED_THEOREM`: P125 proves directly that the LCP of two distinct
+  integer parity tails is `v2(a-b)`. P126 converts a repeated factor into a
+  strict exact source-height inequality. P127 then proves unconditionally
+  that every positive nonperiodic integer orbit has
+  `liminf p(n)/n>=1/log2(3/2)`. P129/P130 bound Diophantine prefix
+  stammering and prefix powers, while P131 gives an exact finite
+  height/complexity capacity inequality.
+- `CONDITIONAL` / `VERIFIED_THEOREM`: assuming only EXT08, P128 raises the
+  necessary `limsup` complexity slope to `log(3)/log(3/2)`. P132, under P54,
+  supplies an exact repetition rejection certificate for H89 searches. No
+  theorem forces a certifying repeat at all large critical depths.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -147,7 +158,10 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   Phase 20 further removes automatic, primitive substitutive, and
   quasi-Sturmian symbolic tails conditionally, but leaves unbalanced
   escaping-discrepancy words with unbounded yet possibly `o(n)` complexity
-  excess.
+  excess. Phase 21 unconditionally replaces that weak factor-complexity
+  necessity by a linear slope for positive integer nonperiodic orbits, but
+  does not connect factor diversity to nonzero P115 lifts or an ordinary
+  height upper bound.
 - `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
   sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
   reciprocal orbit summability and an odd permanent-safe tail minimum for
@@ -268,6 +282,12 @@ No item above proves the Collatz conjecture.
   all 832 factor rows through length 64, 38 mandatory source-family rows, and
   64 `A^rB^s` rows. The finite factor profiles do not certify morphicity,
   quasi-Sturmian structure, balance, or any asymptotic complexity law.
+- Phase 21: E33 independently reconstructs all 299,999 sources `1<=N<300000`
+  through first state repetition, every repeat width through 64, 502,523
+  critical and 406,353 same-Q geodesic words through `Q=17`, 11 named
+  controls, and 132 mandatory-family rows. P132 rejects 160,429 critical and
+  120,982 geodesic words; the surviving majority blocks an asymptotic
+  conclusion from the finite rate.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -404,12 +424,13 @@ split but does not create an unbounded volume method. NG29 caps the explicitly
 scoped coefficient-only summed-Haar envelope below normalized count 360.469.
 Further progress must retain affine correction, a fixed positive ordinary
 source, transitions, canonical representatives, or signed carry.
-Phase 20 rules out several low-description languages but does not make H112
-finite-state. The surviving target may have unbounded balance and
-`p(n)-n -> infinity` while still having zero entropy and sublinear excess.
-The next useful mechanism must couple P115's lift digits to this growing
-complexity or to ordinary height; merely measuring more finite factors cannot
-prove eventual nonzero lifts.
+Phase 21 rules out subcritical linear factor complexity for every positive
+nonperiodic integer orbit, not merely selected low-description languages.
+This still does not make H112 finite-state: the surviving target may have zero
+entropy and linear complexity above P127's constant. The next useful mechanism
+must couple P115's lift digits or P91/P97 carry to repeated/right-special
+factors or ordinary height; merely measuring more finite factors cannot prove
+eventual nonzero lifts.
 
 ## Secondary directions
 
@@ -520,8 +541,9 @@ prove eventual nonzero lifts.
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
    odd orbits from both NG21 and NG22?
-5. Can an exact right-special-factor or return-word rule force nonzero P115
-   source lifts from P121/P124's unbounded balance and complexity excess while
+5. Can P126/P132 be made composable: either force a certifying repeat along
+   every H89 critical branch, or turn repeat avoidance/right-special growth
+   into a nonzero P115 source lift or an ordinary-height contradiction while
    surviving both NG22 controllers, P109, source 167, and the mandatory
    adversarial families?
 
@@ -545,9 +567,10 @@ prove eventual nonzero lifts.
 - Extend P72 only with an orbit-specific transition invariant; test it first
   against NG21--NG28 and E20/E22/E23/E24/E25/E26/E27 before claiming an exponent or
   anti-concentration improvement.
-- Treat P121/P124 as necessary conditions, not a complexity proof strategy by
-  themselves. A useful Phase 20 successor must connect right-special factors,
-  return words, or balance growth to canonical lift digits or ordinary height.
+- Treat P127/P128 as necessary conditions, not a complexity proof strategy by
+  themselves. A useful Phase 21 successor must connect repeated or
+  right-special factors to P115 lift digits, P91/P97 carry, or ordinary
+  height, and must explain the P132 survivors rather than only extend Q.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,

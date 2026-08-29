@@ -1376,3 +1376,40 @@ all mandatory families as falsifiers; they are not asymptotic classifications.
 Phase 20 does not prove the external theorems internally, force a nonzero
 source lift, prove H112/H72, exclude nontrivial cycles, or prove the Collatz
 conjecture. `proves_collatz=false`.
+
+## 35. Phase 21 — repetition-complexity barriers
+
+**Branch:** `feat/phase21-repetition-complexity`
+
+**Acceptance record:** [`PHASE21_RUN_RESULTS.md`](PHASE21_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/repetition-complexity/REPORT.md`](research/audits/repetition-complexity/REPORT.md)
+
+Phase 21 treated the supplied repetition-complexity note as an untrusted
+proposal. P125 rederives the exact finite parity correspondence: distinct
+integer sources have parity-tail LCP `v2(a-b)`. P126 combines it with the
+exact shortcut growth inequality to give a strict source-height cost for
+every repeated factor; state distinctness and the later start's odd count are
+essential.
+
+P127 applies pigeonhole to the first `p(n)+1` factor starts and proves
+unconditionally that every positive non-eventually-periodic integer orbit has
+`liminf p(n)/n>=1/log2(3/2)`. P128 conditionally uses EXT08's `liminf`
+critical density to raise the necessary `limsup` slope to
+`log(3)/log(3/2)`. P129 repairs the proposed Diophantine-exponent argument by
+proving the required periodic-part lengths diverge; P130/P131 give exact
+prefix-power and height/complexity tradeoffs.
+
+P132 specializes repeat height to P54's critical-prefix height box and gives
+an exact H89 rejection certificate. E33 independently rebuilds 299,999
+direct sources, 502,523 critical words, 406,353 same-Q geodesic words, 11
+named controls, and 132 mandatory-family rows. It rejects 160,429 critical
+and 120,982 geodesic words through `Q=17`; most survive, so the filter cannot
+be promoted to an eventual theorem.
+
+### What this result does not prove
+
+Phase 21 does not bound orbit peaks from above, force a certifying repeat at
+large depth, connect repetition to nonzero source lifts, prove H89/H112/H72,
+exclude nontrivial cycles, or prove the Collatz conjecture.
+`proves_collatz=false`.

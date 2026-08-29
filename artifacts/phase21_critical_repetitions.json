@@ -1,0 +1,265 @@
+{
+  "certificate_rule": "reject if 2^(n+h(j))*D_q >= (B_q_max+D_q)*3^h(j)",
+  "claim": {
+    "E33": "VERIFIED_FINITE",
+    "H89": "OPEN",
+    "P132": "VERIFIED_THEOREM"
+  },
+  "counts_by_Q": {
+    "1": {
+      "H_q": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "K_q": 2,
+      "K_q_minus_1": 1,
+      "critical_words": 1,
+      "geodesic_repetition_excluded": 0,
+      "geodesic_words": 1,
+      "maximum_contacts": 1,
+      "repetition_excluded": 0
+    },
+    "10": {
+      "H_q": {
+        "denominator": "6487",
+        "numerator": "148813"
+      },
+      "K_q": 16,
+      "K_q_minus_1": 15,
+      "critical_words": 476,
+      "geodesic_repetition_excluded": 60,
+      "geodesic_words": 377,
+      "maximum_contacts": 10,
+      "repetition_excluded": 94
+    },
+    "11": {
+      "H_q": {
+        "denominator": "84997",
+        "numerator": "479207"
+      },
+      "K_q": 18,
+      "K_q_minus_1": 17,
+      "critical_words": 961,
+      "geodesic_repetition_excluded": 531,
+      "geodesic_words": 767,
+      "maximum_contacts": 11,
+      "repetition_excluded": 696
+    },
+    "12": {
+      "H_q": {
+        "denominator": "517135",
+        "numerator": "1568693"
+      },
+      "K_q": 20,
+      "K_q_minus_1": 19,
+      "critical_words": 2652,
+      "geodesic_repetition_excluded": 2010,
+      "geodesic_words": 2121,
+      "maximum_contacts": 12,
+      "repetition_excluded": 2541
+    },
+    "13": {
+      "H_q": {
+        "denominator": "502829",
+        "numerator": "5230367"
+      },
+      "K_q": 21,
+      "K_q_minus_1": 20,
+      "critical_words": 8045,
+      "geodesic_repetition_excluded": 3262,
+      "geodesic_words": 6447,
+      "maximum_contacts": 13,
+      "repetition_excluded": 4358
+    },
+    "14": {
+      "H_q": {
+        "denominator": "3605639",
+        "numerator": "16739677"
+      },
+      "K_q": 23,
+      "K_q_minus_1": 22,
+      "critical_words": 17637,
+      "geodesic_repetition_excluded": 11929,
+      "geodesic_words": 14186,
+      "maximum_contacts": 14,
+      "repetition_excluded": 15070
+    },
+    "15": {
+      "H_q": {
+        "denominator": "2428309",
+        "numerator": "54413335"
+      },
+      "K_q": 24,
+      "K_q_minus_1": 23,
+      "critical_words": 51033,
+      "geodesic_repetition_excluded": 12322,
+      "geodesic_words": 41124,
+      "maximum_contacts": 15,
+      "repetition_excluded": 17144
+    },
+    "16": {
+      "H_q": {
+        "denominator": "24062143",
+        "numerator": "171628613"
+      },
+      "K_q": 26,
+      "K_q_minus_1": 25,
+      "critical_words": 108950,
+      "geodesic_repetition_excluded": 69222,
+      "geodesic_words": 88068,
+      "maximum_contacts": 16,
+      "repetition_excluded": 87754
+    },
+    "17": {
+      "H_q": {
+        "denominator": "5077565",
+        "numerator": "548440271"
+      },
+      "K_q": 27,
+      "K_q_minus_1": 26,
+      "critical_words": 312455,
+      "geodesic_repetition_excluded": 21462,
+      "geodesic_words": 253018,
+      "maximum_contacts": 17,
+      "repetition_excluded": 32524
+    },
+    "2": {
+      "H_q": {
+        "denominator": "7",
+        "numerator": "5"
+      },
+      "K_q": 4,
+      "K_q_minus_1": 3,
+      "critical_words": 1,
+      "geodesic_repetition_excluded": 0,
+      "geodesic_words": 1,
+      "maximum_contacts": 2,
+      "repetition_excluded": 0
+    },
+    "3": {
+      "H_q": {
+        "denominator": "5",
+        "numerator": "23"
+      },
+      "K_q": 5,
+      "K_q_minus_1": 4,
+      "critical_words": 2,
+      "geodesic_repetition_excluded": 0,
+      "geodesic_words": 2,
+      "maximum_contacts": 3,
+      "repetition_excluded": 0
+    },
+    "4": {
+      "H_q": {
+        "denominator": "47",
+        "numerator": "85"
+      },
+      "K_q": 7,
+      "K_q_minus_1": 6,
+      "critical_words": 3,
+      "geodesic_repetition_excluded": 1,
+      "geodesic_words": 2,
+      "maximum_contacts": 4,
+      "repetition_excluded": 2
+    },
+    "5": {
+      "H_q": {
+        "denominator": "13",
+        "numerator": "319"
+      },
+      "K_q": 8,
+      "K_q_minus_1": 7,
+      "critical_words": 7,
+      "geodesic_repetition_excluded": 0,
+      "geodesic_words": 5,
+      "maximum_contacts": 5,
+      "repetition_excluded": 0
+    },
+    "6": {
+      "H_q": {
+        "denominator": "59",
+        "numerator": "217"
+      },
+      "K_q": 10,
+      "K_q_minus_1": 9,
+      "critical_words": 12,
+      "geodesic_repetition_excluded": 7,
+      "geodesic_words": 9,
+      "maximum_contacts": 6,
+      "repetition_excluded": 10
+    },
+    "7": {
+      "H_q": {
+        "denominator": "1909",
+        "numerator": "3767"
+      },
+      "K_q": 12,
+      "K_q_minus_1": 11,
+      "critical_words": 30,
+      "geodesic_repetition_excluded": 22,
+      "geodesic_words": 23,
+      "maximum_contacts": 7,
+      "repetition_excluded": 29
+    },
+    "8": {
+      "H_q": {
+        "denominator": "233",
+        "numerator": "1907"
+      },
+      "K_q": 13,
+      "K_q_minus_1": 12,
+      "critical_words": 85,
+      "geodesic_repetition_excluded": 33,
+      "geodesic_words": 66,
+      "maximum_contacts": 8,
+      "repetition_excluded": 49
+    },
+    "9": {
+      "H_q": {
+        "denominator": "13085",
+        "numerator": "44143"
+      },
+      "K_q": 15,
+      "K_q_minus_1": 14,
+      "critical_words": 173,
+      "geodesic_repetition_excluded": 121,
+      "geodesic_words": 136,
+      "maximum_contacts": 9,
+      "repetition_excluded": 158
+    }
+  },
+  "finite_boundary": "Q<=17 exclusion counts do not prove an eventual H89 repetition theorem.",
+  "format": "collatz-phase21-critical-repetitions-v1",
+  "maximum_Q": 17,
+  "maximum_finite_stammering_ratio": {
+    "value": {
+      "denominator": "1",
+      "numerator": "17"
+    },
+    "witness": [
+      17,
+      "11111111111111111000000000",
+      30801919
+    ]
+  },
+  "maximum_source_lower_expression": {
+    "value": {
+      "denominator": "9",
+      "numerator": "16777216"
+    },
+    "witness": [
+      17,
+      "11011011011011011011011010",
+      33554427
+    ]
+  },
+  "proves_collatz": false,
+  "row_digest_sha256": "56ac62565fc790448fc301f6db9ff7a610ad47aca8f683749c1918ca952d2277",
+  "row_storage": "omitted; verifier rebuilds every critical word from string recursion",
+  "totals": {
+    "critical_words": 502523,
+    "geodesic_repetition_excluded": 120982,
+    "geodesic_words": 406353,
+    "repetition_excluded": 160429
+  }
+}

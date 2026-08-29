@@ -1,5 +1,5 @@
 {
-  "claim_count": 158,
+  "claim_count": 168,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -974,13 +974,14 @@
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, surplus/coalescent irreducibility, or a lift-linked complexity theorem to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, EXT08, E23, E24, E30, E31, E32, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, EXT08, E23, E24, E30, E31, E32, E33, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
       "dependency_ids": [
         "E23",
         "E24",
         "E30",
         "E31",
         "E32",
+        "E33",
         "EXT08",
         "NG21",
         "NG22",
@@ -1007,6 +1008,13 @@
         "P122",
         "P123",
         "P124",
+        "P125",
+        "P126",
+        "P127",
+        "P128",
+        "P129",
+        "P130",
+        "P131",
         "P72",
         "P73",
         "P75",
@@ -1024,11 +1032,11 @@
         "P87",
         "P88"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-08-29",
-      "notes": "Phase 20 conditionally excludes several low-complexity classes and forces unbounded excess, but no theorem links that growth to ordinary height or a nonzero P115 lift. P80 and H112 remain unproved.",
+      "last_audited": "2026-08-29 (Phase 21 audit)",
+      "notes": "P127 now forces unconditional linear factor complexity, but no theorem links that diversity or P131 peak growth to ordinary-height upper bounds or a nonzero P115 lift. P80 and H112 remain unproved.",
       "status": "OPEN"
     },
     {
@@ -1410,16 +1418,20 @@
     {
       "claim": "Prove `M_star(K_q-1)>H_q` for all sufficiently large `q`, where `M_star(k)` is the least source with ancestral-safe depth at least `k`, then independently check the finite first-crossing remainder.",
       "collatz_implication": "Together with P90 and a finite remainder, this would exclude a least positive counterexample.",
-      "dependencies": "P54, P89; an eventual ancestral-frontier lower bound.",
+      "dependencies": "P54, P89, P125, P126, P132, E33; an eventual ancestral-frontier lower bound.",
       "dependency_ids": [
+        "E33",
+        "P125",
+        "P126",
+        "P132",
         "P54",
         "P89"
       ],
-      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Sections 3 and 9; `artifacts/phase15b_obstruction_report.md`.",
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Sections 3 and 9; [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 8; `artifacts/phase15b_obstruction_report.md`; `artifacts/phase21_critical_repetitions.json`.",
       "first_introduced": "Phase 15B",
       "id": "H89",
-      "last_audited": "2026-08-28",
-      "notes": "E25 proves only `M_star(210)>5000000`; finite record growth is not an eventual theorem.",
+      "last_audited": "2026-08-29 (Phase 21 audit)",
+      "notes": "E25 is only one finite record, and E33's repeat filter leaves most Q<=17 critical/geodesic words alive; neither is an eventual theorem.",
       "status": "OPEN"
     },
     {
@@ -1998,16 +2010,22 @@
     {
       "claim": "Prove that every infinite coefficient-safe all-prefix same-Q-geodesic branch has infinitely many nonzero canonical accelerated source lifts.",
       "collatz_implication": "With P115, would exclude positive ordinary sources in this exact H72 sublanguage.",
-      "dependencies": "P98; P115; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.",
+      "dependencies": "P98, P115, P125, P126, P127, P129, P131, E33; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.",
       "dependency_ids": [
+        "E33",
         "P115",
+        "P125",
+        "P126",
+        "P127",
+        "P129",
+        "P131",
         "P98"
       ],
-      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Sections 6--7; [`context/H72.md`](context/H72.md).",
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Sections 6--7; [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md); [`context/H72.md`](context/H72.md).",
       "first_introduced": "Phase 19",
       "id": "H112",
-      "last_audited": "2026-08-28",
-      "notes": "It is not proved for all geodesic branches and would not alone exclude the nongeodesic H72 language or nontrivial cycles.",
+      "last_audited": "2026-08-29 (Phase 21 audit)",
+      "notes": "P127/P131 constrain complexity and peaks but do not force one nonzero lift; the nongeodesic H72 language and nontrivial cycles also remain separate.",
       "status": "OPEN"
     },
     {
@@ -2167,7 +2185,7 @@
     },
     {
       "claim": "Assuming EXT08 and EXT12, no positive ordinary permanent-safe nonperiodic candidate has a quasi-Sturmian parity word.",
-      "collatz_implication": "Excludes Sturmian and quasi-Sturmian tails from H112/H72 conditionally.",
+      "collatz_implication": "Excludes Sturmian and quasi-Sturmian tails from H112/H72 conditionally; P127 now gives a stronger unconditional factor-complexity exclusion for positive integer nonperiodic orbits.",
       "dependencies": "P117, P122, EXT08, EXT12.",
       "dependency_ids": [
         "EXT08",
@@ -2178,13 +2196,13 @@
       "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 7.",
       "first_introduced": "Phase 20",
       "id": "P123",
-      "last_audited": "2026-08-29",
-      "notes": "It does not exclude complexity `n+o(n)` or arbitrary morphic tails.",
+      "last_audited": "2026-08-29 (Phase 21 comparison)",
+      "notes": "It remains a historical external-input route and does not exclude arbitrary morphic tails.",
       "status": "CONDITIONAL"
     },
     {
       "claim": "Assuming EXT08 and EXT12, every positive ordinary permanent-safe noncyclic candidate satisfies `p_v(n)-n -> infinity`.",
-      "collatz_implication": "Forces unbounded factor-complexity excess in the remaining H72 branch.",
+      "collatz_implication": "Preserves the historical route; P127 unconditionally strengthens it to a linear factor-complexity lower bound for every positive integer nonperiodic orbit.",
       "dependencies": "P116, P123; the factor-complexity excess of a non-eventually-periodic one-sided word is nondecreasing, and bounded excess is eventually quasi-Sturmian.",
       "dependency_ids": [
         "P116",
@@ -2193,8 +2211,8 @@
       "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 8.",
       "first_introduced": "Phase 20",
       "id": "P124",
-      "last_audited": "2026-08-29",
-      "notes": "It gives no linear excess, positive entropy, or randomness.",
+      "last_audited": "2026-08-29 (Phase 21 comparison)",
+      "notes": "It gives no positive entropy or randomness, and its own status remains conditional on EXT08/EXT12.",
       "status": "CONDITIONAL"
     },
     {
@@ -2208,9 +2226,141 @@
       "last_audited": "2026-08-29",
       "notes": "Finite profiles do not certify morphicity, quasi-Sturmian structure, balance, or an asymptotic complexity law. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The shortcut Collatz parity-vector map extends to a homeomorphism of `Z_2` conjugating the shortcut map to the 2-adic shift; in particular finite parity prefixes correspond bijectively to residues modulo powers of two.",
+      "collatz_implication": "Places P125 in the standard 2-adic conjugacy framework.",
+      "dependencies": "Bernstein--Lagarias (1996), DOI `10.4153/CJM-1996-060-x`; map and input-parity convention audited.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Sections 2 and 10.",
+      "first_introduced": "Phase 21",
+      "id": "EXT14",
+      "last_audited": "2026-08-29",
+      "notes": "P125 is proved directly in the repository and does not depend on this external theorem.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "For integers `a!=b`, the longest common prefix of their shortcut input-parity tails has length exactly `v_2(a-b)`; equivalently the first `n` parity bits agree iff `a==b mod 2^n`.",
+      "collatz_implication": "Converts a symbolic repeat into exact 2-adic separation of the corresponding orbit states.",
+      "dependencies": "Integer shortcut map; input-parity convention; no positivity assumption is needed for the congruence induction.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 2; `artifacts/phase21_theory.json`; exact property tests.",
+      "first_introduced": "Phase 21",
+      "id": "P125",
+      "last_audited": "2026-08-29",
+      "notes": "It does not make every coherent parity word a positive ordinary orbit.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a positive integer orbit from `N`, `(x_t+1)2^h(t)<=(N+1)3^h(t)`; if distinct states at starts `i<j` have the same length-`n` parity factor, then `2^(n+h(j))<(N+1)3^h(j)`.",
+      "collatz_implication": "Gives an exact source-height cost for every repeated factor.",
+      "dependencies": "Positive shortcut orbit; input parity; the repeated states are distinct.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 3; `artifacts/phase21_theory.json`; direct-orbit verifier and strict-inequality tamper tests.",
+      "first_introduced": "Phase 21",
+      "id": "P126",
+      "last_audited": "2026-08-29",
+      "notes": "The strict inequality fails as a theorem if state distinctness is silently removed; periodic tails are treated separately.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every positive non-eventually-periodic integer shortcut orbit has factor complexity `p(n)>(n-log_2(N+1))/log_2(3/2)` and hence `liminf p(n)/n>=1/log_2(3/2)`.",
+      "collatz_implication": "Unconditionally rules out every subcritical linear-complexity parity tail for a positive nonperiodic integer orbit and strengthens P123/P124 in that scope.",
+      "dependencies": "P126; positive integer source `N`; non-eventual periodicity. The exact accepting form is the integer inequality, with logarithms used only to restate it.",
+      "dependency_ids": [
+        "P126"
+      ],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 4; `artifacts/phase21_theory.json`.",
+      "first_introduced": "Phase 21",
+      "id": "P127",
+      "last_audited": "2026-08-29",
+      "notes": "It neither gives positive entropy nor excludes all zero-entropy words, and it is not an upper bound on orbit height.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming EXT08, every positive integer shortcut orbit with infinitely many distinct states satisfies `limsup p(n)/n>=log(3)/log(3/2)`.",
+      "collatz_implication": "Raises the necessary complexity slope along an exact subsequence at critical density.",
+      "dependencies": "EXT08's lower limiting input-parity density; P126; positive integer source; infinite nonperiodic orbit.",
+      "dependency_ids": [
+        "EXT08",
+        "P126"
+      ],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 5; `artifacts/phase21_theory.json`.",
+      "first_introduced": "Phase 21",
+      "id": "P128",
+      "last_audited": "2026-08-29",
+      "notes": "It is conditional on EXT08, uses only a limsup, and does not imply positive entropy or termination.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "The parity word of every positive non-eventually-periodic integer shortcut orbit has Diophantine exponent at most `log_2(3)`.",
+      "collatz_implication": "Excludes arbitrarily strong prefix stammering in a positive nonperiodic integer orbit.",
+      "dependencies": "Adamczewski--Bugeaud Condition `(*)` as a definition; P126; non-eventual periodicity forces the periodic-part lengths in any witnessing sequence to diverge.",
+      "dependency_ids": [
+        "P126"
+      ],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 6; `artifacts/phase21_theory.json`.",
+      "first_introduced": "Phase 21",
+      "id": "P129",
+      "last_audited": "2026-08-29",
+      "notes": "It does not exclude every recurrent or low-complexity word; the Condition `(*)` terminology is external but the bound is derived internally.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If the parity prefix of source `N` is `W^r`, with `d=|W|` and `q=|W|_1`, then `N+1>2^((r-1)d)(2/3)^q>=(2^r/3)^d`; in particular a square prefix has `d<log_(4/3)(N+1)`.",
+      "collatz_implication": "Supplies a source-sensitive exact exclusion for long prefix powers.",
+      "dependencies": "Positive integer source; prefix starts at time zero. An internal power must instead use its local orbit source.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 6; `artifacts/phase21_theory.json`; exact direct-orbit checks.",
+      "first_introduced": "Phase 21",
+      "id": "P130",
+      "last_audited": "2026-08-29",
+      "notes": "It is not a global bound on powers starting later in the orbit when expressed using the original source.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For distinct positive orbit states `x_0,...,x_m`, height `H_m=max_(j<=m)x_j`, and parity factor complexity `p(n)`, `p(n)>=ceil((m+1)/(1+floor((H_m-1)/2^n)))`. Thus polynomial complexity of degree `d` forces `H_m>=exp(Omega(m^(1/d)))`, and zero entropy forces `log H_m/log m->infinity`.",
+      "collatz_implication": "Gives an exact finite capacity tradeoff between symbolic complexity and ordinary orbit peaks.",
+      "dependencies": "P125; positive distinct states; ordinary least-positive representatives.",
+      "dependency_ids": [
+        "P125"
+      ],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 7; `artifacts/phase21_theory.json`.",
+      "first_introduced": "Phase 21",
+      "id": "P131",
+      "last_audited": "2026-08-29",
+      "notes": "These are peak lower bounds, not the upper bounds needed to force a contradiction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Under P54, a repeated length-`n` factor at second start `j` in a critical prefix must satisfy `2^(n+h(j))D_q<(B_q^max+D_q)3^h(j)`; the reversed weak inequality is an exact rejection certificate.",
+      "collatz_implication": "Adds a source-residue-free finite pruning rule to the H89 search.",
+      "dependencies": "P54's least-counterexample height bound; P126; exact critical-word affine data.",
+      "dependency_ids": [
+        "P126",
+        "P54"
+      ],
+      "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 8; `artifacts/phase21_critical_repetitions.json`; independent verifier.",
+      "first_introduced": "Phase 21",
+      "id": "P132",
+      "last_audited": "2026-08-29",
+      "notes": "No theorem forces sufficiently large critical words to contain a certifying repeat, so H89 remains open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks all 299,999 sources `1<=N<300000` through first state repetition and all repeated widths through 64, all 502,523 critical words and 406,353 same-Q geodesic words through `Q=17`, 11 named 512-bit controls, and 132 mandatory-family rows.",
+      "collatz_implication": "Regresses P125--P132 and rejects 160,429 critical and 120,982 geodesic words through `Q=17`.",
+      "dependencies": "Declared finite ranges; arbitrary-precision integers; cycles excluded from nonperiodic inequalities after their first repeated state.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); `artifacts/phase21_direct_orbits.json`; `artifacts/phase21_critical_repetitions.json`; `artifacts/phase21_controls.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 21",
+      "id": "E33",
+      "last_audited": "2026-08-29",
+      "notes": "Most words survive, so the finite exclusion rate is not an eventual H89/H112/H72 theorem. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "30f49bac644479746f3ac8d98594f78afb017acab6e29efe4cc38f2c80d7ad67"
+  "source_sha256": "e5b88ac47a14112f06c8c151bf8f50ab906457c47f1066ba94e95720745a33ac"
 }

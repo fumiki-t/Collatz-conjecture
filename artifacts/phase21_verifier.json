@@ -1,0 +1,30 @@
+{
+  "adversarial_rows": 132,
+  "claims": {
+    "E33": "VERIFIED_FINITE",
+    "H112": "OPEN",
+    "H72": "OPEN",
+    "H89": "OPEN",
+    "P125": "VERIFIED_THEOREM",
+    "P126": "VERIFIED_THEOREM",
+    "P127": "VERIFIED_THEOREM",
+    "P128": "CONDITIONAL",
+    "P129": "VERIFIED_THEOREM",
+    "P130": "VERIFIED_THEOREM",
+    "P131": "VERIFIED_THEOREM",
+    "P132": "VERIFIED_THEOREM"
+  },
+  "control_sequences": 11,
+  "critical_totals": {
+    "critical_words": 502523,
+    "geodesic_repetition_excluded": 120982,
+    "geodesic_words": 406353,
+    "repetition_excluded": 160429
+  },
+  "direct_sources": 299999,
+  "external_sources_audited": 6,
+  "format": "collatz-phase21-verifier-v1",
+  "independence": "literal states, byte-table reversed keys, string-recursive critical words, direct substring tuples; no generator import",
+  "proves_collatz": false,
+  "valid": true
+}

@@ -900,10 +900,43 @@ ordinary height, and P115 lift digits.
 [`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md),
 and `artifacts/phase20_complexity_audit.json`.
 
+## Phase 21 — repetition rejection as an eventual critical-prefix barrier
+
+**Status:** boundary recorded; no new NG claim ID.
+
+**Exact invalid shortcut.** Because every repeated parity factor has the
+strict P126 height cost and P132 rejects many bounded critical words, the same
+repetition test eventually rejects every critical or same-Q geodesic word.
+
+**Why it looked plausible.** P125 makes symbolic repetition arithmetically
+rigid, and the finite P132 test rejects 160,429 of 502,523 critical words and
+120,982 of 406,353 geodesic words through `Q=17` without computing canonical
+source residues.
+
+**Failure.** The implication “repeat implies an inequality” supplies no
+converse theorem forcing a sufficiently strong repeat. At `Q=17`, 279,931
+critical and 231,556 geodesic words survive the exact test. The smallest
+trivial survivor is the one-bit critical word `1`; the large top-layer
+survivor set shows that this is not only a shallow exception.
+
+**Failure scope.** This blocks extrapolation from the finite rejection rate,
+not P125--P132. A future theorem may still force repeats by combining
+ancestral minimality, signed carry, ordinary height, or source-lift state.
+
+**Weaker statement retained.** P127 is an unconditional linear
+factor-complexity lower bound, P129/P130 constrain prefix stammering, P131
+gives an exact height-capacity tradeoff, and P132 remains a sound finite H89
+certificate.
+
+**Evidence.** [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md),
+[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md),
+and `artifacts/phase21_critical_repetitions.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
 NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, source 167, both
-Phase 20 NG22 controllers, and all exact counterexamples above. Passing a bounded regression is necessary
+Phase 20 NG22 controllers, the E33 repetition survivors, and all exact
+counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

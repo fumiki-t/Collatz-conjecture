@@ -59,6 +59,13 @@ coefficient in the exact near-diagonal band `c>u(1-n/(3N))`. This does not
 empty H104/H105, but it gives a concrete rejection rule for a future
 carry-aware source/endpoint certificate.
 
+Phase 21 adds P132's exact repeat rejection certificate. E33 shows that it
+rejects 160,429 of 502,523 critical words through `Q=17`, but most critical
+and geodesic words survive. An eventual H89 proof therefore needs either a
+mechanism forcing certifying repeats or a composable state that combines
+repeat avoidance with signed carry/source height; extending Q alone is not a
+success criterion.
+
 **Fast falsification test.** Reconstruct NG24--NG28, especially the Q=19
 gain-four pair and Q=26 carry -3 pair, and require the proposed state to preserve P91/P97 signed prefix carries,
 literal positivity, safety, and ordinary source order. Run the mandatory
@@ -211,6 +218,14 @@ binary morphic, primitive substitutive, bounded-balance, and quasi-Sturmian
 parity tails and force `p(n)-n -> infinity`. This does not imply positive
 entropy or a finite presentation, and it does not force a P115 lift digit.
 
+Phase 21 strengthens the factor-complexity side without EXT08: P125/P126 turn
+orbit separation into a strict repeat-height inequality and P127 forces
+`liminf p(n)/n>=1/log2(3/2)` for every positive nonperiodic integer orbit.
+P128 gives a stronger conditional limsup slope, P129/P130 constrain prefix
+stammering, and P131 converts low factor capacity into large orbit peaks.
+These are lower bounds on symbolic diversity or peak height, not the upper
+height or nonzero-lift statement needed for H72.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
@@ -223,10 +238,11 @@ or promotes finite scarcity to an eventual statement. Any proposed finite
 automaton must prove prefix completeness and track P111 source lifts.
 
 For a complexity-based successor, also test both NG22 controllers, the P109
-schedule, and E32's finite prefixes. Reject any inference from a long
-Sturmian-looking prefix, finite low excess, or finite zero-lift suffix. The
-target must be an exact implication from a right-special/return-word event to
-ordinary height, signed carry, or a nonzero canonical lift.
+schedule, E32's finite prefixes, and E33's surviving critical words. Reject
+any inference from a long Sturmian-looking prefix, a finite repetition rate,
+or a finite zero-lift suffix. The target must be an exact implication from a
+repeat/right-special/return-word event to ordinary height, signed carry, or a
+nonzero canonical lift.
 
 **Success criterion.** An orbit-specific arithmetic theorem that excludes
 every positive ordinary integer permanent-safe source, with an independently

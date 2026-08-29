@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the twenty phases established
+## 3. What the twenty-one phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -170,6 +170,12 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   word theorems, automatic, primitive substitutive, bounded-balance, and
   quasi-Sturmian parity tails are excluded and `p(n)-n -> infinity` is
   necessary. E32 is finite only; H112 and H72 remain open.
+- Phase 21 proves exact integer parity separation and a strict repeated-factor
+  height inequality. Consequently every positive nonperiodic integer orbit
+  has unconditional linear factor complexity with slope at least
+  `1/log2(3/2)`; EXT08 conditionally raises a limsup slope. P132 rejects
+  160,429 of 502,523 critical words through `Q=17`, but most survive, so H89,
+  H112, and H72 remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -242,6 +248,7 @@ P69 counterexample trichotomy
   -> P88/E24 finite {1,2}-gap hard core
   -> P89/P91--P96 ancestral/carry constraints and E25/E26 finite data
   -> P117/P119--P124 parity-complexity filters
+  -> P125--P131 unconditional repetition-complexity filters
   -> H72 (OPEN)
   -> H70 eventual dropping-safe spacing via P70 (OPEN).
 ```
@@ -267,7 +274,8 @@ For H54, H70, H72, H89, H104, or H105, use the scoped pack under
 under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
 
-Good near-term work includes a P91/P92/P95 recursion aimed at H89, a cross-Q
+Good near-term work includes a P91/P92/P95/P97 recursion aimed at H89 that
+incorporates P132 repeat certificates, a cross-Q
 carry recursion for P86's endpoint Pareto frontier,
 inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
 quotient/carry state extending P71, and a positive ordinary-integrality or
@@ -280,7 +288,7 @@ proposal must additionally prove transition closure and retain P115 canonical
 source lifts. H112 is the focused same-Q-geodesic subtarget; source 167 must
 reject every bounded zero-run surrogate. A complexity-based successor must
 map an exact right-special/return-word event to a nonzero lift, signed carry,
-or ordinary height; E32's finite profiles alone cannot do so. Certificate
+or ordinary height; E32/E33's finite profiles alone cannot do so. Certificate
 extension is useful when it tests such structure; raw depth extension is
 secondary.
 

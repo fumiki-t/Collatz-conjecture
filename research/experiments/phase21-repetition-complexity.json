@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "phase21-repetition-complexity",
+  "status": "RUNNING",
+  "claim_ids": ["EXT14", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P132", "E33", "H89", "H112", "H72"],
+  "objective": "Derive exact orbit separation from finite parity correspondence and audit the resulting repetition, factor-complexity, stammering, height, and H89 certificates without promoting finite profiles to asymptotic claims.",
+  "exact_scope": {
+    "quantifiers": [
+      "all integer pairs and all positive prefix lengths for P125",
+      "all positive non-eventually-periodic shortcut orbits for P126, P127, P129, and P131",
+      "all positive finite source-prefix powers for P130, with a local source required away from time zero",
+      "positive rational noncyclic shortcut orbits only under EXT08 for P128",
+      "least-positive-counterexample finite first crossings only under P54 for P132",
+      "all positive sources 1<=N<300000 through their first repeated state for the direct part of E33",
+      "all critical and same-Q geodesic words through Q<=17 for the finite H89 diagnostic",
+      "the declared 512-bit controls and factor lengths at most 64"
+    ],
+    "bounds": {
+      "direct_source_upper_exclusive": 300000,
+      "maximum_repeat_length": 64,
+      "maximum_critical_Q": 17,
+      "control_prefix_length": 512,
+      "mandatory_family_parameter_maximum": 20,
+      "ArBs_parameter_maximum": 8
+    },
+    "completeness": "Every repeat of width at most 64 in each direct orbit is covered by the maximum 2-adic LCP at its second start; finite rows are digest-compressed and independently rebuilt. Critical-word data are exhaustive only through Q=17. H89, H112, and H72 remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers and exact rational comparisons",
+    "floating_point_role": "display-only approximations"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase21_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase21.py --artifact-dir artifacts --write-report artifacts/phase21_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase21_properties.py tests/test_phase21_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q"]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "finite parity congruence and strict separation identities",
+      "all direct orbits and all covered repeats from literal states using an independent bit-reversal implementation",
+      "critical/geodesic words by string recursion and direct affine sums",
+      "finite factor and stammering statistics by direct substring tuples",
+      "all mandatory adversarial controls from their definitions"
+    ],
+    "forbidden_imports": ["src.phase21_search", "phase21_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase21_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "all-contact critical mechanical word", "both NG22 models", "P109 schedule", "source 167", "E25 record sources"
+  ],
+  "artifacts": [
+    "artifacts/phase21_theory.json",
+    "artifacts/phase21_direct_orbits.json",
+    "artifacts/phase21_critical_repetitions.json",
+    "artifacts/phase21_controls.json",
+    "artifacts/phase21_literature_audit.json",
+    "artifacts/phase21_obstruction_report.md",
+    "artifacts/phase21_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Keep state equality and eventual-periodic parity tails outside every nonperiodic theorem.",
+    "Do not treat formal NG22, P109, or A/B words as positive ordinary-source orbits.",
+    "Do not promote a Q<=17 exclusion proportion or 512-bit profile to an eventual theorem.",
+    "Do not replace EXT08 liminf density by a natural-density assertion.",
+    "Require a P115 lift or another ordinary-integrality mechanism before claiming progress that closes H112.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The unconditional linear factor-complexity barrier excludes low-complexity parity words of positive nonperiodic integer orbits but supplies no orbit-height upper bound.",
+    "The H89 repetition rule is a finite rejection certificate, not an eventual H89 theorem.",
+    "H89, H112, H72, the nontrivial-cycle branch, and Collatz remain open; proves_collatz remains false."
+  ],
+  "proves_collatz": false
+}
