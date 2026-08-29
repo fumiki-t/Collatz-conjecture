@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase22-cycle-resultant",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["EXT15", "EXT16", "P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "E34", "H133"],
   "objective": "Audit positive odd-cycle exponent words through canonical coprime slope profiles, exact resultants, radial energy, and Christoffel source bounds without conflating a finite obstruction with exclusion of every nontrivial cycle.",
   "exact_scope": {
@@ -73,5 +73,15 @@
     "The finite combined energy/source audit is obstruction mining, not an asymptotic theorem.",
     "H133, H89, H112, H72, the positive nontrivial-cycle branch, and Collatz remain open; proves_collatz remains false."
   ],
+  "recorded_result": {
+    "commit": "b1aa7f0f67887df9230e213819d9259cf4182a4c",
+    "generator": "valid=true in 4.82s",
+    "verifier": "valid=true in 7.69s using independent Sylvester determinants",
+    "focused_tests": "15 passed in 31.47s across exact Phase 22 properties, verifier/tamper, and research-health suites",
+    "full_tests": "321 passed in 699.59s",
+    "strict_research_health": "valid=true with 146 tracked artifacts and zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "b8be33ca4ce5f7c64900b0204cf09c67ccaf882e24eea4daca41a4ab14e32351",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }

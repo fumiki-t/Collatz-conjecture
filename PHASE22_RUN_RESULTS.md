@@ -4,6 +4,8 @@ Branch: `feat/phase22-cycle-resultant`
 
 Base: `482f0357ffc5082e228bc4f3441b0a9e22f4f975`
 
+Acceptance evidence commit: `b1aa7f0f67887df9230e213819d9259cf4182a4c`
+
 Repository status: `OPEN`; `proves_collatz=false`.
 
 ## Accepted scope
