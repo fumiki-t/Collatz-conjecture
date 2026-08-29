@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase18-affine-trichotomy",
-  "status": "DRAFT",
+  "status": "ACCEPTED",
   "claim_ids": ["P107", "P108", "P109", "P110", "P111", "E30", "NG30", "H72"],
   "objective": "Audit the finite affine-graph trichotomy, repair the proposed one-switch normal form, construct exact mixed-SCC formal survivors, and test whether existing H72 models satisfy the finite-state hypotheses.",
   "exact_scope": {
@@ -70,5 +70,15 @@
     "Finite graph enumeration and source-lift samples have no asymptotic ordinary-integrality implication.",
     "H72 and the Collatz conjecture remain open; proves_collatz remains false."
   ],
+  "recorded_result": {
+    "commit": "bc82bbc656e29aef39226d5401f2df031363e53f",
+    "generator": "valid=true in 5.19s",
+    "verifier": "valid=true in 12.24s",
+    "focused_tests": "15 passed in 89.17s",
+    "full_tests": "278 passed in 435.64s",
+    "strict_research_health": "valid=true with zero untracked artifacts",
+    "manifest_sha256": "15ece15336bc814dd3c2d4e4ad88d2d600c7ba600b273cdf50107e22fc021ac5",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
