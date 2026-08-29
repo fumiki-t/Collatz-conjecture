@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase19-affine-lift",
-  "status": "DRAFT",
+  "status": "ACCEPTED",
   "claim_ids": ["P112", "P113", "P114", "P115", "P116", "E31", "NG31", "H112", "H72"],
   "objective": "Audit the affine-or-valley theorem, exact stopped change of measure and critical affine moment, unconditional bounded-strip obstruction, source-lift stabilization, and periodic rational-source growth.",
   "exact_scope": {
@@ -71,5 +71,15 @@
     "P115 is a characterization; proving infinitely many nonzero lifts on every H112 branch remains open.",
     "H112, H72, the cycle branch, and Collatz remain open; proves_collatz remains false."
   ],
+  "recorded_result": {
+    "commit": "6f7028ce98628b09e1c4108bd8ddbe6a34cd4a45",
+    "generator": "valid=true in 53.59s",
+    "verifier": "valid=true in 124.23s",
+    "focused_tests": "16 passed across exact Phase 19 properties, verifier/tamper, and research-health suites; the full suite contains the same tests",
+    "full_tests": "289 passed in 744.56s",
+    "strict_research_health": "valid=true with zero untracked artifacts",
+    "manifest_sha256": "c594f27b24a372f19c7c67541144f5fd3a371b65275a373e4fcb67fa4bbf74a0",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
