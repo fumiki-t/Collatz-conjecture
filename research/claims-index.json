@@ -1,5 +1,5 @@
 {
-  "claim_count": 168,
+  "claim_count": 180,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2358,9 +2358,167 @@
       "last_audited": "2026-08-29",
       "notes": "Most words survive, so the finite exclusion rate is not an eventual H89/H112/H72 theorem. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "At fixed length `L` and one-count `q`, a local `10 -> 01` exchange changes the correction by the exact positive weight in Proposition 5.2, the minimum-height rotation can be transformed monotonically to the Christoffel word, and the Christoffel conjugacy class uniquely maximizes `C_min`.",
+      "collatz_implication": "Supplies only P139's external extremal input for the cycle branch.",
+      "dependencies": "Fernández--Ibáñez (2026), Proposition 5.2 and Theorems 6.4/7.3; lower Christoffel convention audited from the arXiv source.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); [`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Section 8.",
+      "first_introduced": "Phase 22",
+      "id": "EXT15",
+      "last_audited": "2026-08-29",
+      "notes": "Preprint result; P133--P138/P140 do not depend on it, and Christoffel extremality alone does not exclude every cycle.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "Knight's “high cycle” theorem excludes the extremal rational high-cycle class defined in that paper from consisting entirely of integers.",
+      "collatz_implication": "Documents overlap and prevents a false promotion of “no high cycles” to “no Collatz cycles.”",
+      "dependencies": "Knight (2026), *Discrete Mathematics* 349, 114812, DOI `10.1016/j.disc.2025.114812`; scope/terminology audit.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); `artifacts/phase22_literature_audit.json`.",
+      "first_introduced": "Phase 22",
+      "id": "EXT16",
+      "last_audited": "2026-08-29",
+      "notes": "No Phase 22 theorem uses EXT16; an arbitrary positive nontrivial cycle is not thereby excluded.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "If a primitive positive odd cycle is rotated to its minimum `m`, every proper expanded-shortcut prefix coefficient `c_t` satisfies `c_t>lambda=3^q/2^L`, and `m(1-lambda)<q/3`.",
+      "collatz_implication": "Gives a cycle-internal coefficient valley and quantitative proximity-to-one constraint.",
+      "dependencies": "Exact positive affine suffix argument and `B/3^q=sum_(j<q)1/(3c_j)`; no least-counterexample assumption.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Section 2; `artifacts/phase22_theory.json`; property tests.",
+      "first_introduced": "Phase 22",
+      "id": "P133",
+      "last_audited": "2026-08-29",
+      "notes": "It does not bound `q/m` strongly enough to exclude every cycle.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every primitive positive nontrivial odd cycle satisfies either `q>170m`, or `lambda>1/2` and `L=ceil(q log_2 3)`, where `m` is its least odd value.",
+      "collatz_implication": "Splits the positive cycle branch into a critical-length G170 branch and a long H170 branch.",
+      "dependencies": "P72's finite distinct-mod-6 packing argument; E28; exact 24-term logarithm enclosure proving `1/300000+log(511)/9<log 2`.",
+      "dependency_ids": [
+        "E28",
+        "P72"
+      ],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Section 3; `artifacts/phase22_theory.json`; independent verifier.",
+      "first_introduced": "Phase 22",
+      "id": "P134",
+      "last_audited": "2026-08-29",
+      "notes": "This is not the Phase 17 G270/H270 split and eliminates neither branch.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For `gcd(L,q)=1`, valid cyclic exponent classes are in bijection with residue-indexed profiles `a_r>=0,a_0=0`; for `D=2^L-3^q>1`, a Bezout slope root satisfies `gamma^q=2`, `gamma^L=3 mod D`, and `D|B` iff `A_a(gamma)=0 mod D`.",
+      "collatz_implication": "Converts coprime cycle integrality into a degree-`q-1` polynomial congruence.",
+      "dependencies": "Unique minimum rotation of `H_j=qE_j-Lj`; exact residue reconstruction; modular inverses and affine exponent identity.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Sections 1 and 4; `artifacts/phase22_theory.json`; generator/verifier reconstruction.",
+      "first_introduced": "Phase 22",
+      "id": "P135",
+      "last_audited": "2026-08-29",
+      "notes": "Profile indices are height residues, not times; primitivity and the noncoprime branch remain separate.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "A positive coprime area-zero slope profile produces only `(q,L)=(1,2)`, the trivial cycle.",
+      "collatz_implication": "Internally excludes the exact Christoffel profile except for the trivial cycle.",
+      "dependencies": "Slope-root unit identity `(gamma-1)G_q(gamma)=1 mod D`; exact `D=1` modulo-eight remainder.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Section 5; `artifacts/phase22_theory.json`.",
+      "first_introduced": "Phase 22",
+      "id": "P136",
+      "last_audited": "2026-08-29",
+      "notes": "It does not exclude profiles with positive defect area or general noncoprime words.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For every integral coprime profile, the nonzero integer `R(a)=Res(X^q-2,A_a)` is divisible by `D`; moreover `abs(R(a))<=E_q(a)^(q/2)` for the exact weighted derivative energy. Hence `E_q(a)^(q/2)<D` excludes the profile.",
+      "collatz_implication": "Supplies a source-free algebraic necessary condition and a quantitative roughness obstruction.",
+      "dependencies": "Eisenstein irreducibility; integer resultant Bezout identity; reduction by `X-1`; root-of-unity Parseval and AM--GM.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Sections 5--6; `artifacts/phase22_theory.json`; multiplication-matrix/Sylvester cross-checks.",
+      "first_introduced": "Phase 22",
+      "id": "P137",
+      "last_audited": "2026-08-29",
+      "notes": "No uniform energy lower bound is proved for arbitrary profiles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every positive coprime area-one slope profile is impossible. Critical `L=ceil(q log_2 3)`, `q>=13` uses EXT05; noncritical `L>=ceil(q log_2 3)+1`, `q>=4` is internal; all smaller cases are exactly enumerated.",
+      "collatz_implication": "Forces every hypothetical positive coprime nontrivial cycle profile to have defect area at least two.",
+      "dependencies": "P137; validity support `1<=s<=L-q-1`; exact integer constant comparisons; EXT05 only on the critical large-`q` line; E34 finite remainder.",
+      "dependency_ids": [
+        "E34",
+        "EXT05",
+        "P137"
+      ],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Section 7; `artifacts/phase22_theory.json`; independent verifier.",
+      "first_introduced": "Phase 22",
+      "id": "P138",
+      "last_audited": "2026-08-29",
+      "notes": "Area at least two is not itself contradictory; general noncoprime cycles remain.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming EXT15, every non-Christoffel coprime class with `log_2 3<L/q<2` satisfies `C_min<=C_chr-g` for an exact last-swap weight `g>3^(q-1)/4`.",
+      "collatz_implication": "Adds a quantitative source-numerator gap that can combine with E28 and P137.",
+      "dependencies": "EXT15 local swap chain and unique Christoffel maximizer; exact Christoffel one positions.",
+      "dependency_ids": [
+        "EXT15"
+      ],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Section 8; `artifacts/phase22_theory.json`.",
+      "first_introduced": "Phase 22",
+      "id": "P139",
+      "last_audited": "2026-08-29",
+      "notes": "Conditional on the preprint; the gap alone does not exclude all large-`q` cycles.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "If `d=gcd(L,q)>1`, `D_0=2^(L/d)-3^(q/d)` divides `D`, and every integral exponent word obeys a grouped modular polynomial and corresponding degree-`q/d-1` resultant divisibility modulo `D_0` after a minimum-height rotation.",
+      "collatz_implication": "Extends a weaker algebraic necessary condition to the noncoprime cycle branch.",
+      "dependencies": "Exact factorization of powers; grouped height residues; the same Bezout-root exponent identity modulo `D_0`.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Section 9; `artifacts/phase22_theory.json`.",
+      "first_introduced": "Phase 22",
+      "id": "P140",
+      "last_audited": "2026-08-29",
+      "notes": "It is not the coprime profile bijection, may have repeated residues/minima, and does not eliminate the branch.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks 16,623 exponent compositions and 2,214 cyclic classes through `q<=8`, all 4,786 valid coprime profiles of area at most two through `q<=22`, 1,309 two-method resultants, 30 named word controls, and 22 numeric family controls.",
+      "collatz_implication": "Finds only the trivial cycle and its powers as integral in the exhaustive scope; all 4,786 area-bounded rows meet the source barrier.",
+      "dependencies": "Declared composition/profile bounds; arbitrary-precision integers and exact rational energy enclosures; generator multiplication matrix and verifier Sylvester determinant.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md); `artifacts/phase22_finite_profiles.json`; `artifacts/phase22_regressions.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 22",
+      "id": "E34",
+      "last_audited": "2026-08-29",
+      "notes": "The `q<=22` part is area-bounded, zero finite survivors are not eventual, and `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Prove a uniform resultant-energy or ordinary-source obstruction for every remaining positive nontrivial cycle profile, including arbitrary-area coprime profiles and general noncoprime profiles.",
+      "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
+      "dependencies": "P133--P140, E28, E34, EXT05; EXT15 only if the Christoffel source gap is used.",
+      "dependency_ids": [
+        "E28",
+        "E34",
+        "EXT05",
+        "EXT15"
+      ],
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Sections 10--12; [`ROADMAP.md`](ROADMAP.md).",
+      "first_introduced": "Phase 22",
+      "id": "H133",
+      "last_audited": "2026-08-29",
+      "notes": "It is open; H89/H112/H72 and the full Collatz conjecture remain separate.",
+      "status": "OPEN"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "e5b88ac47a14112f06c8c151bf8f50ab906457c47f1066ba94e95720745a33ac"
+  "source_sha256": "d9ef288960345efaa01453d130f5b4bcaa2f42f31e170931e1771e2138b56fe0"
 }

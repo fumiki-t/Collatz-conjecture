@@ -120,6 +120,15 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   necessary `limsup` complexity slope to `log(3)/log(3/2)`. P132, under P54,
   supplies an exact repetition rejection certificate for H89 searches. No
   theorem forces a certifying repeat at all large critical depths.
+- `VERIFIED_THEOREM`: P133--P138 give a cycle-minimum coefficient valley, the
+  G170/H170 split, the coprime residue-indexed slope profile, exact slope-root
+  and resultant divisibility, the radial-energy obstruction, and exclusion of
+  every coprime area-zero or area-one positive profile. P140 gives only a
+  weaker grouped resultant condition for noncoprime slopes. P139's quantitative
+  Christoffel source gap is conditional on EXT15.
+- `OPEN`: H133 asks for a uniform algebraic-energy or ordinary-source
+  obstruction for arbitrary-area coprime profiles and the general noncoprime
+  branch. Phase 22 does not eliminate positive nontrivial cycles.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -288,6 +297,13 @@ No item above proves the Collatz conjecture.
   controls, and 132 mandatory-family rows. P132 rejects 160,429 critical and
   120,982 geodesic words; the surviving majority blocks an asymptotic
   conclusion from the finite rate.
+- Phase 22: E34 independently reconstructs 16,623 positive exponent
+  compositions and 2,214 cyclic classes through `q<=8`, all 4,786 valid
+  coprime profiles of defect area at most two through `q<=22`, 1,309 resultants
+  by independent multiplication-matrix/Sylvester methods, 30 named word
+  controls, and 22 numeric controls. Only the trivial cycle and its powers are
+  integral in the exhaustive scope. All area-bounded profiles meet the direct
+  source barrier, but this finite zero-survivor result is not eventual.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -343,6 +359,12 @@ Phase 10 gives the strongest renewal consequence of that localization: every
 positive q0 gap would create two long-safe integers within distance `W`, but
 the required global spacing lower bound C05 is still open.
 
+Phase 22 gives the strongest current algebraic localization of the separate
+positive-cycle branch: a coprime hypothetical cycle has defect area at least
+two, its nonzero profile resultant is divisible by `D`, and its radial energy
+must be large. The G170/H170 split makes the low-`q/m` branch critical-length.
+This is a necessary-condition package, not an exclusion of every cycle.
+
 ## Strongest conditional route
 
 `P54` (`CONDITIONAL`) is the current main route. A least positive
@@ -385,6 +407,11 @@ scale to the required depth and height.
 P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
 cases. The missing scalable state must retain the common-prefix surplus, odd
 normalized gap, and both tail residues; branch depth alone is insufficient.
+The cycle branch has a separate bottleneck. Phase 22 excludes only coprime
+defect area zero and one. No uniform roughness theorem forces
+`E_q(a)^(q/2)<D` for arbitrary profiles, and the noncoprime grouped modulus
+`D_0` is too weak to exclude its branch. H133 records this obligation without
+conflating it with H89/H112/H72.
 P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
 `L=12` none of the shorter windows `b<L` retains enough information even in a
 small exact domain. The open problem is therefore a composable symbolic state,
@@ -527,7 +554,7 @@ eventual nonzero lifts.
 - `RETRACTED`: early strong numerical claims based on cycle-only assumptions,
   unchecked computations, or invalid equivalences.
 
-## Next 5 concrete research questions
+## Next 6 concrete research questions
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
@@ -546,6 +573,10 @@ eventual nonzero lifts.
    into a nonzero P115 source lift or an ordinary-height contradiction while
    surviving both NG22 controllers, P109, source 167, and the mandatory
    adversarial families?
+6. Can H133 be reduced to a uniform profile-roughness theorem or a
+   Christoffel-gap source theorem that covers arbitrary defect area, while
+   retaining a genuinely stronger modulus for noncoprime slopes and passing
+   both named negative-cycle regressions?
 
 ## Codex tasks worth doing
 
@@ -571,6 +602,10 @@ eventual nonzero lifts.
   themselves. A useful Phase 21 successor must connect repeated or
   right-special factors to P115 lift digits, P91/P97 carry, or ordinary
   height, and must explain the P132 survivors rather than only extend Q.
+- Treat P137 as a necessary cycle certificate: first falsify any proposed
+  energy lower bound on the Phase 22 profiles and negative cycles, and do not
+  scale composition depth unless the rule covers arbitrary area or strengthens
+  P140's noncoprime modulus.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -628,4 +663,5 @@ eventual nonzero lifts.
 - Phase 15 acceptance: [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md)
 - Phase 16 acceptance: [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md)
 - Phase 17 acceptance: [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md)
+- Phase 22 acceptance: [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

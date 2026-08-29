@@ -1,0 +1,45 @@
+{
+  "claims": {
+    "EXT05": "EXTERNAL_THEOREM",
+    "EXT15": "EXTERNAL_THEOREM",
+    "EXT16": "EXTERNAL_THEOREM"
+  },
+  "format": "collatz-phase22-literature-v1",
+  "novelty_boundary": "No literature-wide novelty claim is made. The repository contribution is an independently checked synthesis and exact finite obstruction audit.",
+  "proves_collatz": false,
+  "sources": [
+    {
+      "authors": "Carlos Fern\u00e1ndez and Santiago Ib\u00e1\u00f1ez",
+      "dependency": "P139 only; P133-P138 and P140 do not depend on EXT15.",
+      "id": "EXT15",
+      "orientation": "Their word has N positions and r ones; the lower Christoffel representative is d_i=ceil(ir/N)-ceil((i-1)r/N).",
+      "source": "arXiv:2607.24844v1",
+      "title": "Christoffel Words as Extremal Structures in Collatz Dynamics",
+      "used_result": "Proposition 5.2 local 10-to-01 correction increment and Theorem 7.3 unique Christoffel maximizer of C_min up to cyclic conjugacy.",
+      "year": 2026
+    },
+    {
+      "author": "Kevin Knight",
+      "dependency": "No Phase 22 theorem depends on EXT16.",
+      "doi": "10.1016/j.disc.2025.114812",
+      "id": "EXT16",
+      "journal": "Discrete Mathematics 349 (2026), 114812",
+      "title": "Collatz high cycles do not exist",
+      "used_result": "Novelty and terminology boundary only: a high cycle is an extremal rational-cycle class, not an arbitrary positive Collatz cycle."
+    },
+    {
+      "authors": "Olivier Rozier and Claude Terracol",
+      "dependency": "Only the critical q>=13 part of P138 and the corresponding critical roughness threshold.",
+      "id": "EXT05",
+      "source": "arXiv:2502.00948v5; Discrete Mathematics 349, 115167",
+      "title": "Parity sequences of the 3x+1 map on the 2-adic integers and Euclidean embedding",
+      "used_result": "Lemma B.1 lower bound |2^L-3^q|>(64/25)^q/2 for q>12.",
+      "year": 2026
+    },
+    {
+      "dependency": "All algebraic statements are rederived in the repository audit; classical names are context, not opaque computational inputs.",
+      "id": "CLASSICAL",
+      "used_result": "Eisenstein irreducibility, Sylvester/Bezout resultant identity, Parseval, AM-GM, and standard Terras/Garner affine cycle formula."
+    }
+  ]
+}

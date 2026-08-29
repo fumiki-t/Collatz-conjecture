@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 21
+    assert result["latest_phase"] == 22
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -115,9 +115,17 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["P131"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["P132"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["E33"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["EXT15"] == "EXTERNAL_THEOREM"
+    assert result["active_focus"]["EXT16"] == "EXTERNAL_THEOREM"
+    assert result["active_focus"]["P133"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P138"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P139"] == "CONDITIONAL"
+    assert result["active_focus"]["P140"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E34"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["H133"] == "OPEN"
     assert result["latest_supplemental_verifier"]["valid"] is True
-    assert result["latest_supplemental_verifier"]["claims"]["H72"] == "OPEN"
-    assert result["latest_supplemental_verifier"]["claims"]["P127"] == "VERIFIED_THEOREM"
+    assert result["latest_supplemental_verifier"]["claims"]["H133"] == "OPEN"
+    assert result["latest_supplemental_verifier"]["claims"]["P137"] == "VERIFIED_THEOREM"
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -140,6 +148,8 @@ def test_repository_research_health() -> None:
     assert ("phase20-parity-complexity" in result["accepted_experiments"]) == (phase20["status"] == "ACCEPTED")
     phase21 = json.loads(Path("research/experiments/phase21-repetition-complexity.json").read_text(encoding="utf-8"))
     assert ("phase21-repetition-complexity" in result["accepted_experiments"]) == (phase21["status"] == "ACCEPTED")
+    phase22 = json.loads(Path("research/experiments/phase22-cycle-resultant.json").read_text(encoding="utf-8"))
+    assert ("phase22-cycle-resultant" in result["accepted_experiments"]) == (phase22["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -152,7 +162,7 @@ def test_registry_matches_context_and_claim_sources() -> None:
     assert registry["repository"]["claim_source"] == "docs/CLAIMS_LEDGER.md"
     assert "docs/RESEARCH_SYNTHESIS.md" in registry["canonical_documents"]
     obligations = registry["active_obligations"]
-    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "H112", "C03", "C04", "C05"}
+    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "H112", "H133", "C03", "C04", "C05"}
     for row in obligations:
         if "context" in row:
             assert (root / row["context"]).is_file()
@@ -163,7 +173,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 168
+    assert committed["claim_count"] == 180
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -175,6 +185,10 @@ def test_generated_claim_index_is_complete() -> None:
     assert rows["P127"]["status"] == "VERIFIED_THEOREM"
     assert rows["P132"]["status"] == "VERIFIED_THEOREM"
     assert rows["E33"]["status"] == "VERIFIED_FINITE"
+    assert rows["P137"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P139"]["status"] == "CONDITIONAL"
+    assert rows["E34"]["status"] == "VERIFIED_FINITE"
+    assert rows["H133"]["status"] == "OPEN"
     assert set(rows["H72"]["dependency_ids"]) == {
         "P72",
         "P73",

@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the twenty-one phases established
+## 3. What the twenty-two phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -176,6 +176,14 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   `1/log2(3/2)`; EXT08 conditionally raises a limsup slope. P132 rejects
   160,429 of 502,523 critical words through `Q=17`, but most survive, so H89,
   H112, and H72 remain open.
+- Phase 22 attacks the separate positive-cycle branch. P133/P134 give a
+  minimum-cycle coefficient valley and G170/H170 split. P135--P138 convert
+  coprime exponent classes into residue-indexed profiles, slope-root and
+  resultant conditions, and exclude area zero and one. P139 conditionally
+  adds the EXT15 Christoffel gap; P140 is a weaker noncoprime condition. E34
+  has zero nontrivial integral cycles in its complete `q<=8` scope and zero
+  combined survivors among area-at-most-two profiles through `q<=22`, but
+  H133 and the full positive-cycle branch remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

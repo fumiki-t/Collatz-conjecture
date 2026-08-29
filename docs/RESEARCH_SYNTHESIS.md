@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 21
+# Collatz research synthesis through Phase 22
 
 **Audit date:** 2026-08-29
 
-**Audited base:** `f4a9b6818fad5d406f6d4db9785a98cc830f8b82`
+**Audited base:** `482f0357ffc5082e228bc4f3441b0a9e22f4f975`
 
-**Latest accepted phase:** Phase 21
+**Latest accepted phase:** Phase 22
 
 **Problem status:** `OPEN`
 
@@ -626,6 +626,25 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   See [`PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md) and the
   [`Phase 21 audit`](../research/audits/repetition-complexity/REPORT.md).
 
+### Phase 22 — cycle slope profiles and resultants
+
+- **Purpose:** attack P69's separate positive nontrivial-cycle branch without
+  importing the least-counterexample assumptions of H54/H89.
+- **Accepted internally:** P133 gives the cycle-minimum coefficient valley;
+  P134 gives the G170/H170 split; P135--P137 give the coprime canonical
+  profile, modular slope root, nonzero resultant divisibility, and radial
+  energy obstruction; P136/P138 exclude every coprime area-zero or area-one
+  positive profile. P140 gives a weaker grouped noncoprime resultant.
+- **Conditional/external:** P139 translates EXT15's Christoffel swap/extremal
+  theorem into `g>3^(q-1)/4`. EXT16/Knight is overlap context only.
+- **Finite evidence:** E34 rebuilds 16,623 exponent compositions, 2,214 cyclic
+  classes, 4,786 area-bounded profiles, and 1,309 two-method resultants. Only the
+  trivial cycle and its powers are integral in the complete `q<=8` scope.
+- **Obstacle:** arbitrary defect area and the full noncoprime modulus remain.
+  H133 and the positive nontrivial-cycle branch are open. See
+  [`PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md) and the
+  [`Phase 22 audit`](../research/audits/cycle-resultant/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -633,7 +652,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P132 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140 with their exact hypotheses;
 - explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG31.
 
 None is a full convergence theorem.
@@ -777,9 +796,11 @@ Neither target covers a repeated periodic orbit.
 
 **Target:** exclude every nontrivial positive cycle, independently of the
 nonperiodic route. **Known inputs:** computational verification lower bounds,
-cycle-length/minimum estimates, P65, and external Christoffel results.
-**Acceptance:** a complete theorem with every external dependency and finite
-remainder audited; formal rational cycles are insufficient.
+cycle-length/minimum estimates, P65, and Phase 22 P133--P140. H133 isolates
+the arbitrary-area coprime and general noncoprime remainder. **Acceptance:** a
+complete theorem with every external dependency and finite remainder audited;
+formal rational cycles and bounded profile coverage are insufficient. See
+[`context/H133.md`](context/H133.md).
 
 ### H70 — renewal-ladder spacing
 
@@ -807,7 +828,7 @@ scoped obligation rather than a complete proof by itself.
 | Cross-`Q` 3-adic nesting | Bound multiplicity of endpoint cylinders across different `Q` | NG23 and E22 compatible/nested pairs | Enumerate exact containment poset, then state a provable recursion | Supplies endpoint anti-concentration | Finite injectivity without a recursion is not progress |
 | Fourier/large-sieve anti-concentration | Prove cancellation beyond Haar mass | per-address `+1`, deterministic least representatives | Small exact character sums with explicit constants and carry classes | Could prove either P80 premise | Stop if constants grow exponentially or discard the lattice error |
 | Positive ordinary bridge | Convert coherent 2-adic source data into an effective ordinary-height obstruction | NG22, P76 topology split | Bound the first residue renewal using positivity and signed height | Could directly close H72 | Stop if the argument uses only 2-adic coherence |
-| Cycle stability gap | Quantify a second-best gap beyond Christoffel extrema | existing cycle families and rotation conventions | Exact small-density extremal/second-extremal audit | Strengthens the separate cycle branch | Keep external theorem and repository translation separate |
+| Cycle resultant/energy closure | Prove H133 for arbitrary defect area and noncoprime slopes | both negative cycles, E34 area-two rows, macro/NG28/NG30 controls | Test one all-area energy/source inequality or stronger noncoprime divisor | Eliminates P69's cycle branch | Stop if it assumes coprimality, positivity, or primitivity without preserving it |
 | Eventual H54 lower bound | Prove all safe representatives grow faster than `H_q` | all `M(k)` records and `A^rB^s` | Test one explicit composable inequality on exact records | Closes P54 route with finite remainder | Stop at the least violating word and store its carry data |
 
 Merely extending depth, modulus, `q`, or height without a candidate structural
@@ -863,8 +884,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase21.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase21_verifier.json
+.venv/bin/python verifier/verify_phase22.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase22_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

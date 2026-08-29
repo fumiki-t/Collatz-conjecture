@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–21, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–22, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -49,6 +49,7 @@ This is the canonical map of the research archive. Start with
 | 19 | [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md) | [`../artifacts/phase19_obstruction_report.md`](../artifacts/phase19_obstruction_report.md) | `feat/phase19-affine-lift` |
 | 20 | [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md) | [`../artifacts/phase20_obstruction_report.md`](../artifacts/phase20_obstruction_report.md) | `feat/phase20-parity-complexity` |
 | 21 | [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md) | [`../artifacts/phase21_obstruction_report.md`](../artifacts/phase21_obstruction_report.md) | `feat/phase21-repetition-complexity` |
+| 22 | [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md) | [`../artifacts/phase22_obstruction_report.md`](../artifacts/phase22_obstruction_report.md) | `feat/phase22-cycle-resultant` |
 
 Research supplements:
 
@@ -66,9 +67,10 @@ Research supplements:
 | Affine-lift audit | [`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md) | Phase 19 affine-valley, stopped-duality, source-lift, periodic, and adversarial artifacts with independent verifier and tamper tests | P112--P116, E31, NG31, H112/H72 boundary |
 | Parity-complexity audit | [`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md) | Phase 20 theory, literature, finite complexity, source-lift, and adversarial artifacts with independent verifier and tamper tests | EXT08--EXT13, P117--P124, E32, H112/H72 boundary |
 | Repetition-complexity audit | [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md) | Phase 21 orbit-separation, repeat-height, factor-complexity, stammering, H89-filter artifacts with independent verifier and tamper tests | EXT14, P125--P132, E33, H89/H112/H72 boundary |
+| Cycle-resultant audit | [`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md) | Phase 22 minimum-cycle valley, slope profiles, resultants, energy, Christoffel gap, noncoprime reduction, exact finite profiles, and negative-cycle regressions | EXT15/EXT16, P133--P140, E34, H133 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 21 and both the branch-point and two-tail
+documentation through Phase 22 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

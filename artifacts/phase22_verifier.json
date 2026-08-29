@@ -1,0 +1,24 @@
+{
+  "claims": {
+    "E34": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "P133": "VERIFIED_THEOREM",
+    "P134": "VERIFIED_THEOREM",
+    "P135": "VERIFIED_THEOREM",
+    "P136": "VERIFIED_THEOREM",
+    "P137": "VERIFIED_THEOREM",
+    "P138": "VERIFIED_THEOREM",
+    "P139": "CONDITIONAL",
+    "P140": "VERIFIED_THEOREM"
+  },
+  "finite": {
+    "area_profiles": 4786,
+    "full_classes": 2214,
+    "resultant_samples": 1309,
+    "survivors": 0
+  },
+  "generator_imported": false,
+  "proves_collatz": false,
+  "resultant_method": "independent Sylvester determinant",
+  "valid": true
+}

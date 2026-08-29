@@ -22,19 +22,17 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 21 is the latest accepted research layer. It proves directly that two
-integer sources share exactly `v2(a-b)` shortcut parity bits, converts every
-repeated factor into a strict source-height inequality, and obtains the
-unconditional linear bound
-`liminf p(n)/n >= 1/log2(3/2)` for every positive nonperiodic integer orbit.
-It also gives exact stammering, prefix-power, height/complexity, and H89
-repetition certificates. The finite audit rejects many critical words but
-leaves a large surviving complement. H112 and the broader H54, H70, H72,
-H89, H104, H105, C03, C04, C05, periodic/nontrivial-cycle, and
-permanent-safe-tail branches remain open.
+Phase 22 is the latest accepted research layer. It attacks the separate
+positive-cycle branch with an exact minimum-cycle coefficient valley, a
+G170/H170 split, coprime slope-defect profiles, modular slope roots,
+resultant divisibility, and a radial-energy obstruction. It excludes every
+coprime area-zero or area-one positive profile and records a weaker
+noncoprime reduction. The finite audit is exact but area-bounded; H133 and the
+broader H54, H70, H72, H89, H104, H105, H112, C03, C04, and C05 obligations
+remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–21, separates internal and external
+map and conventions, summarizes Phases 1–22, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -75,12 +73,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase21.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase21_verifier.json
+.venv/bin/python verifier/verify_phase22.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase22_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 21 result](PHASE21_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 22 result](PHASE22_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

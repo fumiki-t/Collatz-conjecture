@@ -932,11 +932,43 @@ certificate.
 [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md),
 and `artifacts/phase21_critical_repetitions.json`.
 
+## Phase 22 — bounded defect area as a complete cycle exclusion
+
+**Status:** boundary recorded; no new NG claim ID.
+
+**Exact invalid shortcut.** Because every valid coprime profile of defect area
+at most two through `q<=22` is excluded by the exact energy/source tests, the
+same combined test excludes every positive nontrivial cycle.
+
+**Why it looked plausible.** P136/P138 exclude areas zero and one for all
+coprime slopes, and the exact E34 region has zero combined survivors. The
+resultant turns integrality into a strong source-free divisibility condition.
+
+**Failure.** The finite profile audit has two explicit cutoffs: `q<=22` and
+area at most two. No theorem bounds a hypothetical cycle's defect area. In
+addition, P140 retains only a weaker divisor `D_0` when `gcd(L,q)>1`; it is not
+the coprime profile bijection or a full-`D` obstruction.
+
+**Failure scope.** This blocks promotion of E34 to an eventual cycle theorem,
+not P133--P140. A uniform energy lower/upper separation, an ordinary-source
+bound valid for every area, or a stronger noncoprime resultant may still close
+H133.
+
+**Weaker statement retained.** Every coprime hypothetical positive nontrivial
+cycle has area at least two and satisfies the exact P137 divisibility/energy
+necessary conditions. The finite zero-survivor profile set remains a useful
+falsification corpus.
+
+**Evidence.** [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md),
+[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md),
+and `artifacts/phase22_finite_profiles.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
 NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, source 167, both
-Phase 20 NG22 controllers, the E33 repetition survivors, and all exact
+Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
+negative cycles, the Phase 22 area-two profiles, and all exact
 counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

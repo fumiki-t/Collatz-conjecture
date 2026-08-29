@@ -101,6 +101,31 @@ collision.
 finite remainder. A contact/geodesic-only contradiction, raw address count,
 or a proof that silently assumes odd-value distinctness on a cycle fails.
 
+## P1 — Positive-cycle resultant/energy barrier
+
+**Target.** Prove H133: exclude every positive nontrivial odd cycle profile,
+including arbitrary-area coprime profiles and general noncoprime slopes.
+
+**Why this helps.** This would close the nontrivial-cycle branch in P69. The
+finite-crossing renewal ladder and permanent-safe nonperiodic branch would
+remain separate obligations.
+
+**Missing theorem.** P137 makes full-`D` divisibility compete with a radial
+energy upper bound only in the coprime case. P136/P138 exclude areas zero and
+one, but no theorem controls arbitrary defect area. P140 supplies only a
+smaller modulus `D_0` for noncoprime slopes. EXT15's Christoffel source gap is
+quantitative but not uniform enough by itself.
+
+**Fast falsification test.** Rebuild both named negative cycles, the trivial
+cycle and its powers, every Phase 22 area-two row, and the macro/NG28/NG30
+controls. Reject any rule that silently uses `gcd(L,q)=1`, confuses `D|B` with
+primitive period, or treats a negative/rational affine cycle as positive.
+
+**Success criterion.** A uniform exact theorem proving `abs(R)<D` or
+`C_min<300000D` for every remaining profile, plus a sound noncoprime reduction
+and independently verified finite remainder. Extending `q` or defect area
+without an all-area mechanism is not success.
+
 ## P1 — Renewal-ladder dropping-safe barrier
 
 **Target.** Prove H70, the eventual inequality used by P70:

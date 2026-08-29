@@ -69,21 +69,42 @@ this paper.
 
 ### Fernández and Ibáñez (2026 preprint)
 
-**Status:** `EXTERNAL_THEOREM`; preprint, not an active proof dependency
+**Status:** `EXTERNAL_THEOREM`; active dependency only for P139
 
 Carlos Fernández and Santiago Ibáñez, “Christoffel words as extremal
 structures in Collatz dynamics,” arXiv:2607.24844v1 (2026).
 [arXiv:2607.24844](https://arxiv.org/abs/2607.24844).
 
-**Result relevant here.** The authors report that, at fixed word length and
-number of odd symbols, Christoffel words are, up to rotation, the unique
-maximizers of their rotation-class functional `C_min`, and derive cycle
-restrictions from that extremality.
+**Result relevant here.** Proposition 5.2 gives the exact positive correction
+increment under a local `10 -> 01` exchange. Theorem 6.4 transforms the
+minimum-height rotation monotonically to the lower Christoffel word, and
+Theorem 7.3 makes its conjugacy class the unique maximizer of `C_min`. Their
+orientation is
+`d_i=ceil(iq/L)-ceil((i-1)q/L)`.
 
-**Repository role.** This is external context for Phase 10's formal
-rational-cycle minimum lemma P65. Phase 10 proves its own prefix-minimum and
-gcd identities directly and does not reprove or use Christoffel extremality to
-accept any certificate. No novelty claim is made against the preprint.
+**Repository role.** It remains context for Phase 10 P65 and is now the only
+external input to Phase 22 P139's quantitative last-swap gap. P133--P138 and
+P140 do not depend on it. The repository derives the `g>3^(q-1)/4`
+translation from the cited statements and exact Christoffel one positions;
+it does not reprove the paper's swap chain or extremality theorem. No novelty
+claim is made against the preprint.
+
+### Knight (2026)
+
+**Status:** `EXTERNAL_THEOREM`; scope and overlap only
+
+Kevin Knight, “Collatz high cycles do not exist,” *Discrete Mathematics*
+**349**(3) (2026), 114812.
+[DOI 10.1016/j.disc.2025.114812](https://doi.org/10.1016/j.disc.2025.114812).
+
+**Result relevant here.** The paper studies rational Collatz cycles with odd
+denominators, defines extremal circuit/high-cycle classes at fixed parameters,
+and proves that a rational high cycle cannot consist entirely of integers.
+
+**Repository role.** EXT16 is a terminology and novelty boundary only. “High
+cycle” is not synonymous with an arbitrary positive Collatz cycle, so this
+result must not be cited as an exclusion of the entire periodic branch. No
+Phase 22 theorem depends on EXT16.
 
 ### Garner (1981)
 
@@ -626,4 +647,7 @@ is still required for:
 2. the derivation, exponent rounding, and effective constants in converting
    Wu–Wang to the contextual `H_q = O(q^5.117)` statement;
 3. the complete proof chain from Ellison's Theorem 3 to Rozier--Terracol Lemma
-   B.1 if EXT05 ever becomes part of a claimed full Collatz proof.
+   B.1 if EXT05 ever becomes part of a claimed full Collatz proof;
+4. an independent specialist review of Fernández--Ibáñez Proposition 5.2 and
+   Theorems 6.4/7.3 before P139 is used inside any claimed full cycle
+   exclusion.

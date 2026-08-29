@@ -1413,3 +1413,42 @@ Phase 21 does not bound orbit peaks from above, force a certifying repeat at
 large depth, connect repetition to nonzero source lifts, prove H89/H112/H72,
 exclude nontrivial cycles, or prove the Collatz conjecture.
 `proves_collatz=false`.
+
+## 36. Phase 22 — cycle slope profiles and resultants
+
+**Branch:** `feat/phase22-cycle-resultant`
+
+**Acceptance record:** [`PHASE22_RUN_RESULTS.md`](PHASE22_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/cycle-resultant/REPORT.md`](research/audits/cycle-resultant/REPORT.md)
+
+Phase 22 treated the supplied cycle-resultant note as an untrusted proposal.
+P133 proves a coefficient valley at every primitive positive cycle minimum and
+the exact bound `m(1-lambda)<q/3`. P134 combines cycle distinctness, P72's
+finite packing argument, E28, and a rational logarithm enclosure to split the
+cycle branch into G170 critical length or `q>170m`.
+
+For coprime `(L,q)`, P135 makes the minimum-height path into a residue-indexed
+nonnegative defect profile and converts `D|B` to one modular polynomial root.
+P136 internally excludes the area-zero Christoffel profile except for the
+trivial cycle. P137 proves nonzero resultant divisibility and the radial-energy
+upper bound. P138 then excludes every coprime area-one positive profile,
+isolating EXT05 only in the critical large-`q` case.
+
+P139 conditionally translates Fernández--Ibáñez's Christoffel swap/extremal
+theorems into the exact gap `g>3^(q-1)/4`. P140 gives a weaker grouped
+resultant modulo `D_0` for noncoprime slopes. Neither closes the general cycle
+branch, so H133 records the arbitrary-area/noncoprime target.
+
+E34 independently reconstructs 16,623 exponent compositions, 2,214 cyclic
+classes, 4,786 area-bounded profiles, and 1,309 resultants by two determinant
+representations. Only the trivial cycle and its powers are integral through
+the complete `q<=8` scope. Both named negative cycles remain valid
+regressions. All area-at-most-two profiles through `q<=22` meet the exact
+source barrier, but zero bounded survivors are not an eventual theorem.
+
+### What this result does not prove
+
+Phase 22 does not exclude arbitrary-area coprime profiles, general noncoprime
+profiles, the full positive nontrivial-cycle branch, H89, H112, H72, or the
+Collatz conjecture. `proves_collatz=false`.

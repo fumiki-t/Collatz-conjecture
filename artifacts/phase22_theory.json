@@ -1,0 +1,78 @@
+{
+  "affine_identity": "2^L*x_q=3^q*x_0+B, B=sum_(j<q)3^(q-1-j)2^E_j, D=2^L-3^q",
+  "area_one_validity": "a_s=1 is valid exactly only among recovered positive exponent words; necessarily 1<=s<=L-q-1.",
+  "claims": {
+    "H133": {
+      "statement": "Exclude every remaining positive nontrivial cycle profile, including larger-area coprime and general noncoprime profiles.",
+      "status": "OPEN"
+    },
+    "P133": {
+      "statement": "At a primitive positive cycle minimum, every proper full-shortcut prefix coefficient exceeds lambda, and m(1-lambda)<q/3.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P134": {
+      "dependencies": [
+        "P72 finite packing argument",
+        "E28"
+      ],
+      "statement": "Every nontrivial primitive positive cycle satisfies q>170m or lambda>1/2 and L=ceil(q log2 3).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P135": {
+      "statement": "For gcd(L,q)=1, cyclic exponent classes correspond to valid residue-indexed nonnegative profiles, and D|B iff A_a(gamma)=0 mod D.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P136": {
+      "statement": "A coprime area-zero profile yields only (q,L)=(1,2), the trivial positive cycle.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P137": {
+      "statement": "D divides the nonzero resultant for every integral coprime profile, while the resultant magnitude is at most the q/2 power of its radial energy.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P138": {
+      "statement": "Every positive coprime area-one profile is excluded; the critical q>=13 part depends on EXT05, while noncritical q>=4 is internal and all smaller cases are exact finite checks.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P139": {
+      "statement": "Under EXT15, every non-Christoffel coprime class has C_min<=C_chr-g with g>3^(q-1)/4.",
+      "status": "CONDITIONAL"
+    },
+    "P140": {
+      "statement": "For gcd(L,q)=d>1, D0=2^(L/d)-3^(q/d) divides D and an integral word obeys a grouped degree-(q/d-1) modular polynomial and resultant condition.",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "energy_coefficients": "d_0=1+2(2^a_(q-1)-1), d_r=(2^a_(r-1)-1)-(2^a_r-1)",
+  "exact_checks": {
+    "critical_resultant_check": true,
+    "critical_root_check": true,
+    "g170_log_margin": {
+      "denominator": "923533534549653463221164817941902084503119486331560332464326552560997496286270174751035345552145824043412528550766992557159833772080960796551444379218352950715588319445202527140800000",
+      "numerator": "197537136226742237093965749932744942460431289650732507213272792717420054965537416756455694288680037760679608042969642335800001539898297513245564142287444578161843319210432336511739"
+    },
+    "ln2_lower": {
+      "denominator": "13624325233720948163518982443619506174725",
+      "numerator": "9443662622785393135066238615529291327296"
+    },
+    "ln2_upper": {
+      "denominator": "42386789616020727619836834269038463654700",
+      "numerator": "29380283715332334197983861603998305670257"
+    },
+    "ln_511_over_256_upper": {
+      "denominator": "653814811584100206666549253254651575256728532801179207678756737361488158442264008266812210851116352436708758230920771956083150904417709642401181951895243264",
+      "numerator": "451911662525039808132729122649475471425254121309361952103250628686563718205291442115966166852939896394959772412593075161311524994113883355242509930954058795"
+    },
+    "noncritical_q4_check": true
+  },
+  "external_bound": "EXT05 is used only on the critical cancellation line q>12; no repository reproof of Lemma B.1 is claimed.",
+  "format": "collatz-phase22-theory-v1",
+  "integrality_legality": "For D>0, D|B makes x=B/D an odd integer; the unique parity cylinder modulo 2^L then forces the literal exponent word. Primitive period is checked separately.",
+  "map": "odd accelerated x_(i+1)=(3*x_i+1)/2^e_i with exact e_i=v2(3*x_i+1)",
+  "noncoprime_boundary": "P140 is only a weaker necessary condition modulo D0; it is not a bijective coprime profile theorem and does not eliminate the noncoprime branch.",
+  "profile_orientation": "Rotate to the unique minimum of H_j=qE_j-Lj; profile indices are residues r=H_j mod q, not time indices j.",
+  "proves_collatz": false,
+  "resultant_convention": "Res(X^q-2,A_a); X^q-2 is Eisenstein at 2, so the resultant is nonzero because deg(A_a)<q.",
+  "slope_root": "For uq+vL=1, gamma=2^u3^v mod D satisfies gamma^q=2 and gamma^L=3; negative powers mean modular inverses.",
+  "what_this_result_does_not_prove": "It does not exclude all positive nontrivial cycles, H89, H112, H72, or prove Collatz."
+}

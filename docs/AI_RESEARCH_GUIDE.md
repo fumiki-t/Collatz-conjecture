@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 21's repetition-complexity audit is the
+proof of the conjecture. Phase 22's cycle-resultant audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–21 evidence boundaries, and current obligations.
+   branch map, Phase 1–22 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md), then its inputs:
+   [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md),
    [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md),
    [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md),
    [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md),
@@ -152,12 +153,12 @@ external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
 P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
-and P129--P132 are
+P129--P138, and P140 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
 P110, P119, P121, P123, P124, and P128 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
 left-congruence failure, and NG25--NG31 delimit the finite ancestral/affine
-search language. H54, H70, H72, H89, H104, H105, H112, C04, C05, every uneliminated P69 branch,
+search language. H54, H70, H72, H89, H104, H105, H112, H133, C04, C05, every uneliminated P69 branch,
 and the Collatz conjecture remain open.
 
 ## Active proof obligations
@@ -171,6 +172,7 @@ and the Collatz conjecture remain open.
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
+| H133 | `OPEN` | Exclude arbitrary-area coprime and general noncoprime positive cycle profiles | Seek an all-area P137 energy/source inequality or strengthen P140's modulus; test both negative cycles and every E34 area-two row first |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -194,7 +196,7 @@ rule before scaling it.
 Every new experiment should state, before a large run:
 
 1. claim ID and exact quantifiers;
-2. why success would advance H54, H70, H72, C04, or C05;
+2. why success would advance H54, H70, H72, H133, C04, or C05;
 3. smallest adversarial falsification range;
 4. exact acceptance arithmetic;
 5. logically independent reconstruction method;
@@ -203,7 +205,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 21 provides the
+artifacts and preserve the recorded manifest hash. Phase 22 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
