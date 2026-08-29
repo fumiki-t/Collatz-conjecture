@@ -73,6 +73,10 @@ substring sets and the closed odd-position affine sum.
 Recorded acceptance results and commit/hash provenance are stored in
 `research/experiments/phase20-parity-complexity.json`.
 
+The evidence snapshot was fixed at commit
+`2ab5a92c4128026198389d0b8e96c5d8f2007561`; the subsequent acceptance-only
+commit changes no generated evidence.
+
 Observed verification results before acceptance:
 
 - focused Phase 20/control-plane tests: `15 passed in 12.20s`;

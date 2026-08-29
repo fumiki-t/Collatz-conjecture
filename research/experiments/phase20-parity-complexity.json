@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase20-parity-complexity",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["EXT08", "EXT09", "EXT10", "EXT11", "EXT12", "EXT13", "P117", "P118", "P119", "P120", "P121", "P122", "P123", "P124", "E32", "H112", "H72"],
   "objective": "Audit parity-density rigidity and derive exact bounded-discrepancy, low-balance, morphic, automatic, quasi-Sturmian, and factor-complexity barriers for a hypothetical positive permanent-safe nonperiodic source.",
   "exact_scope": {
@@ -63,5 +63,15 @@
     "Unbounded p(n)-n does not imply superlinear complexity, positive entropy, or randomness.",
     "H112, H72, the nontrivial-cycle branch, and Collatz remain open; proves_collatz remains false."
   ],
+  "recorded_result": {
+    "commit": "2ab5a92c4128026198389d0b8e96c5d8f2007561",
+    "generator": "valid=true",
+    "verifier": "valid=true",
+    "focused_tests": "15 passed in 12.20s across exact Phase 20 properties, verifier/tamper, and research-health suites",
+    "full_tests": "299 passed in 676.45s",
+    "strict_research_health": "valid=true with zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "1bc6f3bdae759ca5403d57787877555baf0317b9cb93b12987c86ef78ca97530",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
