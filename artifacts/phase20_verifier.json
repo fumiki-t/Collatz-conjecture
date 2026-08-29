@@ -1,0 +1,24 @@
+{
+  "adversarial": {
+    "ArBs_rows": 64,
+    "source_rows": 38
+  },
+  "claims": {
+    "E32": "VERIFIED_FINITE",
+    "H112": "OPEN",
+    "H72": "OPEN",
+    "P117": "VERIFIED_THEOREM",
+    "P118": "VERIFIED_THEOREM",
+    "P120": "VERIFIED_THEOREM",
+    "P122": "VERIFIED_THEOREM"
+  },
+  "complexity": {
+    "factor_rows": 832,
+    "sequences": 13
+  },
+  "external_sources_audited": 7,
+  "format": "collatz-phase20-verifier-v1",
+  "independence": "direct substring sets and closed affine sums; no generator import",
+  "proves_collatz": false,
+  "valid": true
+}

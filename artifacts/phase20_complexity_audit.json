@@ -1,0 +1,7645 @@
+{
+  "claim": {
+    "E32": "VERIFIED_FINITE"
+  },
+  "finite_boundary": "Every statistic concerns only the stored finite prefix. No row certifies morphicity, automaticity, quasi-Sturmian structure, balance, or an asymptotic complexity law.",
+  "format": "collatz-phase20-complexity-audit-v1",
+  "maximum_factor_length": 64,
+  "prefix_length": 512,
+  "proves_collatz": false,
+  "sequence_count": 13,
+  "sequence_digest_sha256": "970eea7ec01a5156523d6533827c2ca34c8403bf7031d152ce880a2a4374cbc8",
+  "sequences": [
+    {
+      "coefficient_safety": {
+        "finite_prefix_only": true,
+        "first_failure_step": null,
+        "strict_safe_steps": 512
+      },
+      "empirical_frequency": {
+        "denominator": "128",
+        "numerator": "81"
+      },
+      "factor_metric_digest_sha256": "5e59f84614aa6495ca98be50612c6fc6254ec07e519da0b4ff67c7ecdc4c37d5",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 3,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 4,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 5,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 6,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 7,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 8,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 9,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 10,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 11,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 12,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 13,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 14,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 15,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 16,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 17,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 18,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 19,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 20,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 21,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 22,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 23,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 24,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 25,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 26,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 27,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 28,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 29,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 30,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 31,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 32,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 33,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 34,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 35,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 36,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 37,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 38,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 39,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 40,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 41,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 42,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 43,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 44,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 45,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 46,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 47,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 48,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 49,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 50,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 51,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 52,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 53,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 54,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 55,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 56,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 57,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 58,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 59,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 60,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 61,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 62,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 63,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 64,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 65,
+          "n": 64
+        }
+      ],
+      "kind": "formal critical upper mechanical word",
+      "length": 512,
+      "name": "all_contact",
+      "ones": 324,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 3,
+          "source_residue": "11"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 6,
+          "source_residue": "251"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "11"
+          },
+          "length": 16,
+          "lift": 0,
+          "ones": 11,
+          "source_residue": "23547"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "32",
+            "numerator": "21"
+          },
+          "length": 32,
+          "lift": 1,
+          "ones": 21,
+          "source_residue": "3384695803"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "41"
+          },
+          "length": 64,
+          "lift": 1,
+          "ones": 41,
+          "source_residue": "12466316350106524667"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "81"
+          },
+          "length": 128,
+          "lift": 1,
+          "ones": 81,
+          "source_residue": "333565612708162025681028240665193896955"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "81"
+          },
+          "length": 256,
+          "lift": 1,
+          "ones": 162,
+          "source_residue": "80715787153673778431863533433538146106693524772539841649803336900743526243323"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "81"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 324,
+          "source_residue": "1436498611421592145844998722413148856909084789051165006396760905265899944064020400642906601872954910734645852892805395060473384295275460786017515610201083"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "1436498611421592145844998722413148856909084789051165006396760905265899944064020400642906601872954910734645852892805395060473384295275460786017515610201083",
+        "latest_nonzero_step": 509,
+        "lift_digest_sha256": "b6e405648d2c67116f2d60c036c376a9fc404552318bb927a70cb0a7f0b5fa14",
+        "nonzero": 275,
+        "trailing_zero": 3
+      },
+      "word": "11011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011",
+      "word_sha256": "530bcbe256e5505a485a98bf4c09e3d67a7be6a52b4f5f69f828fdd4e9c9be4b"
+    },
+    {
+      "coefficient_safety": {
+        "finite_prefix_only": true,
+        "first_failure_step": null,
+        "strict_safe_steps": 512
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "335"
+      },
+      "factor_metric_digest_sha256": "d2a5583ac67b9e27c099acd37168fad6aae8cd12e030a2689764e9729b93f3f4",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 3,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 5,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 4,
+          "factor_complexity": 8,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 7,
+          "factor_complexity": 12,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 12,
+          "factor_complexity": 18,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 16,
+          "factor_complexity": 23,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 20,
+          "factor_complexity": 28,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 27,
+          "factor_complexity": 36,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 33,
+          "factor_complexity": 43,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 39,
+          "factor_complexity": 50,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 46,
+          "factor_complexity": 58,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 53,
+          "factor_complexity": 66,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 62,
+          "factor_complexity": 76,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 71,
+          "factor_complexity": 86,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 80,
+          "factor_complexity": 96,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 92,
+          "factor_complexity": 109,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 103,
+          "factor_complexity": 121,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 114,
+          "factor_complexity": 133,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 127,
+          "factor_complexity": 147,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 139,
+          "factor_complexity": 160,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 151,
+          "factor_complexity": 173,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 164,
+          "factor_complexity": 187,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 177,
+          "factor_complexity": 201,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 191,
+          "factor_complexity": 216,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 203,
+          "factor_complexity": 229,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 213,
+          "factor_complexity": 240,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 224,
+          "factor_complexity": 252,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 235,
+          "factor_complexity": 264,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 246,
+          "factor_complexity": 276,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 258,
+          "factor_complexity": 289,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 269,
+          "factor_complexity": 301,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 280,
+          "factor_complexity": 313,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 290,
+          "factor_complexity": 324,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 300,
+          "factor_complexity": 335,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 310,
+          "factor_complexity": 346,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 319,
+          "factor_complexity": 356,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 327,
+          "factor_complexity": 365,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 335,
+          "factor_complexity": 374,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 341,
+          "factor_complexity": 381,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 346,
+          "factor_complexity": 387,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 350,
+          "factor_complexity": 392,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 354,
+          "factor_complexity": 397,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 357,
+          "factor_complexity": 401,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 360,
+          "factor_complexity": 405,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 363,
+          "factor_complexity": 409,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 365,
+          "factor_complexity": 412,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 367,
+          "factor_complexity": 415,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 368,
+          "factor_complexity": 417,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 369,
+          "factor_complexity": 419,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 370,
+          "factor_complexity": 421,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 371,
+          "factor_complexity": 423,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 372,
+          "factor_complexity": 425,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 373,
+          "factor_complexity": 427,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 374,
+          "factor_complexity": 429,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 375,
+          "factor_complexity": 431,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 375,
+          "factor_complexity": 432,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 375,
+          "factor_complexity": 433,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 375,
+          "factor_complexity": 434,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 375,
+          "factor_complexity": 435,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 375,
+          "factor_complexity": 436,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 375,
+          "factor_complexity": 437,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 375,
+          "factor_complexity": 438,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 374,
+          "factor_complexity": 438,
+          "n": 64
+        }
+      ],
+      "kind": "formal Phase 13 square-root defect controller",
+      "length": 512,
+      "name": "ng22_square_root",
+      "ones": 335,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 4,
+          "source_residue": "15"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 7,
+          "source_residue": "191"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 16,
+          "lift": 1,
+          "ones": 12,
+          "source_residue": "41663"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "32",
+            "numerator": "23"
+          },
+          "length": 32,
+          "lift": 1,
+          "ones": 23,
+          "source_residue": "2419499711"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "45"
+          },
+          "length": 64,
+          "lift": 1,
+          "ones": 45,
+          "source_residue": "15274235945721176767"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "87"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 87,
+          "source_residue": "122808888441557417598179847121065648831"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "85"
+          },
+          "length": 256,
+          "lift": 1,
+          "ones": 170,
+          "source_residue": "115762961382327578375371493638433847098682668341307684377042358447493424259775"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "335"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 335,
+          "source_residue": "6014880562423039050388715842330281264984181680720029596615750067660321303953293236854996251022998761166655524679594359547856567842847931749428327448224447"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "6014880562423039050388715842330281264984181680720029596615750067660321303953293236854996251022998761166655524679594359547856567842847931749428327448224447",
+        "latest_nonzero_step": 511,
+        "lift_digest_sha256": "4e7a3b0e426215f6170f5dffa357c433ca96ff32e7bf40770e2f091120e93066",
+        "nonzero": 285,
+        "trailing_zero": 1
+      },
+      "word": "11111101011110101101111010110110101111011010110110111011011010110110101111010110110110101101110110110110101101101011011110101101101011011011010110111011011010110110110101101101011011110101101101011011011010110110101111011010110110101101101011011011010110111011011011010110110101101101101011011010111101101011011010110110101101101101011011010111101101011011010110110110101101101011011011010111101011011010110110110101101101011011011010110110111011011010110110101101101101011011010110110101101101110110110101101101",
+      "word_sha256": "04a0f6e3576afe1efbda0c7902a824352f3493f88aed22c8887f56f1dcfcc783"
+    },
+    {
+      "coefficient_safety": {
+        "finite_prefix_only": true,
+        "first_failure_step": null,
+        "strict_safe_steps": 512
+      },
+      "empirical_frequency": {
+        "denominator": "256",
+        "numerator": "221"
+      },
+      "factor_metric_digest_sha256": "320f0395ca6e6d53d8782b867eff6b139a054f4641715d11ad1a3a973c7311d3",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 3,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 4,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 5,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 6,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 8,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 4,
+          "factor_complexity": 11,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 7,
+          "factor_complexity": 15,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 11,
+          "factor_complexity": 20,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 16,
+          "factor_complexity": 26,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 22,
+          "factor_complexity": 33,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 30,
+          "factor_complexity": 42,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 41,
+          "factor_complexity": 54,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 56,
+          "factor_complexity": 70,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 76,
+          "factor_complexity": 91,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 99,
+          "factor_complexity": 115,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 124,
+          "factor_complexity": 141,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 151,
+          "factor_complexity": 169,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 180,
+          "factor_complexity": 199,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 212,
+          "factor_complexity": 232,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 245,
+          "factor_complexity": 266,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 276,
+          "factor_complexity": 298,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 304,
+          "factor_complexity": 327,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 330,
+          "factor_complexity": 354,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 353,
+          "factor_complexity": 378,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 373,
+          "factor_complexity": 399,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 388,
+          "factor_complexity": 415,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 401,
+          "factor_complexity": 429,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 410,
+          "factor_complexity": 439,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 418,
+          "factor_complexity": 448,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 423,
+          "factor_complexity": 454,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 428,
+          "factor_complexity": 460,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 432,
+          "factor_complexity": 465,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 434,
+          "factor_complexity": 468,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 436,
+          "factor_complexity": 471,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 437,
+          "factor_complexity": 473,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 437,
+          "factor_complexity": 474,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 437,
+          "factor_complexity": 475,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 435,
+          "factor_complexity": 474,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 433,
+          "factor_complexity": 473,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 431,
+          "factor_complexity": 472,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 429,
+          "factor_complexity": 471,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 427,
+          "factor_complexity": 470,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 425,
+          "factor_complexity": 469,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 423,
+          "factor_complexity": 468,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 421,
+          "factor_complexity": 467,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 419,
+          "factor_complexity": 466,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 417,
+          "factor_complexity": 465,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 415,
+          "factor_complexity": 464,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 413,
+          "factor_complexity": 463,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 411,
+          "factor_complexity": 462,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 409,
+          "factor_complexity": 461,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 407,
+          "factor_complexity": 460,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 405,
+          "factor_complexity": 459,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 403,
+          "factor_complexity": 458,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 401,
+          "factor_complexity": 457,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 399,
+          "factor_complexity": 456,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 397,
+          "factor_complexity": 455,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 395,
+          "factor_complexity": 454,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 393,
+          "factor_complexity": 453,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 391,
+          "factor_complexity": 452,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 389,
+          "factor_complexity": 451,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 387,
+          "factor_complexity": 450,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 385,
+          "factor_complexity": 449,
+          "n": 64
+        }
+      ],
+      "kind": "formal interval controller",
+      "length": 512,
+      "name": "ng22_interval",
+      "ones": 442,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 3,
+          "source_residue": "11"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 8,
+          "lift": 0,
+          "ones": 7,
+          "source_residue": "27"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 16,
+          "lift": 1,
+          "ones": 14,
+          "source_residue": "39707"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 32,
+          "lift": 1,
+          "ones": 28,
+          "source_residue": "3816725275"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "55"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 55,
+          "source_residue": "87181861331049243"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "111"
+          },
+          "length": 128,
+          "lift": 1,
+          "ones": 111,
+          "source_residue": "171162270537208147743405154084440677147"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "221"
+          },
+          "length": 256,
+          "lift": 1,
+          "ones": 221,
+          "source_residue": "66566212489019020075224816838703598891582826990866450240696096437871801441051"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "221"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 442,
+          "source_residue": "6213585296125507624025825428613734364186983555000292905283876513943577764941936610567422462265621144726254404016944368101170738486734203943112085413468955"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "6213585296125507624025825428613734364186983555000292905283876513943577764941936610567422462265621144726254404016944368101170738486734203943112085413468955",
+        "latest_nonzero_step": 511,
+        "lift_digest_sha256": "9dc39a7583fb06b8d3017b3eed03b6f0dc84721aa0f9507900135bf1103cd207",
+        "nonzero": 251,
+        "trailing_zero": 1
+      },
+      "word": "11011111110111111111011111011111110111110111110111111111011111101111110111111111101111110111111101111011111110111110111101111111101111011111101111111110111111011111110111111011110111111110111110111101111111111011111011111111111110111101111110111111101111101111110111110111111110111111111101111101111101111011111110111111111111011110111111110111110111110111111011111111011111011111011111111101111101111101111011111111111101111011111111011111101111111011111011111111011110111111101111011111111011110111111011111011",
+      "word_sha256": "cbcab0c21af445eb15feed191690fddae5f360bf230d7e97d89f3f1cea7a4853"
+    },
+    {
+      "coefficient_safety": {
+        "finite_prefix_only": true,
+        "first_failure_step": null,
+        "strict_safe_steps": 512
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "325"
+      },
+      "factor_metric_digest_sha256": "1d43380939ee4cdc260288f9da6c8ec41283c94a82fe3ace8cfd22fcdc64e7c4",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 3,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 5,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 3,
+          "factor_complexity": 7,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 4,
+          "factor_complexity": 9,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 11,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 12,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 13,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 14,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 15,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 16,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 17,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 18,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 19,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 20,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 21,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 22,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 23,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 24,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 25,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 26,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 27,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 28,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 29,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 30,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 31,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 32,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 33,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 34,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 35,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 36,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 37,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 38,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 39,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 40,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 41,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 42,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 43,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 44,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 45,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 46,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 47,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 48,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 49,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 50,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 51,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 52,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 53,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 54,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 55,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 56,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 57,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 58,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 59,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 60,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 61,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 62,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 63,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 64,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 65,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 66,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 67,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 68,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 69,
+          "n": 64
+        }
+      ],
+      "kind": "formal Phase 18 fixed-packet schedule",
+      "length": 512,
+      "name": "p109_balanced",
+      "ones": 325,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 4,
+          "source_residue": "15"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 7,
+          "source_residue": "191"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 16,
+          "lift": 0,
+          "ones": 12,
+          "source_residue": "27327"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "11"
+          },
+          "length": 32,
+          "lift": 1,
+          "ones": 22,
+          "source_residue": "3961350847"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "32",
+            "numerator": "21"
+          },
+          "length": 64,
+          "lift": 1,
+          "ones": 42,
+          "source_residue": "11201263218596866751"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "83"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 83,
+          "source_residue": "122250809276036565519469592496469535423"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "163"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 163,
+          "source_residue": "6598393112436915515077928326501386840178753361979585617699636100801008331455"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "325"
+          },
+          "length": 512,
+          "lift": 1,
+          "ones": 325,
+          "source_residue": "12690997378543342282365754154261750627773107661881720963209132541838344371700934109688376467918044966731900641431759506649126546931720340023779772124195519"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "12690997378543342282365754154261750627773107661881720963209132541838344371700934109688376467918044966731900641431759506649126546931720340023779772124195519",
+        "latest_nonzero_step": 512,
+        "lift_digest_sha256": "55c0009efdf6ca123fe99d13cad0450f21eeb34cb876cb60eca29741a5511d5e",
+        "nonzero": 236,
+        "trailing_zero": 0
+      },
+      "word": "11111101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101",
+      "word_sha256": "a3097808501a78acebc9a18ed00526c61751020f7608a626cc2d435ac72385b8"
+    },
+    {
+      "coefficient_safety": {
+        "failure_relation": "below",
+        "first_failure_step": 29,
+        "strict_safe_steps": 28
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "257"
+      },
+      "factor_metric_digest_sha256": "0eee3962b12a860f2585ce90d78eaa485eb4506192e9e17c03010176663b3541",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 4,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 8,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 12,
+          "factor_complexity": 16,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 20,
+          "factor_complexity": 25,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 28,
+          "factor_complexity": 34,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 33,
+          "factor_complexity": 40,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 34,
+          "factor_complexity": 42,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 34,
+          "factor_complexity": 43,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 34,
+          "factor_complexity": 44,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 34,
+          "factor_complexity": 45,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 33,
+          "factor_complexity": 45,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 32,
+          "factor_complexity": 45,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 31,
+          "factor_complexity": 45,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 30,
+          "factor_complexity": 45,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 29,
+          "factor_complexity": 45,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 28,
+          "factor_complexity": 45,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 27,
+          "factor_complexity": 45,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 26,
+          "factor_complexity": 45,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 25,
+          "factor_complexity": 45,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 24,
+          "factor_complexity": 45,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 23,
+          "factor_complexity": 45,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 22,
+          "factor_complexity": 45,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 21,
+          "factor_complexity": 45,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 20,
+          "factor_complexity": 45,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 19,
+          "factor_complexity": 45,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 18,
+          "factor_complexity": 45,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 17,
+          "factor_complexity": 45,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 16,
+          "factor_complexity": 45,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 15,
+          "factor_complexity": 45,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 14,
+          "factor_complexity": 45,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 13,
+          "factor_complexity": 45,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 12,
+          "factor_complexity": 45,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 11,
+          "factor_complexity": 45,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 10,
+          "factor_complexity": 45,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 9,
+          "factor_complexity": 45,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 8,
+          "factor_complexity": 45,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 7,
+          "factor_complexity": 45,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 6,
+          "factor_complexity": 45,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 5,
+          "factor_complexity": 45,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 4,
+          "factor_complexity": 45,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 3,
+          "factor_complexity": 45,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 2,
+          "factor_complexity": 45,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 1,
+          "factor_complexity": 45,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 0,
+          "factor_complexity": 45,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -1,
+          "factor_complexity": 45,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -2,
+          "factor_complexity": 45,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -3,
+          "factor_complexity": 45,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -4,
+          "factor_complexity": 45,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -5,
+          "factor_complexity": 45,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -6,
+          "factor_complexity": 45,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -7,
+          "factor_complexity": 45,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -8,
+          "factor_complexity": 45,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -9,
+          "factor_complexity": 45,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -10,
+          "factor_complexity": 45,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -11,
+          "factor_complexity": 45,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -12,
+          "factor_complexity": 45,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -13,
+          "factor_complexity": 45,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -14,
+          "factor_complexity": 45,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -15,
+          "factor_complexity": 45,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -16,
+          "factor_complexity": 45,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -17,
+          "factor_complexity": 45,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": -18,
+          "factor_complexity": 45,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": -19,
+          "factor_complexity": 45,
+          "n": 64
+        }
+      ],
+      "kind": "actual positive shortcut orbit; E31 finite obstruction",
+      "length": 512,
+      "name": "source_167",
+      "ones": 257,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 4,
+          "lift": 0,
+          "ones": 3,
+          "source_residue": "7"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 6,
+          "source_residue": "167"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 16,
+          "lift": 0,
+          "ones": 12,
+          "source_residue": "167"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "32",
+            "numerator": "19"
+          },
+          "length": 32,
+          "lift": 0,
+          "ones": 19,
+          "source_residue": "167"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "33"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 33,
+          "source_residue": "167"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "65"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 65,
+          "source_residue": "167"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "129"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 129,
+          "source_residue": "167"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "257"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 257,
+          "source_residue": "167"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "167",
+        "latest_nonzero_step": 8,
+        "lift_digest_sha256": "e19a394770341708dbf8481c0dee5f64bda0af2d9c7684ed8df21d8b14109a0d",
+        "nonzero": 5,
+        "trailing_zero": 504
+      },
+      "word": "11101101111110011110001010100010011100001000101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010",
+      "word_sha256": "cc65d7484e2db80fef7401878b3b1ba324a7ef7e2369da13f46ec900408869ac"
+    },
+    {
+      "coefficient_safety": {
+        "failure_relation": "below",
+        "first_failure_step": 224,
+        "strict_safe_steps": 223
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "287"
+      },
+      "factor_metric_digest_sha256": "360a7706cf4ba8d1e58727a57bc0da5d58deab96849d37dd5191728c9140bf85",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 4,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 8,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 12,
+          "factor_complexity": 16,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 27,
+          "factor_complexity": 32,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 58,
+          "factor_complexity": 64,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 108,
+          "factor_complexity": 115,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 163,
+          "factor_complexity": 171,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 217,
+          "factor_complexity": 226,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 261,
+          "factor_complexity": 271,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 286,
+          "factor_complexity": 297,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 302,
+          "factor_complexity": 314,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 309,
+          "factor_complexity": 322,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 314,
+          "factor_complexity": 328,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 316,
+          "factor_complexity": 331,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 316,
+          "factor_complexity": 332,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 315,
+          "factor_complexity": 332,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 314,
+          "factor_complexity": 332,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 313,
+          "factor_complexity": 332,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 312,
+          "factor_complexity": 332,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 311,
+          "factor_complexity": 332,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 310,
+          "factor_complexity": 332,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 309,
+          "factor_complexity": 332,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 308,
+          "factor_complexity": 332,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 16,
+          "balance": 15,
+          "excess": 307,
+          "factor_complexity": 332,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 306,
+          "factor_complexity": 332,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 305,
+          "factor_complexity": 332,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 304,
+          "factor_complexity": 332,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 303,
+          "factor_complexity": 332,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 302,
+          "factor_complexity": 332,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 301,
+          "factor_complexity": 332,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 300,
+          "factor_complexity": 332,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 299,
+          "factor_complexity": 332,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 298,
+          "factor_complexity": 332,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 297,
+          "factor_complexity": 332,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 296,
+          "factor_complexity": 332,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 295,
+          "factor_complexity": 332,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 294,
+          "factor_complexity": 332,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 293,
+          "factor_complexity": 332,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 292,
+          "factor_complexity": 332,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 291,
+          "factor_complexity": 332,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 290,
+          "factor_complexity": 332,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 289,
+          "factor_complexity": 332,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 288,
+          "factor_complexity": 332,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 287,
+          "factor_complexity": 332,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 286,
+          "factor_complexity": 332,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 285,
+          "factor_complexity": 332,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 284,
+          "factor_complexity": 332,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 283,
+          "factor_complexity": 332,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 282,
+          "factor_complexity": 332,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 281,
+          "factor_complexity": 332,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 23,
+          "balance": 22,
+          "excess": 280,
+          "factor_complexity": 332,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 279,
+          "factor_complexity": 332,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 278,
+          "factor_complexity": 332,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 277,
+          "factor_complexity": 332,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 276,
+          "factor_complexity": 332,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 23,
+          "balance": 22,
+          "excess": 275,
+          "factor_complexity": 332,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 23,
+          "balance": 22,
+          "excess": 274,
+          "factor_complexity": 332,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 273,
+          "factor_complexity": 332,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 272,
+          "factor_complexity": 332,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 271,
+          "factor_complexity": 332,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 270,
+          "factor_complexity": 332,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 22,
+          "balance": 21,
+          "excess": 269,
+          "factor_complexity": 332,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 23,
+          "balance": 22,
+          "excess": 268,
+          "factor_complexity": 332,
+          "n": 64
+        }
+      ],
+      "kind": "actual E25 coefficient-depth record source",
+      "length": 512,
+      "name": "source_1126015",
+      "ones": 287,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 4,
+          "source_residue": "15"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 8,
+          "lift": 0,
+          "ones": 7,
+          "source_residue": "127"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "13"
+          },
+          "length": 16,
+          "lift": 0,
+          "ones": 13,
+          "source_residue": "11903"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "32",
+            "numerator": "25"
+          },
+          "length": 32,
+          "lift": 0,
+          "ones": 25,
+          "source_residue": "1126015"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "45"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 45,
+          "source_residue": "1126015"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "11"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 88,
+          "source_residue": "1126015"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "77"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 154,
+          "source_residue": "1126015"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "287"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 287,
+          "source_residue": "1126015"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "1126015",
+        "latest_nonzero_step": 21,
+        "lift_digest_sha256": "b993aab2dd5fb0ddd9b401bbb39ba0fad9cba034362252824e0c99ab2c02001e",
+        "nonzero": 13,
+        "trailing_zero": 491
+      },
+      "word": "11111110111111000111110101011111101011000011100100110011111111111001101001111111111001110110100101111100110001011111111001111110010011110111100011110101111010101111101110011110101001111100000111001010011111110000100001000000000101100010011001111000001100100010111001111010110111011110100111011011111100111100010101000100111000010001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101",
+      "word_sha256": "159730b9959adc7e0e4dcdef55b8fe3b0640d431b654f696ba53e9a73d19893e"
+    },
+    {
+      "coefficient_safety": {
+        "failure_relation": "below",
+        "first_failure_step": 214,
+        "strict_safe_steps": 213
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "281"
+      },
+      "factor_metric_digest_sha256": "e429e2a7e845bbe0586f23184591dcdfcfbf454027d815cd9a9caa29717c3c27",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 4,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 8,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 12,
+          "factor_complexity": 16,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 27,
+          "factor_complexity": 32,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 55,
+          "factor_complexity": 61,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 104,
+          "factor_complexity": 111,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 154,
+          "factor_complexity": 162,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 196,
+          "factor_complexity": 205,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 228,
+          "factor_complexity": 238,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 251,
+          "factor_complexity": 262,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 263,
+          "factor_complexity": 275,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 269,
+          "factor_complexity": 282,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 272,
+          "factor_complexity": 286,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 272,
+          "factor_complexity": 287,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 272,
+          "factor_complexity": 288,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 272,
+          "factor_complexity": 289,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 272,
+          "factor_complexity": 290,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 272,
+          "factor_complexity": 291,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 271,
+          "factor_complexity": 291,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 270,
+          "factor_complexity": 291,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 269,
+          "factor_complexity": 291,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 268,
+          "factor_complexity": 291,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 267,
+          "factor_complexity": 291,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 266,
+          "factor_complexity": 291,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 265,
+          "factor_complexity": 291,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 264,
+          "factor_complexity": 291,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 263,
+          "factor_complexity": 291,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 262,
+          "factor_complexity": 291,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 261,
+          "factor_complexity": 291,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 260,
+          "factor_complexity": 291,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 259,
+          "factor_complexity": 291,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 16,
+          "balance": 15,
+          "excess": 258,
+          "factor_complexity": 291,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 16,
+          "balance": 15,
+          "excess": 257,
+          "factor_complexity": 291,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 16,
+          "balance": 15,
+          "excess": 256,
+          "factor_complexity": 291,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 16,
+          "balance": 15,
+          "excess": 255,
+          "factor_complexity": 291,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 16,
+          "balance": 15,
+          "excess": 254,
+          "factor_complexity": 291,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 253,
+          "factor_complexity": 291,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 252,
+          "factor_complexity": 291,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 251,
+          "factor_complexity": 291,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 250,
+          "factor_complexity": 291,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 249,
+          "factor_complexity": 291,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 248,
+          "factor_complexity": 291,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 247,
+          "factor_complexity": 291,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 246,
+          "factor_complexity": 291,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 245,
+          "factor_complexity": 291,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 244,
+          "factor_complexity": 291,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 243,
+          "factor_complexity": 291,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 17,
+          "balance": 16,
+          "excess": 242,
+          "factor_complexity": 291,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 241,
+          "factor_complexity": 291,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 18,
+          "balance": 17,
+          "excess": 240,
+          "factor_complexity": 291,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 239,
+          "factor_complexity": 291,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 238,
+          "factor_complexity": 291,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 237,
+          "factor_complexity": 291,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 19,
+          "balance": 18,
+          "excess": 236,
+          "factor_complexity": 291,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 235,
+          "factor_complexity": 291,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 234,
+          "factor_complexity": 291,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 233,
+          "factor_complexity": 291,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 232,
+          "factor_complexity": 291,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 231,
+          "factor_complexity": 291,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 20,
+          "balance": 19,
+          "excess": 230,
+          "factor_complexity": 291,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 229,
+          "factor_complexity": 291,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 228,
+          "factor_complexity": 291,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 21,
+          "balance": 20,
+          "excess": 227,
+          "factor_complexity": 291,
+          "n": 64
+        }
+      ],
+      "kind": "actual E25 ancestral-depth record source",
+      "length": 512,
+      "name": "source_1394431",
+      "ones": 281,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 4,
+          "source_residue": "15"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 8,
+          "source_residue": "255"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "13"
+          },
+          "length": 16,
+          "lift": 0,
+          "ones": 13,
+          "source_residue": "18175"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "32",
+            "numerator": "23"
+          },
+          "length": 32,
+          "lift": 0,
+          "ones": 23,
+          "source_residue": "1394431"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "45"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 45,
+          "source_residue": "1394431"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "85"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 85,
+          "source_residue": "1394431"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "159"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 159,
+          "source_residue": "1394431"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "281"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 281,
+          "source_residue": "1394431"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "1394431",
+        "latest_nonzero_step": 21,
+        "lift_digest_sha256": "7db33d667f74f35fa5158d3be88e60e4436c02e88b90a27d45df60c60b3ce78f",
+        "nonzero": 14,
+        "trailing_zero": 491
+      },
+      "word": "11111111011001111010010101111110110111111100100011110111110101101001101011111100101000011110101110111111100111001101111110001010101001001110100010111100110111110111111010001010110111011111001001000101101111110010001111010010111000111001111100110010101101001000001111000010000010011100001000101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010",
+      "word_sha256": "1ca9fe27524e7fda6048e0c8f51a77ece946fb46ecd2b99c1c1db366078b5828"
+    },
+    {
+      "coefficient_safety": {
+        "failure_relation": "below",
+        "first_failure_step": 54,
+        "strict_safe_steps": 53
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "259"
+      },
+      "factor_metric_digest_sha256": "d6a721a0ddab28a9868f850984d232ee0dc0eab5fe2daa70f65752a7398653dc",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 4,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 8,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 12,
+          "factor_complexity": 16,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 25,
+          "factor_complexity": 30,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 44,
+          "factor_complexity": 50,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 66,
+          "factor_complexity": 73,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 79,
+          "factor_complexity": 87,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 88,
+          "factor_complexity": 97,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 93,
+          "factor_complexity": 103,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 96,
+          "factor_complexity": 107,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 97,
+          "factor_complexity": 109,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 98,
+          "factor_complexity": 111,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 98,
+          "factor_complexity": 112,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 98,
+          "factor_complexity": 113,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 98,
+          "factor_complexity": 114,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 98,
+          "factor_complexity": 115,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 98,
+          "factor_complexity": 116,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 98,
+          "factor_complexity": 117,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 16,
+          "balance": 15,
+          "excess": 98,
+          "factor_complexity": 118,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 97,
+          "factor_complexity": 118,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 96,
+          "factor_complexity": 118,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 95,
+          "factor_complexity": 118,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 94,
+          "factor_complexity": 118,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 93,
+          "factor_complexity": 118,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 92,
+          "factor_complexity": 118,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 91,
+          "factor_complexity": 118,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 90,
+          "factor_complexity": 118,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 89,
+          "factor_complexity": 118,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 88,
+          "factor_complexity": 118,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 87,
+          "factor_complexity": 118,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 86,
+          "factor_complexity": 118,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 85,
+          "factor_complexity": 118,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 84,
+          "factor_complexity": 118,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 83,
+          "factor_complexity": 118,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 82,
+          "factor_complexity": 118,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 81,
+          "factor_complexity": 118,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 80,
+          "factor_complexity": 118,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 79,
+          "factor_complexity": 118,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 78,
+          "factor_complexity": 118,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 77,
+          "factor_complexity": 118,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 76,
+          "factor_complexity": 118,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 75,
+          "factor_complexity": 118,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 74,
+          "factor_complexity": 118,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 73,
+          "factor_complexity": 118,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 72,
+          "factor_complexity": 118,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 71,
+          "factor_complexity": 118,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 70,
+          "factor_complexity": 118,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 69,
+          "factor_complexity": 118,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 68,
+          "factor_complexity": 118,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 67,
+          "factor_complexity": 118,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 66,
+          "factor_complexity": 118,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 65,
+          "factor_complexity": 118,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 64,
+          "factor_complexity": 118,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 63,
+          "factor_complexity": 118,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 62,
+          "factor_complexity": 118,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 61,
+          "factor_complexity": 118,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 60,
+          "factor_complexity": 118,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 59,
+          "factor_complexity": 118,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 58,
+          "factor_complexity": 118,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 57,
+          "factor_complexity": 118,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 56,
+          "factor_complexity": 118,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 55,
+          "factor_complexity": 118,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 54,
+          "factor_complexity": 118,
+          "n": 64
+        }
+      ],
+      "kind": "mandatory source family m=20",
+      "length": 512,
+      "name": "two_power_minus_one",
+      "ones": 259,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 4,
+          "source_residue": "15"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 8,
+          "source_residue": "255"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 16,
+          "lift": 1,
+          "ones": 16,
+          "source_residue": "65535"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 32,
+          "lift": 0,
+          "ones": 24,
+          "source_residue": "1048575"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "5"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 40,
+          "source_residue": "1048575"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "67"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 67,
+          "source_residue": "1048575"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "131"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 131,
+          "source_residue": "1048575"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "259"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 259,
+          "source_residue": "1048575"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "1048575",
+        "latest_nonzero_step": 20,
+        "lift_digest_sha256": "5358879d3258e6091c65fb98e44df2199e1d9490e67e9a4ab0973c8f92feaf0d",
+        "nonzero": 20,
+        "trailing_zero": 492
+      },
+      "word": "11111111111111111111000010110100001100101010010101101010000111111100110001000001000101010011010001101010001110100100010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101",
+      "word_sha256": "c01d0f6cc4243a07103558d951674c2f3a279b6e589a0565684eec1ddaf10976"
+    },
+    {
+      "coefficient_safety": {
+        "failure_relation": "below",
+        "first_failure_step": 26,
+        "strict_safe_steps": 25
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "267"
+      },
+      "factor_metric_digest_sha256": "7da673e227a87a89cbaa037ce2c1270d635743da3af14178bf5f999853bfe590",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 4,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 5,
+          "factor_complexity": 8,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 12,
+          "factor_complexity": 16,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 27,
+          "factor_complexity": 32,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 53,
+          "factor_complexity": 59,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 94,
+          "factor_complexity": 101,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 129,
+          "factor_complexity": 137,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 154,
+          "factor_complexity": 163,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 166,
+          "factor_complexity": 176,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 173,
+          "factor_complexity": 184,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 176,
+          "factor_complexity": 188,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 176,
+          "factor_complexity": 189,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 176,
+          "factor_complexity": 190,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 176,
+          "factor_complexity": 191,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 176,
+          "factor_complexity": 192,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 176,
+          "factor_complexity": 193,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 176,
+          "factor_complexity": 194,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 176,
+          "factor_complexity": 195,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 176,
+          "factor_complexity": 196,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 176,
+          "factor_complexity": 197,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 176,
+          "factor_complexity": 198,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 175,
+          "factor_complexity": 198,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 174,
+          "factor_complexity": 198,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 173,
+          "factor_complexity": 198,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 172,
+          "factor_complexity": 198,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 171,
+          "factor_complexity": 198,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 170,
+          "factor_complexity": 198,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 169,
+          "factor_complexity": 198,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 168,
+          "factor_complexity": 198,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 167,
+          "factor_complexity": 198,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 166,
+          "factor_complexity": 198,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 165,
+          "factor_complexity": 198,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 164,
+          "factor_complexity": 198,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 163,
+          "factor_complexity": 198,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 162,
+          "factor_complexity": 198,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 161,
+          "factor_complexity": 198,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 160,
+          "factor_complexity": 198,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 159,
+          "factor_complexity": 198,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 158,
+          "factor_complexity": 198,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 157,
+          "factor_complexity": 198,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 156,
+          "factor_complexity": 198,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 155,
+          "factor_complexity": 198,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 154,
+          "factor_complexity": 198,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 153,
+          "factor_complexity": 198,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 152,
+          "factor_complexity": 198,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 151,
+          "factor_complexity": 198,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 150,
+          "factor_complexity": 198,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 149,
+          "factor_complexity": 198,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 148,
+          "factor_complexity": 198,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 147,
+          "factor_complexity": 198,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 146,
+          "factor_complexity": 198,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 145,
+          "factor_complexity": 198,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 13,
+          "balance": 12,
+          "excess": 144,
+          "factor_complexity": 198,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 143,
+          "factor_complexity": 198,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 142,
+          "factor_complexity": 198,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 141,
+          "factor_complexity": 198,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 140,
+          "factor_complexity": 198,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 139,
+          "factor_complexity": 198,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 138,
+          "factor_complexity": 198,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 137,
+          "factor_complexity": 198,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 14,
+          "balance": 13,
+          "excess": 136,
+          "factor_complexity": 198,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 135,
+          "factor_complexity": 198,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 15,
+          "balance": 14,
+          "excess": 134,
+          "factor_complexity": 198,
+          "n": 64
+        }
+      ],
+      "kind": "mandatory source family m=8",
+      "length": 512,
+      "name": "eight_power_minus_five",
+      "ones": 267,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 3,
+          "source_residue": "11"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 6,
+          "source_residue": "251"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "11"
+          },
+          "length": 16,
+          "lift": 1,
+          "ones": 11,
+          "source_residue": "65531"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "5"
+          },
+          "length": 32,
+          "lift": 0,
+          "ones": 20,
+          "source_residue": "16777211"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "39"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 39,
+          "source_residue": "16777211"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "35"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 70,
+          "source_residue": "16777211"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "139"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 139,
+          "source_residue": "16777211"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "267"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 267,
+          "source_residue": "16777211"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "16777211",
+        "latest_nonzero_step": 24,
+        "lift_digest_sha256": "43252950eac30067778ef1ebfc8188bdd19413619fb24157414392a96c9c1a11",
+        "nonzero": 23,
+        "trailing_zero": 488
+      },
+      "word": "11011011011011011011011000111100110111110111010001110110110100000101110000111110010000010110001010111010010011011100111001101000001111101011011101111010011101101111110011110001010100010011100001000101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101",
+      "word_sha256": "88983e2f7e963c0eb5641dbfd5cd349ba58e48db2ceb1c96c9ec07dcd03d01b2"
+    },
+    {
+      "coefficient_safety": {
+        "finite_prefix_only": true,
+        "first_failure_step": null,
+        "strict_safe_steps": 512
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "427"
+      },
+      "factor_metric_digest_sha256": "1b50d968d6f32203c9fb9719993c98897f399680494632237beedeacdf3bdbd4",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 3,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 4,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 5,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 6,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": 0,
+          "factor_complexity": 6,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -1,
+          "factor_complexity": 6,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -2,
+          "factor_complexity": 6,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -3,
+          "factor_complexity": 6,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -4,
+          "factor_complexity": 6,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -5,
+          "factor_complexity": 6,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -6,
+          "factor_complexity": 6,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -7,
+          "factor_complexity": 6,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -8,
+          "factor_complexity": 6,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -9,
+          "factor_complexity": 6,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -10,
+          "factor_complexity": 6,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -11,
+          "factor_complexity": 6,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -12,
+          "factor_complexity": 6,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -13,
+          "factor_complexity": 6,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -14,
+          "factor_complexity": 6,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -15,
+          "factor_complexity": 6,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -16,
+          "factor_complexity": 6,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -17,
+          "factor_complexity": 6,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -18,
+          "factor_complexity": 6,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -19,
+          "factor_complexity": 6,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -20,
+          "factor_complexity": 6,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -21,
+          "factor_complexity": 6,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -22,
+          "factor_complexity": 6,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -23,
+          "factor_complexity": 6,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -24,
+          "factor_complexity": 6,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -25,
+          "factor_complexity": 6,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -26,
+          "factor_complexity": 6,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -27,
+          "factor_complexity": 6,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -28,
+          "factor_complexity": 6,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -29,
+          "factor_complexity": 6,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -30,
+          "factor_complexity": 6,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -31,
+          "factor_complexity": 6,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -32,
+          "factor_complexity": 6,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -33,
+          "factor_complexity": 6,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -34,
+          "factor_complexity": 6,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -35,
+          "factor_complexity": 6,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -36,
+          "factor_complexity": 6,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -37,
+          "factor_complexity": 6,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -38,
+          "factor_complexity": 6,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -39,
+          "factor_complexity": 6,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -40,
+          "factor_complexity": 6,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -41,
+          "factor_complexity": 6,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -42,
+          "factor_complexity": 6,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -43,
+          "factor_complexity": 6,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -44,
+          "factor_complexity": 6,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -45,
+          "factor_complexity": 6,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -46,
+          "factor_complexity": 6,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -47,
+          "factor_complexity": 6,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -48,
+          "factor_complexity": 6,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -49,
+          "factor_complexity": 6,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -50,
+          "factor_complexity": 6,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -51,
+          "factor_complexity": 6,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -52,
+          "factor_complexity": 6,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -53,
+          "factor_complexity": 6,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -54,
+          "factor_complexity": 6,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -55,
+          "factor_complexity": 6,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -56,
+          "factor_complexity": 6,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -57,
+          "factor_complexity": 6,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -58,
+          "factor_complexity": 6,
+          "n": 64
+        }
+      ],
+      "kind": "mandatory formal (110|111)^* sample",
+      "length": 512,
+      "name": "alternating_110_111",
+      "ones": 427,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 4,
+          "lift": 1,
+          "ones": 3,
+          "source_residue": "11"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 8,
+          "lift": 0,
+          "ones": 7,
+          "source_residue": "27"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "13"
+          },
+          "length": 16,
+          "lift": 0,
+          "ones": 13,
+          "source_residue": "25627"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "32",
+            "numerator": "27"
+          },
+          "length": 32,
+          "lift": 0,
+          "ones": 27,
+          "source_residue": "1247699995"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "53"
+          },
+          "length": 64,
+          "lift": 1,
+          "ones": 53,
+          "source_residue": "15561219861062247451"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "107"
+          },
+          "length": 128,
+          "lift": 1,
+          "ones": 107,
+          "source_residue": "328876254063253375302591101037407265819"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "213"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 213,
+          "source_residue": "38812990805804311315163458662130024978749715530382311968533268382540713845787"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "427"
+          },
+          "length": 512,
+          "lift": 1,
+          "ones": 427,
+          "source_residue": "6966067807176880057320582820296892122098217996173701587308889465173877401099664071746225194019676082542865714029850294577648665371570005614627538310423579"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "6966067807176880057320582820296892122098217996173701587308889465173877401099664071746225194019676082542865714029850294577648665371570005614627538310423579",
+        "latest_nonzero_step": 512,
+        "lift_digest_sha256": "379a37ec56a97df7f7cba5260abe0f8b7f13f3ada1d34e1b16b4791c40986a2b",
+        "nonzero": 257,
+        "trailing_zero": 0
+      },
+      "word": "11011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111",
+      "word_sha256": "1295bca2f73d48221eeb87b5671b57445f1abb1630839ad92e27ecc728111b21"
+    },
+    {
+      "coefficient_safety": {
+        "finite_prefix_only": true,
+        "first_failure_step": null,
+        "strict_safe_steps": 512
+      },
+      "empirical_frequency": {
+        "denominator": "256",
+        "numerator": "205"
+      },
+      "factor_metric_digest_sha256": "cbc60881951efd5f383b963d8b80d73616169f5b6824b4d67cc169033ef29ebf",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 3,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 4,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 5,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": 0,
+          "factor_complexity": 5,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -1,
+          "factor_complexity": 5,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -2,
+          "factor_complexity": 5,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -3,
+          "factor_complexity": 5,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -4,
+          "factor_complexity": 5,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -5,
+          "factor_complexity": 5,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -6,
+          "factor_complexity": 5,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -7,
+          "factor_complexity": 5,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -8,
+          "factor_complexity": 5,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -9,
+          "factor_complexity": 5,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -10,
+          "factor_complexity": 5,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -11,
+          "factor_complexity": 5,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -12,
+          "factor_complexity": 5,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -13,
+          "factor_complexity": 5,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -14,
+          "factor_complexity": 5,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -15,
+          "factor_complexity": 5,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -16,
+          "factor_complexity": 5,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -17,
+          "factor_complexity": 5,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -18,
+          "factor_complexity": 5,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -19,
+          "factor_complexity": 5,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -20,
+          "factor_complexity": 5,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -21,
+          "factor_complexity": 5,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -22,
+          "factor_complexity": 5,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -23,
+          "factor_complexity": 5,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -24,
+          "factor_complexity": 5,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -25,
+          "factor_complexity": 5,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -26,
+          "factor_complexity": 5,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -27,
+          "factor_complexity": 5,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -28,
+          "factor_complexity": 5,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -29,
+          "factor_complexity": 5,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -30,
+          "factor_complexity": 5,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -31,
+          "factor_complexity": 5,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -32,
+          "factor_complexity": 5,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -33,
+          "factor_complexity": 5,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -34,
+          "factor_complexity": 5,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -35,
+          "factor_complexity": 5,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -36,
+          "factor_complexity": 5,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -37,
+          "factor_complexity": 5,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -38,
+          "factor_complexity": 5,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -39,
+          "factor_complexity": 5,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -40,
+          "factor_complexity": 5,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -41,
+          "factor_complexity": 5,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -42,
+          "factor_complexity": 5,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -43,
+          "factor_complexity": 5,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -44,
+          "factor_complexity": 5,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -45,
+          "factor_complexity": 5,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -46,
+          "factor_complexity": 5,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -47,
+          "factor_complexity": 5,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -48,
+          "factor_complexity": 5,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -49,
+          "factor_complexity": 5,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -50,
+          "factor_complexity": 5,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -51,
+          "factor_complexity": 5,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -52,
+          "factor_complexity": 5,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -53,
+          "factor_complexity": 5,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -54,
+          "factor_complexity": 5,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -55,
+          "factor_complexity": 5,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -56,
+          "factor_complexity": 5,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -57,
+          "factor_complexity": 5,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -58,
+          "factor_complexity": 5,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -59,
+          "factor_complexity": 5,
+          "n": 64
+        }
+      ],
+      "kind": "mandatory formal A=11101 sample",
+      "length": 512,
+      "name": "A_periodic",
+      "ones": 410,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 4,
+          "lift": 0,
+          "ones": 3,
+          "source_residue": "7"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 8,
+          "lift": 0,
+          "ones": 7,
+          "source_residue": "103"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "13"
+          },
+          "length": 16,
+          "lift": 1,
+          "ones": 13,
+          "source_residue": "44135"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "13"
+          },
+          "length": 32,
+          "lift": 1,
+          "ones": 26,
+          "source_residue": "2366614631"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "64",
+            "numerator": "51"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 51,
+          "source_residue": "4517569977234992231"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "128",
+            "numerator": "103"
+          },
+          "length": 128,
+          "lift": 0,
+          "ones": 103,
+          "source_residue": "41667228602563893485311176420216515687"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "205"
+          },
+          "length": 256,
+          "lift": 1,
+          "ones": 205,
+          "source_residue": "61440700411637164918629502249507869473163665332788870714814228249096762666087"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "256",
+            "numerator": "205"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 410,
+          "source_residue": "5472574665282692693703683672737080052032394212486691174581045487233373073499406929306887468639552419465319125790402469736226074617121048957728020002483303"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "5472574665282692693703683672737080052032394212486691174581045487233373073499406929306887468639552419465319125790402469736226074617121048957728020002483303",
+        "latest_nonzero_step": 511,
+        "lift_digest_sha256": "1ce23f98de05d7ea3a00a441387d4d884a5e66222e2ba1630c14e264349f9ee4",
+        "nonzero": 269,
+        "trailing_zero": 1
+      },
+      "word": "11101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111101111011110111",
+      "word_sha256": "7251e65f73e8576aaeed455ffb7b8f4aad5eb06efc5bf7b6efe81a250c03b30a"
+    },
+    {
+      "coefficient_safety": {
+        "failure_relation": "below",
+        "first_failure_step": 4,
+        "strict_safe_steps": 3
+      },
+      "empirical_frequency": {
+        "denominator": "2",
+        "numerator": "1"
+      },
+      "factor_metric_digest_sha256": "47f39b66fba9d1ac4645cd7424ab2468cfc0617c7d65219950671ad660bc4810",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 4,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 4,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": 0,
+          "factor_complexity": 4,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -1,
+          "factor_complexity": 4,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -2,
+          "factor_complexity": 4,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -3,
+          "factor_complexity": 4,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -4,
+          "factor_complexity": 4,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -5,
+          "factor_complexity": 4,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -6,
+          "factor_complexity": 4,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -7,
+          "factor_complexity": 4,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -8,
+          "factor_complexity": 4,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -9,
+          "factor_complexity": 4,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -10,
+          "factor_complexity": 4,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -11,
+          "factor_complexity": 4,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -12,
+          "factor_complexity": 4,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -13,
+          "factor_complexity": 4,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -14,
+          "factor_complexity": 4,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -15,
+          "factor_complexity": 4,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -16,
+          "factor_complexity": 4,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -17,
+          "factor_complexity": 4,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -18,
+          "factor_complexity": 4,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -19,
+          "factor_complexity": 4,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -20,
+          "factor_complexity": 4,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -21,
+          "factor_complexity": 4,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -22,
+          "factor_complexity": 4,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -23,
+          "factor_complexity": 4,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -24,
+          "factor_complexity": 4,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -25,
+          "factor_complexity": 4,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -26,
+          "factor_complexity": 4,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -27,
+          "factor_complexity": 4,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -28,
+          "factor_complexity": 4,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -29,
+          "factor_complexity": 4,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -30,
+          "factor_complexity": 4,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -31,
+          "factor_complexity": 4,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -32,
+          "factor_complexity": 4,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -33,
+          "factor_complexity": 4,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -34,
+          "factor_complexity": 4,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -35,
+          "factor_complexity": 4,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -36,
+          "factor_complexity": 4,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -37,
+          "factor_complexity": 4,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -38,
+          "factor_complexity": 4,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -39,
+          "factor_complexity": 4,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -40,
+          "factor_complexity": 4,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -41,
+          "factor_complexity": 4,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -42,
+          "factor_complexity": 4,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -43,
+          "factor_complexity": 4,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -44,
+          "factor_complexity": 4,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -45,
+          "factor_complexity": 4,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -46,
+          "factor_complexity": 4,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -47,
+          "factor_complexity": 4,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -48,
+          "factor_complexity": 4,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -49,
+          "factor_complexity": 4,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -50,
+          "factor_complexity": 4,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -51,
+          "factor_complexity": 4,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -52,
+          "factor_complexity": 4,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -53,
+          "factor_complexity": 4,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -54,
+          "factor_complexity": 4,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -55,
+          "factor_complexity": 4,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -56,
+          "factor_complexity": 4,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -57,
+          "factor_complexity": 4,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": -58,
+          "factor_complexity": 4,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": -59,
+          "factor_complexity": 4,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 1,
+          "balance": 0,
+          "excess": -60,
+          "factor_complexity": 4,
+          "n": 64
+        }
+      ],
+      "kind": "mandatory formal B=1100 sample",
+      "length": 512,
+      "name": "B_periodic",
+      "ones": 256,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 4,
+          "lift": 0,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 8,
+          "lift": 1,
+          "ones": 4,
+          "source_residue": "147"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 16,
+          "lift": 0,
+          "ones": 8,
+          "source_residue": "9363"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 32,
+          "lift": 1,
+          "ones": 16,
+          "source_residue": "2454267027"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 32,
+          "source_residue": "2635249153387078803"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 128,
+          "lift": 1,
+          "ones": 64,
+          "source_residue": "194447066811964836264785489961010406547"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 256,
+          "lift": 0,
+          "ones": 128,
+          "source_residue": "16541727033902313631938712144098272550467140666520080577065369143987589948563"
+        },
+        {
+          "coefficient_relation": "below",
+          "frequency": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "length": 512,
+          "lift": 1,
+          "ones": 256,
+          "source_residue": "7661604531395769771185157141831912072845351897481367644413463682126722302899169701029642456095373387251446776106563457630716504463969468540819228003476627"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "7661604531395769771185157141831912072845351897481367644413463682126722302899169701029642456095373387251446776106563457630716504463969468540819228003476627",
+        "latest_nonzero_step": 512,
+        "lift_digest_sha256": "b1418cfaebbc5e9cae058326060c42ef06d79ab2c6d35047dbeb9bdaa6bf3001",
+        "nonzero": 172,
+        "trailing_zero": 0
+      },
+      "word": "11001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100",
+      "word_sha256": "bea7d922f7732d7ba8b603fdd0ade26d935ad0ce6b9c75f20efbdc43e5cc0200"
+    },
+    {
+      "coefficient_safety": {
+        "finite_prefix_only": true,
+        "first_failure_step": null,
+        "strict_safe_steps": 512
+      },
+      "empirical_frequency": {
+        "denominator": "512",
+        "numerator": "343"
+      },
+      "factor_metric_digest_sha256": "a10d6d42ae94f77c73572b1770a8273f5457256f332466b1798d278443d048cd",
+      "factor_metrics": [
+        {
+          "abelian_complexity": 2,
+          "balance": 1,
+          "excess": 1,
+          "factor_complexity": 2,
+          "n": 1
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 2,
+          "factor_complexity": 4,
+          "n": 2
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 3,
+          "factor_complexity": 6,
+          "n": 3
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 5,
+          "factor_complexity": 9,
+          "n": 4
+        },
+        {
+          "abelian_complexity": 3,
+          "balance": 2,
+          "excess": 7,
+          "factor_complexity": 12,
+          "n": 5
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 9,
+          "factor_complexity": 15,
+          "n": 6
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 10,
+          "factor_complexity": 17,
+          "n": 7
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 11,
+          "factor_complexity": 19,
+          "n": 8
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 12,
+          "factor_complexity": 21,
+          "n": 9
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 13,
+          "factor_complexity": 23,
+          "n": 10
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 14,
+          "factor_complexity": 25,
+          "n": 11
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 15,
+          "factor_complexity": 27,
+          "n": 12
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 16,
+          "factor_complexity": 29,
+          "n": 13
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 17,
+          "factor_complexity": 31,
+          "n": 14
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 18,
+          "factor_complexity": 33,
+          "n": 15
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 19,
+          "factor_complexity": 35,
+          "n": 16
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 20,
+          "factor_complexity": 37,
+          "n": 17
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 21,
+          "factor_complexity": 39,
+          "n": 18
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 22,
+          "factor_complexity": 41,
+          "n": 19
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 23,
+          "factor_complexity": 43,
+          "n": 20
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 24,
+          "factor_complexity": 45,
+          "n": 21
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 25,
+          "factor_complexity": 47,
+          "n": 22
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 26,
+          "factor_complexity": 49,
+          "n": 23
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 27,
+          "factor_complexity": 51,
+          "n": 24
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 28,
+          "factor_complexity": 53,
+          "n": 25
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 29,
+          "factor_complexity": 55,
+          "n": 26
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 30,
+          "factor_complexity": 57,
+          "n": 27
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 31,
+          "factor_complexity": 59,
+          "n": 28
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 32,
+          "factor_complexity": 61,
+          "n": 29
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 33,
+          "factor_complexity": 63,
+          "n": 30
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 34,
+          "factor_complexity": 65,
+          "n": 31
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 34,
+          "factor_complexity": 66,
+          "n": 32
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 34,
+          "factor_complexity": 67,
+          "n": 33
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 34,
+          "factor_complexity": 68,
+          "n": 34
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 34,
+          "factor_complexity": 69,
+          "n": 35
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 34,
+          "factor_complexity": 70,
+          "n": 36
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 34,
+          "factor_complexity": 71,
+          "n": 37
+        },
+        {
+          "abelian_complexity": 12,
+          "balance": 11,
+          "excess": 34,
+          "factor_complexity": 72,
+          "n": 38
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 33,
+          "factor_complexity": 72,
+          "n": 39
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 32,
+          "factor_complexity": 72,
+          "n": 40
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 31,
+          "factor_complexity": 72,
+          "n": 41
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 30,
+          "factor_complexity": 72,
+          "n": 42
+        },
+        {
+          "abelian_complexity": 11,
+          "balance": 10,
+          "excess": 29,
+          "factor_complexity": 72,
+          "n": 43
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 28,
+          "factor_complexity": 72,
+          "n": 44
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 27,
+          "factor_complexity": 72,
+          "n": 45
+        },
+        {
+          "abelian_complexity": 10,
+          "balance": 9,
+          "excess": 26,
+          "factor_complexity": 72,
+          "n": 46
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 25,
+          "factor_complexity": 72,
+          "n": 47
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 24,
+          "factor_complexity": 72,
+          "n": 48
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 23,
+          "factor_complexity": 72,
+          "n": 49
+        },
+        {
+          "abelian_complexity": 9,
+          "balance": 8,
+          "excess": 22,
+          "factor_complexity": 72,
+          "n": 50
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 21,
+          "factor_complexity": 72,
+          "n": 51
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 20,
+          "factor_complexity": 72,
+          "n": 52
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 19,
+          "factor_complexity": 72,
+          "n": 53
+        },
+        {
+          "abelian_complexity": 8,
+          "balance": 7,
+          "excess": 18,
+          "factor_complexity": 72,
+          "n": 54
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 17,
+          "factor_complexity": 72,
+          "n": 55
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 16,
+          "factor_complexity": 72,
+          "n": 56
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 15,
+          "factor_complexity": 72,
+          "n": 57
+        },
+        {
+          "abelian_complexity": 7,
+          "balance": 6,
+          "excess": 14,
+          "factor_complexity": 72,
+          "n": 58
+        },
+        {
+          "abelian_complexity": 6,
+          "balance": 5,
+          "excess": 13,
+          "factor_complexity": 72,
+          "n": 59
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 12,
+          "factor_complexity": 72,
+          "n": 60
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 11,
+          "factor_complexity": 72,
+          "n": 61
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 10,
+          "factor_complexity": 72,
+          "n": 62
+        },
+        {
+          "abelian_complexity": 5,
+          "balance": 4,
+          "excess": 9,
+          "factor_complexity": 72,
+          "n": 63
+        },
+        {
+          "abelian_complexity": 4,
+          "balance": 3,
+          "excess": 8,
+          "factor_complexity": 72,
+          "n": 64
+        }
+      ],
+      "kind": "mandatory formal A^rB^s sample",
+      "length": 512,
+      "name": "A8B8_periodic",
+      "ones": 343,
+      "prefix_checkpoints": [
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 1,
+          "lift": 1,
+          "ones": 1,
+          "source_residue": "1"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "length": 2,
+          "lift": 1,
+          "ones": 2,
+          "source_residue": "3"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "4",
+            "numerator": "3"
+          },
+          "length": 4,
+          "lift": 0,
+          "ones": 3,
+          "source_residue": "7"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "8",
+            "numerator": "7"
+          },
+          "length": 8,
+          "lift": 0,
+          "ones": 7,
+          "source_residue": "103"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "13"
+          },
+          "length": 16,
+          "lift": 1,
+          "ones": 13,
+          "source_residue": "44135"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "13"
+          },
+          "length": 32,
+          "lift": 1,
+          "ones": 26,
+          "source_residue": "2366614631"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "11"
+          },
+          "length": 64,
+          "lift": 0,
+          "ones": 44,
+          "source_residue": "6659642928514706535"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "11"
+          },
+          "length": 128,
+          "lift": 1,
+          "ones": 88,
+          "source_residue": "220627586947989170786873166361932049511"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "16",
+            "numerator": "11"
+          },
+          "length": 256,
+          "lift": 1,
+          "ones": 176,
+          "source_residue": "114420812786701056259598212933550712054350935628776440387486630669627291577447"
+        },
+        {
+          "coefficient_relation": "above",
+          "frequency": {
+            "denominator": "512",
+            "numerator": "343"
+          },
+          "length": 512,
+          "lift": 0,
+          "ones": 343,
+          "source_residue": "5025677912533387363993258596976085412029396362579225716956235447579731294257393205093589581133069688675803222970394146307921415344730843042158805508926567"
+        }
+      ],
+      "source_lifts": {
+        "final_residue": "5025677912533387363993258596976085412029396362579225716956235447579731294257393205093589581133069688675803222970394146307921415344730843042158805508926567",
+        "latest_nonzero_step": 511,
+        "lift_digest_sha256": "2b5c1228c2e8912ae3e2935d3b9b44f5f536ae97835cb05f2309703c89ce13c1",
+        "nonzero": 263,
+        "trailing_zero": 1
+      },
+      "word": "11101111011110111101111011110111101111011100110011001100110011001100110011101111011110111101111011110111101111011100110011001100110011001100110011101111011110111101111011110111101111011100110011001100110011001100110011101111011110111101111011110111101111011100110011001100110011001100110011101111011110111101111011110111101111011100110011001100110011001100110011101111011110111101111011110111101111011100110011001100110011001100110011101111011110111101111011110111101111011100110011001100110011001100110011101111",
+      "word_sha256": "9e6868900ad9efc31daf200df1c0dab53930c54f3c7bf771673b4e4cc6ced513"
+    }
+  ]
+}

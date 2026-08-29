@@ -212,7 +212,7 @@ full reduction.
 
 ### López and Stoll (2021)
 
-**Status:** `EXTERNAL_THEOREM` from a preprint, not an active proof dependency
+**Status:** `EXTERNAL_THEOREM`; active conditional input EXT08
 
 Josefina López and Peter Stoll, “The 3x+1 Periodicity Conjeture in
 `R`,” arXiv:2101.12747 (2021).
@@ -220,15 +220,104 @@ Josefina López and Peter Stoll, “The 3x+1 Periodicity Conjeture in
 
 The spelling “Conjeture” is the title recorded by arXiv.
 
-**Result relevant here.** The authors state that a rational 2-adic integer
-with a noncyclic trajectory must have lower limiting parity-one density
-`ln(2)/ln(3)`.
+**Result relevant here.** Theorem `aperiodic` states that a rational 2-adic
+integer whose shortcut orbit is an infinite set has lower limiting parity-one
+density `ln(2)/ln(3)`.
 
-**Repository role.** Context for the critical density. Before this result is
-made a proof dependency, a human specialist should audit the precise map,
-notion of rationality, and quantifiers against this repository's positive
-integer setting. Phase 12 treats it only as overlap context and makes no
-literature-wide novelty claim.
+**Phase 20 audit.** The arXiv TeX source and proof were inspected rather than
+only the abstract. The map is exactly `x/2` or `(3x+1)/2`, the counted bit is
+the input parity, `Q_odd` is the rational 2-adic subring, and the conclusion is
+`liminf`, not existence of a natural density. The proof separates the cases
+`liminf` above and below the critical density.
+
+**Repository role.** EXT08 is an explicit external input to P119/P121/P123/
+P124. The repository does not reproduce the paper's real-conjugacy proof.
+Positive integers lie in the rational 2-adics, but this input does not prove
+that their orbits terminate; the cyclic branch remains separate.
+
+## Word frequency and low complexity
+
+### Allouche--Shallit and Saari
+
+**Status:** `EXTERNAL_THEOREM`; EXT10
+
+Jean-Paul Allouche and Jeffrey Shallit, *Automatic Sequences: Theory,
+Applications, Generalizations*, Cambridge University Press, 2003,
+Theorem 8.4.5.
+[Cambridge book record](https://doi.org/10.1017/CBO9780511546563).
+
+Kalle Saari, “On the Frequency of Letters in Pure Binary Morphic Sequences,”
+*Developments in Language Theory 2005*, LNCS 3572, 397--408.
+[DOI 10.1007/11505877_35](https://doi.org/10.1007/11505877_35).
+
+**Result relevant here.** An existing morphic letter frequency is algebraic.
+Saari separately proves that letter frequencies exist for every pure binary
+morphic word, including the nonprimitive case.
+
+**Repository role.** P119 uses algebraicity only after natural-frequency
+existence has been supplied. General morphic words may lack natural frequency;
+their logarithmic frequencies are not substituted.
+
+### Bell (2020)
+
+**Status:** `EXTERNAL_THEOREM`; EXT11
+
+Jason P. Bell, “The upper density of an automatic set is rational,”
+*Journal de théorie des nombres de Bordeaux* **32**(2) (2020), 585--604.
+[DOI 10.5802/jtnb.1135](https://doi.org/10.5802/jtnb.1135).
+
+**Result relevant here.** The lower and upper asymptotic densities of every
+`k`-automatic set are recursively computable rational numbers.
+
+**Repository role.** P119 compares the rational lower density of the set of
+one positions with EXT08/P118. It does not assume that the automatic word has
+a natural density.
+
+### Cassaigne (1997/1998)
+
+**Status:** `EXTERNAL_THEOREM`; EXT12
+
+Julien Cassaigne, “Sequences with grouped factors,” *Developments in Language
+Theory III* (conference 1997; proceedings 1998), 211--222.
+
+**Result relevant here.** A quasi-Sturmian word is a finite prefix followed by
+a morphic image `phi(s)` of a Sturmian word, with
+`phi(ab)!=phi(ba)`. The latter condition forces both source-letter images to
+be nonempty.
+
+**Repository role.** P122 proves the required bounded output discrepancy
+inside the repository. EXT12 is used only to transfer that calculation to all
+quasi-Sturmian words in P123/P124.
+
+### Primitive substitution frequencies
+
+**Status:** `EXTERNAL_THEOREM`; EXT13
+
+Martine Queffélec, *Substitution Dynamical Systems -- Spectral Analysis*,
+second edition, Lecture Notes in Mathematics 1294, Springer, 2010.
+[DOI 10.1007/978-3-642-11212-6](https://doi.org/10.1007/978-3-642-11212-6).
+
+**Result relevant here.** A primitive substitution has letter frequencies
+given by the normalized positive Perron eigenvector of its integral incidence
+matrix. The eigenvalue and coordinates are algebraic.
+
+**Repository role.** EXT13 supplies the primitive-substitutive subcase of
+P119. No corresponding existence claim is made for arbitrary nonprimitive
+substitutions.
+
+### Gelfond--Schneider
+
+**Status:** `EXTERNAL_THEOREM`; EXT09
+
+The classical Gelfond--Schneider theorem states that if algebraic `alpha` is
+neither zero nor one and algebraic `beta` is irrational, every value of
+`alpha^beta` is transcendental. A standard authoritative reference is Serge
+Lang, *Introduction to Transcendental Numbers*, Addison--Wesley, 1966,
+Chapter I.
+
+**Repository role.** P118 supplies the elementary irrationality argument and
+applies the theorem only with `alpha=3`, `beta=ln(2)/ln(3)`, and positive real
+value `2`.
 
 ## Almost-everywhere results
 
@@ -467,8 +556,10 @@ Bibliographic metadata above was checked against primary records. Before any
 item becomes a dependency of a claimed Collatz proof, human mathematical audit
 is still required for:
 
-1. the exact López–Stoll (2021) quantifiers and transfer from rational 2-adics
-   to the positive-integer least-counterexample setting;
+1. an independent specialist review of the López--Stoll (2021) proof itself
+   before EXT08 is ever used inside a claimed full Collatz proof; Phase 20 has
+   already audited the map, rational domain, theorem/proof location, and
+   `liminf` quantifier;
 2. the derivation, exponent rounding, and effective constants in converting
    Wu–Wang to the contextual `H_q = O(q^5.117)` statement;
 3. the complete proof chain from Ellison's Theorem 3 to Rozier--Terracol Lemma

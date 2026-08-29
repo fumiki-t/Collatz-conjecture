@@ -204,6 +204,13 @@ all-prefix same-Q-geodesic safe sublanguage. P116 removes ultimately periodic
 noncycle stabilization. NG31 proves that the endpoint-tilted affine correction
 has infinite mean; fractional moments below one remain available.
 
+Phase 20 adds a symbolic-complexity filter. P117 internally excludes every
+global discrepancy envelope below `(8/9)log j`. Under the audited external
+critical-density theorem EXT08, P119/P121/P123/P124 exclude automatic, pure
+binary morphic, primitive substitutive, bounded-balance, and quasi-Sturmian
+parity tails and force `p(n)-n -> infinity`. This does not imply positive
+entropy or a finite presentation, and it does not force a P115 lift digit.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
@@ -214,6 +221,12 @@ run to eventual stabilization, drops the per-address lattice
 `+1`, treats `(Q,r3)` as a prefix-closed state, assumes one-switch SCC order,
 or promotes finite scarcity to an eventual statement. Any proposed finite
 automaton must prove prefix completeness and track P111 source lifts.
+
+For a complexity-based successor, also test both NG22 controllers, the P109
+schedule, and E32's finite prefixes. Reject any inference from a long
+Sturmian-looking prefix, finite low excess, or finite zero-lift suffix. The
+target must be an exact implication from a right-special/return-word event to
+ordinary height, signed carry, or a nonzero canonical lift.
 
 **Success criterion.** An orbit-specific arithmetic theorem that excludes
 every positive ordinary integer permanent-safe source, with an independently

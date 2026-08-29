@@ -1,0 +1,84 @@
+{
+  "P117": {
+    "bounded_case": "If 0<h(l)-rho_c*l<=K for all l>=1, then beta_q>=q/3^(K+1), contradicting P72 beta_q=O_S(q^(1/9)).",
+    "exact_threshold": "gamma<8/9 iff 1-gamma>1/9",
+    "external_dependency": "none",
+    "hypotheses": "positive nonperiodic permanent coefficient-safe shortcut orbit covered by P72",
+    "quantitative_case": "If D_j=ln(3^j/2^E_j)<=gamma*ln(j+2)+K globally for gamma<8/9, then beta_q grows at least as q^(1-gamma), contradicting P72."
+  },
+  "P118": {
+    "dependency": "EXT09",
+    "proof": "rho_c is irrational by unique factorization; if it were algebraic irrational, EXT09 would make 3^rho_c transcendental, contrary to 3^rho_c=2 on the positive real branch.",
+    "statement": "rho_c is transcendental"
+  },
+  "P119": {
+    "automatic_repair": "EXT11 supplies rational lower density, so no natural-density existence assumption is needed for k-automatic words.",
+    "boundary": "General morphic words can lack natural frequency; logarithmic frequency is not substituted.",
+    "dependency": "EXT08, P118, and the class-specific EXT10/EXT11/EXT13 input",
+    "statement": "A rational 2-adic noncyclic shortcut orbit cannot have an algebraic natural parity-one frequency; consequently it cannot have a frequency-bearing morphic, pure binary morphic, primitive substitutive, or k-automatic parity word under the recorded external theorems."
+  },
+  "P120": {
+    "external_dependency": "none beyond the elementary subadditive/superadditive lemma proved in the report",
+    "proof": "The maximum factor count A_n is subadditive and the minimum B_n is superadditive. Their Fekete limits agree because 0<=A_n-B_n<=K; B_n<=rho*n<=A_n gives the bound.",
+    "statement": "For a K-balanced binary word the natural one-frequency rho exists and every length-n factor u satisfies ||u|_1-rho*n|<=K."
+  },
+  "P121": {
+    "dependencies": [
+      "P117",
+      "P120",
+      "EXT08"
+    ],
+    "statement": "Under EXT08, every positive ordinary permanent-safe nonperiodic candidate has unbounded balance and unbounded binary abelian factor complexity."
+  },
+  "P122": {
+    "erasing_audit": "The Cassaigne condition phi(ab)!=phi(ba) forces both binary letter images to be nonempty.",
+    "external_dependency": "the defining Sturmian balance property only; the algebraic derivation is internal",
+    "proof": "Sturmian letter counts differ from slope times block count by at most one; complete image blocks are affine functions of that count, and one partial image block contributes a fixed error.",
+    "statement": "A non-erasing morphic image of a Sturmian word has a natural output frequency and uniformly bounded prefix discrepancy about it."
+  },
+  "P123": {
+    "dependencies": [
+      "P117",
+      "P122",
+      "EXT08",
+      "EXT12"
+    ],
+    "statement": "Under EXT08 and EXT12, no positive ordinary permanent-safe nonperiodic candidate is quasi-Sturmian."
+  },
+  "P124": {
+    "boundary": "This does not imply superlinear complexity, positive entropy, or randomness.",
+    "dependencies": [
+      "P116",
+      "P123",
+      "EXT08",
+      "EXT12"
+    ],
+    "proof": "Non-eventual-periodicity gives p(n+1)>p(n), hence p(n)-n is nondecreasing; bounded excess would be eventually constant and therefore quasi-Sturmian, contrary to P123.",
+    "statement": "Under EXT08 and P116, every such candidate satisfies p_v(n)-n -> infinity."
+  },
+  "claims": {
+    "E32": "VERIFIED_FINITE",
+    "EXT08": "EXTERNAL_THEOREM",
+    "EXT09": "EXTERNAL_THEOREM",
+    "EXT10": "EXTERNAL_THEOREM",
+    "EXT11": "EXTERNAL_THEOREM",
+    "EXT12": "EXTERNAL_THEOREM",
+    "EXT13": "EXTERNAL_THEOREM",
+    "H112": "OPEN",
+    "H72": "OPEN",
+    "P117": "VERIFIED_THEOREM",
+    "P118": "VERIFIED_THEOREM",
+    "P119": "CONDITIONAL",
+    "P120": "VERIFIED_THEOREM",
+    "P121": "CONDITIONAL",
+    "P122": "VERIFIED_THEOREM",
+    "P123": "CONDITIONAL",
+    "P124": "CONDITIONAL"
+  },
+  "critical_density": "rho_c=ln(2)/ln(3)",
+  "format": "collatz-phase20-theory-v1",
+  "map_convention": "T(x)=x/2 for even x and T(x)=(3x+1)/2 for odd x; v_l is the parity of the input to shortcut step l",
+  "phase18_correction": "The fixed-packet P109 schedule is excluded internally by P114, not P112. Phase 20 adds class exclusions but no closed full-language automaton.",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The results do not exclude all permanent-safe words, prove H112 or H72, eliminate nontrivial cycles, or prove the Collatz conjecture."
+}

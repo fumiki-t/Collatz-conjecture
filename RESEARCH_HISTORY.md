@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–13 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–20 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -1337,3 +1337,42 @@ bounded zero-run rules.
 Phase 19 does not prove H112, empty the affine-only near-diagonal band,
 exclude every escaping-discrepancy itinerary, prove H72/H89/H104/H105, exclude
 nontrivial cycles, or prove the Collatz conjecture. `proves_collatz=false`.
+
+## 34. Phase 20 — parity-complexity barriers
+
+**Branch:** `feat/phase20-parity-complexity`
+
+**Acceptance record:** [`PHASE20_RUN_RESULTS.md`](PHASE20_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/parity-complexity/REPORT.md`](research/audits/parity-complexity/REPORT.md)
+
+Phase 20 treated the supplied parity-complexity note as an untrusted proposal.
+The arXiv TeX source for López--Stoll was inspected through the theorem and
+proof: EXT08 concerns the `liminf` parity-one density of a rational 2-adic
+infinite shortcut orbit, not existence of a natural density.
+
+P117 uses P72 internally to exclude bounded critical discrepancy and every
+global odd-index discrepancy envelope below `(8/9)log j`. P118 applies the
+classical Gelfond--Schneider theorem to prove that the critical density
+`ln(2)/ln(3)` is transcendental. P120 internally proves that bounded binary
+balance yields a natural frequency and uniformly bounded factor discrepancy;
+P122 proves the corresponding bounded-discrepancy formula for morphic images
+of Sturmian words.
+
+Conditionally on EXT08 and the separately recorded word-theoretic inputs,
+P119 excludes algebraic-frequency morphic, pure binary morphic, primitive
+substitutive, and automatic parity vectors. P121/P123/P124 force unbounded
+balance and abelian complexity, exclude quasi-Sturmian tails, and require
+`p(n)-n -> infinity` in a positive permanent-safe noncyclic candidate.
+Unbounded excess may still be sublinear and have zero entropy.
+
+E32 independently reconstructs thirteen 512-bit prefixes, 832 factor rows
+through length 64, 38 source-family rows, and 64 `A^rB^s` rows. The finite
+profiles preserve both NG22 controllers, P109, source 167, E25 sources, and
+all mandatory families as falsifiers; they are not asymptotic classifications.
+
+### What this result does not prove
+
+Phase 20 does not prove the external theorems internally, force a nonzero
+source lift, prove H112/H72, exclude nontrivial cycles, or prove the Collatz
+conjecture. `proves_collatz=false`.

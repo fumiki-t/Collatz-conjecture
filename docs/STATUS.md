@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-28
+**Last updated:** 2026-08-29
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -95,6 +95,20 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   eventual zero accelerated source lifts equivalent to one fixed positive
   ordinary source, and P116 gives effective exponential canonical-residue
   growth for ultimately periodic noncycle words.
+- `VERIFIED_THEOREM`: P117 uses P72 to rule out bounded critical discrepancy
+  and every global odd-index discrepancy envelope below `(8/9)log j`. P118,
+  using the isolated external Gelfond--Schneider input EXT09, proves that
+  `ln(2)/ln(3)` is transcendental. P120 proves that bounded binary balance
+  gives a natural frequency and uniform factor discrepancy. P122 proves the
+  corresponding bounded-discrepancy formula for every non-erasing morphic
+  image of a Sturmian word.
+- `CONDITIONAL`: EXT08 is López--Stoll's audited `liminf` critical-density
+  theorem for rational 2-adic infinite orbits. With the word-theoretic inputs
+  EXT10--EXT13, P119 excludes algebraic-frequency morphic, pure binary
+  morphic, primitive substitutive, and automatic parity vectors. P121/P123/
+  P124 force unbounded balance, exclude quasi-Sturmian tails, and give
+  `p(n)-n -> infinity` in a positive permanent-safe noncyclic candidate.
+  These conclusions retain their external dependencies.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -130,6 +144,10 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   H112, the narrower open target of proving infinitely many nonzero source
   lifts on every infinite coefficient-safe all-prefix same-Q-geodesic branch.
   Source 167's eleven terminal zero lifts forbid any bounded zero-run shortcut.
+  Phase 20 further removes automatic, primitive substitutive, and
+  quasi-Sturmian symbolic tails conditionally, but leaves unbalanced
+  escaping-discrepancy words with unbounded yet possibly `o(n)` complexity
+  excess.
 - `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
   sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
   reciprocal orbit summability and an odd permanent-safe tail minimum for
@@ -246,6 +264,10 @@ No item above proves the Collatz conjecture.
   adversarial rows. At `Q=17`, source 167 has eleven terminal zero lifts but
   crosses coefficient safety three shortcut steps later. This is a finite
   falsifier, not an eventual theorem.
+- Phase 20: E32 independently reconstructs thirteen 512-bit parity prefixes,
+  all 832 factor rows through length 64, 38 mandatory source-family rows, and
+  64 `A^rB^s` rows. The finite factor profiles do not certify morphicity,
+  quasi-Sturmian structure, balance, or any asymptotic complexity law.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -382,6 +404,12 @@ split but does not create an unbounded volume method. NG29 caps the explicitly
 scoped coefficient-only summed-Haar envelope below normalized count 360.469.
 Further progress must retain affine correction, a fixed positive ordinary
 source, transitions, canonical representatives, or signed carry.
+Phase 20 rules out several low-description languages but does not make H112
+finite-state. The surviving target may have unbounded balance and
+`p(n)-n -> infinity` while still having zero entropy and sublinear excess.
+The next useful mechanism must couple P115's lift digits to this growing
+complexity or to ordinary height; merely measuring more finite factors cannot
+prove eventual nonzero lifts.
 
 ## Secondary directions
 
@@ -478,7 +506,7 @@ source, transitions, canonical representatives, or signed carry.
 - `RETRACTED`: early strong numerical claims based on cycle-only assumptions,
   unchecked computations, or invalid equivalences.
 
-## Next 4 concrete research questions
+## Next 5 concrete research questions
 
 1. Can the gap residue `rho=[B*3^(-q)]_(2^K-3^q)`, `4|rho`, be excluded from
    `[0,W]` for every q0-critical word by a scalable exact recursion?
@@ -492,6 +520,10 @@ source, transitions, canonical representatives, or signed carry.
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
    odd orbits from both NG21 and NG22?
+5. Can an exact right-special-factor or return-word rule force nonzero P115
+   source lifts from P121/P124's unbounded balance and complexity excess while
+   surviving both NG22 controllers, P109, source 167, and the mandatory
+   adversarial families?
 
 ## Codex tasks worth doing
 
@@ -513,6 +545,9 @@ source, transitions, canonical representatives, or signed carry.
 - Extend P72 only with an orbit-specific transition invariant; test it first
   against NG21--NG28 and E20/E22/E23/E24/E25/E26/E27 before claiming an exponent or
   anti-concentration improvement.
+- Treat P121/P124 as necessary conditions, not a complexity proof strategy by
+  themselves. A useful Phase 20 successor must connect right-special factors,
+  return words, or balance growth to canonical lift digits or ordinary height.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -542,6 +577,8 @@ source, transitions, canonical representatives, or signed carry.
 - Retry contact closure plus weighted pressure without a new endpoint or
   least-residue invariant; NG17 is an exact no-go for that information set.
 - Infer an asymptotic law from high finite coverage or a beam search.
+- Infer morphicity, quasi-Sturmian structure, balance, entropy, or asymptotic
+  factor complexity from E32's finite prefixes.
 - Retry naive predecessor-density intersection without a theorem controlling
   the exceptional least counterexample.
 - Use floating point to accept a certificate or a near-critical inequality.

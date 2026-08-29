@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 19
+# Collatz research synthesis through Phase 20
 
-**Audit date:** 2026-08-28
+**Audit date:** 2026-08-29
 
-**Audited base:** `e6743026c1958974c226cf8bcc5a92d8800c920c`
+**Audited base:** `2fbcad3fbcfb8ecabc4522ec3acfb81467daf8df`
 
-**Latest accepted phase:** Phase 19
+**Latest accepted phase:** Phase 20
 
 **Problem status:** `OPEN`
 
@@ -587,6 +587,26 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   removed. See [`PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md) and the
   [`Phase 19 audit`](../research/audits/affine-lift/REPORT.md).
 
+### Phase 20 — parity-complexity barriers
+
+- **Purpose:** test whether the positive permanent-safe branch can remain in
+  a low-description symbolic class, while separating internal P72 deductions
+  from external word/density theorems.
+- **Accepted internally:** P117 excludes every global discrepancy envelope
+  below `(8/9)log j`; P118 proves the critical density transcendental using
+  EXT09; P120 proves bounded-balance frequency/discrepancy; P122 proves
+  bounded discrepancy for morphic Sturmian images.
+- **Conditional:** EXT08 is López--Stoll's audited `liminf` critical-density
+  theorem. With EXT10--EXT13, P119/P121/P123/P124 exclude automatic,
+  primitive substitutive, bounded-balance, and quasi-Sturmian tails and force
+  `p(n)-n -> infinity`.
+- **Finite evidence:** E32 rebuilds thirteen 512-bit prefixes, 832 factor rows,
+  38 source-family rows, and 64 `A^rB^s` rows independently.
+- **Obstacle:** unbounded excess may be sublinear and zero-entropy; no theorem
+  connects it to a nonzero P115 lift or ordinary height. H112/H72 remain open.
+  See [`PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md) and the
+  [`Phase 20 audit`](../research/audits/parity-complexity/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -594,7 +614,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P116 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122 with their exact hypotheses;
 - explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG31.
 
 None is a full convergence theorem.
@@ -819,8 +839,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase17.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase17_verifier.json
+.venv/bin/python verifier/verify_phase20.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase20_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

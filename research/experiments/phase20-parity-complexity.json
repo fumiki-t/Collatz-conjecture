@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "phase20-parity-complexity",
+  "status": "RUNNING",
+  "claim_ids": ["EXT08", "EXT09", "EXT10", "EXT11", "EXT12", "EXT13", "P117", "P118", "P119", "P120", "P121", "P122", "P123", "P124", "E32", "H112", "H72"],
+  "objective": "Audit parity-density rigidity and derive exact bounded-discrepancy, low-balance, morphic, automatic, quasi-Sturmian, and factor-complexity barriers for a hypothetical positive permanent-safe nonperiodic source.",
+  "exact_scope": {
+    "quantifiers": [
+      "every positive nonperiodic permanent coefficient-safe shortcut orbit covered by P72 for P117",
+      "every binary infinite word for the internal bounded-balance lemma P120",
+      "every non-erasing binary morphic image of a Sturmian word for P122",
+      "every rational 2-adic noncyclic shortcut orbit only conditionally on EXT08 for P119, P121, P123, and P124",
+      "the declared 512-bit finite prefixes and factor lengths at most 64 for E32"
+    ],
+    "bounds": {
+      "prefix_length": 512,
+      "maximum_factor_length": 64,
+      "mandatory_family_parameter_maximum": 20
+    },
+    "completeness": "P117, P118, P120, and P122 are written derivations under their stated dependencies. P119, P121, P123, and P124 retain all external inputs. E32 is exhaustive only for the declared finite words and factor lengths. H112 and H72 remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "none in acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase20_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase20.py --artifact-dir artifacts --write-report artifacts/phase20_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase20_properties.py tests/test_phase20_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q"]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "every declared parity prefix from its mathematical or source definition",
+      "factor sets with direct string slicing instead of the generator's rolling integer encoding",
+      "canonical source residues from a closed affine sum instead of the generator recurrence",
+      "all factor-complexity, balance, abelian-complexity, frequency, and coefficient-safety summaries"
+    ],
+    "forbidden_imports": ["src.phase20_search", "phase20_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase20_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "all-contact critical mechanical word", "both NG22 models", "P109 schedule", "source 167", "E25 record sources"
+  ],
+  "artifacts": [
+    "artifacts/phase20_theory.json",
+    "artifacts/phase20_complexity_audit.json",
+    "artifacts/phase20_literature_audit.json",
+    "artifacts/phase20_adversarial.json",
+    "artifacts/phase20_obstruction_report.md",
+    "artifacts/phase20_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not promote any finite factor-complexity profile to an asymptotic classification.",
+    "Do not replace liminf density in EXT08 by existence of natural density.",
+    "Do not apply morphic frequency algebraicity when the natural frequency is absent.",
+    "Keep the cyclic branch separate and retain EXT08 as external.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The phase excludes named low-complexity classes only under exact internal and external hypotheses.",
+    "Unbounded p(n)-n does not imply superlinear complexity, positive entropy, or randomness.",
+    "H112, H72, the nontrivial-cycle branch, and Collatz remain open; proves_collatz remains false."
+  ],
+  "proves_collatz": false
+}

@@ -1,5 +1,5 @@
 {
-  "claim_count": 143,
+  "claim_count": 158,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -972,13 +972,16 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, or surplus/coalescent irreducibility to exclude every infinite coefficient-safe tail.",
+      "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, surplus/coalescent irreducibility, or a lift-linked complexity theorem to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, E23, E24, E30, NG21, NG22, NG23, NG24, NG25, NG26, NG30.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, EXT08, E23, E24, E30, E31, E32, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
       "dependency_ids": [
         "E23",
         "E24",
         "E30",
+        "E31",
+        "E32",
+        "EXT08",
         "NG21",
         "NG22",
         "NG23",
@@ -986,11 +989,24 @@
         "NG25",
         "NG26",
         "NG30",
+        "NG31",
         "P107",
         "P108",
         "P109",
         "P110",
         "P111",
+        "P112",
+        "P113",
+        "P114",
+        "P115",
+        "P116",
+        "P117",
+        "P119",
+        "P120",
+        "P121",
+        "P122",
+        "P123",
+        "P124",
         "P72",
         "P73",
         "P75",
@@ -1008,11 +1024,11 @@
         "P87",
         "P88"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md); [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md); [`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md); [`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-08-28",
-      "notes": "Phase 18 shows that every exact mixed finite abstraction admits formal balanced survivors and that a fixed positive source requires eventual zero lifts, but no accepted model is a closed finite presentation of the full language. P80 remains unproved.",
+      "last_audited": "2026-08-29",
+      "notes": "Phase 20 conditionally excludes several low-complexity classes and forces unbounded excess, but no theorem links that growth to ordinary height or a nonzero P115 lift. P80 and H112 remain unproved.",
       "status": "OPEN"
     },
     {
@@ -1993,9 +2009,208 @@
       "last_audited": "2026-08-28",
       "notes": "It is not proved for all geodesic branches and would not alone exclude the nongeodesic H72 language or nontrivial cycles.",
       "status": "OPEN"
+    },
+    {
+      "claim": "If a rational 2-adic integer has an infinite orbit under the shortcut map, the lower limiting parity-one density equals `ln(2)/ln(3)`.",
+      "collatz_implication": "Makes critical lower density an external necessary condition for the rational noncyclic branch.",
+      "dependencies": "López--Stoll (2021), Theorem `aperiodic`; exact shortcut/input-parity convention and `liminf` audited from the arXiv TeX source.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); [`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 3.",
+      "first_introduced": "Phase 20",
+      "id": "EXT08",
+      "last_audited": "2026-08-29",
+      "notes": "The paper's proof is not reproduced here; `liminf` is not a natural-density assertion and the cyclic branch is separate.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "If algebraic `alpha` is neither zero nor one and algebraic `beta` is irrational, every value of `alpha^beta` is transcendental.",
+      "collatz_implication": "Supplies the isolated external transcendence input to P118.",
+      "dependencies": "Classical Gelfond--Schneider theorem.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 20",
+      "id": "EXT09",
+      "last_audited": "2026-08-29",
+      "notes": "The repository checks only the application `3^(ln2/ln3)=2`, not the theorem's proof.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "An existing morphic letter frequency is algebraic, and every pure binary morphic word has letter frequencies.",
+      "collatz_implication": "Converts P119's algebraic-frequency exclusion into morphic subclass exclusions.",
+      "dependencies": "Allouche--Shallit, Theorem 8.4.5; Saari (2005), DOI `10.1007/11505877_35`.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 20",
+      "id": "EXT10",
+      "last_audited": "2026-08-29",
+      "notes": "General morphic words may lack natural frequency; logarithmic frequency is not substituted.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "The lower and upper asymptotic densities of every `k`-automatic set are recursively computable rational numbers.",
+      "collatz_implication": "Lets P119 exclude automatic parity vectors without assuming natural-density existence.",
+      "dependencies": "Bell (2020), DOI `10.5802/jtnb.1135`.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 20",
+      "id": "EXT11",
+      "last_audited": "2026-08-29",
+      "notes": "It is an external word-theoretic input, not a Collatz theorem.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "Every quasi-Sturmian word is a finite prefix followed by a morphic image of a Sturmian word with `phi(ab)!=phi(ba)`.",
+      "collatz_implication": "Supplies the structure input for P123 and P124.",
+      "dependencies": "Cassaigne, “Sequences with grouped factors,” DLT III (1997/1998), 211--222.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 20",
+      "id": "EXT12",
+      "last_audited": "2026-08-29",
+      "notes": "The condition forces both source-letter images nonempty; the theorem is not reproved.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "Primitive substitutive words have letter frequencies given by a normalized positive Perron eigenvector of the integral incidence matrix; the coordinates are algebraic.",
+      "collatz_implication": "Supplies the primitive-substitutive subcase of P119.",
+      "dependencies": "Classical Perron--Frobenius/substitution frequency theorem.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md).",
+      "first_introduced": "Phase 20",
+      "id": "EXT13",
+      "last_audited": "2026-08-29",
+      "notes": "No claim is made for arbitrary nonprimitive substitutive words without frequency.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "A positive nonperiodic permanent coefficient-safe shortcut orbit cannot have bounded critical discrepancy. More generally it cannot satisfy `D_j<=gamma log(j+2)+K` globally for any `gamma<8/9`.",
+      "collatz_implication": "Excludes every symbolic subclass with a proved sub-`8/9` global odd-index discrepancy envelope, without EXT08.",
+      "dependencies": "P72; exact normalized correction; elementary power-sum/integral comparison.",
+      "dependency_ids": [
+        "P72"
+      ],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 4; `artifacts/phase20_theory.json`.",
+      "first_introduced": "Phase 20",
+      "id": "P117",
+      "last_audited": "2026-08-29",
+      "notes": "It is not a pointwise lower bound at every large index and does not exclude escaping unbounded discrepancy.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The critical density `rho_c=ln(2)/ln(3)` is transcendental.",
+      "collatz_implication": "Separates critical Collatz density from every algebraic frequency class.",
+      "dependencies": "Unique factorization; EXT09 applied to `3^rho_c=2` on the positive real branch.",
+      "dependency_ids": [
+        "EXT09"
+      ],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 5.",
+      "first_introduced": "Phase 20",
+      "id": "P118",
+      "last_audited": "2026-08-29",
+      "notes": "The transcendence theorem itself is external; this says nothing about existence of a Collatz parity frequency.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming EXT08, a rational 2-adic noncyclic shortcut orbit cannot have an algebraic natural parity-one frequency; using EXT10/EXT11/EXT13 it therefore cannot have a frequency-bearing morphic, pure binary morphic, primitive substitutive, or `k`-automatic parity word.",
+      "collatz_implication": "Excludes broad low-description symbolic classes from the rational noncyclic branch, conditionally.",
+      "dependencies": "EXT08, P118, and the named class-specific external theorem.",
+      "dependency_ids": [
+        "EXT08",
+        "P118"
+      ],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 5; `artifacts/phase20_literature_audit.json`.",
+      "first_introduced": "Phase 20",
+      "id": "P119",
+      "last_audited": "2026-08-29",
+      "notes": "General morphic words without natural frequency remain; the result does not imply randomness or treat cycles.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "If a binary infinite word is `K`-balanced, its natural one-frequency `rho` exists and every length-`n` factor `u` satisfies `abs(|u|_1-rho*n)<=K`.",
+      "collatz_implication": "Converts bounded factor balance into a uniform prefix discrepancy bound.",
+      "dependencies": "Subadditivity of maximum factor counts, superadditivity of minimum counts, and their uniformly bounded gap.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 6.",
+      "first_introduced": "Phase 20",
+      "id": "P120",
+      "last_audited": "2026-08-29",
+      "notes": "It is a word theorem and makes no Collatz existence assertion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming EXT08, every positive ordinary permanent-safe nonperiodic candidate has unbounded balance and unbounded binary abelian factor complexity.",
+      "collatz_implication": "Adds an unbounded combinatorial-complexity necessity to H112/H72.",
+      "dependencies": "P117, P120, EXT08; sliding-window one-counts form an integer interval.",
+      "dependency_ids": [
+        "EXT08",
+        "P117",
+        "P120"
+      ],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 6.",
+      "first_introduced": "Phase 20",
+      "id": "P121",
+      "last_audited": "2026-08-29",
+      "notes": "Unbounded balance does not imply positive entropy or exclude all infinite words.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Every non-erasing binary morphic image of a Sturmian word has a natural output frequency and uniformly bounded prefix discrepancy about it; adding a finite prefix preserves the bound.",
+      "collatz_implication": "Supplies the internal discrepancy calculation needed after EXT12.",
+      "dependencies": "Sturmian prefix letter-count discrepancy at most one; exact image length/one-count algebra; one partial image block.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 7.",
+      "first_introduced": "Phase 20",
+      "id": "P122",
+      "last_audited": "2026-08-29",
+      "notes": "It does not say a Collatz parity word has a Sturmian representation.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming EXT08 and EXT12, no positive ordinary permanent-safe nonperiodic candidate has a quasi-Sturmian parity word.",
+      "collatz_implication": "Excludes Sturmian and quasi-Sturmian tails from H112/H72 conditionally.",
+      "dependencies": "P117, P122, EXT08, EXT12.",
+      "dependency_ids": [
+        "EXT08",
+        "EXT12",
+        "P117",
+        "P122"
+      ],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 7.",
+      "first_introduced": "Phase 20",
+      "id": "P123",
+      "last_audited": "2026-08-29",
+      "notes": "It does not exclude complexity `n+o(n)` or arbitrary morphic tails.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Assuming EXT08 and EXT12, every positive ordinary permanent-safe noncyclic candidate satisfies `p_v(n)-n -> infinity`.",
+      "collatz_implication": "Forces unbounded factor-complexity excess in the remaining H72 branch.",
+      "dependencies": "P116, P123; the factor-complexity excess of a non-eventually-periodic one-sided word is nondecreasing, and bounded excess is eventually quasi-Sturmian.",
+      "dependency_ids": [
+        "P116",
+        "P123"
+      ],
+      "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 8.",
+      "first_introduced": "Phase 20",
+      "id": "P124",
+      "last_audited": "2026-08-29",
+      "notes": "It gives no linear excess, positive entropy, or randomness.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Independent exact reconstruction audits thirteen 512-bit prefixes, all 832 factor rows through length 64, 38 mandatory source-family rows, and 64 `A^rB^s` rows, including both NG22 models, P109, source 167, and E25 record sources.",
+      "collatz_implication": "Regresses Phase 20 conventions and preserves low-complexity/zero-lift falsifiers.",
+      "dependencies": "Declared finite word/source definitions; arbitrary-precision integers/Fraction; generator rolling encodings and verifier direct substring sets/closed affine sums.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); `artifacts/phase20_complexity_audit.json`; `artifacts/phase20_adversarial.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 20",
+      "id": "E32",
+      "last_audited": "2026-08-29",
+      "notes": "Finite profiles do not certify morphicity, quasi-Sturmian structure, balance, or an asymptotic complexity law. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "9cfe303bbbd875df143fdfe1b79d2d072c2b5f74c7af6baa6e1730c2acd87685"
+  "source_sha256": "30f49bac644479746f3ac8d98594f78afb017acab6e29efe4cc38f2c80d7ad67"
 }

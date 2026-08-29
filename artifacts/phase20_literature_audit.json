@@ -1,0 +1,69 @@
+{
+  "external_boundary": "EXT08-EXT13 are cited inputs, not independently reproved by code. Repository consequences keep their dependency labels.",
+  "format": "collatz-phase20-literature-audit-v1",
+  "proves_collatz": false,
+  "sources": [
+    {
+      "audit_depth": "arXiv TeX source The3xinR.tex, theorem and proof; not abstract-only",
+      "audited_result": "Theorem aperiodic: if zeta in Q_odd has an infinite orbit, liminf h(l)/l=ln(2)/ln(3).",
+      "authors": "Josefina Lopez and Peter Stoll",
+      "claim": "EXT08",
+      "identifier": "arXiv:2101.12747v1",
+      "map_match": "exact shortcut map T(x)=x/2 or (3x+1)/2 and input-parity convention",
+      "title": "The 3x+1 Periodicity Conjeture in R",
+      "url": "https://arxiv.org/abs/2101.12747",
+      "year": 2021
+    },
+    {
+      "audited_result": "If algebraic alpha is neither 0 nor 1 and algebraic beta is irrational, every value of alpha^beta is transcendental.",
+      "authors": "A. O. Gelfond and Theodor Schneider",
+      "claim": "EXT09",
+      "identifier": "classical transcendence theorem",
+      "repository_use": "alpha=3, beta=ln(2)/ln(3), positive real value 2",
+      "title": "Gelfond-Schneider theorem",
+      "year": 1934
+    },
+    {
+      "audited_result": "An existing morphic letter frequency is algebraic; every pure binary morphic word has letter frequencies.",
+      "authors": "Jean-Paul Allouche and Jeffrey Shallit; Kalle Saari",
+      "boundary": "The first statement does not assert existence for every general morphic word.",
+      "claim": "EXT10",
+      "identifier": "ISBN 9780521823326; DOI 10.1007/11505877_35",
+      "title": "Automatic Sequences, Theorem 8.4.5; On the Frequency of Letters in Pure Binary Morphic Sequences",
+      "year": "2003; 2005"
+    },
+    {
+      "audited_result": "The lower and upper asymptotic densities of every k-automatic set are recursively computable rational numbers.",
+      "authors": "Jason P. Bell",
+      "claim": "EXT11",
+      "identifier": "DOI 10.5802/jtnb.1135",
+      "title": "The upper density of an automatic set is rational",
+      "url": "https://doi.org/10.5802/jtnb.1135",
+      "year": 2020
+    },
+    {
+      "audited_result": "A quasi-Sturmian word is a finite prefix followed by a morphic image of a Sturmian word, with phi(ab)!=phi(ba).",
+      "authors": "Julien Cassaigne",
+      "claim": "EXT12",
+      "hypothesis_audit": "The inequality rules out erasing either of the two source letters.",
+      "identifier": "Developments in Language Theory III, pp. 211-222",
+      "title": "Sequences with grouped factors",
+      "year": 1997
+    },
+    {
+      "audited_result": "Primitive substitutive words have letter frequencies given by a normalized positive Perron eigenvector; these coordinates are algebraic.",
+      "authors": "Classical Perron-Frobenius/substitution theory",
+      "claim": "EXT13",
+      "identifier": "standard primitive incidence-matrix theorem",
+      "title": "Primitive substitution frequency theorem"
+    },
+    {
+      "authors": "Thomas Sterin",
+      "claim": "overlap-context",
+      "identifier": "arXiv:1907.00775",
+      "repository_role": "source-bit, first-occurrence, and regular-ancestor context; no Phase 20 novelty claim is based on it",
+      "title": "A tree-based exploration of the Collatz conjecture",
+      "year": 2020
+    }
+  ]
+}

@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–19, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–20, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -47,6 +47,7 @@ This is the canonical map of the research archive. Start with
 | 17 | [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md) | [`../artifacts/phase17_obstruction_report.md`](../artifacts/phase17_obstruction_report.md) | `feat/phase17-predecessor-pressure` |
 | 18 | [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md) | [`../artifacts/phase18_obstruction_report.md`](../artifacts/phase18_obstruction_report.md) | `feat/phase18-affine-trichotomy` |
 | 19 | [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md) | [`../artifacts/phase19_obstruction_report.md`](../artifacts/phase19_obstruction_report.md) | `feat/phase19-affine-lift` |
+| 20 | [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md) | [`../artifacts/phase20_obstruction_report.md`](../artifacts/phase20_obstruction_report.md) | `feat/phase20-parity-complexity` |
 
 Research supplements:
 
@@ -62,9 +63,10 @@ Research supplements:
 | Predecessor-pressure audit | [`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md) | Phase 17 predecessor, pressure, direct-orbit, suffix-code, adversarial artifacts, independent verifier, tamper tests, SHA-256 manifest | P104--P106, E28/E29, NG29, H104/H105 boundary |
 | Affine-trichotomy audit | [`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md) | Phase 18 finite graphs, mixed schedule, project applicability, adversarial artifacts, independent verifier, tamper tests, SHA-256 manifest | P107--P111, E30, NG30, H72 finite-state boundary |
 | Affine-lift audit | [`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md) | Phase 19 affine-valley, stopped-duality, source-lift, periodic, and adversarial artifacts with independent verifier and tamper tests | P112--P116, E31, NG31, H112/H72 boundary |
+| Parity-complexity audit | [`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md) | Phase 20 theory, literature, finite complexity, source-lift, and adversarial artifacts with independent verifier and tamper tests | EXT08--EXT13, P117--P124, E32, H112/H72 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 19 and both the branch-point and two-tail
+documentation through Phase 20 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

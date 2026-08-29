@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the nineteen phases established
+## 3. What the twenty phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -164,6 +164,12 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   source by eventual zero accelerated lifts, while P116 removes ultimately
   periodic noncycles. Source 167 has eleven terminal zero lifts and then
   crosses coefficient safety, so H112 and H72 remain open.
+- Phase 20 proves the internal P72 discrepancy-envelope barrier, the
+  transcendence application for `ln(2)/ln(3)`, bounded-balance frequency, and
+  morphic-Sturmian output discrepancy. Conditionally on EXT08 and external
+  word theorems, automatic, primitive substitutive, bounded-balance, and
+  quasi-Sturmian parity tails are excluded and `p(n)-n -> infinity` is
+  necessary. E32 is finite only; H112 and H72 remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -235,6 +241,7 @@ P69 counterexample trichotomy
   -> P86/P87 cross-Q surplus and strict-valley reduction
   -> P88/E24 finite {1,2}-gap hard core
   -> P89/P91--P96 ancestral/carry constraints and E25/E26 finite data
+  -> P117/P119--P124 parity-complexity filters
   -> H72 (OPEN)
   -> H70 eventual dropping-safe spacing via P70 (OPEN).
 ```
@@ -271,7 +278,9 @@ cross-Q/unsafe-target witnesses: any proposed merge
 must distinguish them or prove a sound dominance relation. Any finite-state
 proposal must additionally prove transition closure and retain P115 canonical
 source lifts. H112 is the focused same-Q-geodesic subtarget; source 167 must
-reject every bounded zero-run surrogate. Certificate
+reject every bounded zero-run surrogate. A complexity-based successor must
+map an exact right-special/return-word event to a nonzero lift, signed carry,
+or ordinary height; E32's finite profiles alone cannot do so. Certificate
 extension is useful when it tests such structure; raw depth extension is
 secondary.
 

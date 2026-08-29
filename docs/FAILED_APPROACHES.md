@@ -866,9 +866,44 @@ through `R=12` is retained only as an implementation diagnostic.
 `artifacts/phase19_stopped_duality.json`, and the independent Phase 19
 verifier.
 
+## Phase 20 — finite parity complexity as an asymptotic classifier
+
+**Status:** boundary recorded; no new NG claim ID.
+
+**Exact invalid shortcut.** A long finite prefix with `p(n)=n+O(1)`, bounded
+balance, a Sturmian-looking factor profile, or many terminal zero source lifts
+certifies that its infinite continuation is morphic, quasi-Sturmian, balanced,
+or eventually lift-stable.
+
+**Why it looked plausible.** The all-contact and P109 prefixes have very small
+finite excess, while source 167 has a long zero-lift suffix. These profiles are
+strong diagnostics for proposed symbolic models.
+
+**Failure.** A finite word admits infinitely many continuations with different
+factor languages and balance growth. In the exact E32 audit, source 167 has
+504 trailing zero full-step lift bits in its stored 512-bit eventually cyclic
+continuation, but its permanent coefficient safety already fails at step 29.
+Conversely, the formal NG22 controllers remain coefficient-safe through the
+stored prefix without known positive ordinary sources. Neither direction
+supports an asymptotic classification.
+
+**Failure scope.** Fundamental for finite-prefix classification, not for a
+theorem that derives an infinite word class or a nonzero lift from an exact
+recurrence.
+
+**Weaker statement retained.** P117/P121/P123/P124 give genuine necessary
+conditions under their stated hypotheses. E32 is a regression/falsification
+set for any proposed recurrence connecting right-special factors, balance,
+ordinary height, and P115 lift digits.
+
+**Evidence.** [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md),
+[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md),
+and `artifacts/phase20_complexity_audit.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, and all exact counterexamples above. Passing a bounded regression is necessary
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, source 167, both
+Phase 20 NG22 controllers, and all exact counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

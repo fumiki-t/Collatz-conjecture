@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 19,
+    "latest_phase": 20,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 19,
-    "report": "PHASE19_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase19_verifier.json",
+    "phase": 20,
+    "report": "PHASE20_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase20_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase19-affine-lift.json"
+    "experiment_manifest": "research/experiments/phase20-parity-complexity.json"
   },
   "active_obligations": [
     {
@@ -77,15 +77,15 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31"],
-      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; Phase 19 excludes fixed-packet bounded-strip survivors and periodic noncycles but leaves escaping aperiodic schedules, H112/P80, ordinary height, and the separate cycle branch open."
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "P117", "P119", "P120", "P121", "P122", "P123", "P124", "EXT08", "EXT10", "EXT11", "EXT12", "EXT13", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "E32", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31"],
+      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; Phase 20 conditionally removes major low-complexity classes but leaves unbalanced escaping schedules with unbounded possibly sublinear complexity excess, H112/P80, ordinary height, and the separate cycle branch open."
     },
     {
       "id": "H112",
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P98", "P112", "P114", "P115", "P116", "E31", "NG22", "NG23", "NG28", "NG31"],
+      "depends_on": ["P98", "P112", "P114", "P115", "P116", "P117", "P121", "P123", "P124", "EXT08", "E31", "E32", "NG22", "NG23", "NG28", "NG31"],
       "success_scope": "Exclude positive ordinary sources only in the infinite coefficient-safe all-prefix same-Q-geodesic sublanguage by proving infinitely many nonzero canonical source lifts; nongeodesic H72 paths and cycles remain separate."
     },
     {
@@ -192,7 +192,22 @@
     "P116",
     "E31",
     "NG31",
-    "H112"
+    "H112",
+    "EXT08",
+    "EXT09",
+    "EXT10",
+    "EXT11",
+    "EXT12",
+    "EXT13",
+    "P117",
+    "P118",
+    "P119",
+    "P120",
+    "P121",
+    "P122",
+    "P123",
+    "P124",
+    "E32"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",
