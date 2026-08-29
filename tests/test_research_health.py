@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 18
+    assert result["latest_phase"] == 19
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -86,9 +86,17 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["P111"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["E30"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG30"] == "REFUTED"
+    assert result["active_focus"]["P112"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P113"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P114"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P115"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P116"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E31"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG31"] == "REFUTED"
+    assert result["active_focus"]["H112"] == "OPEN"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["claims"]["H72"] == "OPEN"
-    assert result["latest_supplemental_verifier"]["claims"]["NG30"] == "REFUTED"
+    assert result["latest_supplemental_verifier"]["claims"]["NG31"] == "REFUTED"
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -105,6 +113,8 @@ def test_repository_research_health() -> None:
     assert ("phase17-predecessor-pressure" in result["accepted_experiments"]) == (phase17["status"] == "ACCEPTED")
     phase18 = json.loads(Path("research/experiments/phase18-affine-trichotomy.json").read_text(encoding="utf-8"))
     assert ("phase18-affine-trichotomy" in result["accepted_experiments"]) == (phase18["status"] == "ACCEPTED")
+    phase19 = json.loads(Path("research/experiments/phase19-affine-lift.json").read_text(encoding="utf-8"))
+    assert ("phase19-affine-lift" in result["accepted_experiments"]) == (phase19["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -117,7 +127,7 @@ def test_registry_matches_context_and_claim_sources() -> None:
     assert registry["repository"]["claim_source"] == "docs/CLAIMS_LEDGER.md"
     assert "docs/RESEARCH_SYNTHESIS.md" in registry["canonical_documents"]
     obligations = registry["active_obligations"]
-    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "C03", "C04", "C05"}
+    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "H112", "C03", "C04", "C05"}
     for row in obligations:
         if "context" in row:
             assert (root / row["context"]).is_file()
@@ -128,9 +138,12 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 135
+    assert committed["claim_count"] == 143
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
+    assert rows["H112"]["status"] == "OPEN"
+    assert rows["P115"]["status"] == "VERIFIED_THEOREM"
+    assert rows["NG31"]["status"] == "REFUTED"
     assert set(rows["H72"]["dependency_ids"]) == {
         "P72",
         "P73",

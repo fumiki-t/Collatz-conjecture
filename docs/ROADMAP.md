@@ -53,6 +53,12 @@ boundary. NG29 shows that coefficient-only summed-Haar predecessor pressure
 cannot extend the cutoff without bound; the next state must retain more
 ordinary arithmetic.
 
+Phase 19 adds P112's deterministic affine-or-valley sieve. Any short
+predecessor that does not expose a smaller safe valley must have final
+coefficient in the exact near-diagonal band `c>u(1-n/(3N))`. This does not
+empty H104/H105, but it gives a concrete rejection rule for a future
+carry-aware source/endpoint certificate.
+
 **Fast falsification test.** Reconstruct NG24--NG28, especially the Q=19
 gain-four pair and Q=26 carry -3 pair, and require the proposed state to preserve P91/P97 signed prefix carries,
 literal positivity, safety, and ordinary source order. Run the mandatory
@@ -189,12 +195,22 @@ single positive-then-negative packet order. No current H72 abstraction is a
 closed finite graph, so these theorems constrain future models rather than
 close the branch.
 
+Phase 19 narrows two parts of this target. P114 uses P72 internally to exclude
+the fixed-packet bounded-strip P109 itinerary, so surviving mixed schedules
+must escape discrepancy and return to every fixed strip only `O(j^(1/9))`
+times. P115 makes eventual zero source lifts equivalent to positive ordinary
+realization, and H112 asks for infinitely many nonzero lifts on the
+all-prefix same-Q-geodesic safe sublanguage. P116 removes ultimately periodic
+noncycle stabilization. NG31 proves that the endpoint-tilted affine correction
+has infinite mean; fractional moments below one remain available.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
-  cross-Q/unsafe-target witnesses, NG27--NG30, the `{1,2}` core, and every mandatory
+  cross-Q/unsafe-target witnesses, NG27--NG31, source 167, the `{1,2}` core, and every mandatory
 adversarial family. Reject any proof that identifies a general
-2-adic source with a positive ordinary integer, drops the per-address lattice
+2-adic source with a positive ordinary integer, promotes a finite zero-lift
+run to eventual stabilization, drops the per-address lattice
 `+1`, treats `(Q,r3)` as a prefix-closed state, assumes one-switch SCC order,
 or promotes finite scarcity to an eventual statement. Any proposed finite
 automaton must prove prefix completeness and track P111 source lifts.

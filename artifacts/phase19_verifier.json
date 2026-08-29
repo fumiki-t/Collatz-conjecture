@@ -1,0 +1,25 @@
+{
+  "claims": {
+    "E31": "VERIFIED_FINITE",
+    "H112": "OPEN",
+    "H72": "OPEN",
+    "NG31": "REFUTED",
+    "P112": "VERIFIED_THEOREM",
+    "P113": "VERIFIED_THEOREM",
+    "P114": "VERIFIED_THEOREM",
+    "P115": "VERIFIED_THEOREM",
+    "P116": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase19-verifier-v1",
+  "independence": {
+    "affine_method": "explicit exponent-position sum",
+    "generator_imported": false,
+    "periodic_method": "reduced rational congruence",
+    "safe_word_method": "string recursion",
+    "tree_order": "iterative reverse traversal with independently aggregated geometric tails"
+  },
+  "maximum_Q_recomputed": 17,
+  "proves_collatz": false,
+  "stopped_depth_recomputed": 12,
+  "valid": true
+}

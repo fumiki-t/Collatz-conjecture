@@ -22,18 +22,17 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 18 is the latest accepted research layer. It proves an exact trichotomy
-for any supplied closed finite affine graph: sign-pure SCCs have bounded
-normalized correction and a Type I/II reachability structure, while mixed
-SCCs admit formal balanced safe paths. It also proves eventual zero canonical
-source lifts are necessary for one fixed positive ordinary source. NG30
-refutes a stronger one-switch SCC normal form. No accepted artifact is a
-closed finite presentation of the full H72 language. H54, H70, H72, H89,
-H104, H105, C03, C04, C05, the periodic/nontrivial-cycle branch, and the
-permanent-safe-tail branch remain open.
+Phase 19 is the latest accepted research layer. It proves an exact
+affine-or-valley predecessor alternative, two tilted martingale identities,
+an `O(j^(1/9))` fixed-strip occupation bound, exact source-lift stabilization,
+and effective periodic noncycle residue growth. NG31 refutes treating the
+endpoint-tilted affine correction as a finite-mean error. Source 167 preserves
+the warning that eleven finite terminal zero lifts do not imply eventual
+stabilization. H112 and the broader H54, H70, H72, H89, H104, H105, C03, C04,
+C05, periodic/nontrivial-cycle, and permanent-safe-tail branches remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–18, separates internal and external
+map and conventions, summarizes Phases 1–19, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -74,12 +73,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase18.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase18_verifier.json
+.venv/bin/python verifier/verify_phase19.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase19_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 18 result](PHASE18_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 19 result](PHASE19_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

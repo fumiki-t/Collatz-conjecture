@@ -1,0 +1,451 @@
+{
+  "claim": {
+    "E31": "VERIFIED_FINITE",
+    "NG31": "REFUTED",
+    "P113": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase19-stopped-duality-v1",
+  "infinite_tree_boundary": "Finite rows audit bounded stopping only. Infinite mean is proved symbolically from Doob's bound and monotone convergence, not extrapolated from these rows.",
+  "law_minus": "P(e)=2^-e",
+  "law_plus": "P(e)=3/4^e",
+  "maximum_depth": 12,
+  "proves_collatz": false,
+  "rows": [
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "3",
+        "numerator": "1"
+      },
+      "active_nodes": 1,
+      "collapsed_geometric_tails": 1,
+      "depth": 1,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "1",
+        "numerator": "0"
+      },
+      "hit_plus_mass": {
+        "denominator": "1",
+        "numerator": "0"
+      },
+      "leaf_digest_sha256": "78ffce2e9c295289bce463ee705083bcb8c25b0b9604ec9c39b5cacb089d89d1",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 0,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "1",
+        "numerator": "2"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "3",
+        "numerator": "2"
+      },
+      "active_nodes": 2,
+      "collapsed_geometric_tails": 2,
+      "depth": 2,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "4",
+        "numerator": "1"
+      },
+      "hit_plus_mass": {
+        "denominator": "16",
+        "numerator": "9"
+      },
+      "leaf_digest_sha256": "eeac302455a777c258ca6f7a74e372c5c178ac3c48f7e51e9dd5c255587b2d59",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 1,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "4",
+        "numerator": "11"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "12",
+        "numerator": "11"
+      },
+      "active_nodes": 2,
+      "collapsed_geometric_tails": 2,
+      "depth": 3,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "4",
+        "numerator": "1"
+      },
+      "hit_plus_mass": {
+        "denominator": "16",
+        "numerator": "9"
+      },
+      "leaf_digest_sha256": "1dd944b073740d3f4d77003d4cb1ae54f9cc0ffc67bec4d78ab354576a44c946",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 1,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "2",
+        "numerator": "7"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "6",
+        "numerator": "7"
+      },
+      "active_nodes": 7,
+      "collapsed_geometric_tails": 7,
+      "depth": 4,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "16",
+        "numerator": "5"
+      },
+      "hit_plus_mass": {
+        "denominator": "512",
+        "numerator": "369"
+      },
+      "leaf_digest_sha256": "24c5c9612247bf92f39dc9bbf0949d7858f9a353cc61516610f8ae6531cef17e",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 3,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "16",
+        "numerator": "67"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "48",
+        "numerator": "67"
+      },
+      "active_nodes": 7,
+      "collapsed_geometric_tails": 7,
+      "depth": 5,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "16",
+        "numerator": "5"
+      },
+      "hit_plus_mass": {
+        "denominator": "512",
+        "numerator": "369"
+      },
+      "leaf_digest_sha256": "ce31032347cfa559781465e8ce3f476244420ae3586f396697b441b99696f7c6",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 3,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "8",
+        "numerator": "39"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "8",
+        "numerator": "13"
+      },
+      "active_nodes": 30,
+      "collapsed_geometric_tails": 30,
+      "depth": 6,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "256",
+        "numerator": "87"
+      },
+      "hit_plus_mass": {
+        "denominator": "65536",
+        "numerator": "52335"
+      },
+      "leaf_digest_sha256": "e8b6ed0869ff57174308a32aab02c0c4483014759fd94e77d90df5b4801571bc",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 10,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "256",
+        "numerator": "1417"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "768",
+        "numerator": "1417"
+      },
+      "active_nodes": 113,
+      "collapsed_geometric_tails": 113,
+      "depth": 7,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "512",
+        "numerator": "189"
+      },
+      "hit_plus_mass": {
+        "denominator": "524288",
+        "numerator": "451485"
+      },
+      "leaf_digest_sha256": "569fafa223052dcf081ed6db82c7858f74710d4da6372f4f4a9423e6c2f4392c",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 40,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "512",
+        "numerator": "3157"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "1536",
+        "numerator": "3157"
+      },
+      "active_nodes": 113,
+      "collapsed_geometric_tails": 113,
+      "depth": 8,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "512",
+        "numerator": "189"
+      },
+      "hit_plus_mass": {
+        "denominator": "524288",
+        "numerator": "451485"
+      },
+      "leaf_digest_sha256": "9a8c4ae7a920de0c27f0c166efb12ccc71c00459b93bc08d07b6dbba9b67a75c",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 40,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "64",
+        "numerator": "435"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "64",
+        "numerator": "145"
+      },
+      "active_nodes": 525,
+      "collapsed_geometric_tails": 525,
+      "depth": 9,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "8192",
+        "numerator": "3137"
+      },
+      "hit_plus_mass": {
+        "denominator": "67108864",
+        "numerator": "60014259"
+      },
+      "leaf_digest_sha256": "45849cb260451c306efef371ec6678b3f339bdb41f1249bc3814f1d661830fe0",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 153,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "8192",
+        "numerator": "60735"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "8192",
+        "numerator": "20245"
+      },
+      "active_nodes": 525,
+      "collapsed_geometric_tails": 525,
+      "depth": 10,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "8192",
+        "numerator": "3137"
+      },
+      "hit_plus_mass": {
+        "denominator": "67108864",
+        "numerator": "60014259"
+      },
+      "leaf_digest_sha256": "0c0134525202e600f3826b6a77f3af253ea2494c2a7fa0943cb1df21f37577e8",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 153,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "4096",
+        "numerator": "32895"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "4096",
+        "numerator": "10965"
+      },
+      "active_nodes": 2652,
+      "collapsed_geometric_tails": 2652,
+      "depth": 11,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "65536",
+        "numerator": "25621"
+      },
+      "hit_plus_mass": {
+        "denominator": "4294967296",
+        "numerator": "3933914751"
+      },
+      "leaf_digest_sha256": "c2db1384d5de36bb896673cd7da6abf774e8150651b815b2d06f52ee37ee5199",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 678,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    },
+    {
+      "E_minus_T_cap_R": {
+        "denominator": "65536",
+        "numerator": "566235"
+      },
+      "E_plus_beta_T_cap_R": {
+        "denominator": "65536",
+        "numerator": "188745"
+      },
+      "active_nodes": 11433,
+      "collapsed_geometric_tails": 11433,
+      "depth": 12,
+      "duality": "E_plus_beta=(1/3)E_minus_tau",
+      "hit_minus_mass": {
+        "denominator": "16384",
+        "numerator": "6571"
+      },
+      "hit_plus_mass": {
+        "denominator": "17179869184",
+        "numerator": "16088004387"
+      },
+      "leaf_digest_sha256": "002037bd96b9314d6b1d132a006b1cac136abd2c83cedf4f223525ffe403042b",
+      "minus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "ordinary_leaves": 3330,
+      "plus_total_mass": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "threshold": {
+        "denominator": "1",
+        "numerator": "2"
+      }
+    }
+  ],
+  "threshold": {
+    "denominator": "1",
+    "numerator": "2"
+  }
+}

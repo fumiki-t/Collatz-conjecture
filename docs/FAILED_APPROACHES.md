@@ -827,9 +827,48 @@ several sign changes.
 **Evidence.** [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md),
 `artifacts/phase18_theory.json`, and the independent Phase 18 verifier.
 
+## Phase 19 — finite-mean affine correction under endpoint tilt
+
+**Status:** `REFUTED` (NG31)
+
+**Exact hypothesis.** At first coefficient passage, the normalized affine
+correction has finite mean under the endpoint law `P_+(e)=3/4^e`, so it can be
+inserted as a uniformly average-small error into coefficient-only Haar
+pressure.
+
+**Why it looked plausible.** The first-passage multiplier overshoot is bounded,
+and Phase 17 gives an exact second-moment word law.  Finite stopped means also
+grow smoothly, which can conceal the critical tail.
+
+**Exact obstruction.** For `T_t=inf{n>=1:c_n>=t}` and every bounded horizon
+`R`, exact change of measure gives
+
+```text
+E_+ beta_(T_t cap R) = (1/3) E_- (T_t cap R).
+```
+
+Under the source law, Doob's inequality gives
+`P_-(T_t=infinity)>=1-1/t`.  Therefore the right side grows at least as
+`R(1-1/t)/3`, and monotone convergence proves `E_+ beta_T=infinity` for every
+`t>1`.
+
+**Failure scope.** This refutes finite-mean affine bookkeeping, not all
+affine-aware methods.  Every fractional moment of order `0<s<1` remains
+finite with the explicit P113 bound.  Deterministic valley extraction,
+ordinary source height, carry, and transition dependence are outside NG31.
+
+**Smallest reusable falsifier.** The obstruction is symbolic for every
+`t>1`; it is not a fitted finite counterexample.  The exact bounded tree
+through `R=12` is retained only as an implementation diagnostic.
+
+**Evidence.** [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md),
+[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md),
+`artifacts/phase19_stopped_duality.json`, and the independent Phase 19
+verifier.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, and all exact counterexamples above. Passing a bounded regression is necessary
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, and all exact counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the eighteen phases established
+## 3. What the nineteen phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -157,6 +157,13 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   balanced itinerary conditionally on EXT07. NG30 refutes a one-switch SCC
   normal form. E30 finds no current prefix-complete closed finite model for the
   full H72 language, so H72 remains open.
+- Phase 19 proves the affine-or-valley predecessor alternative, exact
+  source/endpoint tilted martingales, and P72's fixed-strip occupation bound.
+  The endpoint-tilted affine correction has infinite first moment (NG31), so
+  mean-small affine pressure is invalid. P115 characterizes a fixed positive
+  source by eventual zero accelerated lifts, while P116 removes ultimately
+  periodic noncycles. Source 167 has eleven terminal zero lifts and then
+  crosses coefficient safety, so H112 and H72 remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -259,11 +266,12 @@ inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
 quotient/carry state extending P71, and a positive ordinary-integrality or
 effective shadow-height obstruction extending P75--P85. Start from the stored
 NG19 collisions, universal NG20 pair, both NG22 formal 2-adic sources, NG23's
-raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG30
+raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG31
 cross-Q/unsafe-target witnesses: any proposed merge
 must distinguish them or prove a sound dominance relation. Any finite-state
-proposal must additionally prove transition closure and retain P111 canonical
-source lifts. Certificate
+proposal must additionally prove transition closure and retain P115 canonical
+source lifts. H112 is the focused same-Q-geodesic subtarget; source 167 must
+reject every bounded zero-run surrogate. Certificate
 extension is useful when it tests such structure; raw depth extension is
 secondary.
 

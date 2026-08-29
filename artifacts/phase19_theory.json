@@ -1,0 +1,72 @@
+{
+  "H112": {
+    "implication": "Together with P115 this would exclude a positive ordinary source in that exact sublanguage.",
+    "statement": "Every infinite coefficient-safe all-prefix same-Q-geodesic branch has infinitely many nonzero canonical source lifts.",
+    "status": "OPEN"
+  },
+  "NG31": {
+    "countertheorem": "P113 proves E_plus beta_T=infinity for every t>1.",
+    "hypothesis": "The first-passage affine correction has finite mean and may be treated as a uniformly average-small error under the endpoint tilt.",
+    "status": "REFUTED",
+    "surviving_statement": "Every fractional moment of order 0<s<1 is finite, with the explicit P113 bound."
+  },
+  "P112": {
+    "finite_audit": {
+      "alternative_counts": {
+        "affine_length": 32,
+        "safe_valley": 104
+      },
+      "eligible_rows": 136,
+      "maximum_exponent": 4,
+      "maximum_n": 6,
+      "row_digest_sha256": "67ceb904de9f869c6b07a350d4209ac4b77a84d315ef884922af557cb3ebf8a6",
+      "row_storage": "omitted; verifier reconstructs the complete declared product range"
+    },
+    "identities": [
+      "beta=sum_(j<n)1/(3c_j)",
+      "m>=c/u in the affine-only case",
+      "beta<=nu/(3c)",
+      "beta>N(u/c-1)"
+    ],
+    "statement": "For a positive predecessor x<N of y=uN, the suffix after the last minimum coefficient is strictly safe. Either its coefficient exceeds u and gives a smaller safe valley ancestor, or n>3N(1-c/u)."
+  },
+  "P113": {
+    "bounded_stopping": "E_plus beta_(T_t cap R)=(1/3)E_minus(T_t cap R)",
+    "critical_moments": "E_plus beta_T=infinity; E_plus beta_T^s<=3^-s/(1-R(s)) for 0<s<1, R(s)=3^(1-s)/(2^(2-s)-1)<1",
+    "endpoint_tilt": "P_plus(e)=3/4^e; 1/c_n and beta_n-n/(3c_n) are martingales",
+    "haar_tail": "sum_{w in F_t,beta>=B}3^-|w| <= 3^-s/((1-R(s))*t^2*B^s)",
+    "proof_boundary": "T_t is almost surely finite under P_plus by the Phase 17 finite Chernoff argument; Doob is proved from bounded stopping before limits are taken.",
+    "source_tilt": "P_minus(e)=2^-e; c_n and c_n*beta_n-n/3 are martingales"
+  },
+  "P114": {
+    "alignment": "Fixed parity packets move a block boundary by only a bounded number of full steps from an accelerated odd boundary, and positive packets occur with positive frequency.",
+    "bound": "R_H(j)<=3*exp(H)*S*(exp(1/S)*(1+3j/S)^(1/9)-1)",
+    "identity": "sum_(i<j)exp(-D_i)=3(Y_j-S)",
+    "phase18_strengthening": "A fixed-packet balanced mixed-SCC itinerary has linearly many bounded-strip returns if positively realized, contradicting P72 without EXT07."
+  },
+  "P115": {
+    "characterization": "A positive ordinary source N exists iff r_n=N eventually iff lambda_n=0 eventually.",
+    "congruence": "3^(n+1)*lambda_n == -(3*y_n+1) mod 2^e_n",
+    "lift": "r_(n+1)=r_n+lambda_n*2^E_n, 0<=lambda_n<2^e_n",
+    "valuation_boundary": "Exact valuations follow for every sufficiently late exponent only after the entire infinite tail is realized; one terminal finite congruence alone gives divisibility, not exactness."
+  },
+  "P116": {
+    "effective_bound": "If xi=a/d in lowest terms is not a positive integer, r_K>=2^(K-P), P=1+ceil(log2 d), once 2^K>=2|a|.",
+    "periodic_source": "xi_w=B/(2^L-3^q)",
+    "scope_repair": "The repeating block contains an odd step; the all-zero fixed point is zero and not a positive odd cycle.",
+    "ultimately_periodic": "Apply the same rational congruence to the affine preimage through the finite prefix; a positive integer exception enters the represented cycle."
+  },
+  "claims": {
+    "H112": "OPEN",
+    "H72": "OPEN",
+    "NG31": "REFUTED",
+    "P112": "VERIFIED_THEOREM",
+    "P113": "VERIFIED_THEOREM",
+    "P114": "VERIFIED_THEOREM",
+    "P115": "VERIFIED_THEOREM",
+    "P116": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase19-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "It does not prove H112, remove the near-diagonal affine-only band, exclude every aperiodic escaping-discrepancy path, prove H72, exclude cycles, or prove Collatz."
+}

@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 18
+# Collatz research synthesis through Phase 19
 
 **Audit date:** 2026-08-28
 
-**Audited base:** `b20bb167631a15e518c0460a64dbe42ed5116295`
+**Audited base:** `e6743026c1958974c226cf8bcc5a92d8800c920c`
 
-**Latest accepted phase:** Phase 18
+**Latest accepted phase:** Phase 19
 
 **Problem status:** `OPEN`
 
@@ -564,6 +564,29 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md) and the
   [`Phase 18 audit`](../research/audits/affine-trichotomy/REPORT.md).
 
+### Phase 19 — affine valleys and source lifts
+
+- **Purpose:** add deterministic affine correction to predecessor minimality,
+  audit its endpoint-tilted tail honestly, and isolate ordinary positive-source
+  stabilization from formal 2-adic coherence.
+- **Accepted:** P112 proves the affine-or-valley alternative. P113 proves the
+  exact two-tilt martingales, bounded-stopping duality, infinite first moment,
+  and finite fractional moments below one. P114 bounds fixed-strip occupation
+  by `O(j^(1/9))` using P72. P115 characterizes positive ordinary realization
+  by eventual zero source lifts. P116 gives effective exponential periodic
+  noncycle residue growth.
+- **Finite evidence:** E31 reconstructs 136 affine-valley cases, stopped trees
+  through depth 12, all 406,353 geodesic critical rows through Q=17, eight
+  periodic samples, and 63 adversarial rows.
+- **Obstacle:** NG31 refutes finite-mean affine error bookkeeping. Source 167
+  has eleven terminal zero lifts and then crosses coefficient safety, so no
+  finite zero-run criterion proves stabilization. H112 and H72 remain open.
+- **Handoff:** combine P115's lift digit and P112's valley band with ordinary
+  source/endpoint height and signed carry. Surviving mixed schedules must
+  escape every fixed discrepancy strip, and periodic noncycles are already
+  removed. See [`PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md) and the
+  [`Phase 19 audit`](../research/audits/affine-lift/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -571,8 +594,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG30.
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P116 with their exact hypotheses;
+- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG31.
 
 None is a full convergence theorem.
 
@@ -611,6 +634,11 @@ None is a full convergence theorem.
    fall into the exact Phase 18 trichotomy, but no current model meets the
    closure hypothesis. Mixed formal survivors must be separated from positive
    integers through P111-style source stabilization or stronger height data.
+8. **P112--P116 affine/lift boundary.** P112 localizes short affine-only
+   predecessors, P114 excludes fixed-strip balanced schedules, and P116
+   removes periodic noncycles. H112 still requires an all-depth theorem
+   forcing infinitely many nonzero lifts; source 167 blocks every bounded
+   zero-run surrogate.
 
 ### Nontrivial cycles
 
@@ -633,6 +661,8 @@ The complete obstruction archive is
 | Positive same-Q carry | NG28 has an exact safe Q=26 endpoint pair with carry -3 | P97's signed lower bounds survive; carry sign must remain in the state |
 | Unbounded coefficient-only predecessor Haar pressure | NG29's optimistic envelope reaches its reciprocal threshold below normalized count 360.469 | P105's exact word identity and finite P104 sieve survive; future progress must use information outside the scoped volume calculus |
 | One global positive-then-negative SCC packet order | NG30's exact `+,-,+,-` chain has four unbounded safe packets and final coefficient in `(1,2)` | P108's finite-stage SCC-condensation normal form survives |
+| Treat endpoint-tilted affine correction as a finite-mean error | P113/NG31 prove `E_+ beta_T=infinity` at every threshold `t>1` | Explicit fractional moments below one and deterministic P112 valley extraction survive |
+| Infer stabilization from a long finite zero-lift suffix | Source 167 has eleven terminal zero exponent lifts and crosses coefficient safety three steps later | Eventual zero remains exactly equivalent to a fixed positive source by P115 |
 | Fixed-depth reverse congruence | Phase 9 only controls selected finite/mechanical layers | A lossless recursive carry state remains open |
 | Height-free spacing | NG20 gives dropping-safe pairs four apart at every depth | Ordinary height must remain in H70/C05 |
 | Fixed finite/two-tail compression | NG19 gives opposite outcomes for every shorter residue window | Exact full state or proved dominance may compose |
@@ -675,7 +705,7 @@ External-source proof bodies were not rederived during this documentation audit.
 ### H72 — permanent-safe positive source
 
 **Target:** exclude every positive ordinary-integer permanent coefficient-safe
-tail. **Known traps:** NG21--NG30, 2-adic versus ordinary positivity,
+tail. **Known traps:** NG21--NG31, source 167, 2-adic versus ordinary positivity,
 per-address lattice errors, cross-`Q` endpoint nesting, loss of left-prefix
 carry data, and unproved finite-state closure. **Acceptance:** an orbit-specific arithmetic theorem proving one
 P80 bound, eventual P86 surplus reducibility, or an equivalent positive-height

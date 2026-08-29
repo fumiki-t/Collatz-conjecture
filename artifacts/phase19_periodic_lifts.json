@@ -1,0 +1,903 @@
+{
+  "bound": "For xi=a/d reduced with d odd and xi not a positive integer, r_K>=2^(K-P), P=1+ceil(log2 d), once 2^K>=2|a|.",
+  "claim": {
+    "E31": "VERIFIED_FINITE",
+    "P116": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase19-periodic-lifts-v1",
+  "novelty_boundary": "This is an elementary rational 2-adic congruence bound consistent with standard eventual periodicity; no novelty over that structure is claimed.",
+  "proves_collatz": false,
+  "repetitions": 16,
+  "row_digest_sha256": "2f465d37a1e51dc6fe6dede82c3d9a1f1981c669a12d1fad2c00f60b3d8889db",
+  "rows": [
+    {
+      "B": 1,
+      "L": 1,
+      "effective_loss_bits": 1,
+      "effective_threshold_bits": 1,
+      "fixed_2adic_source": {
+        "denominator": "1",
+        "numerator": "-1"
+      },
+      "positive_integer_cycle_candidate": false,
+      "q": 1,
+      "residues": [
+        {
+          "bits": 1,
+          "bound_applies": true,
+          "repetitions": 1,
+          "source_residue": 1
+        },
+        {
+          "bits": 2,
+          "bound_applies": true,
+          "repetitions": 2,
+          "source_residue": 3
+        },
+        {
+          "bits": 3,
+          "bound_applies": true,
+          "repetitions": 3,
+          "source_residue": 7
+        },
+        {
+          "bits": 4,
+          "bound_applies": true,
+          "repetitions": 4,
+          "source_residue": 15
+        },
+        {
+          "bits": 5,
+          "bound_applies": true,
+          "repetitions": 5,
+          "source_residue": 31
+        },
+        {
+          "bits": 6,
+          "bound_applies": true,
+          "repetitions": 6,
+          "source_residue": 63
+        },
+        {
+          "bits": 7,
+          "bound_applies": true,
+          "repetitions": 7,
+          "source_residue": 127
+        },
+        {
+          "bits": 8,
+          "bound_applies": true,
+          "repetitions": 8,
+          "source_residue": 255
+        },
+        {
+          "bits": 9,
+          "bound_applies": true,
+          "repetitions": 9,
+          "source_residue": 511
+        },
+        {
+          "bits": 10,
+          "bound_applies": true,
+          "repetitions": 10,
+          "source_residue": 1023
+        },
+        {
+          "bits": 11,
+          "bound_applies": true,
+          "repetitions": 11,
+          "source_residue": 2047
+        },
+        {
+          "bits": 12,
+          "bound_applies": true,
+          "repetitions": 12,
+          "source_residue": 4095
+        },
+        {
+          "bits": 13,
+          "bound_applies": true,
+          "repetitions": 13,
+          "source_residue": 8191
+        },
+        {
+          "bits": 14,
+          "bound_applies": true,
+          "repetitions": 14,
+          "source_residue": 16383
+        },
+        {
+          "bits": 15,
+          "bound_applies": true,
+          "repetitions": 15,
+          "source_residue": 32767
+        },
+        {
+          "bits": 16,
+          "bound_applies": true,
+          "repetitions": 16,
+          "source_residue": 65535
+        }
+      ],
+      "word": "1"
+    },
+    {
+      "B": 1,
+      "L": 2,
+      "effective_loss_bits": 1,
+      "effective_threshold_bits": 1,
+      "fixed_2adic_source": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "positive_integer_cycle_candidate": true,
+      "q": 1,
+      "residues": [
+        {
+          "bits": 2,
+          "bound_applies": false,
+          "repetitions": 1,
+          "source_residue": 1
+        },
+        {
+          "bits": 4,
+          "bound_applies": false,
+          "repetitions": 2,
+          "source_residue": 1
+        },
+        {
+          "bits": 6,
+          "bound_applies": false,
+          "repetitions": 3,
+          "source_residue": 1
+        },
+        {
+          "bits": 8,
+          "bound_applies": false,
+          "repetitions": 4,
+          "source_residue": 1
+        },
+        {
+          "bits": 10,
+          "bound_applies": false,
+          "repetitions": 5,
+          "source_residue": 1
+        },
+        {
+          "bits": 12,
+          "bound_applies": false,
+          "repetitions": 6,
+          "source_residue": 1
+        },
+        {
+          "bits": 14,
+          "bound_applies": false,
+          "repetitions": 7,
+          "source_residue": 1
+        },
+        {
+          "bits": 16,
+          "bound_applies": false,
+          "repetitions": 8,
+          "source_residue": 1
+        },
+        {
+          "bits": 18,
+          "bound_applies": false,
+          "repetitions": 9,
+          "source_residue": 1
+        },
+        {
+          "bits": 20,
+          "bound_applies": false,
+          "repetitions": 10,
+          "source_residue": 1
+        },
+        {
+          "bits": 22,
+          "bound_applies": false,
+          "repetitions": 11,
+          "source_residue": 1
+        },
+        {
+          "bits": 24,
+          "bound_applies": false,
+          "repetitions": 12,
+          "source_residue": 1
+        },
+        {
+          "bits": 26,
+          "bound_applies": false,
+          "repetitions": 13,
+          "source_residue": 1
+        },
+        {
+          "bits": 28,
+          "bound_applies": false,
+          "repetitions": 14,
+          "source_residue": 1
+        },
+        {
+          "bits": 30,
+          "bound_applies": false,
+          "repetitions": 15,
+          "source_residue": 1
+        },
+        {
+          "bits": 32,
+          "bound_applies": false,
+          "repetitions": 16,
+          "source_residue": 1
+        }
+      ],
+      "word": "10"
+    },
+    {
+      "B": 5,
+      "L": 3,
+      "effective_loss_bits": 1,
+      "effective_threshold_bits": 4,
+      "fixed_2adic_source": {
+        "denominator": "1",
+        "numerator": "-5"
+      },
+      "positive_integer_cycle_candidate": false,
+      "q": 2,
+      "residues": [
+        {
+          "bits": 3,
+          "bound_applies": false,
+          "repetitions": 1,
+          "source_residue": 3
+        },
+        {
+          "bits": 6,
+          "bound_applies": true,
+          "repetitions": 2,
+          "source_residue": 59
+        },
+        {
+          "bits": 9,
+          "bound_applies": true,
+          "repetitions": 3,
+          "source_residue": 507
+        },
+        {
+          "bits": 12,
+          "bound_applies": true,
+          "repetitions": 4,
+          "source_residue": 4091
+        },
+        {
+          "bits": 15,
+          "bound_applies": true,
+          "repetitions": 5,
+          "source_residue": 32763
+        },
+        {
+          "bits": 18,
+          "bound_applies": true,
+          "repetitions": 6,
+          "source_residue": 262139
+        },
+        {
+          "bits": 21,
+          "bound_applies": true,
+          "repetitions": 7,
+          "source_residue": 2097147
+        },
+        {
+          "bits": 24,
+          "bound_applies": true,
+          "repetitions": 8,
+          "source_residue": 16777211
+        },
+        {
+          "bits": 27,
+          "bound_applies": true,
+          "repetitions": 9,
+          "source_residue": 134217723
+        },
+        {
+          "bits": 30,
+          "bound_applies": true,
+          "repetitions": 10,
+          "source_residue": 1073741819
+        },
+        {
+          "bits": 33,
+          "bound_applies": true,
+          "repetitions": 11,
+          "source_residue": 8589934587
+        },
+        {
+          "bits": 36,
+          "bound_applies": true,
+          "repetitions": 12,
+          "source_residue": 68719476731
+        },
+        {
+          "bits": 39,
+          "bound_applies": true,
+          "repetitions": 13,
+          "source_residue": 549755813883
+        },
+        {
+          "bits": 42,
+          "bound_applies": true,
+          "repetitions": 14,
+          "source_residue": 4398046511099
+        },
+        {
+          "bits": 45,
+          "bound_applies": true,
+          "repetitions": 15,
+          "source_residue": 35184372088827
+        },
+        {
+          "bits": 48,
+          "bound_applies": true,
+          "repetitions": 16,
+          "source_residue": 281474976710651
+        }
+      ],
+      "word": "110"
+    },
+    {
+      "B": 19,
+      "L": 3,
+      "effective_loss_bits": 1,
+      "effective_threshold_bits": 1,
+      "fixed_2adic_source": {
+        "denominator": "1",
+        "numerator": "-1"
+      },
+      "positive_integer_cycle_candidate": false,
+      "q": 3,
+      "residues": [
+        {
+          "bits": 3,
+          "bound_applies": true,
+          "repetitions": 1,
+          "source_residue": 7
+        },
+        {
+          "bits": 6,
+          "bound_applies": true,
+          "repetitions": 2,
+          "source_residue": 63
+        },
+        {
+          "bits": 9,
+          "bound_applies": true,
+          "repetitions": 3,
+          "source_residue": 511
+        },
+        {
+          "bits": 12,
+          "bound_applies": true,
+          "repetitions": 4,
+          "source_residue": 4095
+        },
+        {
+          "bits": 15,
+          "bound_applies": true,
+          "repetitions": 5,
+          "source_residue": 32767
+        },
+        {
+          "bits": 18,
+          "bound_applies": true,
+          "repetitions": 6,
+          "source_residue": 262143
+        },
+        {
+          "bits": 21,
+          "bound_applies": true,
+          "repetitions": 7,
+          "source_residue": 2097151
+        },
+        {
+          "bits": 24,
+          "bound_applies": true,
+          "repetitions": 8,
+          "source_residue": 16777215
+        },
+        {
+          "bits": 27,
+          "bound_applies": true,
+          "repetitions": 9,
+          "source_residue": 134217727
+        },
+        {
+          "bits": 30,
+          "bound_applies": true,
+          "repetitions": 10,
+          "source_residue": 1073741823
+        },
+        {
+          "bits": 33,
+          "bound_applies": true,
+          "repetitions": 11,
+          "source_residue": 8589934591
+        },
+        {
+          "bits": 36,
+          "bound_applies": true,
+          "repetitions": 12,
+          "source_residue": 68719476735
+        },
+        {
+          "bits": 39,
+          "bound_applies": true,
+          "repetitions": 13,
+          "source_residue": 549755813887
+        },
+        {
+          "bits": 42,
+          "bound_applies": true,
+          "repetitions": 14,
+          "source_residue": 4398046511103
+        },
+        {
+          "bits": 45,
+          "bound_applies": true,
+          "repetitions": 15,
+          "source_residue": 35184372088831
+        },
+        {
+          "bits": 48,
+          "bound_applies": true,
+          "repetitions": 16,
+          "source_residue": 281474976710655
+        }
+      ],
+      "word": "111"
+    },
+    {
+      "B": 73,
+      "L": 5,
+      "effective_loss_bits": 7,
+      "effective_threshold_bits": 8,
+      "fixed_2adic_source": {
+        "denominator": "49",
+        "numerator": "-73"
+      },
+      "positive_integer_cycle_candidate": false,
+      "q": 4,
+      "residues": [
+        {
+          "bits": 5,
+          "bound_applies": false,
+          "repetitions": 1,
+          "source_residue": 7
+        },
+        {
+          "bits": 10,
+          "bound_applies": true,
+          "repetitions": 2,
+          "source_residue": 103
+        },
+        {
+          "bits": 15,
+          "bound_applies": true,
+          "repetitions": 3,
+          "source_residue": 11367
+        },
+        {
+          "bits": 20,
+          "bound_applies": true,
+          "repetitions": 4,
+          "source_residue": 1027175
+        },
+        {
+          "bits": 25,
+          "bound_applies": true,
+          "repetitions": 5,
+          "source_residue": 17804391
+        },
+        {
+          "bits": 30,
+          "bound_applies": true,
+          "repetitions": 6,
+          "source_residue": 219130983
+        },
+        {
+          "bits": 35,
+          "bound_applies": true,
+          "repetitions": 7,
+          "source_residue": 23841451111
+        },
+        {
+          "bits": 40,
+          "bound_applies": true,
+          "repetitions": 8,
+          "source_residue": 1054633602151
+        },
+        {
+          "bits": 45,
+          "bound_applies": true,
+          "repetitions": 9,
+          "source_residue": 2154145229927
+        },
+        {
+          "bits": 50,
+          "bound_applies": true,
+          "repetitions": 10,
+          "source_residue": 459550982384743
+        },
+        {
+          "bits": 55,
+          "bound_applies": true,
+          "repetitions": 11,
+          "source_residue": 13970349864496231
+        },
+        {
+          "bits": 60,
+          "bound_applies": true,
+          "repetitions": 12,
+          "source_residue": 1058805463414451303
+        },
+        {
+          "bits": 65,
+          "bound_applies": true,
+          "repetitions": 13,
+          "source_residue": 4517569977234992231
+        },
+        {
+          "bits": 70,
+          "bound_applies": true,
+          "repetitions": 14,
+          "source_residue": 963748261810131676263
+        },
+        {
+          "bits": 75,
+          "bound_applies": true,
+          "repetitions": 15,
+          "source_residue": 29297947159028002958439
+        },
+        {
+          "bits": 80,
+          "bound_applies": true,
+          "repetitions": 16,
+          "source_residue": 1011550175595914207407207
+        }
+      ],
+      "word": "11101"
+    },
+    {
+      "B": 5,
+      "L": 4,
+      "effective_loss_bits": 4,
+      "effective_threshold_bits": 4,
+      "fixed_2adic_source": {
+        "denominator": "7",
+        "numerator": "5"
+      },
+      "positive_integer_cycle_candidate": false,
+      "q": 2,
+      "residues": [
+        {
+          "bits": 4,
+          "bound_applies": true,
+          "repetitions": 1,
+          "source_residue": 3
+        },
+        {
+          "bits": 8,
+          "bound_applies": true,
+          "repetitions": 2,
+          "source_residue": 147
+        },
+        {
+          "bits": 12,
+          "bound_applies": true,
+          "repetitions": 3,
+          "source_residue": 1171
+        },
+        {
+          "bits": 16,
+          "bound_applies": true,
+          "repetitions": 4,
+          "source_residue": 9363
+        },
+        {
+          "bits": 20,
+          "bound_applies": true,
+          "repetitions": 5,
+          "source_residue": 599187
+        },
+        {
+          "bits": 24,
+          "bound_applies": true,
+          "repetitions": 6,
+          "source_residue": 4793491
+        },
+        {
+          "bits": 28,
+          "bound_applies": true,
+          "repetitions": 7,
+          "source_residue": 38347923
+        },
+        {
+          "bits": 32,
+          "bound_applies": true,
+          "repetitions": 8,
+          "source_residue": 2454267027
+        },
+        {
+          "bits": 36,
+          "bound_applies": true,
+          "repetitions": 9,
+          "source_residue": 19634136211
+        },
+        {
+          "bits": 40,
+          "bound_applies": true,
+          "repetitions": 10,
+          "source_residue": 157073089683
+        },
+        {
+          "bits": 44,
+          "bound_applies": true,
+          "repetitions": 11,
+          "source_residue": 10052677739667
+        },
+        {
+          "bits": 48,
+          "bound_applies": true,
+          "repetitions": 12,
+          "source_residue": 80421421917331
+        },
+        {
+          "bits": 52,
+          "bound_applies": true,
+          "repetitions": 13,
+          "source_residue": 643371375338643
+        },
+        {
+          "bits": 56,
+          "bound_applies": true,
+          "repetitions": 14,
+          "source_residue": 41175768021673107
+        },
+        {
+          "bits": 60,
+          "bound_applies": true,
+          "repetitions": 15,
+          "source_residue": 329406144173384851
+        },
+        {
+          "bits": 64,
+          "bound_applies": true,
+          "repetitions": 16,
+          "source_residue": 2635249153387078803
+        }
+      ],
+      "word": "1100"
+    },
+    {
+      "B": 817,
+      "L": 9,
+      "effective_loss_bits": 9,
+      "effective_threshold_bits": 11,
+      "fixed_2adic_source": {
+        "denominator": "217",
+        "numerator": "-817"
+      },
+      "positive_integer_cycle_candidate": false,
+      "q": 6,
+      "residues": [
+        {
+          "bits": 9,
+          "bound_applies": false,
+          "repetitions": 1,
+          "source_residue": 487
+        },
+        {
+          "bits": 18,
+          "bound_applies": true,
+          "repetitions": 2,
+          "source_residue": 90599
+        },
+        {
+          "bits": 27,
+          "bound_applies": true,
+          "repetitions": 3,
+          "source_residue": 16081383
+        },
+        {
+          "bits": 36,
+          "bound_applies": true,
+          "repetitions": 4,
+          "source_residue": 45918544359
+        },
+        {
+          "bits": 45,
+          "bound_applies": true,
+          "repetitions": 5,
+          "source_residue": 26915233948135
+        },
+        {
+          "bits": 54,
+          "bound_applies": true,
+          "repetitions": 6,
+          "source_residue": 17267257557475815
+        },
+        {
+          "bits": 63,
+          "bound_applies": true,
+          "repetitions": 7,
+          "source_residue": 3187801395226304999
+        },
+        {
+          "bits": 72,
+          "bound_applies": true,
+          "repetitions": 8,
+          "source_residue": 565813495643367629287
+        },
+        {
+          "bits": 81,
+          "bound_applies": true,
+          "repetitions": 9,
+          "source_residue": 1615615150637062030713319
+        },
+        {
+          "bits": 90,
+          "bound_applies": true,
+          "repetitions": 10,
+          "source_residue": 946995606089277076650942951
+        },
+        {
+          "bits": 99,
+          "bound_applies": true,
+          "repetitions": 11,
+          "source_residue": 607537614855925611777221812711
+        },
+        {
+          "bits": 108,
+          "bound_applies": true,
+          "repetitions": 12,
+          "source_residue": 112160790434940112943487103885799
+        },
+        {
+          "bits": 117,
+          "bound_applies": true,
+          "repetitions": 13,
+          "source_residue": 19907792563598970446716004359037415
+        },
+        {
+          "bits": 126,
+          "bound_applies": true,
+          "repetitions": 14,
+          "source_residue": 56844404612368752537084467831343768039
+        },
+        {
+          "bits": 135,
+          "bound_applies": true,
+          "repetitions": 15,
+          "source_residue": 33319445771134103556081952344286686437863
+        },
+        {
+          "bits": 144,
+          "bound_applies": true,
+          "repetitions": 16,
+          "source_residue": 21375829499052394531978937330464788908958183
+        }
+      ],
+      "word": "111011100"
+    },
+    {
+      "B": 287,
+      "L": 6,
+      "effective_loss_bits": 9,
+      "effective_threshold_bits": 10,
+      "fixed_2adic_source": {
+        "denominator": "179",
+        "numerator": "-287"
+      },
+      "positive_integer_cycle_candidate": false,
+      "q": 5,
+      "residues": [
+        {
+          "bits": 6,
+          "bound_applies": false,
+          "repetitions": 1,
+          "source_residue": 27
+        },
+        {
+          "bits": 12,
+          "bound_applies": true,
+          "repetitions": 2,
+          "source_residue": 1051
+        },
+        {
+          "bits": 18,
+          "bound_applies": true,
+          "repetitions": 3,
+          "source_residue": 156699
+        },
+        {
+          "bits": 24,
+          "bound_applies": true,
+          "repetitions": 4,
+          "source_residue": 6186011
+        },
+        {
+          "bits": 30,
+          "bound_applies": true,
+          "repetitions": 5,
+          "source_residue": 173958171
+        },
+        {
+          "bits": 36,
+          "bound_applies": true,
+          "repetitions": 6,
+          "source_residue": 18427569179
+        },
+        {
+          "bits": 42,
+          "bound_applies": true,
+          "repetitions": 7,
+          "source_residue": 3316962452507
+        },
+        {
+          "bits": 48,
+          "bound_applies": true,
+          "repetitions": 8,
+          "source_residue": 157248590341147
+        },
+        {
+          "bits": 54,
+          "bound_applies": true,
+          "repetitions": 9,
+          "source_residue": 14793947379295259
+        },
+        {
+          "bits": 60,
+          "bound_applies": true,
+          "repetitions": 10,
+          "source_residue": 573240301173236763
+        },
+        {
+          "bits": 66,
+          "bound_applies": true,
+          "repetitions": 11,
+          "source_residue": 70901452082190902299
+        },
+        {
+          "bits": 72,
+          "bound_applies": true,
+          "repetitions": 12,
+          "source_residue": 2136936788337660683291
+        },
+        {
+          "bits": 78,
+          "bound_applies": true,
+          "repetitions": 13,
+          "source_residue": 101306632928600210170907
+        },
+        {
+          "bits": 84,
+          "bound_applies": true,
+          "repetitions": 14,
+          "source_residue": 13399490648689521131938843
+        },
+        {
+          "bits": 90,
+          "bound_applies": true,
+          "repetitions": 15,
+          "source_residue": 864483267657388460125086747
+        },
+        {
+          "bits": 96,
+          "bound_applies": true,
+          "repetitions": 16,
+          "source_residue": 61523545192641021930182173723
+        }
+      ],
+      "word": "110111"
+    }
+  ],
+  "scope_repair": "The repeating block must contain an odd step. The all-zero block has fixed point zero and is not a positive odd cycle candidate."
+}

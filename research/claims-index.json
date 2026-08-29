@@ -1,5 +1,5 @@
 {
-  "claim_count": 135,
+  "claim_count": 143,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -1891,9 +1891,111 @@
       "last_audited": "2026-08-28",
       "notes": "A four-SCC `+,-,+,-` chain supports `1^(2k+1)0^n1 1^(2k+2)0^n2`, safe with final coefficient in `(1,2)` and all four packet lengths unbounded. P108's finite-stage form survives.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "If a finite accelerated exponent word sends a positive source `x<N` to `y=uN`, then the suffix after its last minimum prefix coefficient is strictly coefficient-safe. Either its terminal suffix coefficient exceeds `u` and its source is below `N`, or `n>3N(1-c/u)`.",
+      "collatz_implication": "Localizes affine-only smaller predecessors to long words or a near-diagonal coefficient band.",
+      "dependencies": "Exact accelerated affine identity; positivity; `u>=1`; no coefficient-safety assumption on the whole predecessor word.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Section 3; `artifacts/phase19_theory.json`; independent finite product audit.",
+      "first_introduced": "Phase 19",
+      "id": "P112",
+      "last_audited": "2026-08-28",
+      "notes": "It does not empty the band or by itself prove H89, H104, or H105.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Under `P_-(e)=2^-e` and `P_+(e)=3/4^e`, the accelerated coefficient and normalized correction give the stated four martingales and, for `T_t=inf{n>=1:c_n>=t}`, `E_+ beta_(T_t cap R)=(1/3)E_-(T_t cap R)`. For `t>1`, `E_+ beta_T=infinity`, while every moment `0<s<1` is bounded by `3^-s/(1-R(s))`, `R(s)=3^(1-s)/(2^(2-s)-1)<1`.",
+      "collatz_implication": "Gives exact fractional Haar-tail control and identifies a sharp obstruction to mean-affine pressure bookkeeping.",
+      "dependencies": "Exact geometric laws; bounded stopping first; finite Chernoff hitting under `P_+`; finite-horizon Doob bound under `P_-`; monotone convergence; strict Hölder for fractional moments.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Section 4; `artifacts/phase19_theory.json`; `artifacts/phase19_stopped_duality.json`; independent stopped-tree verifier.",
+      "first_introduced": "Phase 19",
+      "id": "P113",
+      "last_audited": "2026-08-28",
+      "notes": "It is a distributional theorem, not an exclusion of one deterministic positive source.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Along a positive nonperiodic permanent-safe odd orbit from tail minimum `S`, `sum_(i<j) exp(-D_i)=3(Y_j-S)`, and P72 implies at most `O_(S,H)(j^(1/9))` odd-prefix visits to every fixed discrepancy strip `D_i<=H`. Hence the fixed-packet balanced P109 itinerary has no positive ordinary realization.",
+      "collatz_implication": "Internally excludes the canonical balanced mixed-SCC survivor that P110 excluded only conditionally on EXT07.",
+      "dependencies": "P72; positive nonperiodic permanent-safe orbit; for the P109 application, fixed packets and positive lower frequency of one positive packet.",
+      "dependency_ids": [
+        "P109",
+        "P72"
+      ],
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Section 5; `artifacts/phase19_theory.json`.",
+      "first_introduced": "Phase 19",
+      "id": "P114",
+      "last_audited": "2026-08-28",
+      "notes": "It does not exclude mixed itineraries whose discrepancy escapes and returns to bounded strips only sublinearly. P110 remains a separately recorded historical conditional route.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Canonical accelerated source residues satisfy `r_(n+1)=r_n+lambda_n 2^E_n`, `0<=lambda_n<2^e_n`, and `3^(n+1)lambda_n == -(3y_n+1) mod 2^e_n`. An infinite exponent word has a fixed positive ordinary source iff its residues, equivalently its lifts, are eventually constant/zero.",
+      "collatz_implication": "Makes eventual nonzero lifts a precise ordinary-integrality target for an H72 sublanguage.",
+      "dependencies": "Exact nested source congruences; the valuation conclusion additionally assumes one positive integer realizes the entire infinite tail.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Section 6; `artifacts/phase19_theory.json`; independent congruence/lift verifier.",
+      "first_introduced": "Phase 19",
+      "id": "P115",
+      "last_audited": "2026-08-28",
+      "notes": "A single finite zero lift proves divisibility, not exact valuation; a long finite zero-run does not prove eventual stabilization.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a repeating parity block containing an odd step, the 2-adic fixed source is `xi=B/(2^L-3^q)`. If reduced `xi=a/d` is not a positive integer, then its canonical residue modulo `2^K` satisfies `r_K>=2^(K-P)`, `P=1+ceil(log2 d)`, once `2^K>=2|a|`; the same rational-preimage bound holds after a finite prefix.",
+      "collatz_implication": "Excludes ultimately periodic noncycle stabilization at one fixed positive source.",
+      "dependencies": "Exact rational affine fixed point; reduced odd denominator; positive canonical representative.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Section 8; `artifacts/phase19_periodic_lifts.json`; independent reduced-congruence verifier.",
+      "first_introduced": "Phase 19",
+      "id": "P116",
+      "last_audited": "2026-08-28",
+      "notes": "Positive integer cycle candidates remain separate. The all-zero block fixes zero and is outside the odd-step statement.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Exact independent reconstruction checks 136 affine-valley rows through `n=6,e_i<=4`, bounded first-passage trees through `R=12`, all 406,353 same-Q geodesic critical rows through `Q=17`, eight periodic words through 16 repeats, and 63 adversarial rows.",
+      "collatz_implication": "Checks every Phase 19 convention and preserves the source-167 finite obstruction.",
+      "dependencies": "Declared finite product/tree/Q/sample bounds; arbitrary-precision integers and exact rationals.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); `artifacts/phase19_theory.json`; `artifacts/phase19_stopped_duality.json`; `artifacts/phase19_source_lifts.json`; `artifacts/phase19_periodic_lifts.json`; `artifacts/phase19_adversarial.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 19",
+      "id": "E31",
+      "last_audited": "2026-08-28",
+      "notes": "At `Q=17`, 253,018 of 312,455 critical words are geodesic; source 167 has eleven terminal zero lifts and crosses coefficient safety three shortcut steps later. No asymptotic statement follows.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The endpoint-tilted first-passage affine correction has finite mean and may be inserted as a uniformly average-small error into coefficient-only Haar pressure.",
+      "collatz_implication": "Rules out the proposed finite-mean affine repair of NG29's pressure ceiling.",
+      "dependencies": "`P_+(e)=3/4^e`; first coefficient passage at any fixed `t>1`.",
+      "dependency_ids": [],
+      "evidence": "P113; [`../artifacts/phase19_obstruction_report.md`](../artifacts/phase19_obstruction_report.md); exact bounded-stopping proof and independent finite diagnostics.",
+      "first_introduced": "Phase 19",
+      "id": "NG31",
+      "last_audited": "2026-08-28",
+      "notes": "`E_+ beta_T=infinity`; every fractional moment below one remains finite and may still combine with deterministic height information.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Prove that every infinite coefficient-safe all-prefix same-Q-geodesic branch has infinitely many nonzero canonical accelerated source lifts.",
+      "collatz_implication": "With P115, would exclude positive ordinary sources in this exact H72 sublanguage.",
+      "dependencies": "P98; P115; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.",
+      "dependency_ids": [
+        "P115",
+        "P98"
+      ],
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Sections 6--7; [`context/H72.md`](context/H72.md).",
+      "first_introduced": "Phase 19",
+      "id": "H112",
+      "last_audited": "2026-08-28",
+      "notes": "It is not proved for all geodesic branches and would not alone exclude the nongeodesic H72 language or nontrivial cycles.",
+      "status": "OPEN"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "cdb05988a441d3bfd0a49497e2dae7b53fcd5df8e88aafeda940815f1b4fed91"
+  "source_sha256": "9cfe303bbbd875df143fdfe1b79d2d072c2b5f74c7af6baa6e1730c2acd87685"
 }

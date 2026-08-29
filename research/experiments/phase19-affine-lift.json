@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "phase19-affine-lift",
+  "status": "DRAFT",
+  "claim_ids": ["P112", "P113", "P114", "P115", "P116", "E31", "NG31", "H112", "H72"],
+  "objective": "Audit the affine-or-valley theorem, exact stopped change of measure and critical affine moment, unconditional bounded-strip obstruction, source-lift stabilization, and periodic rational-source growth.",
+  "exact_scope": {
+    "quantifiers": [
+      "every finite accelerated exponent word in P112 and P115 under the stated positive-integral predecessor hypotheses",
+      "the full infinite geometric exponent laws in P113, proved symbolically from bounded stopping and finite geometric sums",
+      "every nonperiodic positive permanent-safe tail covered by P72 in P114",
+      "every ultimately periodic parity word whose repeating block contains an odd step in P116",
+      "every all-prefix same-Q geodesic critical word through Q=17 in E31",
+      "the exact bounded first-passage tree and periodic/adversarial parameter ranges stored in E31"
+    ],
+    "bounds": {
+      "stopped_tree_threshold": "2",
+      "stopped_tree_depth": 12,
+      "maximum_geodesic_Q": 17,
+      "periodic_repetitions": 16,
+      "adversarial_family_parameter_maximum": 8
+    },
+    "completeness": "P112 through P116 and NG31 are symbolic claims with their written hypotheses. E31 is exhaustive only for the declared finite tree, Q cutoff, periodic samples, and adversarial ranges. H112 and H72 remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "none in acceptance; real powers in the fractional-moment statement are handled by symbolic Holder/log-convexity and are not estimated from finite tails"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase19_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase19.py --artifact-dir artifacts --write-report artifacts/phase19_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase19_properties.py tests/test_phase19_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q"]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "affine constants by an explicit exponent-position sum",
+      "the stopped tree in reverse exponent order with independently aggregated geometric tails",
+      "safe/geodesic words by string recursion instead of integer bit rows",
+      "canonical lifts from direct congruences and the source-167 literal orbit",
+      "periodic source bounds from the reduced rational congruence rather than binary-period simulation"
+    ],
+    "forbidden_imports": ["src.phase19_search", "phase19_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase19_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "source 167", "macro 0", "NG19", "NG22", "NG23", "NG28", "NG29", "NG30"
+  ],
+  "artifacts": [
+    "artifacts/phase19_theory.json",
+    "artifacts/phase19_stopped_duality.json",
+    "artifacts/phase19_source_lifts.json",
+    "artifacts/phase19_periodic_lifts.json",
+    "artifacts/phase19_adversarial.json",
+    "artifacts/phase19_obstruction_report.md",
+    "artifacts/phase19_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Reject optional-stopping claims not derived first for T intersect R.",
+    "Do not infer an asymptotic tail law from finite truncated moments.",
+    "Do not call the all-zero fixed point a positive cycle candidate.",
+    "Do not promote a long finite zero-lift suffix to eventual stabilization or a contradiction.",
+    "Do not identify a coherent 2-adic source with a positive ordinary integer.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The affine-or-valley theorem localizes but does not eliminate near-diagonal long words.",
+    "Infinite mean refutes average-small-error bookkeeping but does not exclude individual paths.",
+    "P114 excludes bounded-strip recurrent formal itineraries only if they are realized by a positive P72 orbit.",
+    "P115 is a characterization; proving infinitely many nonzero lifts on every H112 branch remains open.",
+    "H112, H72, the cycle branch, and Collatz remain open; proves_collatz remains false."
+  ],
+  "proves_collatz": false
+}

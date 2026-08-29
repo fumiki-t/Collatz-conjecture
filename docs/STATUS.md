@@ -86,6 +86,15 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   a negative SCC. A mixed SCC admits a formal balanced safe path with linear
   correction growth. P111 makes eventual zero canonical source lifts a
   necessary condition for one fixed positive ordinary source.
+- `VERIFIED_THEOREM`: P112 localizes every affine-only smaller predecessor
+  below a target height to a long word or a near-diagonal coefficient band.
+  P113 proves exact source/endpoint tilted martingales: the first-passage
+  affine correction has infinite first moment but finite moments of every
+  order below one. P114 combines the exact occupation identity with P72 to
+  exclude the fixed-packet balanced P109 itinerary without EXT07. P115 makes
+  eventual zero accelerated source lifts equivalent to one fixed positive
+  ordinary source, and P116 gives effective exponential canonical-residue
+  growth for ultimately periodic noncycle words.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -117,6 +126,10 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   congruence under a common suffix but not a left congruence under prefixing.
   Phase 18 further shows that every exact mixed finite abstraction has formal
   balanced survivors, while no accepted H72 model is a closed finite graph.
+  Phase 19 excludes the canonical bounded-strip survivor internally and adds
+  H112, the narrower open target of proving infinitely many nonzero source
+  lifts on every infinite coefficient-safe all-prefix same-Q-geodesic branch.
+  Source 167's eleven terminal zero lifts forbid any bounded zero-run shortcut.
 - `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
   sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
   reciprocal orbit summability and an odd permanent-safe tail minimum for
@@ -224,6 +237,15 @@ No item above proves the Collatz conjecture.
   through r=4, mod-648 counts `51,66,72,117,129,172,192,204,212,216`, the
   exact 270 logarithm certificate, an 11-word code through three concatenated
   blocks, and 62 adversarial rows. These are bounded results.
+- Phase 18: E30 classifies all 4,181 deterministic partial `{0,1}` graphs on
+  at most three vertices, reconstructs a 512-packet mixed schedule, and checks
+  74 adversarial rows. The finite classification is not a closed model of H72.
+- Phase 19: E31 independently reconstructs 136 affine-valley rows, the exact
+  first-passage trees through depth 12, all 406,353 same-Q geodesic critical
+  rows through `Q=17`, eight periodic samples through 16 repeats, and 63
+  adversarial rows. At `Q=17`, source 167 has eleven terminal zero lifts but
+  crosses coefficient safety three shortcut steps later. This is a finite
+  falsifier, not an eventual theorem.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary

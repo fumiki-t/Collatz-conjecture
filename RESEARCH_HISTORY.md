@@ -1291,3 +1291,49 @@ Phase 18 does not prove a finite-state presentation for H72, positive ordinary
 integrality of any formal path, exclusion of all mixed itineraries, H72,
 nontrivial-cycle exclusion, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 33. Phase 19 — affine valleys and source lifts
+
+**Branch:** `feat/phase19-affine-lift`
+
+**Acceptance record:** [`PHASE19_RUN_RESULTS.md`](PHASE19_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/affine-lift/REPORT.md`](research/audits/affine-lift/REPORT.md)
+
+Phase 19 treated the supplied affine-lift note as an untrusted proposal and
+repaired three scope boundaries: finite zero-lift congruences do not establish
+exact future valuations, the periodic statement requires an odd step, and a
+long finite zero-lift suffix is not eventual stabilization.
+
+P112 proves the deterministic affine-or-valley alternative: a smaller
+positive predecessor either exposes a smaller strictly coefficient-safe suffix
+or its length satisfies `n>3N(1-c/u)`. P113 proves the two exact geometric
+tilts and bounded-stopping duality. Its main negative conclusion is NG31:
+under the endpoint tilt, the first-passage affine correction has infinite
+first moment, although all fractional moments below one are explicitly finite.
+
+P114 combines the exact identity
+`sum_(i<j)exp(-D_i)=3(Y_j-S)` with P72 to bound visits to every fixed
+discrepancy strip by `O(j^(1/9))`. This internally excludes the particular
+fixed-packet balanced P109 itinerary from positive ordinary realization,
+superseding P110's need for EXT07 in that narrow application. It does not
+exclude every escaping mixed itinerary.
+
+P115 gives exact canonical source-lift digits and proves that one fixed
+positive ordinary source is equivalent to eventual zero lifts. P116 gives an
+effective exponential residue lower bound for rational ultimately periodic
+noncycle words. H112, the claim that every infinite safe all-prefix same-Q
+geodesic branch has infinitely many nonzero lifts, remains open.
+
+E31 independently reconstructs 136 affine-valley rows, stopped trees through
+depth 12, all 406,353 same-Q geodesic critical rows through Q=17, eight
+periodic samples, and 63 adversarial rows. The source-167 word has eleven
+terminal zero exponent lifts, yet literal continuation crosses coefficient
+safety three shortcut steps later; it is the preserved finite falsifier for
+bounded zero-run rules.
+
+### What this result does not prove
+
+Phase 19 does not prove H112, empty the affine-only near-diagonal band,
+exclude every escaping-discrepancy itinerary, prove H72/H89/H104/H105, exclude
+nontrivial cycles, or prove the Collatz conjecture. `proves_collatz=false`.
