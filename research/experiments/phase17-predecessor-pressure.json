@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase17-predecessor-pressure",
-  "status": "DRAFT",
+  "status": "ACCEPTED",
   "claim_ids": ["P104", "P105", "P106", "E28", "E29", "NG29", "H104", "H105"],
   "objective": "Audit four-odd accelerated predecessor residues, strengthen the distinct finite-crossing split to 270, prove the exponent-code second-moment identity, and state an exact ceiling only for coefficient-only summed-Haar mechanisms.",
   "exact_scope": {
@@ -31,5 +31,15 @@
   "artifacts": ["artifacts/phase17_predecessor_sieve.json", "artifacts/phase17_direct_audit.json", "artifacts/phase17_pressure.json", "artifacts/phase17_suffix_code.json", "artifacts/phase17_adversarial.json", "artifacts/phase17_obstruction_report.md", "artifacts/phase17_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Stop at the first mismatch in the mod-81 multiplier or mod-648 CRT tables.", "Reject the 270 constant if the exact log margin is not positive.", "Do not call the right-continuous upper envelope the exact allowed set at multiplier thresholds.", "Do not generalize the coefficient-only Haar ceiling to affine, transition-aware, or ordinary-source mechanisms.", "Do not infer asymptotic code-root convergence from the r=4 finite code.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
   "interpretation_boundary": ["G270 and H270 remain unexcluded.", "The pressure identity is symbolic and its union bound has no lower measure implication when cylinders collide.", "The 360.469 ceiling is scoped to a deliberately information-discarding proof mechanism.", "The periodic branch, H89, H72, and Collatz remain open.", "proves_collatz remains false."],
+  "recorded_result": {
+    "commit": "f2ab1b4aa0fe957dd7d9ee0f4c81e51735682c1b",
+    "generator": "completed at n<300000 in 1.90s",
+    "verifier": "valid=true at n<300000 in 2.03s",
+    "focused_tests": "15 passed in 7.13s",
+    "full_tests": "268 passed in 335.16s",
+    "strict_research_health": "valid=true with zero untracked artifacts",
+    "manifest_sha256": "ea932e96e56ef2692de6879b411b0efa638c3cb0783ddbc20bd4722d8f1e8d1c",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }

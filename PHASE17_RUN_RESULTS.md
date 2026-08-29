@@ -92,8 +92,8 @@ the stored report and scope boundaries. Tamper tests alter the CRT count,
 exact log margin, equality convention, direct digest, Haar union boundary,
 suffix digest, adversarial digest, and obstruction report.
 
-Final test counts, timings, commit, and manifest hashes are filled into
-`research/experiments/phase17-predecessor-pressure.json` at acceptance.
+The result commit, test counts, timings, and manifest hash are fixed in
+`research/experiments/phase17-predecessor-pressure.json`.
 
 ```text
 generator full n<300000:           completed in 1.90s
