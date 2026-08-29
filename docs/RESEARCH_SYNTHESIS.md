@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 17
+# Collatz research synthesis through Phase 18
 
 **Audit date:** 2026-08-28
 
-**Audited base:** `464d74ce1acc5628d892170576847b34abf83931`
+**Audited base:** `b20bb167631a15e518c0460a64dbe42ed5116295`
 
-**Latest accepted phase:** Phase 17
+**Latest accepted phase:** Phase 18
 
 **Problem status:** `OPEN`
 
@@ -541,6 +541,29 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md) and the
   [`Phase 17 audit`](../research/audits/predecessor-pressure/REPORT.md).
 
+### Phase 18 — affine finite-state trichotomy
+
+- **Purpose:** determine exactly what a closed finite affine abstraction could
+  prove about permanent-safe paths without confusing formal symbolic paths
+  with positive ordinary Collatz sources.
+- **Accepted:** P107 bounds normalized correction in every graph without mixed
+  SCCs. P108 gives the corrected Type I/II reachability criterion and
+  finite-stage SCC-packet normal form. P109 constructs a balanced formal
+  survivor in every mixed SCC. P111 proves eventual zero canonical source
+  lifts are necessary for a fixed positive ordinary source.
+- **Conditional:** P110 uses EXT07 to exclude only the canonical balanced P109
+  schedule from positive ordinary nonperiodic orbits.
+- **Finite evidence:** E30 classifies 4,181 small graphs, reconstructs a
+  512-packet mixed schedule, audits 74 adversarial rows, and checks existing
+  project abstractions.
+- **Obstacle:** NG30 refutes a single global positive-then-negative SCC order.
+  More importantly, no accepted model is a prefix-complete closed finite graph
+  for the full H72 language.
+- **Handoff:** future automata must prove closure, retain ordinary source lifts,
+  and survive NG22/NG24/NG30. See
+  [`PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md) and the
+  [`Phase 18 audit`](../research/audits/affine-trichotomy/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -548,8 +571,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P106 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG29.
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111 with their exact hypotheses;
+- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG30.
 
 None is a full convergence theorem.
 
@@ -584,6 +607,10 @@ None is a full convergence theorem.
 6. **P104/H104/H105 target.** For distinct odd values, every finite crossing is
    in G270 or H270. Excluding both would close that nonperiodic finite-crossing
    branch. P102 deliberately leaves repeated periodic values separate.
+7. **P107--P111 finite-state boundary.** A proved closed finite H72 model would
+   fall into the exact Phase 18 trichotomy, but no current model meets the
+   closure hypothesis. Mixed formal survivors must be separated from positive
+   integers through P111-style source stabilization or stronger height data.
 
 ### Nontrivial cycles
 
@@ -605,6 +632,7 @@ The complete obstruction archive is
 | Contact closure plus pressure | NG17's all-contact word satisfies the local constraints | Endpoint and least-residue information remain essential |
 | Positive same-Q carry | NG28 has an exact safe Q=26 endpoint pair with carry -3 | P97's signed lower bounds survive; carry sign must remain in the state |
 | Unbounded coefficient-only predecessor Haar pressure | NG29's optimistic envelope reaches its reciprocal threshold below normalized count 360.469 | P105's exact word identity and finite P104 sieve survive; future progress must use information outside the scoped volume calculus |
+| One global positive-then-negative SCC packet order | NG30's exact `+,-,+,-` chain has four unbounded safe packets and final coefficient in `(1,2)` | P108's finite-stage SCC-condensation normal form survives |
 | Fixed-depth reverse congruence | Phase 9 only controls selected finite/mechanical layers | A lossless recursive carry state remains open |
 | Height-free spacing | NG20 gives dropping-safe pairs four apart at every depth | Ordinary height must remain in H70/C05 |
 | Fixed finite/two-tail compression | NG19 gives opposite outcomes for every shorter residue window | Exact full state or proved dominance may compose |
@@ -647,9 +675,9 @@ External-source proof bodies were not rederived during this documentation audit.
 ### H72 — permanent-safe positive source
 
 **Target:** exclude every positive ordinary-integer permanent coefficient-safe
-tail. **Known traps:** NG21--NG26, 2-adic versus ordinary positivity,
-per-address lattice errors, cross-`Q` endpoint nesting, and loss of left-prefix
-carry data. **Acceptance:** an orbit-specific arithmetic theorem proving one
+tail. **Known traps:** NG21--NG30, 2-adic versus ordinary positivity,
+per-address lattice errors, cross-`Q` endpoint nesting, loss of left-prefix
+carry data, and unproved finite-state closure. **Acceptance:** an orbit-specific arithmetic theorem proving one
 P80 bound, eventual P86 surplus reducibility, or an equivalent positive-height
 obstruction, plus a checked finite remainder. See
 [`context/H72.md`](context/H72.md).

@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 17's predecessor-pressure dichotomy is the latest research
-layer.
+proof of the conjecture. Phase 18's affine finite-state trichotomy is the
+latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–17 evidence boundaries, and current obligations.
+   branch map, Phase 1–18 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md), then its inputs:
+   [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md),
    [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md),
    [`../PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md),
    [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md),
@@ -108,6 +109,11 @@ flowchart TD
     P104 --> H105["H105 exclude H270"]
     P105["P105 exponent pressure"] --> NG29["NG29 Haar ceiling"]
     NG29 --> H104
+    P107["P107 sign-pure beta bound"] --> H72
+    P108["P108 finite-state Type I/II"] --> H72
+    P109["P109 mixed formal survivor"] --> H72
+    P111["P111 source lifts"] --> H72
+    NG30["NG30 one-switch failure"] --> H72
     NG28["NG28 negative carry"] --> H89
     NG24["NG24 left-congruence failure"] --> H72
     NG23["NG23 raw Haar failure"] --> H72
@@ -121,10 +127,11 @@ Arrows mean “is an input to,” not “has been proved unconditionally.” X02
 external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
-P77--P79, P81--P89, P91--P102, and P104--P106 are exact renewal/ancestral/critical theorems;
-P80, P90, and P103 are conditional implications.
+P77--P79, P81--P89, P91--P102, P104--P109, and P111 are exact
+renewal/ancestral/critical/finite-state theorems; P80, P90, P103, and P110 are
+conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
-left-congruence failure, and NG25--NG29 delimit the finite ancestral search
+left-congruence failure, and NG25--NG30 delimit the finite ancestral search
 language. H54, H70, H72, H89, H104, H105, C04, C05, every uneliminated P69 branch,
 and the Collatz conjecture remain open.
 
@@ -137,7 +144,7 @@ and the Collatz conjecture remain open.
 | H104 | `OPEN` | Exclude every positive ordinary-source all-prefix same-Q geodesic G270 word | Retain fixed source plus affine/carry state; reject contact/all-contact/Haar-only shortcuts with NG17/P73/NG29 |
 | H105 | `OPEN` | Empty the H270 box `N<q/270`, `X<q/135`, `Z<2q/135` | Use a two-sided exact state and keep the periodic branch separate; test NG19 and NG24--NG29 |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
-| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, or an equivalent positivity/height obstruction extending P72/P75--P96 | Reject mod-6-only improvements with NG21, analytic/2-adic-only contradictions with NG22, raw Haar substitution with NG23/P96, prefix-closed endpoint states with NG24, and same-Q/safe-target/bounded-gain restrictions with NG25--NG27; test on E20/E22--E26, the `{1,2}` core, and all mandatory families |
+| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, or an equivalent positivity/height obstruction extending P72/P75--P111 | Reject NG21--NG30, require a prefix-complete closed state model, and retain P111 ordinary-source lift stabilization; test on E20/E22--E26/E30, the `{1,2}` core, and all mandatory families |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -170,7 +177,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 17 provides the
+artifacts and preserve the recorded manifest hash. Phase 18 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -190,7 +197,7 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   raw local-volume counting by NG23, and endpoint-only prefix propagation by
   NG24; same-Q or safe-target-only pruning is blocked by NG25/NG26, and
   bounded same-Q gain by NG27, positive carry by NG28, and coefficient-only
-  unbounded Haar pressure by NG29.
+  unbounded Haar pressure by NG29, and a one-switch SCC normal form by NG30.
 - Attack H104 and H105 as separate obligations. A proof of one branch does not
   close P104, and neither branch applies to repeated periodic values.
 - Attack H89 only with a proposed all-depth P91/P92/P95/P97 recurrence. E25's

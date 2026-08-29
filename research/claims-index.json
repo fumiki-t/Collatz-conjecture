@@ -1,5 +1,5 @@
 {
-  "claim_count": 128,
+  "claim_count": 135,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -974,16 +974,23 @@
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, or surplus/coalescent irreducibility to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, E23, E24, NG21, NG22, NG23, NG24, NG25, NG26.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, E23, E24, E30, NG21, NG22, NG23, NG24, NG25, NG26, NG30.",
       "dependency_ids": [
         "E23",
         "E24",
+        "E30",
         "NG21",
         "NG22",
         "NG23",
         "NG24",
         "NG25",
         "NG26",
+        "NG30",
+        "P107",
+        "P108",
+        "P109",
+        "P110",
+        "P111",
         "P72",
         "P73",
         "P75",
@@ -1001,11 +1008,11 @@
         "P87",
         "P88"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md); [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md); [`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md); [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md); [`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md); [`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
       "last_audited": "2026-08-28",
-      "notes": "P86/P87 enlarge least-source pruning across Q and unsafe targets, but E24 is finite; its Q=17 `{1,2}`-gap core remains fully undominated for `Q_b<=Q_d`. P80 remains unproved.",
+      "notes": "Phase 18 shows that every exact mixed finite abstraction admits formal balanced survivors and that a fixed positive source requires eventual zero lifts, but no accepted model is a closed finite presentation of the full language. P80 remains unproved.",
       "status": "OPEN"
     },
     {
@@ -1795,9 +1802,98 @@
       "last_audited": "2026-08-28",
       "notes": "No accepted transducer, pumping, or meet-in-the-middle certificate empties the box; the periodic branch remains separate.",
       "status": "OPEN"
+    },
+    {
+      "claim": "In a finite directed graph whose nonempty edges carry shortcut affine blocks, if no SCC has both positive- and negative-coefficient cycles, then normalized affine correction `beta` is uniformly bounded over every coefficient-safe finite path.",
+      "collatz_implication": "Shows that unbounded affine correction in a genuinely closed finite abstraction requires a mixed SCC.",
+      "dependencies": "Finite graph; exact edge coefficients; every nonempty path prefix has coefficient greater than one.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md), Sections 2--4; `artifacts/phase18_theory.json`; independent affine/SCC verifier.",
+      "first_introduced": "Phase 18",
+      "id": "P107",
+      "last_audited": "2026-08-28",
+      "notes": "The bound is graph-dependent. No accepted artifact is a closed finite graph for the full H72 language.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a finite graph with no mixed SCC, safe paths with coefficient at most any fixed `R>1` have bounded length iff no positive SCC reaches a negative SCC; when such reachability exists, arbitrarily long bounded-final-coefficient safe paths exist. Every path has a finite-stage sign-pure SCC-packet decomposition.",
+      "collatz_implication": "Gives the corrected Type I/II branch of the finite-state trichotomy.",
+      "dependencies": "P107 graph setting; paths may start at any graph vertex.",
+      "dependency_ids": [
+        "P107"
+      ],
+      "evidence": "[`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md), Section 5; `artifacts/phase18_theory.json`; exact SCC audit.",
+      "first_introduced": "Phase 18",
+      "id": "P108",
+      "last_audited": "2026-08-28",
+      "notes": "The packet signs need not have only one global positive-to-negative switch; NG30 is the exact obstruction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every mixed SCC in a finite Collatz-block graph admits a formal infinite coefficient-safe path whose boundary coefficient stays in a fixed positive bounded interval and whose normalized affine correction grows at least linearly in block count.",
+      "collatz_implication": "Identifies the unavoidable formal-survivor branch of every exact mixed finite abstraction.",
+      "dependencies": "Finite graph; exact nonempty Collatz parity-block edges; formal path, with no positive-source hypothesis.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md), Section 6; `artifacts/phase18_theory.json`; `artifacts/phase18_mixed_schedule.json`.",
+      "first_introduced": "Phase 18",
+      "id": "P109",
+      "last_audited": "2026-08-28",
+      "notes": "It constructs a coherent itinerary, not a positive ordinary integer source or a Collatz counterexample.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming EXT07, the particular balanced formal itinerary constructed in P109 cannot be realized by a fixed positive ordinary source: its block-boundary values are `Theta(i)`, forcing a divergent reciprocal subsum.",
+      "collatz_implication": "Excludes the canonical balanced mixed-SCC schedule from the positive nonperiodic branch, conditionally on the external sparsity theorem.",
+      "dependencies": "P109; EXT07; positive ordinary realization of that itinerary.",
+      "dependency_ids": [
+        "EXT07",
+        "P109"
+      ],
+      "evidence": "[`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md), Section 7.",
+      "first_introduced": "Phase 18",
+      "id": "P110",
+      "last_audited": "2026-08-28",
+      "notes": "It does not exclude every itinerary through a mixed SCC and is not an internal proof of EXT07.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "If `r2(P)` is the canonical source residue modulo `2^L`, then an edge extension of length `ell` has `r2(Pe)=r2(P)+lambda*2^L` with `0<=lambda<2^ell`; any one fixed positive ordinary source realizing all prefixes has `lambda=0` eventually.",
+      "collatz_implication": "Isolates eventual source-residue stabilization as the ordinary-integrality test missing from formal finite-state paths.",
+      "dependencies": "Exact affine source congruence; nested prefix cylinders.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/affine-trichotomy/REPORT.md`](../research/audits/affine-trichotomy/REPORT.md), Section 8; `artifacts/phase18_mixed_schedule.json`; independent lift reconstruction.",
+      "first_introduced": "Phase 18",
+      "id": "P111",
+      "last_audited": "2026-08-28",
+      "notes": "Finite nonzero lifts do not prove nonstabilization; a coherent 2-adic source need not be a positive ordinary integer.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Exact independent recomputation classifies all 4,181 deterministic partial `{0,1}`-labeled graphs on one through three vertices as Type I/II/III counts `1696,176,2309`, checks safe paths through depth 12, reconstructs a 512-block mixed schedule, audits current project models, and verifies 74 adversarial rows.",
+      "collatz_implication": "Regresses every Phase 18 convention and shows why existing coefficient alphabets are not yet exact H72 automata.",
+      "dependencies": "Recorded finite graph class, depth, threshold, model files, and adversarial parameter ranges; arbitrary-precision integers/Fraction.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); `artifacts/phase18_graph_audit.json`; `artifacts/phase18_mixed_schedule.json`; `artifacts/phase18_project_models.json`; `artifacts/phase18_adversarial.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 18",
+      "id": "E30",
+      "last_audited": "2026-08-28",
+      "notes": "Finite enumeration is not the proof of P107--P111 and supplies no asymptotic ordinary-source exclusion. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every long bounded-final-discrepancy safe path in a graph with sign-pure SCCs is, modulo bounded connectors, one global positive packet followed by one global negative packet.",
+      "collatz_implication": "Requires future finite-state normal forms to retain the full SCC condensation order rather than a single mountain.",
+      "dependencies": "Finite Collatz-block graph with no mixed SCC.",
+      "dependency_ids": [],
+      "evidence": "`artifacts/phase18_theory.json`; `artifacts/phase18_obstruction_report.md`; independent exact counterfamily verifier.",
+      "first_introduced": "Phase 18",
+      "id": "NG30",
+      "last_audited": "2026-08-28",
+      "notes": "A four-SCC `+,-,+,-` chain supports `1^(2k+1)0^n1 1^(2k+2)0^n2`, safe with final coefficient in `(1,2)` and all four packet lengths unbounded. P108's finite-stage form survives.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "6e10a6bbd1b1fb63e2f8b7e489edfee440187e800f0f0687bb299a442d5bd6d3"
+  "source_sha256": "cdb05988a441d3bfd0a49497e2dae7b53fcd5df8e88aafeda940815f1b4fed91"
 }

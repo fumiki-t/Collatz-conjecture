@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 17,
+    "latest_phase": 18,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 17,
-    "report": "PHASE17_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase17_verifier.json",
+    "phase": 18,
+    "report": "PHASE18_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase18_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase17-predecessor-pressure.json"
+    "experiment_manifest": "research/experiments/phase18-affine-trichotomy.json"
   },
   "active_obligations": [
     {
@@ -77,8 +77,8 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "E20", "E21", "E22", "E23", "E24", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26"],
-      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; P86/P87 strengthen least-source pruning across Q and unsafe targets, but E24 is finite, P80 and an all-depth surplus/height theorem remain unproved, and cycles remain separate."
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "E20", "E21", "E22", "E23", "E24", "E30", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30"],
+      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch; Phase 18 constrains any finite-state route but no accepted model is closed and prefix-complete, P80 and an all-depth ordinary-height theorem remain unproved, and cycles remain separate."
     },
     {
       "id": "C04",
@@ -169,7 +169,14 @@
     "E29",
     "NG29",
     "H104",
-    "H105"
+    "H105",
+    "P107",
+    "P108",
+    "P109",
+    "P110",
+    "P111",
+    "E30",
+    "NG30"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 17
+    assert result["latest_phase"] == 18
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -79,9 +79,16 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["NG29"] == "REFUTED"
     assert result["active_focus"]["H104"] == "OPEN"
     assert result["active_focus"]["H105"] == "OPEN"
+    assert result["active_focus"]["P107"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P108"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P109"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P110"] == "CONDITIONAL"
+    assert result["active_focus"]["P111"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E30"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG30"] == "REFUTED"
     assert result["latest_supplemental_verifier"]["valid"] is True
-    assert result["latest_supplemental_verifier"]["claims"]["H104"] == "OPEN"
-    assert result["latest_supplemental_verifier"]["claims"]["H105"] == "OPEN"
+    assert result["latest_supplemental_verifier"]["claims"]["H72"] == "OPEN"
+    assert result["latest_supplemental_verifier"]["claims"]["NG30"] == "REFUTED"
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -96,6 +103,8 @@ def test_repository_research_health() -> None:
     assert ("phase16-critical-dichotomy" in result["accepted_experiments"]) == (phase16["status"] == "ACCEPTED")
     phase17 = json.loads(Path("research/experiments/phase17-predecessor-pressure.json").read_text(encoding="utf-8"))
     assert ("phase17-predecessor-pressure" in result["accepted_experiments"]) == (phase17["status"] == "ACCEPTED")
+    phase18 = json.loads(Path("research/experiments/phase18-affine-trichotomy.json").read_text(encoding="utf-8"))
+    assert ("phase18-affine-trichotomy" in result["accepted_experiments"]) == (phase18["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -119,7 +128,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 128
+    assert committed["claim_count"] == 135
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert set(rows["H72"]["dependency_ids"]) == {
@@ -139,14 +148,21 @@ def test_generated_claim_index_is_complete() -> None:
         "P86",
         "P87",
         "P88",
+        "P107",
+        "P108",
+        "P109",
+        "P110",
+        "P111",
         "E23",
         "E24",
+        "E30",
         "NG21",
         "NG22",
         "NG23",
         "NG24",
         "NG25",
         "NG26",
+        "NG30",
     }
 
 

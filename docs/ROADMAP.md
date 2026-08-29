@@ -179,14 +179,25 @@ suffix-decodable r=4 subcode. NG29 proves a ceiling only for the explicitly
 scoped coefficient-only summed-Haar calculus. It neither closes H72 nor
 refutes affine-aware, fixed-source, transition-aware, or carry-aware methods.
 
+Phase 18 adds a design-level finite-state trichotomy. P107/P108 prove that a
+closed sign-pure SCC graph has bounded normalized affine correction and a
+finite-stage Type I/II structure. P109 shows that every mixed SCC admits a
+formal balanced survivor with linear correction; P110 excludes only its
+canonical balanced schedule conditionally on EXT07. P111 isolates eventual
+zero source lifts as the fixed-positive-integer boundary. NG30 refutes a
+single positive-then-negative packet order. No current H72 abstraction is a
+closed finite graph, so these theorems constrain future models rather than
+close the branch.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
-  cross-Q/unsafe-target witnesses, NG27--NG29, the `{1,2}` core, and every mandatory
+  cross-Q/unsafe-target witnesses, NG27--NG30, the `{1,2}` core, and every mandatory
 adversarial family. Reject any proof that identifies a general
 2-adic source with a positive ordinary integer, drops the per-address lattice
-`+1`, treats `(Q,r3)` as a prefix-closed state, or promotes finite scarcity to
-an eventual statement.
+`+1`, treats `(Q,r3)` as a prefix-closed state, assumes one-switch SCC order,
+or promotes finite scarcity to an eventual statement. Any proposed finite
+automaton must prove prefix completeness and track P111 source lifts.
 
 **Success criterion.** An orbit-specific arithmetic theorem that excludes
 every positive ordinary integer permanent-safe source, with an independently

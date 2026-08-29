@@ -1,0 +1,100 @@
+{
+  "claim": {
+    "E30": "VERIFIED_FINITE",
+    "H72": "OPEN"
+  },
+  "conclusion": "No accepted artifact currently supplies a prefix-complete closed finite graph for all H72 candidates.",
+  "format": "collatz-phase18-project-models-v1",
+  "models": [
+    {
+      "classification": "NOT_AN_EXACT_FINITE_GRAPH",
+      "name": "Phase 7 macro alphabet",
+      "observed": {
+        "coefficient_signs": {
+          "negative": 11433,
+          "positive": 75582
+        },
+        "macro0": {
+          "B": 527345,
+          "L": 19,
+          "block_words": [
+            "1111111111110000000"
+          ],
+          "canonical_source_residue_mod_2L": 69631,
+          "coefficient": {
+            "denominator": "524288",
+            "numerator": "531441"
+          },
+          "normalized_beta": {
+            "denominator": "531441",
+            "numerator": "527345"
+          },
+          "prefix_coefficients": [
+            {
+              "denominator": "524288",
+              "numerator": "531441"
+            }
+          ],
+          "q": 12,
+          "strictly_coefficient_safe": true,
+          "word": "1111111111110000000"
+        },
+        "macros": 87015
+      },
+      "reason": "The artifact is a finite factor alphabet without a closed transition graph. Free one-state concatenation would be a Type III overapproximation only."
+    },
+    {
+      "classification": "TYPE_III_OVERAPPROXIMATION",
+      "name": "Phase 8 A/B coefficient semigroup",
+      "observed": {
+        "coordinate": {
+          "A": "U=32u -> U'=81u",
+          "B": "U=16u+108 -> U'=9u+108",
+          "definition": "U=49x+73",
+          "invariant": "U=73 mod 49"
+        }
+      },
+      "reason": "A expands and B contracts in the coefficient coordinate, but literal integer admissibility uses unbounded affine state and guards."
+    },
+    {
+      "classification": "NOT_FIXED_FINITE",
+      "name": "Phase 10/11 two-tail states",
+      "reason": "Residues, ordinary heights, and affine margins grow with the horizon."
+    },
+    {
+      "classification": "FORMAL_UNBOUNDED_STATE",
+      "name": "Phase 13 square-root countermodel",
+      "reason": "The defect controller tracks an unbounded square-root-scale state; NG22 supplies a coherent 2-adic source but no positive ordinary integer."
+    },
+    {
+      "classification": "NOT_CLOSED",
+      "name": "Phase 14 coalescent quotient",
+      "reason": "NG24 refutes left-congruence/prefix closure of the finite endpoint quotient."
+    },
+    {
+      "classification": "NOT_A_CLOSED_AUTOMATON",
+      "name": "Phase 16 local predecessor rules",
+      "reason": "The rules are local height-conditioned exclusions, not a complete transition presentation."
+    },
+    {
+      "classification": "TYPE_I_SUBLANGUAGE",
+      "name": "Phase 17 suffix code",
+      "observed": {
+        "code_size": 11,
+        "coefficient_signs": {
+          "positive": 11
+        }
+      },
+      "reason": "All 11 selected codewords expand and suffix decoding is exact, but the code is only a sublanguage of the critical branch."
+    }
+  ],
+  "proves_collatz": false,
+  "source_file_sha256": {
+    "artifacts/phase13_critical_countermodel.json": "97e1f0e559cd227a6552a3c3b275e2739722bb5f27b7c11c9bf3687f69a5e305",
+    "artifacts/phase14_coalescent_theory.json": "d9b300d5abbb5eed41906aeec3bd0877c4f0959072321fffc449cd72284299ea",
+    "artifacts/phase16_theory.json": "6d5892f89350278283aa4c4aba651ee79aad4acbe5d076c4bbbc0455396d201f",
+    "artifacts/phase17_suffix_code.json": "3f5cd00af8b6e1bd57d62d4a8c6dc318fa99487578c3f4f05dbd37ce88c3c295",
+    "artifacts/phase7_macro12.json": "1f6722d4db1aa2acc2d1cd5fda538af4cf1b4e34a7ed20e80b6cbf3614caa379",
+    "artifacts/phase8_ab_semigroup_search.json": "45a4373090927bf19390ec423c160fb8511441a9d671ec4e78e2fb441cc40b8d"
+  }
+}

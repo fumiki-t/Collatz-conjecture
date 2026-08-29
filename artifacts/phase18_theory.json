@@ -1,0 +1,380 @@
+{
+  "NG30": {
+    "counterexamples": [
+      {
+        "k": 2,
+        "path": {
+          "B": 196379,
+          "L": 17,
+          "block_words": [
+            "11111",
+            "0",
+            "111111",
+            "00000"
+          ],
+          "canonical_source_residue_mod_2L": 10399,
+          "coefficient": {
+            "denominator": "131072",
+            "numerator": "177147"
+          },
+          "normalized_beta": {
+            "denominator": "177147",
+            "numerator": "196379"
+          },
+          "prefix_coefficients": [
+            {
+              "denominator": "32",
+              "numerator": "243"
+            },
+            {
+              "denominator": "64",
+              "numerator": "243"
+            },
+            {
+              "denominator": "4096",
+              "numerator": "177147"
+            },
+            {
+              "denominator": "131072",
+              "numerator": "177147"
+            }
+          ],
+          "q": 11,
+          "strictly_coefficient_safe": true,
+          "word": "11111011111100000"
+        },
+        "stage_lengths": [
+          5,
+          1,
+          6,
+          5
+        ],
+        "stage_signs": [
+          "positive",
+          "negative",
+          "positive",
+          "negative"
+        ]
+      },
+      {
+        "k": 3,
+        "path": {
+          "B": 15123179,
+          "L": 23,
+          "block_words": [
+            "1111111",
+            "0",
+            "11111111",
+            "0000000"
+          ],
+          "canonical_source_residue_mod_2L": 3370623,
+          "coefficient": {
+            "denominator": "8388608",
+            "numerator": "14348907"
+          },
+          "normalized_beta": {
+            "denominator": "14348907",
+            "numerator": "15123179"
+          },
+          "prefix_coefficients": [
+            {
+              "denominator": "128",
+              "numerator": "2187"
+            },
+            {
+              "denominator": "256",
+              "numerator": "2187"
+            },
+            {
+              "denominator": "65536",
+              "numerator": "14348907"
+            },
+            {
+              "denominator": "8388608",
+              "numerator": "14348907"
+            }
+          ],
+          "q": 15,
+          "strictly_coefficient_safe": true,
+          "word": "11111110111111110000000"
+        },
+        "stage_lengths": [
+          7,
+          1,
+          8,
+          7
+        ],
+        "stage_signs": [
+          "positive",
+          "negative",
+          "positive",
+          "negative"
+        ]
+      },
+      {
+        "k": 4,
+        "path": {
+          "B": 1250863579,
+          "L": 30,
+          "block_words": [
+            "111111111",
+            "00",
+            "1111111111",
+            "000000000"
+          ],
+          "canonical_source_residue_mod_2L": 508247551,
+          "coefficient": {
+            "denominator": "1073741824",
+            "numerator": "1162261467"
+          },
+          "normalized_beta": {
+            "denominator": "1162261467",
+            "numerator": "1250863579"
+          },
+          "prefix_coefficients": [
+            {
+              "denominator": "512",
+              "numerator": "19683"
+            },
+            {
+              "denominator": "2048",
+              "numerator": "19683"
+            },
+            {
+              "denominator": "2097152",
+              "numerator": "1162261467"
+            },
+            {
+              "denominator": "1073741824",
+              "numerator": "1162261467"
+            }
+          ],
+          "q": 19,
+          "strictly_coefficient_safe": true,
+          "word": "111111111001111111111000000000"
+        },
+        "stage_lengths": [
+          9,
+          2,
+          10,
+          9
+        ],
+        "stage_signs": [
+          "positive",
+          "negative",
+          "positive",
+          "negative"
+        ]
+      },
+      {
+        "k": 8,
+        "path": {
+          "B": 50792695018198939,
+          "L": 55,
+          "block_words": [
+            "11111111111111111",
+            "0000",
+            "111111111111111111",
+            "0000000000000000"
+          ],
+          "canonical_source_residue_mod_2L": 25526342623035391,
+          "coefficient": {
+            "denominator": "36028797018963968",
+            "numerator": "50031545098999707"
+          },
+          "normalized_beta": {
+            "denominator": "50031545098999707",
+            "numerator": "50792695018198939"
+          },
+          "prefix_coefficients": [
+            {
+              "denominator": "131072",
+              "numerator": "129140163"
+            },
+            {
+              "denominator": "2097152",
+              "numerator": "129140163"
+            },
+            {
+              "denominator": "549755813888",
+              "numerator": "50031545098999707"
+            },
+            {
+              "denominator": "36028797018963968",
+              "numerator": "50031545098999707"
+            }
+          ],
+          "q": 35,
+          "strictly_coefficient_safe": true,
+          "word": "1111111111111111100001111111111111111110000000000000000"
+        },
+        "stage_lengths": [
+          17,
+          4,
+          18,
+          16
+        ],
+        "stage_signs": [
+          "positive",
+          "negative",
+          "positive",
+          "negative"
+        ]
+      },
+      {
+        "k": 16,
+        "path": {
+          "B": 92782666837229260355182239018779,
+          "L": 106,
+          "block_words": [
+            "111111111111111111111111111111111",
+            "000000000",
+            "1111111111111111111111111111111111",
+            "000000000000000000000000000000"
+          ],
+          "canonical_source_residue_mod_2L": 15705662035398738825665862172671,
+          "coefficient": {
+            "denominator": "81129638414606681695789005144064",
+            "numerator": "92709463147897837085761925410587"
+          },
+          "normalized_beta": {
+            "denominator": "92709463147897837085761925410587",
+            "numerator": "92782666837229260355182239018779"
+          },
+          "prefix_coefficients": [
+            {
+              "denominator": "8589934592",
+              "numerator": "5559060566555523"
+            },
+            {
+              "denominator": "4398046511104",
+              "numerator": "5559060566555523"
+            },
+            {
+              "denominator": "75557863725914323419136",
+              "numerator": "92709463147897837085761925410587"
+            },
+            {
+              "denominator": "81129638414606681695789005144064",
+              "numerator": "92709463147897837085761925410587"
+            }
+          ],
+          "q": 67,
+          "strictly_coefficient_safe": true,
+          "word": "1111111111111111111111111111111110000000001111111111111111111111111111111111000000000000000000000000000000"
+        },
+        "stage_lengths": [
+          33,
+          9,
+          34,
+          30
+        ],
+        "stage_signs": [
+          "positive",
+          "negative",
+          "positive",
+          "negative"
+        ]
+      },
+      {
+        "k": 32,
+        "path": {
+          "B": 318335282474771545369910599982165031210119776672287615800499739,
+          "L": 207,
+          "block_words": [
+            "11111111111111111111111111111111111111111111111111111111111111111",
+            "000000000000000000",
+            "111111111111111111111111111111111111111111111111111111111111111111",
+            "0000000000000000000000000000000000000000000000000000000000"
+          ],
+          "canonical_source_residue_mod_2L": 40244287727802721119292687816305496373042771264142640525869055,
+          "coefficient": {
+            "denominator": "205688069665150755269371147819668813122841983204197482918576128",
+            "numerator": "318334983598941745631063567258138003973311712991447709945617947"
+          },
+          "normalized_beta": {
+            "denominator": "318334983598941745631063567258138003973311712991447709945617947",
+            "numerator": "318335282474771545369910599982165031210119776672287615800499739"
+          },
+          "prefix_coefficients": [
+            {
+              "denominator": "36893488147419103232",
+              "numerator": "10301051460877537453973547267843"
+            },
+            {
+              "denominator": "9671406556917033397649408",
+              "numerator": "10301051460877537453973547267843"
+            },
+            {
+              "denominator": "713623846352979940529142984724747568191373312",
+              "numerator": "318334983598941745631063567258138003973311712991447709945617947"
+            },
+            {
+              "denominator": "205688069665150755269371147819668813122841983204197482918576128",
+              "numerator": "318334983598941745631063567258138003973311712991447709945617947"
+            }
+          ],
+          "q": 131,
+          "strictly_coefficient_safe": true,
+          "word": "111111111111111111111111111111111111111111111111111111111111111110000000000000000001111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000"
+        },
+        "stage_lengths": [
+          65,
+          18,
+          66,
+          58
+        ],
+        "stage_signs": [
+          "positive",
+          "negative",
+          "positive",
+          "negative"
+        ]
+      }
+    ],
+    "counterfamily": "1^(2k+1) 0^n1 1^(2k+2) 0^n2 on a positive-negative-positive-negative SCC chain",
+    "hypothesis": "Every long critical path in a sign-pure-SCC graph is, up to bounded connectors, one global positive packet followed by one global negative packet.",
+    "status": "REFUTED",
+    "surviving_statement": "The finite-stage SCC-condensation normal form in P108."
+  },
+  "P107": {
+    "proof_invariant": "Positive SCC prefixes have a uniform linear discrepancy drift modulo bounded simple connectors; negative SCC suffixes have the reverse bound from endpoint safety. The finite condensation path contributes only finitely many geometric sums.",
+    "statement": "In a finite graph with no mixed SCC, normalized beta is uniformly bounded over every coefficient-safe finite path."
+  },
+  "P108": {
+    "corrected_normal_form": "A path is a bounded collection of connectors and sign-pure cycle packets along the acyclic SCC condensation. The number of sign changes is finite and graph-bounded, but need not be one.",
+    "statement": "With no mixed SCC, bounded-final-discrepancy safe paths have bounded length unless a positive SCC reaches a negative SCC; that reachability also constructs arbitrarily long such paths."
+  },
+  "P109": {
+    "construction_repairs": [
+      "close positive and negative walks at a common base vertex",
+      "rotate the positive closed walk after its last minimum so every nonempty internal prefix is strictly positive",
+      "choose an exact rational threshold H>1/(m_B*c_B)",
+      "append the positive packet below the threshold and the negative packet above it"
+    ],
+    "statement": "A mixed SCC contains a formal infinite coefficient-safe path with multiplier bounded above and below away from zero and with normalized beta growing at least linearly in block count."
+  },
+  "P110": {
+    "reason": "Bounded block-boundary multiplier and beta linear in block count force x=Theta(n) along those boundaries, so reciprocal sums diverge, contrary to EXT07.",
+    "scope": "This does not exclude every itinerary through a mixed SCC.",
+    "statement": "Assuming EXT07, the particular balanced P109 itinerary cannot be a positive ordinary nonperiodic shortcut orbit."
+  },
+  "P111": {
+    "reason": "Once 2^L exceeds the fixed source, its canonical least nonnegative residue is the source itself.",
+    "statement": "For an extended prefix Pe, r2(Pe)=r2(P)+lambda*2^L with integral lambda in the finite lift range; a fixed positive ordinary source has lambda=0 for all sufficiently long prefixes."
+  },
+  "claims": {
+    "H72": "OPEN",
+    "NG30": "REFUTED",
+    "P107": "VERIFIED_THEOREM",
+    "P108": "VERIFIED_THEOREM",
+    "P109": "VERIFIED_THEOREM",
+    "P110": "CONDITIONAL",
+    "P111": "VERIFIED_THEOREM"
+  },
+  "edge_identity": "F_e(x)=c_e(x+b_e), c_e=3^q/2^L, b_e=B_e/3^q>0 for an edge containing an odd step",
+  "format": "collatz-phase18-theory-v1",
+  "path_identity": "beta(e_1...e_n)=sum_i b(e_i)/C(e_1...e_(i-1))",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "It does not prove that the H72 language has a closed finite graph, exclude positive ordinary sources, exclude all mixed itineraries, or prove Collatz."
+}

@@ -80,6 +80,15 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   and all-prefix same-Q geodesicity; H270 has `N<q/270`, `X<q/135`, and
   `Z<2q/135`. P105 gives the exact exponent-code pressure identity, and P106
   gives an 11-word suffix-decodable r=4 code. None excludes its branch.
+- `VERIFIED_THEOREM`: P107--P109 give the finite affine-graph trichotomy.
+  Without a mixed SCC, safe-path normalized correction is uniformly bounded;
+  bounded-final paths are arbitrarily long exactly when a positive SCC reaches
+  a negative SCC. A mixed SCC admits a formal balanced safe path with linear
+  correction growth. P111 makes eventual zero canonical source lifts a
+  necessary condition for one fixed positive ordinary source.
+- `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
+  itinerary from positive ordinary nonperiodic orbits. It does not exclude all
+  mixed-SCC itineraries.
 - `CONDITIONAL`: P103 applies P102 to the Phase 7 q0 scenario using X02 and
   makes the q0 critical word all-prefix same-Q geodesic. This retains every
   earlier conditional/external input and is not a contradiction.
@@ -106,6 +115,8 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   replacement of deterministic ordinary representatives by raw Haar volume.
   NG24 additionally shows that endpoint coalescence classes are a right
   congruence under a common suffix but not a left congruence under prefixing.
+  Phase 18 further shows that every exact mixed finite abstraction has formal
+  balanced survivors, while no accepted H72 model is a closed finite graph.
 - `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
   sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
   reciprocal orbit summability and an odd permanent-safe tail minimum for
@@ -381,6 +392,10 @@ source, transitions, canonical representatives, or signed carry.
 
 ## What was recently refuted?
 
+- `REFUTED`: sign-pure SCC paths always have one global positive packet then
+  one global negative packet (NG30). The exact four-SCC `+,-,+,-`
+  counterfamily remains safe with final coefficient in `(1,2)` while all four
+  packets grow. Only the finite-stage SCC-condensation normal form survives.
 - `REFUTED`: coefficient-threshold predecessor exclusions combined only by
   summed 3-adic Haar mass can push the normalized cutoff arbitrarily far
   (NG29). Even a deliberately optimistic collision-free envelope reaches its

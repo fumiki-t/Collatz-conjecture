@@ -1,0 +1,36 @@
+{
+  "claim": {
+    "E30": "VERIFIED_FINITE"
+  },
+  "final_multiplier_cap": 4,
+  "finite_boundary": "Path counts are sanity checks only; the trichotomy proof does not use finite depth.",
+  "format": "collatz-phase18-graph-audit-v1",
+  "graph_class": "deterministic partial graphs with labels 0 and 1; each source-label pair is absent or has one target",
+  "graphs_enumerated": 4181,
+  "maximum_vertices": 3,
+  "proves_collatz": false,
+  "row_digest_sha256": "a152dc5566bd6e0b03f3b1067c18a3ce16158d0a8f68c2431e626dc717f9c748",
+  "row_storage": "omitted; the independent verifier exhaustively reconstructs the canonical rows from the declared graph class",
+  "safe_path_depth": 12,
+  "type_counts": {
+    "I": 1696,
+    "II": 176,
+    "III": 2309
+  },
+  "type_counts_by_vertices": {
+    "1": {
+      "I": 3,
+      "III": 1
+    },
+    "2": {
+      "I": 45,
+      "II": 2,
+      "III": 34
+    },
+    "3": {
+      "I": 1648,
+      "II": 174,
+      "III": 2274
+    }
+  }
+}

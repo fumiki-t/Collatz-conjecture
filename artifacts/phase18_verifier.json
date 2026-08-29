@@ -1,0 +1,23 @@
+{
+  "claims": {
+    "E30": "VERIFIED_FINITE",
+    "H72": "OPEN",
+    "NG30": "REFUTED",
+    "P107": "VERIFIED_THEOREM",
+    "P108": "VERIFIED_THEOREM",
+    "P109": "VERIFIED_THEOREM",
+    "P110": "CONDITIONAL",
+    "P111": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase18-verifier-v1",
+  "graphs_recomputed": 4181,
+  "independence": {
+    "SCC_method": "mutual reachability",
+    "affine_method": "explicit odd-position sum",
+    "generator_imported": false,
+    "graph_enumeration": "reverse product followed by canonical tuple sort"
+  },
+  "mixed_blocks_recomputed": 512,
+  "proves_collatz": false,
+  "valid": true
+}

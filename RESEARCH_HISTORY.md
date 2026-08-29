@@ -1254,3 +1254,40 @@ the finite predecessor/code/adversarial tables. H104 and H105 remain open.
 Phase 17 does not exclude G270/H104, H270/H105, a repeated periodic or
 nontrivial-cycle branch, H89, H72, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 32. Phase 18 — affine finite-state trichotomy
+
+**Branch:** `feat/phase18-affine-trichotomy`
+
+**Acceptance record:** [`PHASE18_RUN_RESULTS.md`](PHASE18_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/affine-trichotomy/REPORT.md`](research/audits/affine-trichotomy/REPORT.md)
+
+Phase 18 treated the supplied affine-trichotomy note as an untrusted proposal.
+P107 proves a uniform normalized-correction bound for safe paths in every
+finite graph without mixed SCCs. P108 classifies arbitrarily long
+bounded-final paths by positive-to-negative SCC reachability, while repairing
+the proposed normal form to a finite sequence of sign-pure SCC packets.
+
+NG30 preserves the exact reason for that repair: a four-SCC `+,-,+,-` chain
+has safe final-multiplier-bounded paths in which every packet length grows.
+P109 proves that a mixed SCC instead admits a formal balanced safe itinerary
+with bounded coefficient and linearly growing correction. P110 conditionally
+excludes that particular itinerary from positive ordinary orbits using EXT07;
+P111 identifies eventual zero canonical source lifts as necessary for any one
+fixed positive ordinary source.
+
+E30 independently reconstructs all 4,181 deterministic partial `{0,1}` graphs
+on at most three vertices, with Type counts `1696,176,2309`, plus a 512-packet
+mixed schedule, 74 adversarial rows, and current-model applicability. The
+audit finds that no accepted H72 abstraction is a prefix-complete closed
+finite graph: Phase 7/8 are coefficient overapproximations, other models use
+growing state or fail prefix closure, and Phase 17 is only a Type I
+sublanguage.
+
+### What this result does not prove
+
+Phase 18 does not prove a finite-state presentation for H72, positive ordinary
+integrality of any formal path, exclusion of all mixed itineraries, H72,
+nontrivial-cycle exclusion, or the Collatz conjecture.
+`proves_collatz=false`.

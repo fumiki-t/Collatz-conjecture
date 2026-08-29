@@ -790,9 +790,46 @@ fixed r=4 code is suffix-decodable. None is an all-depth exclusion.
 **Evidence.** [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md),
 `artifacts/phase17_pressure.json`, and the independent Phase 17 verifier.
 
+## Phase 18 — one-switch sign-pure SCC normal form
+
+**Status:** `REFUTED` (NG30)
+
+**Exact hypothesis.** In a finite affine graph with no mixed SCC, every long
+coefficient-safe path with bounded final coefficient is, after deleting
+bounded connectors, one positive cycle packet followed by one negative cycle
+packet.
+
+**Why it looked plausible.** A positive SCC must supply the discrepancy buffer
+needed for long repetition in a later negative SCC. This correctly
+characterizes the existence of long bounded-final paths, but it does not force
+all other sign-pure SCCs on the condensation path into the same order.
+
+**Exact counterfamily.** Use a four-SCC chain with loop signs `+,-,+,-` and
+label the positive loops and connectors by `1`, the negative loops by `0`. For
+every `k>=2`, define
+
+```text
+n1=floor(log2((3/2)^k))
+R=4k+3
+n2=floor(log2((3/2)^R))-n1
+w_k=1^(2k+1) 0^n1 1^(2k+2) 0^n2.
+```
+
+Every prefix coefficient is strictly greater than one, the terminal
+coefficient lies in `(1,2)`, and all four packets grow with `k`. The first
+negative and later positive packets therefore cannot be bounded connectors.
+
+**Failure scope.** Structural for the one-switch claim, not for finite-state
+classification. P108's exact weaker form survives: the SCC condensation gives
+a graph-bounded number of sign-pure packets and connectors, possibly with
+several sign changes.
+
+**Evidence.** [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md),
+`artifacts/phase18_theory.json`, and the independent Phase 18 verifier.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, and all exact counterexamples above. Passing a bounded regression is necessary
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, and all exact counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

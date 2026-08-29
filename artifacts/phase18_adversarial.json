@@ -1,0 +1,1201 @@
+{
+  "claim": {
+    "E30": "VERIFIED_FINITE",
+    "NG30": "REFUTED"
+  },
+  "format": "collatz-phase18-adversarial-v1",
+  "interpretation": "The families test affine conventions and prevent old shortcuts; passing a finite row is not evidence of a universal theorem.",
+  "macro0": {
+    "B": 527345,
+    "L": 19,
+    "block_words": [
+      "1111111111110000000"
+    ],
+    "canonical_source_residue_mod_2L": 69631,
+    "coefficient": {
+      "denominator": "524288",
+      "numerator": "531441"
+    },
+    "normalized_beta": {
+      "denominator": "531441",
+      "numerator": "527345"
+    },
+    "prefix_coefficients": [
+      {
+        "denominator": "524288",
+        "numerator": "531441"
+      }
+    ],
+    "q": 12,
+    "strictly_coefficient_safe": true,
+    "word": "1111111111110000000"
+  },
+  "preserved_obstruction_scope": {
+    "NG02": "finite coefficient alphabets do not by themselves preserve literal integer dynamics",
+    "NG17": "coefficient-shadow/ranking information alone is not a universal barrier",
+    "NG19": "finite dropping-safe spacing must retain ordinary height",
+    "NG21": "mod-6 packing alone cannot improve the 1/9 exponent",
+    "NG22": "analytic defect conditions plus a coherent 2-adic source are not contradictory",
+    "NG23": "Haar volume does not control canonical representatives coefficient-one",
+    "NG24": "coalescent endpoint equivalence is not a two-sided congruence",
+    "NG25": "same-Q safe targets do not exhaust surplus reductions",
+    "NG26": "useful coalescent targets need not be safe",
+    "NG27": "same-Q compression gain is not bounded by three",
+    "NG28": "predecessor carry may be negative",
+    "NG29": "coefficient-only Haar pressure has a finite ceiling"
+  },
+  "proves_collatz": false,
+  "row_digest_sha256": "5c1393fc92fd22edf7017da5af21e379bad375234b1be845d4fc1a74054dd3cf",
+  "rows": [
+    {
+      "coefficient": {
+        "denominator": "2097152",
+        "numerator": "59049"
+      },
+      "family": "2^3-1",
+      "horizon": 21,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "59049",
+        "numerator": "1683809"
+      },
+      "source_residue": 7,
+      "start": 7,
+      "strictly_coefficient_safe": false,
+      "word": "111010010001010101010"
+    },
+    {
+      "coefficient": {
+        "denominator": "2097152",
+        "numerator": "19683"
+      },
+      "family": "8^3-5",
+      "horizon": 21,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "19683",
+        "numerator": "506479"
+      },
+      "source_residue": 507,
+      "start": 507,
+      "strictly_coefficient_safe": false,
+      "word": "110110110001000010100"
+    },
+    {
+      "coefficient": {
+        "denominator": "16777216",
+        "numerator": "177147"
+      },
+      "family": "2^4-1",
+      "horizon": 24,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "177147",
+        "numerator": "14120011"
+      },
+      "source_residue": 15,
+      "start": 15,
+      "strictly_coefficient_safe": false,
+      "word": "111100001000101010101010"
+    },
+    {
+      "coefficient": {
+        "denominator": "16777216",
+        "numerator": "14348907"
+      },
+      "family": "8^4-5",
+      "horizon": 24,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "14348907",
+        "numerator": "69209111"
+      },
+      "source_residue": 4091,
+      "start": 4091,
+      "strictly_coefficient_safe": false,
+      "word": "110110110110001110111100"
+    },
+    {
+      "coefficient": {
+        "denominator": "134217728",
+        "numerator": "1162261467"
+      },
+      "family": "2^5-1",
+      "horizon": 27,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "1162261467",
+        "numerator": "1953511547"
+      },
+      "source_residue": 31,
+      "start": 31,
+      "strictly_coefficient_safe": true,
+      "word": "111110101101110111101001110"
+    },
+    {
+      "coefficient": {
+        "denominator": "134217728",
+        "numerator": "129140163"
+      },
+      "family": "8^5-5",
+      "horizon": 27,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "129140163",
+        "numerator": "731585743"
+      },
+      "source_residue": 32763,
+      "start": 32763,
+      "strictly_coefficient_safe": false,
+      "word": "110110110110110001011111100"
+    },
+    {
+      "coefficient": {
+        "denominator": "1073741824",
+        "numerator": "10460353203"
+      },
+      "family": "2^6-1",
+      "horizon": 30,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "10460353203",
+        "numerator": "26045031923"
+      },
+      "source_residue": 63,
+      "start": 63,
+      "strictly_coefficient_safe": true,
+      "word": "111111000110111011110100111011"
+    },
+    {
+      "coefficient": {
+        "denominator": "1073741824",
+        "numerator": "1162261467"
+      },
+      "family": "8^6-5",
+      "horizon": 30,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "1162261467",
+        "numerator": "6626313031"
+      },
+      "source_residue": 262139,
+      "start": 262139,
+      "strictly_coefficient_safe": true,
+      "word": "110110110110110110001101101110"
+    },
+    {
+      "coefficient": {
+        "denominator": "8589934592",
+        "numerator": "43046721"
+      },
+      "family": "2^7-1",
+      "horizon": 33,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "43046721",
+        "numerator": "3123001025"
+      },
+      "source_residue": 127,
+      "start": 127,
+      "strictly_coefficient_safe": false,
+      "word": "111111101000100100100110100100010"
+    },
+    {
+      "coefficient": {
+        "denominator": "8589934592",
+        "numerator": "1162261467"
+      },
+      "family": "8^7-5",
+      "horizon": 33,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "1162261467",
+        "numerator": "12331352903"
+      },
+      "source_residue": 2097147,
+      "start": 2097147,
+      "strictly_coefficient_safe": false,
+      "word": "110110110110110110110001001100110"
+    },
+    {
+      "coefficient": {
+        "denominator": "68719476736",
+        "numerator": "129140163"
+      },
+      "family": "2^8-1",
+      "horizon": 36,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "129140163",
+        "numerator": "35788735171"
+      },
+      "source_residue": 255,
+      "start": 255,
+      "strictly_coefficient_safe": false,
+      "word": "111111110000010010010011010010001010"
+    },
+    {
+      "coefficient": {
+        "denominator": "68719476736",
+        "numerator": "94143178827"
+      },
+      "family": "8^8-5",
+      "horizon": 36,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "94143178827",
+        "numerator": "503817341303"
+      },
+      "source_residue": 16777211,
+      "start": 16777211,
+      "strictly_coefficient_safe": true,
+      "word": "110110110110110110110110001111001101"
+    },
+    {
+      "coefficient": {
+        "denominator": "549755813888",
+        "numerator": "3486784401"
+      },
+      "family": "2^9-1",
+      "horizon": 39,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "3486784401",
+        "numerator": "417276426641"
+      },
+      "source_residue": 511,
+      "start": 511,
+      "strictly_coefficient_safe": false,
+      "word": "111111111010100000010010101000111010010"
+    },
+    {
+      "coefficient": {
+        "denominator": "549755813888",
+        "numerator": "94143178827"
+      },
+      "family": "8^9-5",
+      "horizon": 39,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "94143178827",
+        "numerator": "735527471479"
+      },
+      "source_residue": 134217723,
+      "start": 134217723,
+      "strictly_coefficient_safe": false,
+      "word": "110110110110110110110110110001010011100"
+    },
+    {
+      "coefficient": {
+        "denominator": "4398046511104",
+        "numerator": "3486784401"
+      },
+      "family": "2^10-1",
+      "horizon": 42,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "3486784401",
+        "numerator": "831066068881"
+      },
+      "source_residue": 1023,
+      "start": 1023,
+      "strictly_coefficient_safe": false,
+      "word": "111111111100010000001001010100011101001000"
+    },
+    {
+      "coefficient": {
+        "denominator": "4398046511104",
+        "numerator": "94143178827"
+      },
+      "family": "8^10-5",
+      "horizon": 42,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "94143178827",
+        "numerator": "2589208512887"
+      },
+      "source_residue": 1073741819,
+      "start": 1073741819,
+      "strictly_coefficient_safe": false,
+      "word": "110110110110110110110110110110001100000001"
+    },
+    {
+      "coefficient": {
+        "denominator": "35184372088832",
+        "numerator": "617673396283947"
+      },
+      "family": "2^11-1",
+      "horizon": 45,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "617673396283947",
+        "numerator": "747025004892715"
+      },
+      "source_residue": 2047,
+      "start": 2047,
+      "strictly_coefficient_safe": true,
+      "word": "111111111110100111111011100101010110100101101"
+    },
+    {
+      "coefficient": {
+        "denominator": "35184372088832",
+        "numerator": "7625597484987"
+      },
+      "family": "8^11-5",
+      "horizon": 45,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "7625597484987",
+        "numerator": "109089437089447"
+      },
+      "source_residue": 8589934587,
+      "start": 8589934587,
+      "strictly_coefficient_safe": false,
+      "word": "110110110110110110110110110110110001000101011"
+    },
+    {
+      "coefficient": {
+        "denominator": "281474976710656",
+        "numerator": "1853020188851841"
+      },
+      "family": "2^12-1",
+      "horizon": 48,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "1853020188851841",
+        "numerator": "2699498584682113"
+      },
+      "source_residue": 4095,
+      "start": 4095,
+      "strictly_coefficient_safe": true,
+      "word": "111111111111000011111101110010101011010010110110"
+    },
+    {
+      "coefficient": {
+        "denominator": "281474976710656",
+        "numerator": "1853020188851841"
+      },
+      "family": "8^12-5",
+      "horizon": 48,
+      "kind": "literal_orbit",
+      "normalized_beta": {
+        "denominator": "1853020188851841",
+        "numerator": "10135845433981061"
+      },
+      "source_residue": 68719476731,
+      "start": 68719476731,
+      "strictly_coefficient_safe": true,
+      "word": "110110110110110110110110110110110110001110011111"
+    },
+    {
+      "coefficient": {
+        "denominator": "8",
+        "numerator": "9"
+      },
+      "family": "(110|111)^*:r=1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "9",
+        "numerator": "5"
+      },
+      "source_residue": 3,
+      "strictly_coefficient_safe": true,
+      "word": "110"
+    },
+    {
+      "coefficient": {
+        "denominator": "32",
+        "numerator": "81"
+      },
+      "family": "A^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "81",
+        "numerator": "73"
+      },
+      "source_residue": 7,
+      "strictly_coefficient_safe": true,
+      "word": "11101"
+    },
+    {
+      "coefficient": {
+        "denominator": "16",
+        "numerator": "9"
+      },
+      "family": "B^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "9",
+        "numerator": "5"
+      },
+      "source_residue": 3,
+      "strictly_coefficient_safe": false,
+      "word": "1100"
+    },
+    {
+      "coefficient": {
+        "denominator": "512",
+        "numerator": "729"
+      },
+      "family": "A^1B^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "729",
+        "numerator": "817"
+      },
+      "source_residue": 487,
+      "strictly_coefficient_safe": true,
+      "word": "111011100"
+    },
+    {
+      "coefficient": {
+        "denominator": "8192",
+        "numerator": "6561"
+      },
+      "family": "A^1B^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "6561",
+        "numerator": "9913"
+      },
+      "source_residue": 6631,
+      "strictly_coefficient_safe": false,
+      "word": "1110111001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "131072",
+        "numerator": "59049"
+      },
+      "family": "A^1B^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "59049",
+        "numerator": "130177"
+      },
+      "source_residue": 31207,
+      "strictly_coefficient_safe": false,
+      "word": "11101110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "2097152",
+        "numerator": "531441"
+      },
+      "family": "A^1B^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "531441",
+        "numerator": "1826953"
+      },
+      "source_residue": 1997287,
+      "strictly_coefficient_safe": false,
+      "word": "111011100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "33554432",
+        "numerator": "4782969"
+      },
+      "family": "A^1B^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "4782969",
+        "numerator": "26928337"
+      },
+      "source_residue": 27163111,
+      "strictly_coefficient_safe": false,
+      "word": "1110111001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "536870912",
+        "numerator": "43046721"
+      },
+      "family": "A^1B^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "43046721",
+        "numerator": "410127193"
+      },
+      "source_residue": 127826407,
+      "strictly_coefficient_safe": false,
+      "word": "11101110011001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "64",
+        "numerator": "243"
+      },
+      "family": "(110|111)^*:r=2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "243",
+        "numerator": "287"
+      },
+      "source_residue": 27,
+      "strictly_coefficient_safe": true,
+      "word": "110111"
+    },
+    {
+      "coefficient": {
+        "denominator": "1024",
+        "numerator": "6561"
+      },
+      "family": "A^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "6561",
+        "numerator": "8249"
+      },
+      "source_residue": 103,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101"
+    },
+    {
+      "coefficient": {
+        "denominator": "256",
+        "numerator": "81"
+      },
+      "family": "B^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "81",
+        "numerator": "125"
+      },
+      "source_residue": 147,
+      "strictly_coefficient_safe": false,
+      "word": "11001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "16384",
+        "numerator": "59049"
+      },
+      "family": "A^2B^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "59049",
+        "numerator": "79361"
+      },
+      "source_residue": 7271,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011100"
+    },
+    {
+      "coefficient": {
+        "denominator": "262144",
+        "numerator": "531441"
+      },
+      "family": "A^2B^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "531441",
+        "numerator": "796169"
+      },
+      "source_residue": 154727,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "4194304",
+        "numerator": "4782969"
+      },
+      "family": "A^2B^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "4782969",
+        "numerator": "8476241"
+      },
+      "source_residue": 1203303,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "67108864",
+        "numerator": "43046721"
+      },
+      "family": "A^2B^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "43046721",
+        "numerator": "97257689"
+      },
+      "source_residue": 34757735,
+      "strictly_coefficient_safe": false,
+      "word": "11101111011100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "1073741824",
+        "numerator": "387420489"
+      },
+      "family": "A^2B^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "387420489",
+        "numerator": "1210863521"
+      },
+      "source_residue": 236084327,
+      "strictly_coefficient_safe": false,
+      "word": "111011110111001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "17179869184",
+        "numerator": "3486784401"
+      },
+      "family": "A^2B^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "3486784401",
+        "numerator": "16266480809"
+      },
+      "source_residue": 2383567975,
+      "strictly_coefficient_safe": false,
+      "word": "1110111101110011001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "512",
+        "numerator": "2187"
+      },
+      "family": "(110|111)^*:r=3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "2187",
+        "numerator": "2903"
+      },
+      "source_residue": 27,
+      "strictly_coefficient_safe": true,
+      "word": "110111110"
+    },
+    {
+      "coefficient": {
+        "denominator": "32768",
+        "numerator": "531441"
+      },
+      "family": "A^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "531441",
+        "numerator": "742921"
+      },
+      "source_residue": 11367,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101"
+    },
+    {
+      "coefficient": {
+        "denominator": "4096",
+        "numerator": "729"
+      },
+      "family": "B^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "729",
+        "numerator": "2405"
+      },
+      "source_residue": 1171,
+      "strictly_coefficient_safe": false,
+      "word": "110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "524288",
+        "numerator": "4782969"
+      },
+      "family": "A^3B^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "4782969",
+        "numerator": "6850129"
+      },
+      "source_residue": 371815,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011100"
+    },
+    {
+      "coefficient": {
+        "denominator": "8388608",
+        "numerator": "43046721"
+      },
+      "family": "A^3B^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "43046721",
+        "numerator": "64272601"
+      },
+      "source_residue": 371815,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "134217728",
+        "numerator": "387420489"
+      },
+      "family": "A^3B^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "387420489",
+        "numerator": "620396449"
+      },
+      "source_residue": 8760423,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "2147483648",
+        "numerator": "3486784401"
+      },
+      "family": "A^3B^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "3486784401",
+        "numerator": "6254656681"
+      },
+      "source_residue": 411413607,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "34359738368",
+        "numerator": "31381059609"
+      },
+      "family": "A^3B^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "31381059609",
+        "numerator": "67029328369"
+      },
+      "source_residue": 9001348199,
+      "strictly_coefficient_safe": false,
+      "word": "11101111011110111001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "549755813888",
+        "numerator": "282429536481"
+      },
+      "family": "A^3B^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "282429536481",
+        "numerator": "775062647161"
+      },
+      "source_residue": 455677946983,
+      "strictly_coefficient_safe": false,
+      "word": "111011110111101110011001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "4096",
+        "numerator": "59049"
+      },
+      "family": "(110|111)^*:r=4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "59049",
+        "numerator": "88109"
+      },
+      "source_residue": 1051,
+      "strictly_coefficient_safe": true,
+      "word": "110111110111"
+    },
+    {
+      "coefficient": {
+        "denominator": "1048576",
+        "numerator": "43046721"
+      },
+      "family": "A^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "43046721",
+        "numerator": "62568665"
+      },
+      "source_residue": 1027175,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111101"
+    },
+    {
+      "coefficient": {
+        "denominator": "65536",
+        "numerator": "6561"
+      },
+      "family": "B^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "6561",
+        "numerator": "42125"
+      },
+      "source_residue": 9363,
+      "strictly_coefficient_safe": false,
+      "word": "1100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "16777216",
+        "numerator": "387420489"
+      },
+      "family": "A^4B^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "387420489",
+        "numerator": "568360865"
+      },
+      "source_residue": 13610087,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101111011100"
+    },
+    {
+      "coefficient": {
+        "denominator": "268435456",
+        "numerator": "3486784401"
+      },
+      "family": "A^4B^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "3486784401",
+        "numerator": "5199133865"
+      },
+      "source_residue": 265268327,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011110111001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "4294967296",
+        "numerator": "31381059609"
+      },
+      "family": "A^4B^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "31381059609",
+        "numerator": "48134382065"
+      },
+      "source_residue": 533703783,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111101110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "68719476736",
+        "numerator": "282429536481"
+      },
+      "family": "A^4B^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "282429536481",
+        "numerator": "454684275065"
+      },
+      "source_residue": 39188409447,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101111011100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "1099511627776",
+        "numerator": "2541865828329"
+      },
+      "family": "A^4B^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "2541865828329",
+        "numerator": "4435755859265"
+      },
+      "source_residue": 451505269863,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011110111001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "17592186044416",
+        "numerator": "22876792454961"
+      },
+      "family": "A^4B^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "22876792454961",
+        "numerator": "45419360872265"
+      },
+      "source_residue": 13645644803175,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111101110011001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "32768",
+        "numerator": "531441"
+      },
+      "family": "(110|111)^*:r=5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "531441",
+        "numerator": "813461"
+      },
+      "source_residue": 25627,
+      "strictly_coefficient_safe": true,
+      "word": "110111110111110"
+    },
+    {
+      "coefficient": {
+        "denominator": "33554432",
+        "numerator": "3486784401"
+      },
+      "family": "A^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "3486784401",
+        "numerator": "5144607913"
+      },
+      "source_residue": 17804391,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011110111101"
+    },
+    {
+      "coefficient": {
+        "denominator": "1048576",
+        "numerator": "59049"
+      },
+      "family": "B^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "59049",
+        "numerator": "706805"
+      },
+      "source_residue": 599187,
+      "strictly_coefficient_safe": false,
+      "word": "11001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "536870912",
+        "numerator": "31381059609"
+      },
+      "family": "A^5B^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "31381059609",
+        "numerator": "46469243377"
+      },
+      "source_residue": 84913255,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111101111011100"
+    },
+    {
+      "coefficient": {
+        "denominator": "8589934592",
+        "numerator": "282429536481"
+      },
+      "family": "A^5B^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "282429536481",
+        "numerator": "420907544953"
+      },
+      "source_residue": 1695525991,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101111011110111001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "137438953472",
+        "numerator": "2541865828329"
+      },
+      "family": "A^5B^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "2541865828329",
+        "numerator": "3831117577537"
+      },
+      "source_residue": 18875395175,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011110111101110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "2199023255552",
+        "numerator": "22876792454961"
+      },
+      "family": "A^5B^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "22876792454961",
+        "numerator": "35167252965193"
+      },
+      "source_residue": 1943020743783,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111101111011100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "35184372088832",
+        "numerator": "205891132094649"
+      },
+      "family": "A^5B^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "205891132094649",
+        "numerator": "327500392964497"
+      },
+      "source_residue": 34928369577063,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101111011110111001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "562949953421312",
+        "numerator": "1853020188851841"
+      },
+      "family": "A^5B^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "1853020188851841",
+        "numerator": "3123425397124633"
+      },
+      "source_residue": 457140834643047,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011110111101110011001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "262144",
+        "numerator": "14348907"
+      },
+      "family": "(110|111)^*:r=6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "14348907",
+        "numerator": "22586039"
+      },
+      "source_residue": 156699,
+      "strictly_coefficient_safe": true,
+      "word": "110111110111110111"
+    },
+    {
+      "coefficient": {
+        "denominator": "1073741824",
+        "numerator": "282429536481"
+      },
+      "family": "A^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "282429536481",
+        "numerator": "419162714489"
+      },
+      "source_residue": 219130983,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101111011110111101"
+    },
+    {
+      "coefficient": {
+        "denominator": "16777216",
+        "numerator": "531441"
+      },
+      "family": "B^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "531441",
+        "numerator": "11604125"
+      },
+      "source_residue": 4793491,
+      "strictly_coefficient_safe": false,
+      "word": "110011001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "17179869184",
+        "numerator": "2541865828329"
+      },
+      "family": "A^6B^1",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "2541865828329",
+        "numerator": "3777833139521"
+      },
+      "source_residue": 2366614631,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011110111101111011100"
+    },
+    {
+      "coefficient": {
+        "denominator": "274877906944",
+        "numerator": "22876792454961"
+      },
+      "family": "A^6B^2",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "22876792454961",
+        "numerator": "34086397601609"
+      },
+      "source_residue": 139805568103,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111101111011110111001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "4398046511104",
+        "numerator": "205891132094649"
+      },
+      "family": "A^6B^3",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "205891132094649",
+        "numerator": "308151967949201"
+      },
+      "source_residue": 2613706730599,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101111011110111101110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "70368744177664",
+        "numerator": "1853020188851841"
+      },
+      "family": "A^6B^4",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "1853020188851841",
+        "numerator": "2795357944098329"
+      },
+      "source_residue": 64186357886055,
+      "strictly_coefficient_safe": true,
+      "word": "1110111101111011110111101111011100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "1125899906842624",
+        "numerator": "16677181699666569"
+      },
+      "family": "A^6B^5",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "16677181699666569",
+        "numerator": "25510065217773281"
+      },
+      "source_residue": 486398822952039,
+      "strictly_coefficient_safe": true,
+      "word": "11101111011110111101111011110111001100110011001100"
+    },
+    {
+      "coefficient": {
+        "denominator": "18014398509481984",
+        "numerator": "150094635296999121"
+      },
+      "family": "A^6B^6",
+      "kind": "formal_word",
+      "normalized_beta": {
+        "denominator": "150094635296999121",
+        "numerator": "235220086494172649"
+      },
+      "source_residue": 11745397891378279,
+      "strictly_coefficient_safe": true,
+      "word": "111011110111101111011110111101110011001100110011001100"
+    }
+  ]
+}
