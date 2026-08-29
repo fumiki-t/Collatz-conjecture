@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase21-repetition-complexity",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["EXT14", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P132", "E33", "H89", "H112", "H72"],
   "objective": "Derive exact orbit separation from finite parity correspondence and audit the resulting repetition, factor-complexity, stammering, height, and H89 certificates without promoting finite profiles to asymptotic claims.",
   "exact_scope": {
@@ -73,5 +73,15 @@
     "The H89 repetition rule is a finite rejection certificate, not an eventual H89 theorem.",
     "H89, H112, H72, the nontrivial-cycle branch, and Collatz remain open; proves_collatz remains false."
   ],
+  "recorded_result": {
+    "commit": "da4ca7b3cd42401f9ec9db98fa4ddb552347faca",
+    "generator": "valid=true in 391.22s",
+    "verifier": "valid=true in 899.63s",
+    "focused_tests": "17 passed in 6.83s across exact Phase 21 properties, verifier/tamper, and research-health suites",
+    "full_tests": "311 passed in 666.58s",
+    "strict_research_health": "valid=true with 140 tracked artifacts and zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "f2e6634beeef6f36b706431de93898946d064e331ce578f4e092d00ccfa07ab2",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
