@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 16
+# Collatz research synthesis through Phase 17
 
 **Audit date:** 2026-08-28
 
-**Audited base:** `a246c97200df61030b0c6874cbf150fd9b152f0c`
+**Audited base:** `464d74ce1acc5628d892170576847b34abf83931`
 
-**Latest accepted phase:** Phase 16
+**Latest accepted phase:** Phase 17
 
 **Problem status:** `OPEN`
 
@@ -519,6 +519,28 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   certificate. See [`PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md) and
   the [`Phase 16 audit`](../research/audits/critical-dichotomy/REPORT.md).
 
+### Phase 17 — predecessor pressure and the 270 dichotomy
+
+- **Purpose:** add exact accelerated inverse-word exclusions to Phase 16's
+  finite-crossing packing without confusing exponent-code probability with
+  positive ordinary representative counts.
+- **Accepted:** P104 uses all supercritical r<=4 predecessor words and P99's
+  odd-even-even merge to sharpen G250/H250 to G270/H270. P105 proves the exact
+  exponent first-passage identity, and P106 proves suffix decodability of an
+  11-word r=4 code.
+- **Finite evidence:** E28 checks every `1<=n<300000`. E29 reconstructs 23
+  supercritical words, the mod-81/mod-648 tables, exact 270 log certificate,
+  three code-concatenation layers, and 62 adversarial rows.
+- **Obstacle:** NG29 refutes unbounded progress for the precisely scoped
+  coefficient-only summed-Haar envelope. Endpoint cylinders can collide, and
+  their mass is not a deterministic ordinary representative count. G270/H104
+  and H270/H105 are both open; periodic values remain separate.
+- **Handoff:** H104 needs affine, fixed-positive-source, transition, or signed
+  carry information absent from NG29's scope. H105 needs a two-sided exact
+  source/endpoint-height state. See
+  [`PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md) and the
+  [`Phase 17 audit`](../research/audits/predecessor-pressure/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -526,8 +548,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG28.
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P106 with their exact hypotheses;
+- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG29.
 
 None is a full convergence theorem.
 
@@ -559,8 +581,8 @@ None is a full convergence theorem.
    would exclude a least counterexample in both finite- and never-crossing
    cases. P90 proves this implication; E25 is only a bounded datum and H89 is
    open.
-6. **P101/H97/H98 target.** For distinct odd values, every finite crossing is
-   in G250 or H250. Excluding both would close that nonperiodic finite-crossing
+6. **P104/H104/H105 target.** For distinct odd values, every finite crossing is
+   in G270 or H270. Excluding both would close that nonperiodic finite-crossing
    branch. P102 deliberately leaves repeated periodic values separate.
 
 ### Nontrivial cycles
@@ -582,6 +604,7 @@ The complete obstruction archive is
 | Intersect two high-density sets | NG12 shows marginal density does not control one least counterexample | A transport/intersection theorem tied to the actual cylinder could work |
 | Contact closure plus pressure | NG17's all-contact word satisfies the local constraints | Endpoint and least-residue information remain essential |
 | Positive same-Q carry | NG28 has an exact safe Q=26 endpoint pair with carry -3 | P97's signed lower bounds survive; carry sign must remain in the state |
+| Unbounded coefficient-only predecessor Haar pressure | NG29's optimistic envelope reaches its reciprocal threshold below normalized count 360.469 | P105's exact word identity and finite P104 sieve survive; future progress must use information outside the scoped volume calculus |
 | Fixed-depth reverse congruence | Phase 9 only controls selected finite/mechanical layers | A lossless recursive carry state remains open |
 | Height-free spacing | NG20 gives dropping-safe pairs four apart at every depth | Ordinary height must remain in H70/C05 |
 | Fixed finite/two-tail compression | NG19 gives opposite outcomes for every shorter residue window | Exact full state or proved dominance may compose |
@@ -614,7 +637,7 @@ The annotated source is [`LITERATURE.md`](LITERATURE.md). Its role map is:
 | Tao | almost-everywhere descent context | exclusion of one exceptional least counterexample |
 | Wu–Wang | contextual irrationality scale | an audited effective `H_q` bound used by current certificates |
 | Stérin | fixed-odd-budget binary ancestor regular languages and carry context | P86 surplus dominance, ordinary-height anti-concentration, or H72 |
-| Angeltveit | path-merging and mod-9/odd-even-even sieve overlap for P99 | that Phase 16 imports the preprint's finite verification or closes G250/H250 |
+| Angeltveit | path-merging and mod-9/odd-even-even sieve overlap for P99 | that Phase 16 imports the preprint's finite verification or closes G270/H270 |
 
 External verification and publication metadata were rechecked on 2026-08-27.
 External-source proof bodies were not rederived during this documentation audit.
@@ -639,12 +662,13 @@ finite record extrapolation. **Acceptance:** an explicit effective theorem or
 independently verifiable eventual certificate. See
 [`context/H54.md`](context/H54.md).
 
-### H97/H98 — the Phase 16 finite-crossing branches
+### H104/H105 — the Phase 17 finite-crossing branches
 
-**H97 target:** exclude positive ordinary-source all-prefix same-Q geodesic
-critical words in G250. **H98 target:** exclude the two-sided H250 height box.
-Both must survive NG28 and E27; H97 must additionally survive NG17/P73, while
-H98 must retain source and endpoint residues rather than only address counts.
+**H104 target:** exclude positive ordinary-source all-prefix same-Q geodesic
+critical words in G270. **H105 target:** exclude the two-sided H270 height box.
+Both must survive NG28/NG29 and E27--E29; H104 must additionally survive
+NG17/P73, while H105 must retain source and endpoint residues rather than only
+address counts.
 Neither target covers a repeated periodic orbit.
 
 ### Nontrivial positive cycles
@@ -672,9 +696,9 @@ scoped obligation rather than a complete proof by itself.
 
 | Priority experiment | Target statement | Must survive | Minimum useful experiment | Success implication | Stop condition |
 |---|---|---|---|---|---|
-| Ancestral `M_star` recursion | Prove eventual H89 in the P91/P92/P95/P97 signed-carry state | NG24--NG28, E25--E27, all mandatory families | Derive one composable exact inequality beyond the depth-210 record | H89 plus finite checking closes P90's least-counterexample route | Stop at the first lost carry, positivity, or source-order distinction |
-| G250 ordinary-source exclusion | Prove H97 for all-prefix geodesic critical words | NG17, P73, NG24--NG28, E27 | Add one positive-height/carry invariant that rejects formal all-contact prefixes only when ordinary positivity is used | Eliminates G250 | Stop if the rule also rejects the formal 2-adic word without using positivity |
-| H250 two-sided exclusion | Prove H98 for `N<q/250`, `Z<2q/125` | NG19, NG24--NG28, E27 | Exact meet-in-the-middle or transducer slice retaining source, endpoint, and safety | Eliminates H250 | Stop at the first box collision merged by the state |
+| Ancestral `M_star` recursion | Prove eventual H89 in the P91/P92/P95/P97 signed-carry state | NG24--NG29, E25--E29, all mandatory families | Derive one composable exact inequality beyond the depth-210 record | H89 plus finite checking closes P90's least-counterexample route | Stop at the first lost carry, positivity, or source-order distinction |
+| G270 ordinary-source exclusion | Prove H104 for all-prefix geodesic critical words | NG17, P73, NG24--NG29, E27--E29 | Add one affine/positive-height/carry invariant that rejects formal all-contact prefixes only when ordinary positivity is used | Eliminates G270 | Stop if the rule also rejects the formal 2-adic word without using positivity |
+| H270 two-sided exclusion | Prove H105 for `N<q/270`, `Z<2q/135` | NG19, NG24--NG29, E27--E29 | Exact meet-in-the-middle or transducer slice retaining source, endpoint, and safety | Eliminates H270 | Stop at the first box collision merged by the state |
 | Cross-Q surplus recursion | Propagate P86 endpoint Pareto fronts across Q and prefixes | NG24--NG27, E23--E26, `{1,2}` core, all mandatory families | Derive an exact carry recurrence retaining source and terminal surplus | Eventual dominance would close the least-source H72 branch | Stop if the state loses a named cross-Q or valley certificate |
 | Carry-aware canonical separation | A deterministic lower bound for least positive `(r2,r3)` representatives | NG19, NG23--NG27, E22--E26, all mandatory families | Exact meet-in-the-middle slices retaining `B`, carries, surplus, and ordinary height | May prove P80 or lower-bound `M(k)` | Preserve the first opposite-outcome collision; do not enlarge after state loss |
 | Valuation-conditioned transfer operator | Use P79's `v2(C_w)=r-2` to control address multiplicity | both NG22 models and one-block runs | Exact transition matrix with symbolic valuation guards | Could close H72 through P80 | Stop if a formal NG22 source satisfies every retained state |
@@ -689,7 +713,7 @@ statement is not a priority experiment.
 
 ## 10. Scratch index
 
-No post-Phase-16 unintegrated mathematical candidate was accepted at this
+No post-Phase-17 unintegrated mathematical candidate was accepted at this
 audit. The eight current scratch inputs are classified
 `SUPERSEDED_BY_ACCEPTED_RESULT`:
 
@@ -697,7 +721,7 @@ audit. The eight current scratch inputs are classified
   [`research/audits/garcia-tal-phase12`](../research/audits/garcia-tal-phase12/REPORT.md);
 - the two renewal Markdown audits and their two scripts/two JSON outputs are
   superseded by Phase 13's independent generator, verifier, artifacts, and
-  audit. The Phase 14, Phase 15, Phase 15B, and Phase 16 proposals are separately preserved by their
+  audit. The Phase 14, Phase 15, Phase 15B, Phase 16, and Phase 17 proposals are separately preserved by their
   recorded SHA-256 provenance and were independently rederived before
   acceptance.
 
@@ -737,8 +761,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase16.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase16_verifier.json
+.venv/bin/python verifier/verify_phase17.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase17_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

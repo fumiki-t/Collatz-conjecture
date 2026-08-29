@@ -1,0 +1,23 @@
+{
+  "all_reach_one": true,
+  "claim": "E28",
+  "finite_boundary": "This proves only that a least positive counterexample, if one exists, is at least the exclusive bound.",
+  "format": "collatz-phase17-direct-audit-v1",
+  "maximum_peak": {
+    "least_source": 270271,
+    "value": 12324038948
+  },
+  "maximum_shortcut_steps": {
+    "least_source": 230631,
+    "steps": 278
+  },
+  "proves_collatz": false,
+  "row_digest_sha256": "573dba321ea39a77547fe3202a74d26bf37b988628fd7567b9ae2924f6d62ed2",
+  "source_interval": [
+    1,
+    300000
+  ],
+  "sources_checked": 299999,
+  "status": "VERIFIED_FINITE",
+  "upper_endpoint_exclusive": true
+}

@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "adversarial": {
+      "digest": "9be915451810210b93dbe48bdb0779901c4ef7baa64f934a8e4c1e44544f2a46",
+      "rows": 62
+    },
+    "direct": {
+      "bound": 300000,
+      "digest": "573dba321ea39a77547fe3202a74d26bf37b988628fd7567b9ae2924f6d62ed2",
+      "maximum_peak": {
+        "least_source": 270271,
+        "value": 12324038948
+      },
+      "maximum_shortcut_steps": {
+        "least_source": 230631,
+        "steps": 278
+      }
+    },
+    "obstruction_report": {
+      "sha256": "e3021c0451199325c01241c6f9dda1cb903a9bcc73199dae18aff3e85ad3c2e1"
+    },
+    "predecessor": {
+      "crt_counts": [
+        51,
+        66,
+        72,
+        117,
+        129,
+        172,
+        192,
+        204,
+        212,
+        216
+      ],
+      "log_margin": [
+        136427181290143130366620691890929715290341239250970067878561552956629205122652479612912771411352147690448305182466905784293009883373441848267749361174673825849432182693994491228592638783191568592393036636896314171756633073790425351136203135356139962476667004853655128876697,
+        1042899685309804858802281630169713130489869624752543636591601666566965536139396005104049259761218009576996457855366218651459137580551796254528017349535404820142954940572578050051232699242930229375679641708737142422219136248079242466585656734069300682209446533203125000000000000
+      ],
+      "supercritical_words": 23
+    },
+    "pressure": {
+      "capacity_upper": {
+        "denominator": "33872000",
+        "numerator": "12209787721"
+      },
+      "root_bracket": [
+        {
+          "denominator": "1000",
+          "numerator": "1083903"
+        },
+        {
+          "denominator": "125",
+          "numerator": "135488"
+        }
+      ]
+    },
+    "suffix": {
+      "blocks": 3,
+      "code_size": 11,
+      "moment": {
+        "denominator": "2048",
+        "numerator": "1539"
+      }
+    }
+  },
+  "claims": {
+    "E28": "VERIFIED_FINITE",
+    "E29": "VERIFIED_FINITE",
+    "H104": "OPEN",
+    "H105": "OPEN",
+    "NG29": "REFUTED",
+    "P104": "VERIFIED_THEOREM",
+    "P105": "VERIFIED_THEOREM",
+    "P106": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase17-verifier-v1",
+  "independence": "No generator import; explicit affine sums, recursive compositions, descending orbit audit, and independently serialized rows.",
+  "proves_collatz": false,
+  "valid": true,
+  "what_this_result_does_not_prove": "Verifier acceptance does not exclude either dichotomy branch and is not a proof of Collatz."
+}

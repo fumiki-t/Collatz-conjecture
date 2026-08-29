@@ -22,16 +22,17 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 16 is the latest accepted research layer. It repairs and proves exact
-carry/geodesic/local-merge lemmas and splits every distinct-odd-value finite
-first crossing with `N>=100000` into G250 (all-prefix same-Q geodesic) or H250
-(`N<q/250`, `X<q/125`, `Z<2q/125`). Neither branch is excluded. NG28 records
-an exact negative-carry counterexample; E27 is bounded at Q=17. H54, H70, H72,
-H89, H97, H98, C03, C04, C05, the periodic/nontrivial-cycle branch, and the
+Phase 17 is the latest accepted research layer. It proves exact r<=4
+predecessor exclusions, an exponent-code pressure identity, and a
+suffix-decodable finite code. It splits every distinct-odd-value finite first
+crossing into G270 (all-prefix same-Q geodesic) or H270
+(`N<q/270`, `X<q/135`, `Z<2q/135`). Neither branch is excluded. NG29 records
+a precise ceiling for coefficient-only summed-Haar pressure; E28/E29 are
+finite. H54, H70, H72, H89, H104, H105, C03, C04, C05, the periodic/nontrivial-cycle branch, and the
 permanent-safe-tail branch remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–16, separates internal and external
+map and conventions, summarizes Phases 1–17, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -72,12 +73,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase16.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase16_verifier.json
+.venv/bin/python verifier/verify_phase17.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase17_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 16 result](PHASE16_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 17 result](PHASE17_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

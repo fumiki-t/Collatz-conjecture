@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–16, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–17, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -44,6 +44,7 @@ This is the canonical map of the research archive. Start with
 | 15 | [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md) | [`../artifacts/phase15_obstruction_report.md`](../artifacts/phase15_obstruction_report.md) | `feat/phase15-surplus-dominance` |
 | 15B | [`../PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md) | [`../artifacts/phase15b_obstruction_report.md`](../artifacts/phase15b_obstruction_report.md) | `feat/phase15b-ancestral-frontier` |
 | 16 | [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md) | [`../artifacts/phase16_obstruction_report.md`](../artifacts/phase16_obstruction_report.md) | `feat/phase16-critical-dichotomy` |
+| 17 | [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md) | [`../artifacts/phase17_obstruction_report.md`](../artifacts/phase17_obstruction_report.md) | `feat/phase17-predecessor-pressure` |
 
 Research supplements:
 
@@ -56,9 +57,10 @@ Research supplements:
 | Coalescent rewrite audit | [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md) | Phase 14 exact rewrite/pressure artifacts, independent verifier, tamper tests, SHA-256 manifests | P81--P85 theorems, E23 finite quotient, NG24 left-congruence obstruction, H72 boundary |
 | Surplus-dominance audit | [`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md) | Phase 15 cross-Q frontier, strict-valley, gap-core, adversarial artifacts, independent verifier, tamper tests, SHA-256 manifest | P86--P88 theorems, E24 finite Q<=17 audit, NG25/NG26 obstructions, H72 boundary |
 | Ancestral-frontier audit | [`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md) | Phase 15B source scan, carry/frontier/trie/compression artifacts, independent verifier, tamper tests, SHA-256 manifest | P89--P96, H89/P90 boundary, E25/E26 finite audits, NG27 obstruction |
+| Predecessor-pressure audit | [`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md) | Phase 17 predecessor, pressure, direct-orbit, suffix-code, adversarial artifacts, independent verifier, tamper tests, SHA-256 manifest | P104--P106, E28/E29, NG29, H104/H105 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 16 and both the branch-point and two-tail
+documentation through Phase 17 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

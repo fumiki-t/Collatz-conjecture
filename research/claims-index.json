@@ -1,5 +1,5 @@
 {
-  "claim_count": 120,
+  "claim_count": 128,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -1684,9 +1684,120 @@
       "last_audited": "2026-08-28",
       "notes": "No accepted transducer, pumping, or meet-in-the-middle certificate currently empties the box; the periodic branch remains separate.",
       "status": "OPEN"
+    },
+    {
+      "claim": "If a least positive counterexample has a finite coefficient first crossing with distinct odd inputs, then either G270: `q<=270N`, `Y_q<2N`, and every safe prefix is same-Q geodesic, or H270: `q>270N`, `N<q/270`, `Y_q<q/135`, `X<q/135`, and `Z<2q/135`.",
+      "collatz_implication": "Strengthens the distinct-odd finite-crossing localization from 250 to 270 and replaces H97/H98 by the sharper H104/H105 pair.",
+      "dependencies": "P98/P99; E28; exact r<=4 predecessor exclusions, mod-648 packing, and rational logarithm enclosure.",
+      "dependency_ids": [
+        "E28",
+        "P98",
+        "P99"
+      ],
+      "evidence": "[`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md), Sections 3--6; `artifacts/phase17_predecessor_sieve.json`; independent verifier.",
+      "first_introduced": "Phase 17",
+      "id": "P104",
+      "last_audited": "2026-08-28",
+      "notes": "The mod-648 table is a right-continuous allowed-class upper envelope: equality is actually forbidden because the inverse affine correction is positive. The periodic branch remains separate.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For the positive-exponent first-passage code at coefficient threshold `t`, with `p_e=3/4^e`, `sum 3^(-r)c(w)^2=1` and `4/(9t^2)<sum 3^(-r)<=1/t^2`.",
+      "collatz_implication": "Quantifies the total 3-adic predecessor-cylinder pressure available to finite-crossing sieves.",
+      "dependencies": "Exact product probability; positive drift certified by `27>16`; geometric Chernoff tail `(243/256)^m`; first-passage overshoot `t<=c<3t/2`.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md), Section 7; `artifacts/phase17_pressure.json`; independent verifier.",
+      "first_introduced": "Phase 17",
+      "id": "P105",
+      "last_audited": "2026-08-28",
+      "notes": "Endpoint cylinders may collide, so only the upper union-measure bound transfers automatically; no ordinary positive representative is excluded.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Coefficient-threshold predecessor exclusions combined only through summed 3-adic Haar mass can drive the normalized finite-crossing cutoff arbitrarily far.",
+      "collatz_implication": "Rules out this coefficient-only volume bookkeeping as an unbounded route to H89/H104.",
+      "dependencies": "P105; explicitly scoped collision-free Haar-envelope calculus.",
+      "dependency_ids": [
+        "P105"
+      ],
+      "evidence": "[`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md), Section 8; `artifacts/phase17_pressure.json`; exact log verifier.",
+      "first_introduced": "Phase 17",
+      "id": "NG29",
+      "last_audited": "2026-08-28",
+      "notes": "Even its deliberately optimistic envelope reaches `3log2` before normalized count `360.469`. Affine beta, fixed source, transition dependence, canonical representatives, and carry are outside the refutation.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "The 11 shortest supercritical r=4 exponent words selected by distinct endpoint residues modulo 81 form a suffix-decodable code under arbitrary finite concatenation; its exact `s=2` moment is `1539/2048`.",
+      "collatz_implication": "Supplies a collision-free fixed-block sublanguage for future pressure and source-residue experiments.",
+      "dependencies": "Exact accelerated affine recurrence; distinct last-block endpoint residues; recursive division by `3^4`.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md), Section 9; `artifacts/phase17_suffix_code.json`; independent verifier.",
+      "first_introduced": "Phase 17",
+      "id": "P106",
+      "last_audited": "2026-08-28",
+      "notes": "One finite code moment gives no monotone pressure-root trend and does not show that positive ordinary sources realize or avoid the code.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every integer `1<=n<300000` reaches 1 under the shortcut map; the maximum shortcut stopping time is 278 at least source 230631 and the maximum peak is 12324038948 at least source 270271.",
+      "collatz_implication": "Supplies the internal lower bound `N>=300000` used by P104 for any least positive counterexample.",
+      "dependencies": "Literal arbitrary-precision shortcut iteration over the complete stated range.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md); `artifacts/phase17_direct_audit.json`; descending-order independent verifier.",
+      "first_introduced": "Phase 17",
+      "id": "E28",
+      "last_audited": "2026-08-28",
+      "notes": "This is a finite computation and is much weaker than external X02; it proves no asymptotic orbit statement.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Exact independent reconstruction finds 23 supercritical exponent words through r=4, mod-648 allowed counts `51,66,72,117,129,172,192,204,212,216`, the positive 270 log margin, 11/121/1331 collision-free code addresses through three blocks, and 62 adversarial rows.",
+      "collatz_implication": "Certifies the finite constants used by P104--P106 and preserves falsification boundaries.",
+      "dependencies": "Arbitrary-precision integers/Fraction; complete enumerations in the stated cutoffs; generator-independent reconstruction and tamper tests.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md); `artifacts/phase17_predecessor_sieve.json`; `artifacts/phase17_suffix_code.json`; `artifacts/phase17_adversarial.json`.",
+      "first_introduced": "Phase 17",
+      "id": "E29",
+      "last_audited": "2026-08-28",
+      "notes": "No asymptotic result follows from r<=4 or three concatenated blocks. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Exclude every positive ordinary-source all-prefix same-Q geodesic critical word in G270.",
+      "collatz_implication": "Would eliminate the G270 side of distinct-odd finite first crossings.",
+      "dependencies": "P98/P104; P105/NG29; NG17, P73, NG24--NG29; all mandatory families.",
+      "dependency_ids": [
+        "NG17",
+        "NG29",
+        "P104",
+        "P105",
+        "P73",
+        "P98"
+      ],
+      "evidence": "`artifacts/phase17_obstruction_report.md`; [`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md), Section 10.",
+      "first_introduced": "Phase 17",
+      "id": "H104",
+      "last_audited": "2026-08-28",
+      "notes": "Must retain a fixed positive ordinary source and affine/carry data; coefficient-only Haar pressure is capped by NG29.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Exclude the H270 two-sided box `N<q/270`, `X<q/135`, `Z<2q/135` for every positive literal critical path.",
+      "collatz_implication": "Would eliminate the H270 side of distinct-odd finite first crossings.",
+      "dependencies": "P104; exact source and endpoint residues, safety, signed carry, and ordinary height.",
+      "dependency_ids": [
+        "P104"
+      ],
+      "evidence": "`artifacts/phase17_obstruction_report.md`; [`../research/audits/predecessor-pressure/REPORT.md`](../research/audits/predecessor-pressure/REPORT.md), Section 10.",
+      "first_introduced": "Phase 17",
+      "id": "H105",
+      "last_audited": "2026-08-28",
+      "notes": "No accepted transducer, pumping, or meet-in-the-middle certificate empties the box; the periodic branch remains separate.",
+      "status": "OPEN"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "47fc86510c30a719d419872848345b685b694ec694563b56e0e8946e916791a7"
+  "source_sha256": "6e10a6bbd1b1fb63e2f8b7e489edfee440187e800f0f0687bb299a442d5bd6d3"
 }

@@ -1,0 +1,266 @@
+{
+  "address_endpoint_digest_sha256": "84227761b4732969e6fe20d19371cf077a908e6e98b89d8dab363d3c0aaf5136",
+  "block_odd_steps": 4,
+  "claim": "P106",
+  "code_size": 11,
+  "codewords": [
+    {
+      "E": 6,
+      "affine_A": 73,
+      "beta": {
+        "denominator": "81",
+        "numerator": "73"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 10,
+      "exponents": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "multiplier": {
+        "denominator": "64",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 6,
+      "affine_A": 103,
+      "beta": {
+        "denominator": "81",
+        "numerator": "103"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 13,
+      "exponents": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "multiplier": {
+        "denominator": "64",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 5,
+      "affine_A": 73,
+      "beta": {
+        "denominator": "81",
+        "numerator": "73"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 20,
+      "exponents": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "multiplier": {
+        "denominator": "32",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 5,
+      "affine_A": 103,
+      "beta": {
+        "denominator": "81",
+        "numerator": "103"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 26,
+      "exponents": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "multiplier": {
+        "denominator": "32",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 5,
+      "affine_A": 65,
+      "beta": {
+        "denominator": "81",
+        "numerator": "65"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 40,
+      "exponents": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "multiplier": {
+        "denominator": "32",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 6,
+      "affine_A": 143,
+      "beta": {
+        "denominator": "81",
+        "numerator": "143"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 44,
+      "exponents": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "multiplier": {
+        "denominator": "64",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 6,
+      "affine_A": 101,
+      "beta": {
+        "denominator": "81",
+        "numerator": "101"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 56,
+      "exponents": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "multiplier": {
+        "denominator": "64",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 5,
+      "affine_A": 85,
+      "beta": {
+        "denominator": "81",
+        "numerator": "85"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 71,
+      "exponents": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "multiplier": {
+        "denominator": "32",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 6,
+      "affine_A": 119,
+      "beta": {
+        "denominator": "81",
+        "numerator": "119"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 74,
+      "exponents": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "multiplier": {
+        "denominator": "64",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 6,
+      "affine_A": 85,
+      "beta": {
+        "denominator": "81",
+        "numerator": "85"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 76,
+      "exponents": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "multiplier": {
+        "denominator": "64",
+        "numerator": "81"
+      },
+      "r": 4
+    },
+    {
+      "E": 4,
+      "affine_A": 65,
+      "beta": {
+        "denominator": "81",
+        "numerator": "65"
+      },
+      "endpoint_modulus": 81,
+      "endpoint_residue": 80,
+      "exponents": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "multiplier": {
+        "denominator": "16",
+        "numerator": "81"
+      },
+      "r": 4
+    }
+  ],
+  "finite_concatenation_audit": {
+    "1": {
+      "addresses": 11,
+      "distinct_endpoint_residues": 11,
+      "modulus": 81
+    },
+    "2": {
+      "addresses": 121,
+      "distinct_endpoint_residues": 121,
+      "modulus": 6561
+    },
+    "3": {
+      "addresses": 1331,
+      "distinct_endpoint_residues": 1331,
+      "modulus": 531441
+    }
+  },
+  "format": "collatz-phase17-suffix-code-v1",
+  "proves_collatz": false,
+  "second_moment_at_s_2": {
+    "denominator": "2048",
+    "numerator": "1539"
+  },
+  "selection_rule": "shortest total-supercritical exponent word in each distinct endpoint class; lexicographic tie break",
+  "status": "VERIFIED_THEOREM",
+  "theorem": "Distinct last-block residues recover the last block; exact division by 3^r recursively recovers every preceding endpoint and block.",
+  "trend_boundary": "No convergence or monotonicity of finite pressure roots is claimed from this one code."
+}

@@ -755,9 +755,44 @@ must store signed carry and survive this Q=26 pair.
 **Evidence.** [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md),
 `artifacts/phase16_theory.json`, and the independent Phase 16 verifier.
 
+## Phase 17 — unbounded coefficient-only predecessor Haar pressure
+
+**Status:** `REFUTED` (NG29)
+
+**Exact hypothesis.** Predecessor words selected only by coefficient threshold,
+with their effect combined only through summed 3-adic Haar cylinder mass, can
+drive the normalized finite-crossing cutoff arbitrarily far.
+
+**Why it looked plausible.** P105 gives an exact first-passage second-moment
+identity and a `t^-2` endpoint-cylinder mass bound. Adding longer predecessor
+words appears to delete increasingly many endpoint residue classes.
+
+**Exact obstruction.** Even granting collision-free maximal deletion and
+ignoring the fact that the formal deletion exceeds the baseline near height
+one, the most favorable remaining-density envelopes are
+
+```text
+A_min(U)=(U-1)/3-(1/2)(1-1/U)
+R_min(U)=(1/3)log(U)-(1/4)(1-1/U^2).
+```
+
+Exact rational logarithm enclosures place `R_min(U)=3log(2)` between
+`1083.903` and `1083.904`, where `A_min(U)<360.469`.
+
+**Failure scope.** The refutation is deliberately narrow. It does not cover
+the affine correction, one fixed positive ordinary source, actual transition
+dependence, canonical representatives, signed carry, or geodesicity.
+
+**Weaker statement retained.** P105's word-mass identity and upper union bound
+remain exact. P104's finite r<=4 sieve improves the split to 270, and P106's
+fixed r=4 code is suffix-decodable. None is an all-depth exclusion.
+
+**Evidence.** [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md),
+`artifacts/phase17_pressure.json`, and the independent Phase 17 verifier.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, and all exact counterexamples above. Passing a bounded regression is necessary
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, and all exact counterexamples above. Passing a bounded regression is necessary
 evidence, never a proof of universality.

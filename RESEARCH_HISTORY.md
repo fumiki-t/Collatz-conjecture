@@ -1211,3 +1211,46 @@ why the separately stored Q=26 NG28 witness is required.
 
 Phase 16 does not exclude G250/H97, H250/H98, the periodic branch, H89, H72,
 nontrivial cycles, or the Collatz conjecture. `proves_collatz=false`.
+
+## 31. Phase 17 — predecessor pressure and the 270 dichotomy
+
+**Branch:** `feat/phase17-predecessor-pressure`
+
+**Acceptance record:** [`PHASE17_RUN_RESULTS.md`](PHASE17_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/predecessor-pressure/REPORT.md`](research/audits/predecessor-pressure/REPORT.md)
+
+Phase 17 treated the supplied note as an untrusted proposal and repaired three
+boundaries. Positive inverse affine correction makes equality at the
+multiplier threshold forbidden, so the mod-648 table is a right-continuous
+allowed-class upper envelope rather than an exact threshold partition.
+Exponent-code cylinders may collide after projection to endpoint residues, so
+their summed Haar mass is only an upper union bound. A finite r=4 pressure
+moment is not promoted to a convergence or monotonicity statement.
+
+P104 reconstructs every supercritical accelerated inverse exponent word
+through four odd steps and combines their mod-81 endpoint exclusions with the
+odd-even-even mod-8 merge. The exact mod-648 allowed counts are
+`51,66,72,117,129,172,192,204,212,216`; the continuous capacity is
+`23093/20736`, and the reciprocal lattice error is `18344/(27N)`. A
+12-term rational atanh enclosure proves the 270 comparison. Under the named
+least-counterexample, finite-crossing, and distinct-odd-input hypotheses,
+either G270 is all-prefix same-Q geodesic or H270 satisfies
+`N<q/270`, `X<q/135`, and `Z<2q/135`.
+
+P105 proves the exact positive-exponent first-passage identity
+`sum 3^-r c^2=1` and its `t^-2` raw endpoint-mass bounds. NG29 then records a
+precisely scoped no-go: coefficient-only summed-Haar predecessor pressure has
+an optimistic normalized ceiling below 360.469. The failure does not cover
+affine correction, one fixed positive ordinary source, transition dependence,
+canonical representatives, or signed carry.
+
+P106 proves suffix decodability for an 11-word r=4 code with exact moment
+`1539/2048`. E28 checks every `1<=n<300000`; E29 independently reconstructs
+the finite predecessor/code/adversarial tables. H104 and H105 remain open.
+
+### What this result does not prove
+
+Phase 17 does not exclude G270/H104, H270/H105, a repeated periodic or
+nontrivial-cycle branch, H89, H72, or the Collatz conjecture.
+`proves_collatz=false`.

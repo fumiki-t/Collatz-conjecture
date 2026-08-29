@@ -17,4 +17,5 @@ Each pack is intentionally short and records:
 - acceptance and stop conditions.
 
 Current primary packs: [`H54.md`](H54.md), [`H70.md`](H70.md),
-[`H72.md`](H72.md), and [`H89.md`](H89.md).
+[`H72.md`](H72.md), [`H89.md`](H89.md), [`H104.md`](H104.md), and
+[`H105.md`](H105.md).

@@ -47,6 +47,12 @@ distinct odd values, P101 reduces a finite crossing to H97 (G250 geodesic) or
 H98 (the ultra-low two-sided box). These are sharper subtargets, not proofs of
 H89, and P102 keeps the repeated periodic branch separate.
 
+Phase 17 strengthens this finite-crossing split to H104 (G270 geodesic) and
+H105 (`N<q/270`, `X<q/135`, `Z<2q/135`) after the internally audited E28
+boundary. NG29 shows that coefficient-only summed-Haar predecessor pressure
+cannot extend the cutoff without bound; the next state must retain more
+ordinary arithmetic.
+
 **Fast falsification test.** Reconstruct NG24--NG28, especially the Q=19
 gain-four pair and Q=26 carry -3 pair, and require the proposed state to preserve P91/P97 signed prefix carries,
 literal positivity, safety, and ordinary source order. Run the mandatory
@@ -56,25 +62,27 @@ families before extending E25--E27.
 verified finite remainder. Finite record growth, Haar measure, or a bounded
 compression gain is insufficient.
 
-## P0 — Phase 16 G250/H250 exclusions
+## P0 — Phase 17 G270/H270 exclusions
 
-**Targets.** Prove H97 and H98. H97 excludes positive ordinary-source
-all-prefix same-Q geodesic critical words in G250. H98 excludes the H250 box
-`N<q/250`, `X<q/125`, `Z<2q/125`.
+**Targets.** Prove H104 and H105. H104 excludes positive ordinary-source
+all-prefix same-Q geodesic critical words in G270. H105 excludes the H270 box
+`N<q/270`, `X<q/135`, `Z<2q/135`.
 
-**Why this helps.** P101 makes the two branches exhaustive for a
-least-counterexample finite crossing with distinct odd values and
-`N>=100000`. Proving both removes that branch. P102 leaves repeated periodic
-values as a separate cycle obligation.
+**Why this helps.** P104 makes the two branches exhaustive for a
+least-counterexample finite crossing with distinct odd values; E28 supplies
+the internal `N>=300000` boundary. Proving both removes that branch. P102
+still leaves repeated periodic values as a separate cycle obligation.
 
-**Missing theorem.** H97 needs a positivity/ordinary-height invariant absent
-from the formal all-contact 2-adic word. H98 needs a two-sided
+**Missing theorem.** H104 needs a positivity/ordinary-height invariant absent
+from the formal all-contact 2-adic word. H105 needs a two-sided
 source/endpoint certificate for a length-Theta(q) history whose two ordinary
-heights are O(q).
+heights are O(q). P105/NG29 show that summed coefficient-only Haar pressure
+cannot supply that invariant by itself.
 
-**Fast falsification test.** H97 must survive NG17, P73, NG24--NG28, and E27.
-H98 must retain both canonical residues, signed carry, literal safety, and
-ordinary height; reject a state at the first NG19 or NG24--NG28 collision.
+**Fast falsification test.** H104 must survive NG17, P73, NG24--NG29, and
+E27/E29. H105 must retain both canonical residues, signed carry, literal
+safety, and ordinary height; reject a state at the first NG19 or NG24--NG29
+collision.
 
 **Success criterion.** Repository proofs for both branches with an effective
 finite remainder. A contact/geodesic-only contradiction, raw address count,
@@ -166,10 +174,15 @@ packing law. These close neither infinite-safe H72 nor the periodic branch;
 P100's distinctness and finite-crossing hypotheses must not be imported into
 an infinite/repeated setting without proof.
 
+Phase 17 adds P105's exponent first-passage identity and P106's
+suffix-decodable r=4 subcode. NG29 proves a ceiling only for the explicitly
+scoped coefficient-only summed-Haar calculus. It neither closes H72 nor
+refutes affine-aware, fixed-source, transition-aware, or carry-aware methods.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
-  cross-Q/unsafe-target witnesses, NG27/NG28, the `{1,2}` core, and every mandatory
+  cross-Q/unsafe-target witnesses, NG27--NG29, the `{1,2}` core, and every mandatory
 adversarial family. Reject any proof that identifies a general
 2-adic source with a positive ordinary integer, drops the per-address lattice
 `+1`, treats `(Q,r3)` as a prefix-closed state, or promotes finite scarcity to

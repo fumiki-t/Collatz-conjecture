@@ -1,0 +1,93 @@
+{
+  "almost_sure_passage_certificate": {
+    "chernoff_lambda": {
+      "denominator": "3",
+      "numerator": "4"
+    },
+    "consequence": "c_(2m)>(9/8)^m eventually almost surely",
+    "even_time_bad_event": "sum(e_1,...,e_(2m))>=3m",
+    "geometric_bound_base": {
+      "denominator": "256",
+      "numerator": "243"
+    }
+  },
+  "claims": {
+    "NG29": "REFUTED",
+    "P105": "VERIFIED_THEOREM"
+  },
+  "coefficient_only_mechanism": {
+    "A_min": "(U-1)/3-(1/2)(1-1/U)",
+    "A_min_at_upper_root_bracket": {
+      "denominator": "33872000",
+      "numerator": "12209787721"
+    },
+    "R_min": "(1/3)log(U)-(1/4)(1-1/U^2)",
+    "certified_q_over_N_ceiling": {
+      "denominator": "1000",
+      "numerator": "360469"
+    },
+    "note": "These are optimistic lower envelopes; near u=1 the formal deletion can exceed the baseline density, which only makes the ceiling more generous.",
+    "ordinary_density_deletion_upper": "1/(2u^2)",
+    "root_bracket": {
+      "lower": {
+        "U": {
+          "denominator": "1000",
+          "numerator": "1083903"
+        },
+        "U_over_1024": {
+          "denominator": "1024000",
+          "numerator": "1083903"
+        },
+        "lower_for_Rmin_minus_3log2": {
+          "denominator": "1294375295044173812374187942292578537596270960610770918700493545242396192037372897581786483357571348907893030060204639694910243929165083764324325548157217930911529840689558340",
+          "numerator": "-126010470931097484320962505603253049220570118155203646534561759155747700797941475576887265129827852698351383382453519421864619474114409358163227946177566542228916187153"
+        },
+        "upper_for_Rmin_minus_3log2": {
+          "denominator": "3313600755313084959677921132269001056246453659163573551873263475820534251615674617809373397395382653204206156954123877618970224458662614436670273403282477903133516392165269350400000",
+          "numerator": "-322586688258743449903571678387762116887517377071378627255224224731382102641999753528542964181130434894903519442424433034661277757789606959894029043316187187553777127408733983"
+        }
+      },
+      "terms": 12,
+      "upper": {
+        "U": {
+          "denominator": "125",
+          "numerator": "135488"
+        },
+        "U_over_1024": {
+          "denominator": "2000",
+          "numerator": "2117"
+        },
+        "lower_for_Rmin_minus_3log2": {
+          "denominator": "15044165751944978235705798105838359952912717480971340101576447169048294085092579706592843932386205642402054062080",
+          "numerator": "3161948365359767247983918623328795582785063968576157821761953344342122464353029436784208064557582118153139"
+        },
+        "upper_for_Rmin_minus_3log2": {
+          "denominator": "9402603594965611397316123816148974970570448425607087563485279480655183803182862316620527457741378526501283788800000",
+          "numerator": "1976218061268419355739208919463591203119652653148429100588540309201788957654546322467980041464616215987413507"
+        }
+      }
+    },
+    "scope": [
+      "forbid only from c(w)>=normalized endpoint height",
+      "bound deletion only by summed 3-adic Haar mass",
+      "discard affine beta, fixed ordinary source, transition dependence, and carry"
+    ],
+    "status": "REFUTED"
+  },
+  "first_passage": {
+    "definition": "proper prefix coefficient <t and whole coefficient >=t",
+    "overshoot": "t<=c<3t/2 because only e=1 can cross upward",
+    "raw_endpoint_mass": "4/(9t^2)<sum_(w in F_t)3^(-|w|)<=1/t^2",
+    "second_moment_identity": "sum_(w in F_t) 3^(-|w|)c(w)^2=1",
+    "union_boundary": "endpoint cylinders may collide, so only the upper union-measure bound survives"
+  },
+  "format": "collatz-phase17-pressure-v1",
+  "positive_drift_certificate": {
+    "exact_power_comparison": "27>16",
+    "expectation": "log(3)-(4/3)log(2)>0"
+  },
+  "proves_collatz": false,
+  "single_exponent_probability": "p_e=3/4^e, sum p_e=1",
+  "what_this_result_does_not_prove": "The ceiling does not apply to affine-correction, fixed-source, transition-aware, carry-aware, or ordinary-representative methods, and it does not refute geodesicity itself.",
+  "word_identity": "p(e_1,...,e_r)=3^r/4^E=3^(-r)c(e)^2"
+}

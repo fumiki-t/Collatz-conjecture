@@ -75,12 +75,21 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   local merges and distinct-odd-value mod-72 reciprocal packing. P101 gives
   the nonperiodic G250/H250 dichotomy; P102 separately retains the weaker
   distinctness-free factor-3 boundary.
+- `VERIFIED_THEOREM`: P104 strengthens the distinct-odd finite-crossing split
+  to G270/H270 using exact r<=4 predecessor exclusions. G270 has `Y_q<2N`
+  and all-prefix same-Q geodesicity; H270 has `N<q/270`, `X<q/135`, and
+  `Z<2q/135`. P105 gives the exact exponent-code pressure identity, and P106
+  gives an 11-word suffix-decodable r=4 code. None excludes its branch.
 - `CONDITIONAL`: P103 applies P102 to the Phase 7 q0 scenario using X02 and
   makes the q0 critical word all-prefix same-Q geodesic. This retains every
   earlier conditional/external input and is not a contradiction.
 - `OPEN`: H97 is exclusion of the positive ordinary-source G250 geodesic
   branch. H98 is exclusion of the H250 box `N<q/250`, `X<q/125`,
   `Z<2q/125`. Neither is proved, and neither covers repeated periodic values.
+- `OPEN`: H104/H105 are the sharper Phase 17 replacements for the
+  distinct-odd finite-crossing split: exclude the G270 positive-source
+  geodesic branch or the H270 two-sided box. H97/H98 remain valid historical
+  weaker obligations; the repeated periodic branch is still separate.
 - `CONDITIONAL` / `OPEN`: P90 shows that eventual H89,
   `M_star(K_q-1)>H_q`, plus a finite first-crossing remainder would exclude
   both finite and never-crossing least-counterexample cases. H89 is unproved;
@@ -198,6 +207,12 @@ No item above proves the Collatz conjecture.
   are same-Q geodesic and 27,949 are also contact-rich. All 225,943 same-Q
   endpoint pairs through the cutoff have positive carry; NG28 at Q=26 shows
   that the finite sign pattern is not universal.
+- Phase 17: E28 checks every `1<=n<300000`, with maximum shortcut stopping
+  time 278 at least source 230631 and maximum peak 12324038948 at least source
+  270271. E29 independently reconstructs 23 supercritical exponent words
+  through r=4, mod-648 counts `51,66,72,117,129,172,192,204,212,216`, the
+  exact 270 logarithm certificate, an 11-word code through three concatenated
+  blocks, and 62 adversarial rows. These are bounded results.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -237,9 +252,9 @@ Phase 8 closes C02 as a genuine theorem for the ordered contracting family
 `A^rB^s`. This is the strongest new universal block result, but it covers only
 one ordering family and therefore does not supersede the P54 barrier route.
 
-Phase 16 gives the strongest current finite-first-crossing localization for
-distinct odd values: G250 is all-prefix same-Q geodesic, while H250 has
-`N<q/250`, `X<q/125`, and `Z<2q/125`. This is a dichotomy rather than an
+Phase 17 gives the strongest current finite-first-crossing localization for
+distinct odd values: G270 is all-prefix same-Q geodesic, while H270 has
+`N<q/270`, `X<q/135`, and `Z<2q/135`. This is a dichotomy rather than an
 exclusion and does not supersede the Phase 6 barrier certificates.
 
 Phase 9 gives the strongest current localization of the q0 conditional
@@ -307,9 +322,9 @@ empty-set statements rather than asymptotic progress.
 Phase 12 constrains the infinite-safe-tail branch using actual odd orbit
 values. The coarse mod-6 packing input is sharp at exponent `1/9`; excluding
 the branch requires an additional transition, positivity, or ordinary-height
-mechanism, not a larger finite range. Phase 16 makes the finite-crossing
-analogue explicit: H97 needs a positive ordinary-source geodesic exclusion,
-while H98 needs a two-sided ultra-low-height exclusion. P73 removes only the all-contact
+mechanism, not a larger finite range. Phase 17 sharpens the finite-crossing
+analogue: H104 needs a positive ordinary-source geodesic exclusion, while
+H105 needs a two-sided ultra-low-height exclusion. P73 removes only the all-contact
 extremal word. The Garcia--Tal audit conditionally upgrades every nonperiodic
 positive orbit to a permanent-safe tail and gives summable defects, but NG22
 shows that those analytic conditions remain consistent with a formal exponent
@@ -329,6 +344,11 @@ tempting finite-state shortcut: endpoint equality does not survive arbitrary
 left extension, so an asymptotic proof still needs a carry-aware lift or a
 different well-founded invariant. P85 narrows the rational-shadow height
 problem only after the octave defect becomes positive.
+Phase 17 shows that four-odd-step predecessor sieving improves the numerical
+split but does not create an unbounded volume method. NG29 caps the explicitly
+scoped coefficient-only summed-Haar envelope below normalized count 360.469.
+Further progress must retain affine correction, a fixed positive ordinary
+source, transitions, canonical representatives, or signed carry.
 
 ## Secondary directions
 
@@ -361,6 +381,11 @@ problem only after the octave defect becomes positive.
 
 ## What was recently refuted?
 
+- `REFUTED`: coefficient-threshold predecessor exclusions combined only by
+  summed 3-adic Haar mass can push the normalized cutoff arbitrarily far
+  (NG29). Even a deliberately optimistic collision-free envelope reaches its
+  reciprocal threshold below 360.469. This does not refute affine-aware,
+  fixed-source, transition-aware, carry-aware, or geodesic methods.
 - `REFUTED`: every shorter safe same-Q endpoint predecessor has positive carry
   (NG28). The exact Q=26 pair has common endpoint 716,727,426,419 and carry
   -3, despite positive carry for every E27 pair through Q=17.
@@ -423,9 +448,9 @@ problem only after the octave defect becomes positive.
 2. Can P91/P92/P95/P97 propagate ancestral-minimal fronts across Q with a
    well-founded signed-carry state that survives NG24--NG28 and proves H89, or at
    least an effective lower bound for `M_star(K_q-1)` beyond E25?
-3. Can H97's positive ordinary-source geodesic words be excluded while the
-   formal all-contact 2-adic prefixes remain allowed, or can H98 be excluded
-   with an exact two-sided source/endpoint-height automaton?
+3. Can H104's positive ordinary-source G270 geodesic words be excluded while
+   the formal all-contact 2-adic prefixes remain allowed, or can H105 be
+   excluded with an exact two-sided source/endpoint-height automaton?
 4. Can P71's exact per-cylinder margin interval be merged across residue
    cylinders by a sound dominance/carry rule strong enough to prove H70
    without relying on EXT07, or can an exact successor rule separate actual
@@ -443,8 +468,8 @@ problem only after the octave defect becomes positive.
   smallest exact counterexample before scaling.
 - Formalize an H89 recursion in `(Q,L,B,r2,r3,D,signed carry)` and reject it first on
   NG24--NG28 before extending the E25--E27 bounds.
-- Prototype H97 and H98 separately. Preserve a fixed positive ordinary source
-  for H97 and both ordinary heights for H98; never apply P100 to a repeated
+- Prototype H104 and H105 separately. Preserve a fixed positive ordinary
+  source for H104 and both ordinary heights for H105; never apply P104 to a repeated
   cycle segment.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
@@ -474,6 +499,9 @@ problem only after the octave defect becomes positive.
 - Replace deterministic canonical representatives by Haar cylinder volume or
   discard the per-address ordinary lattice `+1`; NG23 refutes that step at the
   first codeword.
+- Extend coefficient-only predecessor Haar pressure to a larger word depth
+  without adding affine, fixed-source, transition, representative, or carry
+  information; NG29 proves a finite ceiling for that information set.
 - Retry contact closure plus weighted pressure without a new endpoint or
   least-residue invariant; NG17 is an exact no-go for that information set.
 - Infer an asymptotic law from high finite coverage or a beam search.
@@ -501,4 +529,6 @@ problem only after the octave defect becomes positive.
 - Phase 13 acceptance: [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md)
 - Phase 14 acceptance: [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md)
 - Phase 15 acceptance: [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md)
+- Phase 16 acceptance: [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md)
+- Phase 17 acceptance: [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

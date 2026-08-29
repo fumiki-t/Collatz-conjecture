@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 16's critical dichotomy is the latest research
+proof of the conjecture. Phase 17's predecessor-pressure dichotomy is the latest research
 layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–16 evidence boundaries, and current obligations.
+   branch map, Phase 1–17 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md), then its inputs:
+   [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md),
    [`../PHASE15B_RUN_RESULTS.md`](../PHASE15B_RUN_RESULTS.md),
    [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md),
    [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md),
@@ -102,9 +103,11 @@ flowchart TD
     NG26["NG26 unsafe-target witness"] --> H72
     NG27["NG27 gain-four witness"] --> H89
     P97["P97 signed carry bounds"] --> H89
-    P98["P98 same-Q geodesic criterion"] --> H97["H97 exclude G250"]
-    P101["P101 250 dichotomy"] --> H97
-    P101 --> H98["H98 exclude H250"]
+    P98["P98 same-Q geodesic criterion"] --> H104["H104 exclude G270"]
+    P104["P104 270 dichotomy"] --> H104
+    P104 --> H105["H105 exclude H270"]
+    P105["P105 exponent pressure"] --> NG29["NG29 Haar ceiling"]
+    NG29 --> H104
     NG28["NG28 negative carry"] --> H89
     NG24["NG24 left-congruence failure"] --> H72
     NG23["NG23 raw Haar failure"] --> H72
@@ -118,11 +121,11 @@ Arrows mean “is an input to,” not “has been proved unconditionally.” X02
 external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
-P77--P79, P81--P89, P91--P102 are exact renewal/ancestral/critical theorems;
+P77--P79, P81--P89, P91--P102, and P104--P106 are exact renewal/ancestral/critical theorems;
 P80, P90, and P103 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
-left-congruence failure, and NG25--NG28 delimit the finite ancestral search
-language. H54, H70, H72, H89, H97, H98, C04, C05, every uneliminated P69 branch,
+left-congruence failure, and NG25--NG29 delimit the finite ancestral search
+language. H54, H70, H72, H89, H104, H105, C04, C05, every uneliminated P69 branch,
 and the Collatz conjecture remain open.
 
 ## Active proof obligations
@@ -130,9 +133,9 @@ and the Collatz conjecture remain open.
 | ID | Status | Exact missing step | Fastest useful next test |
 |---|---|---|---|
 | H54 | `OPEN` | Prove `M(K_q-1)>H_q` eventually | Attack any proposed `M(k)` inequality with all stored record failures and mandatory adversarial families |
-| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Preserve signed P91/P97 carry and reject NG27/NG28 before extending E25--E27 |
-| H97 | `OPEN` | Exclude every positive ordinary-source all-prefix same-Q geodesic G250 word | Retain fixed positive source and contact/carry state; reject contact-only/all-contact shortcuts with NG17/P73/NG28 |
-| H98 | `OPEN` | Empty the H250 box `N<q/250`, `X<q/125`, `Z<2q/125` | Use a two-sided exact state and keep the periodic branch separate; test NG19 and NG24--NG28 |
+| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Preserve signed P91/P97 carry and reject NG27--NG29 before extending E25--E29 |
+| H104 | `OPEN` | Exclude every positive ordinary-source all-prefix same-Q geodesic G270 word | Retain fixed source plus affine/carry state; reject contact/all-contact/Haar-only shortcuts with NG17/P73/NG29 |
+| H105 | `OPEN` | Empty the H270 box `N<q/270`, `X<q/135`, `Z<2q/135` | Use a two-sided exact state and keep the periodic branch separate; test NG19 and NG24--NG29 |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, or an equivalent positivity/height obstruction extending P72/P75--P96 | Reject mod-6-only improvements with NG21, analytic/2-adic-only contradictions with NG22, raw Haar substitution with NG23/P96, prefix-closed endpoint states with NG24, and same-Q/safe-target/bounded-gain restrictions with NG25--NG27; test on E20/E22--E26, the `{1,2}` core, and all mandatory families |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
@@ -167,7 +170,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 16 provides the
+artifacts and preserve the recorded manifest hash. Phase 17 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -186,9 +189,10 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   Mod-6 density is blocked by NG21, analytic/general-2-adic coherence by NG22,
   raw local-volume counting by NG23, and endpoint-only prefix propagation by
   NG24; same-Q or safe-target-only pruning is blocked by NG25/NG26, and
-  bounded same-Q gain by NG27 and positive carry by NG28.
-- Attack H97 and H98 as separate obligations. A proof of one branch does not
-  close P101, and neither branch applies to repeated periodic values.
+  bounded same-Q gain by NG27, positive carry by NG28, and coefficient-only
+  unbounded Haar pressure by NG29.
+- Attack H104 and H105 as separate obligations. A proof of one branch does not
+  close P104, and neither branch applies to repeated periodic values.
 - Attack H89 only with a proposed all-depth P91/P92/P95/P97 recurrence. E25's
   `M_star(210)>5000000` and P96's 3-adic complement are not asymptotic or
   pointwise substitutes.
@@ -222,6 +226,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   volume or discarding one lattice error per address: refuted by NG23.
 - Positive same-Q carry: refuted by NG28 at Q=26 even though every pair through
   E27's Q=17 cutoff is positive.
+- Unbounded coefficient-only predecessor Haar pressure: refuted by NG29; the
+  optimistic envelope reaches its threshold below normalized count 360.469.
 - Treating finite disappearance of safe pairs below a bound as a larger-H
   spacing theorem.
 - Treating formal rational cycles as positive integral Collatz cycles.

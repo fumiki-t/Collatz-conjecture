@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the sixteen phases established
+## 3. What the seventeen phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -142,6 +142,14 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   H250 has `N<q/250`, `X<q/125`, `Z<2q/125`. H97 and H98 remain open. NG28's
   exact Q=26 carry -3 witness forbids positive-carry recurrences; E27 is finite
   through Q=17.
+- Phase 17 enumerates all 23 supercritical accelerated inverse words through
+  r=4 and combines their endpoint exclusions with the odd-even-even rule in a
+  mod-648 upper envelope. P104 sharpens the distinct-odd finite-crossing split:
+  G270 is all-prefix same-Q geodesic, while H270 has `N<q/270`, `X<q/135`,
+  and `Z<2q/135`. P105 proves an exact exponent-code pressure identity; P106
+  gives an 11-word suffix-decodable r=4 code. NG29 caps only the
+  coefficient-only summed-Haar envelope. H104/H105 remain open, and E28/E29
+  are finite.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -182,11 +190,11 @@ P89 ancestral minimality
 
 E25 is a depth-210 finite datum, not the missing eventual theorem.
 
-Phase 16 gives a new finite-crossing split inside this route:
+Phase 17 gives the strongest finite-crossing split inside this route:
 
 ```text
-distinct odd values -> G250 all-prefix geodesic (H97 OPEN)
-                    or H250 ultra-low source/endpoint box (H98 OPEN)
+distinct odd values -> G270 all-prefix geodesic (H104 OPEN)
+                    or H270 ultra-low source/endpoint box (H105 OPEN)
 repeated values     -> P102 factor-3 boundary; cycle branch remains separate.
 ```
 
@@ -233,8 +241,8 @@ should answer all of these before a large computation:
 4. Does it survive every mandatory adversarial family?
 5. What certificate can an implementation-independent verifier reconstruct?
 
-For H54, H70, or H72, use the scoped pack under [`context/`](context/README.md);
-for H89/H97/H98, use the Phase 15B and Phase 16 audits. Confirm status against `CLAIMS_LEDGER.md`. Register a large experiment
+For H54, H70, H72, H89, H104, or H105, use the scoped pack under
+[`context/`](context/README.md). Confirm status against `CLAIMS_LEDGER.md`. Register a large experiment
 under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
 
@@ -244,7 +252,7 @@ inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
 quotient/carry state extending P71, and a positive ordinary-integrality or
 effective shadow-height obstruction extending P75--P85. Start from the stored
 NG19 collisions, universal NG20 pair, both NG22 formal 2-adic sources, NG23's
-raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG28
+raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG29
 cross-Q/unsafe-target witnesses: any proposed merge
 must distinguish them or prove a sound dominance relation. Certificate
 extension is useful when it tests such structure; raw depth extension is
@@ -270,6 +278,8 @@ From the repository root:
   --artifact-dir artifacts --output /tmp/collatz_phase13_verifier.json
 .venv/bin/python verifier/verify_phase14.py \
   --artifact-dir artifacts --output /tmp/collatz_phase14_verifier.json
+.venv/bin/python verifier/verify_phase17.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase17_verifier.json
 .venv/bin/python scripts/build_claim_index.py --check
 .venv/bin/python scripts/check_markdown_links.py
 .venv/bin/python scripts/research_health.py
@@ -281,7 +291,7 @@ non-strict command deliberately reports local untracked artifacts as warnings
 without treating them as accepted evidence.
 
 The current manifest hash is recorded in
-[`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md).
+[`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md).
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 
@@ -291,14 +301,14 @@ Before changing a claim status, read its row in
 [`LITERATURE.md`](LITERATURE.md).
 
 The current local `scratch/` inventory is superseded by the accepted
-Garcia--Tal, Phase 13, and Phase 14 audits; it is not accepted evidence. No
-post-Phase-14 scratch candidate is accepted evidence. See the scratch index in
+Garcia--Tal and Phase 13--17 audits; it is not accepted evidence. No
+post-Phase-17 scratch candidate is accepted evidence. See the scratch index in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md#10-scratch-index).
 
 ## If you only remember one thing
 
 The current bottleneck is not finite verification, contact density, or the
-Phase 16 dichotomy. It is a
+Phase 17 dichotomy. It is a
 rigorous asymptotic link from high affine correction to ordinary height, or a
 cross-cylinder spacing theorem. P71 solves exact margins only inside a fixed
 finite cylinder; NG19 prevents literal truncation, and NG20 prevents discarding
