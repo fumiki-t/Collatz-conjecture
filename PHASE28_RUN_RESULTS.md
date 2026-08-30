@@ -76,8 +76,13 @@ NG37 witness, and `proves_collatz` field.
 git diff --check
 ```
 
-Acceptance commit, test totals, strict-health result, and the SHA-256 of the
-final manifest are recorded after the acceptance run.
+The accepted evidence is fixed at commit
+`82b8e3b7169ba18298efdb4f2ff38f10efd2a9bc`. The focused suite reports
+`19 passed in 26.46s`; the complete repository suite reports
+`394 passed in 1315.58s`. Strict research health reports `valid=true` with
+185 tracked artifacts and no errors, warnings, or untracked artifacts. The
+SHA-256 of the accepted `artifacts/SHA256SUMS` is
+`305542986c9c56a366e17b47ee0edffd18055f42226d649274507d48fd40267f`.
 
 ## What this result does not prove
 
