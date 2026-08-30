@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase24-sparse-arc-resultants",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P147", "P148", "P149", "P150", "E36", "NG33", "H147"],
   "objective": "Audit a sparse circular-arc divisor for coprime slope-root polynomials, use it with an exact profile recurrence to exclude every positive coprime area-two cycle profile, and preserve the paired area-three obstruction without asymptotic promotion.",
   "exact_scope": {
@@ -84,5 +84,15 @@
     "NG33 refutes only the generic seven-point cardinality proof; paired-support or stronger arithmetic methods remain open.",
     "H133, H147, every noncoprime cycle, H89, H70, H72, H112, and Collatz remain open; proves_collatz remains false."
   ],
+  "recorded_result": {
+    "commit": "568a44e8819be4c6217cfc25f971bfedf4c3311c",
+    "generator": "valid=true with 7,057 critical remainder, 204 noncritical remainder, 544,073 direct critical area-two, and 521,154 area-three rows",
+    "verifier": "valid=true with generator_imported=false, shifted Bezout roots, opposite largest-gap ties, and zero finite threshold failures",
+    "focused_tests": "17 passed in 219.60s across Phase 24 properties, verifier acceptance, tamper rejection, and research-health control-plane tests",
+    "full_tests": "344 passed in 1084.02s",
+    "strict_research_health": "valid=true with 158 tracked artifacts and zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "3344a120bf389a62d8ac8bb7c455b1bfa04609f7f06e7c0ce58a8eaf37e2eba3",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }

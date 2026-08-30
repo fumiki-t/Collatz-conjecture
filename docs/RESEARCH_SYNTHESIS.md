@@ -2,7 +2,7 @@
 
 **Audit date:** 2026-08-29
 
-**Audited base:** `482f0357ffc5082e228bc4f3441b0a9e22f4f975`
+**Audited base:** `568a44e8819be4c6217cfc25f971bfedf4c3311c`
 
 **Latest accepted phase:** Phase 24
 
