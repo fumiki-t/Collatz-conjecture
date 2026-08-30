@@ -580,6 +580,31 @@ including `a(26)=1037374`. Phase 7 reproduces selected A100982 terms
 `1,2,7,312455` at `q=1,3,5,17`. The internally verified enumerations do not
 depend on OEIS, and the known sequence identities limit the newness claim.
 
+## Explicit logarithmic forms
+
+### Matveev (2000)
+
+**Status:** `EXTERNAL_THEOREM`; active Phase 27 input EXT17
+
+E. M. Matveev, “An explicit lower bound for a homogeneous rational linear
+form in the logarithms of algebraic numbers. II,” *Izvestiya: Mathematics*
+**64**:6 (2000), 1217--1269.
+[DOI 10.1070/IM2000v064n06ABEH000314](https://doi.org/10.1070/IM2000v064n06ABEH000314);
+[primary Math-Net record](https://www.mathnet.ru/eng/im314).
+
+**Result relevant here.** Theorem 2.1 and its standard real multiplicative
+specialization give an explicit lower bound for a nonzero expression
+`alpha_1^b_1 ... alpha_n^b_n-1` in terms of algebraic degrees, logarithmic
+heights, and coefficient height.
+
+**Repository role.** Phase 27 sets `alpha_1=2`, `alpha_2=3`, `b_1=L`,
+`b_2=-q`, and exactly majorizes the published coefficient by
+`K=1564920000`. This gives the conservative critical bound
+`2^L3^(-q)-1>(12q)^(-K)` and is used only through EXT17 in P164. The theorem
+is not reproved here; the specialization and every rational majorization are
+audited in the Phase 27 report and verifier. Its finite numerical strength is
+far weaker than EXT05 and it does not exclude a cycle.
+
 ## Computational verification bound
 
 ### Barina convergence-verification project
@@ -658,4 +683,7 @@ is still required for:
    B.1 if EXT05 ever becomes part of a claimed full Collatz proof;
 4. an independent specialist review of Fernández--Ibáñez Proposition 5.2 and
    Theorems 6.4/7.3 before P139 is used inside any claimed full cycle
-   exclusion.
+   exclusion;
+5. an independent specialist review of the precise Matveev Theorem 2.1
+   normalization and the Phase 27 two-logarithm specialization before EXT17
+   is used inside any claimed full cycle exclusion.

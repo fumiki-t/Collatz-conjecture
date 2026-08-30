@@ -110,26 +110,27 @@ including arbitrary-area coprime profiles and general noncoprime slopes.
 finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
-**Missing theorem.** P156/P157 now cover every gcd class. P158 eliminates all
-critical positive-cycle area at most five and closes H147; P159 pushes every
-noncritical candidate beyond area 100000. The first remaining frontier is
-critical area six. NG35 proves that EXT05 plus factor separation alone has the
-wrong exponential coefficient there. No theorem converts support,
-height-transition variation, or correction loss into a uniform area-six or
-arbitrary-area contradiction. P140 still supplies only a smaller modulus
-`D_0` for noncoprime slopes.
+**Missing theorem.** P164 now forces `A_*=Omega(q^(2/3))` and P165 forces
+`s_*=Omega(sqrt(q))` along every hypothetical unbounded positive-cycle
+sequence, across all gcd classes. These bounds still admit a tall regime with
+large height and a diffuse regime with many low defects. No theorem turns
+forced descents, support locations, correction loss, or resultants into a
+contradiction in both regimes. NG36 also forbids silently identifying P133's
+least-value rotation with P156's discrepancy-minimum rotation. P140 still
+supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
-cycle and its powers, the Phase 26 all-gcd corpus, NG34, NG35, the E37
-seven-grid rows, and macro/NG28/NG30 controls. Reject any rule that silently
-uses `gcd(L,q)=1`, confuses `D|B` with primitive period, or treats a
-negative/rational affine cycle as positive.
+cycle and its powers, the Phase 27 all-gcd corpus and tall/diffuse profiles,
+NG34--NG36, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
+rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
+`D|B` with primitive period, or treats a negative/rational affine cycle as
+positive.
 
-**Success criterion.** First, an exact exclusion of critical area six using a
-mechanism that can plausibly scale; ultimately a uniform theorem proving
-`abs(R)<D`, `C_min<300000D`, or an equivalent contradiction for every
-remaining profile, with an independently verified finite remainder. Extending
-`q` or enumerating another fixed small area without a new invariant is not
+**Success criterion.** A uniform theorem proving `abs(R)<D`,
+`C_min<300000D`, or an equivalent contradiction for both tall and diffuse
+profiles, every gcd class, and both rotation conventions, with an independently
+verified finite remainder. Extending `q`, enumerating another fixed area, or
+reproving asymptotic area/support growth without a new invariant is not
 success.
 
 ## P1 — Renewal-ladder dropping-safe barrier

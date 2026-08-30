@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–26, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–27, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -54,6 +54,7 @@ This is the canonical map of the research archive. Start with
 | 24 | [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md) | [`../artifacts/phase24_obstruction_report.md`](../artifacts/phase24_obstruction_report.md) | `feat/phase24-sparse-arc` |
 | 25 | [`../PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md) | [`../artifacts/phase25_obstruction_report.md`](../artifacts/phase25_obstruction_report.md) | `feat/phase25-hamming-resonance` |
 | 26 | [`../PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md) | [`../artifacts/phase26_obstruction_report.md`](../artifacts/phase26_obstruction_report.md) | `feat/phase26-cycle-area-barrier` |
+| 27 | [`../PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md) | [`../artifacts/phase27_obstruction_report.md`](../artifacts/phase27_obstruction_report.md) | `feat/phase27-asymptotic-cycle-area` |
 
 Research supplements:
 
@@ -76,9 +77,10 @@ Research supplements:
 | Sparse-arc/resultant audit | [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md) | Phase 24 circular-gap divisor, exact area-two/three profile shapes, complete coprime area-two exclusion, and finite paired area-three diagnostic | P147--P150, E36, NG33, H147 boundary |
 | Hamming/resonance audit | [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md) | Phase 25 support-sensitive factor bounds, q0 support certificate, paired-arc falsifier, resonant-grid resultant, and exact seven-grid exclusion | P151--P155, E37, NG34, repaired H147 boundary |
 | Cycle-area barrier audit | [`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md) | Phase 26 reduced-slope all-gcd edit profiles, primitive-positive factor separation, exact critical/noncritical area barriers, and scalar obstruction | P156--P161, E38, NG35, closed H147 and repaired H133 boundary |
+| Asymptotic cycle-area audit | [`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md) | Phase 27 polynomial multiplier gaps, all-gcd area/support dispersion, exact envelopes, and rotation trap | EXT17, P162--P165, E39, NG36, repaired H133/H141 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 26 and both the branch-point and two-tail
+documentation through Phase 27 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

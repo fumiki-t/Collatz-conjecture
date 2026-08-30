@@ -1,0 +1,180 @@
+{
+  "boundary": "These are valid reduced profiles and exact adversarial controls, not positive integer cycles. They do not prove optimality of the two asymptotic exponents for actual cycles.",
+  "format": "collatz-phase27-synthetic-profiles-v1",
+  "near_grid_control": {
+    "L": 100363,
+    "L_arc_width": 85875,
+    "direct_modular_gcd": 1,
+    "q": 63322,
+    "q_arc_width": 54181,
+    "roots": [
+      9046,
+      18092,
+      27138
+    ]
+  },
+  "proves_collatz": false,
+  "row_digest_sha256": "cfe7be20dc641a40f8815a1e8c2c4a6941725bd0887b3f3cc2213a6d023a4746",
+  "rows": [
+    {
+      "L": 199,
+      "area": 23,
+      "area_cube_over_q_squared": [
+        "12167",
+        "15625"
+      ],
+      "exponent_digest_sha256": "b320bb10311a4d8e6eb43b56b766ddf520e5c3cc79014a3689331c7b17c6c64c",
+      "hamming": 6,
+      "height": 5,
+      "height_cube_over_q": [
+        "1",
+        "1"
+      ],
+      "kind": "tall",
+      "profile_digest_sha256": "285f4226bcc326e08fdeecac31b6fb667d38bce46d2a5c5b3cab5a7d181f171d",
+      "q": 125,
+      "support": 8,
+      "valid_positive_exponents": true
+    },
+    {
+      "L": 199,
+      "area": 33,
+      "area_cube_over_q_squared": [
+        "35937",
+        "15625"
+      ],
+      "exponent_digest_sha256": "1bd3564da35f1d31659476dc6e8d0227ead13b177eb8ab1d3bc64dd281dcf906",
+      "hamming": 8,
+      "height": 6,
+      "height_cube_over_q": [
+        "216",
+        "125"
+      ],
+      "kind": "diffuse",
+      "profile_digest_sha256": "e8ba970c4949c7f1ab9de0a852fa09ce76945018c079ee1410bfb8ef69625eb4",
+      "q": 125,
+      "support": 10,
+      "valid_positive_exponents": true
+    },
+    {
+      "L": 544,
+      "area": 44,
+      "area_cube_over_q_squared": [
+        "85184",
+        "117649"
+      ],
+      "exponent_digest_sha256": "5bf19d63b01f02938a94ce7c00f25f029119840f4ea045471420f3209e20f956",
+      "hamming": 10,
+      "height": 7,
+      "height_cube_over_q": [
+        "1",
+        "1"
+      ],
+      "kind": "tall",
+      "profile_digest_sha256": "7a0c38abf282aed2610987c53352633f70ccd607fa7fd2af9b11062f3df8a4ab",
+      "q": 343,
+      "support": 11,
+      "valid_positive_exponents": true
+    },
+    {
+      "L": 544,
+      "area": 57,
+      "area_cube_over_q_squared": [
+        "185193",
+        "117649"
+      ],
+      "exponent_digest_sha256": "e8f4478991659290929be966bc84b361647d490b3b32935ce9e09bb546978350",
+      "hamming": 10,
+      "height": 8,
+      "height_cube_over_q": [
+        "512",
+        "343"
+      ],
+      "kind": "diffuse",
+      "profile_digest_sha256": "c2551bc2862463c19f9908b73f9f4c9635404e0a806a3767255af8635e506a8b",
+      "q": 343,
+      "support": 13,
+      "valid_positive_exponents": true
+    },
+    {
+      "L": 1156,
+      "area": 72,
+      "area_cube_over_q_squared": [
+        "512",
+        "729"
+      ],
+      "exponent_digest_sha256": "93ff91689bd993202692fe0f842a8fcd78f532dedd50cae24fa88e535b9dbb2b",
+      "hamming": 12,
+      "height": 9,
+      "height_cube_over_q": [
+        "1",
+        "1"
+      ],
+      "kind": "tall",
+      "profile_digest_sha256": "fbb0127e45829e4332722d9aee78d061ba9923e2526f263f8f623584b0d5089f",
+      "q": 729,
+      "support": 15,
+      "valid_positive_exponents": true
+    },
+    {
+      "L": 1156,
+      "area": 145,
+      "area_cube_over_q_squared": [
+        "3048625",
+        "531441"
+      ],
+      "exponent_digest_sha256": "3b77566d7ea68c86b60319acab35ce9c50b4a0cf2f774d29920ec3e13fa8cea7",
+      "hamming": 24,
+      "height": 9,
+      "height_cube_over_q": [
+        "1",
+        "1"
+      ],
+      "kind": "diffuse",
+      "profile_digest_sha256": "52513f3b1d32505b2a2537c1c015cf89030096b1d9e25511928e8c5e128b8b74",
+      "q": 729,
+      "support": 30,
+      "valid_positive_exponents": true
+    },
+    {
+      "L": 2110,
+      "area": 107,
+      "area_cube_over_q_squared": [
+        "1225043",
+        "1771561"
+      ],
+      "exponent_digest_sha256": "95ef047510a92f6f2d5898a5c713e0a2511704585dc92509e7a473fb3d440f9b",
+      "hamming": 14,
+      "height": 11,
+      "height_cube_over_q": [
+        "1",
+        "1"
+      ],
+      "kind": "tall",
+      "profile_digest_sha256": "797a94e92ab9d13594f6500dd553019f896f874182146d33a3bf61e31d1057db",
+      "q": 1331,
+      "support": 18,
+      "valid_positive_exponents": true
+    },
+    {
+      "L": 2110,
+      "area": 176,
+      "area_cube_over_q_squared": [
+        "4096",
+        "1331"
+      ],
+      "exponent_digest_sha256": "76e4ec161c411abbc360aaa513a5d7915fe70fa569dc7bb82c70a05d9bb4af27",
+      "hamming": 24,
+      "height": 10,
+      "height_cube_over_q": [
+        "1000",
+        "1331"
+      ],
+      "kind": "diffuse",
+      "profile_digest_sha256": "9ae439601e206654c1fd3bbf3408f266edf01ef54dc1732af2e5a0865861d6b9",
+      "q": 1331,
+      "support": 33,
+      "valid_positive_exponents": true
+    }
+  ]
+}

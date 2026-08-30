@@ -1587,3 +1587,40 @@ checks.
 Phase 26 does not exclude critical area six or above, arbitrary-area positive
 cycles, any nonperiodic counterexample branch, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 2026-08-30 — Phase 27: asymptotic cycle area and support
+
+**Branch:** `feat/phase27-asymptotic-cycle-area`
+
+**Acceptance record:** [`PHASE27_RUN_RESULTS.md`](PHASE27_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/asymptotic-cycle-area/REPORT.md`](research/audits/asymptotic-cycle-area/REPORT.md)
+
+Phase 27 treated the supplied asymptotic-area note as an untrusted proposal.
+P162 turns any polynomial lower bound on `lambda(1-lambda)` into the necessary
+dispersion
+`liminf A_*/q^(2/3)>=((log_2 3)^2/2)^(1/3)`. P163 derives the needed gap
+internally on the noncritical branch. EXT17 records Matveev's external
+two-logarithm theorem; an exact conservative specialization with
+`K=1564920000` supplies the critical gap and yields global P164.
+
+P165 replaces total area by arbitrary-gcd defect support. It proves Hamming
+distance at most `2s_*`, factor complexity at most `(2s_*+1)n+1`,
+`h_*<=s_*`, and the global necessary condition
+`liminf s_*/sqrt(q)>=sqrt(log_2 3/2)`.
+
+NG36 preserves the smallest rotation trap: the primitive positive rational
+shadow `e=(1,3)` has orbit `5/7 -> 11/7 -> 5/7`, least-value offset zero, and
+discrepancy-minimum offset one. It is not an integer cycle, so the narrower
+integer alignment question remains open.
+
+E39 independently rebuilds all 2,214 positive-D cyclic exponent classes
+through `q<=8`, 3,101 support rows, 45,369 factor rows, exact finite envelopes,
+eight tall/diffuse synthetic profiles, and all mandatory families. H133 is
+reframed around excluding both asymptotic structural regimes, not closed.
+
+### What this result does not prove
+
+Phase 27 does not exclude arbitrary-area cycles, tall or diffuse surviving
+profiles, either nonperiodic counterexample branch, or the Collatz conjecture.
+`proves_collatz=false`.

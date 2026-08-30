@@ -1,0 +1,84 @@
+{
+  "claims": {
+    "E39": {
+      "statement": "The declared q<=8 corpus, exact envelopes, synthetic profiles, alignment obstruction, and mandatory controls are independently reproducible.",
+      "status": "VERIFIED_FINITE"
+    },
+    "EXT17": {
+      "statement": "Matveev's explicit real two-logarithm theorem gives the recorded fixed-2,3 multiplicative lower bound.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    "H133": {
+      "statement": "Asymptotic area and support growth do not exclude arbitrary-area primitive positive cycles.",
+      "status": "OPEN"
+    },
+    "NG36": {
+      "statement": "Least-value and discrepancy-minimum rotations universally coincide for positive rational affine cycles.",
+      "status": "REFUTED"
+    },
+    "P162": {
+      "statement": "A polynomial lower bound on lambda(1-lambda) forces liminf A_*/q^(2/3)>=((log_2 3)^2/2)^(1/3).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P163": {
+      "statement": "The noncritical positive-cycle branch has an internal polynomial multiplier gap and therefore the P162 area dispersion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P164": {
+      "statement": "Using EXT17 on the critical branch, every primitive positive nontrivial cycle sequence has the P162 area liminf.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P165": {
+      "statement": "Arbitrary-gcd support controls Hamming complexity, h_*<=s_*, and polynomial gap forces liminf s_*/sqrt(q)>=sqrt(log_2 3/2); P163/P164 make this global for positive cycles.",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "critical_gap": "EXT17 implies lambda*(1-lambda)>q^(-K)/(4*12^K), K=1564920000",
+  "dependencies": {
+    "P162": [
+      "P156",
+      "P157"
+    ],
+    "P163": [
+      "P134",
+      "P156",
+      "P157",
+      "E28"
+    ],
+    "P164": [
+      "P162",
+      "P163",
+      "EXT17"
+    ],
+    "P165": [
+      "P125",
+      "P151",
+      "P156",
+      "P157",
+      "P163",
+      "P164"
+    ]
+  },
+  "format": "collatz-phase27-asymptotic-theory-v1",
+  "noncritical_gap": "lambda*(1-lambda)>=(1/2)*exp(-1/3)*(1+q)^(-1/9)",
+  "polynomial_gap_area": {
+    "conclusion": "liminf A/q^(2/3)>=((log_2(3))^2/2)^(1/3)",
+    "hypothesis": "lambda*(1-lambda)>=c*q^(-kappa) with fixed c>0 and kappa>=0",
+    "master": "log_2(3)*q < (A+1)*(sqrt(2A)+(kappa+1)*log_2(q)+O(1))"
+  },
+  "proves_collatz": false,
+  "rotation_boundary": "P133 uses a least-value rotation; P156 uses a discrepancy-minimum rotation. They cannot be identified without an additional theorem.",
+  "structural_phase_diagram": {
+    "diffuse": "h_*=o(q^(1/3)), so area of order q^(2/3) must be spread over many lower defects",
+    "status": "strategy split only; neither branch is excluded",
+    "tall": "h_* comparable to or above q^(1/3), forcing a descent through every level and valuation-one transitions at baseline-2 positions"
+  },
+  "support": {
+    "conclusion": "liminf s_*/sqrt(q)>=sqrt(log_2(3)/2)",
+    "definition": "s_*=#{0<=j<q:a_j>0}",
+    "factor": "p_cyc(n)<=(2s_*+1)n+1",
+    "hamming": "H(v_a,v_0)<=2s_*",
+    "height": "h_*<=s_*"
+  },
+  "what_this_result_does_not_prove": "No area is excluded asymptotically, neither tall nor diffuse profiles are eliminated, positive-integral rotation alignment is open, and Collatz is not proved."
+}

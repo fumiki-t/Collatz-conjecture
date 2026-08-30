@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "phase27-asymptotic-cycle-area",
+  "status": "ACCEPTED",
+  "claim_ids": ["EXT17", "P162", "P163", "P164", "P165", "E39", "NG36", "H133"],
+  "objective": "Derive asymptotic area and support dispersion from polynomial multiplier gaps, specialize an explicit critical two-logarithm bound, and audit the rotation boundary without promoting finite evidence to cycle exclusion.",
+  "exact_scope": {
+    "quantifiers": [
+      "all hypothetical sequences of primitive positive nontrivial cycles with q tending to infinity for P162-P165",
+      "all noncritical primitive positive nontrivial cycles for the internal P163 gap",
+      "all critical primitive positive nontrivial cycles under external theorem EXT17",
+      "all positive-D cyclic exponent classes through q<=8 for E39",
+      "the declared exact finite envelope and synthetic-profile grids"
+    ],
+    "bounds": {
+      "cycle_corpus_q_maximum": 8,
+      "matveev_integer_majorant_K": 1564920000,
+      "synthetic_profile_count": 8,
+      "mandatory_family_count": 7
+    },
+    "completeness": "P162-P165 are theorem-level necessary asymptotic conditions in their stated domains. EXT17 remains external. E39 is bounded. NG36 refutes only rational-shadow rotation alignment. H133 remains open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, Fraction arithmetic, rational atanh-series logarithm enclosures, cyclic composition enumeration, integer-encoded factor sets, and SHA-256 row digests",
+    "floating_point_role": "none in generation, verification, thresholds, or acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase27_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase27.py --artifact-dir artifacts --output artifacts/phase27_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase27_properties.py tests/test_phase27_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "the complete q<=8 positive-D necklace corpus by recursive reverse compositions",
+      "minimum discrepancy rotations and positive rational affine traces",
+      "support Hamming, height, and cyclic factor inequalities",
+      "effective envelopes with an 84-term logarithm enclosure independent of the generator's 72-term routine",
+      "tall and diffuse profile controls from separately coded recurrences",
+      "the full rotation obstruction and all mandatory adversarial rows"
+    ],
+    "forbidden_imports": ["src.phase27_search", "phase27_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase27_verifier.py"]
+  },
+  "external_inputs": [
+    "EXT17: Matveev 2000 explicit lower bound for a real linear form in logarithms",
+    "X02 appears only in a conditional Phase 26 envelope reconstruction"
+  ],
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "positive rational shadow e=(1,3)",
+    "tall and diffuse exact reduced profiles",
+    "Phase 25 near-grid resonance control",
+    "Phase 26 area-six scalar reversal"
+  ],
+  "artifacts": [
+    "artifacts/phase27_theory.json",
+    "artifacts/phase27_cycle_corpus.json",
+    "artifacts/phase27_envelopes.json",
+    "artifacts/phase27_synthetic_profiles.json",
+    "artifacts/phase27_regressions.json",
+    "artifacts/phase27_obstruction_report.md",
+    "artifacts/phase27_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not replace the least-value rotation with a discrepancy-minimum rotation without a positive-integral theorem.",
+    "Do not treat the rational e=(1,3) shadow as an integer cycle.",
+    "Do not infer an all-area contradiction from Omega(q^(2/3)) area or Omega(sqrt(q)) support.",
+    "Do not internalize EXT17 or X02.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The polynomial gap and dispersion bounds are necessary conditions, not cycle exclusions.",
+    "The finite envelope grid is a sanity check and is not the proof of P162-P165.",
+    "Both tall and diffuse abstract profiles survive.",
+    "H133, both nonperiodic branches, and Collatz remain open; proves_collatz remains false."
+  ],
+  "recorded_result": {
+    "commit": "PENDING",
+    "generator": "valid=true with 2214 cyclic classes, 1417 noncoprime classes, eight synthetic profiles, and the e=(1,3) rotation mismatch",
+    "verifier": "valid=true with generator_imported=false, recursive reverse compositions, direct rational traces, independent factor sets, and 84-term logarithm boxes",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

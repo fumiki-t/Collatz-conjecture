@@ -205,6 +205,12 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   factor separation. P158 forces critical `A_*>=6`, closing H147, while P159
   forces noncritical `A_*>100000`. NG35 records why the scalar proof stops at
   critical area six. H133 and the full cycle branch remain open.
+- Phase 27 replaces fixed-area asymptotics by global dispersion necessities.
+  P164 forces `A_*=Omega(q^(2/3))` and P165 forces
+  `s_*=Omega(sqrt(q))` across every gcd class; EXT17 is the external critical
+  input. NG36 records that least-value and discrepancy-minimum rotations do
+  not universally align for positive rational shadows. Both tall and diffuse
+  profiles survive, so H133 remains open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

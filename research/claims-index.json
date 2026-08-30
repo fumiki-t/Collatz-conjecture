@@ -1,5 +1,5 @@
 {
-  "claim_count": 211,
+  "claim_count": 218,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2502,21 +2502,22 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Eliminate every remaining primitive positive nontrivial cycle: critical reduced-slope area at least six and the noncritical branch with `A_*>100000`, including all gcd classes.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle, now known along any unbounded sequence to have `A_*=Omega(q^(2/3))` and support `s_*=Omega(sqrt(q))`, including both tall and diffuse reduced profiles and every gcd class.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P161, E28, E34--E38, EXT05, NG32--NG35; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160.",
+      "dependencies": "P133--P165, E28, E34--E39, EXT05, EXT17, NG32--NG36; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160.",
       "dependency_ids": [
         "E28",
         "EXT05",
         "EXT15",
+        "EXT17",
         "P160",
         "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-30 (Phase 26 audit)",
-      "notes": "P158 closes all positive-cycle area at most five, including noncoprime slopes; NG35 shows the scalar mechanism stops at critical area six, while large noncritical area is not contradictory.",
+      "last_audited": "2026-08-30 (Phase 27 audit)",
+      "notes": "P164/P165 force asymptotic dispersion but do not contradict arbitrary-area cycles; NG36 forbids silently aligning least-value and discrepancy-minimum rotations using rational-shadow algebra alone.",
       "status": "OPEN"
     },
     {
@@ -2630,21 +2631,22 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or the surviving Phase 26 reduced-slope profiles into an all-area H133 obstruction.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or Phase 27's tall and diffuse reduced-slope profiles into an all-area H133 obstruction.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P161 as scoped; P97/P132 for H89; P156/P157 for arbitrary-gcd cycles; NG32--NG35 and concentrated-defect falsifiers.",
+      "dependencies": "P141--P165 as scoped; P97/P132 for H89; P156/P157/P165 for arbitrary-gcd cycles; NG32--NG36 and concentrated/diffuse falsifiers.",
       "dependency_ids": [
         "H89",
         "P132",
         "P156",
         "P157",
+        "P165",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md).",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-30 (Phase 26 audit)",
-      "notes": "P158 eliminates small cycle area but NG35 blocks the same scalar mechanism at area six; large area/support is not itself a contradiction.",
+      "last_audited": "2026-08-30 (Phase 27 audit)",
+      "notes": "Area and support must grow, but neither is contradictory; any rotation-dependent bridge must survive NG36.",
       "status": "OPEN"
     },
     {
@@ -2980,9 +2982,109 @@
       "last_audited": "2026-08-30",
       "notes": "Exact coefficient reversal: `75^7=13348388671875>13194139533312=3*64^7`. This refutes the method extension, not the nonexistence of a stronger theorem.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "Matveev's explicit real linear-form theorem, specialized to `2^L3^(-q)-1`, gives the conservative bound `2^L3^(-q)-1>(12q)^(-1564920000)` for `q>=1`, `q<L<2q`, when the form is nonzero and positive.",
+      "collatz_implication": "Supplies a polynomial critical multiplier gap for P164.",
+      "dependencies": "Matveev (2000), Theorem 2.1 / standard real multiplicative corollary; degree one, algebraic numbers 2 and 3; exact majorization of the published constant.",
+      "dependency_ids": [],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); [`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md), Section 4; `artifacts/phase27_envelopes.json`.",
+      "first_introduced": "Phase 27",
+      "id": "EXT17",
+      "last_audited": "2026-08-30",
+      "notes": "The external theorem is not reproved; the bound is intentionally loose and does not exclude a cycle.",
+      "status": "EXTERNAL_THEOREM"
+    },
+    {
+      "claim": "For any sequence of primitive positive nontrivial cycles with `q->infinity`, if `lambda(1-lambda)>=c q^(-kappa)` for fixed `c>0,kappa>=0`, then `liminf A_*/q^(2/3)>=((log_2 3)^2/2)^(1/3)`.",
+      "collatz_implication": "Converts any polynomial multiplier gap into necessary area dispersion.",
+      "dependencies": "P156/P157; polynomial multiplier gap; positive primitive cycles; reduced-slope area `A_*`.",
+      "dependency_ids": [
+        "P156",
+        "P157"
+      ],
+      "evidence": "[`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md), Section 2; `artifacts/phase27_theory.json`.",
+      "first_introduced": "Phase 27",
+      "id": "P162",
+      "last_audited": "2026-08-30",
+      "notes": "It is a lower-growth condition, not an exclusion of arbitrary-area cycles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every noncritical primitive positive nontrivial cycle satisfies `lambda(1-lambda)>(1/2)e^(-1/3)(1+q)^(-1/9)`, and hence every unbounded noncritical cycle sequence obeys P162.",
+      "collatz_implication": "Makes the noncritical asymptotic area bound internal, without a Diophantine external input.",
+      "dependencies": "P134 and `m>=3`; noncritical means `lambda<1/2`.",
+      "dependency_ids": [
+        "P134"
+      ],
+      "evidence": "[`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md), Section 3; `artifacts/phase27_theory.json`.",
+      "first_introduced": "Phase 27",
+      "id": "P163",
+      "last_audited": "2026-08-30",
+      "notes": "It does not improve the finite P159 barrier into an all-area contradiction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every hypothetical sequence of primitive positive nontrivial cycles with `q->infinity`, critical or noncritical, satisfies `liminf A_*/q^(2/3)>=((log_2 3)^2/2)^(1/3)`.",
+      "collatz_implication": "Replaces fixed-area asymptotic localization by a global area-dispersion necessity.",
+      "dependencies": "P162/P163; EXT17 for the critical branch; positive primitive cycles.",
+      "dependency_ids": [
+        "EXT17",
+        "P162",
+        "P163"
+      ],
+      "evidence": "[`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md), Sections 2--4; `artifacts/phase27_theory.json`; exact constant artifact.",
+      "first_introduced": "Phase 27",
+      "id": "P164",
+      "last_audited": "2026-08-30",
+      "notes": "Critical dependence on EXT17 remains external; `Omega(q^(2/3))` area is not contradictory.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For every reduced-slope positive-cycle profile with support `s_*=#{j<q:a_j>0}`, the expanded word has Hamming distance at most `2s_*` from its repeated mechanical baseline, `p_cyc(n)<=(2s_*+1)n+1`, and `h_*<=s_*`; under the P163/P164 gaps, `liminf s_*/sqrt(q)>=sqrt(log_2 3/2)`.",
+      "collatz_implication": "Forces support dispersion across every gcd class and separates tall from diffuse future targets.",
+      "dependencies": "P125/P151/P156/P157 and the branch gaps P163/P164; positive primitive cycles for ordinary-state separation.",
+      "dependency_ids": [
+        "P125",
+        "P151",
+        "P156",
+        "P157",
+        "P163",
+        "P164"
+      ],
+      "evidence": "[`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md), Section 5; Phase 27 artifacts and independent verifier.",
+      "first_introduced": "Phase 27",
+      "id": "P165",
+      "last_audited": "2026-08-30",
+      "notes": "Support growth and factor complexity remain necessary conditions, not source integrality or cycle exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks all 2,214 positive-D cyclic exponent classes through `q<=8`, including 1,417 noncoprime classes, 3,101 support Hamming/height rows, 45,369 support factor rows, exact finite envelopes, eight synthetic profiles, seven mandatory family rows, and the minimum rotation obstruction.",
+      "collatz_implication": "Regresses P165, finite constants, structural branches, and NG36.",
+      "dependencies": "Declared finite ranges; arbitrary-precision integer/rational arithmetic; generator and verifier use different enumeration, factor, logarithm, and profile routines.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md); Phase 27 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 27",
+      "id": "E39",
+      "last_audited": "2026-08-30",
+      "notes": "Bounded agreement and synthetic profiles do not prove the asymptotic theorems or produce/exclude an integer cycle.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The least-ordinary-value rotation and the reduced-discrepancy-minimum rotation universally coincide for primitive positive rational affine cycles.",
+      "collatz_implication": "Requires future proofs to transport invariants between the two rotations explicitly.",
+      "dependencies": "Positive rational affine cycle; primitive exponent word.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md), Section 7; `artifacts/phase27_cycle_corpus.json`.",
+      "first_introduced": "Phase 27",
+      "id": "NG36",
+      "last_audited": "2026-08-30",
+      "notes": "Smallest exact obstruction `e=(1,3)`: `5/7 -> 11/7 -> 5/7`; least-value offset 0, discrepancy-minimum offset 1. It is not integral, so positive-integer alignment remains open.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "b55966ae40478bc9ef89cc5cbfd1600a20e624d4a971f0345c2b6cc8901384aa"
+  "source_sha256": "9ceb2b305380023d1c7e508040217f306c164e0b92c9b4b310db56bdd9201dc1"
 }

@@ -1,0 +1,46 @@
+{
+  "counts": {
+    "critical_classes": 204,
+    "cyclic_classes": 2214,
+    "noncoprime_classes": 1417,
+    "noncritical_classes": 2010,
+    "primitive_classes": 2186,
+    "rotation_mismatches": 2206,
+    "shadow_master_checks": 2214,
+    "shadow_master_passes": 2200,
+    "support_factor_checks": 45369,
+    "support_hamming_checks": 3101,
+    "support_height_checks": 3101
+  },
+  "format": "collatz-phase27-cycle-corpus-v1",
+  "maximum_q": 8,
+  "mismatch_digest_sha256": "9b85e9520ef3906683b579d1556e41de17ec92842f687e92449ef0c635dc0105",
+  "proves_collatz": false,
+  "row_digest_sha256": "34459ab6eb8f123fc98f5e2544a3045820d8b52b3762facfde6efd7fb26a507a",
+  "scope": "Complete positive-D cyclic exponent corpus through q<=8. P157's exponentiated margin is a rational-shadow diagnostic only; ordinary-state separation is not promoted for nonintegral shadows.",
+  "smallest_rotation_mismatch": {
+    "L": 4,
+    "discrepancy_minimum_offsets": [
+      1
+    ],
+    "exponents": [
+      1,
+      3
+    ],
+    "least_value_offsets": [
+      0
+    ],
+    "odd_rational_orbit": [
+      [
+        "5",
+        "7"
+      ],
+      [
+        "11",
+        "7"
+      ]
+    ],
+    "positive_integral": false,
+    "q": 2
+  }
+}

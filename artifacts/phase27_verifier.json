@@ -1,0 +1,46 @@
+{
+  "claims": {
+    "E39": "VERIFIED_FINITE",
+    "EXT17": "EXTERNAL_THEOREM",
+    "H133": "OPEN",
+    "NG36": "REFUTED",
+    "P162": "VERIFIED_THEOREM",
+    "P163": "VERIFIED_THEOREM",
+    "P164": "VERIFIED_THEOREM",
+    "P165": "VERIFIED_THEOREM"
+  },
+  "corpus_counts": {
+    "critical_classes": 204,
+    "cyclic_classes": 2214,
+    "noncoprime_classes": 1417,
+    "noncritical_classes": 2010,
+    "primitive_classes": 2186,
+    "rotation_mismatches": 2206,
+    "shadow_master_checks": 2214,
+    "shadow_master_passes": 2200,
+    "support_factor_checks": 45369,
+    "support_hamming_checks": 3101,
+    "support_height_checks": 3101
+  },
+  "envelope_counts": {
+    "critical_rows": 6,
+    "matveev_K": 1564920000,
+    "noncritical_rows": 7
+  },
+  "format": "collatz-phase27-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "recursive reverse compositions, integer-encoded factors, direct rational traces, 84-term logarithm boxes, and independent profile synthesis",
+  "mandatory_family_count": 7,
+  "proves_collatz": false,
+  "synthetic_profile_count": 8,
+  "valid": true,
+  "verified_input_sha256": {
+    "phase27_cycle_corpus.json": "01ad5c91aaf4db81f6386ea2eb499486e41ed68508611e34b8c795ab4649c7ba",
+    "phase27_envelopes.json": "36638bbd17f687f6545609b808cc4b034e1a895fde74d718b2520235973ccee8",
+    "phase27_obstruction_report.md": "08bf6d22229986e59a2c2702fc514c8c60265282adafb0d3978f656b0d102b49",
+    "phase27_regressions.json": "f63b97a54601c36714155408488118bdbec131c517bec9b23a61561c130371d4",
+    "phase27_synthetic_profiles.json": "74e92dcb4583b36bb3195515bd7535f28c492bac662d2eea58e9b5a2837c140c",
+    "phase27_theory.json": "feec1ed5b9677de2acf6b4ba4c3d6313c18378ba0871aec6d21eead9963ff73e"
+  },
+  "what_this_result_does_not_prove": "This does not exclude arbitrary-area cycles, either structural branch, nonperiodic counterexamples, or Collatz."
+}

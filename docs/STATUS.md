@@ -166,6 +166,16 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   coprime area-three positive-cycle obligation, while NG35 proves that the
   same EXT05/factor-separation scalar mechanism cannot exclude critical area
   six. H133 remains open at critical area six and arbitrary large area.
+- `EXTERNAL_THEOREM` / `VERIFIED_THEOREM`: EXT17 is Matveev's external
+  two-logarithm theorem. P162--P164 use polynomial multiplier gaps to force
+  `liminf A_*/q^(2/3)>=((log_2 3)^2/2)^(1/3)` along every hypothetical
+  unbounded positive-cycle sequence; the noncritical gap is internal and the
+  critical gap depends on EXT17.
+- `VERIFIED_THEOREM` / `REFUTED` / `OPEN`: P165 forces arbitrary-gcd support
+  `s_*=Omega(sqrt(q))` and gives exact Hamming/factor/height bounds. NG36
+  refutes universal least-value/discrepancy rotation alignment for positive
+  rational shadows. Both tall and diffuse profiles survive, so H133 remains
+  open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -355,6 +365,11 @@ No item above proves the Collatz conjecture.
   exponent classes through `q<=8`, including 1,417 noncoprime classes, 3,101
   minimum rotations, 45,369 cyclic factor widths, 2,214 rational odd-height
   rows, and 797 exact P144 coprime reproductions.
+- Phase 27: E39 independently reconstructs the same 2,214-class all-gcd
+  corpus with 3,101 support Hamming/height checks, 45,369 support factor
+  checks, six critical and seven noncritical exact envelope rows, eight
+  tall/diffuse synthetic profiles, seven mandatory-family rows, and the exact
+  `e=(1,3)` rotation obstruction.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -416,6 +431,12 @@ gcd class. P158 forces critical `A_*>=6`, closing H147 globally in its
 positive-cycle scope, while P159 forces noncritical `A_*>100000`. NG35 shows
 that the scalar critical proof stops exactly at area six. H133 remains open.
 
+Phase 27 gives the strongest asymptotic localization of that branch. P164
+forces `A_*=Omega(q^(2/3))` and P165 forces `s_*=Omega(sqrt(q))` along any
+unbounded hypothetical sequence, across every gcd class. These bounds split
+the surviving geometry into tall and diffuse profiles but do not exclude
+either. The critical step depends on external EXT17.
+
 ## Strongest conditional route
 
 `P54` (`CONDITIONAL`) is the current main route. A least positive
@@ -458,13 +479,14 @@ scale to the required depth and height.
 P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
 cases. The missing scalable state must retain the common-prefix surplus, odd
 normalized gap, and both tail residues; branch depth alone is insufficient.
-The cycle branch has a separate bottleneck. Phase 26 eliminates every
-positive-cycle profile of reduced area at most five for all gcd classes and
-moves the noncritical branch beyond area 100000. The first remaining target is
-critical area six. NG35 proves that EXT05 plus factor separation has the wrong
-exponential coefficient there, so a new support/height-transition,
-correction-loss, radial-energy, or resultant input is required. H133 records
-this obligation without conflating it with H89/H112/H72; H147 is closed.
+The cycle branch has a separate bottleneck. Phase 27 now forces area
+`Omega(q^(2/3))` and support `Omega(sqrt(q))`, beyond Phase 26's finite
+critical/noncritical barriers. These necessities still allow both a tall
+profile and a diffuse profile. A new transition-sensitive correction-loss,
+ordinary-source, radial-energy, or resultant input must exclude both, while
+explicitly transporting between P133's least-value rotation and P156's
+discrepancy-minimum rotation after NG36. H133 records this obligation without
+conflating it with H89/H112/H72; H147 is closed.
 P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
 `L=12` none of the shorter windows `b<L` retains enough information even in a
 small exact domain. The open problem is therefore a composable symbolic state,
@@ -634,10 +656,11 @@ eventual nonzero lifts.
    into a nonzero P115 source lift or an ordinary-height contradiction while
    surviving both NG22 controllers, P109, source 167, and the mandatory
    adversarial families?
-6. Can critical reduced-slope area six be excluded by combining P156/P157
-   support and height transitions with Phase 22 radial energy or Phase 24/25
-   sparse-resultant arithmetic, while surviving NG34/NG35 and both named
-   negative-cycle regressions? Can the same invariant scale to arbitrary area?
+6. Can both Phase 27 regimes be excluded: tall profiles through forced
+   descents/correction loss, and diffuse profiles through support-location or
+   resultant dispersion? The invariant must survive NG34--NG36, both named
+   negative cycles, and must state how least-value and discrepancy-minimum
+   rotations are related.
 
 ## Codex tasks worth doing
 
@@ -667,9 +690,10 @@ eventual nonzero lifts.
   energy lower bound on the Phase 22 profiles and negative cycles, and do not
   scale composition depth unless the rule covers arbitrary area or strengthens
   P140's noncoprime modulus.
-- Start new cycle work at critical area six, not area three. Rebuild the Phase
-  26 reduced profile and NG35 coefficient reversal before proposing a new
-  scalar, support, energy, or resultant mechanism.
+- Start new cycle work from P164/P165's tall/diffuse split, not another fixed
+  area enumeration. Rebuild the Phase 26 profile, NG35 coefficient reversal,
+  and NG36 rotation mismatch before proposing a transition, source, energy,
+  or resultant mechanism.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -732,4 +756,5 @@ eventual nonzero lifts.
 - Phase 24 acceptance: [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md)
 - Phase 25 acceptance: [`../PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md)
 - Phase 26 acceptance: [`../PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md)
+- Phase 27 acceptance: [`../PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

@@ -319,12 +319,13 @@ exclusion of the full coefficient-safe language.
 Phase 26 closes the cycle-side `H147` area-three obligation by the stronger
 all-gcd theorem P158: every critical primitive positive nontrivial cycle has
 reduced-slope area at least six. Do not extend the former area-three search.
-The next H133 target is critical area six. Every proposed continuation must
-reproduce NG34's `q=63322`, `L=100363` paired-arc falsifier and NG35's exact
-coefficient reversal `75^7>3*64^7`. Prefer support/height-transition,
-correction-loss, radial-energy, or resultant mechanisms that retain P156's
-reduced-slope structure. P159's noncritical `A_*>100000` lower bound is not a
-cycle exclusion and must not be promoted to an arbitrary-area contradiction.
+Phase 27 strengthens this to the global necessary bounds
+`A_*=Omega(q^(2/3))` and `s_*=Omega(sqrt(q))`. H133 now requires a mechanism
+that excludes both tall and diffuse reduced profiles. Every continuation must
+reproduce NG34's paired-arc falsifier, NG35's coefficient reversal, and NG36's
+positive-rational rotation mismatch. Keep P133's least-value and P156's
+discrepancy-minimum rotations distinct unless a positive-integral transport
+theorem is proved. Area or support growth alone is not a cycle exclusion.
 
 ## 16. Proof-claim emergency protocol
 

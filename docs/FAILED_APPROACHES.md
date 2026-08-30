@@ -1103,13 +1103,49 @@ H133 frontier.
 [`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md),
 Section 7, and `artifacts/phase26_scalar_certificates.json`.
 
+## NG36 — universal least-value/discrepancy rotation alignment
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** For every primitive positive rational affine cycle, a
+rotation beginning at the least odd value is also a minimum rotation of the
+reduced discrepancy walk.
+
+**Why it looked plausible.** P133's prefix inequalities are strongest at the
+least ordinary cycle value, while P156's nonnegative profile is obtained at a
+discrepancy minimum. Identifying the rotations would place both structures in
+one coordinate system without a transport theorem.
+
+**Smallest exact obstruction.** The exponent word `e=(1,3)` gives
+
+```text
+5/7 -> 11/7 -> 5/7.
+```
+
+Its least-value offset is zero, while its unique discrepancy-minimum offset is
+one. The word is primitive and the rational orbit is positive, but it is not
+integral.
+
+**Failure scope.** Fundamental for a universal statement over positive
+rational affine cycles. It does not refute a theorem restricted to positive
+ordinary integer cycles.
+
+**Weaker statement retained.** P133 and P156 remain valid in their own
+rotations. Future arguments must transport invariants explicitly or prove a
+narrower positive-integral alignment result.
+
+**Evidence.**
+[`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md),
+Section 7, and `artifacts/phase27_cycle_corpus.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
-area-three supports, the E37 seven-grid rows, the E38 all-gcd profile corpus,
-and all exact counterexamples above. Passing a bounded
+area-three supports, the E37 seven-grid rows, the E38/E39 all-gcd profile
+corpus, the Phase 27 tall/diffuse synthetic profiles, and all exact
+counterexamples above. Passing a bounded
 regression is necessary evidence, never a proof of universality.

@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 26
+# Collatz research synthesis through Phase 27
 
 **Audit date:** 2026-08-30
 
-**Audited base:** `8b348852b5d161762ebc2d01065703992dd43165`
+**Audited base:** `e0e2973b8762c8a8ce646661ed0d498dbe488d18`
 
-**Latest accepted phase:** Phase 26
+**Latest accepted phase:** Phase 27
 
 **Problem status:** `OPEN`
 
@@ -730,6 +730,26 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   remains open. See [`PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md) and
   the [`Phase 26 audit`](../research/audits/cycle-area-barrier/REPORT.md).
 
+### Phase 27 — asymptotic cycle area and support
+
+- **Purpose:** turn polynomial multiplier gaps into all-gcd asymptotic area
+  and support dispersion, and audit the rotation convention needed to combine
+  least-value and reduced-profile information.
+- **Accepted internally:** P162 proves the general polynomial-gap area lemma;
+  P163 supplies the gap internally for noncritical cycles; P164 combines this
+  with EXT17 on the critical branch to force `A_*=Omega(q^(2/3))`; P165 gives
+  Hamming/factor/height support bounds and `s_*=Omega(sqrt(q))`.
+- **External input:** EXT17 is Matveev's explicit logarithmic-form theorem.
+  Its exact specialization is audited, but the theorem itself is not reproved.
+- **Finite evidence:** E39 rebuilds the 2,214-class all-gcd corpus, exact
+  envelopes, eight tall/diffuse profiles, all mandatory families, and the
+  minimum rotation obstruction with a generator-independent verifier.
+- **Refutation/open:** NG36 refutes universal least-value/discrepancy rotation
+  alignment using `5/7 -> 11/7 -> 5/7`. It is not an integer cycle. Both tall
+  and diffuse asymptotic regimes survive, so H133 remains open. See
+  [`PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md) and the
+  [`Phase 27 audit`](../research/audits/asymptotic-cycle-area/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -737,9 +757,9 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P159/P161 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P165 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
-  NG17–NG35.
+  NG17–NG36.
 
 None is a full convergence theorem.
 
@@ -883,9 +903,10 @@ Neither target covers a repeated periodic orbit.
 **Target:** exclude every nontrivial positive cycle, independently of the
 nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
-Phase 24 P147--P150, Phase 25 P151/P154/P155, and Phase 26 P156--P161. H133
-now isolates critical reduced-slope area at least six and the noncritical
-branch above area 100000 across all gcd classes. **Acceptance:** a
+Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, and Phase 27
+P162--P165. H133 now isolates tall and diffuse profiles after the global
+necessary bounds `A_*=Omega(q^(2/3))` and `s_*=Omega(sqrt(q))`, across all gcd
+classes. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
@@ -991,8 +1012,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase26.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase26_verifier.json
+.venv/bin/python verifier/verify_phase27.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase27_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:
