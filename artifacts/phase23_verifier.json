@@ -1,0 +1,18 @@
+{
+  "claims": {
+    "E35": "VERIFIED_FINITE",
+    "H141": "OPEN",
+    "NG32": "REFUTED",
+    "P141": "VERIFIED_THEOREM",
+    "P142": "CONDITIONAL",
+    "P143": "CONDITIONAL",
+    "P144": "VERIFIED_THEOREM",
+    "P145": "VERIFIED_THEOREM",
+    "P146": "CONDITIONAL"
+  },
+  "critical_words": 502523,
+  "cycle_profiles": 4786,
+  "generator_imported": false,
+  "proves_collatz": false,
+  "valid": true
+}

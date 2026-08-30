@@ -963,11 +963,41 @@ falsification corpus.
 [`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md),
 and `artifacts/phase22_finite_profiles.json`.
 
+## Phase 23 — finite critical word inherits the infinite Sturmian factor bound
+
+**Status:** `NG32 REFUTED`.
+
+**Exact hypothesis.** For the finite critical mechanical word `c_q`, every
+length-`n` factor set has size at most `n+1`; consequently every defect-area
+`A` word obeys `p(n)<=(A+1)(n+1)`.
+
+**Why it looked plausible.** The odd positions `floor(j log_2 3)` are
+mechanical/Sturmian, and an infinite Sturmian word has factor complexity
+`n+1`.
+
+**Smallest counterexample.** At `q=4`, the finite word is `1101100`. For
+`n=2,A=0` its factors are `00,01,10,11`, so `4>3`.
+
+**Why it fails.** The next infinite mechanical one lies at the terminal index
+`K_q-1`, but the first-crossing word must end in zero. The finite word is
+therefore a one-symbol terminal mutation, not literally an infinite
+mechanical factor.
+
+**Failure scope.** This is a boundary-constant failure, not a failure of the
+defect-area identity or adjacent-swap method.
+
+**Weaker statement retained.** P141 proves the exact repaired bound
+`p(n)<=(A+1)(n+1)+1`; P142 correspondingly retains
+`K_q<=A(n_q+2)+2n_q+1` under its hypotheses.
+
+**Evidence.** [`../research/audits/defect-area/REPORT.md`](../research/audits/defect-area/REPORT.md),
+`artifacts/phase23_theory.json`, and exact property/tamper tests.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, source 167, both
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, source 167, both
 Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the Phase 22 area-two profiles, and all exact
 counterexamples above. Passing a bounded regression is necessary

@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the twenty-two phases established
+## 3. What the twenty-three phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -184,6 +184,12 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   has zero nontrivial integral cycles in its complete `q<=8` scope and zero
   combined survivors among area-at-most-two profiles through `q<=22`, but
   H133 and the full positive-cycle branch remain open.
+- Phase 23 links critical and cycle words by Christoffel defect area. NG32
+  repairs the supplied finite mechanical factor bound at the smallest witness
+  `q=4,c_q=1101100,n=2`; P141 keeps the necessary terminal `+1`. P142 gives a
+  conditional area/repetition inequality, while P144/P145 give exact coprime
+  cycle edit, triangular-height, complexity, and positive-state separation
+  conditions. E35 is bounded and H141/H89/H133 remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

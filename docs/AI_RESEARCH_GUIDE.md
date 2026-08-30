@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 22's cycle-resultant audit is the
+proof of the conjecture. Phase 23's defect-area audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–22 evidence boundaries, and current obligations.
+   branch map, Phase 1–23 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md), then its inputs:
+   [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md),
    [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md),
    [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md),
    [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md),
@@ -137,6 +138,12 @@ flowchart TD
     P126 --> P128
     P126 --> P132["P132 H89 repeat certificate"]
     P132 --> H89
+    P141["P141 corrected defect area"] --> P142["P142 conditional area repeat"]
+    P142 --> H141["H141 defect/source bridge"]
+    P142 --> H89
+    P144["P144 cycle edit area"] --> P145["P145 cycle separation"]
+    P145 --> H141
+    P145 --> H133["H133 all-area cycle obstruction"]
     P127 --> H112
     H112 --> H72
     NG28["NG28 negative carry"] --> H89
@@ -153,12 +160,13 @@ external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
 P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
-P129--P138, and P140 are
+P129--P138, P140, P141, P144, and P145 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
-P110, P119, P121, P123, P124, and P128 are conditional implications.
+P110, P119, P121, P123, P124, P128, P142, P143, and P146 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
-left-congruence failure, and NG25--NG31 delimit the finite ancestral/affine
-search language. H54, H70, H72, H89, H104, H105, H112, H133, C04, C05, every uneliminated P69 branch,
+left-congruence failure, NG25--NG31 delimit the finite ancestral/affine
+search language, and NG32 is the finite critical mechanical boundary failure.
+H54, H70, H72, H89, H104, H105, H112, H133, H141, C04, C05, every uneliminated P69 branch,
 and the Collatz conjecture remain open.
 
 ## Active proof obligations
@@ -173,6 +181,7 @@ and the Collatz conjecture remain open.
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
 | H133 | `OPEN` | Exclude arbitrary-area coprime and general noncoprime positive cycle profiles | Seek an all-area P137 energy/source inequality or strengthen P140's modulus; test both negative cycles and every E34 area-two row first |
+| H141 | `OPEN` | Turn defect area into an ordinary-source/carry/resultant obstruction for H89 or H133 | Test one exact weighted inequality on NG32, concentrated defects, E33 survivors, both negative cycles, and E34 before extending q |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -196,7 +205,7 @@ rule before scaling it.
 Every new experiment should state, before a large run:
 
 1. claim ID and exact quantifiers;
-2. why success would advance H54, H70, H72, H133, C04, or C05;
+2. why success would advance H54, H70, H72, H133, H141, C04, or C05;
 3. smallest adversarial falsification range;
 4. exact acceptance arithmetic;
 5. logically independent reconstruction method;
@@ -205,7 +214,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 22 provides the
+artifacts and preserve the recorded manifest hash. Phase 23 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -218,6 +227,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   retaining ordinary height and explicitly separating every NG19 collision.
 - Attack H70 separately from the other two P69 branches; do not describe a
   renewal-ladder result as a full counterexample exclusion.
+- For H141, optimize a stated weighted correction/source inequality against
+  concentrated defects and NG32 before any larger critical/profile scan.
 - Attack H72 through positive ordinary-integrality, effective reduced
   shadow-height/gcd, P79's valuation-conditioned successor congruences, or a
   P86 cross-Q surplus state retaining the carries lost in NG24.

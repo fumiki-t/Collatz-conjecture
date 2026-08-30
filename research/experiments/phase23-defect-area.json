@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "phase23-defect-area",
+  "status": "RUNNING",
+  "claim_ids": ["P141", "P142", "P143", "P144", "P145", "P146", "E35", "NG32", "H141"],
+  "objective": "Audit Christoffel defect area as an exact adjacent-swap and factor-complexity control for critical first-crossing words and coprime cycle profiles, while preserving the nonperiodic/positive-cycle hypotheses and finite/asymptotic boundary.",
+  "exact_scope": {
+    "quantifiers": [
+      "all coefficient-safe first-crossing words for P141 and the conditional least-counterexample branch for P142",
+      "all primitive positive integer shortcut cycles with coprime odd-count/length for P144 and P145",
+      "all large cycles only under the effective polynomial minimum hypothesis for P146",
+      "all critical first-crossing words through q<=17 for the exhaustive part of E35",
+      "all valid coprime Phase 22 profiles of area at most 2 through q<=22 and all positive exponent compositions through q<=8 for the bounded cycle part of E35"
+    ],
+    "bounds": {
+      "critical_q_maximum": 17,
+      "critical_factor_direct_q_maximum": 12,
+      "cycle_full_composition_q_maximum": 8,
+      "cycle_area_profile_q_maximum": 22,
+      "cycle_area_profile_maximum": 2
+    },
+    "completeness": "The q<=17 critical enumeration is complete in its declared range. Direct substring reconstruction is complete through q<=12 and theorem-level outside that finite check. The cycle q<=22 scope is complete only for defect area at most two; no bounded count is promoted to an eventual H89 or H133 theorem."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, exact rational height comparisons, literal substring sets, adjacent swaps, and integer logarithm ceilings",
+    "floating_point_role": "none in generator or verifier acceptance decisions"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase23_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase23.py --artifact-dir artifacts --write-report artifacts/phase23_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase23_properties.py tests/test_phase23_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q"]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "critical safe words by a separately written prefix recursion and every area/contact aggregate",
+      "area as both prefix-count excess and a literal adjacent-swap count",
+      "finite factor sets by direct slicing rather than generator encodings",
+      "coprime cycle profiles from literal exponent compositions and direct cyclic substrings",
+      "positive and negative cycle scope regressions"
+    ],
+    "forbidden_imports": ["src.phase23_search", "phase23_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase23_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "source 167", "all-contact critical words", "trivial positive 1-cycle",
+    "negative q=2,L=3 cycle", "negative q=7,L=11,D=-139 cycle",
+    "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG27", "NG28", "NG29", "NG30", "NG31"
+  ],
+  "artifacts": [
+    "artifacts/phase23_theory.json",
+    "artifacts/phase23_critical_words.json",
+    "artifacts/phase23_cycle_profiles.json",
+    "artifacts/phase23_regressions.json",
+    "artifacts/phase23_obstruction_report.md",
+    "artifacts/phase23_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not apply state distinctness or P125 separation to a periodic branch, a rational noninteger shadow, or a negative cycle.",
+    "Do not infer q0 or eventual area growth from q<=17 critical enumeration or area<=2 cycle profiles.",
+    "Do not use the cycle profile area before reconstructing the residue-to-time indexing and literal expanded word.",
+    "Do not drop the one-factor terminal boundary defect of the finite critical mechanical word; NG32 is the minimal falsifier.",
+    "Do not use Wu-Wang, Christoffel extremality, or an effective linear form unless its exact hypothesis is separately audited.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The critical repetition inequality is conditional on P54 and pairwise distinct states; it does not cover a periodic least-counterexample branch.",
+    "The cycle factor-separation inequality is only a necessary condition for a primitive positive integer cycle and does not apply to negative or merely rational affine cycles.",
+    "H89, H133, H112, H72, every remaining P69 branch, and Collatz remain open; proves_collatz remains false."
+  ],
+  "proves_collatz": false
+}

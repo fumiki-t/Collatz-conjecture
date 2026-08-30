@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–20 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–23 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -1452,3 +1452,24 @@ source barrier, but zero bounded survivors are not an eventual theorem.
 Phase 22 does not exclude arbitrary-area coprime profiles, general noncoprime
 profiles, the full positive nontrivial-cycle branch, H89, H112, H72, or the
 Collatz conjecture. `proves_collatz=false`.
+## 2026-08-29 — Phase 23: defect area and finite-boundary repair
+
+Phase 23 audited the proposed Christoffel defect-area bridge against the
+accepted Phase 21/22 conventions. It found NG32, the smallest boundary
+counterexample to the proposed `n+1` finite factor bound:
+`q=4,c_q=1101100,n=2,A=0` has all four length-two binary factors.
+
+P141 repairs the theorem to `p(n)<=(A+1)(n+1)+1` and proves the exact
+area/prefix/swap identities. P142 conditionally converts this into
+`K_q<=A(n_q+2)+2n_q+1` on P54's pairwise-distinct branch. P144/P145 prove the
+coprime cycle edit-area, triangular-height, cyclic-complexity, and
+primitive-positive state-separation conditions. The polynomial consequences
+P143/P146 remain conditional; H141 records the missing weighted
+correction/carry/ordinary-source bridge.
+
+E35 independently rebuilds 502,523 critical words through `q<=17`, 82,227
+direct factor checks through `q<=12`, 4,786 area-bounded coprime cycle
+profiles through `q<=22`, 156,178 cyclic factor checks, and 2,214 complete
+cyclic classes through `q<=8`. It finds 31 area-rule critical rejections, but
+through `q<=12` none improves on P132. No giant q0 width was manufactured, no
+positive nontrivial cycle was excluded in full, and `proves_collatz=false`.

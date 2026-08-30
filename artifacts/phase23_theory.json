@@ -1,0 +1,47 @@
+{
+  "claims": {
+    "E35": "VERIFIED_FINITE",
+    "H141": "OPEN",
+    "NG32": "REFUTED",
+    "P141": "VERIFIED_THEOREM",
+    "P142": "CONDITIONAL",
+    "P143": "CONDITIONAL",
+    "P144": "VERIFIED_THEOREM",
+    "P145": "VERIFIED_THEOREM",
+    "P146": "CONDITIONAL"
+  },
+  "conditional_critical": {
+    "q0": "The Phase 7 contact count would give a second exact area lower bound once an exact integer n_q0 is certified; this phase does not manufacture that missing bound.",
+    "statement": "If H_q<=C q^mu effectively for all large q, then A(w)>=(log_2(3)/mu+o(1))q/log_2(q)."
+  },
+  "conditional_cycle": {
+    "dependencies": "P145 plus the exact cycle product bound; no such polynomial minimum theorem is accepted here.",
+    "statement": "An effective m<=C q^mu for all large coprime positive cycles implies A=Omega(q^(2/3))."
+  },
+  "critical_area": {
+    "factor_bound": "p_w(n)<=(A+1)(n+1)+1 for 1<=n<=K.",
+    "factor_proof": "The infinite mechanical prefix has at most n+1 factors; changing its final 1 to the finite critical word's final 0 adds at most one terminal factor. Each internal adjacent swap adds factors at at most n+1 starts.",
+    "identity": "A=sum_j(f_j-d_j)=sum_(0<=t<=K)(h_w(t)-h_c(t))",
+    "sharp_proposal_refuted": "NG32: q=4, c_q=1101100, n=2, A=0 has four factors {00,01,10,11}, exceeding n+1=3.",
+    "swap_orientation": "The critical word is obtained from c_q by A swaps 01->10."
+  },
+  "critical_repetition": {
+    "height": "At a contact start t, x_t<3N+q; under P54, x_t<3H_q+q.",
+    "integer_width": "n_q=min{n:2^n D_q>=3B_q_max+qD_q}.",
+    "necessary": "For pairwise-distinct critical states, K_q<=A(w)(n_q+2)+2n_q+1.",
+    "scope": "P54 finite-first-crossing, nonperiodic/distinct-state branch only."
+  },
+  "cycle_area": {
+    "factor_bound": "p_cyc(n)<=(A+1)(n+1).",
+    "identity": "For a valid coprime residue profile a, sum a_r is the literal expanded-word adjacent-swap distance from the profile-zero Christoffel representative.",
+    "triangular": "A>=h(h+1)/2 because the time-ordered profile can decrease by at most one at a wrap transition."
+  },
+  "cycle_separation": {
+    "height": "For a primitive positive integer cycle, M<2^(h+2)m/lambda.",
+    "necessary": "With n_cyc=ceil(log_2(2^(h+2)m/lambda)), L<=(A+1)(n_cyc+1).",
+    "scope": "Primitive positive integer cycle with gcd(L,q)=1; not a negative cycle or rational noninteger shadow."
+  },
+  "format": "collatz-phase23-theory-v1",
+  "literature_boundary": "Mechanical/Christoffel terminology is contextual. All accepted Phase 23 identities are derived in the repository; no new external theorem is promoted. EXT15 and EXT16 retain their Phase 22 scopes only.",
+  "proves_collatz": false
+}

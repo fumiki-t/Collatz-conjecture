@@ -1,0 +1,195 @@
+{
+  "area_counts": {
+    "0": 63,
+    "1": 670,
+    "2": 4053
+  },
+  "cyclic_factor_width_checks": 156178,
+  "factor_separation_checks": 1,
+  "finite_boundary": "The q<=22 profile audit is exhaustive only for area<=2; the full composition audit ends at q<=8.",
+  "format": "collatz-phase23-cycle-v1",
+  "full_composition_q_maximum": 8,
+  "full_cyclic_classes": 2214,
+  "integral_classes": 8,
+  "integral_rows": [
+    [
+      1,
+      2,
+      [
+        2
+      ],
+      1,
+      true,
+      [
+        1,
+        1
+      ]
+    ],
+    [
+      2,
+      4,
+      [
+        2,
+        2
+      ],
+      1,
+      false,
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      3,
+      6,
+      [
+        2,
+        2,
+        2
+      ],
+      1,
+      false,
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      4,
+      8,
+      [
+        2,
+        2,
+        2,
+        2
+      ],
+      1,
+      false,
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      5,
+      10,
+      [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      1,
+      false,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      6,
+      12,
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      1,
+      false,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      7,
+      14,
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      1,
+      false,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      8,
+      16,
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      1,
+      false,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  ],
+  "largest_complexity_bound_ratio": {
+    "denominator": 2,
+    "numerator": 2,
+    "witness": [
+      1,
+      2,
+      [
+        0
+      ],
+      1
+    ]
+  },
+  "primitive_positive_coprime_classes": 1,
+  "profile_count": 4786,
+  "profile_digest_sha256": "31ba08a9a17e5edc68cf0576da66e239814718ed0861d2097cf4935256fc2a37",
+  "profile_maximum_area": 2,
+  "profile_maximum_q": 22,
+  "proves_collatz": false,
+  "triangular_checks": 4786
+}

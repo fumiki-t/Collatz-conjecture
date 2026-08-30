@@ -535,6 +535,29 @@ beyond the state horizon and mine the smallest counterexample.
 rather than a larger success percentage. Without that, stop after recording
 the obstruction.
 
+### Phase 23 cross-branch target — H141 defect/source bridge
+
+**Target.** Prove that an admissible defect path with the P142 or P145 area
+lower bound cannot retain the affine correction, signed carry, canonical
+ordinary source, or resultant size required by H89/H133.
+
+**Why this could help Collatz.** H141 is a shared structural question: its
+critical form could advance the least-counterexample branch, while its cyclic
+form could advance the separate positive-cycle branch.
+
+**Missing theorem.** Area may concentrate in a few high-weight coordinates.
+P141/P144 control edit complexity, not the weighted correction or ordinary
+representative. NG32 also shows that the finite critical boundary contributes
+one extra factor.
+
+**Fast falsification test.** Before increasing `q`, optimize the proposed
+inequality against concentrated valid defect paths, NG32, every E33 survivor,
+both negative cycles, and all E34 area-two profiles.
+
+**Success criterion.** An exact prefix-complete carry/source or resultant
+inequality valid for arbitrary defect area, plus an effective finite
+remainder. A larger bounded rejection count is not success.
+
 ## Stop criteria for large computation
 
 Do not spend a large compute budget unless the experiment has:

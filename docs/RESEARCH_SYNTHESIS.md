@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 22
+# Collatz research synthesis through Phase 23
 
 **Audit date:** 2026-08-29
 
 **Audited base:** `482f0357ffc5082e228bc4f3441b0a9e22f4f975`
 
-**Latest accepted phase:** Phase 22
+**Latest accepted phase:** Phase 23
 
 **Problem status:** `OPEN`
 
@@ -645,6 +645,27 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md) and the
   [`Phase 22 audit`](../research/audits/cycle-resultant/REPORT.md).
 
+### Phase 23 — Christoffel defect area and factor separation
+
+- **Purpose:** connect the Phase 21 repetition barrier and Phase 22 cycle
+  profiles through exact adjacent-swap area without losing finite boundaries,
+  positivity, or periodic/nonperiodic scope.
+- **Accepted internally:** P141 proves critical area/prefix/swap identities and
+  the repaired `p(n)<=(A+1)(n+1)+1` bound. P144/P145 prove coprime cycle
+  edit-area, triangular height, cyclic factor complexity, and a
+  primitive-positive state-separation condition.
+- **Conditional:** P142 retains P54 and state distinctness. P143/P146 retain
+  unproved effective polynomial height/minimum hypotheses.
+- **Refuted:** NG32 is the exact terminal-boundary failure of the proposed
+  finite `n+1` factor bound: `q=4,c_q=1101100,n=2,A=0` has four factors.
+- **Finite evidence:** E35 rebuilds 502,523 critical words, 4,786 bounded cycle
+  profiles, and 2,214 complete small cyclic classes. The area rule adds no
+  rejection beyond P132 through `q<=12`.
+- **Obstacle:** concentrated defect need not suppress weighted correction or
+  the ordinary source. H141 records the missing bridge; H89/H133 remain open.
+  See [`PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md) and the
+  [`Phase 23 audit`](../research/audits/defect-area/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -652,8 +673,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG31.
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145 with their exact hypotheses;
+- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG32.
 
 None is a full convergence theorem.
 
@@ -796,11 +817,20 @@ Neither target covers a repeated periodic orbit.
 
 **Target:** exclude every nontrivial positive cycle, independently of the
 nonperiodic route. **Known inputs:** computational verification lower bounds,
-cycle-length/minimum estimates, P65, and Phase 22 P133--P140. H133 isolates
+cycle-length/minimum estimates, P65, Phase 22 P133--P140, and Phase 23
+P144/P145. H133 isolates
 the arbitrary-area coprime and general noncoprime remainder. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
+
+### H141 — defect area versus weighted correction/source
+
+**Target:** turn P141/P142 or P144/P145 area into a uniform signed-carry,
+ordinary-source, or resultant obstruction. **Known trap:** NG32 and concentrated
+defect paths. **Acceptance:** an eventual H89 consequence with finite remainder
+or an all-area coprime/noncoprime H133 theorem. See
+[`context/H141.md`](context/H141.md).
 
 ### H70 — renewal-ladder spacing
 
@@ -829,6 +859,7 @@ scoped obligation rather than a complete proof by itself.
 | Fourier/large-sieve anti-concentration | Prove cancellation beyond Haar mass | per-address `+1`, deterministic least representatives | Small exact character sums with explicit constants and carry classes | Could prove either P80 premise | Stop if constants grow exponentially or discard the lattice error |
 | Positive ordinary bridge | Convert coherent 2-adic source data into an effective ordinary-height obstruction | NG22, P76 topology split | Bound the first residue renewal using positivity and signed height | Could directly close H72 | Stop if the argument uses only 2-adic coherence |
 | Cycle resultant/energy closure | Prove H133 for arbitrary defect area and noncoprime slopes | both negative cycles, E34 area-two rows, macro/NG28/NG30 controls | Test one all-area energy/source inequality or stronger noncoprime divisor | Eliminates P69's cycle branch | Stop if it assumes coprimality, positivity, or primitivity without preserving it |
+| Defect/source optimization | Prove H141 as an H89 or H133 bridge | NG32, concentrated defects, E33 survivors, both negative cycles, E34 | Optimize one exact carry/source/resultant inequality before extending q | Advances one major branch if effective and uniform | Stop if only area, contact count, or factor complexity remains |
 | Eventual H54 lower bound | Prove all safe representatives grow faster than `H_q` | all `M(k)` records and `A^rB^s` | Test one explicit composable inequality on exact records | Closes P54 route with finite remainder | Stop at the least violating word and store its carry data |
 
 Merely extending depth, modulus, `q`, or height without a candidate structural

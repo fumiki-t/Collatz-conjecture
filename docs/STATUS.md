@@ -129,6 +129,18 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 - `OPEN`: H133 asks for a uniform algebraic-energy or ordinary-source
   obstruction for arbitrary-area coprime profiles and the general noncoprime
   branch. Phase 22 does not eliminate positive nontrivial cycles.
+- `VERIFIED_THEOREM` / `CONDITIONAL`: P141 proves the exact critical
+  defect-area, prefix-excess, and adjacent-swap identities and the repaired
+  finite factor bound `p(n)<=(A+1)(n+1)+1`. Under P54 and distinct critical
+  states, P142 gives `K_q<=A(n_q+2)+2n_q+1`. P143's polynomial-height and
+  Phase 7 q0 consequences retain their missing effective inputs.
+- `VERIFIED_THEOREM` / `CONDITIONAL`: P144/P145 prove the coprime cycle
+  edit-area, triangular-height, cyclic-complexity, and primitive-positive
+  state-separation conditions. P146's `A=Omega(q^(2/3))` conclusion remains
+  conditional on an unproved effective polynomial cycle-minimum bound.
+- `OPEN`: H141 asks for the missing ordinary-source/carry/resultant theorem
+  that turns defect area into an eventual H89 or all-area H133 obstruction.
+  E35 adds exact bounded regression data but no asymptotic closure.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -528,6 +540,10 @@ eventual nonzero lifts.
   logarithmic product exponent `1/9`; it is not a Collatz orbit.
 - `REFUTED`: height-free dropping-safe spacing eventually exceeds 4. For every
   `k>=3`, `2^k-5` and `2^k-1` are k-step dropping-safe and differ by 4.
+- `REFUTED`: the finite critical mechanical word always inherits the infinite
+  Sturmian `n+1` factor bound. NG32's smallest counterexample is
+  `q=4,c_q=1101100,n=2,A=0`, with all four binary length-two factors. P141
+  retains the necessary terminal `+1`.
 - `REFUTED`: for `L=12`, some shortened residue window `b<L` universally
   decides two-tail joint coefficient safety. Every `b=0,...,11` has an exact
   opposite-outcome collision below `H=20000` and gap 512.

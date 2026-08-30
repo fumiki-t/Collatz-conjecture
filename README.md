@@ -22,17 +22,16 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 22 is the latest accepted research layer. It attacks the separate
-positive-cycle branch with an exact minimum-cycle coefficient valley, a
-G170/H170 split, coprime slope-defect profiles, modular slope roots,
-resultant divisibility, and a radial-energy obstruction. It excludes every
-coprime area-zero or area-one positive profile and records a weaker
-noncoprime reduction. The finite audit is exact but area-bounded; H133 and the
-broader H54, H70, H72, H89, H104, H105, H112, C03, C04, and C05 obligations
-remain open.
+Phase 23 is the latest accepted research layer. It connects critical and
+cycle words to Christoffel defect area, repairs a finite-word boundary error,
+and derives exact factor/separation inequalities. The smallest rejected
+shortcut is `q=4`, `c_q=1101100`, `n=2`: the finite base has four factors, so
+the correct critical bound needs an extra `+1`. The finite audit is exact but
+bounded; H141, H133, and the broader H54, H70, H72, H89, H104, H105, H112,
+C03, C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–22, separates internal and external
+map and conventions, summarizes Phases 1–23, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -73,12 +72,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase22.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase22_verifier.json
+.venv/bin/python verifier/verify_phase23.py \
+  --artifact-dir artifacts --write-report /tmp/collatz_phase23_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 22 result](PHASE22_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 23 result](PHASE23_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout
