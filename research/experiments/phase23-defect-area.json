@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase23-defect-area",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P141", "P142", "P143", "P144", "P145", "P146", "E35", "NG32", "H141"],
   "objective": "Audit Christoffel defect area as an exact adjacent-swap and factor-complexity control for critical first-crossing words and coprime cycle profiles, while preserving the nonperiodic/positive-cycle hypotheses and finite/asymptotic boundary.",
   "exact_scope": {
@@ -70,5 +70,15 @@
     "The cycle factor-separation inequality is only a necessary condition for a primitive positive integer cycle and does not apply to negative or merely rational affine cycles.",
     "H89, H133, H112, H72, every remaining P69 branch, and Collatz remain open; proves_collatz remains false."
   ],
+  "recorded_result": {
+    "commit": "7f4626b04d565f69e52bb5852ab288cf164c3bee",
+    "generator": "valid=true in 36.48s",
+    "verifier": "valid=true in 57.2s with an independent complete reconstruction",
+    "focused_tests": "11 passed in 178.06s across Phase 23 properties, verifier acceptance, and tamper rejection",
+    "full_tests": "332 passed in 866.15s",
+    "strict_research_health": "valid=true with 152 tracked artifacts and zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "b6869d92d1a7c2854d5000ed9f83b1a65a13bee1a189d54023ea49bcd3825b87",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
