@@ -73,8 +73,13 @@ rotation-obstruction fields, and `proves_collatz=true`.
 git diff --check
 ```
 
-Acceptance provenance, test counts, and the SHA-256 of `artifacts/SHA256SUMS`
-will be fixed after the evidence commit.
+The accepted evidence is fixed at commit
+`dd8de1ef2ead68f7b90454370842748da6f13833`. The focused suite reports
+`18 passed in 180.19s`; the complete repository suite reports
+`380 passed in 1293.65s`. Strict research health reports `valid=true` with
+178 tracked artifacts and no errors, warnings, or untracked artifacts. The
+SHA-256 of the accepted `artifacts/SHA256SUMS` is
+`e4b0606333a3a610e995e52aa9e55f06b3616955160fe8c8d6be4e099ed5c876`.
 
 ## What this result does not prove
 
