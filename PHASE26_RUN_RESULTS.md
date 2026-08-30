@@ -76,9 +76,13 @@ and `proves_collatz=true`.
 git diff --check
 ```
 
-Acceptance commit, final test totals, strict-health result, and manifest hash
-are recorded in `research/experiments/phase26-cycle-area-barrier.json` after
-the clean acceptance run.
+The accepted evidence is fixed at commit
+`9fd8434042fee1eaa722856086a80cc243b9d6db`. The focused suite reports
+`17 passed in 12.82s`; the complete repository suite reports
+`367 passed in 1146.48s`. Strict research health reports `valid=true` with
+171 tracked artifacts and no errors, warnings, or untracked artifacts. The
+SHA-256 of the accepted `artifacts/SHA256SUMS` is
+`257a65d003af20bcd21ffc6336ea468caab17a0e4e0ad7e588ea57670141f00e`.
 
 ## What this result does not prove
 

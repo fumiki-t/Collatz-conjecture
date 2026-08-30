@@ -83,13 +83,13 @@
     "H133, every nonperiodic branch, and Collatz remain open; proves_collatz remains false."
   ],
   "recorded_result": {
-    "commit": "PENDING_ACCEPTANCE_COMMIT",
+    "commit": "9fd8434042fee1eaa722856086a80cc243b9d6db",
     "generator": "valid=true with 2214 cyclic classes, 1417 noncoprime classes, critical area lower 6, and noncritical strict area lower 100000",
     "verifier": "valid=true with generator_imported=false, recursive compositions, ordered-one displacement, separate rational intervals, and exact scalar scans",
-    "focused_tests": "PENDING",
-    "full_tests": "PENDING",
-    "strict_research_health": "PENDING",
-    "manifest_sha256": "PENDING",
+    "focused_tests": "17 passed in 12.82s across Phase 26 properties, verifier acceptance, tamper rejection, and research-health control-plane tests",
+    "full_tests": "367 passed in 1146.48s",
+    "strict_research_health": "valid=true with 171 tracked artifacts and zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "257a65d003af20bcd21ffc6336ea468caab17a0e4e0ad7e588ea57670141f00e",
     "verifier_valid": true
   },
   "proves_collatz": false
