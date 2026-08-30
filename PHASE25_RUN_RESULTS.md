@@ -91,8 +91,13 @@ status, q0 width, and `proves_collatz` metadata.
 git diff --check
 ```
 
-Acceptance commit, test totals, verifier result, and manifest SHA-256 are
-filled into the experiment manifest after the clean acceptance run.
+The accepted evidence is fixed at commit
+`b25b9e7e7f858a3567d1b5cf66e21a353aafa676`.  The focused suite reports
+`16 passed in 48.47s`; the complete repository suite reports
+`355 passed in 1111.16s`.  Strict research health reports `valid=true` with
+165 tracked artifacts and no errors, warnings, or untracked artifacts.  The
+SHA-256 of the accepted `artifacts/SHA256SUMS` is
+`c71fcf9752be80f04827979122a491081f8303a51b5f012f9a251bd54d48eb9d`.
 
 ## What this result does not prove
 

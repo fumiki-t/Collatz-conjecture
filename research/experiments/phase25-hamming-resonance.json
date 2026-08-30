@@ -88,13 +88,13 @@
     "H147, H133, H89, H72, every noncoprime cycle, and Collatz remain open; proves_collatz remains false."
   ],
   "recorded_result": {
-    "commit": "PENDING_ACCEPTANCE_COMMIT",
+    "commit": "b25b9e7e7f858a3567d1b5cf66e21a353aafa676",
     "generator": "valid=true with 502523 critical words, 33577 area-three profiles, q0 n=73, and seven-grid threshold Q=11",
     "verifier": "valid=true with generator_imported=false, weak profiles, shifted Bezout roots, rational intervals, Sylvester resultants, and falsifier gcd=1",
-    "focused_tests": "PENDING",
-    "full_tests": "PENDING",
-    "strict_research_health": "PENDING",
-    "manifest_sha256": "PENDING",
+    "focused_tests": "16 passed in 48.47s across Phase 25 properties, verifier acceptance, tamper rejection, and research-health control-plane tests",
+    "full_tests": "355 passed in 1111.16s",
+    "strict_research_health": "valid=true with 165 tracked artifacts and zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "c71fcf9752be80f04827979122a491081f8303a51b5f012f9a251bd54d48eb9d",
     "verifier_valid": true
   },
   "proves_collatz": false

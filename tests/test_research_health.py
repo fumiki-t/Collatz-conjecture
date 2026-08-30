@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 24
+    assert result["latest_phase"] == 25
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -136,13 +136,26 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["P150"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["E36"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG33"] == "REFUTED"
+    assert result["active_focus"]["P151"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P152"] == "CONDITIONAL"
+    assert result["active_focus"]["P153"] == "CONDITIONAL"
+    assert result["active_focus"]["P154"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P155"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E37"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG34"] == "REFUTED"
     assert result["active_focus"]["H147"] == "OPEN"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["finite_counts"] == {
-        "critical": 7057,
-        "direct": 544073,
-        "noncritical": 204,
+    assert result["latest_supplemental_verifier"]["critical"] == {
+        "bounded_distinct_rows": 0,
+        "critical_words": 502523,
+        "factor_checks": 82227,
+        "support_bound_rejections": 0,
+    }
+    assert result["latest_supplemental_verifier"]["resonance"] == {
+        "falsifier_gcd": 1,
+        "falsifier_q": 63322,
+        "norm": 209,
     }
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
@@ -172,6 +185,8 @@ def test_repository_research_health() -> None:
     assert ("phase23-defect-area" in result["accepted_experiments"]) == (phase23["status"] == "ACCEPTED")
     phase24 = json.loads(Path("research/experiments/phase24-sparse-arc-resultants.json").read_text(encoding="utf-8"))
     assert ("phase24-sparse-arc-resultants" in result["accepted_experiments"]) == (phase24["status"] == "ACCEPTED")
+    phase25 = json.loads(Path("research/experiments/phase25-hamming-resonance.json").read_text(encoding="utf-8"))
+    assert ("phase25-hamming-resonance" in result["accepted_experiments"]) == (phase25["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
