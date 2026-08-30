@@ -18,4 +18,5 @@ Each pack is intentionally short and records:
 
 Current primary packs: [`H54.md`](H54.md), [`H70.md`](H70.md),
 [`H72.md`](H72.md), [`H89.md`](H89.md), [`H104.md`](H104.md),
-[`H105.md`](H105.md), and [`H133.md`](H133.md).
+[`H105.md`](H105.md), [`H133.md`](H133.md), [`H141.md`](H141.md), and
+[`H147.md`](H147.md).

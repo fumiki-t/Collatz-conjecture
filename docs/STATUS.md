@@ -141,6 +141,15 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 - `OPEN`: H141 asks for the missing ordinary-source/carry/resultant theorem
   that turns defect area into an eventual H89 or all-area H133 obstruction.
   E35 adds exact bounded regression data but no asymptotic closure.
+- `VERIFIED_THEOREM`: P147 gives the exact sparse circular-arc divisor and
+  strict size bound. P148 classifies area-two and area-three coprime residue
+  profiles, and P149 combines the area-two case with EXT05 and E36 to force
+  every hypothetical positive nontrivial coprime cycle to have defect area at
+  least three. P150 gives only a noncritical fixed-area theorem under explicit
+  sparse-lift nonvanishing.
+- `REFUTED` / `OPEN`: NG33 shows that the generic seven-point bound
+  `W/q<=6/7` is exponentially too weak for critical area three. H147 asks for
+  a paired-support improvement; E36's finite ratios do not prove one.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -316,6 +325,11 @@ No item above proves the Collatz conjecture.
   controls, and 22 numeric controls. Only the trivial cycle and its powers are
   integral in the exhaustive scope. All area-bounded profiles meet the direct
   source barrier, but this finite zero-survivor result is not eventual.
+- Phase 24: E36 independently reconstructs 7,057 critical area-two profiles
+  through `q<=60`, 204 noncritical area-two profiles with `L<=21`, 544,073
+  critical direct modular rows through `q<=250`, and 521,154 critical
+  area-three profiles through `q<=100`.  The area-two remainder completes
+  P149; the area-three worst ratios `35/41` and `80/94` remain finite only.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -371,11 +385,11 @@ Phase 10 gives the strongest renewal consequence of that localization: every
 positive q0 gap would create two long-safe integers within distance `W`, but
 the required global spacing lower bound C05 is still open.
 
-Phase 22 gives the strongest current algebraic localization of the separate
-positive-cycle branch: a coprime hypothetical cycle has defect area at least
-two, its nonzero profile resultant is divisible by `D`, and its radial energy
-must be large. The G170/H170 split makes the low-`q/m` branch critical-length.
-This is a necessary-condition package, not an exclusion of every cycle.
+Phase 24 gives the strongest current low-area localization of the separate
+positive-cycle branch: every coprime hypothetical nontrivial cycle has defect
+area at least three.  The sparse arc integer is divisible by `D` and is too
+small at area two, using EXT05 only on the critical large-q line.  H147's
+paired area-three gap, arbitrary area, and every noncoprime slope remain open.
 
 ## Strongest conditional route
 
@@ -419,11 +433,12 @@ scale to the required depth and height.
 P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
 cases. The missing scalable state must retain the common-prefix surplus, odd
 normalized gap, and both tail residues; branch depth alone is insufficient.
-The cycle branch has a separate bottleneck. Phase 22 excludes only coprime
-defect area zero and one. No uniform roughness theorem forces
-`E_q(a)^(q/2)<D` for arbitrary profiles, and the noncoprime grouped modulus
-`D_0` is too weak to exclude its branch. H133 records this obligation without
-conflating it with H89/H112/H72.
+The cycle branch has a separate bottleneck. Phase 24 excludes coprime defect
+area zero, one, and two.  NG33 shows that support cardinality alone misses the
+critical area-three exponent, while E36's paired-support margins are finite
+only. No uniform roughness or sparse-arc theorem handles arbitrary profiles,
+and the noncoprime grouped modulus `D_0` remains too weak. H133/H147 record
+these obligations without conflating them with H89/H112/H72.
 P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
 `L=12` none of the shorter windows `b<L` retains enough information even in a
 small exact domain. The open problem is therefore a composable symbolic state,
@@ -680,4 +695,6 @@ eventual nonzero lifts.
 - Phase 16 acceptance: [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md)
 - Phase 17 acceptance: [`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md)
 - Phase 22 acceptance: [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md)
+- Phase 23 acceptance: [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md)
+- Phase 24 acceptance: [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

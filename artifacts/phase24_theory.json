@@ -1,0 +1,118 @@
+{
+  "area_three_classification": {
+    "doubled_cell": "a_r=2 forces a_(r+q-m)=1 and 1<=r<2m-q",
+    "three_cells": "three roots, or two roots and one upper cell attached to one of them"
+  },
+  "area_two_classification": {
+    "boundary_Q": "3-X^s+X^(s+1)-X^(q-1)",
+    "height_two": "impossible",
+    "nonboundary_Q": "1-X^s+X^(s+1)-X^t+X^(t+1), with cancellations retained",
+    "root_edge": "support {s,s+m}, 1<=s<q-m",
+    "root_root": "support {s,t}, 1<=s<t<m"
+  },
+  "claims": {
+    "H147": {
+      "statement": "Exploit paired area-three support to prove a uniform critical arc gap, then address arbitrary-area coprime and noncoprime cycle profiles.",
+      "status": "OPEN"
+    },
+    "P147": {
+      "statement": "A sparse polynomial vanishing at the coprime slope root has an exact circular-arc lift D|R with |R|<2||P||_1*2^(LW/q); if all nonzero coefficients are odd, R is odd and nonzero.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P148": {
+      "statement": "The residue recurrence classifies every valid area-two profile as two roots or one root-edge pair; it also gives the two exact area-three shape families.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P149": {
+      "statement": "Every positive coprime slope profile of defect area at most two is impossible except the area-zero trivial cycle; the critical area-two large-q part depends on EXT05 and E36 supplies the finite remainder.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P150": {
+      "statement": "For fixed area A, support(Q)<=2A+1 and ||Q||_1<=3*2^A-2; every noncritical profile with nonzero sparse lift is excluded beyond an effective A-dependent length.",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "critical_area_two": {
+    "base_rows_q_61_to_65": [
+      [
+        61,
+        48,
+        "72011522474535322146748186257063071643157410701864219369158916879067322547314233815995976328849792480468750000",
+        "150306725297525326584926758194517569752043683130132471725266622178061377607334940381676735896625196994043838464",
+        "78295202822990004438178571937454498108886272428268252356107705298994055060020706565680759567775404513575088464"
+      ],
+      [
+        62,
+        49,
+        "5400864185590149161006113969279730373236805802639816452686918765930049191048567536199698224663734436035156250000",
+        "9619630419041620901435312524449124464130795720328478190417063819395928166869436184427311097384012607618805661696",
+        "4218766233451471740429198555169394090893989917688661737730145053465878975820868648227612872720278171583649411696"
+      ],
+      [
+        63,
+        50,
+        "405064813919261187075458547695979777992760435197986233951518907444753689328642565214977366849780082702636718750000",
+        "615656346818663737691860001564743965704370926101022604186692084441339402679643915803347910232576806887603562348544",
+        "210591532899402550616401453868764187711610490903036370235173176996585713351001350588370543382796724184966843598544"
+      ],
+      [
+        64,
+        51,
+        "30379861043944589030659391077198483349457032639848967546363918058356526699648192391123302513733506202697753906250000",
+        "39402006196394479212279040100143613805079739270465446667948293404245721771497210611414266254884915640806627990306816",
+        "9022145152449890181619649022945130455622706630616479121584375345889195071849018220290963741151409438108874084056816"
+      ],
+      [
+        65,
+        52,
+        "2278489578295844177299454330789886251209277447988672565977293854376739502473614429334247688530012965202331542968750000",
+        "2521728396569246669585858566409191283525103313309788586748690777871726193375821479130513040312634601011624191379636224",
+        "243238818273402492286404235619305032315825865321116020771396923494986690902207049796265351782621635809292648410886224"
+      ]
+    ],
+    "external_input": "EXT05: D>(64/25)^q/2 for q>12",
+    "five_step_ratio": {
+      "left": "791015625",
+      "right": "1073741824",
+      "strict": true
+    },
+    "scope": "q>=61 and L=ceil(q log_2 3)",
+    "upper_bound": "0<|R|<24*3^(q-ceil(q/5))<D"
+  },
+  "fixed_area_noncritical": {
+    "boundary": "P150 requires R(Q_a)!=0; arbitrary Q_a coefficients need not satisfy the odd-coefficient shortcut used for area two.",
+    "effective_threshold": "L>=(2A+1)*bit_length(4*C_A) implies |R|<2^(L-1)<D whenever R(Q_a)!=0",
+    "l1_bound": "||Q_a||_1<=C_A=3*2^A-2",
+    "support_bound": "M<=2A+1"
+  },
+  "format": "collatz-phase24-theory-v1",
+  "map": "odd accelerated x_(i+1)=(3*x_i+1)/2^e_i, e_i=v2(3*x_i+1)",
+  "noncritical_area_two": {
+    "D_lower_bound": "D>2^(L-1)",
+    "boundary": "|R|<12*2^(3L/4)<2^(L-1), checked already at L=19 and monotone",
+    "boundary_L19_strict": true,
+    "nonboundary": "|R|<10*2^(4L/5)<2^(L-1), checked at L=22 and monotone",
+    "nonboundary_L22_strict": true,
+    "scope": "L>=ceil(q log_2 3)+1 and L>=22"
+  },
+  "profile_recurrence": {
+    "m": "L-q",
+    "r_at_least_m": "e=1+a_(r-m)-a_r",
+    "r_below_m": "e=2+a_(r-m+q)-a_r",
+    "validity": "a_(r-m)>=a_r for r>=m and a_(r-m+q)>=a_r-1 for r<m"
+  },
+  "proves_collatz": false,
+  "reduced_polynomial": "Q_a=1+(X-1)sum_r(2^a_r-1)X^r modulo X^q-2; A_a(gamma)=0 iff Q_a(gamma)=0.",
+  "slope_domain": "q<L<2q, D=2^L-3^q>0, gcd(q,L)=1",
+  "slope_root": "For uq+vL=1, gamma=2^u*3^v mod D and gamma^q=2, gamma^L=3.",
+  "sparse_arc": {
+    "critical_bound": "if L=ceil(q log_2 3), then |R|<4*||P||_1*3^W",
+    "divisibility": "P(gamma)=0 mod D implies D|R",
+    "integer": "R=sum_j c_j*2^(A_j-A_min)*3^(b_max-b_j)",
+    "lift_congruence": "L*b_j=-j mod q and A_j=(L*b_j+j)/q",
+    "nonvanishing": "distinct A_j and odd nonzero c_j make R odd",
+    "strict_bound": "|R|<2*||P||_1*2^(L*W/q)",
+    "width": "W<=q-ceil(q/M) after deleting a largest circular gap"
+  },
+  "what_this_result_does_not_prove": "It does not exclude area at least three, general noncoprime cycles, H89, H112, H72, or prove Collatz."
+}

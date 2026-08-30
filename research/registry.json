@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 23,
+    "latest_phase": 24,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 23,
-    "report": "PHASE23_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase23_verifier.json",
+    "phase": 24,
+    "report": "PHASE24_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase24_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase23-defect-area.json"
+    "experiment_manifest": "research/experiments/phase24-sparse-arc-resultants.json"
   },
   "active_obligations": [
     {
@@ -93,16 +93,24 @@
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H133.md",
-      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "E28", "E34", "E35", "EXT05", "EXT15", "NG32"],
-      "success_scope": "Eliminate every primitive positive nontrivial cycle profile, including arbitrary-area coprime and general noncoprime slopes; P144/P145 add exact edit/state separation but no uniform all-area source obstruction."
+      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "E28", "E34", "E35", "E36", "EXT05", "EXT15", "NG32", "NG33"],
+      "success_scope": "Eliminate every primitive positive nontrivial cycle profile, including coprime area at least three and general noncoprime slopes; P149 excludes coprime areas zero through two, but no arbitrary-area theorem is known."
     },
     {
       "id": "H141",
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H141.md",
-      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "E33", "E34", "E35", "NG32"],
-      "success_scope": "Turn defect area into a uniform ordinary-source, carry, or resultant obstruction strong enough to advance H89 or H133; bounded rejection counts are insufficient."
+      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "E33", "E34", "E35", "E36", "NG32", "NG33"],
+      "success_scope": "Turn defect area into a uniform ordinary-source, carry, or resultant obstruction strong enough to advance H89 or arbitrary-area H133; Phase 24 closes only coprime area at most two."
+    },
+    {
+      "id": "H147",
+      "status": "OPEN",
+      "priority": "P1",
+      "context": "docs/context/H147.md",
+      "depends_on": ["P135", "P147", "P148", "P149", "P150", "E36", "EXT05", "NG33"],
+      "success_scope": "Prove a uniform paired-support arc gap or replacement obstruction for every critical area-three coprime profile; finite q<=100 ratios are falsification data, not an eventual theorem."
     },
     {
       "id": "C04",
@@ -254,7 +262,14 @@
     "P146",
     "E35",
     "NG32",
-    "H141"
+    "H141",
+    "P147",
+    "P148",
+    "P149",
+    "P150",
+    "E36",
+    "NG33",
+    "H147"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

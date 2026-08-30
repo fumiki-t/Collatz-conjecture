@@ -190,6 +190,10 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   conditional area/repetition inequality, while P144/P145 give exact coprime
   cycle edit, triangular-height, complexity, and positive-state separation
   conditions. E35 is bounded and H141/H89/H133 remain open.
+- Phase 24 proves the sparse circular-arc divisor and excludes every coprime
+  area-two positive cycle profile, so a hypothetical nontrivial coprime cycle
+  has area at least three. E36's area-three ratios are finite only; NG33 blocks
+  generic seven-point cardinality and H147/H133 remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

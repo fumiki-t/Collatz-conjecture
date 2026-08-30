@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 23
+# Collatz research synthesis through Phase 24
 
 **Audit date:** 2026-08-29
 
 **Audited base:** `482f0357ffc5082e228bc4f3441b0a9e22f4f975`
 
-**Latest accepted phase:** Phase 23
+**Latest accepted phase:** Phase 24
 
 **Problem status:** `OPEN`
 
@@ -666,6 +666,26 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   See [`PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md) and the
   [`Phase 23 audit`](../research/audits/defect-area/REPORT.md).
 
+### Phase 24 — sparse circular arcs and area-two cycle exclusion
+
+- **Purpose:** convert low defect area into a small exact divisor at the P135
+  slope root and close the complete coprime area-two cycle frontier.
+- **Accepted internally:** P147 proves the sparse circular-arc divisor, strict
+  size bound, and odd-coefficient nonvanishing. P148 gives the exact profile
+  recurrence and area-two/three shapes. P149 forces every hypothetical
+  positive nontrivial coprime cycle to have area at least three. P150 gives a
+  fixed-area noncritical theorem with explicit sparse-lift nonvanishing.
+- **External boundary:** only the critical area-two `q>=61` step uses EXT05;
+  the noncritical bound and all finite checks are internal.
+- **Finite evidence:** E36 rebuilds 7,057 critical and 204 noncritical
+  area-two remainder profiles, 544,073 critical direct rows through `q<=250`,
+  and 521,154 critical area-three profiles through `q<=100`.
+- **Refuted/open:** NG33 proves that generic seven-point cardinality is
+  exponentially too weak. H147 asks for a paired-support area-three theorem;
+  arbitrary area and noncoprime H133 remain open. See
+  [`PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md) and the
+  [`Phase 24 audit`](../research/audits/sparse-arc-resultants/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -673,8 +693,9 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145 with their exact hypotheses;
-- explicit counterexamples NG04, NG07–NG10, NG15, NG17–NG32.
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P150 with their exact hypotheses;
+- explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
+  NG17–NG33.
 
 None is a full convergence theorem.
 
@@ -817,12 +838,20 @@ Neither target covers a repeated periodic orbit.
 
 **Target:** exclude every nontrivial positive cycle, independently of the
 nonperiodic route. **Known inputs:** computational verification lower bounds,
-cycle-length/minimum estimates, P65, Phase 22 P133--P140, and Phase 23
-P144/P145. H133 isolates
-the arbitrary-area coprime and general noncoprime remainder. **Acceptance:** a
+cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
+and Phase 24 P147--P150. H133 now isolates coprime area at least three and the
+general noncoprime remainder. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
+
+### H147 — paired sparse arcs at area three
+
+**Target:** use the exact P148 paired support to beat NG33's generic `6/7`
+exponent uniformly, or find a replacement arithmetic obstruction.
+**Known trap:** E36's `35/41` and `80/94` ratios are finite diagnostics, not a
+uniform margin. **Acceptance:** an all-q theorem with exact constants and an
+independently checked remainder. See [`context/H147.md`](context/H147.md).
 
 ### H141 — defect area versus weighted correction/source
 
@@ -858,8 +887,9 @@ scoped obligation rather than a complete proof by itself.
 | Cross-`Q` 3-adic nesting | Bound multiplicity of endpoint cylinders across different `Q` | NG23 and E22 compatible/nested pairs | Enumerate exact containment poset, then state a provable recursion | Supplies endpoint anti-concentration | Finite injectivity without a recursion is not progress |
 | Fourier/large-sieve anti-concentration | Prove cancellation beyond Haar mass | per-address `+1`, deterministic least representatives | Small exact character sums with explicit constants and carry classes | Could prove either P80 premise | Stop if constants grow exponentially or discard the lattice error |
 | Positive ordinary bridge | Convert coherent 2-adic source data into an effective ordinary-height obstruction | NG22, P76 topology split | Bound the first residue renewal using positivity and signed height | Could directly close H72 | Stop if the argument uses only 2-adic coherence |
-| Cycle resultant/energy closure | Prove H133 for arbitrary defect area and noncoprime slopes | both negative cycles, E34 area-two rows, macro/NG28/NG30 controls | Test one all-area energy/source inequality or stronger noncoprime divisor | Eliminates P69's cycle branch | Stop if it assumes coprimality, positivity, or primitivity without preserving it |
-| Defect/source optimization | Prove H141 as an H89 or H133 bridge | NG32, concentrated defects, E33 survivors, both negative cycles, E34 | Optimize one exact carry/source/resultant inequality before extending q | Advances one major branch if effective and uniform | Stop if only area, contact count, or factor complexity remains |
+| Paired area-three sparse arcs | Prove H147 for every critical coprime area-three profile | NG33, `35/41`, `80/94`, largest-gap ties and cancellations | Derive an exact paired-support q/L gap with explicit margin | Removes the smallest remaining coprime cycle area | Stop if the result is only a larger finite scan |
+| Cycle resultant/energy closure | Prove H133 for arbitrary defect area and noncoprime slopes | both negative cycles, E36, macro/NG28/NG30 controls | Test one all-area energy/source inequality or stronger noncoprime divisor | Eliminates P69's cycle branch | Stop if it assumes coprimality, positivity, or primitivity without preserving it |
+| Defect/source optimization | Prove H141 as an H89 or H133 bridge | NG32/NG33, concentrated defects, E33 survivors, both negative cycles, E36 | Optimize one exact carry/source/resultant inequality before extending q | Advances one major branch if effective and uniform | Stop if only area, contact count, or factor complexity remains |
 | Eventual H54 lower bound | Prove all safe representatives grow faster than `H_q` | all `M(k)` records and `A^rB^s` | Test one explicit composable inequality on exact records | Closes P54 route with finite remainder | Stop at the least violating word and store its carry data |
 
 Merely extending depth, modulus, `q`, or height without a candidate structural

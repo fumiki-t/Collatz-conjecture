@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 23's defect-area audit is the
+proof of the conjecture. Phase 24's sparse-arc audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–23 evidence boundaries, and current obligations.
+   branch map, Phase 1–24 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md), then its inputs:
+   [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md),
    [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md),
    [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md),
    [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md),
@@ -144,6 +145,10 @@ flowchart TD
     P144["P144 cycle edit area"] --> P145["P145 cycle separation"]
     P145 --> H141
     P145 --> H133["H133 all-area cycle obstruction"]
+    P147["P147 sparse arc divisor"] --> P149["P149 coprime area >= 3"]
+    P148["P148 low-area shapes"] --> P149
+    P149 --> H147["H147 paired area-three gap"]
+    H147 --> H133
     P127 --> H112
     H112 --> H72
     NG28["NG28 negative carry"] --> H89
@@ -160,13 +165,14 @@ external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
 P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
-P129--P138, P140, P141, P144, and P145 are
+P129--P138, P140, P141, P144, P145, and P147--P150 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
 P110, P119, P121, P123, P124, P128, P142, P143, and P146 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
 left-congruence failure, NG25--NG31 delimit the finite ancestral/affine
-search language, and NG32 is the finite critical mechanical boundary failure.
-H54, H70, H72, H89, H104, H105, H112, H133, H141, C04, C05, every uneliminated P69 branch,
+search language, NG32 is the finite critical mechanical boundary failure, and
+NG33 is the generic seven-point area-three exponent failure. H54, H70, H72,
+H89, H104, H105, H112, H133, H141, H147, C04, C05, every uneliminated P69 branch,
 and the Collatz conjecture remain open.
 
 ## Active proof obligations
@@ -180,8 +186,9 @@ and the Collatz conjecture remain open.
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
-| H133 | `OPEN` | Exclude arbitrary-area coprime and general noncoprime positive cycle profiles | Seek an all-area P137 energy/source inequality or strengthen P140's modulus; test both negative cycles and every E34 area-two row first |
-| H141 | `OPEN` | Turn defect area into an ordinary-source/carry/resultant obstruction for H89 or H133 | Test one exact weighted inequality on NG32, concentrated defects, E33 survivors, both negative cycles, and E34 before extending q |
+| H133 | `OPEN` | Exclude coprime area at least three and general noncoprime positive cycle profiles | Seek H147's paired area-three gap, an all-area energy/source inequality, or a stronger P140 modulus; test both negative cycles and E36 first |
+| H141 | `OPEN` | Turn defect area into an ordinary-source/carry/resultant obstruction for H89 or arbitrary-area H133 | Test one exact weighted inequality on NG32/NG33, concentrated defects, E33 survivors, both negative cycles, and E36 before extending q |
+| H147 | `OPEN` | Prove a uniform paired-support arc gap or replacement obstruction for critical coprime area three | Rebuild the `35/41` and `80/94` witnesses; reject generic cardinality with NG33 and preserve exact q/L lifts |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -214,7 +221,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 23 provides the
+artifacts and preserve the recorded manifest hash. Phase 24 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -229,6 +236,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   renewal-ladder result as a full counterexample exclusion.
 - For H141, optimize a stated weighted correction/source inequality against
   concentrated defects and NG32 before any larger critical/profile scan.
+- For H147, use the paired area-three support and exact recurrence; extending
+  the finite `q<=100` diagnostic without a uniform margin is not progress.
 - Attack H72 through positive ordinary-integrality, effective reduced
   shadow-height/gcd, P79's valuation-conditioned successor congruences, or a
   P86 cross-Q surplus state retaining the carries lost in NG24.

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "phase24-sparse-arc-resultants",
+  "status": "RUNNING",
+  "claim_ids": ["P147", "P148", "P149", "P150", "E36", "NG33", "H147"],
+  "objective": "Audit a sparse circular-arc divisor for coprime slope-root polynomials, use it with an exact profile recurrence to exclude every positive coprime area-two cycle profile, and preserve the paired area-three obstruction without asymptotic promotion.",
+  "exact_scope": {
+    "quantifiers": [
+      "all nonzero sparse polynomials of degree below q in P147 under the stated coprime positive-slope hypotheses",
+      "all valid coprime profiles of area two in P148 and P149",
+      "all fixed-area noncritical profiles with nonzero sparse lift in P150",
+      "all critical coprime area-two profiles through q<=60 and all noncritical coprime area-two profiles with L<=21 for the complete finite remainder",
+      "all critical coprime area-two profiles through q<=250 for the direct modular falsification scan",
+      "all critical coprime area-three profiles through q<=100 for the finite paired-support diagnostic"
+    ],
+    "bounds": {
+      "critical_area_two_remainder_q_maximum": 60,
+      "noncritical_area_two_remainder_L_maximum": 21,
+      "direct_critical_area_two_q_maximum": 250,
+      "area_three_diagnostic_q_maximum": 100
+    },
+    "completeness": "P147--P150 are theorem-level in their stated domains. The area-two finite ranges exactly cover the theorem remainders. The q<=250 direct scan and q<=100 area-three ratios are finite falsification data only; they are not used as asymptotic premises."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, modular inverses, shifted Bezout roots, literal exponent reconstruction, integer power comparisons, and canonical SHA-256 row digests",
+    "floating_point_role": "none in generator, verifier, theorem thresholds, or artifact acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase24_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase24.py --artifact-dir artifacts --write-report artifacts/phase24_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase24_properties.py tests/test_phase24_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "weak area-two profiles and literal positive exponent words before comparison with the classified root/edge families",
+      "the slope root from a shifted Bezout pair rather than the production pair",
+      "sparse-arc divisibility and strict size with the last largest-gap tie in addition to the production first tie",
+      "the complete critical and noncritical area-two remainders and the q<=250 direct modular digest",
+      "area-three shapes, q/L arc widths, exact threshold comparisons, and weak-profile completeness through q<=30",
+      "mandatory families, boundary coefficient three, term cancellation, negative-cycle signs, and obstruction-report boundaries"
+    ],
+    "forbidden_imports": ["src.phase24_search", "phase24_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase24_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "trivial positive cycle",
+    "negative q=2,L=3 cycle",
+    "negative q=7,L=11,D=-139 cycle",
+    "boundary t=q-1 coefficient-three profiles",
+    "adjacent-root term cancellation",
+    "largest-gap ties",
+    "D=1"
+  ],
+  "artifacts": [
+    "artifacts/phase24_theory.json",
+    "artifacts/phase24_area_two_remainder.json",
+    "artifacts/phase24_area_three_diagnostic.json",
+    "artifacts/phase24_regressions.json",
+    "artifacts/phase24_obstruction_report.md",
+    "artifacts/phase24_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not use a circular-arc bound without separately proving the lifted integer is nonzero.",
+    "Do not promote the finite area-three ratios or zero threshold failures to a uniform eta or all-q theorem.",
+    "Do not reuse the coprime slope-root profile bijection for a noncoprime slope.",
+    "Do not treat EXT05 as an irrationality measure for log(3)/log(2) or use it outside its recorded q>12 statement.",
+    "Do not claim that excluding coprime area at most two excludes all positive cycles.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "P149 advances only the positive coprime cycle branch to defect area at least three.",
+    "P150 has an explicit nonzero sparse-lift hypothesis and covers only noncritical fixed-area families.",
+    "NG33 refutes only the generic seven-point cardinality proof; paired-support or stronger arithmetic methods remain open.",
+    "H133, H147, every noncoprime cycle, H89, H70, H72, H112, and Collatz remain open; proves_collatz remains false."
+  ],
+  "proves_collatz": false
+}

@@ -37,7 +37,7 @@ jobs:
         run: >-
           python -m pytest -q
           tests/test_research_health.py
-          tests/test_phase15_verifier.py
+          tests/test_phase24_verifier.py
       - name: Verify tracked artifact manifest
         working-directory: artifacts
         run: sha256sum --check SHA256SUMS

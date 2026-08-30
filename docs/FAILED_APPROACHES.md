@@ -993,12 +993,45 @@ defect-area identity or adjacent-swap method.
 **Evidence.** [`../research/audits/defect-area/REPORT.md`](../research/audits/defect-area/REPORT.md),
 `artifacts/phase23_theory.json`, and exact property/tamper tests.
 
+## NG33 — generic seven-point arc cardinality at area three
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** The generic support estimate `M<=7`, hence
+`W/q<=6/7`, is strong enough with EXT05 to exclude every sufficiently large
+critical area-three profile.
+
+**Why it looked plausible.** The same sparse circular-gap mechanism completely
+excludes area two, and the finite area-three supports remain close to the
+required exponent.
+
+**Smallest counterexample / failure.** The obstruction is an exact asymptotic
+base comparison rather than one profile:
+
+```text
+3^6*25^7 > 64^7,
+equivalently 3^(6/7) > 64/25.
+```
+
+Constants cannot repair this exponential loss.
+
+**Failure scope.** Fundamental for support cardinality alone, but local to that
+information set. P148's paired support and validity may still force a smaller
+arc.
+
+**Weaker statement retained.** E36's finite `35/41` and `80/94` records are
+exact diagnostics, not an all-q repair. H147 states the surviving target.
+
+**Evidence.**
+[`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md),
+Section 8.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, source 167, both
-Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
-negative cycles, the Phase 22 area-two profiles, and all exact
-counterexamples above. Passing a bounded regression is necessary
-evidence, never a proof of universality.
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, source 167,
+both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
+negative cycles, the complete Phase 24 area-two profiles, the E36 worst
+area-three supports, and all exact counterexamples above. Passing a bounded
+regression is necessary evidence, never a proof of universality.

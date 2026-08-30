@@ -1473,3 +1473,37 @@ profiles through `q<=22`, 156,178 cyclic factor checks, and 2,214 complete
 cyclic classes through `q<=8`. It finds 31 area-rule critical rejections, but
 through `q<=12` none improves on P132. No giant q0 width was manufactured, no
 positive nontrivial cycle was excluded in full, and `proves_collatz=false`.
+
+## 2026-08-29 — Phase 24: sparse arcs and complete coprime area-two exclusion
+
+**Branch:** `feat/phase24-sparse-arc`
+
+**Acceptance record:** [`PHASE24_RUN_RESULTS.md`](PHASE24_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/sparse-arc-resultants/REPORT.md`](research/audits/sparse-arc-resultants/REPORT.md)
+
+Phase 24 treated the supplied sparse-arc note as an untrusted proposal. P147
+turns a sparse polynomial congruence at the P135 slope root into an exact
+integer divisor `D|R_arc`, with a circular-gap width bound, strict magnitude
+estimate, and odd-coefficient nonvanishing. P148 independently reconstructs
+the residue recurrence and completely classifies area-two profiles as two
+roots or one root-edge pair.
+
+P149 combines those theorems with EXT05 only on the critical large-q line,
+an internal noncritical inequality, and E36's exact finite remainder. Every
+hypothetical positive nontrivial coprime cycle profile must therefore have
+defect area at least three. P150 records the more general fixed-area
+noncritical theorem with its essential `R_arc!=0` hypothesis.
+
+E36 checks 7,057 critical area-two profiles through `q<=60`, 204
+noncritical profiles with `L<=21`, 544,073 critical direct modular profiles
+through `q<=250`, and 521,154 critical area-three profiles through `q<=100`.
+The finite area-three worst ratios are `35/41` and `80/94`. NG33 records why
+generic seven-point cardinality cannot prove an eventual result, and H147
+keeps the paired-support theorem open.
+
+### What this result does not prove
+
+Phase 24 does not exclude coprime area at least three, any general noncoprime
+cycle, the nonperiodic branches H70/H72/H112/H89, or the Collatz conjecture.
+`proves_collatz=false`.

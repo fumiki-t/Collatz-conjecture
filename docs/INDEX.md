@@ -51,6 +51,7 @@ This is the canonical map of the research archive. Start with
 | 21 | [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md) | [`../artifacts/phase21_obstruction_report.md`](../artifacts/phase21_obstruction_report.md) | `feat/phase21-repetition-complexity` |
 | 22 | [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md) | [`../artifacts/phase22_obstruction_report.md`](../artifacts/phase22_obstruction_report.md) | `feat/phase22-cycle-resultant` |
 | 23 | [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md) | [`../artifacts/phase23_obstruction_report.md`](../artifacts/phase23_obstruction_report.md) | `feat/phase23-defect-area` |
+| 24 | [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md) | [`../artifacts/phase24_obstruction_report.md`](../artifacts/phase24_obstruction_report.md) | `feat/phase24-sparse-arc` |
 
 Research supplements:
 
@@ -70,9 +71,10 @@ Research supplements:
 | Repetition-complexity audit | [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md) | Phase 21 orbit-separation, repeat-height, factor-complexity, stammering, H89-filter artifacts with independent verifier and tamper tests | EXT14, P125--P132, E33, H89/H112/H72 boundary |
 | Cycle-resultant audit | [`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md) | Phase 22 minimum-cycle valley, slope profiles, resultants, energy, Christoffel gap, noncoprime reduction, exact finite profiles, and negative-cycle regressions | EXT15/EXT16, P133--P140, E34, H133 boundary |
 | Defect-area audit | [`../research/audits/defect-area/REPORT.md`](../research/audits/defect-area/REPORT.md) | Phase 23 critical/cycle adjacent swaps, finite factor boundary, corrected repetition inequality, cyclic state separation, exact bounded audits | P141--P146, E35, NG32, H141 boundary |
+| Sparse-arc/resultant audit | [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md) | Phase 24 circular-gap divisor, exact area-two/three profile shapes, complete coprime area-two exclusion, and finite paired area-three diagnostic | P147--P150, E36, NG33, H147 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 23 and both the branch-point and two-tail
+documentation through Phase 24 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

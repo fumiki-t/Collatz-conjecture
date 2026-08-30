@@ -1,5 +1,5 @@
 {
-  "claim_count": 189,
+  "claim_count": 196,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2501,20 +2501,23 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Prove a uniform resultant-energy or ordinary-source obstruction for every remaining positive nontrivial cycle profile, including arbitrary-area coprime profiles and general noncoprime profiles.",
+      "claim": "Prove a uniform resultant-energy, sparse-arc, or ordinary-source obstruction for every remaining positive nontrivial cycle profile, including coprime area at least three and general noncoprime profiles.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P140, E28, E34, EXT05; EXT15 only if the Christoffel source gap is used.",
+      "dependencies": "P133--P140, P144--P150, E28, E34, E35, E36, EXT05, NG33; EXT15 only if the Christoffel source gap is used.",
       "dependency_ids": [
         "E28",
         "E34",
+        "E35",
+        "E36",
         "EXT05",
-        "EXT15"
+        "EXT15",
+        "NG33"
       ],
-      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Sections 10--12; [`ROADMAP.md`](ROADMAP.md).",
+      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Sections 10--12; [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md); [`ROADMAP.md`](ROADMAP.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-29",
-      "notes": "It is open; H89/H112/H72 and the full Collatz conjecture remain separate.",
+      "last_audited": "2026-08-29 (Phase 24 audit)",
+      "notes": "P149 now forces coprime defect area at least three, but the paired area-three gap, arbitrary area, and noncoprime branch remain open; H89/H112/H72 and Collatz are separate.",
       "status": "OPEN"
     },
     {
@@ -2647,9 +2650,113 @@
       "last_audited": "2026-08-29",
       "notes": "Area can concentrate in a few deep excursions; no uniform correction/source consequence is proved.",
       "status": "OPEN"
+    },
+    {
+      "claim": "For a nonzero polynomial `P=sum_(j in J)c_jX^j`, `J subset [0,q-1]`, vanishing at a coprime positive slope root, deleting a largest circular gap gives an integer `R_arc` with `D|R_arc`, `W<=q-ceil(q/|J|)`, and `abs(R_arc)<2||P||_1*2^(LW/q)`. If every nonzero `c_j` is odd, `R_arc` is odd and nonzero.",
+      "collatz_implication": "Supplies a small sparse integer divisor certificate without computing a full resultant.",
+      "dependencies": "`q<L<2q`, `D=2^L-3^q>0`, `gcd(q,L)=1`; exact slope-root identities from P135.",
+      "dependency_ids": [
+        "P135"
+      ],
+      "evidence": "[`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md), Section 2; `artifacts/phase24_theory.json`; opposite-tie verifier checks.",
+      "first_introduced": "Phase 24",
+      "id": "P147",
+      "last_audited": "2026-08-29",
+      "notes": "It requires coprime slope; general coefficients need a separate nonvanishing argument.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "With `m=L-q`, a coprime residue profile is valid exactly when `a_(r-m)>=a_r` for `r>=m` and `a_(r-m+q)>=a_r-1` for `r<m`. Every area-two profile is exactly a root pair `{s,t}`, `1<=s<t<m`, or a root-edge pair `{s,s+m}`, `1<=s<q-m`; area-three profiles have the two recorded root/forced-predecessor shapes.",
+      "collatz_implication": "Makes bounded defect area a sparse, exactly classifiable arithmetic family.",
+      "dependencies": "P135 profile convention; `D>0`, so `m>q/2`; nonnegative profile and `a_0=0`.",
+      "dependency_ids": [
+        "P135"
+      ],
+      "evidence": "[`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md), Section 3; literal weak-profile reconstruction in the independent verifier.",
+      "first_introduced": "Phase 24",
+      "id": "P148",
+      "last_audited": "2026-08-29",
+      "notes": "The number and support of profiles grow with area; this is not an arbitrary-area classification.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every hypothetical positive nontrivial coprime cycle profile has defect area at least three. Critical area-two profiles with `q>=61` are excluded by P147+EXT05, noncritical profiles with `L>=22` internally, and E36 checks both exact remainders; P136/P138 handle areas zero and one.",
+      "collatz_implication": "Advances H133 from coprime area at least two to area at least three.",
+      "dependencies": "P135, P136, P138, P147, P148, EXT05, E36; positive cycle range and `gcd(q,L)=1`.",
+      "dependency_ids": [
+        "E36",
+        "EXT05",
+        "P135",
+        "P136",
+        "P138",
+        "P147",
+        "P148"
+      ],
+      "evidence": "[`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md), Sections 4--5; `artifacts/phase24_theory.json`; `artifacts/phase24_area_two_remainder.json`.",
+      "first_introduced": "Phase 24",
+      "id": "P149",
+      "last_audited": "2026-08-29",
+      "notes": "Area at least three is not contradictory; noncoprime cycles and all nonperiodic branches remain separate.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For fixed profile area `A`, `|supp Q_a|<=2A+1` and `||Q_a||_1<=3*2^A-2`. If the sparse lift is nonzero, every noncritical profile is excluded once `L>=(2A+1)bit_length(4(3*2^A-2))`.",
+      "collatz_implication": "Gives an effective eventual exclusion for every fixed-area noncritical family when nonvanishing is certified.",
+      "dependencies": "P147; noncritical `D>2^(L-1)`; exact integer support/norm bounds; explicit `R_arc(Q_a)!=0` hypothesis.",
+      "dependency_ids": [
+        "P147"
+      ],
+      "evidence": "[`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md), Section 6; `artifacts/phase24_theory.json`.",
+      "first_introduced": "Phase 24",
+      "id": "P150",
+      "last_audited": "2026-08-29",
+      "notes": "It does not prove nonvanishing for arbitrary-area coefficients and does not cover the critical line.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks 7,057 critical area-two profiles through `q<=60`, 204 noncritical area-two profiles with `L<=21`, 544,073 critical direct modular rows through `q<=250`, and 521,154 critical area-three profiles through `q<=100`; all area-two integrality counts and finite area-three threshold-failure counts are zero.",
+      "collatz_implication": "Supplies P149's complete finite remainder and identifies the finite paired-support area-three frontier.",
+      "dependencies": "Declared coprime, area-bounded ranges; arbitrary-precision integers; weak profiles, literal exponents, shifted Bezout root, opposite largest-gap tie, and exact integer threshold comparisons.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md); `artifacts/phase24_area_two_remainder.json`; `artifacts/phase24_area_three_diagnostic.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 24",
+      "id": "E36",
+      "last_audited": "2026-08-29",
+      "notes": "The area-three result is finite only; zero failures do not prove a uniform gap and `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The generic seven-point circular-gap estimate `W/q<=6/7`, without using paired support or validity, is strong enough with EXT05 to exclude all sufficiently large critical area-three profiles.",
+      "collatz_implication": "Prevents rediscovery of the area-three cardinality shortcut.",
+      "dependencies": "Proposed support-cardinality-only continuation of P147.",
+      "dependency_ids": [
+        "P147"
+      ],
+      "evidence": "[`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md), Section 8; exact comparison `3^6*25^7>64^7`.",
+      "first_introduced": "Phase 24",
+      "id": "NG33",
+      "last_audited": "2026-08-29",
+      "notes": "This refutes only that proof mechanism; paired-support improvements or stronger Diophantine bounds remain possible.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Prove a uniform effective paired-support arc gap for every valid critical area-three profile, or replace it by an arithmetic obstruction that advances H133; then handle arbitrary area and noncoprime slopes.",
+      "collatz_implication": "A successful area-three theorem would move the coprime cycle frontier again but would not yet eliminate arbitrary-area or noncoprime cycles.",
+      "dependencies": "P147--P150, E36, EXT05, NG33; exact support pairing and profile validity must be used.",
+      "dependency_ids": [
+        "E36",
+        "EXT05",
+        "NG33"
+      ],
+      "evidence": "[`context/H147.md`](context/H147.md); [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md), Section 8.",
+      "first_introduced": "Phase 24",
+      "id": "H147",
+      "last_audited": "2026-08-29",
+      "notes": "Finite worst ratios `35/41` and `80/94` are not an all-q theorem; H133 and Collatz remain open.",
+      "status": "OPEN"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "0225ce1c5226d05fb9da59b452630577ca06251bfeaa855881acc08b56b9c4a7"
+  "source_sha256": "624193d695d84bf5602421ef67ad8cef67c22ff060093e43c7d1338b6a10afdd"
 }

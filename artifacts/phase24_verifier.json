@@ -1,0 +1,23 @@
+{
+  "area_three_counts": {
+    "profiles": 521154,
+    "threshold_failures": 0
+  },
+  "arithmetic": "arbitrary-precision integers only",
+  "finite_counts": {
+    "critical": 7057,
+    "direct": 544073,
+    "noncritical": 204
+  },
+  "format": "collatz-phase24-verifier-v1",
+  "generator_imported": false,
+  "proves_collatz": false,
+  "valid": true,
+  "verified_files": [
+    "phase24_theory.json",
+    "phase24_area_two_remainder.json",
+    "phase24_area_three_diagnostic.json",
+    "phase24_regressions.json",
+    "phase24_obstruction_report.md"
+  ]
+}

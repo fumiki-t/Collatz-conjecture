@@ -473,6 +473,8 @@ B.1 as EXT05 and applies it only with exponent `q>=30`; therefore the C02 proof
 does not use the paper's separate finite check for `13<=q<=18`.
 Phase 9 independently enumerates only shortcut lengths through 21 and does not
 reprove Theorem 1.3, its `2.8*10^19` bound, or its conditional equivalence.
+Phase 24 reuses only Lemma B.1/EXT05 on the critical coprime area-two line for
+`q>=61`; its noncritical theorem and all finite remainder checks are internal.
 
 ### Winkler (2017; revised 2026)
 
