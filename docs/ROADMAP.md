@@ -110,23 +110,27 @@ including arbitrary-area coprime profiles and general noncoprime slopes.
 finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
-**Missing theorem.** P147/P149 exclude coprime areas zero through two by a
-sparse full-`D` divisor and exact finite remainder. NG33 blocks generic
-seven-point cardinality, and NG34 refutes a universal paired q/L arc gap.
-P154/P155 exclude one exact seven-grid resonance but do not control nearby
-triples. H147 now needs a near-resonance inverse theorem or separate complete
-Type-A/B/C treatment. No theorem controls arbitrary defect area. P140 still
-supplies only a smaller modulus `D_0` for noncoprime slopes.
+**Missing theorem.** P156/P157 now cover every gcd class. P158 eliminates all
+critical positive-cycle area at most five and closes H147; P159 pushes every
+noncritical candidate beyond area 100000. The first remaining frontier is
+critical area six. NG35 proves that EXT05 plus factor separation alone has the
+wrong exponential coefficient there. No theorem converts support,
+height-transition variation, or correction loss into a uniform area-six or
+arbitrary-area contradiction. P140 still supplies only a smaller modulus
+`D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
-cycle and its powers, every Phase 24 area-two row, the E36 worst area-three
-supports, NG34, every E37 seven-grid row, and the macro/NG28/NG30 controls. Reject any rule that silently uses `gcd(L,q)=1`, confuses `D|B` with
-primitive period, or treats a negative/rational affine cycle as positive.
+cycle and its powers, the Phase 26 all-gcd corpus, NG34, NG35, the E37
+seven-grid rows, and macro/NG28/NG30 controls. Reject any rule that silently
+uses `gcd(L,q)=1`, confuses `D|B` with primitive period, or treats a
+negative/rational affine cycle as positive.
 
-**Success criterion.** A uniform exact theorem proving `abs(R)<D` or
-`C_min<300000D` for every remaining profile, plus a sound noncoprime reduction
-and independently verified finite remainder. Extending `q` or defect area
-without an all-area mechanism is not success.
+**Success criterion.** First, an exact exclusion of critical area six using a
+mechanism that can plausibly scale; ultimately a uniform theorem proving
+`abs(R)<D`, `C_min<300000D`, or an equivalent contradiction for every
+remaining profile, with an independently verified finite remainder. Extending
+`q` or enumerating another fixed small area without a new invariant is not
+success.
 
 ## P1 — Renewal-ladder dropping-safe barrier
 
@@ -560,35 +564,29 @@ both negative cycles, and all E34 area-two profiles.
 inequality valid for arbitrary defect area, plus an effective finite
 remainder. A larger bounded rejection count is not success.
 
-### Phase 25 cycle target — H147 near-resonant area three
+### Phase 26 cycle target — critical reduced-slope area six
 
-**Target.** Prove that simultaneous q/L arc failure forces controlled
-low-denominator near-resonance, then turn that structure into a nonzero
-P154-style low-degree resultant; alternatively close the collapsed Type-A/B
-and Type-C families separately.
+**Target.** Exclude critical `A_*=6` across every gcd class using information
+not present in P158's scalar comparison, then seek an area-uniform extension.
 
-**Why this could help Collatz.** P149 has removed the complete coprime
-area-zero, area-one, and area-two frontier.  Area three is now the smallest
-possible coprime cycle defect.
+**Why this could help Collatz.** P158 closes every smaller positive-cycle area
+and P159 removes every fixed small area from the noncritical branch. Critical
+area six is now the first periodic frontier.
 
-**Missing theorem.** P147's generic support bound loses by NG33. NG34 then
-shows that paired support does not force either arc below the EXT05 threshold:
-`q=63322,L=100363` is an exact counterexample. P155 excludes that exact
-seven-grid family, but no theorem controls its neighbourhood. The proof must
-quantify proximity to a rational grid and preserve enough arithmetic for a
-nonvanishing magnitude certificate.
+**Missing theorem.** NG35 gives the exact coefficient reversal
+`75^7>3*64^7`, so EXT05 plus factor complexity cannot finish the case. A new
+theorem must use support placement, height transitions, total variation of
+`2^a_j`, correction loss, radial energy, or sparse/resultant arithmetic.
 
-**Fast falsification test.** Rebuild NG34's corrected L-residue list and the
-complete exact seven-grid remainder. Cluster two-arc failures by best grid
-denominator and preserve the first profile whose distance defeats the proposed
-resultant perturbation bound. Re-run the `35/41`, `80/94`, largest-gap tie,
-coefficient-cancellation, and negative-cycle controls.
+**Fast falsification test.** Rebuild the complete Phase 26 `q<=8` all-gcd
+corpus, both negative cycles, NG34, NG35, concentrated height-two/three
+profiles, and Phase 24/25 sparse/resonance controls. Reject any inequality
+that counts area but loses its placement or positivity input.
 
-**Success criterion.** An exact all-q classification/exclusion for every
-critical coprime area-three shape with independently verified finite
-remainder. An isolated exact grid, an empirical clustering, or a larger finite
-scan is not complete H147 progress. Arbitrary area and noncoprime cycles must
-remain explicit.
+**Success criterion.** An exact all-q exclusion of critical area six with an
+independent finite remainder and a mechanism stated strongly enough to test
+beyond fixed area. A larger area-six scan or a new empirical margin alone is
+not progress on H133.
 
 ## Stop criteria for large computation
 

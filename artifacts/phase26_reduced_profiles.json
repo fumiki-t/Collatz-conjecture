@@ -1,0 +1,64 @@
+{
+  "counts": {
+    "coprime_classes": 797,
+    "coprime_reproduction_checks": 797,
+    "cyclic_classes": 2214,
+    "factor_width_checks": 45369,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "primitive_classes": 2186,
+    "rational_height_checks": 2214
+  },
+  "format": "collatz-phase26-reduced-profiles-v1",
+  "maximum_q": 8,
+  "proves_collatz": false,
+  "row_digest_sha256": "2fe366b048088af7964bdaffaf53e399fed6d4457a87a9ac87ea8beac92cf03d",
+  "samples": {
+    "coprime": {
+      "L": 5,
+      "area": 1,
+      "baseline": [
+        2,
+        2,
+        1
+      ],
+      "d": 1,
+      "exponents": [
+        3,
+        1,
+        1
+      ],
+      "height": 1,
+      "q": 3,
+      "swaps": 1,
+      "time_profile": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "noncoprime": {
+      "L": 4,
+      "area": 1,
+      "baseline": [
+        2,
+        2
+      ],
+      "d": 2,
+      "exponents": [
+        3,
+        1
+      ],
+      "height": 1,
+      "q": 2,
+      "swaps": 1,
+      "time_profile": [
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "scope": "All positive-D cyclic exponent classes through q<=8; structural checks include every minimum-height rotation. Rational affine shadows are used only for the algebraic odd-height check."
+}

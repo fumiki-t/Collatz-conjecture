@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 25
+    assert result["latest_phase"] == 26
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -143,19 +143,32 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["P155"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["E37"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG34"] == "REFUTED"
-    assert result["active_focus"]["H147"] == "OPEN"
+    assert result["active_focus"]["P156"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P157"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P158"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P159"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P160"] == "CONDITIONAL"
+    assert result["active_focus"]["P161"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E38"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG35"] == "REFUTED"
+    assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["critical"] == {
-        "bounded_distinct_rows": 0,
-        "critical_words": 502523,
-        "factor_checks": 82227,
-        "support_bound_rejections": 0,
+    assert result["latest_supplemental_verifier"]["profile_counts"] == {
+        "coprime_classes": 797,
+        "coprime_reproduction_checks": 797,
+        "cyclic_classes": 2214,
+        "factor_width_checks": 45369,
+        "minimum_rotations": 3101,
+        "noncoprime_classes": 1417,
+        "primitive_classes": 2186,
+        "rational_height_checks": 2214,
     }
-    assert result["latest_supplemental_verifier"]["resonance"] == {
-        "falsifier_gcd": 1,
-        "falsifier_q": 63322,
-        "norm": 209,
+    assert result["latest_supplemental_verifier"]["scalar_counts"] == {
+        "critical_area_lower": 6,
+        "critical_scan_rows": 511,
+        "noncritical_area_strict_lower": 100000,
+        "x02_area_strict_lower": 5000000000000000,
     }
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
@@ -187,6 +200,8 @@ def test_repository_research_health() -> None:
     assert ("phase24-sparse-arc-resultants" in result["accepted_experiments"]) == (phase24["status"] == "ACCEPTED")
     phase25 = json.loads(Path("research/experiments/phase25-hamming-resonance.json").read_text(encoding="utf-8"))
     assert ("phase25-hamming-resonance" in result["accepted_experiments"]) == (phase25["status"] == "ACCEPTED")
+    phase26 = json.loads(Path("research/experiments/phase26-cycle-area-barrier.json").read_text(encoding="utf-8"))
+    assert ("phase26-cycle-area-barrier" in result["accepted_experiments"]) == (phase26["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -199,7 +214,7 @@ def test_registry_matches_context_and_claim_sources() -> None:
     assert registry["repository"]["claim_source"] == "docs/CLAIMS_LEDGER.md"
     assert "docs/RESEARCH_SYNTHESIS.md" in registry["canonical_documents"]
     obligations = registry["active_obligations"]
-    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "H112", "H133", "H141", "H147", "C03", "C04", "C05"}
+    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "H112", "H133", "H141", "C03", "C04", "C05"}
     for row in obligations:
         if "context" in row:
             assert (root / row["context"]).is_file()
@@ -210,7 +225,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 203
+    assert committed["claim_count"] == 211
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -239,7 +254,15 @@ def test_generated_claim_index_is_complete() -> None:
     assert rows["P150"]["status"] == "VERIFIED_THEOREM"
     assert rows["E36"]["status"] == "VERIFIED_FINITE"
     assert rows["NG33"]["status"] == "REFUTED"
-    assert rows["H147"]["status"] == "OPEN"
+    assert rows["P156"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P157"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P158"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P159"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P160"]["status"] == "CONDITIONAL"
+    assert rows["P161"]["status"] == "VERIFIED_THEOREM"
+    assert rows["E38"]["status"] == "VERIFIED_FINITE"
+    assert rows["NG35"]["status"] == "REFUTED"
+    assert rows["H147"]["status"] == "VERIFIED_THEOREM"
     assert set(rows["H72"]["dependency_ids"]) == {
         "P72",
         "P73",

@@ -1,0 +1,80 @@
+{
+  "claims": {
+    "E38": {
+      "statement": "The reduced profile, edit identity, factor bound, and odd state-height bound are independently checked on the complete q<=8 positive-D cyclic exponent corpus.",
+      "status": "VERIFIED_FINITE"
+    },
+    "H133": {
+      "statement": "Critical area at least six, enormous noncritical area, and all noncoprime profiles still require a complete cycle exclusion.",
+      "status": "OPEN"
+    },
+    "H147": {
+      "statement": "Critical coprime area-three positive cycles are excluded, now as a consequence of the stronger arbitrary-slope P158 barrier.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "NG35": {
+      "statement": "The Phase 26 EXT05/factor-separation scalar mechanism can also exclude critical area six.",
+      "status": "REFUTED"
+    },
+    "P156": {
+      "statement": "Every primitive positive-cycle exponent word has the reduced-slope time profile, exact adjacent-swap area, cyclic factor bound, and triangular height bound.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P157": {
+      "statement": "Every primitive positive nontrivial cycle obeys the arbitrary-slope state-height and master factor-separation inequalities.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P158": {
+      "statement": "Every critical primitive positive nontrivial cycle has reduced-slope area A_*>=6.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P159": {
+      "statement": "Every noncritical primitive positive nontrivial cycle has reduced-slope area A_*>100000.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P160": {
+      "statement": "Assuming X02, every noncritical primitive positive cycle has A_*>5*10^15.",
+      "status": "CONDITIONAL"
+    },
+    "P161": {
+      "statement": "Every noncritical cycle with A_*>0 obeys the exact slope/area phase inequality.",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "dependencies": {
+    "P158": [
+      "P133",
+      "P157",
+      "E28",
+      "EXT05"
+    ],
+    "P159": [
+      "P133",
+      "P134",
+      "P156",
+      "P157",
+      "E28"
+    ],
+    "P160": [
+      "P159 method",
+      "X02"
+    ]
+  },
+  "format": "collatz-phase26-theory-v1",
+  "master": {
+    "odd_height": "M_odd<2^(h_*+1)m/lambda",
+    "separation": "L<=(A_*+1)(ceil(log2(2^(h_*+2)m/lambda))+1)",
+    "shortcut_height": "M<2^(h_*+2)m/lambda",
+    "strict": "L<(A_*+1)[h_*+4+log2(q/(3lambda(1-lambda)))]"
+  },
+  "phase_diagram": "For noncritical t=L-q*log2(3)>1 and A_*>0: t>(log2(3)/A_*)q-((A_*+1)/A_*)(log2(q)+h_*+5-log2(3)).",
+  "proves_collatz": false,
+  "reduced_profile": {
+    "baseline": "E_j^(0)=(L0*j+r_j)/q0; its exponent period q0 repeats d times",
+    "edit": "A_*=sum_(j<q)a_j is the exact number of adjacent swaps 10->01",
+    "factor": "p_cyc(n)<=(A_*+1)(n+1)",
+    "height": "H_j=q0*E_j-L0*j=r_j+q0*a_j after a minimum-height rotation",
+    "triangular": "A_*>=h_*(h_*+1)/2"
+  },
+  "what_this_result_does_not_prove": "It does not exclude critical area six or above, arbitrary-area positive cycles, any nonperiodic branch, or Collatz."
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "phase26-cycle-area-barrier",
+  "status": "ACCEPTED",
+  "claim_ids": ["P156", "P157", "P158", "P159", "P160", "P161", "E38", "NG35", "H147", "H133"],
+  "objective": "Extend edit-area and state-separation constraints to arbitrary gcd slopes, prove exact critical and noncritical cycle-area barriers, and preserve the first obstruction to the next critical area.",
+  "exact_scope": {
+    "quantifiers": [
+      "all primitive positive nontrivial odd cycles for P156-P159 and P161",
+      "all such noncritical cycles under external X02 for conditional P160",
+      "all positive-D cyclic exponent classes through q<=8 for E38",
+      "all critical scalar rows 1<=q<512 and the exact monotone endpoint q=512",
+      "the noncritical endpoints q=50000000 and q=4*10^23 with exact derivative certificates"
+    ],
+    "bounds": {
+      "reduced_profile_q_maximum": 8,
+      "critical_finite_q_maximum": 511,
+      "critical_monotone_q_minimum": 512,
+      "noncritical_area_strict_lower": 100000,
+      "conditional_x02_area_strict_lower": "5000000000000000"
+    },
+    "completeness": "P156-P159 and P161 are theorem-level in their stated positive primitive-cycle domains. P160 remains conditional on X02. E38 is finite and structural. H133 remains open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, exact rational atanh-series logarithm enclosures, cyclic composition enumeration, ordered-one transport, and SHA-256 row digests",
+    "floating_point_role": "none in generation, verification, thresholds, or artifact acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase26_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase26.py --artifact-dir artifacts --output artifacts/phase26_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase26_properties.py tests/test_phase26_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "the complete q<=8 positive-D necklace corpus with a recursive composition generator",
+      "every minimum-height rotation and reduced time profile",
+      "edit distance by ordered-one displacement instead of swap simulation",
+      "cyclic factor counts and direct positive rational affine traces",
+      "critical finite rows, integer monotonicity comparisons, and separately coded rational logarithm endpoints",
+      "negative-cycle, nonprimitive-power, Phase 25, NG32, and mandatory family controls"
+    ],
+    "forbidden_imports": ["src.phase26_search", "phase26_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase26_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "trivial positive cycle and nonprimitive powers",
+    "negative q=2 and q=7 cycles",
+    "coprime and noncoprime positive rational shadows",
+    "Phase 25 q=63322 resonance control",
+    "NG32 finite-boundary word",
+    "critical area-six coefficient reversal"
+  ],
+  "artifacts": [
+    "artifacts/phase26_theory.json",
+    "artifacts/phase26_reduced_profiles.json",
+    "artifacts/phase26_scalar_certificates.json",
+    "artifacts/phase26_regressions.json",
+    "artifacts/phase26_obstruction_report.md",
+    "artifacts/phase26_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not apply positive ordinary-state separation to negative cycles, rational noninteger shadows, or nonprimitive powers.",
+    "Do not promote P160 without explicitly retaining X02 as external evidence.",
+    "Do not infer critical area at least seven from the Phase 26 scalar method after NG35.",
+    "Do not delete Phase 24/25 arithmetic results merely because P158 supersedes their area-three positive-cycle consequence.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "P158 closes H147 only in its stated positive-cycle scope and leaves critical area six as the next frontier.",
+    "P159 is a lower area barrier, not an arbitrary-area contradiction.",
+    "E38 is bounded structural evidence and contains no nontrivial positive integer cycle.",
+    "H133, every nonperiodic branch, and Collatz remain open; proves_collatz remains false."
+  ],
+  "recorded_result": {
+    "commit": "PENDING_ACCEPTANCE_COMMIT",
+    "generator": "valid=true with 2214 cyclic classes, 1417 noncoprime classes, critical area lower 6, and noncritical strict area lower 100000",
+    "verifier": "valid=true with generator_imported=false, recursive compositions, ordered-one displacement, separate rational intervals, and exact scalar scans",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

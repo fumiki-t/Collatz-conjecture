@@ -477,7 +477,10 @@ Phase 24 reuses only Lemma B.1/EXT05 on the critical coprime area-two line for
 `q>=61`; its noncritical theorem and all finite remainder checks are internal.
 Phase 25 reuses the same isolated lemma only after the internal seven-grid
 resultant bound, for coprime `q=7Q` with `Q>=11`; the smaller coprime rows are
-checked directly. No new assertion from the paper is imported.
+checked directly. Phase 26 reuses only EXT05 for the large critical
+reduced-slope area comparison `q>=512`; its noncritical barrier, finite
+critical remainder, and all-gcd profile construction are internal. No new
+assertion from the paper is imported.
 
 ### Winkler (2017; revised 2026)
 

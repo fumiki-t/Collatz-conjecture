@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the twenty-five phases established
+## 3. What the twenty-six phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -200,6 +200,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   P154/P155 exclude the exact critical seven-grid area-three family using a
   low-degree resultant and EXT05; no theorem controls nearby grids, all area
   three, arbitrary area, or noncoprime slopes.
+- Phase 26 replaces that low-area frontier by an all-gcd state-separation
+  barrier. P156/P157 prove reduced-slope edit profiles and primitive-positive
+  factor separation. P158 forces critical `A_*>=6`, closing H147, while P159
+  forces noncritical `A_*>100000`. NG35 records why the scalar proof stops at
+  critical area six. H133 and the full cycle branch remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

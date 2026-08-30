@@ -155,10 +155,17 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 - `VERIFIED_THEOREM`: P154 gives a coprime resonant-grid resultant divisor,
   nonvanishing, and conjugate-product bound. P155 excludes the exact critical
   seven-grid area-three family; its large part uses EXT05.
-- `REFUTED` / `OPEN`: NG33 blocks generic seven-point cardinality, while NG34
-  refutes even a universal paired q/L arc threshold at `q=63322`. P155 closes
-  that exact grid but not its neighbourhood; H147 now asks for a
-  near-resonance inverse theorem or separate Type-A/B/C exclusions.
+- `VERIFIED_THEOREM`: P156 extends reduced-slope edit area, triangular height,
+  and cyclic factor complexity to every gcd class. P157 supplies the matching
+  primitive-positive ordinary-state separation theorem.
+- `VERIFIED_THEOREM` / `CONDITIONAL`: P158 proves every critical primitive
+  positive nontrivial cycle has `A_*>=6`; P159 proves every noncritical one
+  has `A_*>100000`. Conditional on X02, P160 raises the latter to
+  `A_*>5*10^15`. P161 records the exact noncritical slope/area phase diagram.
+- `VERIFIED_THEOREM` / `REFUTED` / `OPEN`: P158 closes H147's critical
+  coprime area-three positive-cycle obligation, while NG35 proves that the
+  same EXT05/factor-separation scalar mechanism cannot exclude critical area
+  six. H133 remains open at critical area six and arbitrary large area.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -344,6 +351,10 @@ No item above proves the Collatz conjecture.
   cyclic factor widths. It verifies `n_q0=73`, resultant norm 209, the first
   seven-grid threshold `Q=11`, and the corrected `q=63322` arc falsifier with
   modular gcd one.
+- Phase 26: E38 independently reconstructs all 2,214 positive-D cyclic
+  exponent classes through `q<=8`, including 1,417 noncoprime classes, 3,101
+  minimum rotations, 45,369 cyclic factor widths, 2,214 rational odd-height
+  rows, and 797 exact P144 coprime reproductions.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -399,12 +410,11 @@ Phase 10 gives the strongest renewal consequence of that localization: every
 positive q0 gap would create two long-safe integers within distance `W`, but
 the required global spacing lower bound C05 is still open.
 
-Phase 25 gives the strongest current low-area localization of the separate
-positive-cycle branch. Phase 24 forces defect area at least three. Phase 25
-then excludes the exact critical seven-grid area-three family by a nonzero
-low-degree resultant, but NG34 proves that no universal two-arc threshold can
-handle every Type-C profile. H147's near-resonant and collapsed area-three
-families, arbitrary area, and every noncoprime slope remain open.
+Phase 26 gives the strongest current area localization of the separate
+positive-cycle branch. P156/P157 extend edit-area state separation to every
+gcd class. P158 forces critical `A_*>=6`, closing H147 globally in its
+positive-cycle scope, while P159 forces noncritical `A_*>100000`. NG35 shows
+that the scalar critical proof stops exactly at area six. H133 remains open.
 
 ## Strongest conditional route
 
@@ -448,14 +458,13 @@ scale to the required depth and height.
 P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
 cases. The missing scalable state must retain the common-prefix surplus, odd
 normalized gap, and both tail residues; branch depth alone is insufficient.
-The cycle branch has a separate bottleneck. Phase 24 excludes coprime defect
-area zero, one, and two. NG33 shows that support cardinality alone misses the
-critical area-three exponent, and NG34 supplies an exact large paired-arc
-failure. P154/P155 handle one exact resonance grid but provide no inverse
-theorem for nearby triples. No uniform low-degree resultant handles all
-area-three or arbitrary profiles, and the noncoprime grouped modulus `D_0`
-remains too weak. H133/H147 record these obligations without conflating them
-with H89/H112/H72.
+The cycle branch has a separate bottleneck. Phase 26 eliminates every
+positive-cycle profile of reduced area at most five for all gcd classes and
+moves the noncritical branch beyond area 100000. The first remaining target is
+critical area six. NG35 proves that EXT05 plus factor separation has the wrong
+exponential coefficient there, so a new support/height-transition,
+correction-loss, radial-energy, or resultant input is required. H133 records
+this obligation without conflating it with H89/H112/H72; H147 is closed.
 P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
 `L=12` none of the shorter windows `b<L` retains enough information even in a
 small exact domain. The open problem is therefore a composable symbolic state,
@@ -534,6 +543,10 @@ eventual nonzero lifts.
 
 ## What was recently refuted?
 
+- `REFUTED`: the Phase 26 EXT05 plus factor-separation scalar mechanism also
+  excludes critical area six. NG35 records the exact reversal
+  `75^7=13348388671875>13194139533312=3*64^7`. This does not construct an
+  area-six cycle; it identifies the first point needing a new invariant.
 - `REFUTED`: sign-pure SCC paths always have one global positive packet then
   one global negative packet (NG30). The exact four-SCC `+,-,+,-`
   counterfamily remains safe with final coefficient in `(1,2)` while all four
@@ -621,10 +634,10 @@ eventual nonzero lifts.
    into a nonzero P115 source lift or an ordinary-height contradiction while
    surviving both NG22 controllers, P109, source 167, and the mandatory
    adversarial families?
-6. Can H133 be reduced to a uniform profile-roughness theorem or a
-   Christoffel-gap source theorem that covers arbitrary defect area, while
-   retaining a genuinely stronger modulus for noncoprime slopes and passing
-   both named negative-cycle regressions?
+6. Can critical reduced-slope area six be excluded by combining P156/P157
+   support and height transitions with Phase 22 radial energy or Phase 24/25
+   sparse-resultant arithmetic, while surviving NG34/NG35 and both named
+   negative-cycle regressions? Can the same invariant scale to arbitrary area?
 
 ## Codex tasks worth doing
 
@@ -654,6 +667,9 @@ eventual nonzero lifts.
   energy lower bound on the Phase 22 profiles and negative cycles, and do not
   scale composition depth unless the rule covers arbitrary area or strengthens
   P140's noncoprime modulus.
+- Start new cycle work at critical area six, not area three. Rebuild the Phase
+  26 reduced profile and NG35 coefficient reversal before proposing a new
+  scalar, support, energy, or resultant mechanism.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -715,4 +731,5 @@ eventual nonzero lifts.
 - Phase 23 acceptance: [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md)
 - Phase 24 acceptance: [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md)
 - Phase 25 acceptance: [`../PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md)
+- Phase 26 acceptance: [`../PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

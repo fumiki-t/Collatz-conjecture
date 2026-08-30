@@ -1,0 +1,258 @@
+{
+  "NG32_control": {
+    "factor_count": 4,
+    "q": 4,
+    "width": 2,
+    "word": "1101100"
+  },
+  "adversarial_families": [
+    [
+      "A=11101",
+      "11101",
+      [
+        1,
+        1,
+        2,
+        1
+      ],
+      4,
+      5,
+      "-49"
+    ],
+    [
+      "B=1100",
+      "1100",
+      [
+        1,
+        3
+      ],
+      2,
+      4,
+      "7"
+    ],
+    [
+      "(110|111)^*",
+      "110111110111110111110111110111110111110111110111",
+      [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      40,
+      48,
+      "-12157383984080218145"
+    ],
+    [
+      "A^1B^1",
+      "111011100",
+      [
+        1,
+        1,
+        2,
+        1,
+        1,
+        3
+      ],
+      6,
+      9,
+      "-217"
+    ],
+    [
+      "A^2B^3",
+      "1110111101110011001100",
+      [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3
+      ],
+      14,
+      22,
+      "-588665"
+    ],
+    [
+      "2^m-1-control",
+      "1111111111110",
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      12,
+      13,
+      "-523249"
+    ],
+    [
+      "8^m-5-control",
+      "111001111001111001111001",
+      [
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1
+      ],
+      16,
+      24,
+      "-26269505"
+    ]
+  ],
+  "format": "collatz-phase26-regressions-v1",
+  "named_cycles": [
+    {
+      "exponents": [
+        2
+      ],
+      "name": "trivial-positive",
+      "positive_nontrivial_eligible": false,
+      "returns": true,
+      "source": 1
+    },
+    {
+      "exponents": [
+        1,
+        2
+      ],
+      "name": "negative-q2",
+      "positive_nontrivial_eligible": false,
+      "returns": true,
+      "source": -5
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4
+      ],
+      "name": "negative-q7",
+      "positive_nontrivial_eligible": false,
+      "returns": true,
+      "source": -17
+    }
+  ],
+  "nonprimitive_trivial_powers": [
+    [
+      2,
+      2,
+      1,
+      2,
+      0,
+      false
+    ],
+    [
+      3,
+      3,
+      1,
+      2,
+      0,
+      false
+    ],
+    [
+      4,
+      4,
+      1,
+      2,
+      0,
+      false
+    ],
+    [
+      5,
+      5,
+      1,
+      2,
+      0,
+      false
+    ],
+    [
+      6,
+      6,
+      1,
+      2,
+      0,
+      false
+    ]
+  ],
+  "phase25_resonance_control": {
+    "L": 100363,
+    "direct_modular_gcd": 1,
+    "q": 63322,
+    "roots": [
+      9046,
+      18092,
+      27138
+    ]
+  },
+  "proves_collatz": false,
+  "scope": "Negative cycles and nonprimitive powers are boundary controls only. Positive-cycle minimum and state-separation conclusions are not applied to them."
+}

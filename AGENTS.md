@@ -316,13 +316,15 @@ transition information and explicitly survive NG21; mod-6 packing alone is
 sharp. Ruling out the all-contact mechanical word must not be promoted to an
 exclusion of the full coefficient-safe language.
 
-Phase 25 sharpens the cycle-side `H147` target. The universal paired q/L arc
-gap is refuted by NG34, so future area-three work must reproduce the exact
-`q=63322`, `L=100363` falsifier before proposing another uniform gap. Prefer a
-quantitative near-resonance inverse theorem feeding a P154-style nonzero
-resultant, while keeping collapsed Type-A/B profiles and noncoprime slopes as
-separate obligations. P155 excludes only the exact coprime seven-grid family;
-it must not be promoted to a neighbourhood or all-area result.
+Phase 26 closes the cycle-side `H147` area-three obligation by the stronger
+all-gcd theorem P158: every critical primitive positive nontrivial cycle has
+reduced-slope area at least six. Do not extend the former area-three search.
+The next H133 target is critical area six. Every proposed continuation must
+reproduce NG34's `q=63322`, `L=100363` paired-arc falsifier and NG35's exact
+coefficient reversal `75^7>3*64^7`. Prefer support/height-transition,
+correction-loss, radial-energy, or resultant mechanisms that retain P156's
+reduced-slope structure. P159's noncritical `A_*>100000` lower bound is not a
+cycle exclusion and must not be promoted to an arbitrary-area contradiction.
 
 ## 16. Proof-claim emergency protocol
 

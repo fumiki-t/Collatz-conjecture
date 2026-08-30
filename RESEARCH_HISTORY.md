@@ -1550,3 +1550,40 @@ generator's quotient-ring norm.
 Phase 25 does not exclude all area-three coprime cycles, arbitrary-area or
 noncoprime cycles, H89, H133, H147, H72, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 2026-08-30 — Phase 26: reduced-slope cycle-area barrier
+
+**Branch:** `feat/phase26-cycle-area-barrier`
+
+**Acceptance record:** [`PHASE26_RUN_RESULTS.md`](PHASE26_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/cycle-area-barrier/REPORT.md`](research/audits/cycle-area-barrier/REPORT.md)
+
+Phase 26 treated the supplied cycle-area note as an untrusted proposal. P156
+extends the edit profile from coprime residue coordinates to a reduced-slope
+time profile valid for every gcd class. It proves exact ordered-one swap area,
+cyclic factor complexity, and triangular height. P157 combines this with P125
+and P133 to obtain arbitrary-slope primitive-positive state separation.
+
+P158 uses E28 for `q<512` and EXT05 plus exact monotonic integer comparisons
+for larger critical `q`. Every critical primitive positive nontrivial cycle
+has `A_*>=6`. This closes H147's area-three positive-cycle obligation by a
+stronger theorem that also covers noncoprime slopes. Phase 24/25 arithmetic is
+retained for the new area-six frontier.
+
+P159 uses P134, E28, exact logarithm enclosures, and a derivative certificate
+to prove `A_*>100000` for every noncritical positive cycle. P160 conditionally
+raises the bound above `5*10^15` under X02; it is not promoted beyond
+`CONDITIONAL`. P161 records the exact noncritical slope/area phase inequality.
+
+NG35 preserves the first obstruction: `75^7>3*64^7`, so the same
+EXT05/factor-separation scalar comparison cannot exclude critical area six.
+E38 independently rebuilds all 2,214 positive-D cyclic exponent classes
+through `q<=8`, including 1,417 noncoprime classes and 45,369 cyclic factor
+checks.
+
+### What this result does not prove
+
+Phase 26 does not exclude critical area six or above, arbitrary-area positive
+cycles, any nonperiodic counterexample branch, or the Collatz conjecture.
+`proves_collatz=false`.

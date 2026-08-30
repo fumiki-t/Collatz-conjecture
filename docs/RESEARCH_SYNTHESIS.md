@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 25
+# Collatz research synthesis through Phase 26
 
 **Audit date:** 2026-08-30
 
 **Audited base:** `8b348852b5d161762ebc2d01065703992dd43165`
 
-**Latest accepted phase:** Phase 25
+**Latest accepted phase:** Phase 26
 
 **Problem status:** `OPEN`
 
@@ -680,9 +680,10 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - **Finite evidence:** E36 rebuilds 7,057 critical and 204 noncritical
   area-two remainder profiles, 544,073 critical direct rows through `q<=250`,
   and 521,154 critical area-three profiles through `q<=100`.
-- **Refuted/open:** NG33 proves that generic seven-point cardinality is
-  exponentially too weak. H147 asks for a paired-support area-three theorem;
-  arbitrary area and noncoprime H133 remain open. See
+- **Refuted/open at Phase 24:** NG33 proves that generic seven-point
+  cardinality is exponentially too weak. H147 then asked for a paired-support
+  area-three theorem; Phase 26 later closes that positive-cycle case by P158.
+  Arbitrary area H133 remains open. See
   [`PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md) and the
   [`Phase 24 audit`](../research/audits/sparse-arc-resultants/REPORT.md).
 
@@ -701,12 +702,33 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - **Finite evidence:** E37 rebuilds 502,523 critical words, 33,577 area-three
   profiles, exact rational conjugate intervals, and the finite seven-grid
   remainder by an independent Sylvester verifier.
-- **Refuted/open:** NG34 stores the exact `q=63322` counterexample to a
+- **Refuted/open at Phase 25:** NG34 stores the exact `q=63322` counterexample to a
   universal paired q/L arc threshold. Its modular gcd is one. P155 excludes
-  that exact grid, not nearby triples; H147 is repaired to a near-resonance
-  inverse/resultant target. See
+  that exact grid, not nearby triples; H147 was repaired to a near-resonance
+  inverse/resultant target and is later closed by Phase 26's different
+  all-gcd state-separation route. See
   [`PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md) and the
   [`Phase 25 audit`](../research/audits/hamming-resonance/REPORT.md).
+
+### Phase 26 — reduced-slope cycle-area barrier
+
+- **Purpose:** extend cycle edit area and ordinary-state separation to every
+  gcd class, then turn them into exact critical/noncritical area barriers.
+- **Accepted internally:** P156 gives the reduced-slope time profile, exact
+  adjacent-swap area, cyclic factor bound, and triangular height. P157 gives
+  primitive-positive all-gcd state separation. P158 proves critical
+  `A_*>=6`; P159 proves noncritical `A_*>100000`; P161 gives the exact
+  noncritical slope/area phase inequality.
+- **Conditional:** P160 raises the noncritical barrier above `5*10^15` only
+  under external evidence X02.
+- **Finite evidence:** E38 rebuilds 2,214 positive-D cyclic exponent classes
+  through `q<=8`, including 1,417 noncoprime classes and 45,369 cyclic factor
+  checks, with a generator-independent verifier.
+- **Closure/refutation/open:** P158 closes H147's positive-cycle area-three
+  obligation for all gcd classes. NG35 records the exact reversal
+  `75^7>3*64^7`, so the scalar proof cannot exclude critical area six. H133
+  remains open. See [`PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md) and
+  the [`Phase 26 audit`](../research/audits/cycle-area-barrier/REPORT.md).
 
 ## 5. Strongest current results and what remains
 
@@ -715,9 +737,9 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P151/P154/P155 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P159/P161 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
-  NG17–NG34.
+  NG17–NG35.
 
 None is a full convergence theorem.
 
@@ -861,21 +883,20 @@ Neither target covers a repeated periodic orbit.
 **Target:** exclude every nontrivial positive cycle, independently of the
 nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
-Phase 24 P147--P150, and Phase 25 P151/P154/P155. H133 now isolates the
-remaining coprime area-three neighbourhood, arbitrary higher area, and the
-general noncoprime remainder. **Acceptance:** a
+Phase 24 P147--P150, Phase 25 P151/P154/P155, and Phase 26 P156--P161. H133
+now isolates critical reduced-slope area at least six and the noncritical
+branch above area 100000 across all gcd classes. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
 
-### H147 — near-resonant area three
+### H147 — closed area-three positive-cycle obligation
 
-**Target:** classify the collapsed Type-A/B relations and prove that every
-Type-C two-arc failure lies in a controlled low-denominator near-grid class
-admitting a nonzero P154-style resultant. **Known traps:** NG33 defeats generic
-cardinality; NG34 defeats a universal paired q/L threshold; P155 controls one
-exact grid only. **Acceptance:** an all-q area-three theorem with exact
-constants and an independently checked remainder. See
+**Result:** P158 proves every critical primitive positive nontrivial cycle has
+`A_*>=6`, so no coprime area-three profile can be such a cycle. This closes
+H147 by a stronger all-gcd route without proving the originally proposed
+near-resonance resultant. **Successor:** critical area six under H133. NG34
+and the retained Phase 24/25 arithmetic remain falsifiers and inputs. See
 [`context/H147.md`](context/H147.md).
 
 ### H141 — defect area versus weighted correction/source
@@ -912,9 +933,9 @@ scoped obligation rather than a complete proof by itself.
 | Cross-`Q` 3-adic nesting | Bound multiplicity of endpoint cylinders across different `Q` | NG23 and E22 compatible/nested pairs | Enumerate exact containment poset, then state a provable recursion | Supplies endpoint anti-concentration | Finite injectivity without a recursion is not progress |
 | Fourier/large-sieve anti-concentration | Prove cancellation beyond Haar mass | per-address `+1`, deterministic least representatives | Small exact character sums with explicit constants and carry classes | Could prove either P80 premise | Stop if constants grow exponentially or discard the lattice error |
 | Positive ordinary bridge | Convert coherent 2-adic source data into an effective ordinary-height obstruction | NG22, P76 topology split | Bound the first residue renewal using positivity and signed height | Could directly close H72 | Stop if the argument uses only 2-adic coherence |
-| Near-resonant area three | Prove H147 for every critical coprime area-three profile | NG33, NG34, E36 ratios, E37 seven-grid rows | Derive a low-denominator inverse theorem feeding a nonzero P154-style resultant | Removes the smallest remaining coprime cycle area | Stop if only an isolated grid, empirical clustering, or larger finite scan survives |
-| Cycle resultant/energy closure | Prove H133 for arbitrary defect area and noncoprime slopes | both negative cycles, E36, macro/NG28/NG30 controls | Test one all-area energy/source inequality or stronger noncoprime divisor | Eliminates P69's cycle branch | Stop if it assumes coprimality, positivity, or primitivity without preserving it |
-| Defect/source optimization | Prove H141 as an H89 or H133 bridge | NG32--NG34, concentrated defects, E33 survivors, both negative cycles, E36/E37 | Optimize one exact carry/source/resultant inequality before extending q | Advances one major branch if effective and uniform | Stop if only area, support count, contact count, or factor complexity remains |
+| Critical area six | Exclude every critical `A_*=6` profile across all gcd classes | NG34, NG35, E37 resonance rows, E38 all-gcd corpus, both negative cycles | Combine P156/P157 support transitions with radial energy, correction loss, or sparse resultants | Removes the first remaining positive-cycle area | Stop if only a larger fixed-area scan or empirical margin survives |
+| Cycle resultant/energy closure | Prove H133 for all surviving critical and noncritical profiles | both negative cycles, E38, NG34/NG35, macro/NG28/NG30 controls | Test one all-area energy/source inequality or stronger noncoprime divisor | Eliminates P69's cycle branch | Stop if it assumes coprimality, positivity, or primitivity without preserving it |
+| Defect/source optimization | Prove H141 as an H89 or H133 bridge | NG32--NG35, concentrated defects, E33 survivors, both negative cycles, E37/E38 | Optimize one exact carry/source/resultant inequality before extending q | Advances one major branch if effective and uniform | Stop if only area, support count, contact count, or factor complexity remains |
 | Eventual H54 lower bound | Prove all safe representatives grow faster than `H_q` | all `M(k)` records and `A^rB^s` | Test one explicit composable inequality on exact records | Closes P54 route with finite remainder | Stop at the least violating word and store its carry data |
 
 Merely extending depth, modulus, `q`, or height without a candidate structural
@@ -970,8 +991,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase22.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase22_verifier.json
+.venv/bin/python verifier/verify_phase26.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase26_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

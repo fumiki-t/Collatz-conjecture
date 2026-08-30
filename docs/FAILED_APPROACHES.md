@@ -1060,18 +1060,56 @@ certificate.
 
 **Weaker statement retained.** P154 proves an exact resonant-grid resultant,
 and P155 excludes the complete critical coprime seven-grid family containing
-this support pattern. Near-resonant profiles remain H147.
+this support pattern. Phase 26 later closes the area-three positive-cycle
+case by P158's stronger all-gcd area barrier; NG34 remains a required
+arithmetic-method regression.
 
 **Evidence.**
 [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md),
 Section 5, and `artifacts/phase25_resonance.json`.
 
+## NG35 — extending the Phase 26 scalar barrier through area six
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** EXT05's critical gap bound combined with P157 factor
+separation retains a positive exponential margin when the assumed area bound
+is raised from `A_*<=5` to `A_*<=6`, and therefore proves `A_*>=7`.
+
+**Why it looked plausible.** The same comparison proves P158 with a large
+finite margin at `q=512`, and changing the factor multiplier from six to seven
+looks like a small constant adjustment.
+
+**Smallest exact obstruction.** The asymptotic coefficient reverses:
+
+```text
+75^7 = 13348388671875
+3*64^7 = 13194139533312
+75^7 > 3*64^7.
+```
+
+Thus the proposed right-hand side grows faster than `3^q`; no finite starting
+threshold repairs this proof.
+
+**Failure scope.** Fundamental for the isolated EXT05 plus factor-separation
+scalar mechanism. It does not show that an area-six cycle exists and does not
+refute support-sensitive, correction-loss, energy, or resultant arguments.
+
+**Weaker statement retained.** P158 proves `A_*>=6` for every critical
+primitive positive nontrivial cycle. Critical area six is the first remaining
+H133 frontier.
+
+**Evidence.**
+[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md),
+Section 7, and `artifacts/phase26_scalar_certificates.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
-area-three supports, the E37 seven-grid rows, and all exact counterexamples above. Passing a bounded
+area-three supports, the E37 seven-grid rows, the E38 all-gcd profile corpus,
+and all exact counterexamples above. Passing a bounded
 regression is necessary evidence, never a proof of universality.

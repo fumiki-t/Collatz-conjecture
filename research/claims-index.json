@@ -1,5 +1,5 @@
 {
-  "claim_count": 203,
+  "claim_count": 211,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2502,23 +2502,21 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Prove a uniform resultant-energy, sparse-arc, or ordinary-source obstruction for every remaining positive nontrivial cycle profile, including the unexcluded coprime area-three neighbourhood, arbitrary higher area, and general noncoprime profiles.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle: critical reduced-slope area at least six and the noncritical branch with `A_*>100000`, including all gcd classes.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P140, P144--P151, P154, P155, E28, E34--E37, EXT05, NG33, NG34; EXT15 only if the Christoffel source gap is used.",
+      "dependencies": "P133--P161, E28, E34--E38, EXT05, NG32--NG35; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160.",
       "dependency_ids": [
         "E28",
         "EXT05",
         "EXT15",
-        "NG33",
-        "NG34",
-        "P154",
-        "P155"
+        "P160",
+        "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md); [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-30 (Phase 25 audit)",
-      "notes": "P149 forces area at least three and P155 excludes one exact grid, but NG34 blocks the universal paired-arc gap; arbitrary area and noncoprime slopes remain open.",
+      "last_audited": "2026-08-30 (Phase 26 audit)",
+      "notes": "P158 closes all positive-cycle area at most five, including noncoprime slopes; NG35 shows the scalar mechanism stops at critical area six, while large noncritical area is not contradictory.",
       "status": "OPEN"
     },
     {
@@ -2632,23 +2630,21 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source or near-resonant resultant theorem turning P141/P142/P151--P153 or P144/P145/P154 into an eventual H89 rejection or an all-area H133 obstruction.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or the surviving Phase 26 reduced-slope profiles into an all-area H133 obstruction.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P155 as scoped; P97/P132 for H89; P135/P137/P140 for H133; NG32--NG34 and concentrated-defect falsifiers.",
+      "dependencies": "P141--P161 as scoped; P97/P132 for H89; P156/P157 for arbitrary-gcd cycles; NG32--NG35 and concentrated-defect falsifiers.",
       "dependency_ids": [
-        "H133",
         "H89",
         "P132",
-        "P135",
-        "P137",
-        "P140",
+        "P156",
+        "P157",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md).",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-30 (Phase 25 audit)",
-      "notes": "Area/support counts can coexist with large correction, and one exact resonance grid does not control a neighbourhood.",
+      "last_audited": "2026-08-30 (Phase 26 audit)",
+      "notes": "P158 eliminates small cycle area but NG35 blocks the same scalar mechanism at area six; large area/support is not itself a contradiction.",
       "status": "OPEN"
     },
     {
@@ -2847,25 +2843,146 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Control every critical coprime area-three profile after NG34: prove a quantitative near-resonance inverse theorem with nonzero low-degree resultants or separately exclude the collapsed Type-A/B and near-resonant Type-C families; then handle arbitrary area and noncoprime slopes.",
-      "collatz_implication": "A complete area-three theorem would move the coprime cycle frontier again but would not yet eliminate arbitrary-area or noncoprime cycles.",
-      "dependencies": "P147--P155, E36, E37, EXT05, NG33, NG34; exact support pairing, validity, resonance denominators, and coprime scope must be retained.",
+      "claim": "No critical coprime area-three profile can be a primitive positive nontrivial cycle.",
+      "collatz_implication": "Closes the former area-three positive-cycle obligation by the stronger arbitrary-gcd bound `A_*>=6`.",
+      "dependencies": "P156--P158, P125, P133, E28, EXT05; positivity and primitivity are essential.",
       "dependency_ids": [
-        "E36",
-        "E37",
+        "E28",
         "EXT05",
-        "NG33",
-        "NG34"
+        "P125",
+        "P133"
       ],
-      "evidence": "[`context/H147.md`](context/H147.md); [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 9.",
+      "evidence": "[`context/H147.md`](context/H147.md); [`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Sections 2--4.",
       "first_introduced": "Phase 24",
       "id": "H147",
-      "last_audited": "2026-08-30 (Phase 25 audit)",
-      "notes": "P155 closes only the exact seven-grid family. No inverse theorem controls nearby grids; H133 and Collatz remain open.",
-      "status": "OPEN"
+      "last_audited": "2026-08-30 (Phase 26 closure)",
+      "notes": "This does not prove the proposed near-resonance resultant theorem and does not exclude critical area six, arbitrary area, or Collatz. Phase 24/25 arithmetic remains retained.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For every primitive positive-cycle exponent word, after a reduced-slope minimum rotation `H_j=q_0E_j-L_0j=r_j+q_0a_j` with `a_j>=0`; the repeated reduced mechanical baseline differs by exactly `A_*=sum_(j<q)a_j` swaps `10->01`, `p_cyc(n)<=(A_*+1)(n+1)`, and `A_*>=h_*(h_*+1)/2`.",
+      "collatz_implication": "Extends P144's edit-area language to every gcd class.",
+      "dependencies": "`q<L<2q`; positive exponent word; direct reduced-height and ordered-one argument. The algebraic profile/edit part holds more generally than the positive-cycle application.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Section 2; `artifacts/phase26_reduced_profiles.json`; independent verifier.",
+      "first_introduced": "Phase 26",
+      "id": "P156",
+      "last_audited": "2026-08-30",
+      "notes": "It supplies structure, not integrality or a contradiction by itself.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every primitive positive nontrivial cycle satisfies `M_odd<2^(h_*+1)m/lambda`, `M<2^(h_*+2)m/lambda`, `L<=(A_*+1)(n_cyc+1)`, and the strict master inequality `L<(A_*+1)[h_*+4+log_2(q/(3lambda(1-lambda)))]`.",
+      "collatz_implication": "Supplies an arbitrary-gcd state-separation barrier for H133.",
+      "dependencies": "P125, P133, P156; primitive positive integer cycle.",
+      "dependency_ids": [
+        "P125",
+        "P133",
+        "P156"
+      ],
+      "evidence": "[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Section 3; `artifacts/phase26_theory.json`.",
+      "first_introduced": "Phase 26",
+      "id": "P157",
+      "last_audited": "2026-08-30",
+      "notes": "It is invalid for negative cycles, nonprimitive powers, and nonintegral rational shadows at the ordinary-state separation step.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every critical primitive positive nontrivial cycle, coprime or noncoprime, has reduced-slope edit area `A_*>=6`.",
+      "collatz_implication": "Closes H147 and excludes every positive-cycle profile of area at most five on the critical line.",
+      "dependencies": "P133, P156, P157, E28, EXT05; exact finite scan `q<512` and monotone large-q integer comparison.",
+      "dependency_ids": [
+        "E28",
+        "EXT05",
+        "P133",
+        "P156",
+        "P157"
+      ],
+      "evidence": "[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Section 4; `artifacts/phase26_scalar_certificates.json`; independent verifier.",
+      "first_introduced": "Phase 26",
+      "id": "P158",
+      "last_audited": "2026-08-30",
+      "notes": "EXT05 is external; critical area six and above remain open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every noncritical primitive positive nontrivial cycle has reduced-slope edit area `A_*>100000`.",
+      "collatz_implication": "Forces every noncritical cycle candidate into a very-large-area regime across all gcd classes.",
+      "dependencies": "P133, P134, P156, P157, E28; exact rational endpoint and derivative enclosures.",
+      "dependency_ids": [
+        "E28",
+        "P133",
+        "P134",
+        "P156",
+        "P157"
+      ],
+      "evidence": "[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Section 5; `artifacts/phase26_scalar_certificates.json`.",
+      "first_introduced": "Phase 26",
+      "id": "P159",
+      "last_audited": "2026-08-30",
+      "notes": "Large area is not contradictory and does not exclude the branch.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming X02, every noncritical primitive positive nontrivial cycle has `A_*>5*10^15`.",
+      "collatz_implication": "Gives a conditional external-height amplification of P159.",
+      "dependencies": "P134, P156, P157, X02; exact rational endpoint and derivative enclosures.",
+      "dependency_ids": [
+        "P134",
+        "P156",
+        "P157",
+        "X02"
+      ],
+      "evidence": "[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Section 6; `artifacts/phase26_scalar_certificates.json`.",
+      "first_introduced": "Phase 26",
+      "id": "P160",
+      "last_audited": "2026-08-30",
+      "notes": "X02 is external evidence, not reproduced here; the claim remains conditional and still does not exclude cycles.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "For every noncritical primitive positive cycle with `t=L-qlog_2(3)>1` and `A_*>0`, `t>(log_2(3)/A_*)q-((A_*+1)/A_*)(log_2q+h_*+5-log_2 3)`.",
+      "collatz_implication": "Gives the exact slope/area phase diagram behind the noncritical barrier.",
+      "dependencies": "P133, P157; exact algebra and `lambda<1/2`.",
+      "dependency_ids": [
+        "P133",
+        "P157"
+      ],
+      "evidence": "[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Section 7.",
+      "first_introduced": "Phase 26",
+      "id": "P161",
+      "last_audited": "2026-08-30",
+      "notes": "It is only a necessary inequality and has no content at `A_*=0` without a separate argument.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks all 2,214 positive-D cyclic exponent classes through `q<=8`, including 1,417 noncoprime classes, 3,101 minimum rotations, 45,369 cyclic factor widths, 2,214 rational odd-height rows, and 797 P144 coprime reproductions.",
+      "collatz_implication": "Provides structural regression for P156/P157 and all gcd classes.",
+      "dependencies": "Declared finite range; arbitrary-precision integers/rationals; generator and verifier use distinct enumeration/edit methods.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md); Phase 26 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 26",
+      "id": "E38",
+      "last_audited": "2026-08-30",
+      "notes": "Bounded structural agreement is not an exhaustive integer-cycle proof.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The Phase 26 EXT05 plus factor-separation scalar mechanism can also exclude critical area six and prove `A_*>=7`.",
+      "collatz_implication": "Identifies critical area six as the first frontier needing genuinely new information.",
+      "dependencies": "Proposed direct extension of P158.",
+      "dependency_ids": [
+        "P158"
+      ],
+      "evidence": "[`../research/audits/cycle-area-barrier/REPORT.md`](../research/audits/cycle-area-barrier/REPORT.md), Section 7; `artifacts/phase26_scalar_certificates.json`.",
+      "first_introduced": "Phase 26",
+      "id": "NG35",
+      "last_audited": "2026-08-30",
+      "notes": "Exact coefficient reversal: `75^7=13348388671875>13194139533312=3*64^7`. This refutes the method extension, not the nonexistence of a stronger theorem.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "45c439afa6b8cb5b2d77ebed7a75a3c60342a2d3d86d1d7137f79486afa0561f"
+  "source_sha256": "b55966ae40478bc9ef89cc5cbfd1600a20e624d4a971f0345c2b6cc8901384aa"
 }

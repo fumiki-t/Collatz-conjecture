@@ -1,0 +1,43 @@
+{
+  "claims": {
+    "E38": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H147": "VERIFIED_THEOREM",
+    "NG35": "REFUTED",
+    "P156": "VERIFIED_THEOREM",
+    "P157": "VERIFIED_THEOREM",
+    "P158": "VERIFIED_THEOREM",
+    "P159": "VERIFIED_THEOREM",
+    "P160": "CONDITIONAL",
+    "P161": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase26-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "recursive compositions, ordered-one displacement, direct rational traces, separately coded atanh intervals, and exact integer scans",
+  "profile_counts": {
+    "coprime_classes": 797,
+    "coprime_reproduction_checks": 797,
+    "cyclic_classes": 2214,
+    "factor_width_checks": 45369,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "primitive_classes": 2186,
+    "rational_height_checks": 2214
+  },
+  "proves_collatz": false,
+  "scalar_counts": {
+    "critical_area_lower": 6,
+    "critical_scan_rows": 511,
+    "noncritical_area_strict_lower": 100000,
+    "x02_area_strict_lower": 5000000000000000
+  },
+  "valid": true,
+  "verified_input_sha256": {
+    "phase26_obstruction_report.md": "93c5dc46c8cbe8fda7b92ffda9910f9d04d8d277b28e61b6475b0394b720c4d9",
+    "phase26_reduced_profiles.json": "9318ee61b238e5617b3e2f268a63a6e75a7a3bb09d824e893660bb9629258b5f",
+    "phase26_regressions.json": "2cd4ef61d619da41f7fccf23c91609cd0c65841a7e87a0251502c3cb75e39a7b",
+    "phase26_scalar_certificates.json": "308dc5252674555ea9fffe74ecccb032fb481ccdf3707ba09d08c8b6f34f1eff",
+    "phase26_theory.json": "d6a65e9d5e4120fca726a29038e65787cc2f6f5dff9054512d5434a7d659e9dd"
+  },
+  "what_this_result_does_not_prove": "This does not exclude critical area six or above, arbitrary-area cycles, nonperiodic counterexamples, or Collatz."
+}
