@@ -1,5 +1,5 @@
 {
-  "claim_count": 196,
+  "claim_count": 203,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -1418,20 +1418,21 @@
     {
       "claim": "Prove `M_star(K_q-1)>H_q` for all sufficiently large `q`, where `M_star(k)` is the least source with ancestral-safe depth at least `k`, then independently check the finite first-crossing remainder.",
       "collatz_implication": "Together with P90 and a finite remainder, this would exclude a least positive counterexample.",
-      "dependencies": "P54, P89, P125, P126, P132, E33; an eventual ancestral-frontier lower bound.",
+      "dependencies": "P54, P89, P125, P126, P132, P151--P153, E33, E37; an eventual ancestral-frontier lower bound.",
       "dependency_ids": [
         "E33",
+        "E37",
         "P125",
         "P126",
         "P132",
         "P54",
         "P89"
       ],
-      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Sections 3 and 9; [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 8; `artifacts/phase15b_obstruction_report.md`; `artifacts/phase21_critical_repetitions.json`.",
+      "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Sections 3 and 9; [`context/H89.md`](context/H89.md); `artifacts/phase21_critical_repetitions.json`; `artifacts/phase25_theory.json`.",
       "first_introduced": "Phase 15B",
       "id": "H89",
-      "last_audited": "2026-08-29 (Phase 21 audit)",
-      "notes": "E25 is only one finite record, and E33's repeat filter leaves most Q<=17 critical/geodesic words alive; neither is an eventual theorem.",
+      "last_audited": "2026-08-30 (Phase 25 audit)",
+      "notes": "E25 is finite, E33 leaves most bounded words alive, and P152/P153 leave the q0 support interval nonempty; none is an eventual theorem.",
       "status": "OPEN"
     },
     {
@@ -2501,23 +2502,23 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Prove a uniform resultant-energy, sparse-arc, or ordinary-source obstruction for every remaining positive nontrivial cycle profile, including coprime area at least three and general noncoprime profiles.",
+      "claim": "Prove a uniform resultant-energy, sparse-arc, or ordinary-source obstruction for every remaining positive nontrivial cycle profile, including the unexcluded coprime area-three neighbourhood, arbitrary higher area, and general noncoprime profiles.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P140, P144--P150, E28, E34, E35, E36, EXT05, NG33; EXT15 only if the Christoffel source gap is used.",
+      "dependencies": "P133--P140, P144--P151, P154, P155, E28, E34--E37, EXT05, NG33, NG34; EXT15 only if the Christoffel source gap is used.",
       "dependency_ids": [
         "E28",
-        "E34",
-        "E35",
-        "E36",
         "EXT05",
         "EXT15",
-        "NG33"
+        "NG33",
+        "NG34",
+        "P154",
+        "P155"
       ],
-      "evidence": "[`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md), Sections 10--12; [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md); [`ROADMAP.md`](ROADMAP.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md); [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-29 (Phase 24 audit)",
-      "notes": "P149 now forces coprime defect area at least three, but the paired area-three gap, arbitrary area, and noncoprime branch remain open; H89/H112/H72 and Collatz are separate.",
+      "last_audited": "2026-08-30 (Phase 25 audit)",
+      "notes": "P149 forces area at least three and P155 excludes one exact grid, but NG34 blocks the universal paired-arc gap; arbitrary area and noncoprime slopes remain open.",
       "status": "OPEN"
     },
     {
@@ -2560,8 +2561,8 @@
       "evidence": "[`../research/audits/defect-area/REPORT.md`](../research/audits/defect-area/REPORT.md), Section 4.",
       "first_introduced": "Phase 23",
       "id": "P143",
-      "last_audited": "2026-08-29",
-      "notes": "No polynomial `H_q` theorem or exact q0 width is accepted here; the conditional area growth is not a contradiction.",
+      "last_audited": "2026-08-30 (P152 supplies q0 width)",
+      "notes": "No polynomial `H_q` theorem is accepted. P152 later certifies `n_q0=73` under EXT04, but neither area nor support growth is a contradiction.",
       "status": "CONDITIONAL"
     },
     {
@@ -2631,24 +2632,23 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source theorem turning P141/P142 or P144/P145 defect area into an eventual H89 rejection or an all-area H133 obstruction.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or near-resonant resultant theorem turning P141/P142/P151--P153 or P144/P145/P154 into an eventual H89 rejection or an all-area H133 obstruction.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P145, P97/P132 for H89, P135/P137/P140 for H133; NG32 and concentrated-defect falsifiers.",
+      "dependencies": "P141--P155 as scoped; P97/P132 for H89; P135/P137/P140 for H133; NG32--NG34 and concentrated-defect falsifiers.",
       "dependency_ids": [
         "H133",
         "H89",
-        "NG32",
         "P132",
         "P135",
         "P137",
         "P140",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/defect-area/REPORT.md`](../research/audits/defect-area/REPORT.md), Section 8.",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-29",
-      "notes": "Area can concentrate in a few deep excursions; no uniform correction/source consequence is proved.",
+      "last_audited": "2026-08-30 (Phase 25 audit)",
+      "notes": "Area/support counts can coexist with large correction, and one exact resonance grid does not control a neighbourhood.",
       "status": "OPEN"
     },
     {
@@ -2740,23 +2740,132 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove a uniform effective paired-support arc gap for every valid critical area-three profile, or replace it by an arithmetic obstruction that advances H133; then handle arbitrary area and noncoprime slopes.",
-      "collatz_implication": "A successful area-three theorem would move the coprime cycle frontier again but would not yet eliminate arbitrary-area or noncoprime cycles.",
-      "dependencies": "P147--P150, E36, EXT05, NG33; exact support pairing and profile validity must be used.",
+      "claim": "If equal-length binary words `u,v` have Hamming distance `H`, then `p_v(n)<=p_u(n)+nH` and, for `1<=n<=L`, the same holds cyclically. Consequently critical defect support `s` gives `H(c_q,w)<=2s` and `p_w(n)<=(2s+1)n+2`; coprime cycle support gives `H(v_a,v_0)<=2s` and `p_cyc(n)<=(2s+1)n+1`.",
+      "collatz_implication": "Replaces defect area by displaced-boundary support in factor-separation arguments for H89/H133.",
+      "dependencies": "Exact changed-window covering; P141 repaired finite base; P144 cycle profile convention.",
+      "dependency_ids": [
+        "P141",
+        "P144"
+      ],
+      "evidence": "[`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 2; `artifacts/phase25_theory.json`; exhaustive small-word properties.",
+      "first_introduced": "Phase 25",
+      "id": "P151",
+      "last_audited": "2026-08-30",
+      "notes": "It is a complexity bound, not an ordinary-source lower bound or cycle exclusion by itself.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Under P54 and pairwise-distinct critical states, defect support satisfies `q<=(2n_q+1)s+2n_q+2`. With the existing EXT04 q0 `S0` enclosure, `n_q0=73` and therefore `s>=490186612`.",
+      "collatz_implication": "Gives a conditional support-spread lower bound in the H89 critical layer.",
+      "dependencies": "P54; P125; P142 contact height; P151; E11 q0 pair; EXT04 for the `S0` enclosure.",
+      "dependency_ids": [
+        "E11",
+        "EXT04",
+        "P125",
+        "P142",
+        "P151",
+        "P54"
+      ],
+      "evidence": "[`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 3; `artifacts/phase25_theory.json`; independent rational verifier.",
+      "first_introduced": "Phase 25",
+      "id": "P152",
+      "last_audited": "2026-08-30",
+      "notes": "Pairwise distinctness and every P54/EXT04 premise remain; exact interval arithmetic does not make the statement unconditional.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "In P54's critical defect notation, every positive defect loses more than `1/4` normalized correction, so `s<4(S0-3N delta_q)`. At q0, X02 and EXT04 give only the integer upper bound `s<=49708569439`.",
+      "collatz_implication": "Supplies the requested correction/support side of an exact H89 squeeze.",
+      "dependencies": "P54/P57 endpoint minimality; X02 and EXT04 only for the q0 numerical specialization.",
+      "dependency_ids": [
+        "EXT04",
+        "P54",
+        "P57",
+        "X02"
+      ],
+      "evidence": "[`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 3; `artifacts/phase25_theory.json`.",
+      "first_introduced": "Phase 25",
+      "id": "P153",
+      "last_audited": "2026-08-30",
+      "notes": "The q0 upper bound is far above P152's lower bound and yields no contradiction.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "For a coprime resonant-grid profile `q=dQ` with roots `c_iQ` and no boundary wrap, integrality forces `D` to divide `Res(Z^d-2,(P-1)^Q-ZP^Q)`. The resultant is nonzero for `Q>=2` and is bounded by `(1+2^(1/d))^d M(d,P)^q`.",
+      "collatz_implication": "Gives a low-degree arithmetic replacement for sparse-arc failure on exact resonance grids.",
+      "dependencies": "P135 coprime slope root; exact field norm and resultant identities; arbitrary-precision algebra.",
+      "dependency_ids": [
+        "P135"
+      ],
+      "evidence": "[`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 6; `artifacts/phase25_resonance.json`; independent Sylvester verifier.",
+      "first_introduced": "Phase 25",
+      "id": "P154",
+      "last_audited": "2026-08-30",
+      "notes": "It does not cover near-resonance, boundary wrap, or noncoprime slopes.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every critical coprime area-three profile with `q=7Q` and roots `Q,2Q,3Q` is nonintegral. For `Q>=11` the proof uses P154 and EXT05; every smaller coprime row is direct.",
+      "collatz_implication": "Excludes the exact resonant family containing the NG34 width falsifier.",
+      "dependencies": "P154; EXT05 for `Q>=11`; E37 for the finite coprime remainder.",
+      "dependency_ids": [
+        "E37",
+        "EXT05",
+        "P154"
+      ],
+      "evidence": "[`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 7; `artifacts/phase25_resonance.json`.",
+      "first_introduced": "Phase 25",
+      "id": "P155",
+      "last_audited": "2026-08-30",
+      "notes": "`Q=5` is noncoprime and outside the theorem; nearby grids and other area-three shapes remain open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks 502,523 critical words through `q<=17`, 82,227 critical factor widths through `q<=12`, 33,577 critical coprime area-three profiles through `q<=50`, 167,884 selected cyclic factor widths, q0's exact rational width, the q=63322 falsifier, and every coprime seven-grid row through `Q<=10`.",
+      "collatz_implication": "Supplies regression evidence and P155's finite coprime remainder.",
+      "dependencies": "Declared finite ranges; exact integers/rationals; weak-profile enumeration; shifted Bezout roots; Sylvester determinant.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md); Phase 25 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 25",
+      "id": "E37",
+      "last_audited": "2026-08-30",
+      "notes": "Finite zero counts do not exclude general area-three profiles; `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every valid critical Type-C area-three profile has either q-arc or L-arc width below the EXT05 threshold `log_3(64/25)`.",
+      "collatz_implication": "Blocks a uniform two-arc-width proof of all critical area three.",
+      "dependencies": "Proposed paired-arc continuation of H147.",
+      "dependency_ids": [
+        "H147"
+      ],
+      "evidence": "[`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 5; `artifacts/phase25_resonance.json`.",
+      "first_introduced": "Phase 25",
+      "id": "NG34",
+      "last_audited": "2026-08-30",
+      "notes": "Exact counterexample `q=63322,L=100363`, roots `9046,18092,27138`, widths `54181,85875`; direct modular gcd is one, so it is not a cycle. The proposal's displayed L-residue list was corrected.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Control every critical coprime area-three profile after NG34: prove a quantitative near-resonance inverse theorem with nonzero low-degree resultants or separately exclude the collapsed Type-A/B and near-resonant Type-C families; then handle arbitrary area and noncoprime slopes.",
+      "collatz_implication": "A complete area-three theorem would move the coprime cycle frontier again but would not yet eliminate arbitrary-area or noncoprime cycles.",
+      "dependencies": "P147--P155, E36, E37, EXT05, NG33, NG34; exact support pairing, validity, resonance denominators, and coprime scope must be retained.",
       "dependency_ids": [
         "E36",
+        "E37",
         "EXT05",
-        "NG33"
+        "NG33",
+        "NG34"
       ],
-      "evidence": "[`context/H147.md`](context/H147.md); [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md), Section 8.",
+      "evidence": "[`context/H147.md`](context/H147.md); [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md), Section 9.",
       "first_introduced": "Phase 24",
       "id": "H147",
-      "last_audited": "2026-08-29",
-      "notes": "Finite worst ratios `35/41` and `80/94` are not an all-q theorem; H133 and Collatz remain open.",
+      "last_audited": "2026-08-30 (Phase 25 audit)",
+      "notes": "P155 closes only the exact seven-grid family. No inverse theorem controls nearby grids; H133 and Collatz remain open.",
       "status": "OPEN"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "624193d695d84bf5602421ef67ad8cef67c22ff060093e43c7d1338b6a10afdd"
+  "source_sha256": "45c439afa6b8cb5b2d77ebed7a75a3c60342a2d3d86d1d7137f79486afa0561f"
 }

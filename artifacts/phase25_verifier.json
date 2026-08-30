@@ -1,0 +1,42 @@
+{
+  "claims": {
+    "E37": "VERIFIED_FINITE",
+    "H147": "OPEN",
+    "NG34": "REFUTED",
+    "P151": "VERIFIED_THEOREM",
+    "P152": "CONDITIONAL",
+    "P153": "CONDITIONAL",
+    "P154": "VERIFIED_THEOREM",
+    "P155": "VERIFIED_THEOREM"
+  },
+  "critical": {
+    "bounded_distinct_rows": 0,
+    "critical_words": 502523,
+    "factor_checks": 82227,
+    "support_bound_rejections": 0
+  },
+  "cycle_type_counts": {
+    "doubled-root": 133,
+    "root-child-plus-root": 5472,
+    "three-roots": 27972
+  },
+  "format": "collatz-phase25-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "weak area profiles, shifted Bezout root, rational intervals, and Sylvester resultants reconstructed without production imports",
+  "proves_collatz": false,
+  "resonance": {
+    "falsifier_gcd": 1,
+    "falsifier_q": 63322,
+    "norm": 209
+  },
+  "valid": true,
+  "verified_input_sha256": {
+    "phase25_critical_support.json": "4397623c2c5e67027ae180d3625a982949bea32ee2d03dd60ee8c5907a4cb805",
+    "phase25_cycle_support.json": "4d33e1a0d95d52caeecb4c9da95bb34d6a15fbe0fba9e158b8245e67cf8afa80",
+    "phase25_obstruction_report.md": "70f405ccd9e1719f4c98ddfb4c4a4f20df7811d40a2c278c14abaaa9699f9238",
+    "phase25_regressions.json": "f4024c49ac2cff359a9b08caf4c0eb42f0d28c6acab4cccc1a4327eee48b715f",
+    "phase25_resonance.json": "731cd909553affb0b877b1d615e4c2d66e8b8ffd175044132f3d3c80a173b066",
+    "phase25_theory.json": "c05bb193ea889b550735d4a688410944d24fd1b4a70f6de85bea2208170c8ca0"
+  },
+  "what_this_result_does_not_prove": "This verifies the declared exact and conditional boundaries; it does not prove H147, H133, H89, H72, or Collatz."
+}

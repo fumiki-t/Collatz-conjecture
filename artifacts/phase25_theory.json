@@ -1,0 +1,107 @@
+{
+  "claims": {
+    "E37": {
+      "statement": "The declared critical/cycle support, q0 interval, paired-arc falsifier, conjugate interval, and finite resonance rows are independently reproducible.",
+      "status": "VERIFIED_FINITE"
+    },
+    "H147": {
+      "statement": "Control all near-resonant Type-C profiles and the collapsed Type-A/B families, then address arbitrary area and noncoprime slopes.",
+      "status": "OPEN"
+    },
+    "NG34": {
+      "statement": "Every valid critical Type-C area-three profile satisfies one of the two Phase-24 arc thresholds.",
+      "status": "REFUTED"
+    },
+    "P151": {
+      "statement": "Changing H bits adds at most nH linear or cyclic length-n factors; critical and cycle profile supports therefore give the stated support-sensitive linear bounds.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P152": {
+      "statement": "Under P54 and pairwise-distinct critical states, q<=(2n_q+1)s+2n_q+2. Under EXT04 the q0 width is exactly 73 and the support lower bound is 490186612.",
+      "status": "CONDITIONAL"
+    },
+    "P153": {
+      "statement": "Each positive critical defect loses more than 1/4 normalized correction, hence s<4(S0-3N delta) under P54.",
+      "status": "CONDITIONAL"
+    },
+    "P154": {
+      "statement": "An integral coprime resonant-grid profile forces a nonzero resultant divisible by D, with an exact conjugate-product magnitude bound.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P155": {
+      "statement": "The critical coprime seven-grid area-three family with roots Q,2Q,3Q is impossible; Q>=11 uses EXT05 and smaller coprime Q are direct.",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "critical_support": {
+    "conditional_lower": "s>=max(0,ceil((q-2n_q-2)/(2n_q+1)))",
+    "correction_upper": "s<4(S0-3N delta_q)",
+    "n_q": "min{n:2^n D_q>=3B_q_max+qD_q}",
+    "q0_certificate": {
+      "K": 114208327604,
+      "S0_interval_under_EXT04": {
+        "lower": [
+          "347653358124694623764702768965644743643993185202918547803238971406453253118498950403662",
+          "6688413348832609071852825350525839211165888967632495550510238958784996414681"
+        ],
+        "upper": [
+          "4171840297817379325920398463036672540553158504570985244085227443301930507443667232748630",
+          "80260960185991308862233904206310070533990667611589946606122867505419956976171"
+        ]
+      },
+      "boundary": "The lower support bound additionally assumes P54 and pairwise-distinct critical states. The upper support bound assumes P54 and X02. The S0 enclosure uses EXT04.",
+      "conditional_support_lower": 490186612,
+      "conditional_support_upper_from_X02": 49708569439,
+      "delta_interval": {
+        "lower": [
+          "638117477748150649186709592302592577167687033645073416731473980603",
+          "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+        ],
+        "upper": [
+          "79764684718518831148338699037824072145960879205634177114717467525",
+          "14474011154664524427946373126085988481658748083205070504932198000989141204992"
+        ]
+      },
+      "external_dependencies": [
+        "EXT04",
+        "X02"
+      ],
+      "height_ratio_interval": {
+        "lower": [
+          "5031938583491853237172458012793904328010717918536275535782976705854178737173680880414303936011851354076238830170593823038992895035415885733349588900294379272669979",
+          "533499182036765773152025928372615300962945676722312936927499477885817438912584660270156351127578499869410352544142257214285792195409050734525"
+        ],
+        "upper": [
+          "483066104052392247825071920833752578131641244650004985055066082325227948702779296451398612294122885394864275367953951586859600302333016330199416242815857658854203663",
+          "51215921475529514222594489123771068892442784965342041930090081162010228591943253275181982869073930167489144086182340918528954176692800587211113"
+        ]
+      },
+      "integer_width_n_q0": 73,
+      "q": 72057431991,
+      "squeeze_excludes_q0": false,
+      "width_checks": {
+        "2^72_below_lower": true,
+        "upper_at_most_2^73": true
+      }
+    }
+  },
+  "cycle_area_three": {
+    "conditional_consequence": "If n_cyc<=h+O(log q), then s=Omega(sqrt(q)); the polynomial cycle-minimum premise is not proved.",
+    "literal_hamming": {
+      "doubled-root": 2,
+      "root-child-plus-root": 4,
+      "three-roots": 6
+    },
+    "support_height": "profile height h<=support s"
+  },
+  "format": "collatz-phase25-theory-v1",
+  "hamming_perturbation": {
+    "critical": "H(c_q,w)<=2s and p_w(n)<=(2s+1)n+2",
+    "cycle": "H(v_a,v_0)<=2s and p_v_cyc(n)<=(2s+1)n+1",
+    "cyclic": "p_v_cyc(n)<=p_u_cyc(n)+n H(u,v), 1<=n<=L",
+    "linear": "p_v(n)<=p_u(n)+n H(u,v)"
+  },
+  "proves_collatz": false,
+  "resonance_boundary": "P154/P155 require gcd(q,L)=1. EXT05 is an external theorem. Near-resonant and noncoprime profiles remain open.",
+  "what_this_result_does_not_prove": "It does not prove H89, H133, H147, H72, or the Collatz conjecture."
+}

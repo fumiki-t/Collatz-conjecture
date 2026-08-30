@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 24,
+    "latest_phase": 25,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 24,
-    "report": "PHASE24_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase24_verifier.json",
+    "phase": 25,
+    "report": "PHASE25_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase25_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase24-sparse-arc-resultants.json"
+    "experiment_manifest": "research/experiments/phase25-hamming-resonance.json"
   },
   "active_obligations": [
     {
@@ -45,8 +45,8 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H89.md",
-      "depends_on": ["P54", "P89", "P91", "P92", "P95", "P97", "P98", "P104", "P125", "P126", "P132", "P141", "P142", "E25", "E26", "E27", "E28", "E29", "E33", "E35", "NG27", "NG28", "NG29", "NG32"],
-      "success_scope": "Prove M_star(K_q-1)>H_q eventually and independently check the finite first-crossing remainder; P141/P142 add a corrected area filter, but E35 finds no improvement beyond P132 through q<=12."
+      "depends_on": ["P54", "P89", "P91", "P92", "P95", "P97", "P98", "P104", "P125", "P126", "P132", "P141", "P142", "P151", "P152", "P153", "E25", "E26", "E27", "E28", "E29", "E33", "E35", "E37", "NG27", "NG28", "NG29", "NG32"],
+      "success_scope": "Prove M_star(K_q-1)>H_q eventually and independently check the finite first-crossing remainder; P151--P153 add a support-sensitive q0 squeeze, but its exact lower and upper bounds remain far apart."
     },
     {
       "id": "H104",
@@ -93,24 +93,24 @@
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H133.md",
-      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "E28", "E34", "E35", "E36", "EXT05", "EXT15", "NG32", "NG33"],
-      "success_scope": "Eliminate every primitive positive nontrivial cycle profile, including coprime area at least three and general noncoprime slopes; P149 excludes coprime areas zero through two, but no arbitrary-area theorem is known."
+      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "E28", "E34", "E35", "E36", "E37", "EXT05", "EXT15", "NG32", "NG33", "NG34"],
+      "success_scope": "Eliminate every primitive positive nontrivial cycle profile, including the remaining coprime area-three neighbourhood, arbitrary higher area, and general noncoprime slopes; P155 closes one exact resonance grid only."
     },
     {
       "id": "H141",
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H141.md",
-      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "E33", "E34", "E35", "E36", "NG32", "NG33"],
-      "success_scope": "Turn defect area into a uniform ordinary-source, carry, or resultant obstruction strong enough to advance H89 or arbitrary-area H133; Phase 24 closes only coprime area at most two."
+      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P152", "P153", "P154", "P155", "E33", "E34", "E35", "E36", "E37", "NG32", "NG33", "NG34"],
+      "success_scope": "Turn defect area/support into a uniform ordinary-source, carry, or resultant obstruction strong enough to advance H89 or arbitrary-area H133; support counts and one exact resonance grid are insufficient."
     },
     {
       "id": "H147",
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H147.md",
-      "depends_on": ["P135", "P147", "P148", "P149", "P150", "E36", "EXT05", "NG33"],
-      "success_scope": "Prove a uniform paired-support arc gap or replacement obstruction for every critical area-three coprime profile; finite q<=100 ratios are falsification data, not an eventual theorem."
+      "depends_on": ["P135", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "E36", "E37", "EXT05", "NG33", "NG34"],
+      "success_scope": "Exclude every critical coprime area-three Type-A/B/C profile using a near-resonance inverse theorem or equivalent arithmetic obstruction; NG34 blocks a universal paired-arc gap and P155 closes only the exact seven-grid family."
     },
     {
       "id": "C04",
@@ -269,7 +269,14 @@
     "P150",
     "E36",
     "NG33",
-    "H147"
+    "H147",
+    "P151",
+    "P152",
+    "P153",
+    "P154",
+    "P155",
+    "E37",
+    "NG34"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

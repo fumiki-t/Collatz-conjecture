@@ -1,0 +1,94 @@
+{
+  "claims": {
+    "E37": "VERIFIED_FINITE",
+    "P151": "VERIFIED_THEOREM"
+  },
+  "counts_by_type": {
+    "doubled-root": 133,
+    "root-child-plus-root": 5472,
+    "three-roots": 27972
+  },
+  "expected_hamming_by_type": {
+    "doubled-root": 2,
+    "root-child-plus-root": 4,
+    "three-roots": 6
+  },
+  "factor_checks": 167884,
+  "format": "collatz-phase25-cycle-support-v1",
+  "profile_count": 33577,
+  "proves_collatz": false,
+  "row_digest_sha256": "4fc59a2076b9f87112b09a9b9747a7e818ff8559065682aec84fcd5c0d5d80e5",
+  "samples": {
+    "doubled-root": [
+      4,
+      7,
+      [
+        0,
+        2,
+        1,
+        0
+      ],
+      [
+        4,
+        1,
+        1,
+        1
+      ],
+      "1010101",
+      "1000111",
+      2
+    ],
+    "root-child-plus-root": [
+      5,
+      8,
+      [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "10101101",
+      "10010111",
+      4
+    ],
+    "three-roots": [
+      7,
+      12,
+      [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "101010110101",
+      "100110101011",
+      6
+    ]
+  },
+  "scope": {
+    "area": 3,
+    "coprime": true,
+    "critical": true,
+    "q_maximum": 50
+  }
+}

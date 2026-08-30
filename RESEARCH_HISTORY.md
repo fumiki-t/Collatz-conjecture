@@ -1507,3 +1507,46 @@ keeps the paired-support theorem open.
 Phase 24 does not exclude coprime area at least three, any general noncoprime
 cycle, the nonperiodic branches H70/H72/H112/H89, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 2026-08-30 — Phase 25: Hamming support and resonant area three
+
+**Branch:** `feat/phase25-hamming-resonance`
+
+**Acceptance record:** [`PHASE25_RUN_RESULTS.md`](PHASE25_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/hamming-resonance/REPORT.md`](research/audits/hamming-resonance/REPORT.md)
+
+Phase 25 treated the supplied Hamming/resonance note as an untrusted proposal.
+P151 proves the general Hamming perturbation factor lemma and turns critical
+or cycle defect support into a sharper factor-complexity bound than total
+adjacent-swap area can give for concentrated defects.
+
+Under P54 and pairwise-distinct critical states, P152 gives
+`q<=(2n_q+1)s+2n_q+2`. Reusing the explicitly external EXT04 q0 `S0`
+enclosure gives `n_q0=73` and `s>=490186612`. P153 supplies the opposite
+correction bound, but X02 yields only `s<=49708569439`; the conditional q0
+squeeze remains far from a contradiction.
+
+The note's proposed every-profile paired arc gap fails. NG34 stores the exact
+`q=63322,L=100363` three-root row with widths `54181` and `85875`. The note's
+displayed L-residue list was corrected; direct modular gcd is one, so the row
+is not a cycle witness.
+
+P154 replaces exact grid resonance by a low-degree resultant. P155 applies it
+to `q=7Q`, roots `Q,2Q,3Q`: exact conjugate intervals, resultant norm 209,
+and EXT05 exclude every coprime `Q>=11`, while E37 supplies the direct finite
+remainder. This closes one exact family containing the NG34 pattern, not a
+near-resonant neighbourhood.
+
+E37 independently rebuilds 502,523 critical words, 82,227 critical factor
+checks, 33,577 area-three profiles, 167,884 selected cyclic factor checks,
+the q0 rational interval, the large falsifier, and every finite coprime
+seven-grid row. The verifier uses weak profiles, a shifted Bezout root,
+separate rational intervals, and Sylvester resultants rather than the
+generator's quotient-ring norm.
+
+### What this result does not prove
+
+Phase 25 does not exclude all area-three coprime cycles, arbitrary-area or
+noncoprime cycles, H89, H133, H147, H72, or the Collatz conjecture.
+`proves_collatz=false`.

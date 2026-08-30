@@ -110,16 +110,17 @@ including arbitrary-area coprime profiles and general noncoprime slopes.
 finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
-**Missing theorem.** P147/P149 now exclude coprime areas zero through two by a
-sparse full-`D` divisor and exact finite remainder.  NG33 blocks the generic
-seven-point continuation at area three; H147 needs the paired support and
-validity constraints.  No theorem controls arbitrary defect area. P140 still
-supplies only a smaller modulus `D_0` for noncoprime slopes. EXT15's
-Christoffel source gap is quantitative but not uniform enough by itself.
+**Missing theorem.** P147/P149 exclude coprime areas zero through two by a
+sparse full-`D` divisor and exact finite remainder. NG33 blocks generic
+seven-point cardinality, and NG34 refutes a universal paired q/L arc gap.
+P154/P155 exclude one exact seven-grid resonance but do not control nearby
+triples. H147 now needs a near-resonance inverse theorem or separate complete
+Type-A/B/C treatment. No theorem controls arbitrary defect area. P140 still
+supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
 cycle and its powers, every Phase 24 area-two row, the E36 worst area-three
-supports, and the macro/NG28/NG30 controls. Reject any rule that silently uses `gcd(L,q)=1`, confuses `D|B` with
+supports, NG34, every E37 seven-grid row, and the macro/NG28/NG30 controls. Reject any rule that silently uses `gcd(L,q)=1`, confuses `D|B` with
 primitive period, or treats a negative/rational affine cycle as positive.
 
 **Success criterion.** A uniform exact theorem proving `abs(R)<D` or
@@ -559,30 +560,35 @@ both negative cycles, and all E34 area-two profiles.
 inequality valid for arbitrary defect area, plus an effective finite
 remainder. A larger bounded rejection count is not success.
 
-### Phase 24 cycle target — H147 paired area-three arcs
+### Phase 25 cycle target — H147 near-resonant area three
 
-**Target.** Prove a uniform effective improvement for the paired reduced
-support of every valid critical coprime area-three profile, or find a stronger
-arithmetic obstruction that excludes the same family.
+**Target.** Prove that simultaneous q/L arc failure forces controlled
+low-denominator near-resonance, then turn that structure into a nonzero
+P154-style low-degree resultant; alternatively close the collapsed Type-A/B
+and Type-C families separately.
 
 **Why this could help Collatz.** P149 has removed the complete coprime
 area-zero, area-one, and area-two frontier.  Area three is now the smallest
 possible coprime cycle defect.
 
-**Missing theorem.** P147's generic support bound gives only `W/q<=6/7`, and
-NG33 proves that this exponent loses to EXT05.  E36 finds exact finite margins
-through `q<=100`, but no all-q positive `eta` is known.  The proof must use the
-paired support and profile recurrence, not seven arbitrary residues.
+**Missing theorem.** P147's generic support bound loses by NG33. NG34 then
+shows that paired support does not force either arc below the EXT05 threshold:
+`q=63322,L=100363` is an exact counterexample. P155 excludes that exact
+seven-grid family, but no theorem controls its neighbourhood. The proof must
+quantify proximity to a rational grid and preserve enough arithmetic for a
+nonvanishing magnitude certificate.
 
-**Fast falsification test.** Optimize both q- and L-residue arcs on the two
-P148 area-three shapes.  Preserve the first exact support approaching or
-crossing the EXT05 exponent.  Re-run the `35/41` and `80/94` witnesses,
-largest-gap ties, coefficient cancellations, and negative-cycle sign controls.
+**Fast falsification test.** Rebuild NG34's corrected L-residue list and the
+complete exact seven-grid remainder. Cluster two-arc failures by best grid
+denominator and preserve the first profile whose distance defeats the proposed
+resultant perturbation bound. Re-run the `35/41`, `80/94`, largest-gap tie,
+coefficient-cancellation, and negative-cycle controls.
 
-**Success criterion.** An exact all-q gap or replacement divisor estimate,
-an independently verified finite remainder, and an explicit statement that
-arbitrary area and noncoprime cycles remain open.  Extending `q<=100` alone is
-not progress on H147.
+**Success criterion.** An exact all-q classification/exclusion for every
+critical coprime area-three shape with independently verified finite
+remainder. An isolated exact grid, an empirical clustering, or a larger finite
+scan is not complete H147 progress. Arbitrary area and noncoprime cycles must
+remain explicit.
 
 ## Stop criteria for large computation
 

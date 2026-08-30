@@ -1,0 +1,308 @@
+{
+  "claims": {
+    "E37": "VERIFIED_FINITE",
+    "H147": "OPEN",
+    "NG34": "REFUTED",
+    "P154": "VERIFIED_THEOREM",
+    "P155": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase25-resonance-v1",
+  "paired_arc_falsifier": {
+    "L": 100363,
+    "L_arc_points": [
+      0,
+      14338,
+      28525,
+      43013,
+      57200,
+      71688,
+      85875
+    ],
+    "L_arc_width": 85875,
+    "L_threshold_fails": true,
+    "Q": 9046,
+    "direct_modular_gcd": 1,
+    "gcd_q_L": 1,
+    "integral_profile": false,
+    "interpretation": "Exact counterexample to the naive two-arc width threshold, not a cycle witness.",
+    "polynomial_support": [
+      0,
+      9046,
+      9047,
+      18092,
+      18093,
+      27138,
+      27139
+    ],
+    "profile_support": [
+      9046,
+      18092,
+      27138
+    ],
+    "proposal_L_points_correct": false,
+    "proposal_supplied_L_points": [
+      0,
+      14488,
+      28675,
+      43163,
+      57350,
+      71838,
+      86025
+    ],
+    "q": 63322,
+    "q_arc_points": [
+      0,
+      9046,
+      17997,
+      27138,
+      36089,
+      45230,
+      54181
+    ],
+    "q_arc_width": 54181,
+    "q_threshold_fails": true
+  },
+  "proves_collatz": false,
+  "resonant_grid": {
+    "P": "sum_i Z^c_i",
+    "R": "(P-1)^Q-ZP^Q",
+    "divisibility": "integrality implies D divides Res(Z^d-2,R)",
+    "magnitude": "|Res|<=(1+2^(1/d))^d M(d,P)^q",
+    "nonvanishing": "for Q>=2, the norm equation would require Q*v2(N(alpha))=1",
+    "scope": "q=dQ, gcd(q,L)=1, roots c_i Q with no boundary wrap, D=2^L-3^q>1"
+  },
+  "seven_grid": {
+    "M7_upper": "627/2",
+    "M_below_64_over_25": true,
+    "P_coefficients_low_to_high": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "absolute_resultant_Z7_minus_2_P_minus_1": 209,
+    "d": 7,
+    "eventual_threshold_Q": 11,
+    "external_dependency": "EXT05 for coprime Q>=11; finite coprime Q<=10 are direct",
+    "finite_rows_Q_1_to_10": [
+      {
+        "D": "1909",
+        "D_divides_resultant": false,
+        "L": 12,
+        "Q": 1,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 7,
+        "resonant_resultant": "-141",
+        "resultant_nonzero": true
+      },
+      {
+        "D": "3605639",
+        "D_divides_resultant": false,
+        "L": 23,
+        "Q": 2,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 14,
+        "resonant_resultant": "-8287",
+        "resultant_nonzero": true
+      },
+      {
+        "D": "6719515981",
+        "D_divides_resultant": false,
+        "L": 34,
+        "Q": 3,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 21,
+        "resonant_resultant": "-1542045",
+        "resultant_nonzero": true
+      },
+      {
+        "D": "12307579633871",
+        "D_divides_resultant": false,
+        "L": 45,
+        "Q": 4,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 28,
+        "resonant_resultant": "-1076536999",
+        "resultant_nonzero": true
+      },
+      {
+        "L": 56,
+        "Q": 5,
+        "gcd_q_L": 7,
+        "q": 35,
+        "resonant_resultant": "-667642950759",
+        "resultant_nonzero": true,
+        "scope_note": "noncoprime slope; P154/P155 do not apply"
+      },
+      {
+        "D": "38154963458164053719",
+        "D_divides_resultant": false,
+        "L": 67,
+        "Q": 6,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 42,
+        "resonant_resultant": "-333065369718073",
+        "resultant_nonzero": true
+      },
+      {
+        "D": "62932125673039764086461",
+        "D_divides_resultant": false,
+        "L": 78,
+        "Q": 7,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 49,
+        "resonant_resultant": "-139973565890030475",
+        "resultant_nonzero": true
+      },
+      {
+        "D": "95622386615329600236050591",
+        "D_divides_resultant": false,
+        "L": 89,
+        "Q": 8,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 56,
+        "resonant_resultant": "-51771261124545901903",
+        "resultant_nonzero": true
+      },
+      {
+        "D": "123089326797391906610753508949",
+        "D_divides_resultant": false,
+        "L": 100,
+        "Q": 9,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 63,
+        "resonant_resultant": "-17444605464160397702859",
+        "resultant_nonzero": true
+      },
+      {
+        "D": "92992924274172212949676178524199",
+        "D_divides_resultant": false,
+        "L": 111,
+        "Q": 10,
+        "direct_modular_gcd": 1,
+        "gcd_q_L": 1,
+        "integral_profile": false,
+        "q": 70,
+        "resonant_resultant": "-5493816744229455326167111",
+        "resultant_nonzero": true
+      }
+    ],
+    "nonreal_Re_P_intervals": {
+      "1": [
+        [
+          "-397741",
+          "500000"
+        ],
+        [
+          "-795481",
+          "1000000"
+        ]
+      ],
+      "2": [
+        [
+          "-252411",
+          "500000"
+        ],
+        [
+          "-504821",
+          "1000000"
+        ]
+      ],
+      "3": [
+        [
+          "-534199",
+          "1000000"
+        ],
+        [
+          "-267099",
+          "500000"
+        ]
+      ]
+    },
+    "threshold_rows_Q_1_to_11": [
+      [
+        1,
+        "16738879394531250",
+        "8796093022208",
+        false
+      ],
+      [
+        2,
+        "64058089479804039001464843750",
+        "77371252455336267181195264",
+        false
+      ],
+      [
+        3,
+        "245144177879865310387685894966125488281250",
+        "680564733841876926926749214863536422912",
+        false
+      ],
+      [
+        4,
+        "938143307682345883868890723533695563673973083496093750",
+        "5986310706507378352962293074805895248510699696029696",
+        false
+      ],
+      [
+        5,
+        "3590184655254094660557827659030927236472052754834294319152832031250",
+        "52656145834278593348959013841835216159447547700274555627155488768",
+        false
+      ],
+      [
+        6,
+        "13739293083766585401426745252761177839770367903327041858574375510215759277343750",
+        "463168356949264781694283940034751631413079938662562256157830336031652518559744",
+        false
+      ],
+      [
+        7,
+        "52578959738291314982266658163337759433203251192541841096961263701814459636807441711425781250",
+        "4074071952668972172536891376818756322102936787331872501272280898708762599526673412366794752",
+        false
+      ],
+      [
+        8,
+        "201214646947684658776130338552324067166860586533958339647184523565903724318104650592431426048278808593750",
+        "35835915874844867368919076489095108449946327955754392558399825615420669938882575126094039892345713852416",
+        false
+      ],
+      [
+        9,
+        "770029196998280524002891371290937439658334886210887933098051124730356659835520116708096338697941973805427551269531250",
+        "315216049571155833698232320801148910440637914163723573343586347233965774171977684891314130039079325126453023922454528",
+        false
+      ],
+      [
+        10,
+        "2946828042711925589293291563717149503575292807948161218582019379919028477275824665380715358664609482275409391149878501892089843750",
+        "2772669694120814859578414184143083703436437075375816575170479580614621307805625623039974406104139578097391210961403571828974157824",
+        false
+      ],
+      [
+        11,
+        "11277228898806014065471763979801347282359061221823102319646766059626653169262341706504568663834900789713633351141197636025026440620422363281250",
+        "24388660549343689307668728357759111763660922989570087116087163747073216709529418907189891430183531024686147899385989241370687309994439728955392",
+        true
+      ]
+    ]
+  },
+  "what_this_result_does_not_prove": "It does not exclude near-resonant area-three profiles, arbitrary-area or noncoprime cycles, H89, H72, or Collatz."
+}

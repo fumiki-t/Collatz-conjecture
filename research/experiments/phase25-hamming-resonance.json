@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "phase25-hamming-resonance",
+  "status": "ACCEPTED",
+  "claim_ids": ["P151", "P152", "P153", "P154", "P155", "E37", "NG34", "H147"],
+  "objective": "Audit Hamming-support factor bounds, certify the conditional q0 support width, falsify the naive paired area-three arc gap, and prove an exact resonant resultant exclusion for the coprime seven-grid family.",
+  "exact_scope": {
+    "quantifiers": [
+      "all equal-length binary word pairs in P151 and all legal linear/cyclic widths",
+      "all P54 pairwise-distinct critical segments in the conditional P152/P153 statements",
+      "all coprime resonant-grid profiles satisfying P154's no-boundary-wrap hypotheses",
+      "all critical coprime seven-grid profiles q=7Q with roots Q,2Q,3Q in P155",
+      "all critical first-crossing words through q<=17 and literal factor widths through q<=12",
+      "all critical coprime area-three profiles through q<=50",
+      "the exact q=63322 paired-arc falsifier and coprime finite seven-grid rows Q<=10"
+    ],
+    "bounds": {
+      "critical_q_maximum": 17,
+      "critical_factor_q_maximum": 12,
+      "cycle_profile_q_maximum": 50,
+      "finite_resonance_Q_maximum": 10,
+      "eventual_resonance_Q_minimum": 11,
+      "paired_arc_falsifier_q": 63322
+    },
+    "completeness": "P151 and P154 are theorem-level in their stated domains. P152/P153 retain every named least-counterexample and external premise. P155 is complete only for the exact critical coprime seven-grid family. E37 is finite in its declared ranges."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, rational logarithm/exponential/trigonometric intervals, modular inverses, shifted Bezout roots, quotient-ring norms, Sylvester determinants, and SHA-256 row digests",
+    "floating_point_role": "none in generator, verifier, thresholds, falsifier, or artifact acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase25_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase25.py --artifact-dir artifacts --output artifacts/phase25_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase25_properties.py tests/test_phase25_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "critical first-crossing words, defects, Hamming support, source residues, and factor counts",
+      "weak area-three profiles and literal exponent words without trusting the production classification",
+      "q0 logarithm, delta, S0, and height intervals at a separate rational precision",
+      "the slope root from a shifted Bezout pair and the q=63322 modular gcd",
+      "nonreal conjugate signs from a separate Machin/cosine interval precision",
+      "every resonance resultant from a Sylvester determinant rather than the production quotient-ring norm",
+      "mandatory adversarial family factor checks and no-overclaim metadata"
+    ],
+    "forbidden_imports": ["src.phase25_search", "phase25_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase25_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "NG32 finite critical boundary",
+    "NG33 generic seven-point exponent failure",
+    "q=63322 paired-arc falsifier",
+    "adjacent paired-support cancellations",
+    "noncoprime Q=5 seven-grid row"
+  ],
+  "artifacts": [
+    "artifacts/phase25_theory.json",
+    "artifacts/phase25_critical_support.json",
+    "artifacts/phase25_cycle_support.json",
+    "artifacts/phase25_resonance.json",
+    "artifacts/phase25_regressions.json",
+    "artifacts/phase25_obstruction_report.md",
+    "artifacts/phase25_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not promote the q0 support bound without P54, pairwise state distinctness, EXT04, and the recorded X02 boundary.",
+    "Do not restore the false paired-arc threshold after NG34 or use the proposal's incorrect L-residue list.",
+    "Do not treat exact resonance as a near-resonance inverse theorem.",
+    "Do not apply the coprime slope-root resultant when gcd(q,L)>1.",
+    "Do not treat EXT05 as internally reproved.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "P155 excludes one exact critical coprime area-three family, not every area-three profile.",
+    "NG34 refutes only the proposed two-arc width theorem; the corrected row is nonintegral.",
+    "The q0 lower and upper support certificates leave a wide nonempty interval.",
+    "H147, H133, H89, H72, every noncoprime cycle, and Collatz remain open; proves_collatz remains false."
+  ],
+  "recorded_result": {
+    "commit": "PENDING_ACCEPTANCE_COMMIT",
+    "generator": "valid=true with 502523 critical words, 33577 area-three profiles, q0 n=73, and seven-grid threshold Q=11",
+    "verifier": "valid=true with generator_imported=false, weak profiles, shifted Bezout roots, rational intervals, Sylvester resultants, and falsifier gcd=1",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

@@ -22,15 +22,16 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 24 is the latest accepted research layer. It gives an exact sparse
-circular-arc divisor for coprime cycle profiles and completely excludes defect
-area two, so every hypothetical positive nontrivial coprime cycle now has area
-at least three. The area-three paired-support scan is finite only; H147, H141,
-H133, and the broader H54, H70, H72, H89, H104, H105, H112, C03, C04, and C05
-obligations remain open.
+Phase 25 is the latest accepted research layer. Phase 24 excludes coprime
+cycle defect area two; Phase 25 adds support-sensitive Hamming bounds and an
+exact low-degree resultant that excludes one critical seven-grid area-three
+family. It also records a large exact counterexample to the proposed universal
+paired-arc gap. Near-resonant area three, arbitrary area, noncoprime cycles,
+H147/H141/H133, and the broader H54, H70, H72, H89, H104, H105, H112, C03,
+C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–24, separates internal and external
+map and conventions, summarizes Phases 1–25, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -71,12 +72,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase24.py \
-  --artifact-dir artifacts --write-report /tmp/collatz_phase24_verifier.json
+.venv/bin/python verifier/verify_phase25.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase25_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 24 result](PHASE24_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 25 result](PHASE25_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

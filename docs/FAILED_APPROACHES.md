@@ -1026,12 +1026,52 @@ exact diagnostics, not an all-q repair. H147 states the surviving target.
 [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md),
 Section 8.
 
+## NG34 — universal paired q/L arc threshold at area three
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** Every valid critical three-root area-three profile has
+either its q-residue or L-residue circular width below
+`log_3(64/25)` times the corresponding modulus.
+
+**Why it looked plausible.** E36 found no threshold failure through `q<=100`,
+and the paired polynomial support is much more rigid than seven arbitrary
+points.
+
+**Exact counterexample.** At `q=63322`, `L=100363`, roots
+`9046,18092,27138`, the exact widths are
+
+```text
+Wq=54181,
+WL=85875,
+3^Wq*25^q >= 64^q,
+3^WL*25^L >= 64^L.
+```
+
+The corrected L-residue list is
+`0,14338,28525,43013,57200,71688,85875`; the supplied proposal's nearby list
+was arithmetically wrong. Direct modular evaluation has gcd one with `D`, so
+the row is not an integral cycle.
+
+**Failure scope.** Fundamental for a theorem based only on selecting the
+better of the two one-scale arc widths. It does not refute low-degree
+resonant resultants, near-resonance inverse theorems, or another arithmetic
+certificate.
+
+**Weaker statement retained.** P154 proves an exact resonant-grid resultant,
+and P155 excludes the complete critical coprime seven-grid family containing
+this support pattern. Near-resonant profiles remain H147.
+
+**Evidence.**
+[`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md),
+Section 5, and `artifacts/phase25_resonance.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
-area-three supports, and all exact counterexamples above. Passing a bounded
+area-three supports, the E37 seven-grid rows, and all exact counterexamples above. Passing a bounded
 regression is necessary evidence, never a proof of universality.

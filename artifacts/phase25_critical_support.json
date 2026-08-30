@@ -1,0 +1,239 @@
+{
+  "claims": {
+    "E37": "VERIFIED_FINITE",
+    "P151": "VERIFIED_THEOREM",
+    "P152": "CONDITIONAL"
+  },
+  "counts_by_q": {
+    "1": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 1,
+      "factor_checks": 2,
+      "hamming_equality_count": 1,
+      "maximum_hamming": 0,
+      "maximum_support": 0,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 0
+    },
+    "10": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 476,
+      "factor_checks": 7616,
+      "hamming_equality_count": 32,
+      "maximum_hamming": 10,
+      "maximum_support": 8,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 2794
+    },
+    "11": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 961,
+      "factor_checks": 17298,
+      "hamming_equality_count": 32,
+      "maximum_hamming": 10,
+      "maximum_support": 9,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 6499
+    },
+    "12": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 2652,
+      "factor_checks": 53040,
+      "hamming_equality_count": 64,
+      "maximum_hamming": 12,
+      "maximum_support": 10,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 20391
+    },
+    "13": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 8045,
+      "factor_checks": 0,
+      "hamming_equality_count": 128,
+      "maximum_hamming": 14,
+      "maximum_support": 11,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 69451
+    },
+    "14": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 17637,
+      "factor_checks": 0,
+      "hamming_equality_count": 128,
+      "maximum_hamming": 14,
+      "maximum_support": 12,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 1,
+      "support_sum": 168751
+    },
+    "15": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 51033,
+      "factor_checks": 0,
+      "hamming_equality_count": 256,
+      "maximum_hamming": 16,
+      "maximum_support": 13,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 536917
+    },
+    "16": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 108950,
+      "factor_checks": 0,
+      "hamming_equality_count": 256,
+      "maximum_hamming": 16,
+      "maximum_support": 14,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 1,
+      "support_sum": 1249269
+    },
+    "17": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 312455,
+      "factor_checks": 0,
+      "hamming_equality_count": 512,
+      "maximum_hamming": 18,
+      "maximum_support": 15,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 3882840
+    },
+    "2": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 1,
+      "factor_checks": 4,
+      "hamming_equality_count": 1,
+      "maximum_hamming": 0,
+      "maximum_support": 0,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 0
+    },
+    "3": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 2,
+      "factor_checks": 10,
+      "hamming_equality_count": 2,
+      "maximum_hamming": 2,
+      "maximum_support": 1,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 1
+    },
+    "4": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 3,
+      "factor_checks": 21,
+      "hamming_equality_count": 2,
+      "maximum_hamming": 2,
+      "maximum_support": 2,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 3
+    },
+    "5": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 7,
+      "factor_checks": 56,
+      "hamming_equality_count": 4,
+      "maximum_hamming": 4,
+      "maximum_support": 3,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 12
+    },
+    "6": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 12,
+      "factor_checks": 120,
+      "hamming_equality_count": 4,
+      "maximum_hamming": 4,
+      "maximum_support": 4,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 29
+    },
+    "7": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 30,
+      "factor_checks": 360,
+      "hamming_equality_count": 8,
+      "maximum_hamming": 6,
+      "maximum_support": 5,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 97
+    },
+    "8": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 85,
+      "factor_checks": 1105,
+      "hamming_equality_count": 16,
+      "maximum_hamming": 8,
+      "maximum_support": 6,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 349
+    },
+    "9": {
+      "bounded_distinct_rows": 0,
+      "critical_words": 173,
+      "factor_checks": 2595,
+      "hamming_equality_count": 16,
+      "maximum_hamming": 8,
+      "maximum_support": 7,
+      "minimum_support": 0,
+      "support_bound_rejections": 0,
+      "support_lower_bound": 0,
+      "support_sum": 859
+    }
+  },
+  "finite_boundary": "Complete through q<=17 for support/Hamming aggregates; literal factor checks through q<=12.",
+  "format": "collatz-phase25-critical-support-v1",
+  "maximum_factor_bound_ratio": {
+    "denominator": 4,
+    "numerator": 4,
+    "witness": [
+      4,
+      "1101100",
+      2,
+      0,
+      0
+    ]
+  },
+  "proves_collatz": false,
+  "row_digest_sha256": "bbb71fdc6aec1cb37bca8b1ea61371d7aa40debfdfe3e5bfc15773697d7b5710",
+  "scope": {
+    "first_crossing_words": true,
+    "literal_factor_q_maximum": 12,
+    "q_maximum": 17
+  },
+  "totals": {
+    "bounded_distinct_rows": 0,
+    "critical_words": 502523,
+    "factor_checks": 82227,
+    "support_bound_rejections": 0
+  }
+}

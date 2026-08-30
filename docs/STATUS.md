@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-29
+**Last updated:** 2026-08-30
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -147,9 +147,18 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   every hypothetical positive nontrivial coprime cycle to have defect area at
   least three. P150 gives only a noncritical fixed-area theorem under explicit
   sparse-lift nonvanishing.
-- `REFUTED` / `OPEN`: NG33 shows that the generic seven-point bound
-  `W/q<=6/7` is exponentially too weak for critical area three. H147 asks for
-  a paired-support improvement; E36's finite ratios do not prove one.
+- `VERIFIED_THEOREM` / `CONDITIONAL`: P151 proves support-sensitive Hamming
+  factor bounds. Under P54 and distinct states, P152 gives
+  `q<=(2n_q+1)s+2n_q+2`; the EXT04 q0 enclosure yields `n_q0=73` and
+  `s>=490186612`. P153's X02 correction upper is `s<=49708569439`, so the
+  exact support squeeze does not exclude q0.
+- `VERIFIED_THEOREM`: P154 gives a coprime resonant-grid resultant divisor,
+  nonvanishing, and conjugate-product bound. P155 excludes the exact critical
+  seven-grid area-three family; its large part uses EXT05.
+- `REFUTED` / `OPEN`: NG33 blocks generic seven-point cardinality, while NG34
+  refutes even a universal paired q/L arc threshold at `q=63322`. P155 closes
+  that exact grid but not its neighbourhood; H147 now asks for a
+  near-resonance inverse theorem or separate Type-A/B/C exclusions.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -330,6 +339,11 @@ No item above proves the Collatz conjecture.
   critical direct modular rows through `q<=250`, and 521,154 critical
   area-three profiles through `q<=100`.  The area-two remainder completes
   P149; the area-three worst ratios `35/41` and `80/94` remain finite only.
+- Phase 25: E37 independently reconstructs 502,523 critical words, 82,227
+  critical factor widths, 33,577 area-three profiles, and 167,884 selected
+  cyclic factor widths. It verifies `n_q0=73`, resultant norm 209, the first
+  seven-grid threshold `Q=11`, and the corrected `q=63322` arc falsifier with
+  modular gcd one.
 - Garcia--Tal audit: E21 independently reconstructs the NG22 formal exponent
   policy through 1,026 odd steps. It verifies `E_1024=1174`, `a_1024=449`,
   and a canonical-residue renewal by `2*2^1174`; hence no positive ordinary
@@ -385,11 +399,12 @@ Phase 10 gives the strongest renewal consequence of that localization: every
 positive q0 gap would create two long-safe integers within distance `W`, but
 the required global spacing lower bound C05 is still open.
 
-Phase 24 gives the strongest current low-area localization of the separate
-positive-cycle branch: every coprime hypothetical nontrivial cycle has defect
-area at least three.  The sparse arc integer is divisible by `D` and is too
-small at area two, using EXT05 only on the critical large-q line.  H147's
-paired area-three gap, arbitrary area, and every noncoprime slope remain open.
+Phase 25 gives the strongest current low-area localization of the separate
+positive-cycle branch. Phase 24 forces defect area at least three. Phase 25
+then excludes the exact critical seven-grid area-three family by a nonzero
+low-degree resultant, but NG34 proves that no universal two-arc threshold can
+handle every Type-C profile. H147's near-resonant and collapsed area-three
+families, arbitrary area, and every noncoprime slope remain open.
 
 ## Strongest conditional route
 
@@ -434,11 +449,13 @@ P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
 cases. The missing scalable state must retain the common-prefix surplus, odd
 normalized gap, and both tail residues; branch depth alone is insufficient.
 The cycle branch has a separate bottleneck. Phase 24 excludes coprime defect
-area zero, one, and two.  NG33 shows that support cardinality alone misses the
-critical area-three exponent, while E36's paired-support margins are finite
-only. No uniform roughness or sparse-arc theorem handles arbitrary profiles,
-and the noncoprime grouped modulus `D_0` remains too weak. H133/H147 record
-these obligations without conflating them with H89/H112/H72.
+area zero, one, and two. NG33 shows that support cardinality alone misses the
+critical area-three exponent, and NG34 supplies an exact large paired-arc
+failure. P154/P155 handle one exact resonance grid but provide no inverse
+theorem for nearby triples. No uniform low-degree resultant handles all
+area-three or arbitrary profiles, and the noncoprime grouped modulus `D_0`
+remains too weak. H133/H147 record these obligations without conflating them
+with H89/H112/H72.
 P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
 `L=12` none of the shorter windows `b<L` retains enough information even in a
 small exact domain. The open problem is therefore a composable symbolic state,
@@ -697,4 +714,5 @@ eventual nonzero lifts.
 - Phase 22 acceptance: [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md)
 - Phase 23 acceptance: [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md)
 - Phase 24 acceptance: [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md)
+- Phase 25 acceptance: [`../PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

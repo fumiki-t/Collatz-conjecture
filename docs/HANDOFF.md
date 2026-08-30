@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the twenty-three phases established
+## 3. What the twenty-five phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -194,6 +194,12 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   area-two positive cycle profile, so a hypothetical nontrivial coprime cycle
   has area at least three. E36's area-three ratios are finite only; NG33 blocks
   generic seven-point cardinality and H147/H133 remain open.
+- Phase 25 proves support-sensitive Hamming factor bounds and conditionally
+  certifies `n_q0=73`, but the q0 support lower/upper bounds remain far apart.
+  NG34 stores the exact `q=63322` failure of a universal paired q/L arc gap.
+  P154/P155 exclude the exact critical seven-grid area-three family using a
+  low-degree resultant and EXT05; no theorem controls nearby grids, all area
+  three, arbitrary area, or noncoprime slopes.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

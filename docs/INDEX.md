@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–23, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–25, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -52,6 +52,7 @@ This is the canonical map of the research archive. Start with
 | 22 | [`../PHASE22_RUN_RESULTS.md`](../PHASE22_RUN_RESULTS.md) | [`../artifacts/phase22_obstruction_report.md`](../artifacts/phase22_obstruction_report.md) | `feat/phase22-cycle-resultant` |
 | 23 | [`../PHASE23_RUN_RESULTS.md`](../PHASE23_RUN_RESULTS.md) | [`../artifacts/phase23_obstruction_report.md`](../artifacts/phase23_obstruction_report.md) | `feat/phase23-defect-area` |
 | 24 | [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md) | [`../artifacts/phase24_obstruction_report.md`](../artifacts/phase24_obstruction_report.md) | `feat/phase24-sparse-arc` |
+| 25 | [`../PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md) | [`../artifacts/phase25_obstruction_report.md`](../artifacts/phase25_obstruction_report.md) | `feat/phase25-hamming-resonance` |
 
 Research supplements:
 
@@ -72,9 +73,10 @@ Research supplements:
 | Cycle-resultant audit | [`../research/audits/cycle-resultant/REPORT.md`](../research/audits/cycle-resultant/REPORT.md) | Phase 22 minimum-cycle valley, slope profiles, resultants, energy, Christoffel gap, noncoprime reduction, exact finite profiles, and negative-cycle regressions | EXT15/EXT16, P133--P140, E34, H133 boundary |
 | Defect-area audit | [`../research/audits/defect-area/REPORT.md`](../research/audits/defect-area/REPORT.md) | Phase 23 critical/cycle adjacent swaps, finite factor boundary, corrected repetition inequality, cyclic state separation, exact bounded audits | P141--P146, E35, NG32, H141 boundary |
 | Sparse-arc/resultant audit | [`../research/audits/sparse-arc-resultants/REPORT.md`](../research/audits/sparse-arc-resultants/REPORT.md) | Phase 24 circular-gap divisor, exact area-two/three profile shapes, complete coprime area-two exclusion, and finite paired area-three diagnostic | P147--P150, E36, NG33, H147 boundary |
+| Hamming/resonance audit | [`../research/audits/hamming-resonance/REPORT.md`](../research/audits/hamming-resonance/REPORT.md) | Phase 25 support-sensitive factor bounds, q0 support certificate, paired-arc falsifier, resonant-grid resultant, and exact seven-grid exclusion | P151--P155, E37, NG34, repaired H147 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 24 and both the branch-point and two-tail
+documentation through Phase 25 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries
