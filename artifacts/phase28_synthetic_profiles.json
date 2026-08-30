@@ -1,0 +1,300 @@
+{
+  "boundary": "All rows are exact legal reduced profiles, not positive integer cycles and not asymptotic extremizers.",
+  "format": "collatz-phase28-synthetic-profiles-v1",
+  "multiple_minimum_control": "isolated-unit-excursions has repeated returns to profile height zero",
+  "proves_collatz": false,
+  "row_digest_sha256": "f88a66fa7d2845453011785dffd1aada6a6b955bc4057aefb28cb2076e0fbe7b",
+  "rows": [
+    {
+      "J": 5,
+      "L": 199,
+      "area": 23,
+      "descent_floor": 15,
+      "descent_slack": 3,
+      "exponent_digest_sha256": "b320bb10311a4d8e6eb43b56b766ddf520e5c3cc79014a3689331c7b17c6c64c",
+      "factor_rows": [
+        [
+          1,
+          2,
+          12
+        ],
+        [
+          2,
+          4,
+          23
+        ],
+        [
+          3,
+          8,
+          34
+        ],
+        [
+          5,
+          17,
+          56
+        ],
+        [
+          8,
+          27,
+          89
+        ],
+        [
+          13,
+          39,
+          144
+        ],
+        [
+          199,
+          199,
+          2190
+        ]
+      ],
+      "height": 5,
+      "kind": "one-tall-excursion",
+      "level_components": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "polynomial_l1": 63,
+      "polynomial_support": 7,
+      "profile_digest_sha256": "285f4226bcc326e08fdeecac31b6fb667d38bce46d2a5c5b3cab5a7d181f171d",
+      "q": 125,
+      "valid_positive_exponents": true
+    },
+    {
+      "J": 5,
+      "L": 199,
+      "area": 597,
+      "descent_floor": 15,
+      "descent_slack": 577,
+      "exponent_digest_sha256": "c265fd3f9d7fe0b4d211f88a2ab40ecac710d51b38a8bd2ba093c60cff386826",
+      "factor_rows": [
+        [
+          1,
+          2,
+          12
+        ],
+        [
+          2,
+          4,
+          23
+        ],
+        [
+          3,
+          8,
+          34
+        ],
+        [
+          5,
+          17,
+          56
+        ],
+        [
+          8,
+          27,
+          89
+        ],
+        [
+          13,
+          40,
+          144
+        ],
+        [
+          199,
+          199,
+          2190
+        ]
+      ],
+      "height": 5,
+      "kind": "long-constant-plateau",
+      "level_components": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "polynomial_l1": 63,
+      "polynomial_support": 7,
+      "profile_digest_sha256": "354938d58512bcbb6f5c8a4a4cbf17b62b5774d9b179e86703cbf9ecabca8f54",
+      "q": 125,
+      "valid_positive_exponents": true
+    },
+    {
+      "J": 20,
+      "L": 199,
+      "area": 28,
+      "descent_floor": 0,
+      "descent_slack": 8,
+      "exponent_digest_sha256": "1ecf2637afcc83a8632d92ec41027bfb6b52a53458a1cee8e9c8d917d27315ce",
+      "factor_rows": [
+        [
+          1,
+          2,
+          42
+        ],
+        [
+          2,
+          4,
+          83
+        ],
+        [
+          3,
+          7,
+          124
+        ],
+        [
+          5,
+          13,
+          206
+        ],
+        [
+          8,
+          23,
+          329
+        ],
+        [
+          13,
+          49,
+          534
+        ],
+        [
+          199,
+          199,
+          8160
+        ]
+      ],
+      "height": 1,
+      "kind": "isolated-unit-excursions",
+      "level_components": [
+        20
+      ],
+      "polynomial_l1": 41,
+      "polynomial_support": 41,
+      "profile_digest_sha256": "7793ce26e8e3d18f3ccb5e80937c5b16ee3a2a0ce4e7e5a76ccd56fb1aaa3781",
+      "q": 125,
+      "valid_positive_exponents": true
+    },
+    {
+      "J": 124,
+      "L": 2110,
+      "area": 234,
+      "descent_floor": 57,
+      "descent_slack": 53,
+      "exponent_digest_sha256": "72370b7aa937540b8d871a1f5cafb681be7a57d756edd996dc9a08a6a7d27fe1",
+      "factor_rows": [
+        [
+          1,
+          2,
+          250
+        ],
+        [
+          2,
+          4,
+          499
+        ],
+        [
+          3,
+          8,
+          748
+        ],
+        [
+          5,
+          20,
+          1246
+        ],
+        [
+          8,
+          37,
+          1993
+        ],
+        [
+          13,
+          68,
+          3238
+        ],
+        [
+          2110,
+          2110,
+          525391
+        ]
+      ],
+      "height": 9,
+      "kind": "near-extremal-mixed",
+      "level_components": [
+        116,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "polynomial_l1": 1253,
+      "polynomial_support": 241,
+      "profile_digest_sha256": "ecdb50ecac31e4a78aa0a7dfe9b8df4efd209c616aab1686ce4a6165463eb5ac",
+      "q": 1331,
+      "valid_positive_exponents": true
+    },
+    {
+      "J": 3,
+      "L": 123,
+      "area": 3,
+      "descent_floor": 0,
+      "descent_slack": 0,
+      "exponent_digest_sha256": "21192a69d7e4585aab457fa962120aadc05d13dcb61b945a23f17579e417a163",
+      "factor_rows": [
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          2,
+          4,
+          15
+        ],
+        [
+          3,
+          7,
+          22
+        ],
+        [
+          5,
+          14,
+          36
+        ],
+        [
+          8,
+          28,
+          57
+        ],
+        [
+          13,
+          48,
+          92
+        ],
+        [
+          123,
+          123,
+          862
+        ]
+      ],
+      "height": 1,
+      "kind": "phase25-seven-grid",
+      "level_components": [
+        3
+      ],
+      "polynomial_l1": 7,
+      "polynomial_support": 7,
+      "profile_digest_sha256": "668b90256610f48ad473f428aab7d280fe8b6d67667b827679dde94edeb09713",
+      "q": 77,
+      "valid_positive_exponents": true
+    }
+  ]
+}

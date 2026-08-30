@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 27
+# Collatz research synthesis through Phase 28
 
 **Audit date:** 2026-08-30
 
 **Audited base:** `e0e2973b8762c8a8ce646661ed0d498dbe488d18`
 
-**Latest accepted phase:** Phase 27
+**Latest accepted phase:** Phase 28
 
 **Problem status:** `OPEN`
 
@@ -750,6 +750,26 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md) and the
   [`Phase 27 audit`](../research/audits/asymptotic-cycle-area/REPORT.md).
 
+### Phase 28 — transport dispersion
+
+- **Purpose:** refine reduced-profile area into exact zero-token transport and
+  level components, optimize the resulting height/transport constraint, and
+  audit a multilevel polynomial bridge toward resultants.
+- **Accepted internally:** P166/P167 prove exact balanced transport, factor
+  complexity, coarea identities, and descent density; P168/P169 derive the
+  sharp slope-dependent area constants; P170 identifies the unique
+  near-extremal scales; P171 gives the corrected endpoint decomposition and
+  support bound.
+- **External boundary:** only P169's critical specialization retains EXT17.
+  The noncritical `3/2` constant is internal relative to earlier cycle inputs.
+- **Finite evidence:** E40 rebuilds 2,214 cyclic classes, 3,101 minimum
+  rotations, 179,606 interval checks, 45,369 factor checks, five exact
+  synthetic profiles, and every mandatory family independently.
+- **Refutation/open:** NG37 refutes universal finite strict improvement and
+  NG38 refutes an endpoint-free `l1` bound. H172 and H133 remain open. See
+  [`PHASE28_RUN_RESULTS.md`](../PHASE28_RUN_RESULTS.md) and the
+  [`Phase 28 audit`](../research/audits/transport-dispersion/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -757,9 +777,9 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P165 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P171 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
-  NG17–NG36.
+  NG17–NG38.
 
 None is a full convergence theorem.
 
@@ -903,10 +923,10 @@ Neither target covers a repeated periodic orbit.
 **Target:** exclude every nontrivial positive cycle, independently of the
 nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
-Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, and Phase 27
-P162--P165. H133 now isolates tall and diffuse profiles after the global
-necessary bounds `A_*=Omega(q^(2/3))` and `s_*=Omega(sqrt(q))`, across all gcd
-classes. **Acceptance:** a
+Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, Phase 27
+P162--P165, and Phase 28 P166--P171. H133 now isolates near-extremal, tall,
+and diffuse profiles after sharp transport/level dispersion across all gcd
+classes; H172 records the new resonance/resultant bridge. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
@@ -1012,8 +1032,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase27.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase27_verifier.json
+.venv/bin/python verifier/verify_phase28.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase28_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

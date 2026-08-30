@@ -1,5 +1,5 @@
 {
-  "claim_count": 218,
+  "claim_count": 228,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2502,22 +2502,23 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Eliminate every remaining primitive positive nontrivial cycle, now known along any unbounded sequence to have `A_*=Omega(q^(2/3))` and support `s_*=Omega(sqrt(q))`, including both tall and diffuse reduced profiles and every gcd class.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 28's sharp transport/level area dispersion, including near-extremal, tall, and diffuse profiles, every gcd class, and both rotation conventions.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P165, E28, E34--E39, EXT05, EXT17, NG32--NG36; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160.",
+      "dependencies": "P133--P171, E28, E34--E40, EXT05, EXT17, NG32--NG38, H172; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160.",
       "dependency_ids": [
         "E28",
         "EXT05",
         "EXT15",
         "EXT17",
+        "H172",
         "P160",
         "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-30 (Phase 27 audit)",
-      "notes": "P164/P165 force asymptotic dispersion but do not contradict arbitrary-area cycles; NG36 forbids silently aligning least-value and discrepancy-minimum rotations using rational-shadow algebra alone.",
+      "last_audited": "2026-08-30 (Phase 28 audit)",
+      "notes": "P166--P171 sharpen necessary dispersion but do not contradict arbitrary-area cycles; NG36--NG38 preserve rotation and endpoint/strictness traps.",
       "status": "OPEN"
     },
     {
@@ -2631,22 +2632,19 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or Phase 27's tall and diffuse reduced-slope profiles into an all-area H133 obstruction.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or Phase 28's transport/level profiles into an all-area H133 obstruction.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P165 as scoped; P97/P132 for H89; P156/P157/P165 for arbitrary-gcd cycles; NG32--NG36 and concentrated/diffuse falsifiers.",
+      "dependencies": "P141--P171 as scoped; P97/P132 for H89; P156--P171 for arbitrary-gcd cycles; NG32--NG38 and the Phase 28 synthetic falsifiers.",
       "dependency_ids": [
         "H89",
         "P132",
-        "P156",
-        "P157",
-        "P165",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md).",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-30 (Phase 27 audit)",
-      "notes": "Area and support must grow, but neither is contradictory; any rotation-dependent bridge must survive NG36.",
+      "last_audited": "2026-08-30 (Phase 28 audit)",
+      "notes": "Area, support, and transport must grow, but none is contradictory; any polynomial bridge must retain the endpoint term and both rotations.",
       "status": "OPEN"
     },
     {
@@ -3082,9 +3080,153 @@
       "last_audited": "2026-08-30",
       "notes": "Smallest exact obstruction `e=(1,3)`: `5/7 -> 11/7 -> 5/7`; least-value offset 0, discrepancy-minimum offset 1. It is not integral, so positive-integer alignment remains open.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "A legal reduced profile has an exact balanced transport script with `J` zero insertions and `J` zero deletions relative to its mechanical baseline; consequently `p_cyc(n)<=(2J+1)n+1`, with the corresponding positive-cycle state-separation bound.",
+      "collatz_implication": "Replaces support-cardinality edits by exact zero-token transport across all gcd classes.",
+      "dependencies": "P125, P133, P156, P157; discrepancy-minimum rotation; positive primitive cycle only for ordinary-state separation.",
+      "dependency_ids": [
+        "P125",
+        "P133",
+        "P156",
+        "P157"
+      ],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 2; `artifacts/phase28_theory.json`; independent verifier.",
+      "first_introduced": "Phase 28",
+      "id": "P166",
+      "last_audited": "2026-08-30",
+      "notes": "It is a necessary complexity bound, not a source-integrality or cycle exclusion theorem.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For level sets `I_k={j:a_j>=k}` with cyclic component counts `U_k`, `J=sum U_k`, `A=sum |I_k|`, and `A-J>=sum_(r<h) floor(r/delta)`, where `delta=(L-q)/q`.",
+      "collatz_implication": "Adds descent-density cost to the all-gcd cycle profile.",
+      "dependencies": "P156 reduced-profile recurrence; `1<L/q<=2`; cyclic level decomposition.",
+      "dependency_ids": [
+        "P156"
+      ],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 3; exact property tests and independent verifier.",
+      "first_introduced": "Phase 28",
+      "id": "P167",
+      "last_audited": "2026-08-30",
+      "notes": "The leading asymptotic improvement need not be a strict finite improvement; NG37 is the smallest equality obstruction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a hypothetical primitive-positive cycle sequence with `q->infinity`, limiting slope `L/q->ell` in `(1,2]`, and an inverse-polynomial multiplier gap, `liminf A/q^(2/3)>=3ell^(2/3)/(2^(5/3)(ell-1)^(1/3))`.",
+      "collatz_implication": "Sharpens P162 by jointly optimizing transport and height.",
+      "dependencies": "P166/P167; stated polynomial multiplier gap; positive primitive cycles; fixed limiting slope.",
+      "dependency_ids": [
+        "P166",
+        "P167"
+      ],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 4; `artifacts/phase28_scalar_certificates.json`.",
+      "first_introduced": "Phase 28",
+      "id": "P168",
+      "last_audited": "2026-08-30",
+      "notes": "It remains a lower-growth necessity and does not exclude arbitrary-area cycles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "P168 gives the internal noncritical constant at least `3/2`; on the critical branch, using EXT17, it gives `1.535941<C_crit<1.535942`.",
+      "collatz_implication": "Strengthens the asymptotic area constant in both positive-cycle branches.",
+      "dependencies": "P163/P164/P168; EXT17 only for the critical branch; exact logarithm enclosures.",
+      "dependency_ids": [
+        "EXT17",
+        "P163",
+        "P164",
+        "P168"
+      ],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 5; `artifacts/phase28_scalar_certificates.json`; independent 88-term verifier enclosure.",
+      "first_introduced": "Phase 28",
+      "id": "P169",
+      "last_audited": "2026-08-30",
+      "notes": "The critical dependency remains external and neither constant is contradictory.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Equality at the P168 frontier forces the unique normalized `J` and `h` scales, vanishing normalized P167 descent slack, and asymptotic saturation of P166 factor/state separation.",
+      "collatz_implication": "Localizes a future H172 obstruction to a rigid near-extremal regime.",
+      "dependencies": "P166--P168; convergence to the sharp frontier; fixed slope `ell`.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 5; exact scalar artifact.",
+      "first_introduced": "Phase 28",
+      "id": "P170",
+      "last_audited": "2026-08-30",
+      "notes": "It does not prove that the required saturation is impossible.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The reduced polynomial `Q_a` is an exact sum of dyadic level-interval endpoint binomials, has support at most `2J+1`, and satisfies `||Q_a||_1<=1+2sum 2^(k-1)U_k+(2^a_(q-1)-1)`.",
+      "collatz_implication": "Supplies a sparse multilevel arithmetic object for H172.",
+      "dependencies": "P137/P156/P167; reduced relation `X^q=2`; exact endpoint accounting.",
+      "dependency_ids": [
+        "P137",
+        "P156",
+        "P167"
+      ],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 6; `artifacts/phase28_regressions.json`; independent coefficient reconstruction.",
+      "first_introduced": "Phase 28",
+      "id": "P171",
+      "last_audited": "2026-08-30",
+      "notes": "The endpoint correction is essential; the support bound alone is not a nonvanishing or resultant theorem.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks all 2,214 positive-D cyclic exponent classes through `q<=8`, 3,101 minimum rotations, 179,606 density intervals, 45,369 factor widths, 3,101 transport/polynomial rows, five synthetic profiles, and seven mandatory families.",
+      "collatz_implication": "Regresses P166--P171, NG37/NG38, and the all-gcd cycle frontier.",
+      "dependencies": "Declared finite ranges; exact integer/rational arithmetic; independent enumeration, factor, level, polynomial, profile, and logarithm methods.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE28_RUN_RESULTS.md`](../PHASE28_RUN_RESULTS.md); Phase 28 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 28",
+      "id": "E40",
+      "last_audited": "2026-08-30",
+      "notes": "Bounded agreement and legal synthetic profiles do not prove an asymptotic exclusion. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "P167's descent-density bound is strictly stronger than the triangular bound for every finite nonzero profile when `delta<1`.",
+      "collatz_implication": "Prevents upgrading a leading asymptotic improvement to pointwise finite strictness.",
+      "dependencies": "Proposed Phase 28 universal strictness statement.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 7; `artifacts/phase28_regressions.json`.",
+      "first_introduced": "Phase 28",
+      "id": "NG37",
+      "last_audited": "2026-08-30",
+      "notes": "Smallest exact control `q=3,L=5,e=(3,1,1)`, profile `(0,1,0,0)`: both bounds equal one.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "After reducing `X^q=2`, the multilevel decomposition always has `l1` norm at most `1+2sum 2^(k-1)U_k` without an endpoint correction.",
+      "collatz_implication": "Requires every weighted multilevel argument to retain the reduced endpoint term.",
+      "dependencies": "Proposed Phase 28 endpoint-free bound.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 7; `artifacts/phase28_regressions.json`.",
+      "first_introduced": "Phase 28",
+      "id": "NG38",
+      "last_audited": "2026-08-30",
+      "notes": "Smallest exact obstruction `q=2,L=4,e=(3,1)`, profile `(0,1,0)`, `Q_a=(3,-1)`: actual norm 4 exceeds 3.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Turn P170's near-extremal transport rigidity and P171's corrected sparse multilevel polynomial into a nonzero resonance/resultant or canonical-residue obstruction for every gcd class and both relevant rotations.",
+      "collatz_implication": "Could close the near-extremal residual regime within H133's positive-cycle branch.",
+      "dependencies": "P133, P137, P140, P156--P171, EXT17 on the critical branch; explicit survival of NG34--NG38.",
+      "dependency_ids": [
+        "EXT17",
+        "P133",
+        "P137",
+        "P140"
+      ],
+      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 9.",
+      "first_introduced": "Phase 28",
+      "id": "H172",
+      "last_audited": "2026-08-30",
+      "notes": "No such nonvanishing/anti-resonance theorem is currently proved; closing it would not address nonperiodic branches.",
+      "status": "OPEN"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "9ceb2b305380023d1c7e508040217f306c164e0b92c9b4b310db56bdd9201dc1"
+  "source_sha256": "c365b05829702e3fb02002cd3ac51bfaab5d9636b89b620242b5f9c3c662c2b8"
 }

@@ -2,19 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 27's asymptotic cycle-area/support audit is the
-latest research layer.
+proof of the conjecture. Phase 28's transport-dispersion audit is the latest
+research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–27 evidence boundaries, and current obligations.
+   branch map, Phase 1–28 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md), then its inputs:
+6. [`../PHASE28_RUN_RESULTS.md`](../PHASE28_RUN_RESULTS.md), then its inputs:
+   [`../PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md),
    [`../PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md),
    [`../PHASE25_RUN_RESULTS.md`](../PHASE25_RUN_RESULTS.md),
    [`../PHASE24_RUN_RESULTS.md`](../PHASE24_RUN_RESULTS.md),
@@ -171,6 +172,17 @@ flowchart TD
     P164 --> P165["P165 support dispersion"]
     P165 --> H133
     NG36["NG36 rotation mismatch"] --> H133
+    P165 --> P166["P166 exact transport"]
+    P166 --> P168["P168 sharp area constant"]
+    P167["P167 level descent"] --> P168
+    P168 --> P169["P169 branch constants"]
+    P168 --> P170["P170 rigidity"]
+    P167 --> P171["P171 multilevel polynomial"]
+    P170 --> H172["H172 transport resonance"]
+    P171 --> H172
+    H172 --> H133
+    NG37["NG37 finite equality"] --> H172
+    NG38["NG38 endpoint correction"] --> H172
     P127 --> H112
     H112 --> H72
     NG28["NG28 negative carry"] --> H89
@@ -187,7 +199,7 @@ external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
 P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
-P129--P138, P140, P141, P144, P145, P147--P165 are
+P129--P138, P140, P141, P144, P145, P147--P171 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
 P110, P119, P121, P123, P124, P128, P142, P143, and P146 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
@@ -196,8 +208,9 @@ search language, NG32 is the finite critical mechanical boundary failure, and
 NG33 is the generic seven-point area-three exponent failure; NG34 is the exact
 failure of a universal paired q/L threshold; NG35 is the exact critical
 area-six scalar-coefficient failure; NG36 is the positive-rational rotation
-alignment failure. H147 is closed by P158. H54, H70, H72,
-H89, H104, H105, H112, H133, H141, C04, C05, every uneliminated P69 branch,
+alignment failure; NG37/NG38 are the finite-strictness and endpoint-correction
+failures. H147 is closed by P158. H54, H70, H72,
+H89, H104, H105, H112, H133, H141, H172, C04, C05, every uneliminated P69 branch,
 and the Collatz conjecture remain open.
 
 ## Active proof obligations
@@ -211,8 +224,9 @@ and the Collatz conjecture remain open.
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
-| H133 | `OPEN` | Exclude both tall and diffuse profiles after the Phase 27 `q^(2/3)` area and `sqrt(q)` support necessities | Test transition/source/energy/resultant invariants on both negative cycles, E39, NG34--NG36, and both synthetic regimes first |
-| H141 | `OPEN` | Turn defect geometry into an ordinary-source/carry/resultant obstruction for H89 or surviving Phase 27 cycle profiles | Test one exact weighted inequality on NG32--NG36, concentrated and diffuse defects, E33 survivors, both negative cycles, and E37--E39 before extending q |
+| H133 | `OPEN` | Exclude near-extremal, tall, and diffuse profiles after Phase 28's sharp transport/level dispersion | Test transition/source/energy/resultant invariants on both negative cycles, E40, NG34--NG38, and all five synthetic profiles first |
+| H141 | `OPEN` | Turn defect geometry into an ordinary-source/carry/resultant obstruction for H89 or surviving Phase 28 cycle profiles | Test one exact weighted inequality on NG32--NG38, concentrated and diffuse defects, E33 survivors, both negative cycles, and E37--E40 before extending q |
+| H172 | `OPEN` | Convert P170 rigidity and P171's corrected sparse polynomial into a nonzero all-gcd obstruction | Retain the endpoint term and both rotations; falsify first on NG34--NG38 and all Phase 28 synthetic profiles |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -245,7 +259,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 27 provides the
+artifacts and preserve the recorded manifest hash. Phase 28 provides the
 reference accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -261,11 +275,11 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 - For H141, optimize a stated weighted correction/source inequality against
   concentrated defects, NG32, and P152/P153's nonempty q0 support interval
   before any larger critical/profile scan.
-- For H133, begin with P164/P165's tall/diffuse split. Rebuild P156/P157 and
-  NG34--NG36, then test transition, correction-loss, ordinary-source,
-  radial-energy, or resultant inequalities in both regimes. Do not return to
-  fixed-area or support-only enumeration; H147 is closed and dispersion alone
-  is already known.
+- For H133/H172, begin with P166--P171's transport/level split. Rebuild
+  NG34--NG38 and the five Phase 28 synthetic profiles, then test transition,
+  correction-loss, ordinary-source, radial-energy, or resultant inequalities.
+  Keep P171's endpoint term and both rotations. Do not return to fixed-area or
+  support-only enumeration; dispersion alone is already known.
 - Attack H72 through positive ordinary-integrality, effective reduced
   shadow-height/gcd, P79's valuation-conditioned successor congruences, or a
   P86 cross-Q surplus state retaining the carries lost in NG24.

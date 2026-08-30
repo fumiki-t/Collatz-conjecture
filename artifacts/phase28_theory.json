@@ -1,0 +1,87 @@
+{
+  "claims": {
+    "E40": {
+      "statement": "The q<=8 corpus, five synthetic profiles, scalar boxes, mandatory families, and strictness obstruction are independently reproducible.",
+      "status": "VERIFIED_FINITE"
+    },
+    "H133": {
+      "statement": "Transport dispersion and multilevel sparsity do not exclude arbitrary-area positive cycles.",
+      "status": "OPEN"
+    },
+    "H172": {
+      "statement": "Turn near-extremal transport rigidity into a nonzero multilevel resonance/resultant obstruction for both rotations and every gcd class.",
+      "status": "OPEN"
+    },
+    "NG37": {
+      "statement": "The descent-density lower bound is strictly stronger than the triangular bound for every nonzero finite profile with delta<1.",
+      "status": "REFUTED"
+    },
+    "NG38": {
+      "statement": "After reducing X^q=2, the multilevel decomposition always has l1 norm at most 1+2 sum 2^(k-1)U_k without an endpoint correction.",
+      "status": "REFUTED"
+    },
+    "P166": {
+      "statement": "The reduced profile gives an exact balanced script of J zero insertions and J zero deletions, with p_cyc(n)<=(2J+1)n+1 and the transport state-separation bound.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P167": {
+      "statement": "Level components satisfy J=sum U_k, A=sum |I_k|, and A-J>=sum_(r<h) floor(r/delta).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P168": {
+      "statement": "A fixed polynomial multiplier gap and limiting slope ell force liminf A/q^(2/3)>=3 ell^(2/3)/(2^(5/3)(ell-1)^(1/3)).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P169": {
+      "statement": "The noncritical branch has internal constant at least 3/2; the critical branch has the sharper C_crit using external EXT17.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P170": {
+      "statement": "Equality at the P168 frontier forces the unique height/transport scales, vanishing normalized descent slack, and asymptotic saturation of transport factor separation.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P171": {
+      "statement": "Q_a is an exact sum of dyadic level-interval endpoint binomials, with support at most 2J+1 and corrected l1 bound 1+2 sum 2^(k-1)U_k+(2^a_(q-1)-1).",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "dependencies": {
+    "P166": [
+      "P125",
+      "P133",
+      "P156",
+      "P157"
+    ],
+    "P167": [
+      "P156"
+    ],
+    "P168": [
+      "P166",
+      "P167"
+    ],
+    "P169": [
+      "P163",
+      "P164",
+      "P168",
+      "EXT17"
+    ],
+    "P170": [
+      "P166",
+      "P167",
+      "P168"
+    ],
+    "P171": [
+      "P137",
+      "P156",
+      "P167"
+    ]
+  },
+  "external_boundary": "Only the critical specialization in P169 depends on EXT17; the noncritical 3/2 bound is internal relative to P133/P134/P157.",
+  "finite_strictness_boundary": "P167 improves the leading asymptotic height cost when delta<1, but NG37 shows finite equality with the triangular bound can occur.",
+  "format": "collatz-phase28-transport-theory-v1",
+  "polynomial_endpoint_boundary": "NG38 requires the exact endpoint correction 2^a_(q-1)-1 in P171's l1 bound; support <=2J+1 is unchanged.",
+  "proves_collatz": false,
+  "sharp_constant": "C(ell)=3*ell^(2/3)/(2^(5/3)*(ell-1)^(1/3))",
+  "transport_definition": "J=sum_j (a_(j+1)-a_j)_+=sum_j (a_j-a_(j+1))_+; every negative increment is -1",
+  "what_this_result_does_not_prove": "No near-extremal resonance exclusion, arbitrary-area cycle exclusion, nonperiodic branch exclusion, or Collatz proof follows."
+}

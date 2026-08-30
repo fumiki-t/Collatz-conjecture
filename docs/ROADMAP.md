@@ -110,18 +110,18 @@ including arbitrary-area coprime profiles and general noncoprime slopes.
 finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
-**Missing theorem.** P164 now forces `A_*=Omega(q^(2/3))` and P165 forces
-`s_*=Omega(sqrt(q))` along every hypothetical unbounded positive-cycle
-sequence, across all gcd classes. These bounds still admit a tall regime with
-large height and a diffuse regime with many low defects. No theorem turns
-forced descents, support locations, correction loss, or resultants into a
-contradiction in both regimes. NG36 also forbids silently identifying P133's
+**Missing theorem.** P166/P167 now resolve the profile into exact transport
+and level components; P168/P169 sharpen the area constants, and P170 fixes the
+only near-equality scales. P171 supplies a sparse multilevel polynomial with
+an essential endpoint correction. These bounds still admit near-extremal,
+tall, and diffuse regimes. No theorem turns this structure into a nonzero
+resultant, canonical-residue obstruction, or contradiction. NG36 also forbids silently identifying P133's
 least-value rotation with P156's discrepancy-minimum rotation. P140 still
 supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
-cycle and its powers, the Phase 27 all-gcd corpus and tall/diffuse profiles,
-NG34--NG36, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
+cycle and its powers, the Phase 28 all-gcd corpus and five synthetic profiles,
+NG34--NG38, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
 positive.
@@ -130,7 +130,7 @@ positive.
 `C_min<300000D`, or an equivalent contradiction for both tall and diffuse
 profiles, every gcd class, and both rotation conventions, with an independently
 verified finite remainder. Extending `q`, enumerating another fixed area, or
-reproving asymptotic area/support growth without a new invariant is not
+reproving asymptotic area/transport growth without a new invariant is not
 success.
 
 ## P1 — Renewal-ladder dropping-safe barrier

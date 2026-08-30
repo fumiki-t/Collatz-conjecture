@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 27,
+    "latest_phase": 28,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 27,
-    "report": "PHASE27_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase27_verifier.json",
+    "phase": 28,
+    "report": "PHASE28_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase28_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase27-asymptotic-cycle-area.json"
+    "experiment_manifest": "research/experiments/phase28-transport-dispersion.json"
   },
   "active_obligations": [
     {
@@ -93,16 +93,24 @@
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H133.md",
-      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36"],
-      "success_scope": "Eliminate every primitive positive nontrivial cycle beyond the Phase 27 dispersion barriers, covering both tall and diffuse reduced profiles and all gcd classes without assuming rotation alignment."
+      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "H172"],
+      "success_scope": "Eliminate every primitive positive nontrivial cycle beyond the Phase 28 transport/level dispersion barriers, covering near-extremal, tall, and diffuse reduced profiles, all gcd classes, and both rotations."
     },
     {
       "id": "H141",
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H141.md",
-      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P152", "P153", "P154", "P155", "P156", "P157", "P158", "P159", "P161", "P162", "P163", "P164", "P165", "E33", "E34", "E35", "E36", "E37", "E38", "E39", "NG32", "NG33", "NG34", "NG35", "NG36"],
-      "success_scope": "Turn critical-prefix defect data into H89 rejection or Phase 27's tall and diffuse cycle profiles into an all-area H133 obstruction while explicitly transporting between the two rotation conventions."
+      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P152", "P153", "P154", "P155", "P156", "P157", "P158", "P159", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "E33", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38"],
+      "success_scope": "Turn critical-prefix defect data into H89 rejection or Phase 28 transport/level geometry into an all-area H133 obstruction while explicitly transporting between the two rotation conventions."
+    },
+    {
+      "id": "H172",
+      "status": "OPEN",
+      "priority": "P1",
+      "context": "docs/context/H172.md",
+      "depends_on": ["P133", "P137", "P140", "P156", "P157", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "EXT17", "E40", "NG34", "NG35", "NG36", "NG37", "NG38"],
+      "success_scope": "Convert near-extremal transport rigidity and the corrected multilevel polynomial into a nonzero all-gcd resonance/resultant or canonical-residue obstruction without aligning rotations silently."
     },
     {
       "id": "C04",
@@ -283,7 +291,17 @@
     "P164",
     "P165",
     "E39",
-    "NG36"
+    "NG36",
+    "P166",
+    "P167",
+    "P168",
+    "P169",
+    "P170",
+    "P171",
+    "E40",
+    "NG37",
+    "NG38",
+    "H172"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

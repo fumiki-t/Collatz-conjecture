@@ -22,18 +22,19 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 27 is the latest accepted research layer. It proves that every
-hypothetical unbounded sequence of primitive positive nontrivial cycles must
-have reduced area `Omega(q^(2/3))` and defect support `Omega(sqrt(q))`. The
-noncritical multiplier gap is internal; the critical gap uses Matveev's
-external logarithmic-form theorem. NG36 also shows why least-value and
-discrepancy-minimum rotations cannot be silently identified. These are
-necessary dispersion conditions, not a cycle exclusion. H133 and the broader
+Phase 28 is the latest accepted research layer. It sharpens the positive-cycle
+area necessity by resolving the reduced profile into exact zero-token
+transport and level components. The sharp constants are at least `3/2` on the
+noncritical branch and lie in `(1.535941,1.535942)` on the critical branch;
+the latter retains Matveev's external logarithmic-form input. NG37 and NG38
+preserve the smallest failures of finite strictness and endpoint-free
+multilevel bounds. These are necessary dispersion conditions, not a cycle
+exclusion. H172, H133, and the broader
 H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
 remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–27, separates internal and external
+map and conventions, summarizes Phases 1–28, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -74,12 +75,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase27.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase27_verifier.json
+.venv/bin/python verifier/verify_phase28.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase28_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 27 result](PHASE27_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 28 result](PHASE28_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

@@ -211,6 +211,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   input. NG36 records that least-value and discrepancy-minimum rotations do
   not universally align for positive rational shadows. Both tall and diffuse
   profiles survive, so H133 remains open.
+- Phase 28 sharpens that split with exact transport and level components.
+  P168/P169 give the sharp slope constants, P170 identifies the only
+  near-extremal scales, and P171 gives a corrected sparse multilevel
+  polynomial. NG37/NG38 warn against finite strictness and dropping the
+  endpoint term. H172 and H133 remain open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

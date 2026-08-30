@@ -327,6 +327,13 @@ positive-rational rotation mismatch. Keep P133's least-value and P156's
 discrepancy-minimum rotations distinct unless a positive-integral transport
 theorem is proved. Area or support growth alone is not a cycle exclusion.
 
+Phase 28 resolves the reduced profile into exact zero-token transport and
+level components, sharpens the area constant, and isolates a near-extremal
+rigidity target H172. Continue cycle work from P166--P171, preserve NG37's
+finite-equality and NG38's endpoint-correction obstructions, and test every
+proposal on the five Phase 28 synthetic profiles. Transport, height, area, or
+factor-complexity growth alone is not a cycle exclusion.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

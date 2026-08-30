@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "phase28-transport-dispersion",
+  "status": "ACCEPTED",
+  "claim_ids": ["P166", "P167", "P168", "P169", "P170", "P171", "E40", "NG37", "NG38", "H172", "H133"],
+  "objective": "Audit zero-token transport and level-set dispersion, derive the sharp polynomial-gap area constant, repair the multilevel endpoint bound, and preserve the smallest exact obstructions without promoting necessary cycle conditions to an exclusion.",
+  "exact_scope": {
+    "quantifiers": [
+      "all legal cyclic reduced profiles for P166, P167, and P171",
+      "all hypothetical primitive positive cycle sequences satisfying the stated polynomial multiplier gap and limiting slope for P168-P170",
+      "all positive-D cyclic exponent classes through q<=8 for E40",
+      "the declared five exact synthetic profiles and mandatory adversarial families"
+    ],
+    "bounds": {
+      "cycle_corpus_q_maximum": 8,
+      "synthetic_profile_count": 5,
+      "mandatory_family_count": 7,
+      "generator_log_terms": 72,
+      "verifier_log_terms": 88
+    },
+    "completeness": "P166-P171 are exact theorem-level necessary conditions in their stated domains, with EXT17 retained only in P169's critical specialization. E40 is bounded. NG37 and NG38 refute two proposal overstatements. H172 and H133 remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, Fraction arithmetic, rational atanh-series logarithm enclosures, recursive compositions, direct cyclic factor sets, level-component counts, polynomial coefficient reconstruction, and SHA-256 row digests",
+    "floating_point_role": "none in generation, verification, theorem thresholds, or acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase28_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase28.py --artifact-dir artifacts --output artifacts/phase28_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase28_properties.py tests/test_phase28_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "the complete q<=8 positive-D cyclic corpus by recursive reverse compositions",
+      "reduced profiles by independently rotated direct discrepancy recurrence",
+      "zero-token edits by direct boundary subtraction and cyclic factors by integer encodings",
+      "level components by transition counts and polynomials by direct endpoint coefficients",
+      "five synthetic profiles from separately coded recurrences",
+      "critical scalar boxes with an 88-term enclosure independent of the generator's 72-term routine",
+      "both exact proposal obstructions and every mandatory adversarial row"
+    ],
+    "forbidden_imports": ["src.phase28_search", "phase28_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase28_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "NG34-NG36",
+    "finite-equality profile e=(3,1,1)",
+    "endpoint profile e=(3,1)",
+    "tall, plateau, isolated, near-extremal, and seven-grid legal profiles"
+  ],
+  "artifacts": [
+    "artifacts/phase28_theory.json",
+    "artifacts/phase28_transport_corpus.json",
+    "artifacts/phase28_scalar_certificates.json",
+    "artifacts/phase28_synthetic_profiles.json",
+    "artifacts/phase28_regressions.json",
+    "artifacts/phase28_obstruction_report.md",
+    "artifacts/phase28_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not drop P171's endpoint correction or promote P167 to universal finite strictness.",
+    "Do not infer cycle exclusion from area, transport, height, support, or factor growth alone.",
+    "Do not align least-value and discrepancy-minimum rotations without a positive-integral theorem.",
+    "Do not internalize EXT17.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The sharp constant and rigidity conditions are necessary asymptotic constraints, not contradictions.",
+    "The finite corpus and synthetic profiles audit implementation and falsifiers, not asymptotic completeness.",
+    "H172, H133, every nonperiodic branch, and Collatz remain open; proves_collatz remains false."
+  ],
+  "recorded_result": {
+    "commit": "PENDING",
+    "generator": "valid=true with 2214 cyclic classes, 3101 minimum rotations, five synthetic profiles, and both exact proposal obstructions",
+    "verifier": "valid=true with generator_imported=false, recursive reverse compositions, direct boundary subtraction, transition-count levels, integer factor encodings, and an 88-term logarithm box",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

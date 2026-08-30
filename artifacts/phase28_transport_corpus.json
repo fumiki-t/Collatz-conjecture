@@ -1,0 +1,36 @@
+{
+  "counts": {
+    "cyclic_classes": 2214,
+    "density_interval_checks": 179606,
+    "factor_width_checks": 45369,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "polynomial_checks": 3101,
+    "primitive_classes": 2186,
+    "transport_checks": 3101
+  },
+  "format": "collatz-phase28-transport-corpus-v1",
+  "maximum_area_over_transport": [
+    "7",
+    "1"
+  ],
+  "maximum_area_over_transport_sample": [
+    [
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    7,
+    1,
+    1
+  ],
+  "maximum_q": 8,
+  "proves_collatz": false,
+  "row_digest_sha256": "54a62508f91589f69dda1aa44c5bbdf97dff71e2e8edb0241b93caa957b8feb7",
+  "scope": "Complete positive-D cyclic exponent corpus through q<=8; valid rational profiles are structural controls, not integer cycles."
+}

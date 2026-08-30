@@ -1,0 +1,45 @@
+{
+  "claims": {
+    "E40": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "NG37": "REFUTED",
+    "NG38": "REFUTED",
+    "P166": "VERIFIED_THEOREM",
+    "P167": "VERIFIED_THEOREM",
+    "P168": "VERIFIED_THEOREM",
+    "P169": "VERIFIED_THEOREM",
+    "P170": "VERIFIED_THEOREM",
+    "P171": "VERIFIED_THEOREM"
+  },
+  "corpus_counts": {
+    "cyclic_classes": 2214,
+    "density_interval_checks": 179606,
+    "factor_width_checks": 45369,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "polynomial_checks": 3101,
+    "primitive_classes": 2186,
+    "transport_checks": 3101
+  },
+  "format": "collatz-phase28-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "recursive reverse compositions, direct boundary subtraction, integer factor encodings, transition-count level sets, and an 88-term log box",
+  "mandatory_family_count": 7,
+  "proves_collatz": false,
+  "scalar_counts": {
+    "critical_rows": 4,
+    "slope_rows": 5
+  },
+  "synthetic_profile_count": 5,
+  "valid": true,
+  "verified_input_sha256": {
+    "phase28_obstruction_report.md": "636ca22d565b5c50af63dcd1aac62022026740d2d754603760d72f20256d53ed",
+    "phase28_regressions.json": "dc3fee90a0d67da6dbedc5804bd9483a021b3bf8e0a89660d90803c153598c09",
+    "phase28_scalar_certificates.json": "f9133c53a821f13db55ef75f3dc06e2e69ff76c55536b4f2339320d9cfc6a72b",
+    "phase28_synthetic_profiles.json": "eb30266d145f5960db65e7867b97821df1f80207a64a3d3df4b49e3d60952fb6",
+    "phase28_theory.json": "9744fd2597c65db45aa93d18c3e2370415edbfbeb0d1ac63b000fcb45cf3c6fd",
+    "phase28_transport_corpus.json": "8b71ea22a1af702940b9a40325bf46bb645731b46b01baed7c415910d09eddc8"
+  },
+  "what_this_result_does_not_prove": "This does not prove H172, H133, any nonperiodic exclusion, or Collatz."
+}

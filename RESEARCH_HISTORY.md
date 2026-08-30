@@ -1624,3 +1624,40 @@ reframed around excluding both asymptotic structural regimes, not closed.
 Phase 27 does not exclude arbitrary-area cycles, tall or diffuse surviving
 profiles, either nonperiodic counterexample branch, or the Collatz conjecture.
 `proves_collatz=false`.
+
+## 2026-08-30 — Phase 28: transport dispersion
+
+**Branch:** `feat/phase28-transport-dispersion`
+
+**Acceptance record:** [`PHASE28_RUN_RESULTS.md`](PHASE28_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/transport-dispersion/REPORT.md`](research/audits/transport-dispersion/REPORT.md)
+
+Phase 28 treated the supplied transport-dispersion note as an untrusted
+proposal. P166 replaces support-only editing by an exact balanced script of
+`J` baseline-zero insertions and deletions. P167 decomposes the profile into
+cyclic level components and adds a descent-density lower bound.
+
+P168 optimizes transport against height to obtain the sharp area constant
+`C(ell)=3ell^(2/3)/(2^(5/3)(ell-1)^(1/3))`. P169 gives the internal
+noncritical constant `3/2` and, retaining EXT17, the critical enclosure
+`1.535941<C_crit<1.535942`. P170 identifies the unique normalized scales and
+saturation properties required at equality.
+
+The proposed multilevel `l1` bound required repair. P171 retains the exact
+level-endpoint decomposition and support at most `2J+1`, but adds the required
+reduced-endpoint term. NG38 stores the first obstruction
+`q=2,L=4,e=(3,1)`, where `Q_a=(3,-1)` has norm four rather than three. NG37
+also stores the first failure of universal finite strict improvement:
+`q=3,L=5,e=(3,1,1)` makes both lower bounds equal one.
+
+E40 independently reconstructs 2,214 cyclic classes, 3,101 minimum rotations,
+179,606 density intervals, 45,369 factor widths, 3,101 transport/polynomial
+rows, five exact synthetic profiles, and all mandatory families. H172 records
+the remaining near-extremal resonance/resultant bridge; H133 remains open.
+
+### What this result does not prove
+
+Phase 28 does not exclude near-extremal, tall, or diffuse positive cycles,
+does not address either nonperiodic counterexample branch, and does not prove
+or disprove the Collatz conjecture. `proves_collatz=false`.

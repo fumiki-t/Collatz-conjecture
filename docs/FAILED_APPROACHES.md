@@ -1138,14 +1138,55 @@ narrower positive-integral alignment result.
 [`../research/audits/asymptotic-cycle-area/REPORT.md`](../research/audits/asymptotic-cycle-area/REPORT.md),
 Section 7, and `artifacts/phase27_cycle_corpus.json`.
 
+## NG37 — universal finite strict descent improvement
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** Whenever `delta<1` and a finite reduced profile is
+nonzero, P167's descent-density lower bound is strictly larger than the older
+triangular-height bound.
+
+**Why it looked plausible.** The new descent term has a larger leading
+coefficient and is strictly stronger on many tall profiles.
+
+**Smallest exact obstruction.** For `q=3,L=5,e=(3,1,1)`, the profile is
+`(0,1,0,0)` with `A=J=h=1` and `delta=2/3`. Both lower bounds equal one.
+
+**Failure scope.** Pointwise finite strictness only. The asymptotic leading
+coefficient and P167's exact inequality survive.
+
+**Evidence.** [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md),
+Section 7, and `artifacts/phase28_regressions.json`.
+
+## NG38 — endpoint-free multilevel l1 bound
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** After reducing `X^q=2`, the level decomposition always
+satisfies `||Q_a||_1<=1+2sum 2^(k-1)U_k` with no boundary term.
+
+**Why it looked plausible.** An ordinary interval has two endpoints, so every
+level component appears to contribute one signed pair.
+
+**Smallest exact obstruction.** For `q=2,L=4,e=(3,1)`, profile `(0,1,0)`
+gives `Q_a=(3,-1)`. Its norm is four while the proposed bound is three.
+The reduced endpoint `X^q=2` carries one extra unit.
+
+**Failure scope.** Fundamental for the endpoint-free estimate. P171's exact
+decomposition and support bound survive with correction
+`2^a_(q-1)-1`.
+
+**Evidence.** [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md),
+Section 7, and `artifacts/phase28_regressions.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
 area-three supports, the E37 seven-grid rows, the E38/E39 all-gcd profile
-corpus, the Phase 27 tall/diffuse synthetic profiles, and all exact
+corpus, the Phase 28 transport corpus and five synthetic profiles, and all exact
 counterexamples above. Passing a bounded
 regression is necessary evidence, never a proof of universality.

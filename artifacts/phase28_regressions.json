@@ -1,0 +1,311 @@
+{
+  "NG32_control": {
+    "factor_count": 4,
+    "q": 4,
+    "width": 2,
+    "word": "1101100"
+  },
+  "NG34_control": {
+    "L": 100363,
+    "direct_modular_gcd": 1,
+    "q": 63322,
+    "roots": [
+      9046,
+      18092,
+      27138
+    ]
+  },
+  "NG35_control": {
+    "left": "13348388671875",
+    "left_exceeds_right": true,
+    "right": "13194139533312"
+  },
+  "NG36_control": {
+    "exponents": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        "5",
+        "7"
+      ],
+      [
+        "11",
+        "7"
+      ]
+    ],
+    "rotation_mismatch": true
+  },
+  "endpoint_l1_obstruction": {
+    "L": 4,
+    "corrected_bound": 4,
+    "exponents": [
+      3,
+      1
+    ],
+    "interpretation": "X^q=2 makes an interval ending at q cost three endpoint units; the decomposition and support bound survive.",
+    "l1": 4,
+    "polynomial": [
+      3,
+      -1
+    ],
+    "profile": [
+      0,
+      1,
+      0
+    ],
+    "proposed_bound": 3,
+    "q": 2
+  },
+  "finite_strictness_obstruction": {
+    "J": 1,
+    "L": 5,
+    "area": 1,
+    "delta": [
+      "2",
+      "3"
+    ],
+    "exponents": [
+      3,
+      1,
+      1
+    ],
+    "height": 1,
+    "interpretation": "Refutes universal finite strict improvement, not the asymptotic leading-coefficient improvement.",
+    "new_bound": 1,
+    "q": 3,
+    "triangular_bound": 1
+  },
+  "format": "collatz-phase28-regressions-v1",
+  "mandatory_families": [
+    [
+      "A=11101",
+      "11101",
+      [
+        1,
+        1,
+        2,
+        1
+      ],
+      0,
+      0,
+      0
+    ],
+    [
+      "B=1100",
+      "1100",
+      [
+        1,
+        3
+      ],
+      1,
+      1,
+      1
+    ],
+    [
+      "(110|111)^*",
+      "110111110111110111110111110111110111110111110111",
+      [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      0,
+      0,
+      0
+    ],
+    [
+      "A^1B^1",
+      "111011100",
+      [
+        1,
+        1,
+        2,
+        1,
+        1,
+        3
+      ],
+      3,
+      1,
+      2
+    ],
+    [
+      "A^2B^3",
+      "1110111101110011001100",
+      [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3
+      ],
+      16,
+      3,
+      6
+    ],
+    [
+      "2^m-1",
+      "1111111111110",
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      0,
+      0,
+      0
+    ],
+    [
+      "8^m-5",
+      "111001111001111001111001",
+      [
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1
+      ],
+      8,
+      1,
+      4
+    ]
+  ],
+  "named_cycles": [
+    [
+      "trivial-positive",
+      1,
+      [
+        2
+      ],
+      true
+    ],
+    [
+      "negative-q2",
+      -5,
+      [
+        1,
+        2
+      ],
+      true
+    ],
+    [
+      "negative-q7",
+      -17,
+      [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4
+      ],
+      true
+    ]
+  ],
+  "proves_collatz": false,
+  "trivial_powers": [
+    [
+      2,
+      2,
+      0,
+      0,
+      false
+    ],
+    [
+      3,
+      3,
+      0,
+      0,
+      false
+    ],
+    [
+      4,
+      4,
+      0,
+      0,
+      false
+    ],
+    [
+      5,
+      5,
+      0,
+      0,
+      false
+    ],
+    [
+      6,
+      6,
+      0,
+      0,
+      false
+    ]
+  ]
+}
