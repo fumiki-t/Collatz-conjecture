@@ -1739,3 +1739,43 @@ area estimate.
 Phase 30 does not exclude arbitrary-area cycles, prove the missing
 pair-location theorem, eliminate either nonperiodic branch, or prove or
 disprove the Collatz conjecture. `proves_collatz=false`.
+
+## 2026-08-31 — Phase 31: double-hit transport
+
+**Branch:** `feat/phase31-double-hit`
+
+**Acceptance record:** [`PHASE31_RUN_RESULTS.md`](PHASE31_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/double-hit-transport/REPORT.md`](research/audits/double-hit-transport/REPORT.md)
+
+Phase 31 treated the supplied double-hit note as an untrusted proposal. P185
+proves that every nonspine singleton top cell can be removed simultaneously
+and restored by pairwise-disjoint static `10->01` swaps. The residual has
+`E<=h+Sigma` exceptional components. P186 bounds their changed contexts and
+the low-hit factor types, yielding
+`2L<=(J+E)(n+1)+4A+2(n+2)(n+3)` whenever all cyclic width-`n` factors are
+distinct.
+
+P187 combines this with P167 and state separation to improve the necessary
+area constant by another exact factor `2^(2/3)`. P188 records the internal
+noncritical interval `(3.779763,3.779764)` and the EXT17-dependent critical
+interval `(3.870329,3.870330)`. P189 preserves the equality scales and local
+exact-two incidence only outside the residual exceptional-context set.
+
+P190 proves the exact anchor-window recurrence and its conditional
+low-denominator grid consequence. NG40 prevents overpromotion: the normalized
+equality constraints admit `ell=2`, `y^3=4`, and
+`x=z=e=y^2/2`, so the extracted-anchor scale can vanish while residual
+contexts have full density. This is a countermodel to the inference, not a
+positive integer Collatz orbit.
+
+E43 independently reconstructs 2,214 cyclic classes, 3,101 minimum rotations,
+45,369 widths, 27,832 distinct-factor cases, 1,280 disjoint swaps, 673,303
+grid positions, nine synthetic profiles, exact constants, and mandatory
+families. H172 is now a precise grid-like/residual-heavy arithmetic dichotomy.
+
+### What this result does not prove
+
+Phase 31 does not prove either required resultant, exclude arbitrary-area
+cycles or either nonperiodic branch, or prove or disprove the Collatz
+conjecture. `proves_collatz=false`.

@@ -226,6 +226,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   transports are singleton. NG39 requires the span term, and literal actual
   state-height saturation was not accepted. H172 now needs a strict
   subleading pair-location resultant gap.
+- Phase 31 statically extracts nonspine singleton swaps and proves a
+  double-hit factor bound, improving the area constant by another
+  `2^(2/3)`. P190 gives an exact grid recurrence, but NG40 shows that area
+  equality need not make its global defect count small. H172 is now a
+  grid-like versus residual-heavy arithmetic dichotomy.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

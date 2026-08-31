@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 30
+# Collatz research synthesis through Phase 31
 
 **Audit date:** 2026-08-31
 
-**Audited base:** `32d8973af1eb5f043a5627de8d2c5eb3fec3a6cd`
+**Audited base:** Phase 31 acceptance commit recorded in its experiment manifest
 
-**Latest accepted phase:** Phase 30
+**Latest accepted phase:** Phase 31
 
 **Problem status:** `OPEN`
 
@@ -806,6 +806,26 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md) and the
   [`Phase 30 audit`](../research/audits/direct-transport/REPORT.md).
 
+### Phase 31 — double-hit transport
+
+- **Accepted internally:** P185 statically extracts nonspine singleton top
+  cells as disjoint swaps. P186 proves residual-context, low-hit, and
+  double-hit factor bounds. P187 improves the area constant by another exact
+  `2^(2/3)`; P188 gives the internal noncritical interval
+  `(3.779763,3.779764)` and EXT17-dependent critical interval
+  `(3.870329,3.870330)`. P189 records repaired local equality structure, and
+  P190 proves the exact anchor-window recurrence.
+- **Finite evidence:** E43 independently rebuilds 2,214 classes, 3,101
+  minimum rotations, 45,369 widths, 1,280 swaps, 673,303 grid positions,
+  nine synthetic profiles, exact constants, and mandatory controls.
+- **Refuted promotion:** NG40 shows that area equality alone does not force a
+  global near-grid because residual exceptional contexts may have positive
+  density.
+- **Open:** H172 must prove strict arithmetic contradictions in both the
+  grid-like and residual-heavy subcases. See
+  [`PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md) and the
+  [`Phase 31 audit`](../research/audits/double-hit-transport/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -813,9 +833,9 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P184 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P190 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
-  NG17–NG38.
+  NG17–NG40.
 
 None is a full convergence theorem.
 
@@ -960,9 +980,10 @@ Neither target covers a repeated periodic orbit.
 nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
 Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, Phase 27
-P162--P165, Phase 28 P166--P171, Phase 29 P173--P177, and Phase 30 P179--P184.
-H133 now isolates a strict subleading pair-location obstruction after sharper
-area growth and singleton rigidity; H172 records that bridge. **Acceptance:** a
+P162--P165, Phase 28 P166--P171, Phase 29 P173--P177, Phase 30 P179--P184,
+and Phase 31 P185--P190. H133 now isolates strict subleading arithmetic
+obstructions in both grid-like and residual-heavy regimes; H172 records that
+bridge. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).

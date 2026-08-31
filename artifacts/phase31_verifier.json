@@ -1,0 +1,51 @@
+{
+  "claims": {
+    "E43": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "NG40": "REFUTED",
+    "P185": "VERIFIED_THEOREM",
+    "P186": "VERIFIED_THEOREM",
+    "P187": "VERIFIED_THEOREM",
+    "P188": "VERIFIED_THEOREM",
+    "P189": "VERIFIED_THEOREM",
+    "P190": "VERIFIED_THEOREM"
+  },
+  "corpus_counts": {
+    "context_width_checks": 45369,
+    "cyclic_classes": 2214,
+    "distinct_factor_checks": 27832,
+    "exact_grid_cases": 109,
+    "exceptional_components": 8218,
+    "extracted_swaps": 1280,
+    "grid_bound_checks": 45369,
+    "grid_recurrence_steps": 673303,
+    "low_type_checks": 45369,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "primitive_classes": 2186,
+    "static_reconstructions": 3101
+  },
+  "format": "collatz-phase31-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "recursive compositions, direct residual-profile reconstruction, same-position context differences, literal static swaps, independent profile recurrences, and a 176-term rational logarithm box",
+  "proves_collatz": false,
+  "scalar_counts": {
+    "log_terms": 176,
+    "slope_rows": 5
+  },
+  "synthetic_counts": {
+    "factor_width_checks": 90,
+    "profiles": 9
+  },
+  "valid": true,
+  "verified_input_sha256": {
+    "phase31_obstruction_report.md": "8e4abac99e873bda77aa5cf700a345efc89ffbcc0f24ae97c21f6da933ff6b2f",
+    "phase31_regressions.json": "96c96bc5125689e81a91e588ca12ab77198ac8aea9116bcd0ddf0dd6d04c8865",
+    "phase31_scalar_certificates.json": "5f36bbd7b9b2e24412578b6a1d6354e56ff5958b0e1195237e8d6badb6ed8555",
+    "phase31_synthetic_profiles.json": "8ccd93bd47a875954953da67f69ef2ad47b3d75096f882a6abd75354b51f86d9",
+    "phase31_theory.json": "7608fe497e1310a74f84664a2948e7e929aaf29e8ffffb3b34bcf3261eebc1c5",
+    "phase31_transport_corpus.json": "47855b5bfdc533d90726cf9ff4e2b8287cad6ca1e7f2f26f3f911e4bd6dfac94"
+  },
+  "what_this_result_does_not_prove": "This does not prove H172, H133, any nonperiodic exclusion, or Collatz."
+}

@@ -22,18 +22,18 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 30 is the latest accepted research layer. It replaces the former
-two-sided edit factor bound by direct level-component rotations and improves
-the necessary cycle-area constant by the exact factor `2^(2/3)`. At the sharp
-frontier, all but `o(J)` transports are singleton intervals. The critical
-constant still uses Matveev's external input. The remaining H172 step is a
-pair-location-aware strict subleading resonance/resultant gap; the stronger
-area bound alone does not exclude cycles. H172, H133, and the broader
+Phase 31 is the latest accepted research layer. It statically extracts
+nonspine singleton transports, proves a double-hit factor inequality, and
+again improves the necessary cycle-area constant by the exact factor
+`2^(2/3)`. The critical constant still uses Matveev's external input. Its
+exact grid identity is only conditional: NG40 shows that the residual
+exceptional set may have positive density. H172 must therefore close both a
+grid-like and a residual-heavy arithmetic branch. H172, H133, and the broader
 H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
 remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–30, separates internal and external
+map and conventions, summarizes Phases 1–31, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -74,12 +74,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase30.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase30_verifier.json
+.venv/bin/python verifier/verify_phase31.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase31_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 30 result](PHASE30_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 31 result](PHASE31_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

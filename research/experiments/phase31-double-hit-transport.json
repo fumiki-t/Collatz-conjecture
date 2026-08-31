@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "phase31-double-hit-transport",
+  "status": "RUNNING",
+  "claim_ids": ["P185", "P186", "P187", "P188", "P189", "P190", "E43", "NG40", "H172", "H133"],
+  "objective": "Audit static singleton extraction, residual-context low-hit counting, the double-hit cycle-area constant, repaired near-equality structure, and the exact grid identity without promoting local control to a global near-grid theorem.",
+  "exact_scope": {
+    "quantifiers": [
+      "every valid reduced profile for P185",
+      "every cyclic width and every profile with distinct factors for the corresponding part of P186",
+      "every hypothetical primitive-positive cycle sequence satisfying P187's explicit slope and multiplier-gap hypotheses",
+      "every cyclic binary anchor word for P190",
+      "all positive-D cyclic exponent classes through q<=8 and nine declared exact synthetic profiles for E43"
+    ],
+    "bounds": {
+      "cycle_corpus_q_maximum": 8,
+      "cyclic_classes": 2214,
+      "minimum_rotations": 3101,
+      "factor_width_checks": 45369,
+      "distinct_factor_checks": 27832,
+      "grid_recurrence_steps": 673303,
+      "synthetic_profile_count": 9,
+      "generator_log_terms": 112,
+      "verifier_log_terms": 176
+    },
+    "completeness": "P185-P190 are exact theorem-level consequences in their stated domains after repairing global approximate-grid promotion. P188's critical branch uses EXT17. E43 is bounded. NG40 is a countermodel to the normalized inference, not an integer Collatz orbit. H172 and H133 remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, Fraction arithmetic, literal disjoint swaps, exact cyclic factor and context sets, exact incidence counts, rational atanh logarithm enclosures, symbolic cube identities, and SHA-256 row digests",
+    "floating_point_role": "none in generation, verification, theorem constants, or acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase31_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase31.py --artifact-dir artifacts --output artifacts/phase31_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase31_properties.py tests/test_phase31_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "the complete q<=8 corpus by recursive compositions",
+      "reduced profiles, the selected spine, residual components, and static swaps without generator imports",
+      "same-position residual/mechanical context differences and every low-hit factor type",
+      "all grid recurrences and defect-count inequalities",
+      "nine synthetic profiles through separately coded recurrences",
+      "critical and noncritical constants with an independent 176-term rational logarithm box",
+      "NG40 and all mandatory family labels"
+    ],
+    "forbidden_imports": ["src.phase31_search", "phase31_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase31_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "NG34-NG40", "both negative cycles", "trivial cycle powers",
+    "tall, plateau, isolated, near-extremal, seven-grid, width-two, multipeak, near-grid, and residual-heavy profiles"
+  ],
+  "artifacts": [
+    "artifacts/phase31_theory.json",
+    "artifacts/phase31_transport_corpus.json",
+    "artifacts/phase31_scalar_certificates.json",
+    "artifacts/phase31_synthetic_profiles.json",
+    "artifacts/phase31_regressions.json",
+    "artifacts/phase31_obstruction_report.md",
+    "artifacts/phase31_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not promote local exact-two incidence outside the residual exceptional set to global near-grid invariance.",
+    "Do not infer a third-hit theorem from factor cardinality; two-hit factor types already have order L capacity.",
+    "Do not infer cycle exclusion from the stronger area constant.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The result sharpens a necessary area condition and splits H172 into grid-like and residual-heavy arithmetic subcases.",
+    "NG40 refutes only an inference from the normalized inequalities; it is not an actual positive integer orbit.",
+    "Finite corpus agreement is regression evidence, not asymptotic completeness.",
+    "H172, H133, nonperiodic branches, and Collatz remain open."
+  ],
+  "recorded_result": {
+    "commit": "PENDING",
+    "generator": "valid=true with 2,214 cyclic classes, 3,101 minimum rotations, 45,369 widths, 1,280 extracted swaps, and 673,303 grid-recurrence positions",
+    "verifier": "valid=true with generator_imported=false, direct residual/context reconstruction, separate synthetic recurrences, and a 176-term log box",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

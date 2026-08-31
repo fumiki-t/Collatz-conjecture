@@ -332,6 +332,14 @@ compatible noncoprime resultant. Preserve NG39's exact span obstruction, and
 do not promote saturation of the `n_cyc` proxy to saturation of the actual
 maximum orbit state.
 
+Phase 31 replaces the near-uniform singleton picture by P185/P186 static
+double-hit transport and strengthens the area constant through P187. Future
+H172 work must split two cases: use P190 only after proving a sublinear global
+bad-window count, and separately handle positive-density residual exceptional
+contexts through P171 binomials. Preserve NG40's normalized countermodel; local
+exact-two incidence does not imply a global near-grid. Another leading area
+constant without a strict arithmetic gap is not acceptance.
+
 Phase 26 closes the cycle-side `H147` area-three obligation by the stronger
 all-gcd theorem P158: every critical primitive positive nontrivial cycle has
 reduced-slope area at least six. Do not extend the former area-three search.

@@ -1225,16 +1225,47 @@ area, descent-slack, direct-factor, and `n_cyc`-proxy consequences that follow.
 This is a rejected inference rather than a separately numbered universal
 hypothesis.
 
+## NG40 — global near-grid from double-hit equality alone
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** Saturation of the Phase 31 double-hit area inequality
+alone forces a global `o(L)` count of anchor windows with hit count different
+from two, and hence global approximate shift invariance.
+
+**Why it looked plausible.** P189 makes almost every start outside the
+residual exceptional-context set receive exactly two singleton influences,
+and P190 turns exact-two windows into a low-denominator grid.
+
+**Exact obstruction.** At normalized slope `ell=2`, let `y^3=4` and
+`x=z=e=y^2/2`. Then `(x+z)y=4=2ell`, `ey=ell`, and the sharp area value is
+attained, but the extracted-anchor scale is `x-e=0`. The residual exceptional
+set may therefore have full density, leaving P190's global bad-window count
+uncontrolled.
+
+**Failure scope.** Fundamental for inference from P185--P189 alone. It is a
+countermodel to the normalized inequality system, not an actual positive
+integer Collatz orbit. P190 survives exactly and becomes useful under a
+separate global small-defect hypothesis.
+
+**Weaker statement.** H172 must split into a grid-like branch, where the P190
+bad-window count is first proved sublinear, and a residual-heavy branch using
+P171 component binomials.
+
+**Evidence.** [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md),
+Section 7, and `artifacts/phase31_regressions.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, NG40, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
 area-three supports, the E37 seven-grid rows, the E38/E39 all-gcd profile
 corpus, the Phase 28 transport corpus and five synthetic profiles, E41's
 Phase 29 arc/state corpus, the Phase 30 direct-transport corpus and five
-synthetic profiles, and all exact
+synthetic profiles, the Phase 31 double-hit corpus and nine synthetic
+profiles, and all exact
 counterexamples above. Passing a bounded
 regression is necessary evidence, never a proof of universality.

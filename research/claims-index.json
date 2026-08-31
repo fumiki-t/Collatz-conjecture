@@ -1,5 +1,5 @@
 {
-  "claim_count": 243,
+  "claim_count": 251,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2502,9 +2502,9 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 30's sharper direct-transport area necessity and singleton near-equality normal form.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 31's double-hit area necessity and repaired grid/residual near-equality dichotomy.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P184, E28, E34--E42, EXT05, EXT17, NG32--NG39, H172; EXT15 only if used; X02 only for conditional P160/P178.",
+      "dependencies": "P133--P190, E28, E34--E43, EXT05, EXT17, NG32--NG40, H172; EXT15 only if used; X02 only for conditional P160/P178.",
       "dependency_ids": [
         "E28",
         "EXT05",
@@ -2515,11 +2515,11 @@
         "P178",
         "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-31 (Phase 30 audit)",
-      "notes": "P181 strengthens growth and P184 localizes equality, but a pair-location-aware strict subleading resultant and full-`D` noncoprime closure remain open.",
+      "last_audited": "2026-08-31 (Phase 31 audit)",
+      "notes": "P187 strengthens growth, but a strict arithmetic gap in both the grid-like and residual-heavy H172 subcases remains open.",
       "status": "OPEN"
     },
     {
@@ -2633,19 +2633,19 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source or pair-aware resultant theorem turning critical-prefix data into H89 rejection or P184's singleton transports into H133 rejection.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or pair-aware resultant theorem turning critical-prefix data into H89 rejection or Phase 31's grid/residual transport dichotomy into H133 rejection.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P184 as scoped; P97/P132 for H89; P156--P184 for cycles; NG32--NG39 and Phase 28--30 synthetic falsifiers.",
+      "dependencies": "P141--P190 as scoped; P97/P132 for H89; P156--P190 for cycles; NG32--NG40 and Phase 28--31 synthetic falsifiers.",
       "dependency_ids": [
         "H89",
         "P132",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md).",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-31 (Phase 30 audit)",
-      "notes": "Stronger area growth and singleton prevalence remain compatible without a strict subleading arithmetic gap.",
+      "last_audited": "2026-08-31 (Phase 31 audit)",
+      "notes": "Stronger area growth and local grid identities remain compatible without a strict subleading arithmetic gap.",
       "status": "OPEN"
     },
     {
@@ -3210,20 +3210,20 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Turn P184's near-uniform singleton transports and P171's paired endpoint binomials into a nonzero low-dimensional resonance/resultant with a strict subleading gap, while retaining full-`D` noncoprime arithmetic and both rotations.",
+      "claim": "Prove a strict subleading arithmetic contradiction in both Phase 31 near-equality subcases: a low-denominator pair-location resultant when global grid defects are sublinear, and a residual-component resultant when exceptional contexts have positive density, retaining full-`D` arithmetic and both rotations.",
       "collatz_implication": "Could close the sharp residual positive-cycle regime within H133.",
-      "dependencies": "P133, P137, P140, P156--P184, EXT17 on the critical branch; explicit survival of NG34--NG39.",
+      "dependencies": "P133, P137, P140, P156--P190, EXT17 on the critical branch; explicit survival of NG34--NG40.",
       "dependency_ids": [
         "EXT17",
         "P133",
         "P137",
         "P140"
       ],
-      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md).",
+      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md).",
       "first_introduced": "Phase 28",
       "id": "H172",
-      "last_audited": "2026-08-31 (Phase 30 audit)",
-      "notes": "P181 strengthens area growth and P184 localizes equality, but neither supplies the pair-location-aware strict subleading arithmetic gap.",
+      "last_audited": "2026-08-31 (Phase 31 audit)",
+      "notes": "P187 strengthens area growth and P190 gives a conditional grid identity, but NG40 prevents assuming a global near-grid without a residual-density theorem.",
       "status": "OPEN"
     },
     {
@@ -3452,9 +3452,124 @@
       "last_audited": "2026-08-31",
       "notes": "Exact obstruction `q=6,L=10,e=(2,2,1,3,1,1),n=4`: proposed bound 9, actual factor count 10.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "After fixing one maximum-height spine, every nonspine singleton level component is a top cell whose removal preserves profile legality; all such cells reconstruct as pairwise-disjoint static `10->01` swaps. The residual has `E` components with `E<=h+Sigma`, where `Sigma=A-J-B_h`.",
+      "collatz_implication": "Makes P184's singleton population into a static simultaneous transport object.",
+      "dependencies": "P156/P167/P184 reduced profile, descent legality, and localized spine charging.",
+      "dependency_ids": [
+        "P156",
+        "P167",
+        "P184"
+      ],
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 1; `artifacts/phase31_theory.json`; literal extraction tests.",
+      "first_introduced": "Phase 31",
+      "id": "P185",
+      "last_audited": "2026-08-31",
+      "notes": "The chosen spine is not canonical, and extraction alone gives no arithmetic contradiction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For cyclic width `n`, residual exceptional contexts satisfy `|U|<=min(L,T_res+E(n+1))<=min(L,2A+E(n+1))`, low-hit factors have at most `(n+2)(n+3)` types, and distinct cyclic factors imply `2L<=(J+E)(n+1)+4A+2(n+2)(n+3)`.",
+      "collatz_implication": "Replaces single-hit capacity by a double-hit necessary condition for positive cycles.",
+      "dependencies": "P125/P179/P185; cyclic factors distinct only where the final inequality is invoked; influence sets have size at most `n+1`.",
+      "dependency_ids": [
+        "P125",
+        "P179",
+        "P185"
+      ],
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 2; exact corpus and independent verifier.",
+      "first_introduced": "Phase 31",
+      "id": "P186",
+      "last_audited": "2026-08-31",
+      "notes": "It is a factor-capacity inequality, not a cycle exclusion, and the residual set may have positive density.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For primitive-positive cycle sequences with `q->infinity`, `L/q->ell in (1,2]`, and a fixed inverse-polynomial multiplier gap, `liminf A/q^(2/3)>=3(2ell)^(2/3)/(2(ell-1)^(1/3))`.",
+      "collatz_implication": "Improves P181 by the exact factor `2^(2/3)` and further narrows the positive-cycle geometry.",
+      "dependencies": "P167/P180/P186; stated slope and multiplier-gap hypotheses.",
+      "dependency_ids": [
+        "P167",
+        "P180",
+        "P186"
+      ],
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 3; exact scalar artifact.",
+      "first_introduced": "Phase 31",
+      "id": "P187",
+      "last_audited": "2026-08-31",
+      "notes": "Stronger area growth remains compatible with arbitrary-area cycles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "P187 gives the internal noncritical constant `3*2^(1/3)` in `(3.779763,3.779764)` and the critical constant in `(3.870329,3.870330)`.",
+      "collatz_implication": "Quantifies the double-hit area necessity on both positive-cycle branches.",
+      "dependencies": "P163/P164/P187; EXT17 only for the critical multiplier gap; exact rational logarithm enclosures.",
+      "dependency_ids": [
+        "EXT17",
+        "P163",
+        "P164",
+        "P187"
+      ],
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 4; `artifacts/phase31_scalar_certificates.json`.",
+      "first_introduced": "Phase 31",
+      "id": "P188",
+      "last_audited": "2026-08-31",
+      "notes": "The critical dependency remains external and neither constant is contradictory.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Equality in P187 forces the unique normalized `h` and `J+Sigma` scales, `A/(J+Sigma)->3/2`, `E-Sigma=o(q^(2/3))`, aggregate minimal residual excess, and exact-two singleton incidence at all but `o(L)` starts outside the actual residual exceptional-context set.",
+      "collatz_implication": "Splits the near-extremal language into a grid-like singleton region and a residual exceptional region.",
+      "dependencies": "P167/P185--P187 and convergence to the sharp frontier.",
+      "dependency_ids": [
+        "P167"
+      ],
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 5.",
+      "first_introduced": "Phase 31",
+      "id": "P189",
+      "last_audited": "2026-08-31",
+      "notes": "It does not prove the residual set has density zero or force a global near-grid; NG40 records the obstruction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For cyclic anchor counts `c_t=sum_(r<w)chi_(t+r)`, `c_(t+1)-c_t=chi_(t+w)-chi_t`; if every `c_t=2`, the anchors are `gcd(L,w)`-periodic and `w/gcd(L,w)` is one or two, while shift mismatches are at most twice the number of starts with `c_t!=2`.",
+      "collatz_implication": "Provides a precise low-denominator target when H172 can first establish a global small-defect hypothesis.",
+      "dependencies": "Finite cyclic binary anchor word; exact integer window counts.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 6; independent 673,303-position recurrence audit.",
+      "first_introduced": "Phase 31",
+      "id": "P190",
+      "last_audited": "2026-08-31",
+      "notes": "The identity does not itself show that the bad-window count is sublinear.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks 2,214 positive-D cyclic classes, 3,101 minimum rotations, all 45,369 widths, 27,832 distinct-factor cases, 1,280 disjoint extracted swaps, 673,303 grid positions, nine synthetic profiles, exact constants, and mandatory controls.",
+      "collatz_implication": "Regresses P185--P190, NG40, and the repaired H172 boundary.",
+      "dependencies": "Declared finite ranges; exact integer/rational/factor/context arithmetic; generator-independent residual reconstruction, profile recurrences, and logarithm boxes.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md); Phase 31 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 31",
+      "id": "E43",
+      "last_audited": "2026-08-31",
+      "notes": "Bounded agreement does not prove asymptotic completeness. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Equality in the P185--P189 normalized inequality chain by itself forces a global `o(L)` bad-window count and hence global approximate-grid invariance.",
+      "collatz_implication": "Requires H172 to split grid-like and residual-heavy cases rather than assuming the former.",
+      "dependencies": "Proposed promotion from double-hit area equality, without an additional residual-context density bound.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 7; `artifacts/phase31_regressions.json`.",
+      "first_introduced": "Phase 31",
+      "id": "NG40",
+      "last_audited": "2026-08-31",
+      "notes": "Exact normalized countermodel at `ell=2`: with `y^3=4` and `x=z=e=y^2/2`, every leading inequality saturates but extracted-anchor scale `K` is zero and the residual exceptional set may have full density. This is not an integer Collatz orbit.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "a8d443c81a205a96a3ab06cb9feaea8a63927e020c66bdfc49e9ab64a033a285"
+  "source_sha256": "02549cd7ee7317034050ee0e9f70ea3f32b04eca4cb762886aa66398f3e37070"
 }

@@ -110,18 +110,19 @@ including arbitrary-area coprime profiles and general noncoprime slopes.
 finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
-**Missing theorem.** P179--P182 sharpen direct transport and the necessary
-area constant, while P183/P184 show that a sharp survivor has one nested spine
-and almost entirely singleton transports. The leading pair count now balances
-coefficient height exactly. The missing theorem is a strict subleading
-pair-location resonance/resultant gap plus a full-`D` noncoprime analogue.
+**Missing theorem.** P185/P186 turn most singleton transports into static
+disjoint swaps and a double-hit inequality; P187/P188 give the current area
+constant. P189/P190 identify a conditional low-denominator grid, but NG40
+shows that residual exceptional contexts may have positive density. The
+missing theorem is a strict subleading arithmetic gap in both the grid-like
+and residual-heavy subcases, plus a full-`D` noncoprime analogue.
 NG36 also forbids silently identifying P133's
 least-value rotation with P156's discrepancy-minimum rotation. P140 still
 supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
-cycle and its powers, E42's direct corpus and five synthetic profiles,
-NG34--NG39, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
+cycle and its powers, E43's double-hit corpus and nine synthetic profiles,
+NG34--NG40, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
 positive.
@@ -129,8 +130,9 @@ positive.
 **Success criterion.** A uniform theorem proving `abs(R)<D`,
 `C_min<300000D`, or an equivalent contradiction for growing-area coprime
 profiles and every noncoprime gcd class, with an independently verified finite
-remainder. Extending `q`, improving the area constant again, dropping span, or
-promoting the `n_cyc` proxy to actual state saturation is not success.
+remainder. Extending `q`, improving the area constant again, dropping span,
+promoting the `n_cyc` proxy to actual state saturation, or assuming global
+near-grid behavior without bounding residual contexts is not success.
 
 ## P1 — Renewal-ladder dropping-safe barrier
 

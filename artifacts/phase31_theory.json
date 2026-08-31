@@ -1,0 +1,88 @@
+{
+  "claims": {
+    "E43": {
+      "statement": "The complete q<=8 corpus, nine synthetic profiles, scalars, normalized obstruction, and mandatory controls are independently reproducible.",
+      "status": "VERIFIED_FINITE"
+    },
+    "H133": {
+      "statement": "Arbitrary-area positive cycles remain open.",
+      "status": "OPEN"
+    },
+    "H172": {
+      "statement": "A residual-heavy/grid-like arithmetic dichotomy with a strict subleading resultant remains open.",
+      "status": "OPEN"
+    },
+    "NG40": {
+      "statement": "The P185-P189 inequality chain alone does not force global approximate-grid invariance: a normalized equality countermodel has K=0 and a full-density residual exceptional set.",
+      "status": "REFUTED"
+    },
+    "P185": {
+      "statement": "Every valid reduced profile admits static extraction of all nonspine singleton top cells into pairwise-disjoint 10->01 swaps; the residual has E exceptional components with E<=h+Sigma.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P186": {
+      "statement": "For every cyclic width n, residual exceptional contexts and low-hit factor types obey the exact stated bounds; if all L factors are distinct then 2L<=(J+E)(n+1)+4A+2(n+2)(n+3).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P187": {
+      "statement": "Under a fixed inverse-polynomial multiplier gap and limiting slope ell, primitive positive cycles satisfy liminf A/q^(2/3)>=3(2ell)^(2/3)/(2(ell-1)^(1/3)).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P188": {
+      "statement": "The noncritical constant is 3*2^(1/3); the critical log2(3) specialization uses EXT17 and lies in the certified interval.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P189": {
+      "statement": "Equality forces the unique h and J+Sigma scales, A/(J+Sigma)->3/2, E-Sigma=o(q^(2/3)), aggregate minimal residual excess, and local exact-two incidence outside the residual exceptional set; it does not force a global near-grid.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P190": {
+      "statement": "For cyclic anchor counts c_t at window w, c_(t+1)-c_t=chi_(t+w)-chi_t; exact c=2 gives gcd-periodicity and w/gcd(L,w) in {1,2}, while shift mismatches are at most twice the number of c!=2 starts.",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "dependencies": {
+    "NG40": [
+      "P185",
+      "P186",
+      "P187",
+      "P189",
+      "P190"
+    ],
+    "P185": [
+      "P156",
+      "P167",
+      "P184"
+    ],
+    "P186": [
+      "P125",
+      "P179",
+      "P185"
+    ],
+    "P187": [
+      "P167",
+      "P180",
+      "P186"
+    ],
+    "P188": [
+      "P163",
+      "P164",
+      "P187",
+      "EXT17"
+    ],
+    "P189": [
+      "P167",
+      "P185",
+      "P186",
+      "P187"
+    ],
+    "P190": [
+      "P185"
+    ]
+  },
+  "external_boundary": "Only P188's critical specialization inherits EXT17; extraction, double-hit counting, the noncritical constant, and the grid identities are internal.",
+  "format": "collatz-phase31-double-hit-theory-v1",
+  "proposal_repair": "The note's approximate-grid language is retained only conditionally on the global bad-window count. Equality in the area bound alone allows a residual exceptional set of positive density and does not imply global shift invariance.",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "No grid/residual resultant, arbitrary-area cycle exclusion, nonperiodic exclusion, or Collatz proof follows."
+}
