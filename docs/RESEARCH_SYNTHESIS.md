@@ -2,7 +2,7 @@
 
 **Audit date:** 2026-08-31
 
-**Audited base:** Phase 30 acceptance commit recorded in its experiment manifest
+**Audited base:** `32d8973af1eb5f043a5627de8d2c5eb3fec3a6cd`
 
 **Latest accepted phase:** Phase 30
 

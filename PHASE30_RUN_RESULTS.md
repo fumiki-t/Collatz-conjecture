@@ -33,9 +33,12 @@ are valid after repairing one unsupported state-saturation sentence.
 sha256sum -c artifacts/SHA256SUMS
 ```
 
-The initial Phase 30 property/verifier suite passed 15 tests in 9.64 seconds.
-Final focused and repository-wide results are recorded in the accepted
-experiment manifest.
+The final focused suite passed 20 tests in 18.68 seconds. The full repository
+suite passed 423 tests in 1422.59 seconds, and strict research health returned
+`valid=true` with no errors or warnings. The accepted evidence commit is
+`32d8973af1eb5f043a5627de8d2c5eb3fec3a6cd`; the SHA-256 of the artifact
+manifest at that commit is
+`6dfbb56420b4f5860b4b3ad942d4459425fbb464eeb711290d5860d2b128224c`.
 
 ## Evidence
 

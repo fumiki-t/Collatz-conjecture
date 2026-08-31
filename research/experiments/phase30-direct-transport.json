@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase30-direct-transport",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P179", "P180", "P181", "P182", "P183", "P184", "E42", "NG39", "H172", "H133"],
   "objective": "Audit direct level-component rotations, sharpen all-gcd cycle factor separation and the asymptotic area constant, prove the singleton-transport equality normal form, and preserve the exact span obstruction.",
   "exact_scope": {
@@ -76,13 +76,13 @@
     "H172, H133, nonperiodic branches, and Collatz remain open."
   ],
   "recorded_result": {
-    "commit": "PENDING",
+    "commit": "32d8973af1eb5f043a5627de8d2c5eb3fec3a6cd",
     "generator": "valid=true with 2,214 cyclic classes, 3,101 minimum rotations, 45,369 widths, 141,643 affected-start checks, and 9,303 spine checks",
     "verifier": "valid=true with generator_imported=false, direct boundary reconstruction, factor-set differences, separate synthetic recurrences, and a 160-term log box",
-    "focused_tests": "PENDING",
-    "full_tests": "PENDING",
-    "strict_research_health": "PENDING",
-    "manifest_sha256": "PENDING",
+    "focused_tests": "20 passed in 18.68s",
+    "full_tests": "423 passed in 1422.59s (0:23:42)",
+    "strict_research_health": "valid=true, errors=[], warnings=[]",
+    "manifest_sha256": "6dfbb56420b4f5860b4b3ad942d4459425fbb464eeb711290d5860d2b128224c",
     "verifier_valid": true
   },
   "proves_collatz": false
