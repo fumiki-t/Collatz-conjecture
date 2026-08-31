@@ -1,0 +1,52 @@
+{
+  "arc_counts": {
+    "critical_area_three_profiles": 521154,
+    "critical_area_two_profiles": 7057,
+    "largest_gap_cuts_checked": 93629,
+    "largest_gap_tie_profiles": 43470,
+    "noncritical_area_two_profiles": 204,
+    "nonzero_arc_checks": 93629,
+    "valuation_checks": 93629
+  },
+  "claims": {
+    "E41": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "P173": "VERIFIED_THEOREM",
+    "P174": "VERIFIED_THEOREM",
+    "P175": "VERIFIED_THEOREM",
+    "P176": "VERIFIED_THEOREM",
+    "P177": "VERIFIED_THEOREM",
+    "P178": "CONDITIONAL"
+  },
+  "corpus_counts": {
+    "coefficient_identity_checks": 5994,
+    "coprime_classes": 797,
+    "largest_gap_cuts_checked": 1648,
+    "minimum_rotations": 797,
+    "synthetic_profiles": 5
+  },
+  "format": "collatz-phase29-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "recursive compositions, direct time/residue permutation, repeated-division valuations, suffix products, 224-term logarithm boxes, and separately synthesized profiles",
+  "proves_collatz": false,
+  "state_counts": {
+    "cyclic_classes": 2214,
+    "maximum_state_checks": 5615,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "primitive_classes": 2186,
+    "suffix_coefficient_checks": 16592
+  },
+  "valid": true,
+  "verified_input_sha256": {
+    "phase29_arc_audit.json": "cdb506d6767b41a0910187966154d8e9d634dfdcadae50349dd7a81bd74ffb3b",
+    "phase29_coprime_corpus.json": "8083113f26d02c2a5fe61d486cf0b88b36a3d36bcb58e9653156eaee357a2873",
+    "phase29_farey_certificates.json": "c8fd1e39c1211f630153b6e3e7904d23ef4cb36e5f0bf499fe93853ea0caa380",
+    "phase29_obstruction_report.md": "8e0832e5c802603f96739b643a503942ddc5ad9f42fdbab6aeee298095651f0c",
+    "phase29_regressions.json": "d30fd4d9c3635b23d3777d275b1ed311aac12bf2402b2372f9712ea784bb69bb",
+    "phase29_state_bounds.json": "aee494bab442c2a3a10b87a7cc0ad4a42a91e39df6e35caf70967cb9138c6e46",
+    "phase29_theory.json": "942a176d4d241e7b812a1cdcf0cc1374c711334e748aa2b4194f7e2c3ed1be11"
+  },
+  "what_this_result_does_not_prove": "This does not prove H172, H133, any nonperiodic exclusion, or Collatz."
+}

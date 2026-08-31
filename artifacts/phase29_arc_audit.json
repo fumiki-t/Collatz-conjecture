@@ -1,0 +1,327 @@
+{
+  "counts": {
+    "critical_area_three_profiles": 521154,
+    "critical_area_two_profiles": 7057,
+    "largest_gap_cuts_checked": 93629,
+    "largest_gap_tie_profiles": 43470,
+    "noncritical_area_two_profiles": 204,
+    "nonzero_arc_checks": 93629,
+    "valuation_checks": 93629
+  },
+  "format": "collatz-phase29-finite-arc-audit-v1",
+  "proves_collatz": false,
+  "samples": [
+    [
+      7,
+      12,
+      2,
+      "21dbba0cdd8ef936ee1e087a83aabfecf921db93fd90de291f306c66438fbe31",
+      {
+        "coefficient_digest_sha256": "dc396efcbc3a792d280592aa104fb755a730a1a7d953c2e0d1b37c039602d249",
+        "cut_rows": [
+          [
+            4,
+            5,
+            1,
+            10,
+            0,
+            7,
+            7,
+            "e0d2b27ca7d6e1dc5533621685d0a2d93d3b1dc1efd828c9500dd839fce71f42"
+          ],
+          [
+            0,
+            5,
+            1,
+            7,
+            0,
+            0,
+            0,
+            "bbabf4b8e7b264766129034213b17a8678f4ef932d3a8c79494a4439d4eb579d"
+          ]
+        ],
+        "l1": 5,
+        "largest_gap": 2,
+        "largest_gap_ties": 2,
+        "support_count": 5
+      }
+    ],
+    [
+      7,
+      12,
+      2,
+      "04b9fa26b0433930ce9c86f02d9867e43527abd2d3ed8a469649b105d2145e93",
+      {
+        "coefficient_digest_sha256": "b27694f297fa3d5b2f7e8a09cd80469b4a220138e0381a0786508497afb6314b",
+        "cut_rows": [
+          [
+            4,
+            5,
+            1,
+            9,
+            0,
+            7,
+            7,
+            "0f5adcd3e2a4cfab4860e977d1cc5f17fcb11ab84be248ee6f9bac63352746b0"
+          ],
+          [
+            6,
+            5,
+            1,
+            7,
+            0,
+            11,
+            11,
+            "af37a2e6dfb5c301bc0402bb93b09d4ffd9275a12d95bf4b6130a820196a0359"
+          ]
+        ],
+        "l1": 5,
+        "largest_gap": 2,
+        "largest_gap_ties": 2,
+        "support_count": 5
+      }
+    ],
+    [
+      8,
+      13,
+      2,
+      "e4090be28c18daf55d1aa49f79ca5b05b9544fd39df18a46497881711d3ab7d1",
+      {
+        "coefficient_digest_sha256": "da3aa8a90463b16c8ff088f200a40581a723b0a43ca638532293b0191fc701c1",
+        "cut_rows": [
+          [
+            3,
+            6,
+            1,
+            10,
+            0,
+            5,
+            5,
+            "a0d96951c299908a269fb1d30c85fade8a434a8bb79d3edf14b70ebb08bdc0ee"
+          ],
+          [
+            6,
+            6,
+            1,
+            10,
+            0,
+            10,
+            10,
+            "3b38278b70eb88fec01fa4b0876735180705e398fdde8916469415a9cfa77dc1"
+          ],
+          [
+            0,
+            6,
+            1,
+            11,
+            0,
+            0,
+            0,
+            "17369aca59edd2c84dbc7300653d468229dcb8a01f4774ffb69018f5f1246460"
+          ]
+        ],
+        "l1": 5,
+        "largest_gap": 2,
+        "largest_gap_ties": 3,
+        "support_count": 5
+      }
+    ],
+    [
+      8,
+      13,
+      2,
+      "16e4c3d3c991d7307254ae5af267277897071e736585e6803fa4ef05680137e9",
+      {
+        "coefficient_digest_sha256": "fe5496d0b6ce219b6b81b9204d297087c16edf454e22bba7b3c4550d03f78b86",
+        "cut_rows": [
+          [
+            2,
+            6,
+            1,
+            10,
+            0,
+            4,
+            4,
+            "4175793d658c4fcf55b7c7c0f7c8b8502a7e4a4ba8cb01683bbfa8e42fc82ee0"
+          ],
+          [
+            5,
+            6,
+            1,
+            9,
+            0,
+            9,
+            9,
+            "98fae7732e738465b98be369efd6ca09409d4b68c065fa3e736346b0923808be"
+          ],
+          [
+            0,
+            6,
+            1,
+            11,
+            0,
+            0,
+            0,
+            "5ed52874a12bfeda64a713ea0a33eff364389269d8e265e4ab0df2800acbd0a4"
+          ]
+        ],
+        "l1": 5,
+        "largest_gap": 2,
+        "largest_gap_ties": 3,
+        "support_count": 5
+      }
+    ],
+    [
+      11,
+      18,
+      2,
+      "a185064f7f6cabe47c6305502c25d23ae0eca4d48e2952f94d0cbcd472ab7cda",
+      {
+        "coefficient_digest_sha256": "b969cc725991488e1e02e643273d957a9e69570f1470eb4a14944305f671fd2f",
+        "cut_rows": [
+          [
+            6,
+            8,
+            1,
+            13,
+            0,
+            10,
+            10,
+            "88e5b72fc1f09ad442facee0bd9ffe7f7d23fda7c1ba2632716bd6b363fd5ffb"
+          ],
+          [
+            9,
+            8,
+            1,
+            14,
+            0,
+            15,
+            15,
+            "782f430090e318a141e00ea1603ea8b7ed6286f1e9305c5bb7c0b862067262b5"
+          ]
+        ],
+        "l1": 5,
+        "largest_gap": 3,
+        "largest_gap_ties": 2,
+        "support_count": 5
+      }
+    ],
+    [
+      11,
+      18,
+      2,
+      "80e0d5181dbc111b05255fb22228779d02caed7fb0232e0b674be73ea0bd0db4",
+      {
+        "coefficient_digest_sha256": "eeb34c609b870086bc2ff5653996b1d94ca7b9e282b4ba15fd691035996434af",
+        "cut_rows": [
+          [
+            3,
+            8,
+            1,
+            14,
+            0,
+            5,
+            5,
+            "8a607cf08adf3745e809b0ea8f28581db632d8032c217bb6ac5500d8eba46010"
+          ],
+          [
+            6,
+            8,
+            1,
+            13,
+            0,
+            10,
+            10,
+            "43e321eab31bb21cae968e34e43ee87edb6e30391de26c1fe3c2611393094f91"
+          ],
+          [
+            10,
+            8,
+            1,
+            12,
+            0,
+            17,
+            17,
+            "323525bc0f8ff7bcc09f1f53359af18d861b161f61a6aaca29077dd873ddd181"
+          ]
+        ],
+        "l1": 5,
+        "largest_gap": 3,
+        "largest_gap_ties": 3,
+        "support_count": 5
+      }
+    ],
+    [
+      11,
+      18,
+      2,
+      "698d77aada935ce7f61ad702af51ab778764403b14877a86bf224cdf09c1f7a0",
+      {
+        "coefficient_digest_sha256": "8c5d870f4407f1c9774944af8a5c1f81ac545176e2d8e346a8fc9fb77c4d21ed",
+        "cut_rows": [
+          [
+            6,
+            6,
+            1,
+            11,
+            0,
+            10,
+            10,
+            "abc5522ac1c0d9c1ae230ddff9c52b6589c449e634ce72d89737b8ba55a5482e"
+          ],
+          [
+            0,
+            6,
+            1,
+            10,
+            0,
+            0,
+            0,
+            "72761d7fea5333dbf11e2f615fdd6f1ba4bf172c59ac672e9ed319acc71c779d"
+          ]
+        ],
+        "l1": 3,
+        "largest_gap": 5,
+        "largest_gap_ties": 2,
+        "support_count": 3
+      }
+    ],
+    [
+      11,
+      18,
+      2,
+      "292758bbaee8cf913dc8a55f472ca75fb8e48ae405bdb869ec82aa8a3fa2540d",
+      {
+        "coefficient_digest_sha256": "b49bd181b78406462553b8dd223a04f94540eb069cadd2244b14425dc77d56e1",
+        "cut_rows": [
+          [
+            4,
+            8,
+            1,
+            13,
+            0,
+            7,
+            7,
+            "ee0497b0e5688a7fdb2e6be818b0353bd210ba1614c3c14b729b20791a300503"
+          ],
+          [
+            9,
+            8,
+            1,
+            13,
+            0,
+            15,
+            15,
+            "1cf7e0720a060e4b93d0bf3e122f10aa5a2b54936479dc55f548172f10ebae62"
+          ]
+        ],
+        "l1": 5,
+        "largest_gap": 3,
+        "largest_gap_ties": 2,
+        "support_count": 5
+      }
+    ]
+  ],
+  "scope": "Every largest-gap tie in the E36 area-two/area-three ranges; non-ties are counted but theorem-level nonvanishing is not inferred from the scan.",
+  "tie_row_digest_sha256": "e8614bbd61e88e19b74d4d23b0829d0eeabce2b2895a6f639cd105275722b412"
+}

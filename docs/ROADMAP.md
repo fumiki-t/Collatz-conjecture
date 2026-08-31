@@ -110,27 +110,26 @@ including arbitrary-area coprime profiles and general noncoprime slopes.
 finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
-**Missing theorem.** P166/P167 now resolve the profile into exact transport
-and level components; P168/P169 sharpen the area constants, and P170 fixes the
-only near-equality scales. P171 supplies a sparse multilevel polynomial with
-an essential endpoint correction. These bounds still admit near-extremal,
-tall, and diffuse regimes. No theorem turns this structure into a nonzero
-resultant, canonical-residue obstruction, or contradiction. NG36 also forbids silently identifying P133's
+**Missing theorem.** P173 now proves every coprime sparse arc nonzero and P174
+turns this into exact resonance, so cancellation is no longer the missing
+step. P175 closes every fixed area and P176 bounds an all-gcd maximum state.
+The unresolved step is a quantitative gap dominating support/coefficient
+growth with area plus a full-`D` noncoprime analogue. NG36 also forbids silently identifying P133's
 least-value rotation with P156's discrepancy-minimum rotation. P140 still
 supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
-cycle and its powers, the Phase 28 all-gcd corpus and five synthetic profiles,
+cycle and its powers, E41's arc/state corpus and five synthetic profiles,
 NG34--NG38, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
 positive.
 
 **Success criterion.** A uniform theorem proving `abs(R)<D`,
-`C_min<300000D`, or an equivalent contradiction for both tall and diffuse
-profiles, every gcd class, and both rotation conventions, with an independently
-verified finite remainder. Extending `q`, enumerating another fixed area, or
-reproving asymptotic area/transport growth without a new invariant is not
+`C_min<300000D`, or an equivalent contradiction for growing-area coprime
+profiles and every noncoprime gcd class, with an independently verified finite
+remainder. Extending `q`, enumerating another fixed area, or reproving
+nonvanishing/asymptotic area growth without a quantitative invariant is not
 success.
 
 ## P1 — Renewal-ladder dropping-safe barrier

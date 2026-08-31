@@ -1,5 +1,5 @@
 {
-  "claim_count": 228,
+  "claim_count": 235,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2502,9 +2502,9 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 28's sharp transport/level area dispersion, including near-extremal, tall, and diffuse profiles, every gcd class, and both rotation conventions.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 29's automatic coprime arc nonvanishing and all-gcd reduced-state bound, including growing-area coprime profiles and every noncoprime gcd class.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P171, E28, E34--E40, EXT05, EXT17, NG32--NG38, H172; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160.",
+      "dependencies": "P133--P177, E28, E34--E41, EXT05, EXT17, NG32--NG38, H172; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160/P178.",
       "dependency_ids": [
         "E28",
         "EXT05",
@@ -2512,13 +2512,14 @@
         "EXT17",
         "H172",
         "P160",
+        "P178",
         "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-30 (Phase 28 audit)",
-      "notes": "P166--P171 sharpen necessary dispersion but do not contradict arbitrary-area cycles; NG36--NG38 preserve rotation and endpoint/strictness traps.",
+      "last_audited": "2026-08-30 (Phase 29 audit)",
+      "notes": "P173 removes coprime arc cancellation and P175 closes every fixed area, but coefficient height/support can grow with area and full-`D` noncoprime arithmetic remains open.",
       "status": "OPEN"
     },
     {
@@ -2632,19 +2633,19 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or Phase 28's transport/level profiles into an all-area H133 obstruction.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or Phase 29's growing-area/full-`D` cycle obstruction into H133 rejection.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P171 as scoped; P97/P132 for H89; P156--P171 for arbitrary-gcd cycles; NG32--NG38 and the Phase 28 synthetic falsifiers.",
+      "dependencies": "P141--P177 as scoped; P97/P132 for H89; P156--P176 for arbitrary-gcd cycles; NG32--NG38 and the Phase 28/29 synthetic falsifiers.",
       "dependency_ids": [
         "H89",
         "P132",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md).",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-30 (Phase 28 audit)",
-      "notes": "Area, support, and transport must grow, but none is contradictory; any polynomial bridge must retain the endpoint term and both rotations.",
+      "last_audited": "2026-08-30 (Phase 29 audit)",
+      "notes": "Exact coprime nonvanishing is now known, but growing coefficient height/support and full-`D` noncoprime arithmetic remain noncontradictory.",
       "status": "OPEN"
     },
     {
@@ -3209,24 +3210,131 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Turn P170's near-extremal transport rigidity and P171's corrected sparse multilevel polynomial into a nonzero resonance/resultant or canonical-residue obstruction for every gcd class and both relevant rotations.",
-      "collatz_implication": "Could close the near-extremal residual regime within H133's positive-cycle branch.",
-      "dependencies": "P133, P137, P140, P156--P171, EXT17 on the critical branch; explicit survival of NG34--NG38.",
+      "claim": "Convert P173's automatic coprime arc nonvanishing and P174's resonance into a growing-area coefficient-height obstruction, and obtain a compatible full-`D` theorem for noncoprime gcd classes without aligning rotations silently.",
+      "collatz_implication": "Could close the residual positive-cycle regime within H133.",
+      "dependencies": "P133, P137, P140, P156--P176, EXT17 on the critical branch; explicit survival of NG34--NG38.",
       "dependency_ids": [
         "EXT17",
         "P133",
         "P137",
         "P140"
       ],
-      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md), Section 9.",
+      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md).",
       "first_introduced": "Phase 28",
       "id": "H172",
-      "last_audited": "2026-08-30",
-      "notes": "No such nonvanishing/anti-resonance theorem is currently proved; closing it would not address nonperiodic branches.",
+      "last_audited": "2026-08-30 (Phase 29 audit)",
+      "notes": "Coprime cancellation is closed by P173, but current bounds do not dominate support/coefficient growth with area and do not supply full-`D` noncoprime arithmetic.",
       "status": "OPEN"
+    },
+    {
+      "claim": "For every valid coprime reduced profile, every P147 largest-gap circular arc integer is nonzero and has exact 2-adic valuation given by its unique least strictly increasing transport weight.",
+      "collatz_implication": "Removes the unproved nonvanishing hypothesis from P150 and makes every fixed-area coprime sparse arc effective.",
+      "dependencies": "P135, P147, P156, P171; `gcd(q,L)=1`; exact endpoint coefficient retained.",
+      "dependency_ids": [
+        "P135",
+        "P147",
+        "P156",
+        "P171"
+      ],
+      "evidence": "[`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md), Section 2; `artifacts/phase29_theory.json`; independent verifier.",
+      "first_introduced": "Phase 29",
+      "id": "P173",
+      "last_audited": "2026-08-30",
+      "notes": "This gives no uniform control when area, support, and coefficient height grow.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every integral coprime profile satisfies `3^ceil(q/M)<4C(12q)^1564920000` on the critical branch and `2^(L ceil(q/M)/q)<4C` on the noncritical branch, where `M` is support and `C` the exact coefficient `l1` norm.",
+      "collatz_implication": "Turns arc nonvanishing into exact arithmetic resonance necessities.",
+      "dependencies": "P147, P173; EXT17 only for the critical multiplier-gap lower bound.",
+      "dependency_ids": [
+        "EXT17",
+        "P147",
+        "P173"
+      ],
+      "evidence": "[`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md), Section 3; exact derivation and artifacts.",
+      "first_introduced": "Phase 29",
+      "id": "P174",
+      "last_audited": "2026-08-30",
+      "notes": "These inequalities are compatible with sufficiently fast growing `M,C`.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For every fixed defect area `A`, only finitely many coprime primitive positive-cycle profiles have area at most `A`.",
+      "collatz_implication": "Closes the former fixed-area coprime nonvanishing frontier at every constant area.",
+      "dependencies": "P150/P171 support and norm bounds, P173/P174; EXT17 on the critical branch.",
+      "dependency_ids": [
+        "EXT17",
+        "P150",
+        "P171",
+        "P173",
+        "P174"
+      ],
+      "evidence": "[`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md), Section 3.",
+      "first_introduced": "Phase 29",
+      "id": "P175",
+      "last_audited": "2026-08-30",
+      "notes": "It gives neither a practical finite threshold nor an arbitrary-area/noncoprime exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At every maximum reduced discrepancy height of a positive rational affine cycle, `x_t<=S_t^(0)/(3(1-lambda0))<2q0/(3(1-lambda0))`, with reduced coprime slope `(q0,L0)`.",
+      "collatz_implication": "Gives an all-gcd ordinary-state upper bound controlled only by the reduced denominator.",
+      "dependencies": "P156 reduced-profile recurrence; positivity; exact cycle fixed-point identity; no least-value rotation identification.",
+      "dependency_ids": [
+        "P156"
+      ],
+      "evidence": "[`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md), Section 4; `artifacts/phase29_state_bounds.json`.",
+      "first_introduced": "Phase 29",
+      "id": "P176",
+      "last_audited": "2026-08-30",
+      "notes": "It is a necessary bound and is also satisfied by rational shadows; integrality is used only in subsequent cycle-height deductions.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every primitive positive nontrivial integer Collatz cycle has reduced odd period `q0>=971`.",
+      "collatz_implication": "Strengthens the internal reduced-period lower bound for the cycle branch.",
+      "dependencies": "P176; E28 convergence below 300000; exact Farey neighbors and rational logarithm enclosure.",
+      "dependency_ids": [
+        "E28",
+        "P176"
+      ],
+      "evidence": "[`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md), Section 5; `artifacts/phase29_farey_certificates.json`.",
+      "first_introduced": "Phase 29",
+      "id": "P177",
+      "last_audited": "2026-08-30",
+      "notes": "It does not exclude cycles and does not apply to nonperiodic orbits.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming X02's verified-height input, every primitive positive nontrivial integer Collatz cycle has reduced odd period `q0>=72057431991`.",
+      "collatz_implication": "Records the much stronger period consequence without promoting the external finite input.",
+      "dependencies": "P176 and X02; exact Farey neighbors and rational logarithm enclosure.",
+      "dependency_ids": [
+        "P176",
+        "X02"
+      ],
+      "evidence": "[`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md), Section 5; `artifacts/phase29_farey_certificates.json`.",
+      "first_introduced": "Phase 29",
+      "id": "P178",
+      "last_audited": "2026-08-30",
+      "notes": "Conditional on X02; still only a lower bound and not a cycle exclusion.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "Independent reconstruction checks 43,470 tied-largest-gap profiles, 93,629 nonzero arc cuts with exact valuations, 797 coprime classes through `q<=8`, five synthetic profiles, and 5,615 all-gcd maximum-state rows.",
+      "collatz_implication": "Regresses P173--P178 and the surviving H172 boundary.",
+      "dependencies": "Declared finite ranges; exact integer/rational arithmetic; independent enumeration, coefficient, valuation, suffix, and logarithm methods.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md); Phase 29 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 29",
+      "id": "E41",
+      "last_audited": "2026-08-30",
+      "notes": "Bounded agreement does not prove asymptotic completeness. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "c365b05829702e3fb02002cd3ac51bfaab5d9636b89b620242b5f9c3c662c2b8"
+  "source_sha256": "c0f507d59c8415f26200abc78e30c6a7e454f4b3d9fbead5051d75c4e733da8e"
 }

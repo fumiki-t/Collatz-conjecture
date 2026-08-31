@@ -1158,6 +1158,18 @@ coefficient and P167's exact inequality survive.
 **Evidence.** [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md),
 Section 7, and `artifacts/phase28_regressions.json`.
 
+## Phase 29 resolved boundary — coprime arc cancellation
+
+The former possibility that a P147 coprime largest-gap arc might vanish is no
+longer an open shortcut or a useful search direction. P173 proves that the
+transport weights are strictly ordered, so every such arc has a unique least
+2-adic valuation and cannot cancel. This is a resolved boundary rather than a
+new `REFUTED` claim: P150's conditional nonvanishing premise is discharged.
+
+Future H172 work must address growth of support/coefficient height with area
+or full-`D` noncoprime arithmetic. Repeating larger coprime nonvanishing scans
+does not advance the remaining obstruction.
+
 ## NG38 — endpoint-free multilevel l1 bound
 
 **Status:** `REFUTED`
@@ -1187,6 +1199,7 @@ NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
 area-three supports, the E37 seven-grid rows, the E38/E39 all-gcd profile
-corpus, the Phase 28 transport corpus and five synthetic profiles, and all exact
+corpus, the Phase 28 transport corpus and five synthetic profiles, E41's
+Phase 29 arc/state corpus, and all exact
 counterexamples above. Passing a bounded
 regression is necessary evidence, never a proof of universality.

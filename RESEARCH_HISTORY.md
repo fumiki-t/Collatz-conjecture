@@ -1661,3 +1661,38 @@ the remaining near-extremal resonance/resultant bridge; H133 remains open.
 Phase 28 does not exclude near-extremal, tall, or diffuse positive cycles,
 does not address either nonperiodic counterexample branch, and does not prove
 or disprove the Collatz conjecture. `proves_collatz=false`.
+
+## 2026-08-30 — Phase 29: automatic arc nonvanishing
+
+**Branch:** `feat/phase29-arc-nonvanishing`
+
+**Acceptance record:** [`PHASE29_RUN_RESULTS.md`](PHASE29_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/arc-nonvanishing/REPORT.md`](research/audits/arc-nonvanishing/REPORT.md)
+
+Phase 29 treated the supplied arc-nonvanishing note as an untrusted proposal.
+P173 reconstructs the reduced polynomial in coprime time/residue coordinates
+and proves that its transported summands have strictly increasing 2-adic
+weights. Every P147 circular arc therefore has a unique least valuation and
+is nonzero; the verifier recomputes the exact valuation rather than trusting
+the generated arc integer.
+
+P174 converts nonvanishing into exact critical and noncritical resonance
+inequalities. P175 combines them with the fixed-area support and norm bounds
+to exclude every fixed coprime defect area eventually; EXT17 remains explicit
+on the critical branch. P176 gives an all-gcd maximum-state bound in terms of
+the reduced coprime slope. With E28 it yields the unconditional internal lower
+bound `q0>=971` (P177). The X02 version `q0>=72057431991` is preserved only as
+conditional P178.
+
+E41 independently reconstructs 43,470 tied profiles, 93,629 nonzero arc cuts,
+797 coprime classes, five synthetic profiles, and 5,615 all-gcd maximum-state
+rows. Tamper tests reject coefficient, Farey, dependency, endpoint, status,
+and Collatz-overclaim changes.
+
+### What this result does not prove
+
+Phase 29 does not control support/coefficient height as defect area grows and
+does not produce a full-`D` noncoprime resultant. H172 and H133 remain open,
+as do both nonperiodic branches and the Collatz conjecture.
+`proves_collatz=false`.

@@ -1,0 +1,153 @@
+{
+  "bound": "x_t<=S_t^(0)/(3(1-lambda0))<2q0/(3(1-lambda0)) at every maximum reduced height",
+  "counts": {
+    "cyclic_classes": 2214,
+    "maximum_state_checks": 5615,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "primitive_classes": 2186,
+    "suffix_coefficient_checks": 16592
+  },
+  "equality_samples": [
+    [
+      1,
+      2,
+      [
+        2
+      ],
+      0,
+      1,
+      1,
+      [
+        "1",
+        "1"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "1",
+        "1"
+      ],
+      [
+        "8",
+        "3"
+      ]
+    ],
+    [
+      2,
+      4,
+      [
+        2,
+        2
+      ],
+      0,
+      2,
+      1,
+      [
+        "1",
+        "1"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "1",
+        "1"
+      ],
+      [
+        "8",
+        "3"
+      ]
+    ],
+    [
+      2,
+      4,
+      [
+        2,
+        2
+      ],
+      1,
+      2,
+      1,
+      [
+        "1",
+        "1"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "1",
+        "1"
+      ],
+      [
+        "8",
+        "3"
+      ]
+    ],
+    [
+      3,
+      5,
+      [
+        2,
+        2,
+        1
+      ],
+      0,
+      1,
+      3,
+      [
+        "37",
+        "5"
+      ],
+      [
+        "111",
+        "32"
+      ],
+      [
+        "37",
+        "5"
+      ],
+      [
+        "64",
+        "5"
+      ]
+    ],
+    [
+      3,
+      5,
+      [
+        2,
+        2,
+        1
+      ],
+      1,
+      1,
+      3,
+      [
+        "29",
+        "5"
+      ],
+      [
+        "87",
+        "32"
+      ],
+      [
+        "29",
+        "5"
+      ],
+      [
+        "64",
+        "5"
+      ]
+    ]
+  ],
+  "format": "collatz-phase29-state-bounds-v1",
+  "proves_collatz": false,
+  "row_digest_sha256": "d45bd2db86e9d1ed296cfcf264709d3a57a3e50f3e3528a6a744a894b813c2dc",
+  "scope": "All positive rational affine cyclic classes through q<=8; ordinary E28/X02 consequences apply only to positive integer cycles."
+}

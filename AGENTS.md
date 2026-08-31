@@ -316,6 +316,13 @@ transition information and explicitly survive NG21; mod-6 packing alone is
 sharp. Ruling out the all-contact mechanical word must not be promoted to an
 exclusion of the full coefficient-safe language.
 
+Phase 29 closes coprime P147 arc cancellation through `P173`. Future H172
+work must not spend large computation merely rechecking nonvanishing or fixed
+area. It must instead control support/coefficient growth as area increases or
+prove a compatible full-`D` noncoprime theorem, while preserving P171's
+endpoint correction and the NG36 rotation distinction. `P178` remains
+conditional on X02.
+
 Phase 26 closes the cycle-side `H147` area-three obligation by the stronger
 all-gcd theorem P158: every critical primitive positive nontrivial cycle has
 reduced-slope area at least six. Do not extend the former area-three search.

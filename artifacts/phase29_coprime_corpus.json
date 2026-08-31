@@ -1,0 +1,166 @@
+{
+  "counts": {
+    "coefficient_identity_checks": 5994,
+    "coprime_classes": 797,
+    "largest_gap_cuts_checked": 1648,
+    "minimum_rotations": 797,
+    "synthetic_profiles": 5
+  },
+  "format": "collatz-phase29-coprime-corpus-v1",
+  "proves_collatz": false,
+  "row_digest_sha256": "62bef050018b165bbb455e85e206d08621981e5b209a673eeccf109ba0cdbdc5",
+  "scope": "Complete positive-D coprime cyclic classes through q<=8 plus five exact legal synthetic profiles.",
+  "stored_rows": "digest only; the independent verifier regenerates the complete corpus",
+  "synthetic_rows": [
+    [
+      "tall",
+      125,
+      199,
+      23,
+      5,
+      {
+        "coefficient_digest_sha256": "04169388ddd1dc24e80824341244349332e876df0d009da00182ac382b50379f",
+        "cut_rows": [
+          [
+            77,
+            56,
+            -1,
+            94,
+            0,
+            123,
+            123,
+            "0feb43b21ef02d7667f1732aa3374c14b65feb2c1ccb8855a23da99ff670e451"
+          ]
+        ],
+        "l1": 161,
+        "largest_gap": 69,
+        "largest_gap_ties": 1,
+        "support_count": 17
+      }
+    ],
+    [
+      "plateau",
+      125,
+      199,
+      597,
+      5,
+      {
+        "coefficient_digest_sha256": "bdc8e008774c3b6a50ee271eec48e93f95aa60a790b208c43d8416be8c656c7c",
+        "cut_rows": [
+          [
+            68,
+            57,
+            1,
+            97,
+            4,
+            113,
+            109,
+            "1c98cb97c4ce50dba51b50c20dd0a85e81e5107da311e376c8bc34959860253a"
+          ]
+        ],
+        "l1": 500,
+        "largest_gap": 68,
+        "largest_gap_ties": 1,
+        "support_count": 18
+      }
+    ],
+    [
+      "isolated",
+      125,
+      199,
+      28,
+      1,
+      {
+        "coefficient_digest_sha256": "489161da60d304b8571eb43a5cd97b4ee6fc165596978543f95904585ea6ba57",
+        "cut_rows": [
+          [
+            77,
+            95,
+            -1,
+            154,
+            0,
+            123,
+            123,
+            "c35dd143c9ed222801c5ad1dcb646021f71d0b5f048bb2ed6a470ae58c1c36dc"
+          ]
+        ],
+        "l1": 57,
+        "largest_gap": 30,
+        "largest_gap_ties": 1,
+        "support_count": 57
+      }
+    ],
+    [
+      "near-extremal",
+      1331,
+      2110,
+      234,
+      9,
+      {
+        "coefficient_digest_sha256": "ee7e33106ad03364230b04252894035517cb8f4070d77c5e234bec69d869fbf2",
+        "cut_rows": [
+          [
+            1074,
+            549,
+            -1,
+            877,
+            0,
+            1703,
+            1703,
+            "aa36ae273dc068c7bbafffefbfcbd5c3cdb340c03057d3501267347a562111c8"
+          ]
+        ],
+        "l1": 3176,
+        "largest_gap": 782,
+        "largest_gap_ties": 1,
+        "support_count": 322
+      }
+    ],
+    [
+      "seven-grid",
+      77,
+      123,
+      3,
+      1,
+      {
+        "coefficient_digest_sha256": "db95e53e20998fd3800211e2de6eb2de427bf3c93a932f134e7fb15d1c3a7a0b",
+        "cut_rows": [
+          [
+            33,
+            60,
+            1,
+            96,
+            0,
+            53,
+            53,
+            "0958e39496e80ab6acc955183158bcd13c3e0006bd800ff76e3a26bc47b7a39c"
+          ],
+          [
+            55,
+            60,
+            1,
+            96,
+            0,
+            88,
+            88,
+            "b47ee63837636e77f0b0913bd4690b42d004a2d35dcca7e289a82b206b4326c0"
+          ],
+          [
+            0,
+            60,
+            1,
+            96,
+            0,
+            0,
+            0,
+            "1980699fd06eb69202591a86432eb1a572d85351620da2ec2fe2860fc80962c2"
+          ]
+        ],
+        "l1": 7,
+        "largest_gap": 17,
+        "largest_gap_ties": 3,
+        "support_count": 7
+      }
+    ]
+  ]
+}

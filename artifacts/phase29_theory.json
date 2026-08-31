@@ -1,0 +1,78 @@
+{
+  "automatic_nonvanishing": "W_t=min(E_t,E_(t+u)-c) off qZ, W_(kq)=kL; W_t is strictly increasing, so every arc sum has one least 2-adic valuation.",
+  "claims": {
+    "E41": {
+      "statement": "The declared arc ties, coprime corpus, all-gcd state corpus, synthetic profiles, Farey boxes, and regressions are independently reproducible.",
+      "status": "VERIFIED_FINITE"
+    },
+    "H133": {
+      "statement": "Phase 29 does not exclude arbitrary-area positive cycles.",
+      "status": "OPEN"
+    },
+    "H172": {
+      "statement": "Growing-area coprime coefficient height and full-D noncoprime arithmetic still prevent cycle exclusion.",
+      "status": "OPEN"
+    },
+    "P173": {
+      "statement": "Every P147 circular cut of every valid coprime reduced profile has a nonzero arc integer, with its exact 2-adic valuation determined by the unique least transport weight.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P174": {
+      "statement": "Every integral coprime profile obeys the exact critical and noncritical sparse-arc resonance inequalities.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P175": {
+      "statement": "For every fixed area A, only finitely many coprime primitive positive cycle profiles can have area at most A; the critical branch uses EXT17.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P176": {
+      "statement": "At a maximum reduced height in every positive rational affine cycle, x_t<=S_t^(0)/(3(1-lambda0))<2q0/(3(1-lambda0)).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P177": {
+      "statement": "Every primitive positive nontrivial integer cycle has reduced odd period q0>=971, using E28.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P178": {
+      "statement": "Assuming X02, every primitive positive nontrivial integer cycle has q0>=72057431991.",
+      "status": "CONDITIONAL"
+    }
+  },
+  "critical_resonance": "3^ceil(q/M)<4*C*(12q)^K, K=1564920000",
+  "dependencies": {
+    "P173": [
+      "P135",
+      "P147",
+      "P156",
+      "P171"
+    ],
+    "P174": [
+      "P147",
+      "P173",
+      "EXT17"
+    ],
+    "P175": [
+      "P150",
+      "P173",
+      "P174",
+      "EXT17"
+    ],
+    "P176": [
+      "P156"
+    ],
+    "P177": [
+      "P176",
+      "E28"
+    ],
+    "P178": [
+      "P176",
+      "X02"
+    ]
+  },
+  "external_boundary": "EXT17 is used only for the critical resonance/fixed-area branch; X02 is used only by conditional P178.",
+  "format": "collatz-phase29-arc-nonvanishing-theory-v1",
+  "noncritical_resonance": "2^(L*ceil(q/M)/q)<4*C",
+  "proves_collatz": false,
+  "state_bound": "x_t<=S_t^(0)/(3(1-lambda0))<2q0/(3(1-lambda0))",
+  "what_this_result_does_not_prove": "No growing-area coprime exclusion, full-D noncoprime resultant, nonperiodic branch exclusion, or Collatz proof follows."
+}

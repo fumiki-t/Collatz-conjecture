@@ -216,6 +216,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   near-extremal scales, and P171 gives a corrected sparse multilevel
   polynomial. NG37/NG38 warn against finite strictness and dropping the
   endpoint term. H172 and H133 remain open.
+- Phase 29 proves every coprime P147 arc automatically nonzero with exact
+  2-adic valuation. It excludes every fixed area eventually and gives an
+  all-gcd state bound with internal `q0>=971`; X02 conditionally gives
+  `q0>=72057431991`. H172 now asks for a growing-area quantitative gap and a
+  full-`D` noncoprime theorem, not another cancellation argument.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

@@ -185,6 +185,13 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   retains EXT17. P170 localizes equality, and P171 gives a corrected sparse
   multilevel polynomial. NG37/NG38 preserve the two proposal failures. H172
   and H133 remain open.
+- `VERIFIED_THEOREM` / `CONDITIONAL` / `OPEN`: P173 proves automatic
+  nonvanishing and exact 2-adic valuation for every coprime P147 arc. P174
+  gives exact resonance inequalities, P175 excludes every fixed area
+  eventually, and P176 gives an all-gcd maximum-state bound. P177 yields the
+  internal reduced-period floor `q0>=971`; P178 conditionally yields
+  `q0>=72057431991` from X02. Growing-area coefficient height and full-`D`
+  noncoprime arithmetic keep H172/H133 open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -710,10 +717,10 @@ eventual nonzero lifts.
   energy lower bound on the Phase 22 profiles and negative cycles, and do not
   scale composition depth unless the rule covers arbitrary area or strengthens
   P140's noncoprime modulus.
-- Start new cycle work from P166--P171's transport/level split, not another
-  fixed-area enumeration. Rebuild NG34--NG38 and the five Phase 28 synthetic
-  profiles before proposing a transition, source, energy, or resultant
-  mechanism. Retain P171's endpoint correction.
+- Start new cycle work from P173's exact ordered valuations and P174's
+  resonance, not another nonvanishing proof or fixed-area enumeration. Seek a
+  quantitative growing-area gap and a full-`D` noncoprime analogue. Rebuild
+  NG34--NG38, E41, and the five Phase 28 synthetic profiles first.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -778,4 +785,5 @@ eventual nonzero lifts.
 - Phase 26 acceptance: [`../PHASE26_RUN_RESULTS.md`](../PHASE26_RUN_RESULTS.md)
 - Phase 27 acceptance: [`../PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md)
 - Phase 28 acceptance: [`../PHASE28_RUN_RESULTS.md`](../PHASE28_RUN_RESULTS.md)
+- Phase 29 acceptance: [`../PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

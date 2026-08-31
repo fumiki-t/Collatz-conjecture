@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 28
+# Collatz research synthesis through Phase 29
 
 **Audit date:** 2026-08-30
 
-**Audited base:** `e0e2973b8762c8a8ce646661ed0d498dbe488d18`
+**Audited base:** Phase 29 acceptance commit recorded in its experiment manifest
 
-**Latest accepted phase:** Phase 28
+**Latest accepted phase:** Phase 29
 
 **Problem status:** `OPEN`
 
@@ -770,6 +770,24 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE28_RUN_RESULTS.md`](../PHASE28_RUN_RESULTS.md) and the
   [`Phase 28 audit`](../research/audits/transport-dispersion/REPORT.md).
 
+### Phase 29 — automatic arc nonvanishing
+
+- **Purpose:** audit the coprime sparse-arc cancellation boundary and derive
+  exact consequences for fixed area and reduced cycle period.
+- **Accepted internally:** P173 proves every P147 coprime arc nonzero with an
+  exact 2-adic valuation; P174 gives critical/noncritical resonance; P175
+  excludes every fixed area eventually; P176 gives an all-gcd maximum-state
+  bound; P177 gives the internal reduced-period floor `q0>=971`.
+- **External boundary:** P175's critical branch uses EXT17. P178's stronger
+  `q0>=72057431991` is conditional on X02 and is not promoted.
+- **Finite evidence:** E41 independently rebuilds 93,629 tied arc cuts, 797
+  coprime classes, five synthetic profiles, 5,615 all-gcd state rows, exact
+  Farey boxes, and mandatory regressions.
+- **Open:** cancellation is no longer the H172 obstruction. Growing-area
+  support/coefficient height and full-`D` noncoprime arithmetic remain open.
+  See [`PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md) and the
+  [`Phase 29 audit`](../research/audits/arc-nonvanishing/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -777,7 +795,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P171 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG38.
 
@@ -924,9 +942,9 @@ Neither target covers a repeated periodic orbit.
 nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
 Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, Phase 27
-P162--P165, and Phase 28 P166--P171. H133 now isolates near-extremal, tall,
-and diffuse profiles after sharp transport/level dispersion across all gcd
-classes; H172 records the new resonance/resultant bridge. **Acceptance:** a
+P162--P165, Phase 28 P166--P171, and Phase 29 P173--P177. H133 now isolates
+growing-area coefficient height and full-`D` noncoprime arithmetic after exact
+coprime nonvanishing; H172 records that quantitative bridge. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
@@ -1032,8 +1050,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase28.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase28_verifier.json
+.venv/bin/python verifier/verify_phase29.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase29_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:
