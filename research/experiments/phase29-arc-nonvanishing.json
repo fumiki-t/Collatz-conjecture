@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase29-arc-nonvanishing",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P173", "P174", "P175", "P176", "P177", "P178", "E41", "H172", "H133"],
   "objective": "Audit automatic nonvanishing of every coprime sparse arc, derive exact resonance and fixed-area consequences, establish an all-gcd reduced-state bound, and preserve the remaining arbitrary-area obstruction.",
   "exact_scope": {
@@ -75,13 +75,13 @@
     "H172, H133, every nonperiodic branch, and Collatz remain open; proves_collatz remains false."
   ],
   "recorded_result": {
-    "commit": "PENDING",
+    "commit": "56d1f2fd8aa2831dc433260bd41816a5733c0cd8",
     "generator": "valid=true with 43,470 tied profiles, 93,629 nonzero cuts, 797 coprime classes, five synthetic profiles, and 5,615 all-gcd state checks",
     "verifier": "valid=true with generator_imported=false, direct time/residue coefficients, repeated-division valuations, suffix products, and an independent 224-term logarithm box",
-    "focused_tests": "PENDING",
-    "full_tests": "PENDING",
-    "strict_research_health": "PENDING",
-    "manifest_sha256": "PENDING",
+    "focused_tests": "19 passed in 107.65s across Phase 29 properties, independent verifier acceptance, tamper rejection, and research-health control-plane tests",
+    "full_tests": "408 passed in 1412.38s",
+    "strict_research_health": "valid=true with 193 tracked artifacts and zero errors, warnings, or untracked artifacts",
+    "manifest_sha256": "b6cfdda682b3532c67316822148c5d5cedef67057b88a9b5dd3a0d6b5d698792",
     "verifier_valid": true
   },
   "proves_collatz": false

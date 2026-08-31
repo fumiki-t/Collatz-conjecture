@@ -37,9 +37,12 @@ sha256sum -c artifacts/SHA256SUMS
 The independent verifier accepted all 93,629 tied-largest-gap arc cuts and
 reconstructed 797 coprime classes, five synthetic profiles, 5,615 all-gcd
 maximum-state rows, both Farey boxes, and every mandatory adversarial family.
-The focused Phase 29 property/verifier suite initially passed 14 tests in
-99.60 seconds; final repository-wide counts are recorded in the experiment
-manifest after acceptance.
+The final focused suite passed 19 tests in 107.65 seconds and the complete
+repository suite passed 408 tests in 1412.38 seconds. Strict research health
+reported 193 tracked artifacts with zero errors, warnings, or unexplained
+artifacts. The accepted evidence commit is
+`56d1f2fd8aa2831dc433260bd41816a5733c0cd8`; the SHA-256 manifest hash is
+`b6cfdda682b3532c67316822148c5d5cedef67057b88a9b5dd3a0d6b5d698792`.
 
 ## Evidence
 
