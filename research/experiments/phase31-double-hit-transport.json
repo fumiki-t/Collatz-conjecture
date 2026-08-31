@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase31-double-hit-transport",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P185", "P186", "P187", "P188", "P189", "P190", "E43", "NG40", "H172", "H133"],
   "objective": "Audit static singleton extraction, residual-context low-hit counting, the double-hit cycle-area constant, repaired near-equality structure, and the exact grid identity without promoting local control to a global near-grid theorem.",
   "exact_scope": {
@@ -79,13 +79,13 @@
     "H172, H133, nonperiodic branches, and Collatz remain open."
   ],
   "recorded_result": {
-    "commit": "PENDING",
+    "commit": "3ca865f6b71b6f1d60d09ca7428920e7c3dcc467",
     "generator": "valid=true with 2,214 cyclic classes, 3,101 minimum rotations, 45,369 widths, 1,280 extracted swaps, and 673,303 grid-recurrence positions",
     "verifier": "valid=true with generator_imported=false, direct residual/context reconstruction, separate synthetic recurrences, and a 176-term log box",
-    "focused_tests": "PENDING",
-    "full_tests": "PENDING",
-    "strict_research_health": "PENDING",
-    "manifest_sha256": "PENDING",
+    "focused_tests": "21 passed in 55.11s",
+    "full_tests": "439 passed in 1468.56s",
+    "strict_research_health": "valid=true, errors=[], warnings=[]",
+    "manifest_sha256": "09c75e8e8962b22f186b9e812cbd04ac0f51e41e7a3b384be6345274ac00c2d1",
     "verifier_valid": true
   },
   "proves_collatz": false

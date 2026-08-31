@@ -34,8 +34,14 @@ are valid after repairing the proposed global near-grid interpretation.
 shasum -a 256 -c artifacts/SHA256SUMS
 ```
 
-Final test results, evidence commit, and manifest hash are recorded in the
-accepted experiment manifest.
+Acceptance evidence:
+
+- focused suite: `21 passed in 55.11s`;
+- full suite: `439 passed in 1468.56s`;
+- strict research health: `valid=true`, no errors or warnings;
+- evidence commit: `3ca865f6b71b6f1d60d09ca7428920e7c3dcc467`;
+- `artifacts/SHA256SUMS` SHA-256:
+  `09c75e8e8962b22f186b9e812cbd04ac0f51e41e7a3b384be6345274ac00c2d1`.
 
 ## Evidence
 
