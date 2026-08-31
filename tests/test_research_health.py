@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 29
+    assert result["latest_phase"] == 30
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -175,27 +175,30 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["P177"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["P178"] == "CONDITIONAL"
     assert result["active_focus"]["E41"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["P179"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P180"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P181"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P182"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P183"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P184"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E42"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG39"] == "REFUTED"
     assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["arc_counts"] == {
-        "critical_area_three_profiles": 521154,
-        "critical_area_two_profiles": 7057,
-        "largest_gap_cuts_checked": 93629,
-        "largest_gap_tie_profiles": 43470,
-        "noncritical_area_two_profiles": 204,
-        "nonzero_arc_checks": 93629,
-        "valuation_checks": 93629,
-    }
     assert result["latest_supplemental_verifier"]["corpus_counts"] == {
-        "coefficient_identity_checks": 5994,
-        "coprime_classes": 797,
-        "largest_gap_cuts_checked": 1648,
-        "minimum_rotations": 797,
-        "synthetic_profiles": 5,
+        "affected_start_checks": 141643,
+        "component_rotation_checks": 9498,
+        "cyclic_classes": 2214,
+        "factor_width_checks": 45369,
+        "minimum_rotations": 3101,
+        "noncoprime_classes": 1417,
+        "primitive_classes": 2186,
+        "span_checks": 6202,
+        "spine_charging_checks": 9303,
     }
-    assert result["latest_supplemental_verifier"]["state_counts"]["maximum_state_checks"] == 5615
-    assert result["latest_supplemental_verifier"]["state_counts"]["noncoprime_classes"] == 1417
+    assert result["latest_supplemental_verifier"]["scalar_counts"] == {"log_terms": 160, "slope_rows": 5}
+    assert result["latest_supplemental_verifier"]["synthetic_counts"] == {"factor_width_checks": 50, "profiles": 5}
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -234,6 +237,8 @@ def test_repository_research_health() -> None:
     assert ("phase28-transport-dispersion" in result["accepted_experiments"]) == (phase28["status"] == "ACCEPTED")
     phase29 = json.loads(Path("research/experiments/phase29-arc-nonvanishing.json").read_text(encoding="utf-8"))
     assert ("phase29-arc-nonvanishing" in result["accepted_experiments"]) == (phase29["status"] == "ACCEPTED")
+    phase30 = json.loads(Path("research/experiments/phase30-direct-transport.json").read_text(encoding="utf-8"))
+    assert ("phase30-direct-transport" in result["accepted_experiments"]) == (phase30["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -257,7 +262,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 235
+    assert committed["claim_count"] == 243
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -318,6 +323,14 @@ def test_generated_claim_index_is_complete() -> None:
     assert rows["P177"]["status"] == "VERIFIED_THEOREM"
     assert rows["P178"]["status"] == "CONDITIONAL"
     assert rows["E41"]["status"] == "VERIFIED_FINITE"
+    assert rows["P179"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P180"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P181"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P182"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P183"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P184"]["status"] == "VERIFIED_THEOREM"
+    assert rows["E42"]["status"] == "VERIFIED_FINITE"
+    assert rows["NG39"]["status"] == "REFUTED"
     assert rows["H147"]["status"] == "VERIFIED_THEOREM"
     assert set(rows["H72"]["dependency_ids"]) == {
         "P72",

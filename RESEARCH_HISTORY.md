@@ -1696,3 +1696,46 @@ Phase 29 does not control support/coefficient height as defect area grows and
 does not produce a full-`D` noncoprime resultant. H172 and H133 remain open,
 as do both nonperiodic branches and the Collatz conjecture.
 `proves_collatz=false`.
+
+## 2026-08-31 — Phase 30: direct token transport
+
+**Branch:** `feat/phase30-direct-transport`
+
+**Acceptance record:** [`PHASE30_RUN_RESULTS.md`](PHASE30_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/direct-transport/REPORT.md`](research/audits/direct-transport/REPORT.md)
+
+Phase 30 treated the supplied direct-transport note as an untrusted proposal.
+P179 proves that raising one level component cyclically rotates one exact
+binary segment, yielding
+`p_cyc(n)<=p_base(n)+T_span+J(n-1)` and the global bound
+`p_cyc(n)<=(J+1)n+2A+1`. NG39 preserves the smallest failure of dropping the
+span: at `(q,L,n)=(6,10,4)` the proposed bound is nine but the exact factor
+count is ten.
+
+P180 inserts the direct estimate into primitive-positive state separation.
+P181 optimizes it with P167 to obtain
+`3 ell^(2/3)/(2(ell-1)^(1/3))`, whose cube is exactly four times the P168
+constant's cube. P182 records the noncritical enclosure
+`2.381101<C<2.381102` and the EXT17-dependent critical enclosure
+`2.438154<C_crit<2.438155`.
+
+P183 repairs the proposal's equality statement. The normalized height,
+component count, `A/J`, descent slack, direct factor bound, and selected
+`n_cyc` proxy have the stated limiting behavior, but saturation of the actual
+maximum orbit state does not follow and is not claimed. P184 charges every
+secondary peak to exact descent slack and shows that a near-extremal profile
+has one nested spine and `J-o(J)` singleton components.
+
+E42 independently reconstructs 2,214 cyclic classes, 3,101 minimum rotations,
+45,369 factor widths, 9,498 component rotations, 141,643 affected starts,
+9,303 spine-charging inequalities, five synthetic profiles, scalar
+enclosures, and all mandatory families. The next H172 target is a
+pair-location-aware subleading resonance/resultant gap, not another leading
+area estimate.
+
+### What this result does not prove
+
+Phase 30 does not exclude arbitrary-area cycles, prove the missing
+pair-location theorem, eliminate either nonperiodic branch, or prove or
+disprove the Collatz conjecture. `proves_collatz=false`.

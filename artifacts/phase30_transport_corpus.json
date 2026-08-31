@@ -1,0 +1,608 @@
+{
+  "counts": {
+    "affected_start_checks": 141643,
+    "component_rotation_checks": 9498,
+    "cyclic_classes": 2214,
+    "factor_width_checks": 45369,
+    "minimum_rotations": 3101,
+    "noncoprime_classes": 1417,
+    "primitive_classes": 2186,
+    "span_checks": 6202,
+    "spine_charging_checks": 9303
+  },
+  "equality_samples": [
+    [
+      [
+        2
+      ],
+      {
+        "J": 0,
+        "L": 2,
+        "affected_start_checks": 0,
+        "area": 0,
+        "component_rotation_checks": 0,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          1,
+          2
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            3,
+            0
+          ]
+        ],
+        "height": 0,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 1,
+        "spine_excess": 0,
+        "transport_span": 0
+      }
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      {
+        "J": 0,
+        "L": 4,
+        "affected_start_checks": 0,
+        "area": 0,
+        "component_rotation_checks": 0,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            3,
+            0
+          ],
+          [
+            3,
+            2,
+            2,
+            2,
+            4,
+            0
+          ],
+          [
+            4,
+            2,
+            2,
+            2,
+            5,
+            0
+          ]
+        ],
+        "height": 0,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 2,
+        "spine_excess": 0,
+        "transport_span": 0
+      }
+    ],
+    [
+      [
+        2,
+        2,
+        1
+      ],
+      {
+        "J": 0,
+        "L": 5,
+        "affected_start_checks": 0,
+        "area": 0,
+        "component_rotation_checks": 0,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            3,
+            3,
+            3,
+            0
+          ],
+          [
+            3,
+            4,
+            4,
+            4,
+            4,
+            0
+          ],
+          [
+            4,
+            5,
+            5,
+            5,
+            5,
+            0
+          ],
+          [
+            5,
+            5,
+            5,
+            5,
+            6,
+            0
+          ]
+        ],
+        "height": 0,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 3,
+        "spine_excess": 0,
+        "transport_span": 0
+      }
+    ],
+    [
+      [
+        2,
+        3,
+        1
+      ],
+      {
+        "J": 1,
+        "L": 6,
+        "affected_start_checks": 6,
+        "area": 1,
+        "component_rotation_checks": 1,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          3
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            4,
+            5,
+            0
+          ],
+          [
+            2,
+            2,
+            4,
+            5,
+            7,
+            2
+          ],
+          [
+            3,
+            2,
+            6,
+            6,
+            9,
+            4
+          ],
+          [
+            4,
+            2,
+            6,
+            7,
+            11,
+            5
+          ],
+          [
+            5,
+            2,
+            6,
+            8,
+            13,
+            6
+          ],
+          [
+            6,
+            2,
+            6,
+            9,
+            15,
+            6
+          ]
+        ],
+        "height": 1,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 3,
+        "spine_excess": 0,
+        "transport_span": 2
+      }
+    ],
+    [
+      [
+        3,
+        1,
+        2
+      ],
+      {
+        "J": 1,
+        "L": 6,
+        "affected_start_checks": 6,
+        "area": 1,
+        "component_rotation_checks": 1,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          3
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            4,
+            5,
+            0
+          ],
+          [
+            2,
+            2,
+            4,
+            5,
+            7,
+            2
+          ],
+          [
+            3,
+            2,
+            6,
+            6,
+            9,
+            4
+          ],
+          [
+            4,
+            2,
+            6,
+            7,
+            11,
+            5
+          ],
+          [
+            5,
+            2,
+            6,
+            8,
+            13,
+            6
+          ],
+          [
+            6,
+            2,
+            6,
+            9,
+            15,
+            6
+          ]
+        ],
+        "height": 1,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 3,
+        "spine_excess": 0,
+        "transport_span": 2
+      }
+    ],
+    [
+      [
+        2,
+        2,
+        2
+      ],
+      {
+        "J": 0,
+        "L": 6,
+        "affected_start_checks": 0,
+        "area": 0,
+        "component_rotation_checks": 0,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            3,
+            0
+          ],
+          [
+            3,
+            2,
+            2,
+            2,
+            4,
+            0
+          ],
+          [
+            4,
+            2,
+            2,
+            2,
+            5,
+            0
+          ],
+          [
+            5,
+            2,
+            2,
+            2,
+            6,
+            0
+          ],
+          [
+            6,
+            2,
+            2,
+            2,
+            7,
+            0
+          ]
+        ],
+        "height": 0,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 3,
+        "spine_excess": 0,
+        "transport_span": 0
+      }
+    ],
+    [
+      [
+        2,
+        2,
+        2,
+        1
+      ],
+      {
+        "J": 0,
+        "L": 7,
+        "affected_start_checks": 0,
+        "area": 0,
+        "component_rotation_checks": 0,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            3,
+            3,
+            3,
+            0
+          ],
+          [
+            3,
+            4,
+            4,
+            4,
+            4,
+            0
+          ],
+          [
+            4,
+            5,
+            5,
+            5,
+            5,
+            0
+          ],
+          [
+            5,
+            6,
+            6,
+            6,
+            6,
+            0
+          ],
+          [
+            6,
+            7,
+            7,
+            7,
+            7,
+            0
+          ],
+          [
+            7,
+            7,
+            7,
+            7,
+            8,
+            0
+          ]
+        ],
+        "height": 0,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 4,
+        "spine_excess": 0,
+        "transport_span": 0
+      }
+    ],
+    [
+      [
+        2,
+        2,
+        3,
+        1
+      ],
+      {
+        "J": 1,
+        "L": 8,
+        "affected_start_checks": 8,
+        "area": 1,
+        "component_rotation_checks": 1,
+        "descent_floor": 0,
+        "descent_slack": 0,
+        "equality_widths": [
+          3,
+          4,
+          5
+        ],
+        "factor_rows": [
+          [
+            1,
+            2,
+            2,
+            4,
+            5,
+            0
+          ],
+          [
+            2,
+            2,
+            4,
+            5,
+            7,
+            2
+          ],
+          [
+            3,
+            2,
+            6,
+            6,
+            9,
+            4
+          ],
+          [
+            4,
+            2,
+            7,
+            7,
+            11,
+            5
+          ],
+          [
+            5,
+            2,
+            8,
+            8,
+            13,
+            6
+          ],
+          [
+            6,
+            2,
+            8,
+            9,
+            15,
+            7
+          ],
+          [
+            7,
+            2,
+            8,
+            10,
+            17,
+            8
+          ],
+          [
+            8,
+            2,
+            8,
+            11,
+            19,
+            8
+          ]
+        ],
+        "height": 1,
+        "nonspine_excess": 0,
+        "nonspine_nonsingleton": 0,
+        "q": 4,
+        "spine_excess": 0,
+        "transport_span": 2
+      }
+    ]
+  ],
+  "format": "collatz-phase30-direct-transport-corpus-v1",
+  "maximum_q": 8,
+  "proves_collatz": false,
+  "row_digest_sha256": "31a329d0b375930e7745d42f10f5c86f89b348e991c629a15276a7091514db10",
+  "scope": "Complete positive-D cyclic exponent corpus through q<=8 and every cyclic width; rational structural controls are not asserted to be integer cycles."
+}

@@ -221,6 +221,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   all-gcd state bound with internal `q0>=971`; X02 conditionally gives
   `q0>=72057431991`. H172 now asks for a growing-area quantitative gap and a
   full-`D` noncoprime theorem, not another cancellation argument.
+- Phase 30 replaces the `2J` edit count by direct component rotations,
+  improving the area constant by `2^(2/3)`. At equality, all but `o(J)`
+  transports are singleton. NG39 requires the span term, and literal actual
+  state-height saturation was not accepted. H172 now needs a strict
+  subleading pair-location resultant gap.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

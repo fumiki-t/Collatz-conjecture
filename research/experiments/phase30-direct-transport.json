@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "phase30-direct-transport",
+  "status": "RUNNING",
+  "claim_ids": ["P179", "P180", "P181", "P182", "P183", "P184", "E42", "NG39", "H172", "H133"],
+  "objective": "Audit direct level-component rotations, sharpen all-gcd cycle factor separation and the asymptotic area constant, prove the singleton-transport equality normal form, and preserve the exact span obstruction.",
+  "exact_scope": {
+    "quantifiers": [
+      "every valid reduced profile for P179",
+      "every primitive positive nontrivial cycle for P180",
+      "every hypothetical cycle sequence satisfying P181's explicit slope and multiplier-gap hypotheses",
+      "all positive-D cyclic exponent classes through q<=8 for E42",
+      "the declared five exact synthetic profiles and mandatory adversarial controls"
+    ],
+    "bounds": {
+      "cycle_corpus_q_maximum": 8,
+      "factor_width_checks": 45369,
+      "affected_start_checks": 141643,
+      "spine_charging_checks": 9303,
+      "synthetic_profile_count": 5,
+      "generator_log_terms": 96,
+      "verifier_log_terms": 160
+    },
+    "completeness": "P179-P184 are exact theorem-level consequences in their stated domains after repairing literal actual-state saturation. P182's critical branch uses EXT17. E42 is bounded. NG39 is exact. H172 and H133 remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, Fraction arithmetic, exact factor sets, labelled boundary rotations, rational atanh logarithm enclosures, exact cube comparisons, and SHA-256 row digests",
+    "floating_point_role": "none in generation, verification, theorem constants, or acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase30_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase30.py --artifact-dir artifacts --output artifacts/phase30_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase30_properties.py tests/test_phase30_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "the complete q<=8 corpus by recursive compositions",
+      "each intermediate word directly from incremented boundary profiles rather than generator string mutation",
+      "every factor-set addition and affected-start inequality",
+      "secondary-peak charging through a separately selected nested spine",
+      "five synthetic profiles from separately coded recurrences",
+      "critical and noncritical constants with an independent 160-term logarithm enclosure",
+      "NG39, trivial powers, negative controls, and mandatory adversarial labels"
+    ],
+    "forbidden_imports": ["src.phase30_search", "phase30_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase30_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "NG34-NG39", "both negative cycles", "trivial cycle powers",
+    "tall, plateau, isolated, near-extremal, and seven-grid profiles"
+  ],
+  "artifacts": [
+    "artifacts/phase30_theory.json",
+    "artifacts/phase30_transport_corpus.json",
+    "artifacts/phase30_scalar_certificates.json",
+    "artifacts/phase30_synthetic_profiles.json",
+    "artifacts/phase30_regressions.json",
+    "artifacts/phase30_obstruction_report.md",
+    "artifacts/phase30_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not drop T_span; NG39 is exact.",
+    "Do not promote n_cyc-proxy saturation to actual maximum-state saturation.",
+    "Do not infer cycle exclusion from a stronger area constant or singleton prevalence.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The result sharpens a necessary area condition and equality language but supplies no strict subleading arithmetic gap.",
+    "Finite corpus agreement is regression evidence, not asymptotic completeness.",
+    "H172, H133, nonperiodic branches, and Collatz remain open."
+  ],
+  "recorded_result": {
+    "commit": "PENDING",
+    "generator": "valid=true with 2,214 cyclic classes, 3,101 minimum rotations, 45,369 widths, 141,643 affected-start checks, and 9,303 spine checks",
+    "verifier": "valid=true with generator_imported=false, direct boundary reconstruction, factor-set differences, separate synthetic recurrences, and a 160-term log box",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

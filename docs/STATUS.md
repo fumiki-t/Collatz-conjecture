@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-30
+**Last updated:** 2026-08-31
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -192,6 +192,12 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   internal reduced-period floor `q0>=971`; P178 conditionally yields
   `q0>=72057431991` from X02. Growing-area coefficient height and full-`D`
   noncoprime arithmetic keep H172/H133 open.
+- `VERIFIED_THEOREM` / `REFUTED` / `OPEN`: P179 replaces the `2J` edit bound
+  by exact direct component rotations. P180/P181 improve the all-gcd area
+  constant by `2^(2/3)`; P182 gives exact branch constants; P183/P184 force
+  repaired equality scales and all but `o(J)` singleton transports. NG39
+  preserves the indispensable span term. A strict subleading pair-location
+  resultant remains missing, so H172/H133 stay open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -717,10 +723,10 @@ eventual nonzero lifts.
   energy lower bound on the Phase 22 profiles and negative cycles, and do not
   scale composition depth unless the rule covers arbitrary area or strengthens
   P140's noncoprime modulus.
-- Start new cycle work from P173's exact ordered valuations and P174's
-  resonance, not another nonvanishing proof or fixed-area enumeration. Seek a
-  quantitative growing-area gap and a full-`D` noncoprime analogue. Rebuild
-  NG34--NG38, E41, and the five Phase 28 synthetic profiles first.
+- Start new cycle work from P184's singleton pairs and P171's endpoint
+  binomials. Seek a strict subleading pair-location gap and a full-`D`
+  noncoprime analogue. Rebuild NG34--NG39, E42, and the Phase 28--30 synthetic
+  profiles first. Do not claim actual maximum-state saturation from P183.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -786,4 +792,5 @@ eventual nonzero lifts.
 - Phase 27 acceptance: [`../PHASE27_RUN_RESULTS.md`](../PHASE27_RUN_RESULTS.md)
 - Phase 28 acceptance: [`../PHASE28_RUN_RESULTS.md`](../PHASE28_RUN_RESULTS.md)
 - Phase 29 acceptance: [`../PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md)
+- Phase 30 acceptance: [`../PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

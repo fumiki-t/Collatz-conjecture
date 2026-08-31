@@ -323,6 +323,15 @@ prove a compatible full-`D` noncoprime theorem, while preserving P171's
 endpoint correction and the NG36 rotation distinction. `P178` remains
 conditional on X02.
 
+Phase 30 replaces adjacent-swap factor transport by P179's direct component
+rotation bound and strengthens the cycle-area constant through P181. Future
+H172 work should use P184's near-equality normal form: one nested spine,
+`J-o(J)` singleton transports, and only `o(J)` exceptional components. It must
+obtain a strict subleading arithmetic gap from paired endpoint locations or a
+compatible noncoprime resultant. Preserve NG39's exact span obstruction, and
+do not promote saturation of the `n_cyc` proxy to saturation of the actual
+maximum orbit state.
+
 Phase 26 closes the cycle-side `H147` area-three obligation by the stronger
 all-gcd theorem P158: every critical primitive positive nontrivial cycle has
 reduced-slope area at least six. Do not extend the former area-three search.

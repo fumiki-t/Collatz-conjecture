@@ -1,0 +1,81 @@
+{
+  "claims": {
+    "E42": {
+      "statement": "The complete q<=8 corpus, synthetic profiles, scalars, counterexample, and regressions are independently reproducible.",
+      "status": "VERIFIED_FINITE"
+    },
+    "H133": {
+      "statement": "Arbitrary-area positive cycles remain open.",
+      "status": "OPEN"
+    },
+    "H172": {
+      "statement": "A pair-location-aware strict subleading resonance/resultant gap remains open.",
+      "status": "OPEN"
+    },
+    "NG39": {
+      "statement": "The span-free strengthening p_cyc(n)<=p_base(n)+Jn is false at q=6,L=10,n=4.",
+      "status": "REFUTED"
+    },
+    "P179": {
+      "statement": "Direct level rotations give p_cyc(n)<=p_base(n)+T_span+J(n-1), T_span<=min(2A,(L/q)A+J), hence p_cyc(n)<=(J+1)n+2A+1.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P180": {
+      "statement": "Every primitive positive nontrivial cycle obeys the sharpened direct-transport state-separation inequality with strict ceiling handling.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P181": {
+      "statement": "Under a fixed inverse-polynomial multiplier gap and slope limit ell, liminf A/q^(2/3)>=3 ell^(2/3)/(2(ell-1)^(1/3)).",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P182": {
+      "statement": "The noncritical constant is at least (3/2)2^(2/3); the critical constant is the stated log2(3) specialization using EXT17.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P183": {
+      "statement": "Equality forces the unique J,h,A scales, vanishing normalized descent slack, and leading saturation of the direct factor and n_cyc-proxy bounds, but not actual maximum-state saturation.",
+      "status": "VERIFIED_THEOREM"
+    },
+    "P184": {
+      "statement": "At equality all but o(J) level components are singleton intervals; secondary peaks are charged through total excess outside one nested descent spine.",
+      "status": "VERIFIED_THEOREM"
+    }
+  },
+  "dependencies": {
+    "P179": [
+      "P156",
+      "P166",
+      "P167"
+    ],
+    "P180": [
+      "P125",
+      "P133",
+      "P157",
+      "P179"
+    ],
+    "P181": [
+      "P167",
+      "P180"
+    ],
+    "P182": [
+      "P163",
+      "P164",
+      "P181",
+      "EXT17"
+    ],
+    "P183": [
+      "P167",
+      "P180",
+      "P181"
+    ],
+    "P184": [
+      "P167",
+      "P183"
+    ]
+  },
+  "external_boundary": "Only P182's critical specialization inherits EXT17; the direct factor theorem and noncritical constant are internal.",
+  "format": "collatz-phase30-direct-transport-theory-v1",
+  "proposal_repair": "The note's literal actual-state saturation sentence is not accepted because the inequality chain controls n_cyc, not the ratio of the actual maximum state to P157's upper bound.",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "No pair-aware resonance exclusion, arbitrary-area cycle exclusion, nonperiodic exclusion, or Collatz proof follows."
+}

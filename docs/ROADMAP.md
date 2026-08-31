@@ -110,17 +110,18 @@ including arbitrary-area coprime profiles and general noncoprime slopes.
 finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
-**Missing theorem.** P173 now proves every coprime sparse arc nonzero and P174
-turns this into exact resonance, so cancellation is no longer the missing
-step. P175 closes every fixed area and P176 bounds an all-gcd maximum state.
-The unresolved step is a quantitative gap dominating support/coefficient
-growth with area plus a full-`D` noncoprime analogue. NG36 also forbids silently identifying P133's
+**Missing theorem.** P179--P182 sharpen direct transport and the necessary
+area constant, while P183/P184 show that a sharp survivor has one nested spine
+and almost entirely singleton transports. The leading pair count now balances
+coefficient height exactly. The missing theorem is a strict subleading
+pair-location resonance/resultant gap plus a full-`D` noncoprime analogue.
+NG36 also forbids silently identifying P133's
 least-value rotation with P156's discrepancy-minimum rotation. P140 still
 supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
-cycle and its powers, E41's arc/state corpus and five synthetic profiles,
-NG34--NG38, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
+cycle and its powers, E42's direct corpus and five synthetic profiles,
+NG34--NG39, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
 positive.
@@ -128,9 +129,8 @@ positive.
 **Success criterion.** A uniform theorem proving `abs(R)<D`,
 `C_min<300000D`, or an equivalent contradiction for growing-area coprime
 profiles and every noncoprime gcd class, with an independently verified finite
-remainder. Extending `q`, enumerating another fixed area, or reproving
-nonvanishing/asymptotic area growth without a quantitative invariant is not
-success.
+remainder. Extending `q`, improving the area constant again, dropping span, or
+promoting the `n_cyc` proxy to actual state saturation is not success.
 
 ## P1 — Renewal-ladder dropping-safe barrier
 

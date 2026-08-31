@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 29
+# Collatz research synthesis through Phase 30
 
-**Audit date:** 2026-08-30
+**Audit date:** 2026-08-31
 
-**Audited base:** `56d1f2fd8aa2831dc433260bd41816a5733c0cd8`
+**Audited base:** Phase 30 acceptance commit recorded in its experiment manifest
 
-**Latest accepted phase:** Phase 29
+**Latest accepted phase:** Phase 30
 
 **Problem status:** `OPEN`
 
@@ -788,6 +788,24 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   See [`PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md) and the
   [`Phase 29 audit`](../research/audits/arc-nonvanishing/REPORT.md).
 
+### Phase 30 — direct token transport
+
+- **Purpose:** replace swap-count factor complexity by exact level-component
+  rotations and re-optimize the all-gcd cycle-area necessity.
+- **Accepted internally:** P179 proves the span-sensitive factor bound; P180
+  gives sharpened positive-cycle separation; P181/P182 improve the area
+  constant by `2^(2/3)`; P183 repairs equality rigidity; P184 proves all but
+  `o(J)` components are singleton at the sharp frontier.
+- **Repair/refutation:** literal actual maximum-state saturation is not
+  derived and was not accepted. NG39 refutes dropping mechanical span.
+- **Finite evidence:** E42 independently reconstructs all 45,369 widths in the
+  q<=8 corpus, 141,643 affected-start bounds, 9,303 spine checks, five large
+  profiles, exact constants, and mandatory controls.
+- **Open:** singleton pairs reach leading-order balance with coefficient
+  height. H172 requires a strict subleading pair-aware resultant gap. See
+  [`PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md) and the
+  [`Phase 30 audit`](../research/audits/direct-transport/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -795,7 +813,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P184 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG38.
 
@@ -942,9 +960,9 @@ Neither target covers a repeated periodic orbit.
 nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
 Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, Phase 27
-P162--P165, Phase 28 P166--P171, and Phase 29 P173--P177. H133 now isolates
-growing-area coefficient height and full-`D` noncoprime arithmetic after exact
-coprime nonvanishing; H172 records that quantitative bridge. **Acceptance:** a
+P162--P165, Phase 28 P166--P171, Phase 29 P173--P177, and Phase 30 P179--P184.
+H133 now isolates a strict subleading pair-location obstruction after sharper
+area growth and singleton rigidity; H172 records that bridge. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
@@ -1050,8 +1068,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase29.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase29_verifier.json
+.venv/bin/python verifier/verify_phase30.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase30_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

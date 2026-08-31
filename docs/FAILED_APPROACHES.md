@@ -1191,15 +1191,50 @@ decomposition and support bound survive with correction
 **Evidence.** [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md),
 Section 7, and `artifacts/phase28_regressions.json`.
 
+## NG39 — span-free direct factor transport
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** A level component may be charged only by its number of
+components and factor width, so that
+`p_cyc(n)<=p_base(n)+Jn` without an explicit transported-span term.
+
+**Why it looked plausible.** Each level component is one cyclic rotation, and
+an endpoint-only edit count appears to localize all newly created factors.
+
+**Smallest exact obstruction.** For `q=6`, `L=10`,
+`e=(2,2,1,3,1,1)`, and `n=4`, the reduced profile is
+`(0,0,0,0,1,0,0)` with `A=J=1` and transported span two. The baseline has
+five factors while the actual word has ten, so the span-free upper bound is
+nine. P179's corrected bound is exactly ten.
+
+**Failure scope.** Fundamental for the span-free estimate. P179 survives with
+the exact term `T_span`, which is subsequently bounded by `2A`.
+
+**Evidence.** [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md),
+Section 2, and `artifacts/phase30_regressions.json`.
+
+## Phase 30 rejected promotion — proxy saturation is not state saturation
+
+The Phase 30 proposal also suggested that equality in the optimized area
+bound forces P157's actual maximum orbit state to saturate its upper bound.
+That implication was not accepted: `n_cyc` is chosen from an upper bound on
+the state, and leading-order saturation of the factor-count inequality cannot
+reverse that bound. P183 records only the normalized height, component,
+area, descent-slack, direct-factor, and `n_cyc`-proxy consequences that follow.
+This is a rejected inference rather than a separately numbered universal
+hypothesis.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
 area-three supports, the E37 seven-grid rows, the E38/E39 all-gcd profile
 corpus, the Phase 28 transport corpus and five synthetic profiles, E41's
-Phase 29 arc/state corpus, and all exact
+Phase 29 arc/state corpus, the Phase 30 direct-transport corpus and five
+synthetic profiles, and all exact
 counterexamples above. Passing a bounded
 regression is necessary evidence, never a proof of universality.

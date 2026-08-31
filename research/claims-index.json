@@ -1,5 +1,5 @@
 {
-  "claim_count": 235,
+  "claim_count": 243,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2502,9 +2502,9 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 29's automatic coprime arc nonvanishing and all-gcd reduced-state bound, including growing-area coprime profiles and every noncoprime gcd class.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 30's sharper direct-transport area necessity and singleton near-equality normal form.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P177, E28, E34--E41, EXT05, EXT17, NG32--NG38, H172; EXT15 only if the Christoffel source gap is used; X02 only for conditional P160/P178.",
+      "dependencies": "P133--P184, E28, E34--E42, EXT05, EXT17, NG32--NG39, H172; EXT15 only if used; X02 only for conditional P160/P178.",
       "dependency_ids": [
         "E28",
         "EXT05",
@@ -2515,11 +2515,11 @@
         "P178",
         "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-30 (Phase 29 audit)",
-      "notes": "P173 removes coprime arc cancellation and P175 closes every fixed area, but coefficient height/support can grow with area and full-`D` noncoprime arithmetic remains open.",
+      "last_audited": "2026-08-31 (Phase 30 audit)",
+      "notes": "P181 strengthens growth and P184 localizes equality, but a pair-location-aware strict subleading resultant and full-`D` noncoprime closure remain open.",
       "status": "OPEN"
     },
     {
@@ -2633,19 +2633,19 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source or resultant theorem turning critical-prefix defect data into H89 rejection or Phase 29's growing-area/full-`D` cycle obstruction into H133 rejection.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or pair-aware resultant theorem turning critical-prefix data into H89 rejection or P184's singleton transports into H133 rejection.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P177 as scoped; P97/P132 for H89; P156--P176 for arbitrary-gcd cycles; NG32--NG38 and the Phase 28/29 synthetic falsifiers.",
+      "dependencies": "P141--P184 as scoped; P97/P132 for H89; P156--P184 for cycles; NG32--NG39 and Phase 28--30 synthetic falsifiers.",
       "dependency_ids": [
         "H89",
         "P132",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md).",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-30 (Phase 29 audit)",
-      "notes": "Exact coprime nonvanishing is now known, but growing coefficient height/support and full-`D` noncoprime arithmetic remain noncontradictory.",
+      "last_audited": "2026-08-31 (Phase 30 audit)",
+      "notes": "Stronger area growth and singleton prevalence remain compatible without a strict subleading arithmetic gap.",
       "status": "OPEN"
     },
     {
@@ -3210,20 +3210,20 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Convert P173's automatic coprime arc nonvanishing and P174's resonance into a growing-area coefficient-height obstruction, and obtain a compatible full-`D` theorem for noncoprime gcd classes without aligning rotations silently.",
-      "collatz_implication": "Could close the residual positive-cycle regime within H133.",
-      "dependencies": "P133, P137, P140, P156--P176, EXT17 on the critical branch; explicit survival of NG34--NG38.",
+      "claim": "Turn P184's near-uniform singleton transports and P171's paired endpoint binomials into a nonzero low-dimensional resonance/resultant with a strict subleading gap, while retaining full-`D` noncoprime arithmetic and both rotations.",
+      "collatz_implication": "Could close the sharp residual positive-cycle regime within H133.",
+      "dependencies": "P133, P137, P140, P156--P184, EXT17 on the critical branch; explicit survival of NG34--NG39.",
       "dependency_ids": [
         "EXT17",
         "P133",
         "P137",
         "P140"
       ],
-      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/arc-nonvanishing/REPORT.md`](../research/audits/arc-nonvanishing/REPORT.md).",
+      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md).",
       "first_introduced": "Phase 28",
       "id": "H172",
-      "last_audited": "2026-08-30 (Phase 29 audit)",
-      "notes": "Coprime cancellation is closed by P173, but current bounds do not dominate support/coefficient growth with area and do not supply full-`D` noncoprime arithmetic.",
+      "last_audited": "2026-08-31 (Phase 30 audit)",
+      "notes": "P181 strengthens area growth and P184 localizes equality, but neither supplies the pair-location-aware strict subleading arithmetic gap.",
       "status": "OPEN"
     },
     {
@@ -3332,9 +3332,129 @@
       "last_audited": "2026-08-30",
       "notes": "Bounded agreement does not prove asymptotic completeness. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every valid reduced profile satisfies `p_cyc(n)<=p_base(n)+T_span+J(n-1)` with `T_span<=2A` and `qT_span<=LA+qJ`, hence `p_cyc(n)<=(J+1)n+2A+1`.",
+      "collatz_implication": "Replaces the leading `2J` edit count by direct `J` token transport plus exact span.",
+      "dependencies": "P156/P166/P167 profile and level-component identities; exact level-by-level contiguous block rotation.",
+      "dependency_ids": [
+        "P156",
+        "P166",
+        "P167"
+      ],
+      "evidence": "[`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md), Section 1; `artifacts/phase30_theory.json`; independent factor-set verifier.",
+      "first_introduced": "Phase 30",
+      "id": "P179",
+      "last_audited": "2026-08-31",
+      "notes": "It is a combinatorial necessary bound, not a cycle or source-integrality exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every primitive positive nontrivial cycle satisfies `L<=(J+1)n_cyc+2A+1` and the strict inequality `L<(J+1)[h+3+log_2(q/(3lambda(1-lambda)))]+2A+1`.",
+      "collatz_implication": "Sharpens the all-gcd factor/state separation used in asymptotic area optimization.",
+      "dependencies": "P125/P133/P157/P179; positivity and primitivity at ordinary-state separation; exact ceiling handling.",
+      "dependency_ids": [
+        "P125",
+        "P133",
+        "P157",
+        "P179"
+      ],
+      "evidence": "[`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md), Section 3.",
+      "first_introduced": "Phase 30",
+      "id": "P180",
+      "last_audited": "2026-08-31",
+      "notes": "It is invalid as an ordinary-state theorem for negative cycles, nonprimitive powers, and rational shadows.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For any primitive-positive cycle sequence with `q->infinity`, `L/q->ell in (1,2]`, and a fixed inverse-polynomial multiplier gap, `liminf A/q^(2/3)>=3ell^(2/3)/(2(ell-1)^(1/3))`.",
+      "collatz_implication": "Improves P168 by the exact factor `2^(2/3)` and strengthens the all-gcd area necessity.",
+      "dependencies": "P167/P180; stated slope and multiplier-gap hypotheses.",
+      "dependency_ids": [
+        "P167",
+        "P180"
+      ],
+      "evidence": "[`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md), Section 4; exact scalar artifact.",
+      "first_introduced": "Phase 30",
+      "id": "P181",
+      "last_audited": "2026-08-31",
+      "notes": "Stronger area growth is still compatible with arbitrary-area cycles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "P181 gives the internal noncritical constant `(3/2)2^(2/3)` in `(2.381101,2.381102)` and the critical constant in `(2.438154,2.438155)`.",
+      "collatz_implication": "Quantifies the strengthened necessary area dispersion on both cycle branches.",
+      "dependencies": "P163/P164/P181; EXT17 only for the critical multiplier gap; exact rational log enclosures.",
+      "dependency_ids": [
+        "EXT17",
+        "P163",
+        "P164",
+        "P181"
+      ],
+      "evidence": "[`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md), Section 4; `artifacts/phase30_scalar_certificates.json`.",
+      "first_introduced": "Phase 30",
+      "id": "P182",
+      "last_audited": "2026-08-31",
+      "notes": "The critical dependency remains external and neither constant is contradictory.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Equality in P181 forces `h/q^(1/3)->(ell(ell-1))^(1/3)`, `J/q^(2/3)->ell^(2/3)/(ell-1)^(1/3)`, `A/J->3/2`, vanishing normalized descent slack, and leading saturation of the direct factor and chosen `n_cyc`-proxy bounds.",
+      "collatz_implication": "Replaces P170's former equality scales with a sharper direct-transport regime.",
+      "dependencies": "P167/P180/P181 and convergence to the sharp frontier.",
+      "dependency_ids": [
+        "P167",
+        "P180",
+        "P181"
+      ],
+      "evidence": "[`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md), Section 5.",
+      "first_introduced": "Phase 30",
+      "id": "P183",
+      "last_audited": "2026-08-31",
+      "notes": "It does not prove ratio-one saturation of P157's actual maximum-state upper bound; that proposal sentence was not accepted.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At P181 equality, all but `o(J)` level components are singleton intervals: one nested maximum-height spine has `h=o(J)` components and all secondary-peak nonsingleton excess is bounded by the normalized P167 slack.",
+      "collatz_implication": "Reduces the sharp H172 language to nearly uniform adjacent token transports plus a negligible exceptional set.",
+      "dependencies": "P167/P183; exact component coarea and localized descent-spine charging.",
+      "dependency_ids": [
+        "P167",
+        "P183"
+      ],
+      "evidence": "[`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md), Section 6; independent finite spine checks.",
+      "first_introduced": "Phase 30",
+      "id": "P184",
+      "last_audited": "2026-08-31",
+      "notes": "Singleton prevalence alone supplies no pair-location resultant or strict subleading gap.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks 2,214 positive-D cyclic classes, 3,101 minimum rotations, all 45,369 widths, 141,643 affected-start inequalities, 9,303 spine checks, five synthetic profiles, exact constants, and mandatory controls.",
+      "collatz_implication": "Regresses P179--P184, NG39, and the sharpened H172 boundary.",
+      "dependencies": "Declared finite ranges; exact integer/rational/factor-set arithmetic; generator-independent boundary reconstruction and logarithm boxes.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md); Phase 30 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 30",
+      "id": "E42",
+      "last_audited": "2026-08-31",
+      "notes": "Bounded agreement does not prove asymptotic completeness. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The direct factor bound remains valid after dropping the span term: `p_cyc(n)<=p_base(n)+Jn`.",
+      "collatz_implication": "Requires every direct-transport factor argument to retain mechanical span or an equivalent location term.",
+      "dependencies": "Proposed Phase 30 span-free strengthening.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md), Section 2; `artifacts/phase30_regressions.json`.",
+      "first_introduced": "Phase 30",
+      "id": "NG39",
+      "last_audited": "2026-08-31",
+      "notes": "Exact obstruction `q=6,L=10,e=(2,2,1,3,1,1),n=4`: proposed bound 9, actual factor count 10.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "c0f507d59c8415f26200abc78e30c6a7e454f4b3d9fbead5051d75c4e733da8e"
+  "source_sha256": "a8d443c81a205a96a3ab06cb9feaea8a63927e020c66bdfc49e9ab64a033a285"
 }

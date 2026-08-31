@@ -22,19 +22,18 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 29 is the latest accepted research layer. It proves that every coprime
-P147 sparse circular arc is automatically nonzero and determines its exact
-2-adic valuation. Consequently every fixed defect area is eventually excluded
-for coprime positive-cycle profiles; the critical part retains Matveev's
-external input. An all-gcd state bound gives the internal reduced odd-period
-floor `q0>=971`, and the external X02 height input conditionally raises it to
-`72,057,431,991`. Growing-area coefficient height and full-`D` noncoprime
-arithmetic remain unresolved. H172, H133, and the broader
+Phase 30 is the latest accepted research layer. It replaces the former
+two-sided edit factor bound by direct level-component rotations and improves
+the necessary cycle-area constant by the exact factor `2^(2/3)`. At the sharp
+frontier, all but `o(J)` transports are singleton intervals. The critical
+constant still uses Matveev's external input. The remaining H172 step is a
+pair-location-aware strict subleading resonance/resultant gap; the stronger
+area bound alone does not exclude cycles. H172, H133, and the broader
 H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
 remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–29, separates internal and external
+map and conventions, summarizes Phases 1–30, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -75,12 +74,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase29.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase29_verifier.json
+.venv/bin/python verifier/verify_phase30.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase30_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 29 result](PHASE29_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 30 result](PHASE30_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout
