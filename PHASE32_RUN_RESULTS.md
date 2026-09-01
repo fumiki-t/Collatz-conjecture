@@ -31,8 +31,14 @@ classification and is retained as H200 OPEN. `proves_collatz=false`.
 cd artifacts && shasum -a 256 -c SHA256SUMS
 ```
 
-Acceptance evidence is filled only after the evidence commit and complete
-verification.
+Acceptance evidence:
+
+- focused suite: `14 passed in 42.25s`;
+- full suite: `456 passed in 1715.66s`;
+- strict research health: `valid=true`, no errors or warnings;
+- evidence commit: `0ea676bb2a6cea5f554de4252e13a4d969330614`;
+- `artifacts/SHA256SUMS` SHA-256:
+  `61d88f7db436d97f1396d6de0bead60cc7204f440550acd0d498133e8d74511d`.
 
 ## Evidence
 

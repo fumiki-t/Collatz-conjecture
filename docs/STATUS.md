@@ -835,4 +835,5 @@ eventual nonzero lifts.
 - Phase 31 acceptance: [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md)
 - Phase 31 v2 acceptance:
   [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md)
+- Phase 32 acceptance: [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)
