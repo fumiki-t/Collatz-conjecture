@@ -1,5 +1,5 @@
 {
-  "claim_count": 251,
+  "claim_count": 256,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2502,9 +2502,9 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 31's double-hit area necessity and repaired grid/residual near-equality dichotomy.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle after the Phase 31 v2 all-radius pruning and approximate-grid equality theorem.",
       "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P190, E28, E34--E43, EXT05, EXT17, NG32--NG40, H172; EXT15 only if used; X02 only for conditional P160/P178.",
+      "dependencies": "P133--P194, E28, E34--E44, EXT05, EXT17, NG32--NG40, H172; EXT15 only if used; X02 only for conditional P160/P178.",
       "dependency_ids": [
         "E28",
         "EXT05",
@@ -2515,11 +2515,11 @@
         "P178",
         "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-31 (Phase 31 audit)",
-      "notes": "P187 strengthens growth, but a strict arithmetic gap in both the grid-like and residual-heavy H172 subcases remains open.",
+      "last_audited": "2026-08-31 (Phase 31 v2 audit)",
+      "notes": "P193 repairs the sharp area proof and P194 forces an approximate grid at equality, but no compatible resultant or above-frontier exclusion is known.",
       "status": "OPEN"
     },
     {
@@ -2633,19 +2633,19 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove an exact admissible-path/carry/ordinary-source or pair-aware resultant theorem turning critical-prefix data into H89 rejection or Phase 31's grid/residual transport dichotomy into H133 rejection.",
+      "claim": "Prove an exact admissible-path/carry/ordinary-source or pair-aware resultant theorem turning critical-prefix data into H89 rejection or P194's approximate transport grid into H133 rejection.",
       "collatz_implication": "A strong form could advance either the finite first-crossing or positive-cycle branch.",
-      "dependencies": "P141--P190 as scoped; P97/P132 for H89; P156--P190 for cycles; NG32--NG40 and Phase 28--31 synthetic falsifiers.",
+      "dependencies": "P141--P194 as scoped; P97/P132 for H89; P156--P194 for cycles; NG32--NG40 and Phase 28--31 v2 falsifiers.",
       "dependency_ids": [
         "H89",
         "P132",
         "P97"
       ],
-      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md).",
+      "evidence": "[`context/H141.md`](context/H141.md); [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md).",
       "first_introduced": "Phase 23",
       "id": "H141",
-      "last_audited": "2026-08-31 (Phase 31 audit)",
-      "notes": "Stronger area growth and local grid identities remain compatible without a strict subleading arithmetic gap.",
+      "last_audited": "2026-08-31 (Phase 31 v2 audit)",
+      "notes": "Approximate-grid rigidity still lacks a compatible noncoprime resultant; the supplied H89 Hamming-shell numbers are unaudited.",
       "status": "OPEN"
     },
     {
@@ -3210,20 +3210,20 @@
       "status": "REFUTED"
     },
     {
-      "claim": "Prove a strict subleading arithmetic contradiction in both Phase 31 near-equality subcases: a low-denominator pair-location resultant when global grid defects are sublinear, and a residual-component resultant when exceptional contexts have positive density, retaining full-`D` arithmetic and both rotations.",
-      "collatz_implication": "Could close the sharp residual positive-cycle regime within H133.",
-      "dependencies": "P133, P137, P140, P156--P190, EXT17 on the critical branch; explicit survival of NG34--NG40.",
+      "claim": "Convert P194's `o(L)`-defect approximate low-denominator singleton grid at the sharp P193 frontier into a strict full-`D` arithmetic contradiction, preserving both rotations; separately identify what forces a hypothetical cycle family toward that frontier.",
+      "collatz_implication": "Could close the sharp near-extremal positive-cycle regime within H133.",
+      "dependencies": "P133, P137, P140, P156--P194, EXT17 on the critical branch; explicit survival of NG34--NG40.",
       "dependency_ids": [
         "EXT17",
         "P133",
         "P137",
         "P140"
       ],
-      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md).",
+      "evidence": "[`context/H172.md`](context/H172.md); [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md).",
       "first_introduced": "Phase 28",
       "id": "H172",
-      "last_audited": "2026-08-31 (Phase 31 audit)",
-      "notes": "P187 strengthens area growth and P190 gives a conditional grid identity, but NG40 prevents assuming a global near-grid without a residual-density theorem.",
+      "last_audited": "2026-08-31 (Phase 31 v2 audit)",
+      "notes": "P191--P194 eliminate the residual-heavy equality subcase, but no resonant resultant or reduction of arbitrary above-frontier cycles to equality is proved.",
       "status": "OPEN"
     },
     {
@@ -3488,16 +3488,15 @@
     {
       "claim": "For primitive-positive cycle sequences with `q->infinity`, `L/q->ell in (1,2]`, and a fixed inverse-polynomial multiplier gap, `liminf A/q^(2/3)>=3(2ell)^(2/3)/(2(ell-1)^(1/3))`.",
       "collatz_implication": "Improves P181 by the exact factor `2^(2/3)` and further narrows the positive-cycle geometry.",
-      "dependencies": "P167/P180/P186; stated slope and multiplier-gap hypotheses.",
+      "dependencies": "P167/P180/P191--P193; stated slope and multiplier-gap hypotheses; the limit is taken for every fixed `R` before `R->infinity`.",
       "dependency_ids": [
         "P167",
-        "P180",
-        "P186"
+        "P180"
       ],
-      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 3; exact scalar artifact.",
+      "evidence": "[`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md), Sections 2--4; exact finite and scalar regressions.",
       "first_introduced": "Phase 31",
       "id": "P187",
-      "last_audited": "2026-08-31",
+      "last_audited": "2026-08-31 (Phase 31 v2 proof repair)",
       "notes": "Stronger area growth remains compatible with arbitrary-area cycles.",
       "status": "VERIFIED_THEOREM"
     },
@@ -3519,17 +3518,17 @@
       "status": "VERIFIED_THEOREM"
     },
     {
-      "claim": "Equality in P187 forces the unique normalized `h` and `J+Sigma` scales, `A/(J+Sigma)->3/2`, `E-Sigma=o(q^(2/3))`, aggregate minimal residual excess, and exact-two singleton incidence at all but `o(L)` starts outside the actual residual exceptional-context set.",
-      "collatz_implication": "Splits the near-extremal language into a grid-like singleton region and a residual exceptional region.",
-      "dependencies": "P167/P185--P187 and convergence to the sharp frontier.",
+      "claim": "Equality in P187 forces the previously recorded normalized scales and local exact-two incidence outside the residual exceptional-context set.",
+      "collatz_implication": "P194 upgrades the local statement to a global `o(L)` exceptional set at equality.",
+      "dependencies": "P167/P185--P187; now subsumed in strength by P191--P194.",
       "dependency_ids": [
         "P167"
       ],
-      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 5.",
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 5; [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md), Sections 4--5.",
       "first_introduced": "Phase 31",
       "id": "P189",
-      "last_audited": "2026-08-31",
-      "notes": "It does not prove the residual set has density zero or force a global near-grid; NG40 records the obstruction.",
+      "last_audited": "2026-08-31 (strengthened by Phase 31 v2)",
+      "notes": "P189 alone still does not imply that upgrade; NG40 remains its exact logical boundary.",
       "status": "VERIFIED_THEOREM"
     },
     {
@@ -3558,18 +3557,93 @@
     },
     {
       "claim": "Equality in the P185--P189 normalized inequality chain by itself forces a global `o(L)` bad-window count and hence global approximate-grid invariance.",
-      "collatz_implication": "Requires H172 to split grid-like and residual-heavy cases rather than assuming the former.",
-      "dependencies": "Proposed promotion from double-hit area equality, without an additional residual-context density bound.",
+      "collatz_implication": "P191--P194 bypass this countermodel by imposing every fixed-`R` inequality before `R->infinity`; they do not erase the failed old inference.",
+      "dependencies": "Proposed promotion from one normalized double-hit chain, without the all-fixed-`R` pruning family.",
       "dependency_ids": [],
-      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 7; `artifacts/phase31_regressions.json`.",
+      "evidence": "[`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md), Section 7; [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md), Section 6.",
       "first_introduced": "Phase 31",
       "id": "NG40",
-      "last_audited": "2026-08-31",
-      "notes": "Exact normalized countermodel at `ell=2`: with `y^3=4` and `x=z=e=y^2/2`, every leading inequality saturates but extracted-anchor scale `K` is zero and the residual exceptional set may have full density. This is not an integer Collatz orbit.",
+      "last_audited": "2026-08-31 (preserved by Phase 31 v2)",
+      "notes": "Exact normalized countermodel at `ell=2`: with `y^3=4` and `x=z=e=y^2/2`, the old chain saturates but `xy<2ell`, so it fails the new all-`R` constraint. This is not an integer Collatz orbit.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "For every valid reduced profile, fixed maximum-height spine, and integer `R>=1`, repeated deletion of nonspine leaf components of odd-label length at most `R` is legal and confluent; if `K_R` nodes are deleted and `E_R` remain, then `K_R+E_R=J` and `E_R<=h+floor(Sigma/R)`, with exact reconstruction by span-at-most-`2R` local rotations.",
+      "collatz_implication": "Makes residual density arbitrarily small on the normalized scale by using the entire fixed-`R` family.",
+      "dependencies": "P156/P166/P167 component forest and nonspine excess charging.",
+      "dependency_ids": [
+        "P156",
+        "P166",
+        "P167"
+      ],
+      "evidence": "[`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md), Section 2; `artifacts/phase31_short_leaf_theory.json`; independent pruning-order reconstruction.",
+      "first_introduced": "Phase 31 v2",
+      "id": "P191",
+      "last_audited": "2026-08-31",
+      "notes": "The quantifier order is essential; one selected radius does not suffice.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "With `N_R=n+4R`, residual contexts satisfy `U_R<=min(L,2A+E_R(N_R-1))`, low-hit factors have at most `B_R(n)=(N_R+1)(1+R(n+2R))` types, and distinct cyclic `n`-factors imply `2L<=K_R(n+2R-1)+4A+2E_R(n+4R-1)+2B_R(n)`.",
+      "collatz_implication": "Supplies the radius family needed to remove the old residual slack from the leading cycle inequality.",
+      "dependencies": "P125/P179/P191; cyclic factor distinctness only for the last implication.",
+      "dependency_ids": [
+        "P125",
+        "P179",
+        "P191"
+      ],
+      "evidence": "[`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md), Section 3; exact corpus and independent verifier.",
+      "first_introduced": "Phase 31 v2",
+      "id": "P192",
+      "last_audited": "2026-08-31",
+      "notes": "It is a factor-capacity theorem, not a cycle exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "In the P187 cycle regime, P191/P192 for every fixed `R`, followed by `R->infinity`, give `xy>=2ell`; together with P167 this yields the P187 area constant and forces `Sigma=o(q^(2/3))` at equality.",
+      "collatz_implication": "Repairs the proof route behind P187 and eliminates the residual-heavy sharp-equality model.",
+      "dependencies": "P167/P180/P191/P192; fixed inverse-polynomial multiplier gap; state-separation width `n=h+O(log q)`; subsequential compactness.",
+      "dependency_ids": [
+        "P167",
+        "P180",
+        "P191",
+        "P192"
+      ],
+      "evidence": "[`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md), Section 4.",
+      "first_introduced": "Phase 31 v2",
+      "id": "P193",
+      "last_audited": "2026-08-31",
+      "notes": "It gives no contradiction for the resulting area lower bound or for profiles strictly above it.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At equality in P193, all but `o(J)` components are pairwise-disjoint singleton transports; with the accepted state-separation width, all but `o(L)` starts have exactly two singleton incidences, and the anchor shift-mismatch count is `o(L)`.",
+      "collatz_implication": "Gives H172 a genuine approximate low-denominator grid at the sharp frontier.",
+      "dependencies": "P190/P191--P193; convergence to the sharp frontier; `n=o(L)`.",
+      "dependency_ids": [
+        "P190"
+      ],
+      "evidence": "[`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md), Section 5.",
+      "first_introduced": "Phase 31 v2",
+      "id": "P194",
+      "last_audited": "2026-08-31",
+      "notes": "No compatible resonant resultant, full-`D` contradiction, or reduction of above-frontier cycles is proved.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks 7,398 positive-`D` cyclic classes, 10,485 minimum rotations, 31,455 pruning reconstructions, and 522,870 width/radius cases through `q<=9` for `R=1,2,3`, including 332,697 distinct-factor cases.",
+      "collatz_implication": "Regresses P191/P192 and the repaired P193/P194 proof boundary.",
+      "dependencies": "Declared finite ranges; exact integer profile/forest/rotation/context/factor arithmetic; verifier uses a different pruning order and imports no generator.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md); Phase 31 short-leaf artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 31 v2",
+      "id": "E44",
+      "last_audited": "2026-08-31",
+      "notes": "Bounded agreement does not prove the asymptotic claims or Collatz. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "02549cd7ee7317034050ee0e9f70ea3f32b04eca4cb762886aa66398f3e37070"
+  "source_sha256": "1f4054d90595cadc7ecca064f2f91ad9358248204867b3bb35339e886e86db32"
 }

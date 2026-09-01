@@ -1,0 +1,38 @@
+{
+  "P191": {
+    "proof_kernel": "repeatedly delete a flat nonspine leaf of odd-label length at most R; each step deletes exactly one forest node, while every surviving nonspine node has excess at least R and all nonspine excess is charged to Sigma",
+    "quantifiers": "every valid reduced profile, every integer R>=1, and any fixed maximum-height spine",
+    "residual_bound": "E_R<=h+floor(Sigma/R)"
+  },
+  "P192": {
+    "context_bound": "U_R<=min(L,2A+E_R(N_R-1))",
+    "context_width": "N_R=n+4R",
+    "finite_inequality": "2L<=K_R(n+2R-1)+4A+2E_R(n+4R-1)+2B_R(n)",
+    "low_type_bound": "B_R(n)=(N_R+1)(1+R(n+2R))"
+  },
+  "P193": {
+    "area_constant": "3(2ell)^(2/3)/(2(ell-1)^(1/3))",
+    "constraint": "xy>=2ell",
+    "equality": "z=lim Sigma/q^(2/3)=0",
+    "limit_order": "first q->infinity for each fixed R, then R->infinity"
+  },
+  "P194": {
+    "identity": "c_(t+1)-c_t=chi_(t+n+1)-chi_t",
+    "open_boundary": "no resonant resultant or positive-cycle exclusion is proved",
+    "statement": "at P193 equality, all but o(J) components are disjoint singleton transports, all but o(L) state-separation windows have exactly two singleton incidences, and the anchor shift-mismatch count is o(L)"
+  },
+  "claims": {
+    "E44": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "P191": "VERIFIED_THEOREM",
+    "P192": "VERIFIED_THEOREM",
+    "P193": "VERIFIED_THEOREM",
+    "P194": "VERIFIED_THEOREM"
+  },
+  "excluded_scope": "The H89 Hamming-shell and q0 numerical candidates in the supplied note are not audited or accepted here.",
+  "format": "collatz-phase31-short-leaf-theory-v1",
+  "proves_collatz": false,
+  "supersession": "P191-P194 replace the old Phase 31 proof route. NG40 remains a valid refutation of the old single-R normalized inference, but it does not satisfy the all-fixed-R short-leaf constraints."
+}

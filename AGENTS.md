@@ -340,6 +340,16 @@ contexts through P171 binomials. Preserve NG40's normalized countermodel; local
 exact-two incidence does not imply a global near-grid. Another leading area
 constant without a strict arithmetic gap is not acceptance.
 
+Phase 31 v2 supersedes that strategic split without erasing NG40. P191/P192
+use every fixed short-leaf radius, P193 repairs the P187 limit argument, and
+P194 proves an `o(L)`-defect approximate grid at sharp equality. Future H172
+work should seek a compatible full-`D` resultant that tolerates adversarial
+bad-start placement and preserves both rotations. H133 must additionally
+control profiles strictly above the sharp frontier. Never replace the
+all-fixed-`R` quantifier by one selected or q-dependent radius without a
+uniform theorem. The H89 Hamming-shell numbers in the v2 note are not accepted
+and require a separate experiment.
+
 Phase 26 closes the cycle-side `H147` area-three obligation by the stronger
 all-gcd theorem P158: every critical primitive positive nontrivial cycle has
 reduced-slope area at least six. Do not extend the former area-three search.

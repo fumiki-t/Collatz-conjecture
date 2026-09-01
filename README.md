@@ -22,13 +22,12 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 31 is the latest accepted research layer. It statically extracts
-nonspine singleton transports, proves a double-hit factor inequality, and
-again improves the necessary cycle-area constant by the exact factor
-`2^(2/3)`. The critical constant still uses Matveev's external input. Its
-exact grid identity is only conditional: NG40 shows that the residual
-exceptional set may have positive density. H172 must therefore close both a
-grid-like and a residual-heavy arithmetic branch. H172, H133, and the broader
+Phase 31 v2 is the latest accepted research layer. It repeatedly prunes every
+fixed radius of short nonspine leaves, repairs the proof of the necessary
+cycle-area constant, and forces an `o(L)`-defect approximate singleton grid at
+sharp equality. NG40 remains the exact warning that one radius alone is
+insufficient. No compatible full-`D` resultant or above-frontier cycle
+reduction is known. H172, H133, and the broader
 H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
 remain open.
 
@@ -74,12 +73,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase31.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase31_verifier.json
+.venv/bin/python verifier/verify_phase31_short_leaf.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase31_short_leaf_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 31 result](PHASE31_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 31 v2 result](PHASE31_SHORT_LEAF_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

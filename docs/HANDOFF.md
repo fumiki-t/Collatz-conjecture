@@ -231,6 +231,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   `2^(2/3)`. P190 gives an exact grid recurrence, but NG40 shows that area
   equality need not make its global defect count small. H172 is now a
   grid-like versus residual-heavy arithmetic dichotomy.
+- Phase 31 v2 repairs that boundary. P191/P192 prune every fixed short-leaf
+  radius, P193 validates the area constant with the required limit order, and
+  P194 forces an `o(L)`-defect approximate grid at sharp equality. NG40 remains
+  the falsifier of the old single-radius inference. The missing step is now a
+  compatible full-`D` resultant and an above-frontier reduction.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -408,5 +413,7 @@ renewal pressure and valuation structure, while NG23 shows Haar volume alone
 cannot control an ordinary representative. P81/P82 expose exact downward
 coalescence and least-source irreducibility, but NG24 prevents a prefix-closed
 endpoint quotient. The remaining distinction is a carry-aware deterministic
-positive-height anti-concentration or eventual-reducibility theorem. Collatz
-remains open.
+positive-height anti-concentration or eventual-reducibility theorem. On the
+cycle branch, P194's approximate grid still lacks a strict arithmetic
+resultant, and no theorem reduces arbitrary above-frontier profiles to that
+equality regime. Collatz remains open.

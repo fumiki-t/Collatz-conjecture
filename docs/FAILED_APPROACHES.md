@@ -1244,16 +1244,21 @@ set may therefore have full density, leaving P190's global bad-window count
 uncontrolled.
 
 **Failure scope.** Fundamental for inference from P185--P189 alone. It is a
-countermodel to the normalized inequality system, not an actual positive
-integer Collatz orbit. P190 survives exactly and becomes useful under a
-separate global small-defect hypothesis.
+countermodel to that normalized inequality system, not an actual positive
+integer Collatz orbit. P191--P194 do not retract NG40: they add a genuinely
+stronger family indexed by every fixed `R`. The countermodel has `xy<2ell`
+and therefore fails that new family as `R->infinity`.
 
-**Weaker statement.** H172 must split into a grid-like branch, where the P190
-bad-window count is first proved sublinear, and a residual-heavy branch using
-P171 component binomials.
+**Weaker statement.** One selected radius cannot prove a global grid. Under
+sharp P193 equality, however, the all-radius theorem forces normalized slack
+to vanish and P194 proves the `o(L)` bad-window conclusion. H172 must now turn
+that approximate grid into arithmetic and H133 must separately handle
+above-frontier profiles.
 
 **Evidence.** [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md),
-Section 7, and `artifacts/phase31_regressions.json`.
+Section 7, `artifacts/phase31_regressions.json`, and the
+[`Phase 31 v2 audit`](../research/audits/short-leaf-double-hit/REPORT.md),
+Section 6.
 
 ## Mandatory regression rule
 

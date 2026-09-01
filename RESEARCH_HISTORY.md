@@ -1779,3 +1779,38 @@ families. H172 is now a precise grid-like/residual-heavy arithmetic dichotomy.
 Phase 31 does not prove either required resultant, exclude arbitrary-area
 cycles or either nonperiodic branch, or prove or disprove the Collatz
 conjecture. `proves_collatz=false`.
+
+## 2026-08-31 — Phase 31 v2: short-leaf double-hit repair
+
+**Branch:** `feat/phase31-short-leaf-double-hit`
+
+**Acceptance record:**
+[`PHASE31_SHORT_LEAF_RESULTS.md`](PHASE31_SHORT_LEAF_RESULTS.md)
+**Detailed audit:**
+[`research/audits/short-leaf-double-hit/REPORT.md`](research/audits/short-leaf-double-hit/REPORT.md)
+
+The v2 note was split at its own research boundary.  The cycle-side T31-A--D
+mechanism was audited; the 72-billion-layer H89 Hamming-shell candidates were
+deferred rather than coupled to the cycle proof.
+
+P191 proves confluent pruning of every fixed radius `R` of short nonspine leaf
+components and the exact residual bound
+`E_R<=h+floor(Sigma/R)`. P192 proves the corresponding finite context,
+low-hit type, and double-hit inequalities. P193 takes the cycle limit for each
+fixed `R` before `R->infinity`, yielding `xy>=2ell`, repairing the P187 area
+proof, and forcing normalized slack to vanish at equality. P194 then proves
+that all but `o(L)` state-separation windows have exactly two singleton
+incidences, so the anchor word has `o(L)` shift mismatches from a
+low-denominator grid.
+
+NG40 was preserved: it still refutes the obsolete inference from one
+normalized inequality, but its countermodel fails the new all-fixed-`R`
+constraint. E44 independently reconstructs 7,398 cyclic classes, 10,485
+minimum rotations, 31,455 pruning runs, and 522,870 width/radius cases through
+`q<=9`; the verifier uses a different pruning order and imports no generator.
+
+### What this result does not prove
+
+Phase 31 v2 supplies no compatible resonant resultant, no above-frontier
+cycle exclusion, and no audited H89 numerical certificate. H172, H133, H89,
+both nonperiodic branches, and Collatz remain open. `proves_collatz=false`.

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "phase31-short-leaf-double-hit",
+  "status": "RUNNING",
+  "claim_ids": ["P191", "P192", "P193", "P194", "E44", "H172", "H133", "H89"],
+  "objective": "Audit the all-fixed-R short-leaf pruning repair of the Phase 31 cycle-side double-hit argument without coupling the unaudited q0 H89 Hamming-shell computation.",
+  "exact_scope": {
+    "quantifiers": [
+      "every valid reduced profile and every fixed integer R>=1 for P191",
+      "every cyclic factor width with distinctness only where P192 invokes it",
+      "every hypothetical primitive-positive cycle sequence satisfying P193's explicit slope, multiplier-gap, and state-separation hypotheses",
+      "all positive-D cyclic exponent classes through q<=9, R in {1,2,3}, and every cyclic width for E44"
+    ],
+    "bounds": {
+      "cycle_corpus_q_maximum": 9,
+      "radii": [1, 2, 3],
+      "cyclic_classes": 7398,
+      "minimum_rotations": 10485,
+      "pruning_reconstructions": 31455,
+      "width_pruning_cases": 522870,
+      "distinct_factor_cases": 332697
+    },
+    "completeness": "P191-P194 are exact theorem-level consequences in their stated domains. E44 is bounded. NG40 remains valid against the old proof route. H172/H133/H89 and all Collatz branches remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, exact reduced profiles, literal forest deletion, exact local rotations, cyclic context sets, incidence counts, factor sets, and SHA-256 row digests",
+    "floating_point_role": "none in generation, verification, theorem statements, or acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase31_short_leaf_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase31_short_leaf.py --artifact-dir artifacts --output artifacts/phase31_short_leaf_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase31_short_leaf_properties.py tests/test_phase31_short_leaf_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "all positive compositions and minimum-profile rotations through q<=9",
+      "reduced profiles and mechanical baselines without src imports",
+      "the pruning core using a different deterministic leaf order",
+      "profile and word reconstruction by local rotations",
+      "every residual context, short-component incidence, low-hit type set, factor set, and finite inequality",
+      "the exact corpus row digest and artifact boundaries"
+    ],
+    "forbidden_imports": ["src.phase31_short_leaf_search", "phase31_short_leaf_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase31_short_leaf_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "NG32", "NG34-NG40", "source 167 scope", "rational-shadow scope"
+  ],
+  "artifacts": [
+    "artifacts/phase31_short_leaf_theory.json",
+    "artifacts/phase31_short_leaf_corpus.json",
+    "artifacts/phase31_short_leaf_regressions.json",
+    "artifacts/phase31_short_leaf_obstruction_report.md",
+    "artifacts/phase31_short_leaf_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not replace the all-fixed-R quantifier by one selected or q-dependent R without a uniform theorem.",
+    "Do not erase NG40; it remains the exact falsifier of the obsolete normalized inference.",
+    "Do not promote the deferred H89 q0 numbers without an isolated independent audit.",
+    "Do not infer cycle exclusion from approximate-grid rigidity without a compatible resultant.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The result repairs the proof of the existing P187 area constant and strengthens equality rigidity.",
+    "It supplies an approximate grid only at the sharp equality frontier.",
+    "Finite corpus agreement is regression evidence, not asymptotic completeness.",
+    "H172, H133, H89, nonperiodic branches, and Collatz remain open."
+  ],
+  "recorded_result": {
+    "commit": "PENDING",
+    "generator": "valid=true with 7,398 cyclic classes, 10,485 minimum rotations, 31,455 pruning reconstructions, and 522,870 width/pruning cases",
+    "verifier": "valid=true with generator_imported=false, a different pruning order, and independent profile/rotation/context/factor reconstruction",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

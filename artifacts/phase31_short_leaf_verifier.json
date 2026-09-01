@@ -1,0 +1,35 @@
+{
+  "claims": {
+    "E44": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "P191": "VERIFIED_THEOREM",
+    "P192": "VERIFIED_THEOREM",
+    "P193": "VERIFIED_THEOREM",
+    "P194": "VERIFIED_THEOREM"
+  },
+  "corpus_counts": {
+    "cyclic_classes": 7398,
+    "distinct_factor_cases": 332697,
+    "low_type_checks": 522870,
+    "minimum_rotations": 10485,
+    "pruning_reconstructions": 31455,
+    "removed_components": 20739,
+    "residual_components": 91251,
+    "width_pruning_cases": 522870
+  },
+  "format": "collatz-phase31-short-leaf-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "separate composition, rotation, reduced-profile, forest-pruning, word-rotation, context, incidence, and factor implementations",
+  "proves_collatz": false,
+  "row_digest_sha256": "eebf83f9e929a124350e7a804166f0cd9fcf1b27d3c3f5f5fb99c2ceeb54db54",
+  "valid": true,
+  "verified_input_sha256": {
+    "phase31_short_leaf_corpus.json": "0f134e2b8a10e904733dc008d56a42beb822182af2f97484a132d76fdd5a710d",
+    "phase31_short_leaf_obstruction_report.md": "1e801d99f0c88c91ac43062edba38e92c86574c565375b9edba705cdd0bbb14c",
+    "phase31_short_leaf_regressions.json": "40bb0cd7e821fb04947c85e787d645d53cb5ef96776eb9b812a956d8d0b30314",
+    "phase31_short_leaf_theory.json": "02846be974adf947550719aefec2dae85f9850d082bf652879f630133b5b2aff"
+  },
+  "what_this_result_does_not_prove": "No cycle exclusion, H172/H133 closure, H89 finite certificate, nonperiodic exclusion, or Collatz proof is obtained."
+}

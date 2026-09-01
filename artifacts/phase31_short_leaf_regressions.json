@@ -1,0 +1,31 @@
+{
+  "format": "collatz-phase31-short-leaf-regressions-v1",
+  "h89_candidates": {
+    "reason": "the q0 Hamming-shell and ballot counts require an isolated generator/verifier and were intentionally not coupled to this cycle audit",
+    "status": "OPEN"
+  },
+  "mandatory_adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s"
+  ],
+  "preserved_obstructions": [
+    "NG32",
+    "NG34",
+    "NG35",
+    "NG36",
+    "NG37",
+    "NG38",
+    "NG39",
+    "NG40"
+  ],
+  "proves_collatz": false,
+  "scope_checks": {
+    "NG40": "preserved against the old one-radius inference; the new theorem uses every fixed R before taking R to infinity",
+    "rational_shadows": "formal rational profiles are not promoted to ordinary positive cycles",
+    "source_167": "finite first-crossing control only; not a positive-cycle witness"
+  }
+}

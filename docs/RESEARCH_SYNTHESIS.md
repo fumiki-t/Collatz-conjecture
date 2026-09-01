@@ -2,8 +2,8 @@
 
 **Audit date:** 2026-08-31
 
-**Audited base:** Phase 31 evidence commit
-`3ca865f6b71b6f1d60d09ca7428920e7c3dcc467`
+**Audited base:** Phase 31 v2 acceptance commit recorded in its experiment
+manifest
 
 **Latest accepted phase:** Phase 31
 
@@ -827,6 +827,27 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md) and the
   [`Phase 31 audit`](../research/audits/double-hit-transport/REPORT.md).
 
+### Phase 31 v2 — short-leaf double-hit repair
+
+- **Accepted internally:** P191 proves legal confluent pruning for every fixed
+  short-leaf radius and `E_R<=h+floor(Sigma/R)`. P192 proves the associated
+  finite context/type/double-hit inequality. P193 takes the cycle limit for
+  each fixed `R` before `R->infinity`, repairs the P187 constant, and forces
+  normalized residual slack to vanish at equality. P194 upgrades the equality
+  regime to an `o(L)`-defect approximate low-denominator anchor grid.
+- **Finite evidence:** E44 independently reconstructs 7,398 cyclic classes,
+  10,485 minimum rotations, 31,455 pruning runs, and 522,870 radius/width
+  cases through `q<=9`; the verifier uses a different pruning order.
+- **Preserved boundary:** NG40 still refutes the old single-radius inference.
+  Its countermodel fails the new all-fixed-`R` constraint, so it is bypassed
+  rather than retracted.
+- **Deferred:** the supplied H89 Hamming-shell and `q0` numerical candidates
+  were not audited or accepted in this cycle experiment.
+- **Open:** H172 needs a compatible full-`D` resultant for P194's approximate
+  grid; H133 also needs an above-frontier reduction or obstruction. See
+  [`PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md) and the
+  [`Phase 31 v2 audit`](../research/audits/short-leaf-double-hit/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -834,7 +855,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P190 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P194 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG40.
 
@@ -982,9 +1003,9 @@ nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
 Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, Phase 27
 P162--P165, Phase 28 P166--P171, Phase 29 P173--P177, Phase 30 P179--P184,
-and Phase 31 P185--P190. H133 now isolates strict subleading arithmetic
-obstructions in both grid-like and residual-heavy regimes; H172 records that
-bridge. **Acceptance:** a
+and Phase 31 P185--P194. P194 supplies a sharp-frontier approximate grid;
+H172 asks for its strict full-`D` arithmetic bridge, while H133 also retains
+the above-frontier regime. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).

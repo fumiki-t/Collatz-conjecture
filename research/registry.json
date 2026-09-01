@@ -23,13 +23,13 @@
   ],
   "latest_acceptance": {
     "phase": 31,
-    "report": "PHASE31_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase31_verifier.json",
+    "report": "PHASE31_SHORT_LEAF_RESULTS.md",
+    "verifier_artifact": "artifacts/phase31_short_leaf_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase31-double-hit-transport.json"
+    "experiment_manifest": "research/experiments/phase31-short-leaf-double-hit.json"
   },
   "active_obligations": [
     {
@@ -93,24 +93,24 @@
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H133.md",
-      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P177", "P178", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "H172"],
-      "success_scope": "Eliminate every primitive positive nontrivial cycle beyond Phase 31's double-hit area necessity and grid/residual near-equality dichotomy."
+      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P177", "P178", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "E44", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "H172"],
+      "success_scope": "Eliminate every primitive positive nontrivial cycle beyond Phase 31 v2's all-radius area necessity and sharp-frontier approximate grid."
     },
     {
       "id": "H141",
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H141.md",
-      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P152", "P153", "P154", "P155", "P156", "P157", "P158", "P159", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "E33", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40"],
-      "success_scope": "Turn critical-prefix data into H89 rejection or Phase 31's grid/residual transport dichotomy into an all-area H133 obstruction."
+      "depends_on": ["P97", "P132", "P135", "P137", "P140", "P141", "P142", "P143", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P152", "P153", "P154", "P155", "P156", "P157", "P158", "P159", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "E33", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "E44", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40"],
+      "success_scope": "Turn critical-prefix data into H89 rejection or P194's approximate transport grid into an all-area H133 obstruction."
     },
     {
       "id": "H172",
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H172.md",
-      "depends_on": ["P133", "P137", "P140", "P156", "P157", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "EXT17", "E40", "E41", "E42", "E43", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40"],
-      "success_scope": "Prove strict subleading arithmetic contradictions in both the grid-like and residual-heavy Phase 31 regimes, retaining full-D noncoprime arithmetic and both rotations."
+      "depends_on": ["P133", "P137", "P140", "P156", "P157", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "EXT17", "E40", "E41", "E42", "E43", "E44", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40"],
+      "success_scope": "Turn P194's sharp-frontier approximate grid into a strict full-D contradiction while preserving both rotations, and identify any needed reduction from above-frontier cycle families."
     },
     {
       "id": "C04",
@@ -324,7 +324,12 @@
     "P189",
     "P190",
     "E43",
-    "NG40"
+    "NG40",
+    "P191",
+    "P192",
+    "P193",
+    "P194",
+    "E44"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

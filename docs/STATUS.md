@@ -205,6 +205,14 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   structure and P190 the exact grid recurrence. NG40 refutes promotion to a
   global near-grid when residual contexts have positive density. H172/H133
   remain open.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE` / `OPEN`: P191/P192 prune every
+  fixed-radius family of short nonspine leaves and prove the corresponding
+  finite double-hit inequality. P193 repairs the P187 proof by taking the
+  cycle limit for every fixed `R` before `R->infinity`, forcing normalized
+  slack to vanish at equality. P194 then upgrades local incidence to an
+  `o(L)`-defect approximate grid. E44 independently checks 10,485 rotations
+  and 522,870 radius/width cases. H172/H133 remain open; the H89 Hamming-shell
+  numbers in the supplied v2 note were not accepted.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -477,13 +485,16 @@ above it. P170 identifies the only equality scales, while P171 supplies a
 corrected sparse multilevel polynomial. NG37/NG38 show why finite strictness
 and endpoint-free bounds cannot finish the argument. H172/H133 remain open.
 
-Phase 31 now gives the strongest area localization of the cycle branch.
+Phase 31 v2 now gives the strongest area localization of the cycle branch.
 P185/P186 convert the nonspine singleton population into static disjoint
 swaps and a double-hit capacity bound. P187/P188 raise the noncritical
 constant to `(3.779763,3.779764)` and the EXT17-dependent critical constant
-to `(3.870329,3.870330)`. P189/P190 expose a grid-like subcase, but NG40 shows
-that residual exceptional contexts may retain positive density. H172 must
-therefore close both grid-like and residual-heavy arithmetic regimes.
+to `(3.870329,3.870330)`. NG40 correctly refutes the old single-radius global
+promotion. P191--P194 add the missing all-fixed-`R` family: at sharp equality
+the residual slack is `o(q^(2/3))` and the singleton anchors form an
+approximate low-denominator grid outside `o(L)` starts. H172 must still turn
+that grid into a strict full-`D` resultant, while H133 must also control
+families strictly above the sharp area frontier.
 
 ## Strongest conditional route
 
@@ -527,14 +538,16 @@ scale to the required depth and height.
 P66/P67 sharpen the positive-gap side further into 30 exact first-divergence
 cases. The missing scalable state must retain the common-prefix surplus, odd
 normalized gap, and both tail residues; branch depth alone is insufficient.
-The cycle branch has a separate bottleneck. Phase 31 adds static double-hit
-transport and a grid/residual equality dichotomy beyond Phase 28--30's area
-and singleton localization. These necessities still allow a grid-like regime
-and a residual-heavy regime. A new transition-sensitive correction-loss,
-ordinary-source, radial-energy, or resultant input must exclude all regimes, while
+The cycle branch has a separate bottleneck. Phase 31 v2 adds all-radius
+short-leaf transport beyond Phase 28--31's area and singleton localization.
+At the sharp frontier P194 now forces an approximate grid; strictly
+above-frontier families remain unrestricted by that equality theorem. A new
+transition-sensitive correction-loss, ordinary-source, radial-energy, or
+resultant input must exclude all regimes, while
 explicitly transporting between P133's least-value rotation and P156's
 discrepancy-minimum rotation after NG36 and retaining P171's endpoint term
-after NG38, while explicitly respecting NG40's residual-density obstruction.
+after NG38, while explicitly preserving NG40 as the falsifier of any proof
+that omits the all-fixed-`R` quantifier.
 H172/H133 record this obligation without
 conflating it with H89/H112/H72; H147 is closed.
 P68 now gives a lossless state for any fixed horizon, while NG19 shows that at
@@ -739,11 +752,12 @@ eventual nonzero lifts.
   energy lower bound on the Phase 22 profiles and negative cycles, and do not
   scale composition depth unless the rule covers arbitrary area or strengthens
   P140's noncoprime modulus.
-- Start new cycle work from P189's grid/residual dichotomy. In the grid-like
-  case combine P190 with a low-denominator resultant; in the residual-heavy
-  case use minimal nonsingleton P171 binomials. Rebuild NG34--NG40, E43, and
-  the Phase 28--31 synthetic profiles first. Do not claim global near-grid
-  behavior from local incidence or actual maximum-state saturation from P183.
+- Start new cycle work from P194's sharp-frontier approximate grid. Combine
+  its paired anchors with a full-`D` low-denominator resultant that tolerates
+  adversarial `o(L)` bad starts, and separately justify any reduction of
+  above-frontier families. Rebuild NG34--NG40, E43/E44, and the Phase 28--31
+  synthetic profiles first. Do not drop the all-fixed-`R` quantifier or claim
+  actual maximum-state saturation from P183.
 - Build an independent verifier for any new lower-bound certificate format.
 - Audit proof dependencies and claim statuses after each result.
 - Maintain adversarial regressions for `2^m-1`, `8^m-5`, `(110|111)^*`,
@@ -811,4 +825,6 @@ eventual nonzero lifts.
 - Phase 29 acceptance: [`../PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md)
 - Phase 30 acceptance: [`../PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md)
 - Phase 31 acceptance: [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md)
+- Phase 31 v2 acceptance:
+  [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

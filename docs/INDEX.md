@@ -59,6 +59,7 @@ This is the canonical map of the research archive. Start with
 | 29 | [`../PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md) | [`../artifacts/phase29_obstruction_report.md`](../artifacts/phase29_obstruction_report.md) | `feat/phase29-arc-nonvanishing` |
 | 30 | [`../PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md) | [`../artifacts/phase30_obstruction_report.md`](../artifacts/phase30_obstruction_report.md) | `feat/phase30-direct-transport` |
 | 31 | [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md) | [`../artifacts/phase31_obstruction_report.md`](../artifacts/phase31_obstruction_report.md) | `feat/phase31-double-hit` |
+| 31 v2 | [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md) | [`../artifacts/phase31_short_leaf_obstruction_report.md`](../artifacts/phase31_short_leaf_obstruction_report.md) | `feat/phase31-short-leaf-double-hit` |
 
 Research supplements:
 
@@ -85,9 +86,10 @@ Research supplements:
 | Transport-dispersion audit | [`../research/audits/transport-dispersion/REPORT.md`](../research/audits/transport-dispersion/REPORT.md) | Phase 28 exact zero-token transport, level-set descent, sharp area constants, rigidity, and corrected multilevel polynomial | P166--P171, E40, NG37/NG38, H172/H133 boundary |
 | Direct-transport audit | [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md) | Phase 30 direct factor-set transport, sharpened area constants, repaired equality rigidity, singleton normal form, and exact obstruction | P179--P184, E42, NG39, H172/H133 boundary |
 | Double-hit transport audit | [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md) | Phase 31 static singleton extraction, double-hit factor counting, stronger area constants, repaired grid rigidity, and exact normalized obstruction | P185--P190, E43, NG40, H172/H133 boundary |
+| Short-leaf double-hit audit | [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md) | Phase 31 v2 all-radius pruning, repaired area proof, sharp-frontier approximate grid, and independent `q<=9` reconstruction | P191--P194, E44, repaired H172/H133 boundary; H89 candidates deferred |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 31 and both the branch-point and two-tail
+documentation through Phase 31 v2 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries
