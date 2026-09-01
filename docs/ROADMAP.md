@@ -116,9 +116,13 @@ finite-crossing renewal ladder and permanent-safe nonperiodic branch would
 remain separate obligations.
 
 **Missing theorem.** P191/P192 supply the all-radius short-leaf family, P193
-repairs the current area constant, and P194 proves an `o(L)`-defect
-low-denominator grid at sharp equality. NG40 remains the warning that one
-normalized radius is insufficient. The missing theorem is a strict
+repairs the previous area constant, and P194 proves an `o(L)`-defect
+low-denominator grid at sharp equality. P195/P196 reach the triple-hit
+cardinality ceiling and further strengthen area necessity. P197--P199 restore
+the full noncoprime cofactor and reduce critical area six to `d<=s<=6`, but
+H200's bounded-grid coefficient identities still lack an effective cutoff.
+NG40 remains the warning that one normalized radius is insufficient. The
+missing arbitrary-area theorem is a strict
 subleading full-`D` arithmetic gap compatible with P194's adversarially placed
 bad starts, plus a reduction or separate obstruction for above-frontier cycle
 families.
@@ -127,14 +131,15 @@ least-value rotation with P156's discrepancy-minimum rotation. P140 still
 supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
-cycle and its powers, E43/E44's double-hit corpora and nine synthetic profiles,
+cycle and its powers, E43/E44's double-hit corpora, E45's full-cofactor rows,
+and nine synthetic profiles,
 NG34--NG40, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
 positive.
 
 **Success criterion.** A uniform theorem proving `abs(R)<D`,
-`C_min<300000D`, or an equivalent contradiction for growing-area coprime
+`C_min<300000D`, an effective H200 classification, or an equivalent contradiction for growing-area coprime
 profiles and every noncoprime gcd class, with an independently verified finite
 remainder. Extending `q`, improving the area constant again, dropping span,
 promoting the `n_cyc` proxy to actual state saturation, dropping the

@@ -236,6 +236,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   P194 forces an `o(L)`-defect approximate grid at sharp equality. NG40 remains
   the falsifier of the old single-radius inference. The missing step is now a
   compatible full-`D` resultant and an above-frontier reduction.
+- Phase 32 reaches the triple-hit factor-count ceiling. P195/P196 strengthen
+  the area necessity; P197--P199 restore the full noncoprime cofactor, prove
+  block oscillation, and reduce critical area six to `d<=s<=6`. The proposed
+  `d=s=6` compactness conclusion is H200 OPEN until its finite coefficient
+  identities and cutoff are explicit.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -414,6 +419,6 @@ cannot control an ordinary representative. P81/P82 expose exact downward
 coalescence and least-source irreducibility, but NG24 prevents a prefix-closed
 endpoint quotient. The remaining distinction is a carry-aware deterministic
 positive-height anti-concentration or eventual-reducibility theorem. On the
-cycle branch, P194's approximate grid still lacks a strict arithmetic
-resultant, and no theorem reduces arbitrary above-frontier profiles to that
-equality regime. Collatz remains open.
+cycle branch, P197--P199 now supply full-cofactor and area-six reductions, but
+H200's bounded-grid classification and P194's arbitrary-area strict resultant
+are both missing. Collatz remains open.

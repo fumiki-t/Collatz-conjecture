@@ -350,6 +350,16 @@ all-fixed-`R` quantifier by one selected or q-dependent radius without a
 uniform theorem. The H89 Hamming-shell numbers in the v2 note are not accepted
 and require a separate experiment.
 
+Phase 32 reaches the leading triple-hit cardinality ceiling through P195/P196
+and restores the full noncoprime cofactor through P197--P199. Future critical
+area-six work should first attack H200's six bounded gcd/support classes with
+an explicit offset-polynomial identity classification and cutoff. Do not call
+the supplied `d=s=6` compactness sketch effective until that finite remainder
+is reproducible. For arbitrary area, combine P194's approximate grid with the
+full `M_d` cofactor while preserving both rotations. Do not identify
+`M_d|Delta` with full integrality, and do not treat E45's zero primitive
+noncoprime integral premise count as cycle exclusion evidence.
+
 Phase 26 closes the cycle-side `H147` area-three obligation by the stronger
 all-gcd theorem P158: every critical primitive positive nontrivial cycle has
 reduced-slope area at least six. Do not extend the former area-three search.

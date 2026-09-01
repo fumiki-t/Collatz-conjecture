@@ -213,6 +213,14 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   `o(L)`-defect approximate grid. E44 independently checks 10,485 rotations
   and 522,870 radius/width cases. H172/H133 remain open; the H89 Hamming-shell
   numbers in the supplied v2 note were not accepted.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE` / `OPEN`: Phase 32 adds P195's exact
+  triple-hit inequality and P196's stronger necessary area constant.
+  P197--P199 restore the full noncoprime cofactor, prove primitive block
+  oscillation, and reduce critical area six to `d<=s<=6`. E45 independently
+  reconstructs 10,485 profiles, 522,870 hit capacities, and 2,936 positive
+  support arcs. The proposed `d=s=6` eventual exclusion is not accepted:
+  H200 records its missing explicit cutoff/identity classification. H172 and
+  H133 remain open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.

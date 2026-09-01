@@ -1,0 +1,82 @@
+{
+  "format": "collatz-phase32-regressions-v1",
+  "mandatory_families": [
+    [
+      "2^m-1",
+      "1111111111110",
+      false,
+      null
+    ],
+    [
+      "8^m-5",
+      "111001111001111001111001",
+      false,
+      null
+    ],
+    [
+      "(110|111)^*",
+      "110111110111110111110111110111110111110111110111",
+      false,
+      null
+    ],
+    [
+      "A=11101",
+      "11101",
+      false,
+      null
+    ],
+    [
+      "B=1100",
+      "1100",
+      true,
+      {
+        "cofactor_hit": false,
+        "d": 2,
+        "exponents": [
+          3,
+          1
+        ],
+        "integral_positive": false,
+        "triple_distinct_widths": 3
+      }
+    ],
+    [
+      "A^1B^1",
+      "111011100",
+      false,
+      null
+    ],
+    [
+      "A^2B^3",
+      "1110111101110011001100",
+      false,
+      null
+    ]
+  ],
+  "named_controls": {
+    "NG34_NG40": "preserved; Phase 32 does not identify reduced-modulus, coefficient reversal, rational rotation, or grid proxies with an integral full-cofactor contradiction",
+    "negative_q2": [
+      1,
+      2
+    ],
+    "negative_q7": [
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      4
+    ],
+    "trivial_cycle": [
+      2
+    ],
+    "trivial_power": [
+      2,
+      2,
+      2
+    ]
+  },
+  "proves_collatz": false,
+  "rational_shadow_boundary": "M_d divisibility and the positive weighted-average step are checked separately; nonintegral rational shadows are negative controls."
+}

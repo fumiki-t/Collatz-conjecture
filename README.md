@@ -22,17 +22,18 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 31 v2 is the latest accepted research layer. It repeatedly prunes every
-fixed radius of short nonspine leaves, repairs the proof of the necessary
-cycle-area constant, and forces an `o(L)`-defect approximate singleton grid at
-sharp equality. NG40 remains the exact warning that one radius alone is
-insufficient. No compatible full-`D` resultant or above-frontier cycle
-reduction is known. H172, H133, and the broader
+Phase 32 is the latest accepted research layer. It proves an exact triple-hit
+factor inequality, strengthens the necessary cycle-area constant, restores
+the full noncoprime cofactor, and reduces critical area six to `d<=s<=6`.
+The proposed `d=s=6` eventual exclusion is not accepted because its finite
+identity classification and cutoff are missing; this is H200. No complete
+area-six exclusion or arbitrary-area resultant is known. H200, H172, H133,
+and the broader
 H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
 remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–31, separates internal and external
+map and conventions, summarizes Phases 1–32, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -73,12 +74,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase31_short_leaf.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase31_short_leaf_verifier.json
+.venv/bin/python verifier/verify_phase32.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase32_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 31 v2 result](PHASE31_SHORT_LEAF_RESULTS.md). Earlier phase and supplement
+[the Phase 32 result](PHASE32_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

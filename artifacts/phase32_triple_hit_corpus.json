@@ -1,0 +1,96 @@
+{
+  "counts": {
+    "capacity_checks": 522870,
+    "cyclic_classes": 7398,
+    "distinct_factor_widths": 110899,
+    "minimum_rotations": 10485,
+    "widths": 174290
+  },
+  "format": "collatz-phase32-triple-hit-corpus-v1",
+  "maximum_q": 9,
+  "proves_collatz": false,
+  "row_digest_sha256": "421af3f1afe7bb425beeca67081a500284b1830ea65ca556e6a6f082f7278286",
+  "samples": [
+    {
+      "E": 1,
+      "J": 2,
+      "K": 1,
+      "L": 8,
+      "area": 2,
+      "q": 4
+    },
+    {
+      "E": 1,
+      "J": 2,
+      "K": 1,
+      "L": 8,
+      "area": 2,
+      "q": 5
+    },
+    {
+      "E": 1,
+      "J": 2,
+      "K": 1,
+      "L": 9,
+      "area": 2,
+      "q": 5
+    },
+    {
+      "E": 2,
+      "J": 3,
+      "K": 1,
+      "L": 10,
+      "area": 4,
+      "q": 5
+    },
+    {
+      "E": 2,
+      "J": 3,
+      "K": 1,
+      "L": 10,
+      "area": 4,
+      "q": 5
+    },
+    {
+      "E": 2,
+      "J": 3,
+      "K": 1,
+      "L": 10,
+      "area": 6,
+      "q": 5
+    },
+    {
+      "E": 1,
+      "J": 2,
+      "K": 1,
+      "L": 10,
+      "area": 2,
+      "q": 5
+    },
+    {
+      "E": 1,
+      "J": 2,
+      "K": 1,
+      "L": 10,
+      "area": 2,
+      "q": 5
+    },
+    {
+      "E": 1,
+      "J": 2,
+      "K": 1,
+      "L": 10,
+      "area": 2,
+      "q": 5
+    },
+    {
+      "E": 1,
+      "J": 2,
+      "K": 1,
+      "L": 10,
+      "area": 3,
+      "q": 5
+    }
+  ],
+  "scope": "Complete positive-D cyclic exponent corpus through q<=9, every discrepancy-minimum rotation, and every cyclic width."
+}

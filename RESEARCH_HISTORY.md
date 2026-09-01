@@ -1814,3 +1814,33 @@ minimum rotations, 31,455 pruning runs, and 522,870 width/radius cases through
 Phase 31 v2 supplies no compatible resonant resultant, no above-frontier
 cycle exclusion, and no audited H89 numerical certificate. H172, H133, H89,
 both nonperiodic branches, and Collatz remain open. `proves_collatz=false`.
+
+## 2026-08-31 — Phase 32: triple-hit capacity and full-cofactor rigidity
+
+**Branch:** `feat/phase32-triple-hit-cofactor`
+
+**Acceptance record:** [`PHASE32_RUN_RESULTS.md`](PHASE32_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/triple-hit-cofactor/REPORT.md`](research/audits/triple-hit-cofactor/REPORT.md)
+
+The supplied note was split at its proof boundary. P195 proves the exact
+triple-hit factor-capacity inequality while retaining the residual core.
+P196 optimizes it with P167/P193, giving noncritical constant cube `4725/64`
+and the EXT17-dependent critical enclosure `(4.430667,4.430668)`.
+
+P197 reconstructs the full reduced-block affine correction and the necessary
+large-cofactor divisibility `M_d|Delta`. P198 proves that a primitive positive
+integral noncoprime cycle must have block-correction range at least `2^L0`.
+P199 constructs a cancellation-free positive support arc and reduces critical
+area six to `d<=s<=6`.
+
+The proposed eventual `d=s=6` exclusion was not promoted. Its compactness
+sketch supplies no explicit cutoff or completed offset-polynomial identity
+classification; H200 records that exact missing obligation. E45 independently
+reconstructs 7,398 classes, 10,485 minimum rotations, 174,290 widths, 522,870
+hit capacities, 10,485 block corrections, and 2,936 positive support arcs.
+
+### What this result does not prove
+
+Phase 32 excludes no complete area-six gcd class, arbitrary-area cycle,
+nonperiodic branch, or the Collatz conjecture. `proves_collatz=false`.

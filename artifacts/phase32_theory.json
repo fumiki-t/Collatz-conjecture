@@ -1,0 +1,37 @@
+{
+  "H200": {
+    "statement": "Classify bounded-grid coefficient identities sufficiently to make the proposed d=s=6 eventual exclusion effective and independently auditable.",
+    "status_reason": "The supplied compactness argument does not provide an explicit cutoff or a completed finite offset-polynomial classification."
+  },
+  "P195": {
+    "proof_kernel": "mechanical balance bounds candidate zero anchors; starts with 0,1,2 hits have the stated capacities; total singleton incidence is at most K(n+1)",
+    "statement": "For every valid P185 extraction and cyclic width n with distinct factors, 3L<=(J+2E)(n+1)+6A+(n+3)(3+2Z_n+binom(Z_n,2)), where Z_n=ceil((L-q)(n+1)/L)."
+  },
+  "P196": {
+    "critical_dependency": "Only the critical specialization uses EXT17.",
+    "statement": "In the P193 cycle regime, P195 and P167 imply liminf A/q^(2/3)>=C3(ell), with the exact formula recorded in the audit."
+  },
+  "P197": {
+    "statement": "The exact reduced-block decomposition B=sum R^c S^(d-1-c) C_c holds and every integral cycle satisfies M_d|Delta."
+  },
+  "P198": {
+    "statement": "A primitive positive integral noncoprime cycle has max(C_c)-min(C_c)>=R; equality of all block corrections would repeat the exponent block."
+  },
+  "P199": {
+    "statement": "A largest-support-gap cut gives a positive M_d-divisible time-arc integer below 2^(A+1+(L/q)W), hence (L/q)ceil(q/s)<L0+A+1 and critical area six has d<=s<=6."
+  },
+  "claims": {
+    "E45": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H200": "OPEN",
+    "P195": "VERIFIED_THEOREM",
+    "P196": "VERIFIED_THEOREM",
+    "P197": "VERIFIED_THEOREM",
+    "P198": "VERIFIED_THEOREM",
+    "P199": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase32-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "No area-six class, arbitrary-area cycle family, nonperiodic branch, or Collatz conjecture is excluded."
+}

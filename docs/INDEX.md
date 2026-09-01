@@ -60,6 +60,7 @@ This is the canonical map of the research archive. Start with
 | 30 | [`../PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md) | [`../artifacts/phase30_obstruction_report.md`](../artifacts/phase30_obstruction_report.md) | `feat/phase30-direct-transport` |
 | 31 | [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md) | [`../artifacts/phase31_obstruction_report.md`](../artifacts/phase31_obstruction_report.md) | `feat/phase31-double-hit` |
 | 31 v2 | [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md) | [`../artifacts/phase31_short_leaf_obstruction_report.md`](../artifacts/phase31_short_leaf_obstruction_report.md) | `feat/phase31-short-leaf-double-hit` |
+| 32 | [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md) | [`../artifacts/phase32_obstruction_report.md`](../artifacts/phase32_obstruction_report.md) | `feat/phase32-triple-hit-cofactor` |
 
 Research supplements:
 
@@ -87,9 +88,10 @@ Research supplements:
 | Direct-transport audit | [`../research/audits/direct-transport/REPORT.md`](../research/audits/direct-transport/REPORT.md) | Phase 30 direct factor-set transport, sharpened area constants, repaired equality rigidity, singleton normal form, and exact obstruction | P179--P184, E42, NG39, H172/H133 boundary |
 | Double-hit transport audit | [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md) | Phase 31 static singleton extraction, double-hit factor counting, stronger area constants, repaired grid rigidity, and exact normalized obstruction | P185--P190, E43, NG40, H172/H133 boundary |
 | Short-leaf double-hit audit | [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md) | Phase 31 v2 all-radius pruning, repaired area proof, sharp-frontier approximate grid, and independent `q<=9` reconstruction | P191--P194, E44, repaired H172/H133 boundary; H89 candidates deferred |
+| Triple-hit/full-cofactor audit | [`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md) | Phase 32 triple-hit capacity, optimized area constant, full noncoprime cofactor, positive support arc, and bounded-grid obstruction | P195--P199, E45, H200/H172/H133 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 31 v2 and both the branch-point and two-tail
+documentation through Phase 32 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

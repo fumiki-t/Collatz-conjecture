@@ -1,0 +1,44 @@
+{
+  "claims": {
+    "E45": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H200": "OPEN",
+    "P195": "VERIFIED_THEOREM",
+    "P196": "VERIFIED_THEOREM",
+    "P197": "VERIFIED_THEOREM",
+    "P198": "VERIFIED_THEOREM",
+    "P199": "VERIFIED_THEOREM"
+  },
+  "cofactor_counts": {
+    "cofactor_hits": 2959,
+    "decompositions": 10485,
+    "noncoprime_decompositions": 7543,
+    "positive_arc_certificates": 2936,
+    "positive_integral_cycles": 9,
+    "primitive_noncoprime_integral_cycles": 0
+  },
+  "cofactor_digest_sha256": "b1782f8ed4aac4e50700bd224a751cc3f44875e4913ae02756edf973ee918cac",
+  "format": "collatz-phase32-independent-verifier-v1",
+  "generator_imported": false,
+  "independence": "separate composition, rotation, reduced-profile, singleton extraction, cyclic factor, block correction, and positive arc implementations",
+  "proves_collatz": false,
+  "triple_counts": {
+    "capacity_checks": 522870,
+    "cyclic_classes": 7398,
+    "distinct_factor_widths": 110899,
+    "minimum_rotations": 10485,
+    "widths": 174290
+  },
+  "triple_digest_sha256": "421af3f1afe7bb425beeca67081a500284b1830ea65ca556e6a6f082f7278286",
+  "valid": true,
+  "verified_input_sha256": {
+    "phase32_cofactor_corpus.json": "7cde8f20067658edb5b1f62935f79f66dd9221f88ab0fabee0262cbb15821898",
+    "phase32_obstruction_report.md": "47b553b0781bbfccdc51c3391e7a4da95cd578d75fcb312191ffaba697590693",
+    "phase32_regressions.json": "7446558a7acedac51fe2ec8caf4ca21571b8215dd7c9389eaf8e7038c62d00f6",
+    "phase32_scalar_certificates.json": "f940217609b442efffa182bc37acec4a84fb6ac9c07f79272f1aa5ebd7f0d0bf",
+    "phase32_theory.json": "6c07ad796c2b93f7db9cf82fb3053d00c2e4b531f21e8a3580a215756c9819d1",
+    "phase32_triple_hit_corpus.json": "3308913e4f9420bd7e36f9401710c0546fdd3192f71839c44ac03a320894a642"
+  },
+  "what_this_result_does_not_prove": "No area-six class, arbitrary-area cycle, nonperiodic branch, or Collatz proof is excluded."
+}

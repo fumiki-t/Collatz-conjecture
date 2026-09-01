@@ -1260,6 +1260,31 @@ Section 7, `artifacts/phase31_regressions.json`, and the
 [`Phase 31 v2 audit`](../research/audits/short-leaf-double-hit/REPORT.md),
 Section 6.
 
+## Phase 32 rejected promotion — non-effective bounded-grid compactness
+
+**Status:** `OPEN` obligation H200, not a theorem or a refuted existence claim.
+
+**Proposed promotion.** From `A=s=d=6` and bounded support-gap offsets, infer
+that only finitely many primitive candidates exist and call the conclusion
+effective.
+
+**Why it looked plausible.** P199 bounds every support gap within a constant
+of `q0`, so after normalization only finitely many local two/three-power
+coefficient patterns appear. A fixed quotient along an infinite subsequence
+would force a polynomial identity.
+
+**Smallest logical obstruction.** The supplied argument gives neither an
+explicit cutoff nor a complete enumeration/classification of all offset
+polynomials and their fixed-quotient identities. “Effective in principle” is
+therefore not independently reproducible evidence.
+
+**Surviving statement.** P199 and the largest-gap form give the exact bounded
+six-column reduction. H200 asks for the missing classification. This does not
+assert that a counterexample cycle exists or that eventual exclusion is false.
+
+**Evidence.** [`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md),
+Section 7, and `artifacts/phase32_obstruction_report.md`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

@@ -1,11 +1,11 @@
-# Collatz research synthesis through Phase 31
+# Collatz research synthesis through Phase 32
 
 **Audit date:** 2026-08-31
 
 **Audited base:** Phase 31 v2 evidence commit
 `81d440f818342d75c28218d7e940c4fb55fd9691`
 
-**Latest accepted phase:** Phase 31
+**Latest accepted phase:** Phase 32
 
 **Problem status:** `OPEN`
 
@@ -848,6 +848,25 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md) and the
   [`Phase 31 v2 audit`](../research/audits/short-leaf-double-hit/REPORT.md).
 
+### Phase 32 — triple-hit capacity and full-cofactor rigidity
+
+- **Accepted internally:** P195 proves the exact zero/one/two-hit factor
+  inequality. P196 optimizes it to the noncritical cube `4725/64` and the
+  EXT17-dependent critical interval `(4.430667,4.430668)`. P197 reconstructs
+  the full noncoprime cofactor, P198 proves primitive block oscillation, and
+  P199 constructs a positive support arc reducing critical area six to
+  `d<=s<=6`.
+- **Finite evidence:** E45 independently reconstructs 7,398 cyclic classes,
+  10,485 minimum rotations, 174,290 widths, 522,870 hit capacities, 10,485
+  block corrections, and 2,936 positive support arcs through `q<=9`.
+- **Rejected promotion:** the proposed `d=s=6` eventual exclusion has no
+  explicit cutoff or completed finite coefficient-identity classification.
+  H200 records this missing effective step.
+- **Open:** H200 excludes no class yet; H172/H133 still require complete
+  area-six and arbitrary-area arithmetic. See
+  [`PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md) and the
+  [`Phase 32 audit`](../research/audits/triple-hit-cofactor/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -855,7 +874,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P194 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P199 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG40.
 

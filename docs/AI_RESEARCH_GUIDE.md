@@ -2,20 +2,20 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 31 v2's short-leaf double-hit audit is the
+proof of the conjecture. Phase 32's triple-hit/full-cofactor audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–31 evidence boundaries, and current obligations.
+   branch map, Phase 1–32 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md),
-   [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md), then their inputs:
+6. [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md), then its inputs;
+   use the Phase 31 records for the immediately preceding layer:
    [`../PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md),
    [`../PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md),
    [`../PHASE28_RUN_RESULTS.md`](../PHASE28_RUN_RESULTS.md),
@@ -213,7 +213,7 @@ external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external; P74/P75 are conditional on it.
 P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
-P129--P138, P140, P141, P144, P145, P147--P194 are
+P129--P138, P140, P141, P144, P145, P147--P199 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
 P110, P119, P121, P123, P124, P128, P142, P143, and P146 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
@@ -241,9 +241,9 @@ and the Collatz conjecture remain open.
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
-| H133 | `OPEN` | Exclude every cycle after P193's repaired area growth and P194 sharp-frontier grid | Cover both negative cycles, E43/E44, NG34--NG40, all Phase 28--31 profiles, and the above-frontier regime first |
+| H133 | `OPEN` | Exclude every cycle after P196's area growth and P197--P199 full-cofactor reduction | Cover both negative cycles, E43--E45, NG34--NG40, all Phase 28--32 profiles, H200, and the above-frontier regime first |
 | H141 | `OPEN` | Turn defect geometry into an ordinary-source/carry obstruction for H89 or P194 into H133 rejection | Test one exact weighted inequality on NG32--NG40, concentrated/diffuse defects, both negative cycles, and E37--E44 before extending q |
-| H172 | `OPEN` | Turn P194's `o(L)`-defect grid into a strict full-`D` resultant and preserve both rotations | Allow adversarial bad-start placement; falsify first on NG34--NG40 and E43/E44 |
+| H172 | `OPEN` | Combine P194's `o(L)`-defect grid with P197's full cofactor and preserve both rotations | Allow adversarial bad-start placement; falsify first on NG34--NG40 and E43--E45 |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -276,7 +276,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 31 v2 provides the
+artifacts and preserve the recorded manifest hash. Phase 32 provides the
 latest accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -292,8 +292,9 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 - For H141, optimize a stated weighted correction/source inequality against
   concentrated defects, NG32, and P152/P153's nonempty q0 support interval
   before any larger critical/profile scan.
-- For H133/H172, begin with P194's sharp-frontier approximate grid. Rebuild
-  NG34--NG40, E43/E44, and the Phase 28--31 synthetic profiles. Seek a
+- For H133/H172, test H200's bounded area-six grid first, then P194's
+  arbitrary-area approximate grid. Rebuild NG34--NG40, E43--E45, and the
+  Phase 28--32 synthetic profiles. Seek a
   low-denominator full-`D` resultant that tolerates adversarial `o(L)` bad
   starts, and separately test what reduces above-frontier families to the
   sharp regime. Keep span, endpoint term, the all-fixed-`R` quantifier, and

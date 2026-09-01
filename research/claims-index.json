@@ -1,5 +1,5 @@
 {
-  "claim_count": 256,
+  "claim_count": 263,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -3641,9 +3641,114 @@
       "last_audited": "2026-08-31",
       "notes": "Bounded agreement does not prove the asymptotic claims or Collatz. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "For every P185 static extraction and cyclic width `n` with all `L` factors distinct, `3L<=(J+2E)(n+1)+6A+(n+3)[3+2Z_n+binom(Z_n,2)]`, where `Z_n=ceil((L-q)(n+1)/L)`.",
+      "collatz_implication": "Adds the last leading cardinality layer available from zero/one/two singleton hits.",
+      "dependencies": "P185/P186; repeated reduced-mechanical balance; distinctness only for the final start-to-type injection.",
+      "dependency_ids": [
+        "P185",
+        "P186"
+      ],
+      "evidence": "[`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md), Section 2; exact finite corpus and independent verifier.",
+      "first_introduced": "Phase 32",
+      "id": "P195",
+      "last_audited": "2026-08-31",
+      "notes": "It retains residual density through `E`, assumes factor distinctness where stated, and is not a cycle exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "In the P193 primitive-positive cycle regime, P195 and P167 give `liminf A/q^(2/3)>=C_3(ell)`, with `C_3=(3/4)(5ell)^(2/3)[2/(ell-1)-((ell-1)/ell)^2]^(1/3)`; the noncritical cube is `4725/64`, and the EXT17-dependent critical constant is in `(4.430667,4.430668)`.",
+      "collatz_implication": "Strengthens the necessary all-gcd area dispersion and identifies the triple-hit counting ceiling.",
+      "dependencies": "P167/P193/P195; fixed inverse-polynomial multiplier gap and state-separation width; EXT17 only for the critical specialization.",
+      "dependency_ids": [
+        "EXT17",
+        "P167",
+        "P193",
+        "P195"
+      ],
+      "evidence": "[`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md), Section 3; `artifacts/phase32_scalar_certificates.json`.",
+      "first_introduced": "Phase 32",
+      "id": "P196",
+      "last_audited": "2026-08-31",
+      "notes": "A larger area lower bound remains compatible with arbitrary-area cycles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For `q=dq0,L=dL0,R=2^L0,S=3^q0`, the full affine correction decomposes as `B=sum_c R^cS^(d-1-c)C_c=B0M_d+Delta`; every integral cycle satisfies `M_d|Delta`, where `M_d=(R^d-S^d)/(R-S)`.",
+      "collatz_implication": "Restores the large noncoprime cofactor omitted by the reduced-modulus condition P140.",
+      "dependencies": "P156 reduced-slope profile; exact block boundaries and affine correction; integral-cycle divisibility `R^d-S^d|B`.",
+      "dependency_ids": [
+        "P156"
+      ],
+      "evidence": "[`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md), Section 4; exact all-gcd corpus.",
+      "first_introduced": "Phase 32",
+      "id": "P197",
+      "last_audited": "2026-08-31",
+      "notes": "`M_d|Delta` is necessary, not sufficient for full integrality; the `R-S` factor remains.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every primitive positive integral noncoprime cycle has `max_c C_c-min_c C_c>=R`. If all block corrections agree, 2-adic valuation/subtraction injectivity makes all exponent blocks identical, contradicting primitivity.",
+      "collatz_implication": "Supplies a full-cofactor block-scale oscillation condition for noncoprime H133 candidates.",
+      "dependencies": "P197; positive integral block-boundary source; `d>1`; rational-root theorem in `Z[X]`.",
+      "dependency_ids": [
+        "P197"
+      ],
+      "evidence": "[`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md), Section 5; independent block reconstruction.",
+      "first_introduced": "Phase 32",
+      "id": "P198",
+      "last_audited": "2026-08-31",
+      "notes": "The positive weighted-average step fails for negative or nonintegral rational shadows, and the finite corpus contains no nontrivial primitive premise instance.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If `M_d|Delta` and the positive reduced-profile support has size `s`, a largest-gap lift gives a positive `M_d`-divisible integer `R_time<2^(A+1+(L/q)W)` with `W<=q-ceil(q/s)`. Hence every integral cycle obeys `(L/q)ceil(q/s)<L0+A+1`; a critical area-six cycle must have `d<=s<=6`.",
+      "collatz_implication": "Reduces critical area six to six gcd/support geometry classes using the full cofactor.",
+      "dependencies": "P158/P177 for the critical area-six specialization; P197; exact mechanical boundary balance; positive support coefficients.",
+      "dependency_ids": [
+        "P158",
+        "P177",
+        "P197"
+      ],
+      "evidence": "[`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md), Section 6; `artifacts/phase32_cofactor_corpus.json`.",
+      "first_introduced": "Phase 32",
+      "id": "P199",
+      "last_audited": "2026-08-31",
+      "notes": "It excludes no complete gcd class and is not an arbitrary-area theorem.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Make the bounded-grid `A=s=d=6` compactness reduction effective by enumerating/classifying every offset polynomial and supplying an explicit cutoff or an equivalent uniform identity theorem.",
+      "collatz_implication": "Would exclude the first bounded-grid noncoprime area-six subcase within H172/H133.",
+      "dependencies": "P158/P177/P197/P199; exact survival of primitivity, positivity, full `M_6`, and both rotation conventions.",
+      "dependency_ids": [
+        "P158",
+        "P177",
+        "P197",
+        "P199"
+      ],
+      "evidence": "[`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md), Section 7; `artifacts/phase32_obstruction_report.md`.",
+      "first_introduced": "Phase 32",
+      "id": "H200",
+      "last_audited": "2026-08-31",
+      "notes": "The supplied note's “effective in principle” compactness sketch has no explicit cutoff or completed coefficient-identity classification.",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Independent reconstruction checks 7,398 positive-`D` cyclic classes, 10,485 minimum rotations, 174,290 widths, 522,870 hit-capacity rows, 10,485 block decompositions, 7,543 noncoprime rows, and 2,936 positive support-arc certificates through `q<=9`.",
+      "collatz_implication": "Regresses P195/P197/P199 and preserves the rational-shadow boundary.",
+      "dependencies": "Declared finite range; exact integer/profile/factor/divisibility arithmetic; verifier imports no generator or `src`; integrality markers remain separate from cofactor hits.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md); Phase 32 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 32",
+      "id": "E45",
+      "last_audited": "2026-08-31",
+      "notes": "The corpus has zero primitive noncoprime positive integral premise instances; bounded structural agreement is not asymptotic completeness. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "1f4054d90595cadc7ecca064f2f91ad9358248204867b3bb35339e886e86db32"
+  "source_sha256": "5c1b127789be3cb6a0e160c1fd243b777b95eb88a27bb8ce23536866e7e0733b"
 }
