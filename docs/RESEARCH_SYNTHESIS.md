@@ -2,8 +2,8 @@
 
 **Audit date:** 2026-08-31
 
-**Audited base:** Phase 31 v2 acceptance commit recorded in its experiment
-manifest
+**Audited base:** Phase 31 v2 evidence commit
+`81d440f818342d75c28218d7e940c4fb55fd9691`
 
 **Latest accepted phase:** Phase 31
 

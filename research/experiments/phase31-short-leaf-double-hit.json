@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase31-short-leaf-double-hit",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P191", "P192", "P193", "P194", "E44", "H172", "H133", "H89"],
   "objective": "Audit the all-fixed-R short-leaf pruning repair of the Phase 31 cycle-side double-hit argument without coupling the unaudited q0 H89 Hamming-shell computation.",
   "exact_scope": {
@@ -73,13 +73,13 @@
     "H172, H133, H89, nonperiodic branches, and Collatz remain open."
   ],
   "recorded_result": {
-    "commit": "PENDING",
+    "commit": "81d440f818342d75c28218d7e940c4fb55fd9691",
     "generator": "valid=true with 7,398 cyclic classes, 10,485 minimum rotations, 31,455 pruning reconstructions, and 522,870 width/pruning cases",
     "verifier": "valid=true with generator_imported=false, a different pruning order, and independent profile/rotation/context/factor reconstruction",
-    "focused_tests": "PENDING",
-    "full_tests": "PENDING",
-    "strict_research_health": "PENDING",
-    "manifest_sha256": "PENDING",
+    "focused_tests": "13 passed in 110.76s",
+    "full_tests": "447 passed in 1575.37s",
+    "strict_research_health": "valid=true, errors=[], warnings=[]",
+    "manifest_sha256": "4b9246ce18edf12bb74a158bf0f3de62dca45e0c94fa64158290f7a675bb6fef",
     "verifier_valid": true
   },
   "proves_collatz": false

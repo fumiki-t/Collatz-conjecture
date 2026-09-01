@@ -33,8 +33,14 @@ the whole fixed-`R` family.
 cd artifacts && shasum -a 256 -c SHA256SUMS
 ```
 
-Final test results, evidence commit, and manifest hash are recorded in the
-accepted experiment manifest.
+Acceptance evidence:
+
+- focused suite: `13 passed in 110.76s`;
+- full suite: `447 passed in 1575.37s`;
+- strict research health: `valid=true`, no errors or warnings;
+- evidence commit: `81d440f818342d75c28218d7e940c4fb55fd9691`;
+- `artifacts/SHA256SUMS` SHA-256:
+  `4b9246ce18edf12bb74a158bf0f3de62dca45e0c94fa64158290f7a675bb6fef`.
 
 ## Evidence
 
