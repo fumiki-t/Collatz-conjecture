@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 33
+    assert result["latest_phase"] == 34
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -207,13 +207,18 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["E46"] == "VERIFIED_FINITE"
     assert result["active_focus"]["E47"] == "VERIFIED_FINITE"
     assert result["active_focus"]["P201"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P202"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P203"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P204"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["P205"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E48"] == "VERIFIED_FINITE"
     assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["frontier_counts"] == [461, 915]
-    assert result["latest_supplemental_verifier"]["descent"]["odd_sources"] == 141780
-    assert result["latest_supplemental_verifier"]["descent"]["first_maximum"] == [121, 303103, 208055]
-    assert result["latest_supplemental_verifier"]["descent"]["second_maximum"] == [173, 381727, 323434]
+    assert result["latest_supplemental_verifier"]["frontier_candidates"] == 1725
+    assert result["latest_supplemental_verifier"]["low_q_rows"] == 7221
+    assert result["latest_supplemental_verifier"]["bridge_rotations"] == 10103
+    assert result["latest_supplemental_verifier"]["defect_profiles"] == 21766
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -303,6 +308,11 @@ def test_generated_claim_index_is_complete() -> None:
     assert rows["E46"]["status"] == "VERIFIED_FINITE"
     assert rows["E47"]["status"] == "VERIFIED_FINITE"
     assert rows["P201"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P202"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P203"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P204"]["status"] == "VERIFIED_THEOREM"
+    assert rows["P205"]["status"] == "VERIFIED_THEOREM"
+    assert rows["E48"]["status"] == "VERIFIED_FINITE"
     assert rows["P137"]["status"] == "VERIFIED_THEOREM"
     assert rows["P139"]["status"] == "CONDITIONAL"
     assert rows["E34"]["status"] == "VERIFIED_FINITE"
