@@ -46,8 +46,8 @@ cd artifacts && shasum -a 256 -c SHA256SUMS
 
 Acceptance evidence:
 
-- focused Phase 34 suite: `8 passed in 65.70s`;
-- full suite: `470 passed in 1924.74s`;
+- focused Phase 34 and health suite: `13 passed in 70.94s`;
+- full suite: `471 passed in 2179.02s`;
 - implementation commit: `2990977eb19ead4636a9af81a82976fb50fc519b`;
 - evidence-manifest commit: `fdf8105f95e7869f29919133dded83ef5f7882a2`;
 - `artifacts/SHA256SUMS` SHA-256:
