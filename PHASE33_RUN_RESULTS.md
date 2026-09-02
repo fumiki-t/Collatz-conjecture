@@ -48,8 +48,15 @@ The first subinterval has maximum first-descent time 121 at 303103, reaching
 cd artifacts && shasum -a 256 -c SHA256SUMS
 ```
 
-Acceptance counts, commit IDs, and the manifest hash are recorded after the
-clean acceptance run in the experiment manifest.
+Acceptance evidence:
+
+- focused suite: `12 passed in 23.44s`;
+- full suite: `463 passed in 2593.90s`;
+- strict research health: `valid=true`, no errors or warnings;
+- implementation commit: `8c884d3c8cdbc4175bd754368333f4bbeab30220`;
+- evidence-manifest commit: `73fb88e332f45faed28c773d453b0131c66605a8`;
+- `artifacts/SHA256SUMS` SHA-256:
+  `8effaeeb42b1ddf37e31c3cae5b6fb60d2e47037c20c2c1d2528d24f08377884`.
 
 ## Evidence
 

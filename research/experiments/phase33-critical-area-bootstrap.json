@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase33-critical-area-bootstrap",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P200", "P201", "E46", "E47", "H200", "H172", "H133"],
   "objective": "Audit the Matveev-Legendre-CF bootstrap and independently certify the finite descent interval needed to exclude critical cycle areas through 117.",
   "exact_scope": {
@@ -71,13 +71,13 @@
     "No nonperiodic branch is affected."
   ],
   "recorded_result": {
-    "commit": "PENDING",
+    "commit": "73fb88e332f45faed28c773d453b0131c66605a8",
     "generator": "valid=true; frontier counts 461 and 915; low-q rows 1077 and 3125",
     "verifier": "valid=true; generator_imported=false; 141780 descent rows independently replayed",
-    "focused_tests": "PENDING",
-    "full_tests": "PENDING",
-    "strict_research_health": "PENDING",
-    "manifest_sha256": "PENDING",
+    "focused_tests": "12 passed in 23.44s",
+    "full_tests": "463 passed in 2593.90s",
+    "strict_research_health": "valid=true, errors=[], warnings=[]",
+    "manifest_sha256": "8effaeeb42b1ddf37e31c3cae5b6fb60d2e47037c20c2c1d2528d24f08377884",
     "verifier_valid": true
   },
   "proves_collatz": false
