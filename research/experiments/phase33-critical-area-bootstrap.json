@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "phase33-critical-area-bootstrap",
+  "status": "RUNNING",
+  "claim_ids": ["P200", "P201", "E46", "E47", "H200", "H172", "H133"],
+  "objective": "Audit the Matveev-Legendre-CF bootstrap and independently certify the finite descent interval needed to exclude critical cycle areas through 117.",
+  "exact_scope": {
+    "quantifiers": [
+      "every critical primitive positive nontrivial integer cycle under the accepted P133/P156/P164/P177/P180/P195/P199 inputs",
+      "every low-q row 971<=q<=2047 for area at most 61 and 971<=q<=4095 for area at most 117",
+      "every critical upper-convergent multiple under the two exact cutoffs and gcd bounds",
+      "every odd positive source from 300001 through 583559"
+    ],
+    "bounds": {
+      "first_cutoff": 2800000000000,
+      "second_cutoff": 5500000000000,
+      "first_gcd_bound": 63,
+      "second_gcd_bound": 125,
+      "new_finite_convergence_bound_exclusive": 583561
+    },
+    "completeness": "P200/P201 are exact consequences in the critical primitive-positive cycle branch. E46/E47 are bounded exact computations. H172, H133, all nonperiodic branches, and Collatz remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, rational atanh logarithm enclosures, regular continued fractions, exact P195 integer optimization, exact shortcut trajectories, and SHA-256 row digests",
+    "floating_point_role": "none in generation, verification, theorem statements, or acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase33_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase33.py --artifact-dir artifacts --output artifacts/phase33_verifier.json"],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase33_properties.py tests/test_phase33_verifier.py tests/test_research_health.py",
+      ".venv/bin/python -m pytest -q",
+      ".venv/bin/python scripts/research_health.py --strict"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "the rational log2(3) enclosure and regular-CF prefix with a different exact series implementation",
+      "both cutoff margins, gcd/Legendre frontiers, and all 461/915 convergent multiples",
+      "every low-q legal parameter maximum and its classification",
+      "all 141780 first-descent trajectories without trusting stored endpoints"
+    ],
+    "forbidden_imports": ["src.phase33_search", "phase33_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase33_verifier.py"]
+  },
+  "adversarial_families": [
+    "2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s",
+    "trivial cycle and powers", "both negative cycles", "rational shadows", "NG34-NG40"
+  ],
+  "artifacts": [
+    "artifacts/phase33_theory.json",
+    "artifacts/phase33_scalar_audit.json",
+    "artifacts/phase33_descent_summary.json",
+    "artifacts/phase33_descent_certificate.csv",
+    "artifacts/phase33_regressions.json",
+    "artifacts/phase33_obstruction_report.md",
+    "artifacts/phase33_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Do not turn a finite sequence of area tiers into an all-area argument without a uniform termination theorem.",
+    "Do not extend primitive-positive ordinary-state inequalities to negative cycles or rational shadows.",
+    "Do not claim the old bounded-grid identity classifier was completed; H200 is retracted after a stronger exclusion closed its target.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "The accepted result is a finite lower bound A>=118 in the critical positive-cycle branch.",
+    "The extended convergence interval is exact finite evidence, not an asymptotic orbit theorem.",
+    "H172 and H133 still require an arbitrary-area contradiction.",
+    "No nonperiodic branch is affected."
+  ],
+  "recorded_result": {
+    "commit": "PENDING",
+    "generator": "valid=true; frontier counts 461 and 915; low-q rows 1077 and 3125",
+    "verifier": "valid=true; generator_imported=false; 141780 descent rows independently replayed",
+    "focused_tests": "PENDING",
+    "full_tests": "PENDING",
+    "strict_research_health": "PENDING",
+    "manifest_sha256": "PENDING",
+    "verifier_valid": true
+  },
+  "proves_collatz": false
+}

@@ -1844,3 +1844,37 @@ hit capacities, 10,485 block corrections, and 2,936 positive support arcs.
 
 Phase 32 excludes no complete area-six gcd class, arbitrary-area cycle,
 nonperiodic branch, or the Collatz conjecture. `proves_collatz=false`.
+
+## 2026-09-01 — Phase 33: critical-area bootstrap
+
+**Branch:** `feat/phase33-critical-area-bootstrap`
+
+**Acceptance record:** [`PHASE33_RUN_RESULTS.md`](PHASE33_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/critical-area-bootstrap/REPORT.md`](research/audits/critical-area-bootstrap/REPORT.md)
+
+The supplied v3 note was treated as untrusted. Exact substitution into P180
+produces the area-61 and area-117 envelopes. Rational cutoff and derivative
+certificates bound `q`; P199/P177 bound the gcd; exact Legendre comparisons
+force the reduced slope onto an upper regular convergent of `log_2(3)`.
+Independent outward logarithm enclosures reconstruct 461 and 915 legal
+convergent multiples, all rejected by a coarse exact P180 upper bound.
+
+The low-`q` optimizer reconstructs every legal P167/P185/P195 scalar row. At
+area 61, all 1,077 rows fail; P200 proves critical `A>=62`. At area 117, only
+`q=971` survives among 3,125 rows. The independent verifier replays 141,780
+first-descent trajectories from odd sources 300001 through 583559. With E28,
+strong induction proves E46: every positive start below 583561 reaches 1.
+This rejects the sole survivor and P201 proves critical `A>=118`.
+
+H200 changes from OPEN to RETRACTED because P201 excludes its `A=s=d=6`
+target by a stronger route while the method-specific classifier itself was
+not completed. The next scalar survivor is
+`(q,L,A)=(1636,2593,118)` with P195 margin 45; E46 covers its finite height
+range, but no third tier was claimed without a fresh complete audit.
+
+### What this result does not prove
+
+Phase 33 supplies no uniform upper bound on hypothetical area, arbitrary-area
+cycle exclusion, nonperiodic-branch theorem, or proof or disproof of Collatz.
+`proves_collatz=false`.

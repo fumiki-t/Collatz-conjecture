@@ -1285,6 +1285,13 @@ assert that a counterexample cycle exists or that eventual exclusion is false.
 **Evidence.** [`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md),
 Section 7, and `artifacts/phase32_obstruction_report.md`.
 
+**Phase 33 resolution of the target, not the method.** P201 now excludes every
+critical area through 117 and therefore closes H200's `A=s=d=6` target. This
+does not repair or complete the non-effective bounded-grid classification; it
+bypasses that proposed promotion with exact cutoffs, CF exhaustion, P195, and
+a finite descent certificate. Future work must not cite P201 as an
+offset-polynomial identity classification.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

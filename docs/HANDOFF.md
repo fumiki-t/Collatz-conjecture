@@ -241,6 +241,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   block oscillation, and reduce critical area six to `d<=s<=6`. The proposed
   `d=s=6` compactness conclusion is H200 OPEN until its finite coefficient
   identities and cutoff are explicit.
+- Phase 33 bypasses that local classifier. Exact cutoffs, CF frontiers, low-`q`
+  P195 exhaustion, and 141,780 independently replayed first-descent rows prove
+  P200/P201: every critical primitive positive nontrivial cycle has `A>=118`.
+  H200's target is closed, but H172/H133 still require an arbitrary-area
+  contradiction; finite tier iteration is not such a theorem.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -419,6 +424,7 @@ cannot control an ordinary representative. P81/P82 expose exact downward
 coalescence and least-source irreducibility, but NG24 prevents a prefix-closed
 endpoint quotient. The remaining distinction is a carry-aware deterministic
 positive-height anti-concentration or eventual-reducibility theorem. On the
-cycle branch, P197--P199 now supply full-cofactor and area-six reductions, but
-H200's bounded-grid classification and P194's arbitrary-area strict resultant
-are both missing. Collatz remains open.
+cycle branch, P197--P199 supply the full cofactor and P200/P201 now exclude
+every critical area through 117. H200's target is closed, but P194's
+arbitrary-area strict resultant and the above-frontier reduction are still
+missing. Collatz remains open.

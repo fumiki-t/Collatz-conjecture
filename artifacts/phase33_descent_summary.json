@@ -1,0 +1,32 @@
+{
+  "certificate": "phase33_descent_certificate.csv",
+  "first_interval": {
+    "maximum": [
+      121,
+      303103,
+      208055
+    ],
+    "range": [
+      300000,
+      330911
+    ]
+  },
+  "format": "collatz-phase33-descent-summary-v1",
+  "induction": "E28 plus one-step parity reduction for even values and certified first-lower iterates for odd values proves convergence below 583561 by strong induction.",
+  "new_verified_bound_exclusive": 583561,
+  "odd_sources": 141780,
+  "prior_verified_bound": 300000,
+  "proves_collatz": false,
+  "row_digest_sha256": "4bb37f273eb47fa7b9694f5fcef734995685e0afe5c35c8555acc62b7f5e4416",
+  "second_interval": {
+    "maximum": [
+      173,
+      381727,
+      323434
+    ],
+    "range": [
+      330912,
+      583560
+    ]
+  }
+}

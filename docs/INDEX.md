@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–31, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–33, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -61,6 +61,7 @@ This is the canonical map of the research archive. Start with
 | 31 | [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md) | [`../artifacts/phase31_obstruction_report.md`](../artifacts/phase31_obstruction_report.md) | `feat/phase31-double-hit` |
 | 31 v2 | [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md) | [`../artifacts/phase31_short_leaf_obstruction_report.md`](../artifacts/phase31_short_leaf_obstruction_report.md) | `feat/phase31-short-leaf-double-hit` |
 | 32 | [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md) | [`../artifacts/phase32_obstruction_report.md`](../artifacts/phase32_obstruction_report.md) | `feat/phase32-triple-hit-cofactor` |
+| 33 | [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md) | [`../artifacts/phase33_obstruction_report.md`](../artifacts/phase33_obstruction_report.md) | `feat/phase33-critical-area-bootstrap` |
 
 Research supplements:
 
@@ -89,9 +90,10 @@ Research supplements:
 | Double-hit transport audit | [`../research/audits/double-hit-transport/REPORT.md`](../research/audits/double-hit-transport/REPORT.md) | Phase 31 static singleton extraction, double-hit factor counting, stronger area constants, repaired grid rigidity, and exact normalized obstruction | P185--P190, E43, NG40, H172/H133 boundary |
 | Short-leaf double-hit audit | [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md) | Phase 31 v2 all-radius pruning, repaired area proof, sharp-frontier approximate grid, and independent `q<=9` reconstruction | P191--P194, E44, repaired H172/H133 boundary; H89 candidates deferred |
 | Triple-hit/full-cofactor audit | [`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md) | Phase 32 triple-hit capacity, optimized area constant, full noncoprime cofactor, positive support arc, and bounded-grid obstruction | P195--P199, E45, H200/H172/H133 boundary |
+| Critical-area bootstrap audit | [`../research/audits/critical-area-bootstrap/REPORT.md`](../research/audits/critical-area-bootstrap/REPORT.md) | Phase 33 exact cutoffs, CF frontiers, low-`q` P195 exhaustion, and first-descent certificate | P200/P201, E46/E47, closed H200, H172/H133 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 32 and both the branch-point and two-tail
+documentation through Phase 33 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

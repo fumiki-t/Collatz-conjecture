@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 32
+    assert result["latest_phase"] == 33
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -201,20 +201,19 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["P197"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["P198"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["P199"] == "VERIFIED_THEOREM"
-    assert result["active_focus"]["H200"] == "OPEN"
+    assert result["active_focus"]["H200"] == "RETRACTED"
     assert result["active_focus"]["E45"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["P200"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E46"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["E47"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["P201"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["triple_counts"] == {
-        "capacity_checks": 522870,
-        "cyclic_classes": 7398,
-        "distinct_factor_widths": 110899,
-        "minimum_rotations": 10485,
-        "widths": 174290,
-    }
-    assert result["latest_supplemental_verifier"]["cofactor_counts"]["positive_arc_certificates"] == 2936
-    assert result["latest_supplemental_verifier"]["cofactor_counts"]["primitive_noncoprime_integral_cycles"] == 0
+    assert result["latest_supplemental_verifier"]["frontier_counts"] == [461, 915]
+    assert result["latest_supplemental_verifier"]["descent"]["odd_sources"] == 141780
+    assert result["latest_supplemental_verifier"]["descent"]["first_maximum"] == [121, 303103, 208055]
+    assert result["latest_supplemental_verifier"]["descent"]["second_maximum"] == [173, 381727, 323434]
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -273,7 +272,7 @@ def test_registry_matches_context_and_claim_sources() -> None:
     assert registry["repository"]["claim_source"] == "docs/CLAIMS_LEDGER.md"
     assert "docs/RESEARCH_SYNTHESIS.md" in registry["canonical_documents"]
     obligations = registry["active_obligations"]
-    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "H112", "H133", "H141", "H172", "H200", "C03", "C04", "C05"}
+    assert {row["id"] for row in obligations} == {"H54", "H70", "H72", "H89", "H104", "H105", "H112", "H133", "H141", "H172", "C03", "C04", "C05"}
     for row in obligations:
         if "context" in row:
             assert (root / row["context"]).is_file()
@@ -284,7 +283,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 263
+    assert committed["claim_count"] == 267
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -298,8 +297,12 @@ def test_generated_claim_index_is_complete() -> None:
     assert rows["E33"]["status"] == "VERIFIED_FINITE"
     assert rows["P195"]["status"] == "VERIFIED_THEOREM"
     assert rows["P199"]["status"] == "VERIFIED_THEOREM"
-    assert rows["H200"]["status"] == "OPEN"
+    assert rows["H200"]["status"] == "RETRACTED"
     assert rows["E45"]["status"] == "VERIFIED_FINITE"
+    assert rows["P200"]["status"] == "VERIFIED_THEOREM"
+    assert rows["E46"]["status"] == "VERIFIED_FINITE"
+    assert rows["E47"]["status"] == "VERIFIED_FINITE"
+    assert rows["P201"]["status"] == "VERIFIED_THEOREM"
     assert rows["P137"]["status"] == "VERIFIED_THEOREM"
     assert rows["P139"]["status"] == "CONDITIONAL"
     assert rows["E34"]["status"] == "VERIFIED_FINITE"

@@ -1,0 +1,75 @@
+{
+  "format": "collatz-phase33-regressions-v1",
+  "mandatory_families": [
+    [
+      "2^m-1",
+      "1111111111110",
+      [
+        12,
+        13,
+        527345
+      ]
+    ],
+    [
+      "8^m-5",
+      "111001111001111001111001",
+      [
+        16,
+        24,
+        137528585
+      ]
+    ],
+    [
+      "(110|111)^*",
+      "110111110111110111110111110111110111110111110111",
+      [
+        40,
+        48,
+        19492565382296215685
+      ]
+    ],
+    [
+      "A=11101",
+      "11101",
+      [
+        4,
+        5,
+        73
+      ]
+    ],
+    [
+      "B=1100",
+      "1100",
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    [
+      "A^1B^1",
+      "111011100",
+      [
+        6,
+        9,
+        817
+      ]
+    ],
+    [
+      "A^2B^3",
+      "1110111101110011001100",
+      [
+        14,
+        22,
+        8476241
+      ]
+    ]
+  ],
+  "named_boundaries": {
+    "NG34_NG40": "preserved; area, rotation, endpoint, span, and hit-count shortcuts remain unavailable",
+    "negative_cycles": "P133/P180 ordinary positive-state bounds do not apply",
+    "rational_shadows": "finite scalar survival never implies a positive integral source",
+    "trivial_cycle_and_powers": "excluded from the nontrivial primitive-positive premise"
+  },
+  "proves_collatz": false
+}

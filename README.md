@@ -22,18 +22,18 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 32 is the latest accepted research layer. It proves an exact triple-hit
-factor inequality, strengthens the necessary cycle-area constant, restores
-the full noncoprime cofactor, and reduces critical area six to `d<=s<=6`.
-The proposed `d=s=6` eventual exclusion is not accepted because its finite
-identity classification and cutoff are missing; this is H200. No complete
-area-six exclusion or arbitrary-area resultant is known. H200, H172, H133,
-and the broader
+Phase 33 is the latest accepted research layer. It combines the Phase 32
+cycle inequalities with exact Matveev cutoffs, continued fractions, exhaustive
+low-period scalar audits, and an independently replayed finite descent
+certificate. Every critical primitive positive nontrivial cycle must have
+reduced-profile area `A>=118`, and every positive start below `583561` is
+verified to reach 1. This closes H200's bounded area-six target by a stronger
+route, but no arbitrary-area resultant is known. H172, H133, and the broader
 H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
 remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–32, separates internal and external
+map and conventions, summarizes Phases 1–33, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -74,12 +74,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase32.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase32_verifier.json
+.venv/bin/python verifier/verify_phase33.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase33_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 32 result](PHASE32_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 33 result](PHASE33_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

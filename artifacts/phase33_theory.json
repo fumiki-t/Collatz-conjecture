@@ -1,0 +1,41 @@
+{
+  "H200": {
+    "closure": "The original method-specific bounded-grid obligation is retracted as unnecessary: P201 excludes its A=s=d=6 target and all critical areas through 117.",
+    "not_claimed": "No complete bounded-grid coefficient-identity classification is asserted."
+  },
+  "P200": {
+    "dependencies": [
+      "P133",
+      "P156",
+      "P164",
+      "EXT17",
+      "P177",
+      "P180",
+      "P195",
+      "P199",
+      "E28",
+      "E47"
+    ],
+    "statement": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area A>=62."
+  },
+  "P201": {
+    "dependencies": [
+      "P200",
+      "E46",
+      "E47"
+    ],
+    "statement": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area A>=118."
+  },
+  "claims": {
+    "E46": "VERIFIED_FINITE",
+    "E47": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H200": "RETRACTED",
+    "P200": "VERIFIED_THEOREM",
+    "P201": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase33-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "Finite area floors do not exclude arbitrary-area positive cycles, nonperiodic branches, or the Collatz conjecture."
+}

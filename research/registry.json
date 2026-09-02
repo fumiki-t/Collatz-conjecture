@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 32,
+    "latest_phase": 33,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,14 +22,14 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 32,
-    "report": "PHASE32_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase32_verifier.json",
+    "phase": 33,
+    "report": "PHASE33_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase33_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase32-triple-hit-cofactor.json"
+    "experiment_manifest": "research/experiments/phase33-critical-area-bootstrap.json"
   },
   "active_obligations": [
     {
@@ -93,8 +93,8 @@
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H133.md",
-      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P177", "P178", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "P195", "P196", "P197", "P198", "P199", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "E44", "E45", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "H172", "H200"],
-      "success_scope": "Eliminate every primitive positive nontrivial cycle beyond Phase 32's triple-hit area necessity, full-cofactor conditions, and critical area-six gcd reduction."
+      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P177", "P178", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "P195", "P196", "P197", "P198", "P199", "P200", "P201", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "E44", "E45", "E46", "E47", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "H172", "H200"],
+      "success_scope": "Eliminate every primitive positive nontrivial cycle beyond Phase 33's critical A>=118 floor, triple-hit area necessity, and full-cofactor conditions."
     },
     {
       "id": "H141",
@@ -109,16 +109,8 @@
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H172.md",
-      "depends_on": ["P133", "P137", "P140", "P156", "P157", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "P195", "P196", "P197", "P198", "P199", "EXT17", "E40", "E41", "E42", "E43", "E44", "E45", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "H200"],
-      "success_scope": "Use Phase 32's full cofactor to close H200's bounded area-six grid or turn P194's arbitrary-area approximate grid into a strict contradiction while preserving both rotations."
-    },
-    {
-      "id": "H200",
-      "status": "OPEN",
-      "priority": "P1",
-      "context": "docs/context/H172.md",
-      "depends_on": ["P158", "P177", "P197", "P198", "P199", "E45", "H172"],
-      "success_scope": "Classify all bounded-offset A=s=d=6 coefficient identities with an explicit cutoff or equivalent uniform theorem; this closes only one critical area-six subcase."
+      "depends_on": ["P133", "P137", "P140", "P156", "P157", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "P195", "P196", "P197", "P198", "P199", "P200", "P201", "EXT17", "E40", "E41", "E42", "E43", "E44", "E45", "E46", "E47", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "H200"],
+      "success_scope": "Turn P194's arbitrary-area approximate grid into a strict full-cofactor contradiction while preserving both rotations; bounded critical areas through 117 are already excluded."
     },
     {
       "id": "C04",
@@ -344,7 +336,11 @@
     "P198",
     "P199",
     "H200",
-    "E45"
+    "E45",
+    "P200",
+    "E46",
+    "E47",
+    "P201"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

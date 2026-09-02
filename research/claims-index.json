@@ -1,5 +1,5 @@
 {
-  "claim_count": 263,
+  "claim_count": 267,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -3719,21 +3719,21 @@
       "status": "VERIFIED_THEOREM"
     },
     {
-      "claim": "Make the bounded-grid `A=s=d=6` compactness reduction effective by enumerating/classifying every offset polynomial and supplying an explicit cutoff or an equivalent uniform identity theorem.",
-      "collatz_implication": "Would exclude the first bounded-grid noncoprime area-six subcase within H172/H133.",
-      "dependencies": "P158/P177/P197/P199; exact survival of primitivity, positivity, full `M_6`, and both rotation conventions.",
+      "claim": "Make the bounded-grid `A=s=d=6` compactness reduction effective by enumerating/classifying every offset polynomial and supplying an explicit cutoff or equivalent uniform identity theorem.",
+      "collatz_implication": "The target subcase is excluded by the stronger P201 theorem `A>=118`, so this method-specific obligation is no longer active.",
+      "dependencies": "P158/P177/P197/P199; exact survival of primitivity, positivity, full `M_6`, and both rotations.",
       "dependency_ids": [
         "P158",
         "P177",
         "P197",
         "P199"
       ],
-      "evidence": "[`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md), Section 7; `artifacts/phase32_obstruction_report.md`.",
+      "evidence": "[`../research/audits/critical-area-bootstrap/REPORT.md`](../research/audits/critical-area-bootstrap/REPORT.md), Section 6; P201.",
       "first_introduced": "Phase 32",
       "id": "H200",
-      "last_audited": "2026-08-31",
-      "notes": "The supplied note's “effective in principle” compactness sketch has no explicit cutoff or completed coefficient-identity classification.",
-      "status": "OPEN"
+      "last_audited": "2026-09-01 (OPEN -> RETRACTED)",
+      "notes": "Retraction does not assert that the requested identity classification was completed or false; it was bypassed.",
+      "status": "RETRACTED"
     },
     {
       "claim": "Independent reconstruction checks 7,398 positive-`D` cyclic classes, 10,485 minimum rotations, 174,290 widths, 522,870 hit-capacity rows, 10,485 block decompositions, 7,543 noncoprime rows, and 2,936 positive support-arc certificates through `q<=9`.",
@@ -3746,9 +3746,74 @@
       "last_audited": "2026-08-31",
       "notes": "The corpus has zero primitive noncoprime positive integral premise instances; bounded structural agreement is not asymptotic completeness. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area `A>=62`.",
+      "collatz_implication": "Excludes every critical area through 61 across all gcd classes without new trajectory input.",
+      "dependencies": "P133/P156/P164/EXT17/P177/P180/P195/P199/E28/E47; exact two-range cutoff, Legendre, CF, and low-`q` exhaustion.",
+      "dependency_ids": [
+        "E28",
+        "E47",
+        "EXT17",
+        "P133",
+        "P156",
+        "P164",
+        "P177",
+        "P180",
+        "P195",
+        "P199"
+      ],
+      "evidence": "[`../research/audits/critical-area-bootstrap/REPORT.md`](../research/audits/critical-area-bootstrap/REPORT.md), Sections 2--4; Phase 33 scalar artifact and independent verifier.",
+      "first_introduced": "Phase 33",
+      "id": "P200",
+      "last_audited": "2026-09-01",
+      "notes": "It is critical-branch only and supplies no upper area bound or arbitrary-area cycle exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every positive integer `n<583561` reaches 1. E28 handles `n<300000`; 141,780 exact first-descent rows cover every odd source from 300001 through 583559, and strong induction covers the full interval.",
+      "collatz_implication": "Eliminates the finite ordinary-height survivor needed by P201 and records the next obstruction interval.",
+      "dependencies": "Shortcut map; E28; exact replay of every stored trajectory by an independent verifier.",
+      "dependency_ids": [
+        "E28"
+      ],
+      "evidence": "[`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md); `artifacts/phase33_descent_certificate.csv`; `artifacts/phase33_descent_summary.json`.",
+      "first_introduced": "Phase 33",
+      "id": "E46",
+      "last_audited": "2026-09-01",
+      "notes": "This bounded convergence theorem is not evidence of asymptotic convergence. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Exact reconstruction checks both Matveev cutoffs, gcd and Legendre thresholds, 461 and 915 upper-convergent multiples, all 1,077 and 3,125 low-`q` rows, and the area-62/118 scalar obstructions.",
+      "collatz_implication": "Supplies the finite exhaustion used by P200/P201.",
+      "dependencies": "Declared finite ranges; exact integers and rational logarithm enclosures; verifier imports no generator or `src`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md); `artifacts/phase33_scalar_audit.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 33",
+      "id": "E47",
+      "last_audited": "2026-09-01",
+      "notes": "Finite scalar exhaustion cannot be iterated into an all-area theorem without a uniform termination mechanism.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area `A>=118`.",
+      "collatz_implication": "Closes H200 and excludes all critical areas through 117 across every gcd class.",
+      "dependencies": "P200/E46/E47 and the accepted Phase 32 cycle inequalities; primitive positive integral critical cycle.",
+      "dependency_ids": [
+        "E46",
+        "E47",
+        "P200"
+      ],
+      "evidence": "[`../research/audits/critical-area-bootstrap/REPORT.md`](../research/audits/critical-area-bootstrap/REPORT.md), Sections 4--6; Phase 33 artifacts.",
+      "first_introduced": "Phase 33",
+      "id": "P201",
+      "last_audited": "2026-09-01",
+      "notes": "It does not exclude area 118 or larger, noncritical cycles, nonperiodic branches, or Collatz.",
+      "status": "VERIFIED_THEOREM"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "5c1b127789be3cb6a0e160c1fd243b777b95eb88a27bb8ce23536866e7e0733b"
+  "source_sha256": "803b598b7c44a34f9b0f1ce657048739a9d3a4f12bb8f8877bbba26e71f4a76d"
 }

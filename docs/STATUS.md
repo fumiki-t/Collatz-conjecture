@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-08-31
+**Last updated:** 2026-09-01
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -221,6 +221,14 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   support arcs. The proposed `d=s=6` eventual exclusion is not accepted:
   H200 records its missing explicit cutoff/identity classification. H172 and
   H133 remain open.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE`: Phase 33 reconstructs exact
+  Matveev cutoffs, Legendre/continued-fraction frontiers, and all low-`q`
+  P195 rows. P200 proves critical `A>=62`; E46 independently extends finite
+  convergence to every positive `n<583561`; P201 strengthens the critical
+  floor to `A>=118`. H200's area-six target is therefore closed by a stronger
+  theorem; the uncompleted method-specific obligation is `RETRACTED`, not
+  promoted to a theorem.
+  H172/H133 and every nonperiodic branch remain open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -835,5 +843,6 @@ eventual nonzero lifts.
 - Phase 31 acceptance: [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md)
 - Phase 31 v2 acceptance:
   [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md)
+- Phase 33 acceptance: [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md)
 - Phase 32 acceptance: [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

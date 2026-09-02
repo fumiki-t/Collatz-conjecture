@@ -1,11 +1,10 @@
-# Collatz research synthesis through Phase 32
+# Collatz research synthesis through Phase 33
 
-**Audit date:** 2026-08-31
+**Audit date:** 2026-09-01
 
-**Audited base:** Phase 32 evidence commit
-`0ea676bb2a6cea5f554de4252e13a4d969330614`
+**Audited base:** Phase 33 accepted evidence and independent verifier
 
-**Latest accepted phase:** Phase 32
+**Latest accepted phase:** Phase 33
 
 **Problem status:** `OPEN`
 
@@ -867,6 +866,24 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md) and the
   [`Phase 32 audit`](../research/audits/triple-hit-cofactor/REPORT.md).
 
+### Phase 33 — critical-area bootstrap
+
+- **Accepted internally:** P200 combines P180/P195/P199 with exact Matveev
+  cutoffs, Legendre reduction, and upper continued fractions to prove critical
+  `A>=62`. P201 uses the independently verified finite descent input E46 to
+  strengthen this to `A>=118` across all gcd classes.
+- **Finite evidence:** E47 reconstructs 461 and 915 CF-frontier rows and all
+  1,077 and 3,125 low-`q` decisions. E46 independently replays 141,780 odd
+  first-descent trajectories and proves convergence for every positive
+  `n<583561` by strong induction with E28.
+- **Closed target:** H200's `A=s=d=6` target is excluded by P201. The former
+  bounded-grid identity classification was bypassed rather than completed.
+- **Open:** the next scalar survivor is `(q,L,A)=(1636,2593,118)`. More
+  importantly, no finite sequence of tiers supplies the uniform arbitrary-area
+  contradiction required by H172/H133. See
+  [`PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md) and the
+  [`Phase 33 audit`](../research/audits/critical-area-bootstrap/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -874,7 +891,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P199 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P201 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG40.
 
@@ -1022,9 +1039,10 @@ nonperiodic route. **Known inputs:** computational verification lower bounds,
 cycle-length/minimum estimates, P65, Phase 22 P133--P140, Phase 23 P144/P145,
 Phase 24 P147--P150, Phase 25 P151/P154/P155, Phase 26 P156--P161, Phase 27
 P162--P165, Phase 28 P166--P171, Phase 29 P173--P177, Phase 30 P179--P184,
-and Phase 31 P185--P194. P194 supplies a sharp-frontier approximate grid;
-H172 asks for its strict full-`D` arithmetic bridge, while H133 also retains
-the above-frontier regime. **Acceptance:** a
+Phase 31 P185--P194, Phase 32 P195--P199, and Phase 33 P200/P201.
+P201 excludes critical areas through 117; P194 supplies a sharp-frontier
+approximate grid. H172 asks for its strict full-`D` arithmetic bridge, while
+H133 also retains every larger-area and above-frontier regime. **Acceptance:** a
 complete theorem with every external dependency and finite remainder audited;
 formal rational cycles and bounded profile coverage are insufficient. See
 [`context/H133.md`](context/H133.md).
@@ -1034,7 +1052,8 @@ formal rational cycles and bounded profile coverage are insufficient. See
 **Result:** P158 proves every critical primitive positive nontrivial cycle has
 `A_*>=6`, so no coprime area-three profile can be such a cycle. This closes
 H147 by a stronger all-gcd route without proving the originally proposed
-near-resonance resultant. **Successor:** critical area six under H133. NG34
+near-resonance resultant. **Successor:** the arbitrary-area regime under H133;
+P201 now excludes all critical areas through 117. NG34
 and the retained Phase 24/25 arithmetic remain falsifiers and inputs. See
 [`context/H147.md`](context/H147.md).
 

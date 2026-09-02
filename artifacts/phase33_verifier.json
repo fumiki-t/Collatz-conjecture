@@ -1,0 +1,42 @@
+{
+  "claims": {
+    "E46": "VERIFIED_FINITE",
+    "E47": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H200": "RETRACTED",
+    "P200": "VERIFIED_THEOREM",
+    "P201": "VERIFIED_THEOREM"
+  },
+  "descent": {
+    "first_maximum": [
+      121,
+      303103,
+      208055
+    ],
+    "odd_sources": 141780,
+    "second_maximum": [
+      173,
+      381727,
+      323434
+    ]
+  },
+  "format": "collatz-phase33-independent-verifier-v1",
+  "frontier_counts": [
+    461,
+    915
+  ],
+  "generator_imported": false,
+  "independence": "separate rational log series, CF reconstruction, scalar optimizer, and trajectory iterator",
+  "proves_collatz": false,
+  "valid": true,
+  "verified_input_sha256": {
+    "phase33_descent_certificate.csv": "33ca0323c9c9c69d375e0e3da8e6d7746260f045dff5ed898f87dfe7d2ae4c58",
+    "phase33_descent_summary.json": "62e08d955ff1685f384373588d19e43f8ece7410cffee152cbc22a3af899129c",
+    "phase33_obstruction_report.md": "5b0a6d412a3a4afc65c9cde9afe1a14e8d524d187cd5f9de734a59fb19f59b3b",
+    "phase33_regressions.json": "863abd8ba1a1e8422d00d86859c8162cb2a551b770976f92cd69299c0fa23d94",
+    "phase33_scalar_audit.json": "acb4689ecf890c60d23810512c2a44a5b2eb1017d42819ceb4706ad125d54499",
+    "phase33_theory.json": "f64b8ad72e11b291d9e12e5148447708b9b62a17c31baeac08b6c65724859cce"
+  },
+  "what_this_result_does_not_prove": "Finite area floors do not exclude arbitrary-area cycles, nonperiodic orbits, or prove Collatz."
+}

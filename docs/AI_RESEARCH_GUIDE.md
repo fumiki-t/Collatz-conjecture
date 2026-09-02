@@ -2,13 +2,13 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 32's triple-hit/full-cofactor audit is the
+proof of the conjecture. Phase 33's critical-area bootstrap is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–32 evidence boundaries, and current obligations.
+   branch map, Phase 1–33 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
@@ -241,9 +241,9 @@ and the Collatz conjecture remain open.
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
-| H133 | `OPEN` | Exclude every cycle after P196's area growth and P197--P199 full-cofactor reduction | Cover both negative cycles, E43--E45, NG34--NG40, all Phase 28--32 profiles, H200, and the above-frontier regime first |
+| H133 | `OPEN` | Exclude every cycle after P201's critical `A>=118` floor and P197--P199 full-cofactor reduction | Cover both negative cycles, E43--E47, NG34--NG40, all Phase 28--33 profiles, and the above-frontier regime first |
 | H141 | `OPEN` | Turn defect geometry into an ordinary-source/carry obstruction for H89 or P194 into H133 rejection | Test one exact weighted inequality on NG32--NG40, concentrated/diffuse defects, both negative cycles, and E37--E44 before extending q |
-| H172 | `OPEN` | Combine P194's `o(L)`-defect grid with P197's full cofactor and preserve both rotations | Allow adversarial bad-start placement; falsify first on NG34--NG40 and E43--E45 |
+| H172 | `OPEN` | Combine P194's `o(L)`-defect grid with P197's full cofactor and preserve both rotations beyond P201's finite area floor | Allow adversarial bad-start placement; falsify first on NG34--NG40 and E43--E47 |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
