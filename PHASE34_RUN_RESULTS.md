@@ -44,8 +44,16 @@ through `q<=12` and 21,766 legal 2-adic defect profiles through `q<=18`.
 cd artifacts && shasum -a 256 -c SHA256SUMS
 ```
 
-Acceptance timing, commits, and manifest hash are recorded after the final
-clean-worktree acceptance run.
+Acceptance evidence:
+
+- focused Phase 34 suite: `8 passed in 65.70s`;
+- full suite: `470 passed in 1924.74s`;
+- implementation commit: `2990977eb19ead4636a9af81a82976fb50fc519b`;
+- evidence-manifest commit: `fdf8105f95e7869f29919133dded83ef5f7882a2`;
+- `artifacts/SHA256SUMS` SHA-256:
+  `2367c0e929872bb1d572f0cbd9687b20594ddae6280f5d3ac1c10814d94e30f9`.
+
+- strict research health: `valid=true`, no errors or warnings.
 
 ## Evidence
 
