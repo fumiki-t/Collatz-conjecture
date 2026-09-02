@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-09-01
+**Last updated:** 2026-09-02
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -229,6 +229,14 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   theorem; the uncompleted method-specific obligation is `RETRACTED`, not
   promoted to a theorem.
   H172/H133 and every nonperiodic branch remain open.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE`: Phase 34 proves P202's
+  least-state/profile bridge and P203's strict profile-sensitive least-state
+  bound without identifying the two rotations. Exact high/low-`q` exhaustion
+  then proves P204: every critical primitive positive nontrivial integer cycle
+  has `A>=209`. P205 decodes only the first 2-adic source defect. E48
+  independently reconstructs 1,725 CF rows, 7,221 low-`q` rows, 10,103
+  rational profile rotations, and 21,766 defect profiles. The
+  `(q,L,A)=(2301,3647,209)` row and repeated defect decoding remain open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -531,6 +539,12 @@ coefficient-safe tails would still require independent exclusion. Therefore
 P70 alone is not a complete Collatz route.
 
 ## Current main bottleneck
+
+Phase 34 raises the critical area floor but does not create an arbitrary-area
+termination mechanism. Cycle work should target the concrete height-two
+`q=2301,A=209` profile with P173/P197 arithmetic or prove a growing-area
+theorem. Least-counterexample work should extend P205 to a branch-free
+pointwise decoder retaining P89 ancestry, endpoint carry, and source order.
 
 No asymptotic lower bound is known for the least coefficient-safe
 representative `M(k)`. Phase 7 narrows the missing statement: no `q`-uniform
@@ -844,5 +858,6 @@ eventual nonzero lifts.
 - Phase 31 v2 acceptance:
   [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md)
 - Phase 33 acceptance: [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md)
+- Phase 34 acceptance: [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md)
 - Phase 32 acceptance: [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

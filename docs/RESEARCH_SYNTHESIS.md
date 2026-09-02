@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 33
+# Collatz research synthesis through Phase 34
 
 **Audit date:** 2026-09-01
 
-**Audited base:** Phase 33 accepted evidence and independent verifier
+**Audited base:** Phase 34 accepted evidence and independent verifier
 
-**Latest accepted phase:** Phase 33
+**Latest accepted phase:** Phase 34
 
 **Problem status:** `OPEN`
 
@@ -884,6 +884,25 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   [`PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md) and the
   [`Phase 33 audit`](../research/audits/critical-area-bootstrap/REPORT.md).
 
+### Phase 34 — least-state/profile bridge and critical area 209
+
+- **Theorems:** P202 transports a least odd cycle state into the reduced
+  profile only vertically, proving `h<=a_t+1` while preserving NG36. P203
+  converts the exact affine fixed-point identity into a profile-sensitive
+  ordinary-state upper bound.
+- **Area floor:** P204 combines that bound with the accepted P180/P195,
+  Matveev, CF, and E46 inputs to prove critical `A>=209`.
+- **Pointwise arithmetic:** P205 reconstructs the canonical source-residue
+  difference and identifies the first 2-adic defect. A branch-free repeated
+  decoder remains open.
+- **Finite evidence:** E48 independently reconstructs 1,725 CF candidates,
+  7,221 low-`q` rows, 10,103 rational profile rotations, and 21,766 defect
+  profiles. The first scalar obstruction is `q=2301,A=209`.
+- **Boundary:** no finite absence of an `a_t=h-1` control is promoted to the
+  stronger equality `a_t=h`; arbitrary-area H133/H172 and H89 remain open.
+
+See the [`Phase 34 audit`](../research/audits/profile-state-area209/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -891,7 +910,7 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P201 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P205 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG40.
 

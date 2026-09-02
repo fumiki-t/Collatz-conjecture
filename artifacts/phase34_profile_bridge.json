@@ -1,0 +1,12 @@
+{
+  "control_boundary": "No h-1 control in this finite critical rational corpus is not a proof of a_t=h.",
+  "cyclic_classes": 9120,
+  "least_profile_h_minus_one_controls": [],
+  "minimum_rotations": 10103,
+  "q_range": [
+    2,
+    12
+  ],
+  "row_digest_sha256": "821cbe92cf20297945fbf19a92cb61cf9b0159b1f1360baa6e4805b167152790",
+  "segment_checks": 106193
+}

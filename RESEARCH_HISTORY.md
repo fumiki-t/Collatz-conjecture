@@ -1878,3 +1878,28 @@ range, but no third tier was claimed without a fresh complete audit.
 Phase 33 supplies no uniform upper bound on hypothetical area, arbitrary-area
 cycle exclusion, nonperiodic-branch theorem, or proof or disproof of Collatz.
 `proves_collatz=false`.
+
+## 2026-09-02 — Phase 34: least-state/profile bridge and critical area 209
+
+**Branch:** `feat/phase34-profile-state-area209`
+
+**Acceptance record:** [`PHASE34_RUN_RESULTS.md`](PHASE34_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/profile-state-area209/REPORT.md`](research/audits/profile-state-area209/REPORT.md)
+
+P202 proves `h<=a_t+1` without identifying the least-value and
+discrepancy-minimum rotations. P203 reconstructs the exact fixed-point
+identity and strict profile-sensitive integer state bound. P204 then rebuilds
+the `q<10^13`, `d<=236`, CF, and 7,221-row low-`q` audit, proving critical
+`A>=209`. The first exact obstruction is `q=2301,L=3647,A=209`, height two,
+with least-state interval `[583561,860946]`.
+
+P205 proves that the 2-adic valuation of the source-residue difference
+identifies the first gap-two unit edit, but does not provide a branch-free
+repeated decoder. E48 independently reconstructs 1,725 CF candidates, 10,103
+rational rotations, and 21,766 defect profiles.
+
+### What this result does not prove
+
+Phase 34 does not exclude area 209 or arbitrary area, close H89/H133/H172,
+address nonperiodic branches, or prove Collatz. `proves_collatz=false`.

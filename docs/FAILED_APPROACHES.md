@@ -1292,6 +1292,24 @@ bypasses that proposed promotion with exact cutoffs, CF exhaustion, P195, and
 a finite descent certificate. Future work must not cite P201 as an
 offset-polynomial identity classification.
 
+## Phase 34 boundary — finite control absence and one-step peeling
+
+**Rejected promotions.** Do not infer `a_t=h` from the finite absence of an
+`a_t=h-1` rational control, and do not iterate P205's first-defect subtraction
+as though it were already a deterministic full-profile decoder.
+
+**Why they look plausible.** P202 leaves only one vertical profile level of
+slack, while P205 makes the least 2-adic defect visible with no cancellation.
+
+**Smallest logical obstruction.** E48 is bounded, so it cannot remove the
+remaining vertical case. After the first edit, defect intervals may overlap
+and the mechanical labels used by the next subtraction can change. The
+valuation identity alone does not preserve P89 ancestry, endpoint carry,
+literal safety, or ordinary source order.
+
+**Surviving statements.** P202 proves only `h<=a_t+1`; P205 uniquely decodes
+only the first gap-two unit edit. A repeated decoder remains an H89 target.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

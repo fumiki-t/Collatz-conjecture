@@ -2,19 +2,21 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 33's critical-area bootstrap is the
+proof of the conjecture. Phase 34's profile/state area-209 audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–33 evidence boundaries, and current obligations.
+   branch map, Phase 1–34 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md), then its inputs;
+6. [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md), then its inputs,
+   including [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md) and
+   [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md);
    use the Phase 31 records for the immediately preceding layer:
    [`../PHASE30_RUN_RESULTS.md`](../PHASE30_RUN_RESULTS.md),
    [`../PHASE29_RUN_RESULTS.md`](../PHASE29_RUN_RESULTS.md),
@@ -235,15 +237,15 @@ and the Collatz conjecture remain open.
 | ID | Status | Exact missing step | Fastest useful next test |
 |---|---|---|---|
 | H54 | `OPEN` | Prove `M(K_q-1)>H_q` eventually | Attack any proposed `M(k)` inequality with all stored record failures and mandatory adversarial families |
-| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Combine P151--P153 support locations with signed P91/P97 carry and P132; the q0 support count alone leaves a wide interval |
+| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Extend P205's exact first-defect valuation to a branch-free decoder retaining P89 ancestry, endpoint carry, coefficient safety, and ordinary source order |
 | H104 | `OPEN` | Exclude every positive ordinary-source all-prefix same-Q geodesic G270 word | Retain fixed source plus affine/carry state; reject contact/all-contact/Haar-only shortcuts with NG17/P73/NG29 |
 | H105 | `OPEN` | Empty the H270 box `N<q/270`, `X<q/135`, `Z<2q/135` | Use a two-sided exact state and keep the periodic branch separate; test NG19 and NG24--NG29 |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
-| H133 | `OPEN` | Exclude every cycle after P201's critical `A>=118` floor and P197--P199 full-cofactor reduction | Cover both negative cycles, E43--E47, NG34--NG40, all Phase 28--33 profiles, and the above-frontier regime first |
+| H133 | `OPEN` | Exclude every cycle after P204's critical `A>=209` floor and P197--P199 full-cofactor reduction | Attack the `q=2301,A=209` height-two obstruction or prove a growing-area theorem; cover negative cycles, E43--E48, NG34--NG40, and all Phase 28--34 profiles |
 | H141 | `OPEN` | Turn defect geometry into an ordinary-source/carry obstruction for H89 or P194 into H133 rejection | Test one exact weighted inequality on NG32--NG40, concentrated/diffuse defects, both negative cycles, and E37--E44 before extending q |
-| H172 | `OPEN` | Combine P194's `o(L)`-defect grid with P197's full cofactor and preserve both rotations beyond P201's finite area floor | Allow adversarial bad-start placement; falsify first on NG34--NG40 and E43--E47 |
+| H172 | `OPEN` | Combine P194's `o(L)`-defect grid with P197's full cofactor and preserve both rotations beyond P204's finite area floor | Allow adversarial bad-start placement; falsify first on NG34--NG40 and E43--E48 |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |

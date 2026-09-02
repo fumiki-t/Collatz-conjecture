@@ -1,0 +1,75 @@
+{
+  "format": "collatz-phase34-regressions-v1",
+  "mandatory_families": [
+    [
+      "2^m-1",
+      "1111111111110",
+      [
+        12,
+        13,
+        527345
+      ]
+    ],
+    [
+      "8^m-5",
+      "111001111001111001111001",
+      [
+        16,
+        24,
+        137528585
+      ]
+    ],
+    [
+      "(110|111)^*",
+      "110111110111110111110111110111110111110111110111",
+      [
+        40,
+        48,
+        19492565382296215685
+      ]
+    ],
+    [
+      "A=11101",
+      "11101",
+      [
+        4,
+        5,
+        73
+      ]
+    ],
+    [
+      "B=1100",
+      "1100",
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    [
+      "A^1B^1",
+      "111011100",
+      [
+        6,
+        9,
+        817
+      ]
+    ],
+    [
+      "A^2B^3",
+      "1110111101110011001100",
+      [
+        14,
+        22,
+        8476241
+      ]
+    ]
+  ],
+  "named_controls": {
+    "NG34_NG40": "all rotation, reversal, endpoint, span, hit, and grid warnings remain active",
+    "negative_cycles": "positive least-state inequalities do not apply",
+    "source_167": "retained as an ordinary-source regression; no cycle inference",
+    "trivial_cycle_and_powers": "excluded by the nontrivial primitive premise"
+  },
+  "proves_collatz": false
+}

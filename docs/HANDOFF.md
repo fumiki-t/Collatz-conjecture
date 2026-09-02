@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the twenty-six phases established
+## 3. What the thirty-four phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -246,6 +246,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   P200/P201: every critical primitive positive nontrivial cycle has `A>=118`.
   H200's target is closed, but H172/H133 still require an arbitrary-area
   contradiction; finite tier iteration is not such a theorem.
+- Phase 34 proves the least-state/profile bridge `h<=a_t+1` without equating
+  rotations, adds a strict profile-sensitive state bound, and raises the
+  critical area floor to `A>=209`. The first scalar survivor is
+  `q=2301,A=209`. A separate 2-adic theorem identifies only the first source
+  defect; repeated branch-free peeling is still open for H89.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

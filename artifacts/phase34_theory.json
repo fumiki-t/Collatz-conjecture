@@ -1,0 +1,42 @@
+{
+  "P202": {
+    "boundary": "Least-value and discrepancy-minimum rotations are not identified.",
+    "statement": "At the least odd state of a critical primitive positive cycle, every reduced-profile coordinate is at most a_t+1, hence h<=a_t+1."
+  },
+  "P203": {
+    "statement": "The exact fixed-point identity yields the strict least-state exponential-moment and integer profile bounds (3.2)-(3.6)."
+  },
+  "P204": {
+    "dependencies": [
+      "P133",
+      "P156",
+      "P164",
+      "EXT17",
+      "P177",
+      "P180",
+      "P195",
+      "P199",
+      "P201",
+      "E46",
+      "E48"
+    ],
+    "statement": "Every critical primitive positive nontrivial integer cycle has reduced-profile area A>=209."
+  },
+  "P205": {
+    "boundary": "No branch-free repeated decoder is claimed.",
+    "statement": "The canonical source residue difference has 2-adic valuation equal to the earliest edited odd position; a first defect is a unique gap-two unit edit."
+  },
+  "claims": {
+    "E48": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "P202": "VERIFIED_THEOREM",
+    "P203": "VERIFIED_THEOREM",
+    "P204": "VERIFIED_THEOREM",
+    "P205": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase34-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The finite area floor neither excludes arbitrary-area cycles nor any nonperiodic branch; the A=209 scalar obstruction remains open."
+}

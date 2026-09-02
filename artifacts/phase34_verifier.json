@@ -1,0 +1,30 @@
+{
+  "bridge_rotations": 10103,
+  "claims": {
+    "E48": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "P202": "VERIFIED_THEOREM",
+    "P203": "VERIFIED_THEOREM",
+    "P204": "VERIFIED_THEOREM",
+    "P205": "VERIFIED_THEOREM"
+  },
+  "defect_profiles": 21766,
+  "format": "collatz-phase34-independent-verifier-v1",
+  "frontier_candidates": 1725,
+  "generator_imported": false,
+  "independence": "separate log series, CF/scalar optimizer, profile reconstruction, and residue implementation",
+  "low_q_rows": 7221,
+  "proves_collatz": false,
+  "valid": true,
+  "verified_input_sha256": {
+    "phase34_defect_peeling.json": "ae5d9704887e1ff28d8f0eeb84f08777297fabf1be4364b679315c5485ba8e83",
+    "phase34_obstruction_report.md": "92dfe3b5fef5d2f1251e238c77498bc237c5032420ccaf029dd74ed8fd7c3fce",
+    "phase34_profile_bridge.json": "008ff57ce7343ac58aaf164d1f4faef2d2ab19d74bac2fc864e52a3fbee2cf50",
+    "phase34_regressions.json": "e2da1738b9e7eb827c2bb5bd693df09c0fe914d9b0d57ae112f24ad029ec2b2b",
+    "phase34_scalar_audit.json": "cc5045872171f290f90cd1c71f50cb5d336817779bc98d63973bb97ca4fe282d",
+    "phase34_theory.json": "15f6ff0c94daacd732baad9db318852da9e9ecd885485d2cee16d952e12f8008"
+  },
+  "what_this_result_does_not_prove": "A finite area floor does not exclude arbitrary-area cycles, nonperiodic orbits, or prove Collatz."
+}

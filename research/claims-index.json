@@ -1,5 +1,5 @@
 {
-  "claim_count": 267,
+  "claim_count": 272,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -3811,9 +3811,88 @@
       "last_audited": "2026-09-01",
       "notes": "It does not exclude area 118 or larger, noncritical cycles, nonperiodic branches, or Collatz.",
       "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At the least odd state time `t` of a critical primitive positive cycle, every reduced-profile coordinate satisfies `a_(t+r)<=a_t+1`; hence `h<=a_t+1`.",
+      "collatz_implication": "Bridges least ordinary state to profile height without equating the two rotations.",
+      "dependencies": "P133; P156 discrepancy-minimum profile; exact mechanical segment coefficient bounds; positivity and critical `1/2<lambda<1`.",
+      "dependency_ids": [
+        "P133",
+        "P156"
+      ],
+      "evidence": "[`../research/audits/profile-state-area209/REPORT.md`](../research/audits/profile-state-area209/REPORT.md), Section 1; `artifacts/phase34_profile_bridge.json`.",
+      "first_introduced": "Phase 34",
+      "id": "P202",
+      "last_audited": "2026-09-02",
+      "notes": "It does not prove `a_t=h`, identify the rotations, or exclude a cycle. NG36 remains active.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The least state of a critical positive cycle satisfies the exact fixed-point identity and strict bounds (3.2)--(3.6), including `m<=m_prof=floor((4*2^L[ qh+A(2^h-1)]-1)/(3(2^L-3^q)h2^h))`.",
+      "collatz_implication": "Adds profile-sensitive ordinary-height information to the P133/P195 scalar audit.",
+      "dependencies": "P202; exact affine return identity; convexity of `2^x` on `[0,h]`; `h>=1`.",
+      "dependency_ids": [
+        "P202"
+      ],
+      "evidence": "[`../research/audits/profile-state-area209/REPORT.md`](../research/audits/profile-state-area209/REPORT.md), Section 2; `artifacts/phase34_theory.json`.",
+      "first_introduced": "Phase 34",
+      "id": "P203",
+      "last_audited": "2026-09-02",
+      "notes": "It is an upper bound, not a realization or a uniform area contradiction.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area `A>=209`.",
+      "collatz_implication": "Excludes all critical areas through 208 across every gcd class without extending the finite trajectory bound.",
+      "dependencies": "P133/P156/P164/EXT17/P177/P180/P195/P199/P201/P202/P203/E46/E48; exact cutoff, Legendre/CF frontier, and low-`q` exhaustion.",
+      "dependency_ids": [
+        "E46",
+        "E48",
+        "EXT17",
+        "P133",
+        "P156",
+        "P164",
+        "P177",
+        "P180",
+        "P195",
+        "P199",
+        "P201",
+        "P202",
+        "P203"
+      ],
+      "evidence": "[`../research/audits/profile-state-area209/REPORT.md`](../research/audits/profile-state-area209/REPORT.md), Section 3; Phase 34 scalar artifact and independent verifier.",
+      "first_introduced": "Phase 34",
+      "id": "P204",
+      "last_audited": "2026-09-02",
+      "notes": "The exact `q=2301,A=209` scalar row survives; arbitrary-area and noncritical cycle branches remain open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a legal edited critical odd-position list `d_j=f_j-a_j`, the canonical source difference satisfies `r(w)-r(c_q)=sum_(a_j>0)3^(-j-1)2^d_j(2^a_j-1) mod 2^K` and has valuation `min_(a_j>0)d_j`; the first defect is uniquely a unit edit across a mechanical gap two.",
+      "collatz_implication": "Gives H89 a pointwise first-step source-residue decoder.",
+      "dependencies": "Strictly increasing edited odd positions; modulus exceeds the least defect; exact 2-adic inverse-source convention.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/profile-state-area209/REPORT.md`](../research/audits/profile-state-area209/REPORT.md), Section 5; `artifacts/phase34_defect_peeling.json`.",
+      "first_introduced": "Phase 34",
+      "id": "P205",
+      "last_audited": "2026-09-02",
+      "notes": "Repeated branch-free decoding is OPEN because later edits can overlap and labels change.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks nine upper convergents and 1,725 legal multiples, all 7,221 low-`q` scalar rows, 10,103 positive critical rational profile rotations through `q<=12`, and 21,766 legal binary defect profiles through `q<=18`.",
+      "collatz_implication": "Regresses P202--P205 and preserves the first area-209 and decoder obstructions.",
+      "dependencies": "Declared finite ranges; exact integer/rational/log/modular arithmetic; verifier imports no generator or `src`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md); Phase 34 artifacts; independent verifier and tamper tests.",
+      "first_introduced": "Phase 34",
+      "id": "E48",
+      "last_audited": "2026-09-02",
+      "notes": "Bounded agreement and no observed `a_t=h-1` control are not universal theorems. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "803b598b7c44a34f9b0f1ce657048739a9d3a4f12bb8f8877bbba26e71f4a76d"
+  "source_sha256": "af1ae1b60c8a2253dd4ccf29fd6f98d1b67d8ad4bf0bc7a463230d19d5dd666e"
 }
