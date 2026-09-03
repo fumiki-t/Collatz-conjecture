@@ -48,8 +48,16 @@ the proposed area-238 conclusion is not licensed by the stated inequalities.
 cd artifacts && shasum -a 256 -c SHA256SUMS
 ```
 
-Acceptance timings, commit IDs, and the manifest digest are recorded in the
-experiment manifest after the final verification pass.
+Acceptance evidence so far:
+
+- focused Phase 35 and health suite: `14 passed in 265.16s`;
+- full repository suite: `480 passed in 2925.14s`;
+- implementation commit: `c3d1e5fb4a3a936ebef1292aaf4e90c0810f1fc1`;
+- evidence-manifest commit: `ecc2d048a64da6456c1753336c9885023b847950`;
+- `artifacts/SHA256SUMS` SHA-256:
+  `b8b285520a9422355fef710b5f0982acce5a82e5c1a5cd360adee01b9cfa0708`.
+- strict research health: `valid=true`, no errors or warnings, 239 tracked
+  artifacts; complete SHA-256 manifest verification passed.
 
 ## Evidence
 
@@ -64,4 +72,3 @@ experiment manifest after the final verification pass.
 The full decoder is not a smaller-ancestor construction. The area floor does
 not exclude area 229 or arbitrary-area cycles, and no nonperiodic branch is
 closed. The Collatz conjecture remains open.
-

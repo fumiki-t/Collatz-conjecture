@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase35-full-decoder-joint-scalar",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P206", "P207", "P208", "P209", "P210", "E49", "E50", "NG41", "H89", "H133", "H172"],
   "objective": "Audit complete modular defect decoding and the simultaneous Phase 35 cycle inequalities without promoting the proposal's false area-238 scalar conclusion.",
   "exact_scope": {
@@ -34,5 +34,15 @@
   "artifacts": ["artifacts/phase35_theory.json", "artifacts/phase35_decoder_audit.json", "artifacts/phase35_joint_scalar_audit.json", "artifacts/phase35_regressions.json", "artifacts/phase35_obstruction_report.md", "artifacts/phase35_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Do not identify decoding with a smaller-ancestor theorem.", "Do not identify scalar feasibility with a realizable cycle.", "Do not claim A>=238 from the stated scalar sieve.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
   "interpretation_boundary": ["The accepted critical area floor is A>=229.", "The first scalar obstruction is q=2301,A=229.", "The decoder leaves ordinary source dominance open."],
+  "recorded_result": {
+    "commit": "ecc2d048a64da6456c1753336c9885023b847950",
+    "generator": "valid=true; 1166058 decoded words; 1912 corrected frontier candidates; 7221 low-q rows",
+    "verifier": "valid=true; generator_imported=false; 1166058 decoded words; first scalar obstruction q=2301,A=229",
+    "focused_tests": "14 passed in 265.16s",
+    "full_tests": "480 passed in 2925.14s",
+    "strict_research_health": "valid=true, errors=[], warnings=[]; 239 tracked artifacts",
+    "manifest_sha256": "b8b285520a9422355fef710b5f0982acce5a82e5c1a5cd360adee01b9cfa0708",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
