@@ -93,9 +93,10 @@ Research supplements:
 | Triple-hit/full-cofactor audit | [`../research/audits/triple-hit-cofactor/REPORT.md`](../research/audits/triple-hit-cofactor/REPORT.md) | Phase 32 triple-hit capacity, optimized area constant, full noncoprime cofactor, positive support arc, and bounded-grid obstruction | P195--P199, E45, H200/H172/H133 boundary |
 | Critical-area bootstrap audit | [`../research/audits/critical-area-bootstrap/REPORT.md`](../research/audits/critical-area-bootstrap/REPORT.md) | Phase 33 exact cutoffs, CF frontiers, low-`q` P195 exhaustion, and first-descent certificate | P200/P201, E46/E47, closed H200, H172/H133 boundary |
 | Profile/state area-209 audit | [`../research/audits/profile-state-area209/REPORT.md`](../research/audits/profile-state-area209/REPORT.md) | Phase 34 least-state/profile bridge, exact area-209 scalar bootstrap, and first 2-adic defect peeling | P202--P205, E48, H89/H172/H133 boundary |
+| Full-decoder/joint-scalar audit | [`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md) | Phase 35 full modular defect decoder, refined factor/triple-hit bounds, corrected area-229 bootstrap, and refuted area-238 proposal | P206--P210, E49/E50, NG41, H89/H172/H133 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 34 and both the branch-point and two-tail
+documentation through Phase 35 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

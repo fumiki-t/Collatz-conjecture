@@ -1,0 +1,27 @@
+{
+  "cycle_controls": [
+    "trivial cycle and powers",
+    "negative cycles",
+    "rational shadows",
+    "NG34-NG40"
+  ],
+  "decoder_controls": [
+    "source 167",
+    "critical mechanical words",
+    "NG24-NG31"
+  ],
+  "format": "collatz-phase35-regressions-v1",
+  "mandatory_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s"
+  ],
+  "preserved_boundaries": [
+    "valid decoding does not imply a smaller ancestor",
+    "scalar feasibility does not imply a realizable positive integer cycle"
+  ],
+  "proves_collatz": false
+}

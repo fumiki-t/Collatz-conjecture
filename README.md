@@ -22,18 +22,17 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 34 is the latest accepted research layer. It links the least odd cycle
-state to the discrepancy-minimum profile without identifying those rotations,
-adds a profile-sensitive state bound, and independently reconstructs an exact
-Matveev/continued-fraction/scalar bootstrap. Every critical primitive positive
-nontrivial cycle must have reduced-profile area `A>=209`; the first surviving
-scalar row is `(q,L,A)=(2301,3647,209)`. A separate 2-adic identity decodes only
-the first source-residue defect. H172, H133, H89, and the broader
+Phase 35 is the latest accepted research layer. It completes the modular
+2-adic defect decoder on valid critical-safe words and jointly applies the
+direct-factor and residual triple-hit inequalities. Every critical primitive
+positive nontrivial cycle must have reduced-profile area `A>=229`; the first
+surviving scalar row is `(q,L,A)=(2301,3647,229)`. The supplied proposal's
+stronger `A>=238` derivation is refuted by that exact row. H172, H133, H89, and the broader
 H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
 remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–34, separates internal and external
+map and conventions, summarizes Phases 1–35, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -74,12 +73,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase34.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase34_verifier.json
+.venv/bin/python verifier/verify_phase35.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase35_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 34 result](PHASE34_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 35 result](PHASE35_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

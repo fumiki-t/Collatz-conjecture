@@ -1312,6 +1312,38 @@ only the first gap-two unit edit. A repeated decoder remains an H89 target.
 
 ## Mandatory regression rule
 
+## NG41 — the stated joint scalar sieve does not prove area 238
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** Simultaneously imposing the supplied Phase 35 versions
+of the direct-factor and residual triple-hit inequalities, together with its
+cutoff/continued-fraction split, excludes every critical profile with
+`A<=237`.
+
+**Why it looked plausible.** The Phase 34 area-209 obstruction fails the new
+direct-factor inequality by 789, so combining two accepted necessary
+conditions appeared to remove the next finite band.
+
+**Smallest exact obstruction found.** The scalar tuple
+`(q,L,A,h,J,Sigma,E,n,Z)=(2301,3647,229,2,138,90,92,24,10)` has residual
+area 183 and residual span 366. Its direct-factor and residual triple-hit
+margins are respectively 10 and 43, so it survives both tests.
+
+**Failure scope.** Fundamental for the stated scalar derivation, not for the
+mathematical statement `A>=238` under some future stronger theorem. The tuple
+is not asserted to be a realizable positive integer cycle.
+
+**Weaker statement.** Exact reconstruction has no survivor for `A<=228`, so
+P210 proves critical `A>=229`. The proposal's cutoff margin, Legendre exponent,
+and `d<=273` frontier count were also numerically wrong and are preserved in
+the Phase 35 obstruction artifact.
+
+**Evidence.** [`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md),
+Section 6, and `artifacts/phase35_joint_scalar_audit.json`.
+
+## Mandatory regression rule
+
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
 NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, NG40, source 167,

@@ -332,6 +332,13 @@ compatible noncoprime resultant. Preserve NG39's exact span obstruction, and
 do not promote saturation of the `n_cyc` proxy to saturation of the actual
 maximum orbit state.
 
+Phase 35 upgrades P205 to P206's complete modular defect decoder and raises
+the critical cycle floor to `A>=229` through P207/P208/P210. H89 work must now
+add ordinary source order, positivity, ancestry, and carry to the decoded
+profile; decoding alone is not descent. H133/H172 work must preserve NG41's
+exact area-229 scalar survivor. Do not cite the supplied Phase 35 proposal's
+`A>=238` value: that conclusion does not follow from its stated scalar sieve.
+
 Phase 31 replaces the near-uniform singleton picture by P185/P186 static
 double-hit transport and strengthens the area constant through P187. Future
 H172 work must split two cases: use P190 only after proving a sublinear global

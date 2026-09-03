@@ -1,5 +1,5 @@
 {
-  "claim_count": 272,
+  "claim_count": 280,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -3890,9 +3890,128 @@
       "last_audited": "2026-09-02",
       "notes": "Bounded agreement and no observed `a_t=h-1` control are not universal theorems. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "On the valid critical-safe image, the modular algorithm that repeatedly takes the least 2-adic valuation, selects the first remaining mechanical label above it, and subtracts that exact defect uniquely reconstructs the complete profile and endpoint displacement.",
+      "collatz_implication": "Removes parity-word branching from the pointwise H89 decoder.",
+      "dependencies": "P205 source convention; strictly increasing actual odd positions; canonical source modulo `2^K`; literal parity-cylinder realization.",
+      "dependency_ids": [
+        "P205"
+      ],
+      "evidence": "[`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md), Section 1; `artifacts/phase35_decoder_audit.json`.",
+      "first_introduced": "Phase 35",
+      "id": "P206",
+      "last_audited": "2026-09-02",
+      "notes": "It does not construct a smaller positive ancestor or prove ordinary source dominance; H89 remains open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every valid reduced cycle profile satisfies `p_cyc(n)<=n+1+J(n-1)+min(2A,floor(LA/q)+J)`.",
+      "collatz_implication": "Adds a simultaneous finite factor-capacity filter to the critical scalar audit.",
+      "dependencies": "P179 direct component transport and exact transported-support bounds.",
+      "dependency_ids": [
+        "P179"
+      ],
+      "evidence": "[`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md), Section 2.",
+      "first_introduced": "Phase 35",
+      "id": "P207",
+      "last_audited": "2026-09-02",
+      "notes": "It is necessary only and does not exclude arbitrary-area profiles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "With `A_res=A-(J-E)`, the P195 residual span obeys `T_res<=min(2A_res,floor(LA_res/q)+E)`, hence `3L<=(J+2E)(n+1)+3T_res+(n+3)[3+2Z+binom(Z,2)]`.",
+      "collatz_implication": "Sharpens triple-hit capacity by charging only residual area.",
+      "dependencies": "P179/P195; exact removal of `J-E` singleton area cells.",
+      "dependency_ids": [
+        "P179",
+        "P195"
+      ],
+      "evidence": "[`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md), Section 3.",
+      "first_introduced": "Phase 35",
+      "id": "P208",
+      "last_audited": "2026-09-02",
+      "notes": "It is a scalar necessary condition, not a profile realization or cycle exclusion by itself.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If the least odd cycle state lies at profile level `h-1` while a later profile coordinate has height `h`, then the associated proper segment yields integers `0<k<q,n` with `0<n-k log2(3)<L-q log2(3)`, a strictly better upper linear-form approximation with smaller denominator.",
+      "collatz_implication": "Converts the only vertical mismatch left by P202 into Diophantine structure.",
+      "dependencies": "P202 coefficient comparison; exact mechanical discrepancy bounds; critical `0<L-q log2(3)<1`.",
+      "dependency_ids": [
+        "P202"
+      ],
+      "evidence": "[`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md), Section 4.",
+      "first_introduced": "Phase 35",
+      "id": "P209",
+      "last_audited": "2026-09-02",
+      "notes": "No contradiction or universal mismatch exclusion follows without an additional approximation theorem.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area `A>=229`.",
+      "collatz_implication": "Excludes all critical areas through 228 across every gcd class.",
+      "dependencies": "P164/EXT17/P177/P199/P202/P203/P207/P208/E46/E50; exact cutoff, Legendre/CF frontier, and low-`q` joint exhaustion.",
+      "dependency_ids": [
+        "E46",
+        "E50",
+        "EXT17",
+        "P164",
+        "P177",
+        "P199",
+        "P202",
+        "P203",
+        "P207",
+        "P208"
+      ],
+      "evidence": "[`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md), Section 5; Phase 35 scalar artifact and independent verifier.",
+      "first_introduced": "Phase 35",
+      "id": "P210",
+      "last_audited": "2026-09-02",
+      "notes": "The exact `q=2301,A=229` scalar tuple survives; arbitrary-area and noncritical cycle branches remain open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks all 1,166,058 critical-safe words through `q<=18`, including the canonical source, complete defect profile, literal endpoint, displacement identity, and normalized P98 box predicate.",
+      "collatz_implication": "Regresses the P206 algorithm across its complete bounded image.",
+      "dependencies": "Declared finite range; exact integer and modular arithmetic; verifier imports no generator or `src`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md); `artifacts/phase35_decoder_audit.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 35",
+      "id": "E49",
+      "last_audited": "2026-09-02",
+      "notes": "Bounded decoding does not prove an ancestor inequality or asymptotic H89 barrier.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Independent exact reconstruction checks the Phase 35 cutoff, nine upper convergents, 1,912 legal `d<=261` frontier multiples, all 7,221 low-`q` rows at `A<=228`, and the first area-229 scalar survivor.",
+      "collatz_implication": "Supplies the finite exhaustion used by P210 and preserves the next obstruction.",
+      "dependencies": "Declared ranges; exact integers and rational logarithm enclosures; simultaneous P207/P208 decisions; verifier imports no generator or `src`.",
+      "dependency_ids": [
+        "P207",
+        "P208"
+      ],
+      "evidence": "[`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md); `artifacts/phase35_joint_scalar_audit.json`; independent verifier and tamper tests.",
+      "first_introduced": "Phase 35",
+      "id": "E50",
+      "last_audited": "2026-09-02",
+      "notes": "Finite scalar exhaustion cannot be iterated into an all-area theorem without a uniform mechanism.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The T35-B/T35-C joint scalar sieve as stated in the supplied Phase 35 proposal proves that every critical primitive positive nontrivial cycle has `A>=238`.",
+      "collatz_implication": "Prevents future reuse of the incorrect numerical exhaustion and localizes the first scalar gap.",
+      "dependencies": "The proposal's stated scalar constraints and accepted inputs only.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md), Section 6; exact obstruction artifact.",
+      "first_introduced": "Phase 35",
+      "id": "NG41",
+      "last_audited": "2026-09-02",
+      "notes": "Exact scalar counterexample `(q,L,A,h,J,Sigma,E,n,Z)=(2301,3647,229,2,138,90,92,24,10)` has P207/P208 margins 10/43. This does not refute a future stronger `A>=238` theorem or assert an actual cycle.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "af1ae1b60c8a2253dd4ccf29fd6f98d1b67d8ad4bf0bc7a463230d19d5dd666e"
+  "source_sha256": "d227adf0c6bb0c7640f48a0f921811959a7ca9640bd0a59883fa5d919ef73364"
 }

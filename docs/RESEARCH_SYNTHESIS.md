@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 34
+# Collatz research synthesis through Phase 35
 
 **Audit date:** 2026-09-01
 
-**Audited base:** Phase 34 accepted evidence and independent verifier
+**Audited base:** Phase 35 accepted evidence and independent verifier
 
-**Latest accepted phase:** Phase 34
+**Latest accepted phase:** Phase 35
 
 **Problem status:** `OPEN`
 
@@ -903,6 +903,22 @@ and handoff. Exact counts and hashes remain in the linked phase report.
 
 See the [`Phase 34 audit`](../research/audits/profile-state-area209/REPORT.md).
 
+### Phase 35 — full decoder and corrected joint scalar sieve
+
+- **Complete pointwise decoder:** P206 iterates the least-valuation defect
+  extraction without branching on the valid critical-safe image and recovers
+  the exact endpoint displacement. It still gives no smaller positive source.
+- **Joint cycle filters:** P207 records the exact direct-factor P179
+  corollary; P208 charges the P195 exceptional core by its residual area.
+- **Corrected area floor:** exact cutoff, CF, and low-`q` reconstruction proves
+  P210, critical `A>=229`. E49 checks 1,166,058 decoded safe words through
+  `q<=18`; E50 checks 1,912 frontier rows and all 7,221 low-`q` rows.
+- **Proposal failure:** NG41 records the exact `q=2301,A=229` scalar tuple
+  satisfying both new inequalities. Hence the note's claimed `A>=238` does
+  not follow from its stated sieve.
+
+See the [`Phase 35 audit`](../research/audits/full-decoder-joint-scalar/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -1168,8 +1184,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase30.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase30_verifier.json
+.venv/bin/python verifier/verify_phase35.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase35_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

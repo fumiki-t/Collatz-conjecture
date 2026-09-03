@@ -251,6 +251,11 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   critical area floor to `A>=209`. The first scalar survivor is
   `q=2301,A=209`. A separate 2-adic theorem identifies only the first source
   defect; repeated branch-free peeling is still open for H89.
+- Phase 35 completes the modular defect decoder on every valid critical-safe
+  word and adds exact direct-factor/residual triple-hit filters. The corrected
+  joint audit raises the critical area floor to `A>=229`; the first scalar
+  survivor is `q=2301,A=229`. NG41 records that the supplied `A>=238`
+  conclusion does not follow. The decoder still supplies no smaller ancestor.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -429,7 +434,7 @@ cannot control an ordinary representative. P81/P82 expose exact downward
 coalescence and least-source irreducibility, but NG24 prevents a prefix-closed
 endpoint quotient. The remaining distinction is a carry-aware deterministic
 positive-height anti-concentration or eventual-reducibility theorem. On the
-cycle branch, P197--P199 supply the full cofactor and P200/P201 now exclude
-every critical area through 117. H200's target is closed, but P194's
+cycle branch, P197--P199 supply the full cofactor and P210 now excludes
+every critical area through 228. H200's target is closed, but P194's
 arbitrary-area strict resultant and the above-frontier reduction are still
 missing. Collatz remains open.

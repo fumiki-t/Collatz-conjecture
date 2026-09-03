@@ -1903,3 +1903,30 @@ rational rotations, and 21,766 defect profiles.
 
 Phase 34 does not exclude area 209 or arbitrary area, close H89/H133/H172,
 address nonperiodic branches, or prove Collatz. `proves_collatz=false`.
+
+## 2026-09-02 — Phase 35: full decoder and corrected joint scalar sieve
+
+**Branch:** `feat/phase35-full-decoder-joint-scalar`
+
+**Acceptance record:** [`PHASE35_RUN_RESULTS.md`](PHASE35_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/full-decoder-joint-scalar/REPORT.md`](research/audits/full-decoder-joint-scalar/REPORT.md)
+
+P206 completes the modular 2-adic defect decoder on the valid critical-safe
+image and recovers the literal endpoint displacement. It eliminates word
+branching but does not construct a smaller P89 ancestor. P207 and P208 add the
+exact direct-factor and residual triple-hit scalar conditions; P209 turns the
+remaining least-state/profile mismatch into a better upper approximation.
+
+The independently reconstructed finite audit checks 1,166,058 safe words,
+1,912 upper-convergent multiples, and all 7,221 low-`q` rows. P210 proves the
+corrected critical floor `A>=229`. The supplied note's `A>=238` derivation is
+not accepted: NG41 preserves the exact simultaneous scalar survivor
+`(q,L,A,h,J,Sigma,E,n,Z)=(2301,3647,229,2,138,90,92,24,10)` with margins
+10 and 43. This tuple is not claimed to realize an integer cycle.
+
+### What this result does not prove
+
+Phase 35 does not close H89/H133/H172, exclude area 229 or arbitrary-area
+cycles, address nonperiodic branches, or prove Collatz.
+`proves_collatz=false`.

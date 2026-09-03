@@ -237,6 +237,14 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   independently reconstructs 1,725 CF rows, 7,221 low-`q` rows, 10,103
   rational profile rotations, and 21,766 defect profiles. The
   `(q,L,A)=(2301,3647,209)` row and repeated defect decoding remain open.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE` / `REFUTED`: Phase 35 completes
+  P206's branch-free modular decoder on the valid critical-safe image and
+  proves P207/P208's simultaneous direct-factor and residual triple-hit
+  bounds. Exact cutoff/CF and 7,221-row exhaustion proves P210: every critical
+  primitive positive nontrivial integer cycle has `A>=229`. E49 checks all
+  1,166,058 safe words through `q<=18`; E50 reconstructs the scalar audit.
+  NG41 refutes the proposal's stronger `A>=238` derivation with the exact
+  scalar tuple `(q,L,A)=(2301,3647,229)`. H89/H133/H172 remain open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -540,11 +548,12 @@ P70 alone is not a complete Collatz route.
 
 ## Current main bottleneck
 
-Phase 34 raises the critical area floor but does not create an arbitrary-area
+Phase 35 raises the critical area floor but does not create an arbitrary-area
 termination mechanism. Cycle work should target the concrete height-two
-`q=2301,A=209` profile with P173/P197 arithmetic or prove a growing-area
-theorem. Least-counterexample work should extend P205 to a branch-free
-pointwise decoder retaining P89 ancestry, endpoint carry, and source order.
+`q=2301,A=229` scalar obstruction with P173/P197 arithmetic or prove a
+growing-area theorem. Least-counterexample work should combine P206's complete
+pointwise decoder with P89 ancestry, endpoint carry, positivity, and ordinary
+source order; decoding alone is not descent.
 
 No asymptotic lower bound is known for the least coefficient-safe
 representative `M(k)`. Phase 7 narrows the missing statement: no `q`-uniform
@@ -859,5 +868,6 @@ eventual nonzero lifts.
   [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md)
 - Phase 33 acceptance: [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md)
 - Phase 34 acceptance: [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md)
+- Phase 35 acceptance: [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md)
 - Phase 32 acceptance: [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

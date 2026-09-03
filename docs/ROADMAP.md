@@ -119,10 +119,10 @@ remain separate obligations.
 repairs the previous area constant, and P194 proves an `o(L)`-defect
 low-denominator grid at sharp equality. P195/P196 reach the triple-hit
 cardinality ceiling and further strengthen area necessity. P197--P199 restore
-the full noncoprime cofactor. Phase 34's P202--P204 now exclude every critical
-area through 208 while preserving the least-value/discrepancy rotation
+the full noncoprime cofactor. Phase 35's P207/P208 now exclude every critical
+area through 228 while preserving the least-value/discrepancy rotation
 distinction. The first scalar obstruction is the height-two row
-`q=2301,A=209`; P205 separately supplies an exact first-defect decoder for H89.
+`q=2301,A=229`; P206 supplies a full modular decoder for H89 but no source descent.
 NG40 remains the warning that one normalized radius is insufficient. The
 missing arbitrary-area theorem is a strict
 subleading full-`D` arithmetic gap compatible with P194's adversarially placed
@@ -134,8 +134,8 @@ supplies only a smaller modulus `D_0` for noncoprime slopes.
 
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
 cycle and its powers, E43/E44's double-hit corpora, E45's full-cofactor rows,
-E46--E48's finite bootstrap boundaries, and nine synthetic profiles,
-NG34--NG40, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
+E46--E50's finite bootstrap boundaries, and nine synthetic profiles,
+NG34--NG41, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
 positive.

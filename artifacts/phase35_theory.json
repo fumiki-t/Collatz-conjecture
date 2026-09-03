@@ -1,0 +1,50 @@
+{
+  "NG41": {
+    "counterexample": "(q,L,A,h,J,Sigma,E,n,Z)=(2301,3647,229,2,138,90,92,24,10), margins (T35B,T35C)=(10,43).",
+    "refuted": "The stated T35-B/T35-C joint scalar sieve proves critical A>=238."
+  },
+  "P206": {
+    "boundary": "It does not produce or prove existence of a smaller P89 ancestor.",
+    "statement": "On the valid critical-safe image, the modular valuation algorithm uniquely and completely reconstructs every defect and the endpoint displacement."
+  },
+  "P207": {
+    "statement": "P179 sharpens exactly to p_cyc(n)<=n+1+J(n-1)+min(2A,floor(LA/q)+J)."
+  },
+  "P208": {
+    "statement": "After K=J-E singleton cells are removed, A_res=A-K and P195 sharpens by replacing 6A with 3 min(2A_res,floor(LA_res/q)+E)."
+  },
+  "P209": {
+    "statement": "If the least state has profile h-1 and a later point has height h, a strictly better smaller-denominator upper linear-form approximation exists."
+  },
+  "P210": {
+    "dependencies": [
+      "P164",
+      "EXT17",
+      "P177",
+      "P199",
+      "P202",
+      "P203",
+      "P207",
+      "P208",
+      "E46",
+      "E50"
+    ],
+    "statement": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area A>=229."
+  },
+  "claims": {
+    "E49": "VERIFIED_FINITE",
+    "E50": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "NG41": "REFUTED",
+    "P206": "VERIFIED_THEOREM",
+    "P207": "VERIFIED_THEOREM",
+    "P208": "VERIFIED_THEOREM",
+    "P209": "VERIFIED_THEOREM",
+    "P210": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase35-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "The decoder does not close H89; the corrected finite floor does not exclude area 229 or arbitrary-area cycles."
+}

@@ -1,0 +1,49 @@
+{
+  "area228_frontier_candidates": 1912,
+  "claims": {
+    "E49": "VERIFIED_FINITE",
+    "E50": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "NG41": "REFUTED",
+    "P206": "VERIFIED_THEOREM",
+    "P207": "VERIFIED_THEOREM",
+    "P208": "VERIFIED_THEOREM",
+    "P209": "VERIFIED_THEOREM",
+    "P210": "VERIFIED_THEOREM"
+  },
+  "decoded_words": 1166058,
+  "generator_imported": false,
+  "low_q_rows": 7221,
+  "next_obstruction": {
+    "A_res": 183,
+    "E": 92,
+    "J": 138,
+    "L": 3647,
+    "Sigma": 90,
+    "T35B_margin": 10,
+    "T35B_rhs": 3657,
+    "T35C_margin": 43,
+    "T35C_rhs": 10984,
+    "T_res": 366,
+    "Z": 10,
+    "d": 1,
+    "h": 2,
+    "m_P133": 860946,
+    "m_max": 860946,
+    "m_prof": 989471,
+    "n": 24,
+    "q": 2301,
+    "q0": 2301
+  },
+  "proves_collatz": false,
+  "valid": true,
+  "verified_sha256": {
+    "phase35_decoder_audit.json": "a0c8c9a2d0e1195eada6498946cb5e703779aec5ab97d25b1a28d694905bdc24",
+    "phase35_joint_scalar_audit.json": "c3d908f29a5eb796b10ecb9799bbc504ee58dc04cbec21bc32ccbc2c7d43daca",
+    "phase35_obstruction_report.md": "a361146f565ddbce174ae750bbd697809443085c139fddfdd90faf056469e774",
+    "phase35_regressions.json": "f983b6ba56b892044b7ecac4d1f06783cbf8459b62b7fda593c4431462c6e8fd",
+    "phase35_theory.json": "42a2696041f707e345bf17e0b9201493cafbfc2c5aec90a585ff51604de521e8"
+  }
+}
