@@ -54,8 +54,16 @@ smallest decoder orientation failure: q=3
 cd artifacts && shasum -a 256 -c SHA256SUMS
 ```
 
-Acceptance timings, commits, and the manifest digest are filled only after
-the complete acceptance run.
+Acceptance evidence:
+
+- focused Phase 36 and health suite: `16 passed in 204.79s`;
+- full repository suite: `491 passed in 2280.05s`;
+- implementation commit: `30b5fed2d4cfd91cadf4cc1c735411eb2ddf3a7d`;
+- evidence-manifest commit: `3095b7ffc6750aae179a5a7e2b4a8a7363351344`;
+- `artifacts/SHA256SUMS` SHA-256:
+  `ecf0e5b76b2127e6b4911bf8f8297e2186ebd460bba231417160084bf49d17e9`;
+- strict research health: `valid=true`, no errors or warnings, 247 tracked
+  artifacts; complete SHA-256 manifest verification passed.
 
 ## Evidence
 

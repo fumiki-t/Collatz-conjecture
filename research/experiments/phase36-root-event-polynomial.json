@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase36-root-event-polynomial",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P211", "P212", "P213", "P214", "P215", "P216", "P217", "P218", "E51", "E52", "NG42", "H89", "H133", "H172"],
   "objective": "Audit cycle-root localization and the positive event polynomial, test the proposed Phase 35 decoder transfer, and determine the exact consequence for the critical cycle-area floor.",
   "exact_scope": {
@@ -36,6 +36,15 @@
   "artifacts": ["artifacts/phase36_theory.json", "artifacts/phase36_root_corpus.json", "artifacts/phase36_event_polynomial.json", "artifacts/phase36_scalar_audit.json", "artifacts/phase36_decoder_roots.json", "artifacts/phase36_regressions.json", "artifacts/phase36_obstruction_report.md", "artifacts/phase36_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Do not use cycle-root orientation for the decoder.", "Do not identify a formal rational fixed point with a positive integer cycle.", "Do not infer decoder ancestry from mirror localization.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
   "interpretation_boundary": ["The complete accepted critical area floor is tested at A>=230.", "Positive event support is proved only at coprime reduced slope.", "Root localization alone does not close H89, H133, or H172."],
-  "recorded_result": null,
+  "recorded_result": {
+    "commit": "3095b7ffc6750aae179a5a7e2b4a8a7363351344",
+    "generator": "valid=true; 2214 cycle classes; 797 coprime event classes; 1926 area-229 frontier candidates; 1166058 decoder words",
+    "verifier": "valid=true; generator_imported=false; root margin=-1277; low_q_rows=7221; proves_collatz=false",
+    "focused_tests": "16 passed in 204.79s",
+    "full_tests": "491 passed in 2280.05s",
+    "strict_research_health": "valid=true, errors=[], warnings=[]; 247 tracked artifacts",
+    "manifest_sha256": "ecf0e5b76b2127e6b4911bf8f8297e2186ebd460bba231417160084bf49d17e9",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
