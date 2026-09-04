@@ -100,9 +100,10 @@ strong-induction proof in the detailed report.
 (cd artifacts && shasum -a 256 -c SHA256SUMS)
 ```
 
-The initial focused Phase 37 property/tamper suite passed `12` tests. Final
-acceptance-suite counts are recorded in the experiment manifest after the
-full run.
+The focused Phase 37 and research-health suite passed `17` tests in `42.06s`.
+The complete repository regression passed `503` tests in `2028.97s`
+(`33:48`). Strict research health returned `valid=true`, `errors=[]`, and
+`warnings=[]` over 254 tracked artifacts.
 
 ## Artifacts and SHA-256
 

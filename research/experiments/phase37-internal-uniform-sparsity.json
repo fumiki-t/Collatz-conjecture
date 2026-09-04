@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase37-internal-uniform-sparsity",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P219", "P220", "P221", "P222", "P223", "P224", "P225", "P226", "E53", "H70", "H72", "H133"],
   "objective": "Independently audit the elementary parity-vector recursion for location-uniform orbit sparsity and determine its exact consequences for nonperiodic permanent-safe tails, renewal boundaries, and noncritical cycles.",
   "exact_scope": {
@@ -42,5 +42,15 @@
   "artifacts": ["artifacts/phase37_theory.json", "artifacts/phase37_induction_certificate.json", "artifacts/phase37_affine_interval_audit.json", "artifacts/phase37_renewal_audit.json", "artifacts/phase37_regressions.json", "artifacts/phase37_obstruction_report.md", "artifacts/phase37_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Do not infer address multiplicity control from one-orbit uniform sparsity.", "Do not apply the positive-set theorem to negative cycles or formal 2-adic sources.", "Do not mark H70 proved merely because its global role is bypassed.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
   "interpretation_boundary": ["P222 internally removes the finite-crossing branch only for actual nonperiodic positive integer orbits.", "The density-one defect estimate is not pointwise.", "The noncritical cycle cutoff is effective in principle but not an exclusion of critical or arbitrary-area cycles.", "The Collatz conjecture remains open."],
+  "recorded_result": {
+    "commit": "665afcf9f6783cae4d11754d7430abc4265ed392",
+    "generator": "valid=true; 131070 parity words; 49928 translated points; 209868 exact product checks; 154 renewal codewords; proves_collatz=false",
+    "verifier": "valid=true; generator_imported=false; explicit_constant=32; induction_N0=135; proves_collatz=false",
+    "focused_tests": "17 passed in 42.06s",
+    "full_tests": "503 passed in 2028.97s",
+    "strict_research_health": "valid=true, errors=[], warnings=[]; 254 tracked artifacts",
+    "manifest_sha256": "bc4f59fb1c0cfa86dc4c1173ae4db5e0d8ecaecac6507c30cbcb5697a6f7ba5e",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
