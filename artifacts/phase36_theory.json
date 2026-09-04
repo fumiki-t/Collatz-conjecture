@@ -1,0 +1,30 @@
+{
+  "NG42": "Directly reusing cycle root intervals [f_u,f_v) for the P206 decoder is refuted at q=3.",
+  "P211": "Cycle profile root intervals localize every binary change; p_cyc and complementary gaps obey T36-A/B.",
+  "P212": "For U disjoint roots of span at most R with C legal replacements per context/placement, distinct factors imply the exact one-root-hit inequality.",
+  "P213": "No primitive positive cycle profile realizes the exact NG41 area-229 scalar tuple.",
+  "P214": "Every critical primitive positive nontrivial integer cycle has reduced-profile area A>=230.",
+  "P215": "The shift y=(x+1)/2 gives the positive Mersenne recurrence and exact period divisor identity.",
+  "P216": "For coprime slope, (2-X^(2q-L))A_a has nonnegative event coefficients, exact support, norm, and modular equivalence.",
+  "P217": "P147 applied to the positive event polynomial gives the exact critical/noncritical event-arc inequalities.",
+  "P218": "For P206's oppositely oriented decoder profile, mirror root intervals [f_(u-1)+1,f_v) localize every binary change.",
+  "claims": {
+    "E51": "VERIFIED_FINITE",
+    "E52": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "NG42": "REFUTED",
+    "P211": "VERIFIED_THEOREM",
+    "P212": "VERIFIED_THEOREM",
+    "P213": "VERIFIED_THEOREM",
+    "P214": "VERIFIED_THEOREM",
+    "P215": "VERIFIED_THEOREM",
+    "P216": "VERIFIED_THEOREM",
+    "P217": "VERIFIED_THEOREM",
+    "P218": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase36-theory-v1",
+  "proves_collatz": false,
+  "what_this_result_does_not_prove": "No uniform root/event dichotomy, arbitrary-area cycle exclusion, decoder-to-ancestor theorem, or Collatz proof is obtained."
+}

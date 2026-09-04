@@ -339,6 +339,16 @@ profile; decoding alone is not descent. H133/H172 work must preserve NG41's
 exact area-229 scalar survivor. Do not cite the supplied Phase 35 proposal's
 `A>=238` value: that conclusion does not follow from its stated scalar sieve.
 
+Phase 36 eliminates NG41's exact scalar survivor by P211/P212 root capacity
+and raises the accepted critical floor to `A>=230` through P213/P214. Future
+H133/H172 work should make P211--P217's root-sparse/root-dense event split
+uniform and compatible with P197's full noncoprime cofactor; another isolated
+finite area increment is not an arbitrary-area theorem. Preserve NG42's sign
+distinction: cycle profiles move boundaries right, while P206 decoder defects
+move them left. H89 may use P218's mirror intervals only while retaining
+ordinary source order, positivity, ancestry, signed carry, and literal safety;
+localization alone is not descent.
+
 Phase 31 replaces the near-uniform singleton picture by P185/P186 static
 double-hit transport and strengthens the area constant through P187. Future
 H172 work must split two cases: use P190 only after proving a sublinear global

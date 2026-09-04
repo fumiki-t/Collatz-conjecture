@@ -256,6 +256,13 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   joint audit raises the critical area floor to `A>=229`; the first scalar
   survivor is `q=2301,A=229`. NG41 records that the supplied `A>=238`
   conclusion does not follow. The decoder still supplies no smaller ancestor.
+- Phase 36 localizes cycle edits into disjoint binary roots and adds the
+  positive Mersenne event polynomial. Exact one-root-hit capacity eliminates
+  the Phase 35 area-229 scalar survivor; after rerunning the full frontier,
+  P214 raises the critical floor to `A>=230`. The next area-230 scalar row
+  survives. NG42 records that cycle roots have the wrong orientation for the
+  P206 decoder; P218's corrected mirror roots still supply no smaller source,
+  ancestry, positivity, or carry theorem.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -434,7 +441,9 @@ cannot control an ordinary representative. P81/P82 expose exact downward
 coalescence and least-source irreducibility, but NG24 prevents a prefix-closed
 endpoint quotient. The remaining distinction is a carry-aware deterministic
 positive-height anti-concentration or eventual-reducibility theorem. On the
-cycle branch, P197--P199 supply the full cofactor and P210 now excludes
-every critical area through 228. H200's target is closed, but P194's
-arbitrary-area strict resultant and the above-frontier reduction are still
-missing. Collatz remains open.
+cycle branch, P197--P199 supply the full cofactor and P214 now excludes every
+critical area through 229. P211--P217 expose a root-sparse/root-dense event
+split, but no uniform incompatibility is known; P194's arbitrary-area strict
+resultant and the above-frontier reduction are still missing. On the decoder
+branch, P218 repairs NG42's orientation without proving source descent.
+Collatz remains open.

@@ -2,20 +2,21 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 35's full-decoder/joint-scalar audit is the
+proof of the conjecture. Phase 36's root/event-polynomial audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–35 evidence boundaries, and current obligations.
+   branch map, Phase 1–36 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md), then its inputs,
-   including [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md),
+6. [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md), then its inputs,
+   including [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md),
+   [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md),
    [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md), and
    [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md);
    use the Phase 31 records for the immediately preceding layer:
@@ -238,15 +239,15 @@ and the Collatz conjecture remain open.
 | ID | Status | Exact missing step | Fastest useful next test |
 |---|---|---|---|
 | H54 | `OPEN` | Prove `M(K_q-1)>H_q` eventually | Attack any proposed `M(k)` inequality with all stored record failures and mandatory adversarial families |
-| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Combine P206's full decoder with P89 ancestry, endpoint carry, positivity, and ordinary source order; decoding alone is not descent |
+| H89 | `OPEN` | Prove `M_star(K_q-1)>H_q` eventually and certify the finite first-crossing remainder | Combine P206's full decoder and P218 mirror roots with P89 ancestry, endpoint carry, positivity, and ordinary source order; NG42 shows orientation must be explicit and localization alone is not descent |
 | H104 | `OPEN` | Exclude every positive ordinary-source all-prefix same-Q geodesic G270 word | Retain fixed source plus affine/carry state; reject contact/all-contact/Haar-only shortcuts with NG17/P73/NG29 |
 | H105 | `OPEN` | Empty the H270 box `N<q/270`, `X<q/135`, `Z<2q/135` | Use a two-sided exact state and keep the periodic branch separate; test NG19 and NG24--NG29 |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
 | H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
-| H133 | `OPEN` | Exclude every cycle after P210's critical `A>=229` floor and P197--P199 full-cofactor reduction | Attack the `q=2301,A=229` height-two scalar obstruction or prove a growing-area theorem; cover negative cycles, E43--E50, NG34--NG41, and all Phase 28--35 profiles |
+| H133 | `OPEN` | Exclude every cycle after P214's critical `A>=230` floor and P197--P199 full-cofactor reduction | Make P211--P217's root/event split uniform or prove another growing-area theorem; cover negative cycles, E43--E52, NG34--NG42, and all Phase 28--36 profiles |
 | H141 | `OPEN` | Turn defect geometry into an ordinary-source/carry obstruction for H89 or P194 into H133 rejection | Test one exact weighted inequality on NG32--NG40, concentrated/diffuse defects, both negative cycles, and E37--E44 before extending q |
-| H172 | `OPEN` | Combine P194's `o(L)`-defect grid with P197's full cofactor and preserve both rotations beyond P210's finite area floor | Allow adversarial bad-start placement; falsify first on NG34--NG41 and E43--E50 |
+| H172 | `OPEN` | Combine P194's `o(L)`-defect grid and P211--P217 root/event structure with P197's full cofactor, preserving both rotations beyond P214's finite area floor | Prove a uniform root-sparse/root-dense incompatibility; allow adversarial bad-start placement and falsify first on NG34--NG42 and E43--E52 |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
 | C05 | `OPEN` | Prove `Delta_(K0-1)(2^72)>W` | For its weaker q0-specific consequence, use the 30 branch cases; reject any state that forgets inherited surplus or either tail residue |
 | C03 | `OPEN` | Rank arbitrary contracting `{A,B}*` interleavings | Test BBA and all near-critical `A^rB^s` records first |
@@ -279,7 +280,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 32 provides the
+artifacts and preserve the recorded manifest hash. Phase 36 provides the
 latest accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -295,14 +296,15 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 - For H141, optimize a stated weighted correction/source inequality against
   concentrated defects, NG32, and P152/P153's nonempty q0 support interval
   before any larger critical/profile scan.
-- For H133/H172, test H200's bounded area-six grid first, then P194's
-  arbitrary-area approximate grid. Rebuild NG34--NG40, E43--E45, and the
-  Phase 28--32 synthetic profiles. Seek a
-  low-denominator full-`D` resultant that tolerates adversarial `o(L)` bad
-  starts, and separately test what reduces above-frontier families to the
-  sharp regime. Keep span, endpoint term, the all-fixed-`R` quantifier, and
-  both rotations. Do not infer actual maximum-state saturation from the
-  `n_cyc` proxy.
+- For H133/H172, combine P194's arbitrary-area approximate grid with
+  P211--P217's root/event split. Rebuild NG34--NG42, E43--E52, and the Phase
+  28--36 synthetic/corpus profiles. Seek a low-denominator full-`D`
+  resultant that tolerates adversarial `o(L)` bad starts, or prove that dense
+  positive Mersenne events contradict the full cofactor. Separately test what
+  reduces above-frontier families to the sharp regime. Keep span, endpoint
+  term, the all-fixed-`R` quantifier, and both rotations. Do not infer actual
+  maximum-state saturation from the `n_cyc` proxy or treat another finite
+  area increment as an arbitrary-area theorem.
 - Attack H72 through positive ordinary-integrality, effective reduced
   shadow-height/gcd, P79's valuation-conditioned successor congruences, or a
   P86 cross-Q surplus state retaining the carries lost in NG24.

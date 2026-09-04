@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 35
+# Collatz research synthesis through Phase 36
 
-**Audit date:** 2026-09-01
+**Audit date:** 2026-09-03
 
-**Audited base:** Phase 35 accepted evidence and independent verifier
+**Audited base:** Phase 36 accepted evidence and independent verifier
 
-**Latest accepted phase:** Phase 35
+**Latest accepted phase:** Phase 36
 
 **Problem status:** `OPEN`
 
@@ -919,6 +919,27 @@ See the [`Phase 34 audit`](../research/audits/profile-state-area209/REPORT.md).
 
 See the [`Phase 35 audit`](../research/audits/full-decoder-joint-scalar/REPORT.md).
 
+### Phase 36 — root intervals and positive event polynomial
+
+- **Cycle root geometry:** P211 localizes every literal binary edit in
+  disjoint level-one root intervals and proves exact factor/gap bounds. P212
+  turns bounded root span/type into a one-root-hit capacity inequality.
+- **Corrected area floor:** P208 forces the unique area-229 scalar survivor
+  to have three short-root types. Its capacity is `6017<7294`; P213 excludes
+  it. The complete 1,926-row CF frontier and 7,221 low-`q` rows are rerun, so
+  P214 proves critical `A>=230`, not a larger unverified floor.
+- **Positive cycle arithmetic:** P215 gives the shifted positive Mersenne
+  recurrence. P216/P217 give the coprime nonnegative event polynomial, exact
+  support/norm, modular equivalence, and sparse-arc inequalities.
+- **Orientation repair:** NG42 refutes unchanged cycle-root transfer to the
+  left-moving P206 decoder at `q=3`. P218 proves corrected mirror intervals,
+  but no source descent or ancestry theorem.
+- **Finite evidence:** E51/E52 independently reconstruct 2,214 cycle classes,
+  797 event classes, the complete area-229 scalar boundary, and all 1,166,058
+  safe decoder words through `q<=18`.
+
+See the [`Phase 36 audit`](../research/audits/root-event-polynomial/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -926,9 +947,9 @@ See the [`Phase 35 audit`](../research/audits/full-decoder-joint-scalar/REPORT.m
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P205 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P218 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
-  NG17–NG40.
+  NG17–NG42.
 
 None is a full convergence theorem.
 
@@ -1184,8 +1205,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase35.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase35_verifier.json
+.venv/bin/python verifier/verify_phase36.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase36_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

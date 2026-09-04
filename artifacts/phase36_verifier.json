@@ -1,0 +1,36 @@
+{
+  "area229_frontier_candidates": 1926,
+  "area229_root_margin": -1277,
+  "claims": {
+    "E51": "VERIFIED_FINITE",
+    "E52": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H172": "OPEN",
+    "H89": "OPEN",
+    "NG42": "REFUTED",
+    "P211": "VERIFIED_THEOREM",
+    "P212": "VERIFIED_THEOREM",
+    "P213": "VERIFIED_THEOREM",
+    "P214": "VERIFIED_THEOREM",
+    "P215": "VERIFIED_THEOREM",
+    "P216": "VERIFIED_THEOREM",
+    "P217": "VERIFIED_THEOREM",
+    "P218": "VERIFIED_THEOREM"
+  },
+  "decoded_words": 1166058,
+  "event_classes": 797,
+  "generator_imported": false,
+  "low_q_rows": 7221,
+  "proves_collatz": false,
+  "root_classes": 2214,
+  "valid": true,
+  "verified_sha256": {
+    "phase36_decoder_roots.json": "f1c666b876e438affe1931f0fd1c777e708da915bc4911c4747180b83596fab0",
+    "phase36_event_polynomial.json": "6b01d6fcd7eee1b5c5ca0f40c1593eaaf97c59914d7b1684b6ea9e9802a13068",
+    "phase36_obstruction_report.md": "1acc01808621882138d184418f36e2d8430bf2e6383717567870792d6bd9b028",
+    "phase36_regressions.json": "4edf609e59fdaf921996faff1cc9f651a2f9ddb84ea389f75c93cbc5db2e422a",
+    "phase36_root_corpus.json": "f5383032214f0b2bad9328a1402717c6ae9f278b034584c1f5aed45e80447f8c",
+    "phase36_scalar_audit.json": "905a4582db4a5c88051c9bdde9040c7bbacd229b48549ec1327aa83fa36e46b3",
+    "phase36_theory.json": "7a8048972ad1d7d1492915dacc35af9ef035e58355695a0b622f3f0796dd3142"
+  }
+}

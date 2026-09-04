@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-09-02
+**Last updated:** 2026-09-03
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -245,6 +245,16 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   1,166,058 safe words through `q<=18`; E50 reconstructs the scalar audit.
   NG41 refutes the proposal's stronger `A>=238` derivation with the exact
   scalar tuple `(q,L,A)=(2301,3647,229)`. H89/H133/H172 remain open.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE` / `REFUTED`: Phase 36 proves
+  P211/P212's cycle-root localization and bounded-root capacity, eliminates
+  the exact NG41 tuple by P213, and independently reruns the complete
+  area-229 frontier. P214 therefore raises the critical primitive positive
+  cycle floor to `A>=230`. P215--P217 give a positive Mersenne recurrence and
+  coprime event polynomial; E51/E52 reconstruct 2,214 cycle classes, 797
+  coprime event classes, 1,926 frontier candidates, 7,221 low-`q` rows, and
+  1,166,058 decoder words. NG42 refutes direct reuse of right-moving cycle
+  roots for P206's left-moving decoder; P218 proves the corrected mirror
+  interval. H89/H133/H172 and all complete Collatz implications remain open.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -548,12 +558,13 @@ P70 alone is not a complete Collatz route.
 
 ## Current main bottleneck
 
-Phase 35 raises the critical area floor but does not create an arbitrary-area
-termination mechanism. Cycle work should target the concrete height-two
-`q=2301,A=229` scalar obstruction with P173/P197 arithmetic or prove a
-growing-area theorem. Least-counterexample work should combine P206's complete
-pointwise decoder with P89 ancestry, endpoint carry, positivity, and ordinary
-source order; decoding alone is not descent.
+Phase 36 raises the critical area floor to `A>=230` but does not create an
+arbitrary-area termination mechanism. Cycle work should make P211--P217's
+root-sparse/root-dense event split uniform and compatible with P197's full
+cofactor, rather than iterating another finite scalar tier. Least-counterexample
+work should combine P206's complete decoder and P218 mirror roots with P89
+ancestry, endpoint carry, positivity, and ordinary source order; NG42 shows
+that orientation must be explicit, and localization alone is not descent.
 
 No asymptotic lower bound is known for the least coefficient-safe
 representative `M(k)`. Phase 7 narrows the missing statement: no `q`-uniform
@@ -866,8 +877,9 @@ eventual nonzero lifts.
 - Phase 31 acceptance: [`../PHASE31_RUN_RESULTS.md`](../PHASE31_RUN_RESULTS.md)
 - Phase 31 v2 acceptance:
   [`../PHASE31_SHORT_LEAF_RESULTS.md`](../PHASE31_SHORT_LEAF_RESULTS.md)
+- Phase 32 acceptance: [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md)
 - Phase 33 acceptance: [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md)
 - Phase 34 acceptance: [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md)
 - Phase 35 acceptance: [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md)
-- Phase 32 acceptance: [`../PHASE32_RUN_RESULTS.md`](../PHASE32_RUN_RESULTS.md)
+- Phase 36 acceptance: [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

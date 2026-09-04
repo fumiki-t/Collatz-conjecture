@@ -1930,3 +1930,44 @@ not accepted: NG41 preserves the exact simultaneous scalar survivor
 Phase 35 does not close H89/H133/H172, exclude area 229 or arbitrary-area
 cycles, address nonperiodic branches, or prove Collatz.
 `proves_collatz=false`.
+
+## 2026-09-03 — Phase 36: root intervals and positive event polynomial
+
+**Branch:** `feat/phase36-root-event-polynomial`
+
+**Acceptance record:** [`PHASE36_RUN_RESULTS.md`](PHASE36_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/root-event-polynomial/REPORT.md`](research/audits/root-event-polynomial/REPORT.md)
+
+The supplied note was treated as untrusted. P211 localizes every literal
+cycle-word change in disjoint level-one binary root intervals and retains
+exact factor and complementary-gap bounds. P212 converts bounded root span
+and type count into a one-root-hit capacity inequality. At the sole Phase 35
+area-229 scalar survivor, P208 forces equality in the P185 exceptional charge;
+all level-one roots then have one of three profiles and binary span at most
+four. Its capacity is 6017 against `2L=7294`, so P213 excludes that tuple.
+
+The complete area-229 high and low frontiers were rerun rather than inferring
+a global result from one displayed row. All 1,926 upper-convergent multiples
+fail, and exactly one of 7,221 low-`q` rows survives the scalar sieve; P213
+removes it. P214 therefore raises the critical primitive positive nontrivial
+cycle floor to `A>=230`. The area-230 diagnostic still survives, so no larger
+floor is claimed.
+
+P215 rewrites the cycle in positive Mersenne coordinates. P216 constructs the
+coprime positive event polynomial with exact event support, norm, and modular
+equivalence; P217 supplies its sparse-arc inequalities. E51 reconstructs the
+complete `q<=8` root/event corpus.
+
+The proposed cycle-to-decoder transfer had the wrong sign. NG42 records its
+smallest `q=3` counterexample; P218 proves corrected mirror intervals for the
+left-moving P206 decoder profile. E52 independently checks all 1,166,058
+safe words through `q<=18` and the scalar frontier. Mirror localization does
+not imply source descent or ancestry.
+
+### What this result does not prove
+
+Phase 36 does not close the root-sparse/root-dense dichotomy, exclude area
+230 or arbitrary-area cycles, turn decoded roots into smaller positive
+ancestors, close H89/H133/H172, address the nonperiodic branches, or prove or
+disprove Collatz. `proves_collatz=false`.

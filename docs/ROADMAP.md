@@ -119,11 +119,15 @@ remain separate obligations.
 repairs the previous area constant, and P194 proves an `o(L)`-defect
 low-denominator grid at sharp equality. P195/P196 reach the triple-hit
 cardinality ceiling and further strengthen area necessity. P197--P199 restore
-the full noncoprime cofactor. Phase 35's P207/P208 now exclude every critical
-area through 228 while preserving the least-value/discrepancy rotation
-distinction. The first scalar obstruction is the height-two row
-`q=2301,A=229`; P206 supplies a full modular decoder for H89 but no source descent.
-NG40 remains the warning that one normalized radius is insufficient. The
+the full noncoprime cofactor. Phase 36's P211/P212 root geometry eliminates
+Phase 35's exact height-two `q=2301,A=229` scalar obstruction, and the
+complete P214 audit now excludes every critical area through 229 while
+preserving the least-value/discrepancy rotation distinction. P215--P217 add a
+positive Mersenne event polynomial, but the first area-230 scalar row and
+arbitrary growing area survive. P206/P218 supply full modular decoding and
+mirror localization for H89 but no source descent. NG40 remains the warning
+that one normalized radius is insufficient, while NG42 forbids transferring
+the cycle-root orientation directly to P206. The
 missing arbitrary-area theorem is a strict
 subleading full-`D` arithmetic gap compatible with P194's adversarially placed
 bad starts, plus a reduction or separate obstruction for above-frontier cycle
@@ -135,7 +139,7 @@ supplies only a smaller modulus `D_0` for noncoprime slopes.
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
 cycle and its powers, E43/E44's double-hit corpora, E45's full-cofactor rows,
 E46--E50's finite bootstrap boundaries, and nine synthetic profiles,
-NG34--NG41, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
+NG34--NG42, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
 positive.
@@ -147,6 +151,12 @@ remainder. Extending `q`, improving the area constant again, dropping span,
 promoting the `n_cyc` proxy to actual state saturation, dropping the
 all-fixed-`R` quantifier, or using approximate periodicity without a nonzero
 resultant is not success.
+
+The next useful cycle experiment should make the P211--P217 root/event split
+uniform: either short/sparse roots force a P212 collision, or dense event
+support forces a strict full-`D` arithmetic contradiction. It must cover the
+noncoprime block cofactor and profiles strictly above the P193 frontier; a
+second finite area increment is not a substitute.
 
 ## P1 — Renewal-ladder dropping-safe barrier
 

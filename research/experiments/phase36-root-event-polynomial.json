@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "phase36-root-event-polynomial",
+  "status": "RUNNING",
+  "claim_ids": ["P211", "P212", "P213", "P214", "P215", "P216", "P217", "P218", "E51", "E52", "NG42", "H89", "H133", "H172"],
+  "objective": "Audit cycle-root localization and the positive event polynomial, test the proposed Phase 35 decoder transfer, and determine the exact consequence for the critical cycle-area floor.",
+  "exact_scope": {
+    "quantifiers": [
+      "every valid discrepancy-minimum reduced cycle profile for P211",
+      "every root system satisfying the explicit U,R,C hypotheses for P212",
+      "the unique area-229 scalar survivor and the complete A=229 scalar frontier for P213/P214",
+      "every positive odd cycle exponent word for P215 and every coprime-slope word for P216/P217",
+      "every P206 decoded profile for P218",
+      "all positive-D cyclic exponent classes through q<=8 for E51",
+      "all critical-safe decoder words through q<=18 and the exact A=229 scalar boundary for E52"
+    ],
+    "bounds": {"cycle_q_maximum": 8, "decoder_q_maximum": 18, "area": 229, "gcd_maximum": 263, "low_q_maximum": 8191},
+    "completeness": "P211--P218 are exact conditional or cycle lemmas; E51/E52 are bounded; NG42 refutes only the direct cycle-to-decoder root orientation. H89/H133/H172 and Collatz remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integers, rational arithmetic, modular inverses, exhaustive compositions, literal cyclic factors, continued fractions, and exact sparse-resultant certificates",
+    "floating_point_role": "none in acceptance"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase36_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase36.py --artifact-dir artifacts --output artifacts/phase36_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase36_properties.py tests/test_phase36_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["the complete q<=8 cycle-root and coprime event-polynomial corpora", "the area-229 scalar frontier and root-capacity obstruction", "all q<=18 decoded mirror-root rows"],
+    "forbidden_imports": ["src.phase36_search", "phase36_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase36_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "trivial cycle and powers", "negative cycles", "NG24-NG42", "Phase 28 synthetic profiles"],
+  "artifacts": ["artifacts/phase36_theory.json", "artifacts/phase36_root_corpus.json", "artifacts/phase36_event_polynomial.json", "artifacts/phase36_scalar_audit.json", "artifacts/phase36_decoder_roots.json", "artifacts/phase36_regressions.json", "artifacts/phase36_obstruction_report.md", "artifacts/phase36_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["Do not use cycle-root orientation for the decoder.", "Do not identify a formal rational fixed point with a positive integer cycle.", "Do not infer decoder ancestry from mirror localization.", "Enter the proof-claim emergency protocol before changing proves_collatz."],
+  "interpretation_boundary": ["The complete accepted critical area floor is tested at A>=230.", "Positive event support is proved only at coprime reduced slope.", "Root localization alone does not close H89, H133, or H172."],
+  "recorded_result": null,
+  "proves_collatz": false
+}

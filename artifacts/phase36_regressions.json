@@ -1,0 +1,28 @@
+{
+  "boundaries": [
+    "cycle and decoder profile orientations are distinct",
+    "formal rational fixed points are not positive integral cycles",
+    "positive event support is coprime-slope only"
+  ],
+  "cycle_controls": [
+    "trivial cycle and powers",
+    "both negative cycles",
+    "NG34-NG42",
+    "Phase 28 synthetic profiles"
+  ],
+  "decoder_controls": [
+    "source 167",
+    "E49 complete image",
+    "NG24-NG31"
+  ],
+  "format": "collatz-phase36-regressions-v1",
+  "mandatory_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s"
+  ],
+  "proves_collatz": false
+}

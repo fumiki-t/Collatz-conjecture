@@ -1310,8 +1310,6 @@ literal safety, or ordinary source order.
 **Surviving statements.** P202 proves only `h<=a_t+1`; P205 uniquely decodes
 only the first gap-two unit edit. A repeated decoder remains an H89 target.
 
-## Mandatory regression rule
-
 ## NG41 — the stated joint scalar sieve does not prove area 238
 
 **Status:** `REFUTED`
@@ -1342,11 +1340,38 @@ the Phase 35 obstruction artifact.
 **Evidence.** [`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md),
 Section 6, and `artifacts/phase35_joint_scalar_audit.json`.
 
+## NG42 — cycle-root orientation cannot be reused for the decoder
+
+**Status:** `REFUTED`
+
+**Exact hypothesis.** For a P206 critical-safe decoder profile
+`d_j=f_j-a_j`, every binary change associated with a level-one component
+`[u,v)` lies in the cycle root interval `[f_u,f_v)`.
+
+**Why it looked plausible.** The same profile heights index the exact cycle
+root theorem P211, and both words share the finite critical mechanical
+baseline.
+
+**Smallest exact obstruction.** At `q=3,K=5`, actual odd positions
+`(0,1,2)` and mechanical positions `(0,1,3)` give profile `(0,0,1)`.  The
+changed positions are `{2,3}`, while the naive interval `[3,5)` misses 2.
+
+**Failure scope.** Fundamental for the unchanged orientation: cycle
+boundaries move right by `+a_j`, while decoder positions move left by
+`-a_j`.  It does not refute root localization itself.
+
+**Weaker statement.** P218 proves the corrected pairwise-disjoint mirror
+interval `[f_(u-1)+1,f_v)`, with `f_q=K`.  This localization still does not
+provide ordinary source descent, ancestry, positivity, or signed carry.
+
+**Evidence.** [`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md),
+Section 8, and `artifacts/phase36_decoder_roots.json`.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, NG40, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, NG40, NG41, NG42, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
 area-three supports, the E37 seven-grid rows, the E38/E39 all-gcd profile

@@ -1,5 +1,5 @@
 {
-  "claim_count": 280,
+  "claim_count": 291,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -4009,9 +4009,169 @@
       "last_audited": "2026-09-02",
       "notes": "Exact scalar counterexample `(q,L,A,h,J,Sigma,E,n,Z)=(2301,3647,229,2,138,90,92,24,10)` has P207/P208 margins 10/43. This does not refute a future stronger `A>=238` theorem or assert an actual cycle.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "For every discrepancy-minimum reduced cycle profile, the disjoint level-one root intervals `[E0_u,E0_v)` contain every binary change from the repeated mechanical word; `p_cyc(n)<=p0(n)+T1+U(n-1)`, and distinct cyclic factors imply `sum(G_i-n+1)_+<=n+1` and `G_i<=2n`.",
+      "collatz_implication": "Localizes arbitrary-height cycle defects into disjoint binary intervals and retains their complement geometry.",
+      "dependencies": "P156 reduced profile; actual odd boundaries strictly increase; `1<=n<=L`; factor distinctness only for the gap conclusions.",
+      "dependency_ids": [
+        "P156"
+      ],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 1; exact literal-word corpus.",
+      "first_introduced": "Phase 36",
+      "id": "P211",
+      "last_audited": "2026-09-03",
+      "notes": "It gives no uniform bound on root number/span and is not valid with the same orientation for the P206 decoder.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If a cyclic target differs from a mechanical word only in `U` disjoint roots of span at most `R`, with at most `C` legal replacements after context and placement are fixed, then distinct length-`n` factors imply `2L<=U(n+R-1)+2(n+1)+C(n+R)(n+R-1)`.",
+      "collatz_implication": "Converts bounded root geometry into an exact collision criterion.",
+      "dependencies": "Explicit `U,R,C` root hypotheses; mechanical factor complexity at most width plus one; all target length-`n` cyclic factors distinct.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 2; independent cyclic incidence reconstruction.",
+      "first_introduced": "Phase 36",
+      "id": "P212",
+      "last_audited": "2026-09-03",
+      "notes": "The hypotheses are not uniformly bounded for arbitrary area, so this alone does not close H172.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "No primitive positive integer cycle profile realizes the Phase 35 scalar tuple `(q,L,A,h,J,Sigma,E,n,Z)=(2301,3647,229,2,138,90,92,24,10)`.",
+      "collatz_implication": "Removes NG41's first scalar survivor using profile geometry rather than another scalar relaxation.",
+      "dependencies": "P125/P185/P208/P211/P212; exact equality `E=h+Sigma`; height two; factor distinctness at the accepted cycle width.",
+      "dependency_ids": [
+        "P125",
+        "P185",
+        "P208",
+        "P211",
+        "P212"
+      ],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 3; `artifacts/phase36_scalar_audit.json`.",
+      "first_introduced": "Phase 36",
+      "id": "P213",
+      "last_audited": "2026-09-03",
+      "notes": "It excludes this tuple only; a scalar survivor never asserted the existence of an actual cycle.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every critical primitive positive nontrivial integer Collatz cycle has reduced-profile area `A>=230`.",
+      "collatz_implication": "Excludes all critical areas through 229 across every gcd class.",
+      "dependencies": "P164/EXT17/P177/P199/P202/P203/P207/P208/P210/P213; exact cutoff, `d<=263` continued-fraction frontier, and complete low-`q` audit at `A=229`.",
+      "dependency_ids": [
+        "EXT17",
+        "P164",
+        "P177",
+        "P199",
+        "P202",
+        "P203",
+        "P207",
+        "P208",
+        "P210",
+        "P213"
+      ],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 4; Phase 36 scalar artifact and independent verifier.",
+      "first_introduced": "Phase 36",
+      "id": "P214",
+      "last_audited": "2026-09-03",
+      "notes": "The exact area-230 scalar row survives; arbitrary area, noncritical cycles, and nonperiodic branches remain open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a positive odd cycle, `y_j=(x_j+1)/2` satisfies `2^e_j y_(j+1)=3y_j+(2^(e_j-1)-1)` and `D y_0=sum_j(2^(e_j-1)-1)2^E_j3^(q-1-j)`, with nonnegative support exactly at `e_j>=2`.",
+      "collatz_implication": "Rewrites cycle divisibility with positive Mersenne corrections and no signed cancellation.",
+      "dependencies": "Positive integral odd cycle and its exact exponent sequence; `D=2^L-3^q`.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 5; exact rational recurrence checks.",
+      "first_introduced": "Phase 36",
+      "id": "P215",
+      "last_audited": "2026-09-03",
+      "notes": "Positivity alone supplies no lower bound incompatible with the full divisor.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At coprime slope, `P_a=(2-X^(2q-L))A_a` in `Z[X]/(X^q-2)` has coefficient `2^(a_t+2-e0_t)(2^(e_t-1)-1)` at `r_(t+1)`, support exactly `e_t>=2`, norm `sum_(e0_t=2)2^a_t`, and the same mod-`D` vanishing as `A_a`.",
+      "collatz_implication": "Supplies a positive sparse polynomial whose support is the actual Mersenne event set.",
+      "dependencies": "P156/P171 profile convention; `gcd(q,L)=1`; coprime slope root modulo `D`.",
+      "dependency_ids": [
+        "P156",
+        "P171"
+      ],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 6; `artifacts/phase36_event_polynomial.json`.",
+      "first_introduced": "Phase 36",
+      "id": "P216",
+      "last_audited": "2026-09-03",
+      "notes": "It does not cover a full noncoprime slope without a compatible block/cofactor theorem.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "With event support `M` and norm `C`, every coprime integral critical profile satisfies `3^ceil(q/M)<4C(12q)^1564920000`; every coprime noncritical integral profile satisfies `2^(L ceil(q/M)/q)<4C`.",
+      "collatz_implication": "Replaces signed endpoint support by actual positive event support in the sparse-arc obstruction.",
+      "dependencies": "P147/P216; integrality; EXT17 only on the critical branch.",
+      "dependency_ids": [
+        "EXT17",
+        "P147",
+        "P216"
+      ],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 7; exact positive sparse-arc certificates.",
+      "first_introduced": "Phase 36",
+      "id": "P217",
+      "last_audited": "2026-09-03",
+      "notes": "Neither inequality supplies an arbitrary-area contradiction or a full-`D` noncoprime result.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a P206 decoded profile with actual positions `d_j=f_j-a_j`, every binary change in a level-one component `[u,v)` lies in the pairwise-disjoint mirror interval `[f_(u-1)+1,f_v)`, with `f_q=K`.",
+      "collatz_implication": "Repairs the sign/orientation mismatch and supplies rootwise localization for future carry-aware H89 work.",
+      "dependencies": "Valid critical-safe image; strictly increasing actual positions; P206 profile convention.",
+      "dependency_ids": [
+        "P206"
+      ],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 8; complete E52 decoder audit.",
+      "first_introduced": "Phase 36",
+      "id": "P218",
+      "last_audited": "2026-09-03",
+      "notes": "Localization does not prove a smaller positive ancestor, source order, or valid alternate carry.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks 2,214 positive-`D` cyclic classes, 3,101 minimum rotations, 45,369 factor widths, 27,832 distinct-factor widths, 797 coprime event classes, and 2,908 event support coefficients through `q<=8`.",
+      "collatz_implication": "Regresses P211/P215--P217 over the complete bounded cycle corpus.",
+      "dependencies": "Declared finite range; exact integer/rational/modular/factor-set arithmetic; verifier imports no Phase 36 generator or `src`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md); Phase 36 root/event artifacts, verifier, and tamper tests.",
+      "first_introduced": "Phase 36",
+      "id": "E51",
+      "last_audited": "2026-09-03",
+      "notes": "Bounded agreement and formal rational fixed points do not prove positive integral cycle existence or exclusion.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Independent exact reconstruction checks the 1,926-member area-229 continued-fraction frontier, all 7,221 low-`q` scalar rows, the exact P213 capacity contradiction, and all 1,166,058 P206 safe words through `q<=18`, including NG42/P218.",
+      "collatz_implication": "Supplies the finite exhaustion used by P214 and independently audits the decoder orientation repair.",
+      "dependencies": "Declared ranges; exact integer, modular, rational-log, continued-fraction, and profile arithmetic; verifier imports no Phase 36 generator or `src`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md); Phase 36 scalar/decoder artifacts, verifier, and tamper tests.",
+      "first_introduced": "Phase 36",
+      "id": "E52",
+      "last_audited": "2026-09-03",
+      "notes": "It does not extend the decoder range asymptotically or turn P218 into ancestry.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The cycle root interval `[f_u,f_v)` can be reused unchanged for the P206 decoder profile `d_j=f_j-a_j`.",
+      "collatz_implication": "Prevents a sign error in future decoder-to-ancestor searches; P218 gives the corrected mirror interval.",
+      "dependencies": "Direct transfer from the right-moving cycle convention to the left-moving decoder convention.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md), Section 8; `artifacts/phase36_decoder_roots.json`.",
+      "first_introduced": "Phase 36",
+      "id": "NG42",
+      "last_audited": "2026-09-03",
+      "notes": "Smallest exact counterexample: `q=3,K=5`, actual positions `(0,1,2)`, mechanical `(0,1,3)`, profile `(0,0,1)`; `[3,5)` misses changed position 2.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "d227adf0c6bb0c7640f48a0f921811959a7ca9640bd0a59883fa5d919ef73364"
+  "source_sha256": "8d97813f90106559a1ff47ffe9f0f13483803dc58edc8a5d8d00cb1c677856aa"
 }
