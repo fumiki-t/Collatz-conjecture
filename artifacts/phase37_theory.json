@@ -1,0 +1,31 @@
+{
+  "P219": "At fixed N and odd count s, B is maximized by 0^(N-s)1^s and is at most 2^(N-s)(3^s-2^s); all images of a length-X interval with X<=2^N fit in an interval of length 2*3^s.",
+  "P220": "Every equal-time collision-free positive set obeys a location-uniform G(X)=O_rho(X^rho) for rho>H2(1/log2(3)); explicitly G(X)<32X^(29/30).",
+  "P221": "Uniform dyadic shells give every p>rho>rho* tail moment O(S^(rho-p)), including reciprocal summability after choosing rho<1.",
+  "P222": "Every non-eventually-periodic positive integer shortcut orbit has discrepancy tending to +infinity and an odd permanent coefficient-safe suffix minimum; the finite-crossing branch is unnecessary for ordinary nonperiodic orbits.",
+  "P223": "On such a tail, #{j:a_j<=A}=O(2^(rho*A)), sum 2^(-a_j) converges, a_j tends to infinity, and every c<1/rho* holds on density one.",
+  "P224": "At renewal boundaries, h_i=O(S_i^rho) and (h_i-1)/(S_i+1) tends to zero for rho*<rho<1.",
+  "P225": "Renewal transitions satisfy limsup S_(i+1)/S_i<=3/2 and S_i=O_epsilon((3/2+epsilon)^i).",
+  "P226": "For every rho in (rho*,1), noncritical primitive positive cycles have an effective finite minimum cutoff M_rho.",
+  "claims": {
+    "E53": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H70": "OPEN",
+    "H72": "OPEN",
+    "P219": "VERIFIED_THEOREM",
+    "P220": "VERIFIED_THEOREM",
+    "P221": "VERIFIED_THEOREM",
+    "P222": "VERIFIED_THEOREM",
+    "P223": "VERIFIED_THEOREM",
+    "P224": "VERIFIED_THEOREM",
+    "P225": "VERIFIED_THEOREM",
+    "P226": "VERIFIED_THEOREM"
+  },
+  "format": "collatz-phase37-theory-v1",
+  "proves_collatz": false,
+  "scope_repairs": [
+    "Every reciprocal, z-limit, and cycle-cutoff use fixes rho*<rho<1.",
+    "P74/P75 and EXT07 remain historical valid entries; P222/P223 remove their necessity for the stated ordinary-orbit consequences."
+  ],
+  "what_this_result_does_not_prove": "It gives no pointwise last-small-defect bound, P80 multiplicity estimate, irreducible-tree extinction, permanent-safe source exclusion, arbitrary-area cycle exclusion, or Collatz proof."
+}

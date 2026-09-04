@@ -24,7 +24,7 @@ does not claim this language or its counts as new.
 
 ### Heppner (1978) and Garcia--Tal (1999)
 
-**Status:** `EXTERNAL_THEOREM`; active conditional input EXT07
+**Status:** `EXTERNAL_THEOREM`; historical independent route EXT07
 
 Ernst Heppner, “Eine Bemerkung zum Hasse--Syracuse-Algorithmus,”
 *Archiv der Mathematik* **31** (1978), 317--320, MR 80d:10007.
@@ -47,9 +47,13 @@ gives EXT07 with an unspecified `beta<1` and an orbit-dependent constant.
 **Repository role.** The audit in
 [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md)
 checks the specialization, interval quantifiers, and direct consequences.
-The repository does not reprove Heppner's proposition. P74 and P75 are
-therefore recorded as `CONDITIONAL`, and no numerical value of `beta` is
-assumed.
+The repository does not reprove Heppner's proposition. P74 and P75 therefore
+remain `CONDITIONAL`, and no numerical value of its `beta` is assumed. Phase
+37's P219--P223 separately prove, by an elementary shortcut-specific
+parity-vector recursion, the location-uniform power sparsity and downstream
+ordinary-orbit consequences needed by H72. This internal replacement does not
+claim to reprove the full generalized Garcia--Tal/Heppner theorem or establish
+literature-wide novelty.
 
 ### Bernstein and Lagarias (1996)
 

@@ -1971,3 +1971,47 @@ Phase 36 does not close the root-sparse/root-dense dichotomy, exclude area
 230 or arbitrary-area cycles, turn decoded roots into smaller positive
 ancestors, close H89/H133/H172, address the nonperiodic branches, or prove or
 disprove Collatz. `proves_collatz=false`.
+
+## 2026-09-03 — Phase 37: internal uniform orbit sparsity
+
+**Branch:** `feat/phase37-internal-uniform-sparsity`
+
+**Acceptance record:** [`PHASE37_RUN_RESULTS.md`](PHASE37_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/internal-uniform-sparsity/REPORT.md`](research/audits/internal-uniform-sparsity/REPORT.md)
+
+The supplied v2 note replaced its earlier draft and was treated as untrusted.
+P219 proves the exact fixed-odd-count affine correction maximum and a
+translation-independent image diameter. This makes the low-count image slice
+itself a smaller equal-time collision-free interval problem. P220 closes the
+resulting strong induction for every
+`rho>rho_*=H_2(1/log_2 3)` and supplies the explicit exact bound
+`G(X)<32X^(29/30)`. Its rational certificate uses
+`theta=14/23`, `N0=135`, and records that the low-part induction inequality
+still fails at `N=134`.
+
+P221/P222 apply this uniform sparsity to any nonperiodic positive shortcut
+orbit. Reciprocal summability and the exact orbit product force discrepancy
+to infinity, yielding an odd permanent coefficient-safe suffix minimum.
+This internally replaces EXT07/P74 for that ordinary Collatz consequence and
+reduces the surviving nonperiodic branch to H72. EXT07/P74/P75 remain valid
+historical external/conditional results, while H70 remains an open standalone
+spacing statement rather than being marked proved.
+
+P223 gives `O(2^(rho A))` small-defect counting and every density-one
+coefficient below `1/rho_*`. P224/P225 prove `h_i=o(S_i)` and
+`limsup S_(i+1)/S_i<=3/2` at renewal boundaries. P226 reduces noncritical
+primitive positive cycles to an effective finite minimum range but gives no
+optimized cutoff and does not touch critical arbitrary-area cycles.
+
+E53 and an implementation-independent verifier reconstruct the exact
+induction boundary, 131,070 parity words, 49,928 translated points, 209,868
+product steps, 154 renewal codewords, 84 finite addresses, 228 renewal
+boundaries, tamper rejection, and every mandatory adversarial family.
+
+### What this result does not prove
+
+Phase 37 does not prove P80 address anti-concentration, force ordinary source
+descent, extinguish the irreducible renewal tree, exclude H72, optimize and
+exhaust the noncritical cycle cutoff, exclude critical cycles, prove H70, or
+prove or disprove Collatz. `proves_collatz=false`.

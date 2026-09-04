@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–36, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–37, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -65,6 +65,7 @@ This is the canonical map of the research archive. Start with
 | 34 | [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md) | [`../artifacts/phase34_obstruction_report.md`](../artifacts/phase34_obstruction_report.md) | `feat/phase34-profile-state-area209` |
 | 35 | [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md) | [`../artifacts/phase35_obstruction_report.md`](../artifacts/phase35_obstruction_report.md) | `feat/phase35-full-decoder-joint-scalar` |
 | 36 | [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md) | [`../artifacts/phase36_obstruction_report.md`](../artifacts/phase36_obstruction_report.md) | `feat/phase36-root-event-polynomial` |
+| 37 | [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md) | [`../artifacts/phase37_obstruction_report.md`](../artifacts/phase37_obstruction_report.md) | `feat/phase37-internal-uniform-sparsity` |
 
 Research supplements:
 
@@ -73,6 +74,7 @@ Research supplements:
 | Phase 10 branch points | [`../BRANCH_POINT_RUN_RESULTS.md`](../BRANCH_POINT_RUN_RESULTS.md) | `artifacts/branch_point_decomposition.json`; independent verifier | P66 first-divergence theorem, P67 thirty q0 cases, E16 finite profile |
 | Two-tail state collisions | [`../TWO_TAIL_RUN_RESULTS.md`](../TWO_TAIL_RUN_RESULTS.md) | `artifacts/two_tail_state_collisions.json`; independent verifier | P68 finite-horizon state, NG19 exact compression failures, E17 finite scan |
 | Garcia--Tal / Phase 12 audit | [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md) | audit-local exact certificate, independent inverse-series verifier, tamper tests, SHA-256 manifest | EXT07 boundary, conditional P74/P75, companion P76, NG22 obstruction, E21 finite audit |
+| Internal uniform sparsity audit | [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md) | Phase 37 exact induction, affine, renewal, adversarial artifacts, independent verifier, tamper tests, SHA-256 manifest | P219--P226, E53, internal permanent-safe reduction, H72/H133 boundary |
 | Renewal-code pressure audit | [`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md) | Phase 13 exact artifacts, independent verifier, tamper tests, SHA-256 manifests | P77--P79 renewal theorems, conditional P80, E22 finite audit, NG23 raw-Haar obstruction |
 | Coalescent rewrite audit | [`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md) | Phase 14 exact rewrite/pressure artifacts, independent verifier, tamper tests, SHA-256 manifests | P81--P85 theorems, E23 finite quotient, NG24 left-congruence obstruction, H72 boundary |
 | Surplus-dominance audit | [`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md) | Phase 15 cross-Q frontier, strict-valley, gap-core, adversarial artifacts, independent verifier, tamper tests, SHA-256 manifest | P86--P88 theorems, E24 finite Q<=17 audit, NG25/NG26 obstructions, H72 boundary |
@@ -97,9 +99,10 @@ Research supplements:
 | Profile/state area-209 audit | [`../research/audits/profile-state-area209/REPORT.md`](../research/audits/profile-state-area209/REPORT.md) | Phase 34 least-state/profile bridge, exact area-209 scalar bootstrap, and first 2-adic defect peeling | P202--P205, E48, H89/H172/H133 boundary |
 | Full-decoder/joint-scalar audit | [`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md) | Phase 35 full modular defect decoder, refined factor/triple-hit bounds, corrected area-229 bootstrap, and refuted area-238 proposal | P206--P210, E49/E50, NG41, H89/H172/H133 boundary |
 | Root/event-polynomial audit | [`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md) | Phase 36 cycle-root localization, one-root-hit capacity, corrected area-230 bootstrap, positive Mersenne event polynomial, and decoder-orientation repair | P211--P218, E51/E52, NG42, H89/H172/H133 boundary |
+| Internal uniform-sparsity audit | [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md) | Phase 37 exact uniform interval induction, internal permanent-safe reduction, defect and renewal consequences, and cycle finiteness boundary | P219--P226, E53, H70/H72/H133 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 36 and both the branch-point and two-tail
+documentation through Phase 37 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

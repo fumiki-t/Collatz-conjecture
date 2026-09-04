@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the thirty-four phases established
+## 3. What the thirty-seven phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -263,6 +263,14 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   survives. NG42 records that cycle roots have the wrong orientation for the
   P206 decoder; P218's corrected mirror roots still supply no smaller source,
   ancestry, positivity, or carry theorem.
+- Phase 37 proves an elementary location-uniform sparsity theorem for every
+  equal-time collision-free positive set, explicitly
+  `G(X)<32X^(29/30)`. P221/P222 internally give reciprocal summability,
+  discrepancy escape, and a permanent-safe odd tail for every nonperiodic
+  positive orbit. Thus the finite-crossing ladder is no longer a surviving
+  global branch, though H70 itself stays open. P223--P225 sharpen defect and
+  renewal geometry; P226 makes noncritical cycle minima effectively finite.
+  Neither H72 nor the critical positive-cycle branch is excluded.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -321,13 +329,13 @@ P63 single gap residue
   -> C05 two-tail spacing certificate (OPEN).
 ```
 
-The logically exhaustive Phase 11 route is:
+The internally sharpened Phase 11 route is:
 
 ```text
 P69 counterexample trichotomy
   -> exclude nontrivial cycles (OPEN)
-  -> EXT07/P74 conditional permanent-safe reduction
-  -> P72/P75/P76/P77/P78/P79
+  -> P220/P221/P222 internal permanent-safe reduction
+  -> P72/P76/P77/P78/P79/P223/P224/P225
   -> P80 canonical-residue anti-concentration (CONDITIONAL)
   -> P81/P82 least-source irreducibility reduction
   -> P83/P84/P85 threshold, decrement, and height constraints
@@ -336,12 +344,13 @@ P69 counterexample trichotomy
   -> P89/P91--P96 ancestral/carry constraints and E25/E26 finite data
   -> P117/P119--P124 parity-complexity filters
   -> P125--P131 unconditional repetition-complexity filters
-  -> H72 (OPEN)
-  -> H70 eventual dropping-safe spacing via P70 (OPEN).
+  -> H72 (OPEN).
 ```
 
-H70 would settle only its third branch through P70, so it must never be described as a
-complete proof route by itself.
+EXT07/P74/P75 remain a valid historical external route. H70 remains an open
+standalone spacing theorem, but P222 makes it unnecessary for the actual
+nonperiodic-orbit dichotomy. Neither may be described as a complete proof
+route because the permanent-safe tail and cycle branches remain.
 
 ## 5. Where to work next
 
@@ -366,7 +375,9 @@ incorporates P132 repeat certificates, a cross-Q
 carry recursion for P86's endpoint Pareto frontier,
 inverse-parity anti-concentration, recursive lower bounds, a cross-cylinder
 quotient/carry state extending P71, and a positive ordinary-integrality or
-effective shadow-height obstruction extending P75--P85. Start from the stored
+effective shadow-height obstruction extending P223--P225 and P76--P85. Any
+use of P220 must bridge explicitly from one realized collision-free orbit to
+P80's many-address multiplicity count. Start from the stored
 NG19 collisions, universal NG20 pair, both NG22 formal 2-adic sources, NG23's
 raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG31
 cross-Q/unsafe-target witnesses: any proposed merge
@@ -412,7 +423,7 @@ non-strict command deliberately reports local untracked artifacts as warnings
 without treating them as accepted evidence.
 
 The current manifest hash is recorded in
-[`../PHASE17_RUN_RESULTS.md`](../PHASE17_RUN_RESULTS.md).
+[`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md).
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 
@@ -421,9 +432,9 @@ Before changing a claim status, read its row in
 [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md), and any external dependency in
 [`LITERATURE.md`](LITERATURE.md).
 
-The current local `scratch/` inventory is superseded by the accepted
-Garcia--Tal and Phase 13--17 audits; it is not accepted evidence. No
-post-Phase-17 scratch candidate is accepted evidence. See the scratch index in
+The current local `scratch/` inventory is superseded by accepted repository
+audits where incorporated; it is not accepted evidence. No remaining scratch
+candidate is accepted evidence. See the scratch index in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md#10-scratch-index).
 
 ## If you only remember one thing
@@ -433,14 +444,16 @@ Phase 17 dichotomy. It is a
 rigorous asymptotic link from high affine correction to ordinary height, or a
 cross-cylinder spacing theorem. P71 solves exact margins only inside a fixed
 finite cylinder; NG19 prevents literal truncation, and NG20 prevents discarding
-height. EXT07/P74 conditionally collapses the nonperiodic alternatives to a
-permanent-safe tail, but P75/P76 do not exclude it: NG22 satisfies their
+height. P220--P222 now internally collapse the nonperiodic alternatives to a
+permanent-safe tail, but P223/P76 do not exclude it: NG22 satisfies the core
 analytic consequences at the formal/2-adic level. P77--P79 expose exact
 renewal pressure and valuation structure, while NG23 shows Haar volume alone
 cannot control an ordinary representative. P81/P82 expose exact downward
 coalescence and least-source irreducibility, but NG24 prevents a prefix-closed
-endpoint quotient. The remaining distinction is a carry-aware deterministic
-positive-height anti-concentration or eventual-reducibility theorem. On the
+endpoint quotient. P224/P225 add a vanishing companion ratio and a `3/2`
+endpoint ceiling, but one-orbit sparsity is not address multiplicity. The
+remaining distinction is a carry-aware deterministic positive-height
+anti-concentration or eventual-reducibility theorem. On the
 cycle branch, P197--P199 supply the full cofactor and P214 now excludes every
 critical area through 229. P211--P217 expose a root-sparse/root-dense event
 split, but no uniform incompatibility is known; P194's arbitrary-area strict

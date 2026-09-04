@@ -1367,6 +1367,22 @@ provide ordinary source descent, ancestry, positivity, or signed carry.
 **Evidence.** [`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md),
 Section 8, and `artifacts/phase36_decoder_roots.json`.
 
+## Phase 37 boundary — one-orbit sparsity is not address multiplicity
+
+Phase 37 introduces no new `REFUTED` claim. Its P220 uniform interval theorem
+is valid, but it counts points on one equal-time collision-free positive set.
+It cannot be substituted for P80's count over many canonical renewal
+addresses: different addresses may overlap in ordinary height, each lattice
+count has a `+1` term, and NG23 already forbids raw Haar replacement.
+
+P223's stronger density-one defect exponent and P224/P225's vanishing
+companion ratio and endpoint ceiling likewise remain compatible with an
+infinite formal or positive path unless a new ordinary-lift, multiplicity, or
+P86 descent theorem is added. NG22 remains the mandatory analytic/2-adic
+countermodel. See
+[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md),
+Sections 7--12.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

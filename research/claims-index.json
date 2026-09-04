@@ -1,5 +1,5 @@
 {
-  "claim_count": 291,
+  "claim_count": 300,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -973,8 +973,8 @@
     },
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, surplus/coalescent irreducibility, or a lift-linked complexity theorem to exclude every infinite coefficient-safe tail.",
-      "collatz_implication": "Would eliminate the permanent-safe nonperiodic branch of P69; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, EXT08, E23, E24, E30, E31, E32, E33, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
+      "collatz_implication": "Would eliminate the only nonperiodic branch left by P222; cycles remain separate.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, EXT08, E23, E24, E30, E31, E32, E33, E53, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
       "dependency_ids": [
         "E23",
         "E24",
@@ -982,6 +982,7 @@
         "E31",
         "E32",
         "E33",
+        "E53",
         "EXT08",
         "NG21",
         "NG22",
@@ -1015,6 +1016,13 @@
         "P129",
         "P130",
         "P131",
+        "P219",
+        "P220",
+        "P221",
+        "P222",
+        "P223",
+        "P224",
+        "P225",
         "P72",
         "P73",
         "P75",
@@ -1032,11 +1040,11 @@
         "P87",
         "P88"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/garcia-tal-phase12/REPORT.md`](../research/audits/garcia-tal-phase12/REPORT.md); [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-08-29 (Phase 21 audit)",
-      "notes": "P127 now forces unconditional linear factor complexity, but no theorem links that diversity or P131 peak growth to ordinary-height upper bounds or a nonzero P115 lift. P80 and H112 remain unproved.",
+      "last_audited": "2026-09-03 (Phase 37 audit)",
+      "notes": "P223 strengthens the density-one defect bound and P224/P225 constrain renewal growth, but no theorem controls canonical-address multiplicity, forces a nonzero P115 lift, or extinguishes the P81/P86 irreducible tree. P80 and H112 remain unproved.",
       "status": "OPEN"
     },
     {
@@ -1127,8 +1135,8 @@
       "evidence": "[`../research/audits/renewal-code-pressure/REPORT.md`](../research/audits/renewal-code-pressure/REPORT.md), Section 2; `artifacts/phase13_renewal_code.json`; independent convention tests.",
       "first_introduced": "Phase 13",
       "id": "P77",
-      "last_audited": "2026-08-26",
-      "notes": "The discrepancy hypotheses are conditional for a hypothetical nonperiodic positive orbit through EXT07/P74; P77 does not establish them unconditionally for all starts.",
+      "last_audited": "2026-09-03 (Phase 37 dependency audit)",
+      "notes": "P222 now establishes the discrepancy hypotheses internally for every nonperiodic positive orbit; EXT07/P74 remains a historical independent route. P77 does not establish them for arbitrary formal starts.",
       "status": "VERIFIED_THEOREM"
     },
     {
@@ -1214,18 +1222,17 @@
     },
     {
       "claim": "If positive counterexample sources with `Delta_n>0` for all `n>0` and `Delta_n->infinity` exist, the least such source has no initial renewal address with a uniform positive downward P81 rewrite. Reducibility is preserved by a common right suffix and accepted rewrite edges terminate.",
-      "collatz_implication": "Restricts the H72 branch to an irreducible initial-address tree, conditional only in its EXT07/P74 application.",
-      "dependencies": "P77, P81; well-ordering; renewal-prefix safety; shared-future counterexample property. The nonperiodic Collatz application uses EXT07/P74.",
+      "collatz_implication": "Restricts the H72 branch to an irreducible initial-address tree without needing EXT07; EXT07/P74 remains an independent historical route.",
+      "dependencies": "P77, P81; well-ordering; renewal-prefix safety; shared-future counterexample property. P222 now supplies the ordinary nonperiodic Collatz application internally.",
       "dependency_ids": [
-        "EXT07",
-        "P74",
+        "P222",
         "P77",
         "P81"
       ],
-      "evidence": "[`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md), Section 4; `artifacts/phase14_coalescent_theory.json`; independent verifier.",
+      "evidence": "[`../research/audits/coalescent-rewrite/REPORT.md`](../research/audits/coalescent-rewrite/REPORT.md), Section 4; `artifacts/phase14_coalescent_theory.json`; [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 6; independent verifiers.",
       "first_introduced": "Phase 14",
       "id": "P82",
-      "last_audited": "2026-08-27",
+      "last_audited": "2026-09-03 (Phase 37 dependency audit)",
       "notes": "Does not prove every address reducible, global confluence, P80, H72, or cycle exclusion.",
       "status": "VERIFIED_THEOREM"
     },
@@ -1304,17 +1311,16 @@
     },
     {
       "claim": "If a safe initial word `d` of the least positive permanent-safe discrepancy-escaping shared-future source reaches `Y`, then no smaller positive source can reach `Y` through a safe word `b` with `c(b)>=c(d)`.",
-      "collatz_implication": "Strengthens P82 from same-Q affine rewrites to every surplus-dominating safe ancestor.",
-      "dependencies": "P77; well-ordering; deterministic shared future. The nonperiodic Collatz application uses EXT07/P74.",
+      "collatz_implication": "Strengthens P82 from same-Q affine rewrites to every surplus-dominating safe ancestor without needing EXT07.",
+      "dependencies": "P77; well-ordering; deterministic shared future. P222 now supplies the ordinary nonperiodic Collatz application internally.",
       "dependency_ids": [
-        "EXT07",
-        "P74",
+        "P222",
         "P77"
       ],
-      "evidence": "[`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md), Section 2; `artifacts/phase15_surplus_theory.json`; independent verifier.",
+      "evidence": "[`../research/audits/surplus-dominance/REPORT.md`](../research/audits/surplus-dominance/REPORT.md), Section 2; `artifacts/phase15_surplus_theory.json`; [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 6; independent verifiers.",
       "first_introduced": "Phase 15",
       "id": "P86",
-      "last_audited": "2026-08-28",
+      "last_audited": "2026-09-03 (Phase 37 dependency audit)",
       "notes": "Does not prove that every safe prefix has such an ancestor; cycles remain separate.",
       "status": "VERIFIED_THEOREM"
     },
@@ -4169,9 +4175,139 @@
       "last_audited": "2026-09-03",
       "notes": "Smallest exact counterexample: `q=3,K=5`, actual positions `(0,1,2)`, mechanical `(0,1,3)`, profile `(0,0,1)`; `[3,5)` misses changed position 2.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "For a length-`N` shortcut parity vector with `s` odd bits, `B<=2^(N-s)(3^s-2^s)`, uniquely maximized by `0^(N-s)1^s`; for every translated interval of length `X<=2^N`, all fixed-`s` images fit in an integer interval of length `2*3^s`, and each vector occurs at most once.",
+      "collatz_implication": "Supplies the translation-uniform compression step for P220.",
+      "dependencies": "Exact affine recurrence; odd positions strictly ordered; parity-cylinder residue modulo `2^N`.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 3; `artifacts/phase37_affine_interval_audit.json`; independent verifier.",
+      "first_introduced": "Phase 37",
+      "id": "P219",
+      "last_audited": "2026-09-03",
+      "notes": "The image interval depends on the translation, and fixed finite checks do not prove the all-`N` statement.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If `G(X)` is the largest occupancy of any length-`X` translated interval by an equal-time collision-free positive set, then `G(X)=O_rho(X^rho)` for every `rho>rho_*=H_2(1/log_2 3)`; explicitly `G(X)<32X^(29/30)` for every integer `X>=1`.",
+      "collatz_implication": "Internally supplies a location-uniform power sparsity theorem for actual nonperiodic orbits and primitive positive cycles.",
+      "dependencies": "P219; image closure of equal-time collision-free sets; deterministic binomial entropy count; strong induction.",
+      "dependency_ids": [
+        "P219"
+      ],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 4; `artifacts/phase37_induction_certificate.json`; independent exact verifier.",
+      "first_introduced": "Phase 37",
+      "id": "P220",
+      "last_audited": "2026-09-03",
+      "notes": "It controls one collision-free set, not multiplicity across many canonical renewal addresses; no literature-wide novelty claim is made.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For every `p>rho>rho_*`, every equal-time collision-free positive set satisfies `sum_(x>=S)x^(-p)=O_(rho,p)(S^(rho-p))`; choosing `rho_*<rho<1,p=1` gives a uniform reciprocal tail bound.",
+      "collatz_implication": "Converts internal uniform sparsity into the summability input needed by P222/P224/P226.",
+      "dependencies": "P220; dyadic shell decomposition and a convergent geometric series.",
+      "dependency_ids": [
+        "P220"
+      ],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 5.",
+      "first_introduced": "Phase 37",
+      "id": "P221",
+      "last_audited": "2026-09-03",
+      "notes": "The choice `rho<1` is essential for reciprocal decay; this does not control address multiplicity.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every non-eventually-periodic positive integer shortcut orbit has `sum_n 1/x_n<infinity`, `q_n log 3-n log 2->+infinity`, and an odd strict suffix minimum whose every nonempty future prefix has coefficient greater than one. Hence an actual positive counterexample is either a nontrivial positive cycle or has a permanent coefficient-safe nonperiodic tail.",
+      "collatz_implication": "Removes the need for EXT07/P74 in the ordinary Collatz permanent-safe reduction and makes H70 unnecessary as a global branch route.",
+      "dependencies": "P220/P221; exact shortcut product identity; injectivity of a nonperiodic deterministic positive orbit; unique factorization of powers of 2 and 3.",
+      "dependency_ids": [
+        "P220",
+        "P221"
+      ],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 6; Phase 37 theory and verifier artifacts.",
+      "first_introduced": "Phase 37",
+      "id": "P222",
+      "last_audited": "2026-09-03",
+      "notes": "It does not prove H70's spacing statement, exclude a permanent-safe tail, exclude cycles, or prove Collatz.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "On the P222 odd permanent-safe tail, `#{j:a_j<=A}=O_(x0,rho)(2^(rho A))` for every `rho>rho_*`; hence `sum_j 2^(-a_j)<infinity`, `a_j->infinity`, and for every `c<1/rho_*`, `a_j>c log_2 j` on a density-one set.",
+      "collatz_implication": "Internally strengthens P72's density-one coefficient and recovers P75's qualitative conclusions without EXT07.",
+      "dependencies": "P72 normalization; P220/P222; choose `rho_*<rho<min(1,1/c)` for the summability and density conclusions.",
+      "dependency_ids": [
+        "P220",
+        "P222",
+        "P72"
+      ],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 7.",
+      "first_introduced": "Phase 37",
+      "id": "P223",
+      "last_audited": "2026-09-03",
+      "notes": "It is not pointwise, supplies no last-small-defect time, and NG22 remains valid.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At P77 renewal boundaries `S_i` of a P222 orbit, P76's companion satisfies `h_i=O(S_i^rho)` and `(h_i-1)/(S_i+1)->0` for every fixed `rho_*<rho<1`.",
+      "collatz_implication": "Adds a genuine vanishing companion-ratio constraint to H72 beyond P84 monotonicity.",
+      "dependencies": "P76/P77/P221/P222; strict actual suffix minimum; exact infinite tail product and `exp(u)-1=O(u)` as `u->0`.",
+      "dependency_ids": [
+        "P221",
+        "P222",
+        "P76",
+        "P77"
+      ],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 8.",
+      "first_introduced": "Phase 37",
+      "id": "P224",
+      "last_audited": "2026-09-03",
+      "notes": "Sublinear companion size does not force renewal extinction or ordinary-source descent.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Consecutive renewal states on a P222 orbit satisfy `limsup_i S_(i+1)/S_i<=3/2`, and therefore `S_i=O_epsilon((3/2+epsilon)^i)` for every `epsilon>0`.",
+      "collatz_implication": "Gives an upper growth envelope for any surviving H72 renewal path.",
+      "dependencies": "P79 exact transition `S_(i+1)+1=c_i(S_i+R_i)` with `R_i<h_i`, `1<c_i<=3/2`; P224 and `S_i->infinity`.",
+      "dependency_ids": [
+        "P224",
+        "P79"
+      ],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 8; exact renewal convention corpus.",
+      "first_introduced": "Phase 37",
+      "id": "P225",
+      "last_audited": "2026-09-03",
+      "notes": "It gives no exponential lower growth and is compatible with an infinite irreducible path.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For each fixed `rho_*<rho<1`, every primitive positive noncritical cycle (`lambda=3^q/2^L<1/2`) has minimum `m<M_rho` for an effective constant depending only on the P220 bound.",
+      "collatz_implication": "Reduces the noncritical positive-cycle branch to a finite minimum range in principle.",
+      "dependencies": "P220/P221; exact positive-cycle product; primitive cycle states are equal-time collision-free.",
+      "dependency_ids": [
+        "P220",
+        "P221"
+      ],
+      "evidence": "[`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md), Section 9.",
+      "first_introduced": "Phase 37",
+      "id": "P226",
+      "last_audited": "2026-09-03",
+      "notes": "No practical optimized cutoff is claimed; critical and arbitrary-area cycles remain open.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks `N0=135` and failure at 134, all 131,070 parity words through `N<=16`, 49,928 points in 180 translated intervals through `N<=12`, 209,868 orbit product steps, 154 renewal codewords, 84 finite addresses, 228 renewal boundaries, and all mandatory adversarial controls.",
+      "collatz_implication": "Audits P219--P225 conventions and the explicit P220 induction certificate.",
+      "dependencies": "Declared finite ranges; arbitrary-precision integers and rationals; verifier imports no Phase 37 generator or `src`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); Phase 37 artifacts, independent verifier, and tamper tests.",
+      "first_introduced": "Phase 37",
+      "id": "E53",
+      "last_audited": "2026-09-03",
+      "notes": "Bounded agreement is not the proof of the all-scale theorem and does not establish a nonperiodic positive orbit. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "8d97813f90106559a1ff47ffe9f0f13483803dc58edc8a5d8d00cb1c677856aa"
+  "source_sha256": "b3bcff022024d0a60392b2d2b5630f27769c54f1e886a360e173a10995c63c3b"
 }

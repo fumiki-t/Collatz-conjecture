@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 36
+# Collatz research synthesis through Phase 37
 
 **Audit date:** 2026-09-03
 
-**Audited base:** Phase 36 accepted evidence and independent verifier
+**Audited base:** Phase 37 accepted evidence and independent verifier
 
-**Latest accepted phase:** Phase 36
+**Latest accepted phase:** Phase 37
 
 **Problem status:** `OPEN`
 
@@ -204,12 +204,15 @@ flowchart TD
     P54 --> H54["H54 eventual M > Hq"]
 
     NP --> P69["P69 unconditional trichotomy"]
-    P69 --> RL["Finite-crossing renewal ladder"]
+    P69 --> RL["Formal finite-crossing renewal ladder"]
     P69 --> ST["Permanent coefficient-safe tail"]
-    RL --> H70["H70 dropping-safe spacing"]
+    RL --> H70["H70 standalone dropping-safe spacing"]
+    P219["P219 fixed-count image diameter"] --> P220["P220 internal uniform sparsity"]
+    P220 --> P222["P222 internal permanent-safe reduction"]
+    P222 --> ST
     ST --> H72["H72 positive ordinary obstruction"]
 
-    EXT07["EXT07 external interval sparsity"] --> P74["P74 conditional permanent-safe reduction"]
+    EXT07["EXT07 historical external interval sparsity"] --> P74["P74 conditional permanent-safe reduction"]
     P74 --> ST
     P74 -. "bypasses, does not prove" .-> H70
 
@@ -221,13 +224,12 @@ flowchart TD
     CY --> CP["Separate cycle exclusion still required"]
 ```
 
-P69 is an internal trichotomy, but it eliminates none of its branches.
-Without EXT07, H70 is an independent possible way to remove the finite-crossing
-ladder. If EXT07 and P74 are admitted, every nonperiodic positive orbit is
-eventually permanent-safe, so H72 becomes the strategic nonperiodic target;
-H70 remains open and is not proved by that bypass. A complete solution still
-requires both the nonperiodic branch and the nontrivial positive-cycle branch
-to be excluded.
+P69 is an internal trichotomy. P220--P222 now prove internally that every
+actual nonperiodic positive orbit enters its permanent-safe branch, so H72 is
+the sole surviving nonperiodic obligation. H70 remains an open standalone
+spacing theorem, but is no longer needed globally. EXT07/P74 remains a valid
+historical independent route. A complete solution still requires both H72 and
+the nontrivial positive-cycle branch to be excluded.
 
 ## 4. Phase-by-phase synthesis
 
@@ -419,8 +421,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   `kappa<3/4`, `sigma<7/12`, `tau<19/96`, `nu<9/32`. P79 proves
   `R(w)>=13/9` with equality only at `110`, the positive-source bridge, and
   normalized valuation transfer. E22 is finite in its stated domain.
-- **External input:** P77–P79 are internal. Their application to every
-  nonperiodic positive orbit uses EXT07/P74.
+- **External input:** P77–P79 are internal. P222 now supplies their application
+  to every nonperiodic positive orbit internally; EXT07/P74 is historical.
 - **Obstacle:** P80's anti-concentration premises are unproved. NG23 refutes
   coefficient-one raw Haar volume at `u=1,H=2`. Ordinary lattice counts retain
   a per-address `+1`, and endpoint cylinders can nest across `Q`.
@@ -440,9 +442,9 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   rational-shadow denominator/gcd bounds for positive octave defect. E23
   exhausts all 30,084 addresses with total `Q<=13`, finding 5,949 positive
   downward rewrite pairs and 24,197 finite normal forms.
-- **External input:** P81/P83/P84 are internal. The counterexample application
-  in P82 uses EXT07/P74 to cover every nonperiodic positive orbit. P85 assumes
-  the reciprocal-summable permanent-safe setting of P76.
+- **External input:** P81/P83/P84 are internal. P222 now covers every
+  nonperiodic positive orbit in the P82 application without EXT07. P85 assumes
+  the reciprocal-summable permanent-safe setting of P76/P221.
 - **Obstacle:** finite acyclicity and uniqueness do not imply eventual
   reducibility or confluence. NG24 proves endpoint coalescence is a right
   congruence under common suffixes but not a left congruence under prefixing.
@@ -463,8 +465,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   fixed-Q endpoint injectivity for `{1,2}` odd-gap words. E24 exhausts every
   safe target and competitor through Q=17 and all relevant shorter same-Q
   arbitrary targets.
-- **External input:** P86--P88 are internal. Applying P86 to every
-  nonperiodic counterexample uses EXT07/P74 exactly as P82 did.
+- **External input:** P86--P88 are internal. P222 now supplies the
+  nonperiodic-counterexample application internally, as for P82.
 - **Obstacle:** NG25 refutes same-Q completeness and NG26 refutes filtering out
   unsafe targets before valley extraction. At Q=17, 343,367 of 663,535 safe
   words survive competitors with `Q_b<=Q_d`, including all 32,596 safe
@@ -940,6 +942,27 @@ See the [`Phase 35 audit`](../research/audits/full-decoder-joint-scalar/REPORT.m
 
 See the [`Phase 36 audit`](../research/audits/root-event-polynomial/REPORT.md).
 
+### Phase 37 — internal uniform sparsity and renewal boundaries
+
+- **Uniform internal theorem:** P219's fixed-odd-count affine diameter closes
+  a strong induction for every translated interval. P220 proves
+  `G(X)=O_rho(X^rho)` for every `rho>H_2(1/log_2 3)`, with the exact explicit
+  bound `G(X)<32X^(29/30)` and induction threshold `N0=135`.
+- **Nonperiodic reduction:** P221/P222 give reciprocal summability,
+  discrepancy escape, and an odd permanent coefficient-safe suffix minimum
+  for every nonperiodic positive integer orbit without EXT07.
+- **H72 constraints:** P223 gives `O(2^(rho A))` small-defect counting and a
+  density-one coefficient approaching `1/rho_*`; P224/P225 give
+  `h_i=o(S_i)` and renewal endpoint limsup ratio at most `3/2`.
+- **Cycle boundary:** P226 makes every noncritical primitive positive cycle
+  minimum effectively bounded, without an optimized cutoff or critical-cycle
+  exclusion.
+- **Finite evidence:** E53 reconstructs the exact induction boundary, 131,070
+  parity words, 49,928 translated points, 209,868 product steps, renewal
+  conventions, tamper rejection, and mandatory adversarial families.
+
+See the [`Phase 37 audit`](../research/audits/internal-uniform-sparsity/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -947,7 +970,7 @@ See the [`Phase 36 audit`](../research/audits/root-event-polynomial/REPORT.md).
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P218 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P226 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG42.
 
@@ -958,9 +981,10 @@ None is a full convergence theorem.
 1. **P54/H54 route.** An eventual `M(K_q-1)>H_q` theorem plus a finite
    remainder would contradict P54's conditional first-crossing box. The
    eventual lower bound is missing.
-2. **EXT07/P74 route.** Accepting the external interval-sparsity theorem turns
-   every nonperiodic positive orbit into a permanent-safe tail. P72–P79 then
-   impose strong structure, but H72 is still open.
+2. **P220/P222 internal route.** Every nonperiodic positive orbit is now
+   internally reduced to a permanent-safe tail. P72--P79 and P223--P225 impose
+   strong structure, but H72 is still open. EXT07/P74 is retained as a
+   historical independent route rather than a necessary premise.
 3. **P80 target.** For address multiplicity counts, either quantified bound
 
    \[
@@ -1048,7 +1072,7 @@ The annotated source is [`LITERATURE.md`](LITERATURE.md). Its role map is:
 | Denjoy–Koksma | EXT04 rotation-sum bounds in large conditional certificates | an internal proof of the external theorem or of Collatz |
 | Barina verification project | X02 external finite lower bound | any statement above the published/computed boundary or asymptotic truth |
 | Rozier–Terracol | EXT05 in C02 and overlap for paradoxical words | the paper's heuristic finiteness as a theorem |
-| Garcia–Tal / Heppner | EXT07 interval sparsity | an internal proof of Heppner or exclusion of permanent-safe tails |
+| Garcia–Tal / Heppner | EXT07 historical interval-sparsity route; its needed ordinary-orbit consequence is now reproved internally by P220--P223 | exclusion of permanent-safe tails or a claim that the whole external theorem was internally reproved |
 | Lagarias; Monks–Yazinski; López–Stoll | critical density, 2-adic, and Sturmian overlap | that an arbitrary critical orbit is Sturmian or positive ordinary |
 | Fernández–Ibáñez | EXT06 Christoffel extremality context | that P65 proves or uses the external extremality theorem |
 | Tao | almost-everywhere descent context | exclusion of one exceptional least counterexample |
@@ -1068,7 +1092,8 @@ tail. **Known traps:** NG21--NG31, source 167, 2-adic versus ordinary positivity
 per-address lattice errors, cross-`Q` endpoint nesting, loss of left-prefix
 carry data, and unproved finite-state closure. **Acceptance:** an orbit-specific arithmetic theorem proving one
 P80 bound, eventual P86 surplus reducibility, or an equivalent positive-height
-obstruction, plus a checked finite remainder. See
+obstruction, plus a checked finite remainder. P220's one-orbit occupancy bound
+is not by itself a many-address P80 estimate. See
 [`context/H72.md`](context/H72.md).
 
 ### H54 — eventual critical-prefix barrier
@@ -1123,9 +1148,10 @@ or an all-area coprime/noncoprime H133 theorem. See
 
 ### H70 — renewal-ladder spacing
 
-**Target:** prove the eventual dropping-safe spacing in P70. It is an internal,
-external-input-independent way to exclude the finite-crossing ladder. Under
-EXT07/P74 the ladder is conditionally bypassed, but H70 remains open and useful.
+**Target:** prove the eventual dropping-safe spacing in P70 as a standalone
+theorem. P222 internally bypasses the finite-crossing ladder for actual
+nonperiodic positive orbits without proving H70, so this is no longer a
+necessary global branch.
 See [`context/H70.md`](context/H70.md).
 
 ### C04, C05, and C03
@@ -1205,8 +1231,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase36.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase36_verifier.json
+.venv/bin/python verifier/verify_phase37.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase37_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

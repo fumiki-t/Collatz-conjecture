@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 36
+    assert result["latest_phase"] == 37
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -231,15 +231,16 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["E51"] == "VERIFIED_FINITE"
     assert result["active_focus"]["E52"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG42"] == "REFUTED"
+    for claim in ("P219", "P220", "P221", "P222", "P223", "P224", "P225", "P226"):
+        assert result["active_focus"][claim] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E53"] == "VERIFIED_FINITE"
     assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["area229_frontier_candidates"] == 1926
-    assert result["latest_supplemental_verifier"]["area229_root_margin"] == -1277
-    assert result["latest_supplemental_verifier"]["root_classes"] == 2214
-    assert result["latest_supplemental_verifier"]["event_classes"] == 797
-    assert result["latest_supplemental_verifier"]["low_q_rows"] == 7221
-    assert result["latest_supplemental_verifier"]["decoded_words"] == 1166058
+    assert result["latest_supplemental_verifier"]["explicit_constant"] == 32
+    assert result["latest_supplemental_verifier"]["induction_N0"] == 135
+    assert result["latest_supplemental_verifier"]["affine_counts"]["words"] == 131070
+    assert result["latest_supplemental_verifier"]["renewal_counts"]["product_checks"] == 209868
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -290,6 +291,8 @@ def test_repository_research_health() -> None:
     assert ("phase35-full-decoder-joint-scalar" in result["accepted_experiments"]) == (phase35["status"] == "ACCEPTED")
     phase36 = json.loads(Path("research/experiments/phase36-root-event-polynomial.json").read_text(encoding="utf-8"))
     assert ("phase36-root-event-polynomial" in result["accepted_experiments"]) == (phase36["status"] == "ACCEPTED")
+    phase37 = json.loads(Path("research/experiments/phase37-internal-uniform-sparsity.json").read_text(encoding="utf-8"))
+    assert ("phase37-internal-uniform-sparsity" in result["accepted_experiments"]) == (phase37["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -313,7 +316,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 291
+    assert committed["claim_count"] == 300
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -351,6 +354,9 @@ def test_generated_claim_index_is_complete() -> None:
     assert rows["E51"]["status"] == "VERIFIED_FINITE"
     assert rows["E52"]["status"] == "VERIFIED_FINITE"
     assert rows["NG42"]["status"] == "REFUTED"
+    for claim in ("P219", "P220", "P221", "P222", "P223", "P224", "P225", "P226"):
+        assert rows[claim]["status"] == "VERIFIED_THEOREM"
+    assert rows["E53"]["status"] == "VERIFIED_FINITE"
     assert rows["P137"]["status"] == "VERIFIED_THEOREM"
     assert rows["P139"]["status"] == "CONDITIONAL"
     assert rows["E34"]["status"] == "VERIFIED_FINITE"
@@ -463,6 +469,13 @@ def test_generated_claim_index_is_complete() -> None:
         "P129",
         "P130",
         "P131",
+        "P219",
+        "P220",
+        "P221",
+        "P222",
+        "P223",
+        "P224",
+        "P225",
         "EXT08",
         "E23",
         "E24",
@@ -470,6 +483,7 @@ def test_generated_claim_index_is_complete() -> None:
         "E31",
         "E32",
         "E33",
+        "E53",
         "NG21",
         "NG22",
         "NG23",

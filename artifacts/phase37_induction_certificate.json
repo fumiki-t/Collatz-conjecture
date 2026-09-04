@@ -1,0 +1,48 @@
+{
+  "exact_comparisons": {
+    "base_bound": "2^134 < 32^30",
+    "contraction": {
+      "left": "3^14",
+      "relation": "<",
+      "right": "2^23"
+    },
+    "entropy": {
+      "left": "23^690",
+      "relation": "<",
+      "right": "2^667*14^420*9^270"
+    },
+    "low_half_N0": true,
+    "low_half_N0_minus_1": false,
+    "low_half_minimum_N": 135,
+    "low_ratio": {
+      "left": "3^406",
+      "relation": "<",
+      "right": "2^667"
+    },
+    "recursive_argument_minimum_N": 57
+  },
+  "floating_point_used_for_acceptance": false,
+  "format": "collatz-phase37-induction-certificate-v1",
+  "induction_bounds": {
+    "closure": "G(X)<18*X^(29/30)<32*X^(29/30)",
+    "explicit_theorem": "G(X)<32*X^(29/30) for every integer X>=1",
+    "high_part": "<2*X^(29/30)",
+    "low_part": "<16*X^(29/30) after inserting the induction hypothesis",
+    "recurrence": "G(X)<=sum_(0<=s<=floor(14N/23)) G(2*3^s)+2^(N*H2(14/23))",
+    "recursive_arguments": "2*3^s<X for N>=135"
+  },
+  "limiting_theorem": "For every rho>H2(1/log2(3)), G(X)=O_rho(X^rho); rho>=1 is trivial and rho<1 uses theta in (1/2,1/log2(3)).",
+  "proves_collatz": false,
+  "rational_parameters": {
+    "N0": 135,
+    "constant": 32,
+    "rho": [
+      29,
+      30
+    ],
+    "theta": [
+      14,
+      23
+    ]
+  }
+}

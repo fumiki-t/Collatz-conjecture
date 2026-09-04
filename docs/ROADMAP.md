@@ -158,7 +158,7 @@ support forces a strict full-`D` arithmetic contradiction. It must cover the
 noncoprime block cofactor and profiles strictly above the P193 frontier; a
 second finite area increment is not a substitute.
 
-## P1 — Renewal-ladder dropping-safe barrier
+## P2 — Renewal-ladder dropping-safe barrier
 
 **Target.** Prove H70, the eventual inequality used by P70:
 
@@ -167,16 +167,14 @@ Delta_down_Kq(floor(H_q)+floor((q-1)/3))
   > floor((q-1)/3).
 ```
 
-**Why this helps.** P69 is unconditional and exhaustive: this target would
-eliminate every nonperiodic counterexample whose tail minima have finite
-coefficient crossings. A complete Collatz proof would still have to exclude a
-nontrivial cycle and an infinite coefficient-safe tail.
+**Why this helps.** This remains a valid standalone spacing theorem and would
+eliminate P69's finite-crossing ladder directly. P222 now proves internally
+that an actual nonperiodic positive orbit enters a permanent-safe tail, so H70
+is no longer a necessary global branch. A complete Collatz proof still has to
+exclude that tail and nontrivial positive cycles.
 
-EXT07/P74 now provide a separate conditional bypass: if the external
-Garcia--Tal--Heppner sparsity input is admitted, every nonperiodic positive
-orbit is eventually permanently coefficient-safe. H70 remains valuable as an
-internal, external-input-independent theorem and must not be reported as
-proved by that bypass.
+EXT07/P74 retain the historical conditional bypass. P220--P222 provide an
+internal bypass. Neither is a proof of H70's spacing inequality.
 
 **Missing theorem.** A cross-cylinder ordinary-height lower bound for
 dropping-safe pairs. P71 closes all affine margin inequalities inside one fixed
@@ -192,23 +190,25 @@ empty-set finite pass as vacuous.
 effective threshold and independently certified finite remainder. Separately
 state which argument excludes the other two P69 branches.
 
-## P1 — Infinite-safe-tail transition packing
+## P0 — Infinite-safe-tail transition packing
 
-**Target.** Prove H72: combine P72/P75 with actual odd-orbit transitions,
-positivity, or effective ordinary-height information until no infinite
-coefficient-safe positive-integer tail can satisfy the resulting law.
+**Target.** Prove H72: combine P72 and P219--P225 with actual odd-orbit
+transitions, canonical-address multiplicity, positivity, or effective
+ordinary-height information until no infinite coefficient-safe
+positive-integer tail can satisfy the resulting law.
 
-**Why this helps.** This would eliminate the permanent-safe nonperiodic branch
-of P69. Under EXT07/P74 the finite-crossing nonperiodic branch is conditionally
-absent; a nontrivial-cycle exclusion remains separate.
+**Why this helps.** P222 makes this the sole nonperiodic branch internally.
+Eliminating it would leave the nontrivial positive-cycle branch separate.
 
-**Missing theorem.** P75 conditionally upgrades P72 to reciprocal summability,
-`a_j->infinity`, and an external `O((A+1)2^(beta A))` small-defect count. P76
-adds exact real/2-adic rational shadows. NG21 shows mod-6 packing is
-exponent-sharp, while NG22 shows the strengthened analytic conditions and an
-odd 2-adic source are still mutually compatible. A successful proof must use
-positive ordinary-integrality, effective reduced height/gcd, or a genuinely
-stronger orbit-transition invariant.
+**Missing theorem.** P220--P223 now prove internally a uniform power sparsity
+bound, reciprocal summability, `a_j->infinity`, and
+`#{j:a_j<=A}=O(2^(rho A))` for every `rho>rho_*`. P224/P225 add
+`h_i=o(S_i)` and a `3/2` renewal-growth ceiling. None controls the multiplicity
+of many canonical addresses or produces a nonzero ordinary lift. NG21 shows
+mod-6 packing is exponent-sharp, while NG22 shows the analytic conditions and
+an odd 2-adic source remain compatible. A successful proof must add positive
+ordinary-integrality, cross-address arithmetic, effective reduced height/gcd,
+or a genuinely stronger orbit-transition invariant.
 
 Phase 13 now supplies the exact renewal code P77, pressure bounds P78, and the
 valuation-conditioned positive-source transfer P79. P80 proves that either a
@@ -283,6 +283,14 @@ stammering, and P131 converts low factor capacity into large orbit peaks.
 These are lower bounds on symbolic diversity or peak height, not the upper
 height or nonzero-lift statement needed for H72.
 
+Phase 37 supplies the missing internal one-orbit sparsity layer. P219 controls
+every translated fixed-count image interval, P220 proves
+`G(X)=O_rho(X^rho)` and explicitly `G(X)<32X^(29/30)`, and P221/P222 remove
+the EXT07 dependency from permanent safety. P223 improves the density-one
+defect coefficient to every `c<1/rho_*`; P224/P225 constrain companion and
+endpoint growth. The sharp boundary is now explicit: one-orbit occupancy is
+not P80's many-address count, and these bounds do not force P86 descent.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
@@ -305,7 +313,8 @@ nonzero canonical lift.
 every positive ordinary integer permanent-safe source, with an independently
 checkable finite remainder. A stronger exponent unsupported by new transition
 data, or a contradiction that also rejects NG22 without using positivity,
-does not meet this criterion.
+does not meet this criterion. Reapplying P220 to one realized orbit without a
+cross-address bridge also does not meet it.
 
 ## P1 — Structural lower bounds for `M(k)`
 

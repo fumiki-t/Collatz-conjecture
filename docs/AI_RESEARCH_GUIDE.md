@@ -2,19 +2,22 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 36's root/event-polynomial audit is the
+proof of the conjecture. Phase 37's internal uniform-sparsity audit is the
 latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–36 evidence boundaries, and current obligations.
+   branch map, Phase 1–37 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md), then its inputs,
+6. [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md), then its inputs,
+   especially [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md)
+   and [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md), then the
+   Phase 36 inputs,
    including [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md),
    [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md),
    [`../PHASE33_RUN_RESULTS.md`](../PHASE33_RUN_RESULTS.md), and
@@ -93,12 +96,17 @@ flowchart TD
     P68 --> C05
 
     P69["P69 counterexample trichotomy"] --> Cycle["Exclude nontrivial cycles"]
-    P69 --> P72["P72 odd-orbit packing"]
+    P219["P219 fixed-count image diameter"] --> P220["P220 internal uniform sparsity"]
+    P220 --> P222["P222 permanent-safe reduction"]
+    P222 --> P72["P72 odd-orbit packing"]
+    P220 --> P223["P223 stronger defect count"]
+    P223 --> H72["H72 positivity or height obstruction"]
+    P222 --> P224["P224 vanishing companion ratio"]
+    P224 --> P225["P225 endpoint growth ceiling"]
+    P225 --> H72
     P72 --> P73["P73 excludes all-contact word"]
-    EXT07["EXT07 external interval sparsity"] --> P74["P74 permanent-safe reduction"]
-    P74 --> P75["P75 summable defect strengthening"]
-    P72 --> P75
-    P75 --> H72["H72 positivity or height obstruction"]
+    EXT07["EXT07 historical external interval sparsity"] --> P74["P74 conditional permanent-safe reduction"]
+    P74 -. "independent historical route" .-> P72
     P76["P76 real and 2-adic shadows"] --> H72
     P77["P77 renewal prefix code"] --> P78["P78 pressure bounds"]
     P78 --> P80["P80 conditional anti-concentration"]
@@ -215,9 +223,10 @@ flowchart TD
 Arrows mean “is an input to,” not “has been proved unconditionally.” X02 is
 external evidence; P54, P60, P63, P64, and P67 are conditional. P68 is an
 unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
-or exact reductions. EXT07 is external; P74/P75 are conditional on it.
+or exact reductions. EXT07 is external and P74/P75 are conditional on it;
+P219--P225 now provide the needed ordinary nonperiodic-orbit route internally.
 P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
-P129--P138, P140, P141, P144, P145, P147--P199 are
+P129--P138, P140, P141, P144, P145, P147--P226 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
 P110, P119, P121, P123, P124, P128, P142, P143, and P146 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
@@ -280,7 +289,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 36 provides the
+artifacts and preserve the recorded manifest hash. Phase 37 provides the
 latest accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.
@@ -291,8 +300,8 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
 
 - Search for a quotient/carry dominance relation merging P71 cylinders while
   retaining ordinary height and explicitly separating every NG19 collision.
-- Attack H70 separately from the other two P69 branches; do not describe a
-  renewal-ladder result as a full counterexample exclusion.
+- Treat H70 as a standalone lower-priority spacing theorem. P222 bypasses its
+  branch for actual nonperiodic positive orbits but does not prove H70.
 - For H141, optimize a stated weighted correction/source inequality against
   concentrated defects, NG32, and P152/P153's nonempty q0 support interval
   before any larger critical/profile scan.
@@ -305,9 +314,11 @@ Do not introduce a new claim ID for a renamed copy of an existing obligation.
   term, the all-fixed-`R` quantifier, and both rotations. Do not infer actual
   maximum-state saturation from the `n_cyc` proxy or treat another finite
   area increment as an arbitrary-area theorem.
-- Attack H72 through positive ordinary-integrality, effective reduced
-  shadow-height/gcd, P79's valuation-conditioned successor congruences, or a
-  P86 cross-Q surplus state retaining the carries lost in NG24.
+- Attack H72 by adding a many-address or ordinary-lift bridge to P220--P225:
+  positive ordinary-integrality, effective reduced shadow-height/gcd, P79's
+  valuation-conditioned successor congruences, or a P86 cross-Q surplus state
+  retaining the carries lost in NG24. One-orbit uniform sparsity alone is not
+  P80's canonical-address anti-concentration.
   Mod-6 density is blocked by NG21, analytic/general-2-adic coherence by NG22,
   raw local-volume counting by NG23, and endpoint-only prefix propagation by
   NG24; same-Q or safe-target-only pruning is blocked by NG25/NG26, and

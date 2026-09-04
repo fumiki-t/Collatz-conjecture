@@ -22,18 +22,19 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 36 is the latest accepted research layer. It localizes cycle defects in
-binary root intervals, constructs a positive Mersenne event polynomial, and
-uses exact root capacity to eliminate Phase 35's area-229 scalar obstruction.
-Every critical primitive positive nontrivial cycle must now have
-reduced-profile area `A>=230`. Directly reusing the cycle-root orientation for
-the P206 decoder is refuted at `q=3`; a corrected mirror interval is proved,
-but it is not a smaller-ancestor theorem. H172, H133, H89, and the broader
-H54, H70, H72, H89, H104, H105, H112, H141, C03, C04, and C05 obligations
-remain open.
+Phase 37 is the latest accepted research layer. It gives an elementary,
+location-uniform sparsity theorem for every equal-time collision-free positive
+set: `G(X)=O_rho(X^rho)` for every
+`rho>H_2(1/log_2 3)`, with the explicit exact bound
+`G(X)<32X^(29/30)`. Consequently every nonperiodic positive shortcut orbit
+has reciprocal summability, discrepancy escape, and an odd permanent
+coefficient-safe tail without using the external Garcia--Tal/Heppner input.
+The remaining global alternatives are still a nontrivial positive cycle and
+a permanent-safe nonperiodic tail. H72, H133, and the broader H54, H70, H89,
+H104, H105, H112, H141, H172, C03, C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–36, separates internal and external
+map and conventions, summarizes Phases 1–37, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -74,12 +75,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase36.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase36_verifier.json
+.venv/bin/python verifier/verify_phase37.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase37_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 36 result](PHASE36_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 37 result](PHASE37_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

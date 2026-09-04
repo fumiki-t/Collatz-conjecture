@@ -1,0 +1,53 @@
+{
+  "affine_counts": {
+    "diameter_groups": 854,
+    "groups": 152,
+    "residue_reconstructions": 131070,
+    "translated_points": 49928,
+    "translation_cases": 180,
+    "words": 131070
+  },
+  "claims": {
+    "E53": "VERIFIED_FINITE",
+    "H133": "OPEN",
+    "H70": "OPEN",
+    "H72": "OPEN",
+    "P219": "VERIFIED_THEOREM",
+    "P220": "VERIFIED_THEOREM",
+    "P221": "VERIFIED_THEOREM",
+    "P222": "VERIFIED_THEOREM",
+    "P223": "VERIFIED_THEOREM",
+    "P224": "VERIFIED_THEOREM",
+    "P225": "VERIFIED_THEOREM",
+    "P226": "VERIFIED_THEOREM"
+  },
+  "explicit_constant": 32,
+  "format": "collatz-phase37-verifier-v1",
+  "generator_imported": false,
+  "induction_N0": 135,
+  "input_sha256": {
+    "phase37_affine_interval_audit.json": "7f043bd929b1c7ba99290abe091a462513dee3d3e694d18c7049235371d16f4a",
+    "phase37_induction_certificate.json": "c829e6787be13c36f3bb73b935193cfc6e08c1f17c8b9bcc7642f26abf1283de",
+    "phase37_obstruction_report.md": "bcfb0c637035d02c4df4e749b28d8d2a0638c56032d9bd00f3dd35a80e52dfde",
+    "phase37_regressions.json": "8139886fa42c244b39dd402ba7a29ef27f94b1e7f8261fdeb45e5df72513579d",
+    "phase37_renewal_audit.json": "f57df2dca75cac01143db98c8fe118d9126622483f9448db63df6b29e0c9717c",
+    "phase37_theory.json": "6dcbb3e28402eed0623eb9cc4918620b63f4be28e0a59cf55985cdb092da37e0"
+  },
+  "proves_collatz": false,
+  "regression_counts": {
+    "negative_cycles": 2,
+    "source_rows": 29,
+    "word_rows": 36
+  },
+  "renewal_counts": {
+    "companion_transition_checks": 154,
+    "finite_minimum_checks": 4095,
+    "orbit_starts": 4096,
+    "orbit_steps": 209868,
+    "product_checks": 209868,
+    "renewal_addresses": 84,
+    "renewal_boundaries": 228,
+    "renewal_codewords": 154
+  },
+  "valid": true
+}

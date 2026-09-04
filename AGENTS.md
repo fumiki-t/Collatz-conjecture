@@ -349,6 +349,16 @@ move them left. H89 may use P218's mirror intervals only while retaining
 ordinary source order, positivity, ancestry, signed carry, and literal safety;
 localization alone is not descent.
 
+Phase 37 proves P220's internal, location-uniform sparsity theorem and P222's
+permanent-safe reduction for every actual nonperiodic positive orbit. H70
+remains an open standalone spacing statement but is no longer a necessary
+global branch. H72 work should use P223--P225's stronger defect count,
+vanishing companion ratio, and `3/2` endpoint ceiling only when a new argument
+also controls canonical-address multiplicity, ordinary lifts, or P86 descent;
+one-orbit sparsity is not P80. Preserve NG22. On the cycle side, P226 reduces
+noncritical cycles to an effective finite minimum range in principle, but no
+optimized cutoff or critical arbitrary-area exclusion is supplied.
+
 Phase 31 replaces the near-uniform singleton picture by P185/P186 static
 double-hit transport and strengthens the area constant through P187. Future
 H172 work must split two cases: use P190 only after proving a sublinear global

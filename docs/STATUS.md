@@ -255,6 +255,18 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   1,166,058 decoder words. NG42 refutes direct reuse of right-moving cycle
   roots for P206's left-moving decoder; P218 proves the corrected mirror
   interval. H89/H133/H172 and all complete Collatz implications remain open.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE`: Phase 37 proves the elementary
+  location-uniform sparsity bound P220 for every equal-time collision-free
+  positive set, including the explicit exact certificate
+  `G(X)<32X^(29/30)`. P221/P222 give reciprocal summability, discrepancy
+  escape, and an odd permanent-safe suffix minimum for every nonperiodic
+  positive orbit without EXT07. P223 strengthens the density-one defect
+  coefficient to every `c<1/H_2(1/log_2 3)`; P224/P225 give a vanishing
+  companion ratio and renewal endpoint limsup ratio at most `3/2`. P226
+  reduces noncritical cycles to an effective finite minimum range. E53
+  independently reconstructs 131,070 parity words and 209,868 product steps.
+  H70 remains an open standalone spacing claim, while H72/H133 and Collatz
+  remain open substantive branches.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -276,7 +288,9 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   canonical-representative anti-concentration estimate would exclude the
   permanent-safe positive branch. Neither estimate is proved.
 - `OPEN`: H70 is that eventual dropping-safe pair-spacing inequality. No
-  threshold or cross-cylinder proof is known.
+  threshold or cross-cylinder proof is known. P222 does not prove H70, but it
+  makes the finite-crossing ladder impossible for an actual nonperiodic
+  positive orbit, so H70 is no longer a necessary global proof route.
 - `OPEN`: H72 asks for an orbit-specific packing improvement strong enough to
   exclude every infinite coefficient-safe tail. NG21 blocks a mod-6-only
   improvement, while NG22 blocks a contradiction from the strengthened
@@ -296,12 +310,17 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   excess. Phase 21 unconditionally replaces that weak factor-complexity
   necessity by a linear slope for positive integer nonperiodic orbits, but
   does not connect factor diversity to nonzero P115 lifts or an ordinary
-  height upper bound.
+  height upper bound. Phase 37 internally supplies uniform one-orbit sparsity,
+  summable defects, `h_i=o(S_i)`, and `limsup S_(i+1)/S_i<=3/2`; the missing
+  step is still cross-address multiplicity, ordinary-source lift, or
+  irreducible-tree extinction rather than another one-orbit count.
 - `EXTERNAL_THEOREM` / `CONDITIONAL`: EXT07 is the Garcia--Tal interval
   sparsity theorem using Heppner's quantitative input. Assuming it, P74 proves
   reciprocal orbit summability and an odd permanent-safe tail minimum for
   every nonperiodic positive orbit; P75 gives summable octave defects and
-  `#{j:a_j<=A}=O((A+1)2^(beta A))` for some external `beta<1`.
+  `#{j:a_j<=A}=O((A+1)2^(beta A))` for some external `beta<1`. These remain
+  valid historical results, but P220--P223 now establish the needed ordinary
+  Collatz consequences internally.
 - `CONDITIONAL`: P54 gives
   `M(K_q-1) <= N <= H_q` under the least-positive-counterexample and
   first-coefficient-crossing hypotheses.
@@ -551,20 +570,23 @@ M(K_q-1)\le N\le H_q.
 Thus an eventual proof of `M(K_q-1) > H_q`, plus the finite remainder, would
 rule out such a counterexample and close the conjecture through this route.
 
-P69 adds a logically exhaustive alternate decomposition. P70 would exclude
-its finite-crossing renewal-ladder branch, but nontrivial cycles and infinite
-coefficient-safe tails would still require independent exclusion. Therefore
-P70 alone is not a complete Collatz route.
+P69 adds a logically exhaustive alternate decomposition. P222 now proves
+internally that every actual nonperiodic positive orbit enters the permanent-
+safe branch, so the finite-crossing ladder is not a surviving global branch.
+H70 remains a meaningful standalone spacing problem but is no longer required
+for this dichotomy. Nontrivial cycles and permanent-safe tails still require
+independent exclusion.
 
 ## Current main bottleneck
 
-Phase 36 raises the critical area floor to `A>=230` but does not create an
-arbitrary-area termination mechanism. Cycle work should make P211--P217's
-root-sparse/root-dense event split uniform and compatible with P197's full
-cofactor, rather than iterating another finite scalar tier. Least-counterexample
-work should combine P206's complete decoder and P218 mirror roots with P89
-ancestry, endpoint carry, positivity, and ordinary source order; NG42 shows
-that orientation must be explicit, and localization alone is not descent.
+Phase 37 reduces the nonperiodic side to H72 internally and adds strong
+one-orbit sparsity and renewal growth constraints, but does not control the
+multiplicity of many canonical addresses. The next H72 theorem must connect
+P220--P225 to P80, P115, or the P81/P86 irreducible tree while retaining
+ordinary positivity and carry. On the periodic side, Phase 36 raises the
+critical area floor to `A>=230`, and P226 makes noncritical cycles finite in
+minimum in principle; critical arbitrary-area work still needs a uniform
+P211--P217 root/event and full-cofactor mechanism.
 
 No asymptotic lower bound is known for the least coefficient-safe
 representative `M(k)`. Phase 7 narrows the missing statement: no `q`-uniform
@@ -653,8 +675,9 @@ eventual nonzero lifts.
   prove that every positive renewal address is eventually reducible, while
   explicitly surviving NG24.
 - Prove one of P80's canonical-residue anti-concentration estimates using the
-  coupled `(B,r2,r3,C_w)` recurrence, P85's eventual height bounds, and every
-  per-address ordinary lattice error.
+  coupled `(B,r2,r3,C_w)` recurrence, P85's eventual height bounds, P220's
+  one-orbit interval exponent, and every per-address ordinary lattice error;
+  do not substitute P220 for the missing cross-address multiplicity bound.
 - Prove C04 by excluding the q0 near-diagonal canonical residue pair, with a
   lossless carry-aware recursion or meet-in-the-middle certificate.
 - Prove or refute C05 with a recursive safe-pair cylinder/difference-state
@@ -760,10 +783,10 @@ eventual nonzero lifts.
 3. Can H104's positive ordinary-source G270 geodesic words be excluded while
    the formal all-contact 2-adic prefixes remain allowed, or can H105 be
    excluded with an exact two-sided source/endpoint-height automaton?
-4. Can P71's exact per-cylinder margin interval be merged across residue
-   cylinders by a sound dominance/carry rule strong enough to prove H70
-   without relying on EXT07, or can an exact successor rule separate actual
-   odd orbits from both NG21 and NG22?
+4. Can P224's vanishing companion ratio and P225's `3/2` endpoint ceiling be
+   combined with P79/P84 valuations to force a P86 descent or a P80
+   anti-concentration bound, while surviving the positive ordinary-source
+   obstruction NG22?
 5. Can P126/P132 be made composable: either force a certifying repeat along
    every H89 critical branch, or turn repeat avoidance/right-special growth
    into a nonzero P115 source lift or an ordinary-height contradiction while
@@ -791,9 +814,9 @@ eventual nonzero lifts.
   cycle segment.
 - Extend P71 only with a proposed cross-cylinder dominance/carry invariant;
   test it first on NG19 and NG20.
-- Extend P72 only with an orbit-specific transition invariant; test it first
-  against NG21--NG28 and E20/E22/E23/E24/E25/E26/E27 before claiming an exponent or
-  anti-concentration improvement.
+- Build on P223--P225 only with a cross-address or ordinary-lift invariant;
+  test it first against NG21--NG28 and E20/E22/E23/E24/E25/E26/E27. Another
+  one-orbit sparsity exponent alone cannot prove P80 or H72.
 - Treat P127/P128 as necessary conditions, not a complexity proof strategy by
   themselves. A useful Phase 21 successor must connect repeated or
   right-special factors to P115 lift digits, P91/P97 carry, or ordinary
@@ -882,4 +905,5 @@ eventual nonzero lifts.
 - Phase 34 acceptance: [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md)
 - Phase 35 acceptance: [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md)
 - Phase 36 acceptance: [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md)
+- Phase 37 acceptance: [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)
