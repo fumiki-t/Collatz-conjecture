@@ -136,9 +136,16 @@ NG36 also forbids silently identifying P133's
 least-value rotation with P156's discrepancy-minimum rotation. P140 still
 supplies only a smaller modulus `D_0` for noncoprime slopes.
 
+Phase 38 separates the noncritical case sharply: P227/P228's exact
+odd-source capacities and E54's reciprocal certificate prove P229, so every
+primitive positive noncritical cycle has minimum below `2^49`. An internal
+exhaustion of that entire range would close the noncritical subbranch; P230
+does so only conditionally on X02. Neither result touches the critical
+arbitrary-area profiles governed by P211--P217.
+
 **Fast falsification test.** Rebuild both named negative cycles, the trivial
 cycle and its powers, E43/E44's double-hit corpora, E45's full-cofactor rows,
-E46--E50's finite bootstrap boundaries, and nine synthetic profiles,
+E46--E54's finite bootstrap/capacity boundaries, and nine synthetic profiles,
 NG34--NG42, the E37 seven-grid rows, and macro/NG28/NG30 controls. Reject any
 rule that silently uses `gcd(L,q)=1`, conflates the two rotations, confuses
 `D|B` with primitive period, or treats a negative/rational affine cycle as
@@ -192,7 +199,7 @@ state which argument excludes the other two P69 branches.
 
 ## P0 — Infinite-safe-tail transition packing
 
-**Target.** Prove H72: combine P72 and P219--P225 with actual odd-orbit
+**Target.** Prove H72: combine P72 and P219--P234 with actual odd-orbit
 transitions, canonical-address multiplicity, positivity, or effective
 ordinary-height information until no infinite coefficient-safe
 positive-integer tail can satisfy the resulting law.
@@ -291,6 +298,15 @@ defect coefficient to every `c<1/rho_*`; P224/P225 constrain companion and
 endpoint growth. The sharp boundary is now explicit: one-orbit occupancy is
 not P80's many-address count, and these bounds do not force P86 descent.
 
+Phase 38 adds an exact transfer normal form. P231 telescopes every companion
+threshold decrement, P232 proves that the same `r_i=R_i-1` digits are
+summable against `S_i+1` but nonsummable against `h_i-1`, and P233 identifies
+their positive real sum and negative-integer 2-adic sum with exact term
+valuations. P234 makes the `30/29` defect lower bound pointwise on renewal
+boundaries. NG22 remains decisive: different completion limits and opposite
+weighted sums are not contradictory without ordinary positivity, carry,
+ancestry, or effective height.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
@@ -301,6 +317,9 @@ run to eventual stabilization, drops the per-address lattice
 `+1`, treats `(Q,r3)` as a prefix-closed state, assumes one-switch SCC order,
 or promotes finite scarcity to an eventual statement. Any proposed finite
 automaton must prove prefix completeness and track P111 source lifts.
+Any transfer-series argument must also preserve the exact P233 term
+valuations and explain where it uses the positive ordinary source rather than
+merely the real or 2-adic completion.
 
 For a complexity-based successor, also test both NG22 controllers, the P109
 schedule, E32's finite prefixes, and E33's surviving critical words. Reject

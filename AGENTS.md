@@ -359,6 +359,18 @@ one-orbit sparsity is not P80. Preserve NG22. On the cycle side, P226 reduces
 noncritical cycles to an effective finite minimum range in principle, but no
 optimized cutoff or critical arbitrary-area exclusion is supplied.
 
+Phase 38 sharpens that boundary. P227/P228 give exact recursive finite-scale
+capacities, E54 checks them through `N=500`, and P229 proves every primitive
+positive noncritical cycle has minimum below `2^49`. P230 eliminates that
+branch only conditionally on external X02; an internal finite exhaustion is
+still absent. For H72, P231--P234 give exact threshold mass, opposite
+source/companion summability, a real/2-adic transfer with initial-run
+valuations, and pointwise renewal-boundary defects. Different completion
+limits are not a contradiction. Future work must add ordinary positivity,
+carry, ancestry, address multiplicity, or effective height rather than merely
+repackage the transfer series. Preserve NG22 and the distinction between
+renewal-boundary control and control of every odd iterate.
+
 Phase 31 replaces the near-uniform singleton picture by P185/P186 static
 double-hit transport and strengthens the area constant through P187. Future
 H172 work must split two cases: use P190 only after proving a sublinear global

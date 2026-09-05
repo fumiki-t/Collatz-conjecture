@@ -1383,6 +1383,25 @@ countermodel. See
 [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md),
 Sections 7--12.
 
+## Phase 38 boundary — completion split is not extinction
+
+Phase 38 introduces no new `REFUTED` claim. P231--P233 are valid: the renewal
+threshold digits telescope exactly, are summable relative to the positive
+source scale, nonsummable relative to the companion scale, and converge to
+different limits over the reals and `Q_2`. None of those facts is a
+contradiction. Limits in different completions need not agree, and NG22
+already demonstrates that strong analytic and 2-adic conditions can coexist
+without a positive ordinary source.
+
+P227/P228 are upper capacities, not exact attainable occupancy counts and not
+P80 many-address anti-concentration. P229 excludes only noncritical cycles
+whose minimum is at least `2^49`; it does not perform the remaining finite
+exhaustion or touch critical arbitrary-area cycles. P230 depends on X02 and
+must not be quoted as unconditional. The supplied private row digest also has
+no specified serialization and is diagnostic only; E54 instead reconstructs
+all rows independently. See
+[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

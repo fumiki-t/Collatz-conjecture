@@ -271,6 +271,15 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   global branch, though H70 itself stays open. P223--P225 sharpen defect and
   renewal geometry; P226 makes noncritical cycle minima effectively finite.
   Neither H72 nor the critical positive-cycle branch is excluded.
+- Phase 38 refines that finite scale exactly. P227/P228 define recursive
+  capacities `A_N,O_N`; E54 reconstructs them through `N=500` and certifies a
+  reciprocal tail below `3 log 2`. P229 proves every primitive positive
+  noncritical cycle has minimum below `2^49`; P230 eliminates that branch only
+  conditionally on X02. P231--P234 recast the H72 survivor as an exact
+  threshold-transfer series with opposite source/companion summability,
+  different real/2-adic limits, and pointwise renewal-boundary defect growth.
+  Those completion-dependent limits are not a contradiction, and H72 remains
+  open.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).

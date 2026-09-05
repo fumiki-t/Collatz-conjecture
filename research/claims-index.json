@@ -1,5 +1,5 @@
 {
-  "claim_count": 300,
+  "claim_count": 309,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -974,7 +974,7 @@
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, surplus/coalescent irreducibility, or a lift-linked complexity theorem to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the only nonperiodic branch left by P222; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, EXT08, E23, E24, E30, E31, E32, E33, E53, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, P227, P228, P231, P232, P233, P234, EXT08, E23, E24, E30, E31, E32, E33, E53, E54, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
       "dependency_ids": [
         "E23",
         "E24",
@@ -983,6 +983,7 @@
         "E32",
         "E33",
         "E53",
+        "E54",
         "EXT08",
         "NG21",
         "NG22",
@@ -1023,6 +1024,12 @@
         "P223",
         "P224",
         "P225",
+        "P227",
+        "P228",
+        "P231",
+        "P232",
+        "P233",
+        "P234",
         "P72",
         "P73",
         "P75",
@@ -1040,11 +1047,11 @@
         "P87",
         "P88"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-09-03 (Phase 37 audit)",
-      "notes": "P223 strengthens the density-one defect bound and P224/P225 constrain renewal growth, but no theorem controls canonical-address multiplicity, forces a nonzero P115 lift, or extinguishes the P81/P86 irreducible tree. P80 and H112 remain unproved.",
+      "last_audited": "2026-09-04 (Phase 38 audit)",
+      "notes": "P231--P234 add exact threshold mass, opposite source/companion summability, a real/2-adic transfer, and pointwise renewal-boundary defects. They still do not control canonical-address multiplicity, force a nonzero P115 lift, or extinguish the P81/P86 irreducible tree. P80 and H112 remain unproved.",
       "status": "OPEN"
     },
     {
@@ -2508,9 +2515,9 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Eliminate every remaining primitive positive nontrivial cycle after the Phase 31 v2 all-radius pruning and approximate-grid equality theorem.",
-      "collatz_implication": "Closing H133 would eliminate the cycle branch of P69, leaving the two nonperiodic branches.",
-      "dependencies": "P133--P194, E28, E34--E44, EXT05, EXT17, NG32--NG40, H172; EXT15 only if used; X02 only for conditional P160/P178.",
+      "claim": "Eliminate every remaining primitive positive nontrivial cycle after Phase 36's critical `A>=230` floor and Phase 38's explicit noncritical minimum cutoff.",
+      "collatz_implication": "Closing H133 would eliminate the cycle branch of P69; the permanent-safe nonperiodic H72 branch remains separate.",
+      "dependencies": "P133--P229, E28, E34--E54, EXT05, EXT17, NG32--NG42, H172; EXT15 only if used; X02 only for conditional P160/P178/P230.",
       "dependency_ids": [
         "E28",
         "EXT05",
@@ -2519,13 +2526,14 @@
         "H172",
         "P160",
         "P178",
+        "P230",
         "X02"
       ],
-      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/short-leaf-double-hit/REPORT.md`](../research/audits/short-leaf-double-hit/REPORT.md).",
+      "evidence": "[`context/H133.md`](context/H133.md); [`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md); [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).",
       "first_introduced": "Phase 22",
       "id": "H133",
-      "last_audited": "2026-08-31 (Phase 31 v2 audit)",
-      "notes": "P193 repairs the sharp area proof and P194 forces an approximate grid at equality, but no compatible resultant or above-frontier exclusion is known.",
+      "last_audited": "2026-09-04 (Phase 38 audit)",
+      "notes": "P229 proves every noncritical cycle minimum is below `2^49`, but does not check that finite range; critical arbitrary-area profiles remain. P230 uses external X02 and therefore is conditional.",
       "status": "OPEN"
     },
     {
@@ -4305,9 +4313,147 @@
       "last_audited": "2026-09-03",
       "notes": "Bounded agreement is not the proof of the all-scale theorem and does not establish a nonperiodic positive orbit. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "For a length-`N`, weight-`s` full-shortcut parity vector and any translated integer interval of length `1<=X<=2^N`, all integer time-`N` images lie in an interval containing at most `Y_(N,s)(X)=1+floor((3^s(X-1)+(2^(N-s)-1)(3^s-2^s))/2^N)` integers.",
+      "collatz_implication": "Supplies the exact finite-scale image capacity used by P228.",
+      "dependencies": "P219 exact affine extrema; integer points in a real interval; one parity-cylinder residue modulo `2^N`.",
+      "dependency_ids": [
+        "P219"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Section 3; `artifacts/phase38_capacity_certificate.json`; independent verifier.",
+      "first_introduced": "Phase 38",
+      "id": "P227",
+      "last_audited": "2026-09-04",
+      "notes": "`Y` is an upper bound, not an assertion that every enclosed integer is attained.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The strong-induction recurrences recorded in Phase 38 bound every equal-time collision-free positive set in a translated interval of length `2^N` by `A_N`, and every such odd-source set by `O_N`; the odd recurrence correctly uses the general image bound `A_m`.",
+      "collatz_implication": "Turns P219/P220 into recursive finite-scale upper certificates.",
+      "dependencies": "P227; image closure of equal-time collision-free positive sets; exact parity-vector counts.",
+      "dependency_ids": [
+        "P227"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Section 4; `artifacts/phase38_capacity_certificate.json`.",
+      "first_introduced": "Phase 38",
+      "id": "P228",
+      "last_audited": "2026-09-04",
+      "notes": "These are exact recursive upper bounds, not proved optimal occupancies and not a many-address P80 estimate.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent exact reconstruction checks all 501 `A_N,O_N` rows through `N=500`, the strict reciprocal certificate from shell 49, 12,672 translated sources in 608 fixed-weight groups, 154 renewal codewords, 423 addresses, 817 transitions, 717 nonzero transfer valuations, and all mandatory adversarial controls.",
+      "collatz_implication": "Supplies the finite input to P229 and audits P231--P234 conventions.",
+      "dependencies": "Declared finite ranges; arbitrary-precision integers and rationals; verifier imports no Phase 38 generator or `src`.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md); Phase 38 artifacts, independent verifier, and tamper tests.",
+      "first_introduced": "Phase 38",
+      "id": "E54",
+      "last_audited": "2026-09-04",
+      "notes": "The private proposal digest has unspecified serialization and does not match the repository's defined canonical digest; every row is instead reconstructed. Bounded checks do not prove the all-scale theorems. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every primitive positive noncritical shortcut cycle, equivalently every such cycle with `3^q/2^L<1/2`, has minimum odd state `m<2^49`.",
+      "collatz_implication": "Replaces P226's unspecified effective cutoff by an explicit internal bound.",
+      "dependencies": "P134/P220/P228/E54; odd cycle states are equal-time collision-free; exact cycle product and `log(1+u)<u`.",
+      "dependency_ids": [
+        "E54",
+        "P134",
+        "P220",
+        "P228"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Sections 5--6; `artifacts/phase38_capacity_certificate.json`.",
+      "first_introduced": "Phase 38",
+      "id": "P229",
+      "last_audited": "2026-09-04",
+      "notes": "It does not exclude the finite range or apply to critical cycles.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming X02, every primitive positive shortcut cycle is critical: `L=ceil(q log_2 3)`.",
+      "collatz_implication": "Removes the noncritical positive-cycle branch only under the repository's external finite verification input.",
+      "dependencies": "P229 and X02; a nontrivial cycle minimum must be at least `2075*2^60>2^49`; the trivial cycle is critical.",
+      "dependency_ids": [
+        "P229",
+        "X02"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Section 6.",
+      "first_introduced": "Phase 38",
+      "id": "P230",
+      "last_audited": "2026-09-04",
+      "notes": "X02 is `EXTERNAL_EVIDENCE`, not reproduced internally; critical arbitrary-area cycles remain open.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "At P77 renewal boundaries, with `A_i=S_i+1`, `H_i=h_i-1`, and `r_i=R_i-1`, the exact transitions are `A_(i+1)=c_i(A_i+r_i)` and `H_(i+1)=c_i(H_i-r_i)`, and `zeta_i=H_i/(A_i+H_i)` satisfies `zeta_i-zeta_(i+1)=r_i/(A_i+H_i)` and the corresponding infinite tail identity.",
+      "collatz_implication": "Upgrades P84's decrement to an exact conserved threshold mass.",
+      "dependencies": "P76/P77/P79/P224; legal companion `0<=r_i<H_i`; exact affine algebra and monotone telescoping.",
+      "dependency_ids": [
+        "P224",
+        "P76",
+        "P77",
+        "P79"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Section 7; `artifacts/phase38_renewal_transfer.json`.",
+      "first_introduced": "Phase 38",
+      "id": "P231",
+      "last_audited": "2026-09-04",
+      "notes": "Exact mass conservation does not force a renewal path to terminate.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "On a P222 permanent-safe nonperiodic positive orbit, renewal boundaries satisfy `sum 1/(S_i+1)<infinity`, `sum (R_i-1)/(S_i+1)<infinity`, and `sum (R_i-1)/(h_i-1)=infinity`; hence also `sum R_i/(S_i+1)<infinity`.",
+      "collatz_implication": "Forces the same nonnegative thresholds into opposite ordinary-source and companion summability regimes.",
+      "dependencies": "P220/P222/P224/P231; p-series comparison; exact companion product and elementary logarithm bounds.",
+      "dependency_ids": [
+        "P220",
+        "P222",
+        "P224",
+        "P231"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Section 8.",
+      "first_introduced": "Phase 38",
+      "id": "P232",
+      "last_audited": "2026-09-04",
+      "notes": "The two regimes are compatible and do not exclude an infinite formal or positive renewal path.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For `C_i=prod_(j<i)c_j`, the transfer series satisfies `sum r_i/C_i=H_0` over the reals and `sum r_i/C_i=-A_0` over `Q_2`; equivalently `A_i/C_i` tends to `A_0+H_0` in the reals and to zero 2-adically. Every nonzero term has odd denominator and valuation `mathcal L_i+ell_i`, where `ell_i` is the block's initial one-run.",
+      "collatz_implication": "Gives a block-level real/2-adic shadow with exact digit valuations for future carry or height work.",
+      "dependencies": "P79/P224/P231; exact normalized recurrence; integer `A_i`; cumulative block length tends to infinity.",
+      "dependency_ids": [
+        "P224",
+        "P231",
+        "P79"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Section 9; `artifacts/phase38_renewal_transfer.json`.",
+      "first_introduced": "Phase 38",
+      "id": "P233",
+      "last_audited": "2026-09-04",
+      "notes": "Different limits in different completions are not contradictory; NG22 remains valid.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At every renewal boundary `i` of a P222 orbit, the Phase 12 defect obeys `a_(n_i)>=(30/29)log_2(i+1)-O_(S_0)(1)`; more generally any P220 exponent `rho>rho_*` gives `a_(n_i)>=rho^(-1)log_2(i)-O(1)`.",
+      "collatz_implication": "Strengthens P223 from density-one control to pointwise control on the renewal-boundary subsequence.",
+      "dependencies": "P72/P220/P222; increasing renewal sources; exact odd-orbit normalization and bounded `Y_n`.",
+      "dependency_ids": [
+        "P220",
+        "P222",
+        "P72"
+      ],
+      "evidence": "[`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md), Section 10.",
+      "first_introduced": "Phase 38",
+      "id": "P234",
+      "last_audited": "2026-09-04",
+      "notes": "It is not pointwise at every odd iterate and gives no finite last-small-defect time.",
+      "status": "VERIFIED_THEOREM"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "b3bcff022024d0a60392b2d2b5630f27769c54f1e886a360e173a10995c63c3b"
+  "source_sha256": "ad82658e91e85f24366a377898694c1f5011b6e4572e0279a8edecfdca8d32d7"
 }

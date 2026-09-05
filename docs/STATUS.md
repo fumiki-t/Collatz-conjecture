@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-09-03
+**Last updated:** 2026-09-04
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -267,6 +267,17 @@ proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
   independently reconstructs 131,070 parity words and 209,868 product steps.
   H70 remains an open standalone spacing claim, while H72/H133 and Collatz
   remain open substantive branches.
+- `VERIFIED_THEOREM` / `VERIFIED_FINITE` / `CONDITIONAL`: Phase 38 refines
+  P219's image interval to the exact integer capacity P227 and proves P228's
+  recursive general/odd-source bounds. E54 reconstructs every `A_N,O_N` row
+  through `N=500` and certifies an exact reciprocal tail below `3 log 2`.
+  P229 consequently gives the unconditional explicit bound `m<2^49` for
+  every primitive positive noncritical cycle. P230 says every positive cycle
+  is critical only conditionally on X02. On the H72 side, P231--P234 prove
+  exact renewal threshold-mass conservation, opposite source/companion
+  summability, a real/2-adic transfer identity, and pointwise defect growth at
+  every renewal boundary. None excludes H72 or a critical arbitrary-area
+  cycle; `proves_collatz=false`.
 - `CONDITIONAL`: P110 uses EXT07 to exclude the particular balanced P109
   itinerary from positive ordinary nonperiodic orbits. It does not exclude all
   mixed-SCC itineraries.
@@ -579,14 +590,16 @@ independent exclusion.
 
 ## Current main bottleneck
 
-Phase 37 reduces the nonperiodic side to H72 internally and adds strong
-one-orbit sparsity and renewal growth constraints, but does not control the
-multiplicity of many canonical addresses. The next H72 theorem must connect
-P220--P225 to P80, P115, or the P81/P86 irreducible tree while retaining
-ordinary positivity and carry. On the periodic side, Phase 36 raises the
-critical area floor to `A>=230`, and P226 makes noncritical cycles finite in
-minimum in principle; critical arbitrary-area work still needs a uniform
-P211--P217 root/event and full-cofactor mechanism.
+Phase 38 makes the one-orbit finite capacities exact at each dyadic scale and
+reduces every noncritical primitive positive cycle to `m<2^49`, but it does
+not perform that finite cycle exhaustion. On the nonperiodic side, P231--P234
+turn the surviving H72 orbit into an exact transfer problem: the same
+nonnegative threshold digits are summable on the ordinary-source scale,
+nonsummable on the companion scale, and converge to different values over
+the reals and `Q_2`. The completion split is not a contradiction. The next
+H72 theorem must connect those digit valuations to P80, P115, or P81/P86/P91
+ordinary ancestry and carry. Critical arbitrary-area work still needs a
+uniform P211--P217 root/event and full-cofactor mechanism.
 
 No asymptotic lower bound is known for the least coefficient-safe
 representative `M(k)`. Phase 7 narrows the missing statement: no `q`-uniform
@@ -906,4 +919,5 @@ eventual nonzero lifts.
 - Phase 35 acceptance: [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md)
 - Phase 36 acceptance: [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md)
 - Phase 37 acceptance: [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md)
+- Phase 38 acceptance: [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

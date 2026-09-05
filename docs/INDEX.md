@@ -66,6 +66,7 @@ This is the canonical map of the research archive. Start with
 | 35 | [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md) | [`../artifacts/phase35_obstruction_report.md`](../artifacts/phase35_obstruction_report.md) | `feat/phase35-full-decoder-joint-scalar` |
 | 36 | [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md) | [`../artifacts/phase36_obstruction_report.md`](../artifacts/phase36_obstruction_report.md) | `feat/phase36-root-event-polynomial` |
 | 37 | [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md) | [`../artifacts/phase37_obstruction_report.md`](../artifacts/phase37_obstruction_report.md) | `feat/phase37-internal-uniform-sparsity` |
+| 38 | [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md) | [`../artifacts/phase38_obstruction_report.md`](../artifacts/phase38_obstruction_report.md) | `feat/phase38-finite-capacity-renewal-transfer` |
 
 Research supplements:
 
@@ -100,9 +101,10 @@ Research supplements:
 | Full-decoder/joint-scalar audit | [`../research/audits/full-decoder-joint-scalar/REPORT.md`](../research/audits/full-decoder-joint-scalar/REPORT.md) | Phase 35 full modular defect decoder, refined factor/triple-hit bounds, corrected area-229 bootstrap, and refuted area-238 proposal | P206--P210, E49/E50, NG41, H89/H172/H133 boundary |
 | Root/event-polynomial audit | [`../research/audits/root-event-polynomial/REPORT.md`](../research/audits/root-event-polynomial/REPORT.md) | Phase 36 cycle-root localization, one-root-hit capacity, corrected area-230 bootstrap, positive Mersenne event polynomial, and decoder-orientation repair | P211--P218, E51/E52, NG42, H89/H172/H133 boundary |
 | Internal uniform-sparsity audit | [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md) | Phase 37 exact uniform interval induction, internal permanent-safe reduction, defect and renewal consequences, and cycle finiteness boundary | P219--P226, E53, H70/H72/H133 boundary |
+| Finite-capacity/renewal-transfer audit | [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md) | Phase 38 exact `A_N,O_N` recursion, reciprocal certificate, explicit cycle cutoff, renewal mass/weight/completion transfer, and independent finite reconstruction | P227--P234, E54, H72/H133 boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 37 and both the branch-point and two-tail
+documentation through Phase 38 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

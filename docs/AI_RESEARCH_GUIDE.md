@@ -2,21 +2,23 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 37's internal uniform-sparsity audit is the
-latest research layer.
+proof of the conjecture. Phase 38's finite-capacity and renewal-transfer audit
+is the latest research layer.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–37 evidence boundaries, and current obligations.
+   branch map, Phase 1–38 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md), then its inputs,
-   especially [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md)
-   and [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md), then the
+6. [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md), especially
+   [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md),
+   then [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md) and
+   [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md),
+   followed by [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md), then the
    Phase 36 inputs,
    including [`../PHASE35_RUN_RESULTS.md`](../PHASE35_RUN_RESULTS.md),
    [`../PHASE34_RUN_RESULTS.md`](../PHASE34_RUN_RESULTS.md),
@@ -97,6 +99,10 @@ flowchart TD
 
     P69["P69 counterexample trichotomy"] --> Cycle["Exclude nontrivial cycles"]
     P219["P219 fixed-count image diameter"] --> P220["P220 internal uniform sparsity"]
+    P219 --> P227["P227 exact integer image capacity"]
+    P227 --> P228["P228 recursive A_N/O_N capacities"]
+    P228 --> P229["P229 noncritical minimum below 2^49"]
+    P229 --> Cycle
     P220 --> P222["P222 permanent-safe reduction"]
     P222 --> P72["P72 odd-orbit packing"]
     P220 --> P223["P223 stronger defect count"]
@@ -104,6 +110,13 @@ flowchart TD
     P222 --> P224["P224 vanishing companion ratio"]
     P224 --> P225["P225 endpoint growth ceiling"]
     P225 --> H72
+    P224 --> P231["P231 exact threshold mass"]
+    P231 --> P232["P232 opposite weighted regimes"]
+    P231 --> P233["P233 real/2-adic transfer"]
+    P220 --> P234["P234 pointwise renewal defects"]
+    P232 --> H72
+    P233 --> H72
+    P234 --> H72
     P72 --> P73["P73 excludes all-contact word"]
     EXT07["EXT07 historical external interval sparsity"] --> P74["P74 conditional permanent-safe reduction"]
     P74 -. "independent historical route" .-> P72
@@ -226,7 +239,7 @@ unconditional finite-horizon theorem. P69--P73 and P76 are internal theorems
 or exact reductions. EXT07 is external and P74/P75 are conditional on it;
 P219--P225 now provide the needed ordinary nonperiodic-orbit route internally.
 P77--P79, P81--P89, P91--P102, P104--P109, P111--P118, P120, P122, P125--P127,
-P129--P138, P140, P141, P144, P145, P147--P226 are
+P129--P138, P140, P141, P144, P145, P147--P229, P231--P234 are
 exact renewal/ancestral/critical/finite-state/word theorems; P80, P90, P103,
 P110, P119, P121, P123, P124, P128, P142, P143, and P146 are conditional implications.
 NG22 is a formal/2-adic countermodel, NG23 is a raw-volume failure, NG24 is a
@@ -252,9 +265,9 @@ and the Collatz conjecture remain open.
 | H104 | `OPEN` | Exclude every positive ordinary-source all-prefix same-Q geodesic G270 word | Retain fixed source plus affine/carry state; reject contact/all-contact/Haar-only shortcuts with NG17/P73/NG29 |
 | H105 | `OPEN` | Empty the H270 box `N<q/270`, `X<q/135`, `Z<2q/135` | Use a two-sided exact state and keep the periodic branch separate; test NG19 and NG24--NG29 |
 | H70 | `OPEN` | Prove the eventual dropping-safe pair spacing used by P70 | Reproduce the six E18 failures; reject height-free rules with NG20 and every lossy merge with NG19 |
-| H72 | `OPEN` | Prove one of P80's ordinary canonical-residue bounds, eventual P86 surplus reducibility, H112, or an equivalent positivity/height obstruction extending P72/P75--P132 | Reject NG21--NG31 and source 167, require a prefix-complete closed state model, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33, the `{1,2}` core, and all mandatory families |
+| H72 | `OPEN` | Convert P231--P234's transfer digits into P80 anti-concentration, eventual P86/P91 carry-aware descent, H112, or an equivalent ordinary positivity/height obstruction | Reject NG21--NG31 and source 167, keep real and 2-adic completions distinct, and retain P115 ordinary-source lift stabilization; test on E20/E22--E26/E30--E33/E54, the `{1,2}` core, and all mandatory families |
 | H112 | `OPEN` | Force infinitely many nonzero source lifts on every infinite safe all-prefix same-Q-geodesic branch | Connect P125--P131 repeat/right-special structure to exact lift/carry/ordinary height; reject bounded zero-run rules on source 167 and finite-rate inference on E33 |
-| H133 | `OPEN` | Exclude every cycle after P214's critical `A>=230` floor and P197--P199 full-cofactor reduction | Make P211--P217's root/event split uniform or prove another growing-area theorem; cover negative cycles, E43--E52, NG34--NG42, and all Phase 28--36 profiles |
+| H133 | `OPEN` | Exclude every cycle after P214's critical `A>=230` floor and P229's noncritical minimum `<2^49` | Exhaust the internal noncritical range or, conditionally, retain X02 explicitly; make P211--P217's critical root/event split uniform and cover negative cycles, E43--E54, NG34--NG42, and all Phase 28--38 profiles |
 | H141 | `OPEN` | Turn defect geometry into an ordinary-source/carry obstruction for H89 or P194 into H133 rejection | Test one exact weighted inequality on NG32--NG40, concentrated/diffuse defects, both negative cycles, and E37--E44 before extending q |
 | H172 | `OPEN` | Combine P194's `o(L)`-defect grid and P211--P217 root/event structure with P197's full cofactor, preserving both rotations beyond P214's finite area floor | Prove a uniform root-sparse/root-dense incompatibility; allow adversarial bad-start placement and falsify first on NG34--NG42 and E43--E52 |
 | C04 | `OPEN` | Exclude `rho=[B*3^(-q0)]_D` from the q0 near box | Preserve affine constant, carries, and both canonical residue ranges |
@@ -289,7 +302,7 @@ Every new experiment should state, before a large run:
 
 Record these fields in `research/experiments/<experiment-id>.json` using
 `research/schemas/experiment.schema.json`. An accepted manifest must name all
-artifacts and preserve the recorded manifest hash. Phase 37 provides the
+artifacts and preserve the recorded manifest hash. Phase 38 provides the
 latest accepted example.
 
 Use `VERIFIED_FINITE` for bounded profiles even when every tested row passes.

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "phase38-finite-capacity-renewal-transfer",
+  "status": "RUNNING",
+  "claim_ids": ["P227", "P228", "E54", "P229", "P230", "P231", "P232", "P233", "P234", "H72", "H133"],
+  "objective": "Audit exact finite interval capacities for odd collision-free shortcut sets, derive an explicit noncritical-cycle minimum cutoff, and verify the exact renewal threshold transfer on a permanent coefficient-safe nonperiodic tail.",
+  "exact_scope": {
+    "quantifiers": [
+      "every equal-time collision-free positive set in every translated dyadic interval",
+      "every equal-time collision-free set of odd positive integers in every translated dyadic interval",
+      "every primitive positive noncritical shortcut cycle",
+      "every renewal boundary of a P222 permanent coefficient-safe nonperiodic positive orbit"
+    ],
+    "bounds": {
+      "capacity_row_maximum_N": 500,
+      "reciprocal_shell_start_N": 49,
+      "explicit_cycle_minimum_cutoff": "2^49"
+    },
+    "completeness": "The fixed-scale formulas and renewal identities are all-scale theorem candidates; the N<=500 rows and finite renewal-address checks are bounded evidence. X02 consequences remain conditional, while H72, critical cycles, and Collatz remain open."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "exact_methods": "arbitrary-precision integer capacities, rational inequalities, exact affine block transitions, and separate generator/verifier reconstructions",
+    "floating_point_role": "none in acceptance; decimals, if shown, are explanatory only"
+  },
+  "commands": {
+    "generator": [".venv/bin/python src/phase38_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase38.py --artifact-dir artifacts --output artifacts/phase38_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase38_properties.py tests/test_phase38_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "all A_N and O_N rows through N=500 from the defining recurrence",
+      "the exact reciprocal and logarithm inequalities",
+      "fixed-weight affine interval capacities by a separately written formula",
+      "finite renewal transition, telescoping, and real/2-adic congruence checks",
+      "all mandatory adversarial-family convention rows"
+    ],
+    "forbidden_imports": ["src.phase38_search", "phase38_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase38_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22 real/2-adic completion split", "trivial cycle", "negative/formal sources"],
+  "artifacts": ["artifacts/phase38_capacity_certificate.json", "artifacts/phase38_renewal_transfer.json", "artifacts/phase38_regressions.json", "artifacts/phase38_obstruction_report.md", "artifacts/phase38_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": [
+    "Do not use the private row digest as acceptance evidence or infer its serialization.",
+    "Do not promote the X02 cycle corollary to an unconditional theorem.",
+    "Do not infer H72 or P80 from one-orbit capacity or completion-dependent series limits.",
+    "Enter the proof-claim emergency protocol before changing proves_collatz."
+  ],
+  "interpretation_boundary": [
+    "An explicit noncritical-cycle cutoff does not exclude critical cycles.",
+    "The renewal transfer identities constrain but do not extinguish a permanent-safe tail.",
+    "Different real and 2-adic limits of one rational series are not a contradiction.",
+    "The Collatz conjecture remains open."
+  ],
+  "proves_collatz": false
+}

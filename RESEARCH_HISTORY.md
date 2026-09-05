@@ -2015,3 +2015,53 @@ Phase 37 does not prove P80 address anti-concentration, force ordinary source
 descent, extinguish the irreducible renewal tree, exclude H72, optimize and
 exhaust the noncritical cycle cutoff, exclude critical cycles, prove H70, or
 prove or disprove Collatz. `proves_collatz=false`.
+
+## 2026-09-04 — Phase 38: finite capacity and renewal transfer
+
+**Branch:** `feat/phase38-finite-capacity-renewal-transfer`
+
+**Acceptance record:** [`PHASE38_RUN_RESULTS.md`](PHASE38_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/finite-capacity-renewal-transfer/REPORT.md`](research/audits/finite-capacity-renewal-transfer/REPORT.md)
+
+The Phase 38 note was treated as an untrusted proposal. P227 reconstructs the
+exact integer image-slot bound from P219's fixed-weight affine extrema.
+P228 closes the resulting strong-induction recurrences for general capacities
+`A_N` and odd-source capacities `O_N`; the odd recurrence deliberately uses
+the general bound at the image scale because time-`N` images need not be odd.
+
+E54 independently regenerates all 501 rows through `N=500` and certifies
+
+\[
+\sum_{N=49}^{500}O_N/2^N+1440(44/45)^{501}<2079/1000<3\log2.
+\]
+
+Together with the exact cycle product, P229 proves that every primitive
+positive noncritical cycle has minimum below `2^49`, replacing P226's
+unspecified effective cutoff. P230 concludes that every positive cycle is
+critical only under X02; it remains `CONDITIONAL` because X02 is external
+finite evidence.
+
+P231 rewrites the renewal source and companion transitions in `A=S+1`,
+`H=h-1`, `r=R-1` coordinates and proves an exact threshold-mass telescope.
+P232 proves convergence of the threshold weights on the ordinary-source
+scale and divergence on the companion scale. P233 identifies the same
+rational transfer digits with a positive real limit and a negative-integer
+2-adic limit, including exact initial-run valuations. P234 upgrades defect
+growth to a pointwise `30/29` logarithmic lower bound at every renewal
+boundary. The completion split is not a contradiction and NG22 remains
+applicable.
+
+The note's private row digest did not define a serialization. The repository's
+explicit canonical encoding has a different digest; this is recorded as a
+diagnostic, not forced into agreement. Acceptance instead uses row-by-row
+independent reconstruction, exact inequalities, 12,672 translated sources,
+154 codewords, 423 finite addresses, 817 transitions, 717 nonzero valuation
+checks, mandatory adversarial families, and tamper rejection.
+
+### What this result does not prove
+
+Phase 38 does not perform the remaining noncritical finite cycle exhaustion,
+exclude critical arbitrary-area cycles, prove P80, force a smaller positive
+ancestor, eliminate H72/H133, or prove or disprove Collatz.
+`proves_collatz=false`.

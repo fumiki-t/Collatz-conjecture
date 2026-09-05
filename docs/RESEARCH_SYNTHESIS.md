@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 37
+# Collatz research synthesis through Phase 38
 
 **Audit date:** 2026-09-03
 
-**Audited base:** Phase 37 accepted evidence and independent verifier
+**Audited base:** Phase 38 accepted evidence and independent verifier
 
-**Latest accepted phase:** Phase 37
+**Latest accepted phase:** Phase 38
 
 **Problem status:** `OPEN`
 
@@ -963,6 +963,30 @@ See the [`Phase 36 audit`](../research/audits/root-event-polynomial/REPORT.md).
 
 See the [`Phase 37 audit`](../research/audits/internal-uniform-sparsity/REPORT.md).
 
+### Phase 38 — finite capacities and exact renewal transfer
+
+- **Finite-scale capacity:** P227 gives the exact number of integer slots in
+  every fixed-weight image interval. P228 turns this into strong-induction
+  bounds `A_N` and odd-source bounds `O_N`; the latter correctly recurse
+  through the general image bound because time-`N` images need not be odd.
+- **Explicit cycle cutoff:** E54 certifies the exact `N<=500` rows and a
+  reciprocal tail below `3 log 2`. P229 therefore proves every primitive
+  positive noncritical cycle has minimum below `2^49`. P230's elimination of
+  that branch still depends on X02 and remains conditional.
+- **H72 transfer:** P231--P233 give exact threshold-mass conservation,
+  convergence relative to ordinary-source scale, divergence relative to the
+  companion scale, and one rational digit series with distinct real and
+  2-adic limits. This completion split is not a contradiction.
+- **Pointwise subsequence:** P234 gives the `30/29` logarithmic defect lower
+  bound at every renewal boundary, but not at every odd iterate.
+- **Finite evidence:** E54 reconstructs 501 capacity rows, 12,672 translated
+  sources, 423 renewal addresses, 817 transitions, tamper rejection, and all
+  mandatory adversarial families. The proposal's unspecified private digest
+  is diagnostic only.
+
+See the
+[`Phase 38 audit`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -970,7 +994,7 @@ See the [`Phase 37 audit`](../research/audits/internal-uniform-sparsity/REPORT.m
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P226 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P229/P231–P234 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG42.
 
@@ -1231,8 +1255,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase37.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase37_verifier.json
+.venv/bin/python verifier/verify_phase38.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase38_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:
