@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the thirty-seven phases established
+## 3. What the forty phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -290,10 +290,30 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   direction/count. Read [`context/H112.md`](context/H112.md) before extending
   the DAG. Identity and periodic zero-carry cases are recorded explicitly.
 
+- Phase 40 removes X02 from the H112 reduction. P242's finite normalized
+  height attains a minimum within a permanent-safe shared-future class;
+  P243 excludes every larger-coefficient positive literal competitor, with
+  strict-valley rescue, and matches all full prefixes to H112. This proves
+  the implication from H112, not H112 itself. P244's Bellman redundancy
+  stabilizes without an effective stopping rule; height descent is at most
+  one half and need not decrease ordinary source. NG43's four first failing
+  tail pairs at length 25 refute unchecked safety under weight gain.
+  P245 proves a collision-free alternate-predecessor cloud; P246's moment
+  already follows directly from endpoint-orbit sparsity. E56 independently
+  reconstructs 1,024 Bellman rows, 33,554,431 tails, and 12,954 cloud rows.
+
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
 
 ## 4. Current strongest route
+
+For the nonperiodic branch, P222 -> P242/P243 -> H112 -> contradiction with
+P115 is now an internal logical reduction with no X02 premise. The missing
+theorem is H112 itself: every infinite safe all-prefix same-Q geodesic must
+have infinitely many nonzero canonical source lifts. P240 remains historical
+and conditional. Positive cycles still require the separate H133 exclusion.
+See [`context/H112.md`](context/H112.md) and the
+[`Phase 40 audit`](../research/audits/normalized-height-bellman/REPORT.md).
 
 P54 is `CONDITIONAL`. If `N` is a least positive counterexample and its affine
 coefficient first crosses below one at the `q`-barrier, the independently
@@ -383,7 +403,7 @@ should answer all of these before a large computation:
 4. Does it survive every mandatory adversarial family?
 5. What certificate can an implementation-independent verifier reconstruct?
 
-For H54, H70, H72, H89, H104, or H105, use the scoped pack under
+For H54, H70, H72, H89, H104, H105, or H112, use the scoped pack under
 [`context/`](context/README.md). Confirm status against `CLAIMS_LEDGER.md`. Register a large experiment
 under `research/experiments/`; `research/registry.json` is the machine-readable
 entry point and is audited against the ledger.
@@ -401,8 +421,10 @@ raw-volume obstruction, NG24's left-congruence failure, and the NG25--NG31
 cross-Q/unsafe-target witnesses: any proposed merge
 must distinguish them or prove a sound dominance relation. Any finite-state
 proposal must additionally prove transition closure and retain P115 canonical
-source lifts. H112 is the focused same-Q-geodesic subtarget; source 167 must
-reject every bounded zero-run surrogate. A complexity-based successor must
+source lifts. H112 is sufficient for the whole nonperiodic branch by P243;
+source 167 must reject every bounded zero-run surrogate. Preserve NG43's
+adjusted-run safety and strict-valley rescue, and do not treat Bellman
+stabilization as a recognized finite stopping event. A complexity-based successor must
 map an exact right-special/return-word event to a nonzero lift, signed carry,
 or ordinary height; E32/E33's finite profiles alone cannot do so. Certificate
 extension is useful when it tests such structure; raw depth extension is
@@ -413,6 +435,8 @@ secondary.
 From the repository root:
 
 ```bash
+.venv/bin/python verifier/verify_phase40.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase40_verifier.json
 .venv/bin/python -m pytest -q
 .venv/bin/python verifier/verify_phase10.py \
   --artifact-dir artifacts --output /tmp/collatz_phase10_verifier.json
@@ -441,7 +465,7 @@ non-strict command deliberately reports local untracked artifacts as warnings
 without treating them as accepted evidence.
 
 The current manifest hash is recorded in
-[`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md).
+[`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md).
 For regeneration commands and individual artifact hashes, use the phase result
 files linked from [`INDEX.md`](INDEX.md).
 

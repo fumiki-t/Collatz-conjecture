@@ -1,0 +1,132 @@
+{
+  "format": "collatz-phase40-cloud-v1",
+  "maximum_source": 4095,
+  "odd_steps": 32,
+  "periodic_control": {
+    "cloud_sources": [
+      5,
+      1
+    ],
+    "equal_time_collision": 4,
+    "exponent": 6,
+    "source": 21,
+    "traces": [
+      [
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        1,
+        2,
+        1
+      ]
+    ]
+  },
+  "proof_scope": {
+    "direct_moment_bound": "2^e/(x+1)<3/x_next",
+    "finite_orbits_claimed_nonperiodic": false,
+    "moment_quantifier": "every real p>rho_star; all j, not just e_j>=3",
+    "new_independent_obstruction_claimed": false,
+    "nonperiodicity_required_for_cloud_injectivity": true
+  },
+  "proves_collatz": false,
+  "row_count": 12954,
+  "rows_sha256": "a39e0b7faedf2a351d1d23a2fd2b6f4a391981ed331e974676a2ce86f06a604f",
+  "selected_rows": [
+    [
+      3,
+      1,
+      "5",
+      4,
+      1,
+      1,
+      "1",
+      "1",
+      3
+    ],
+    [
+      5,
+      0,
+      "5",
+      4,
+      0,
+      1,
+      "1",
+      "1",
+      2
+    ],
+    [
+      7,
+      3,
+      "13",
+      3,
+      4,
+      1,
+      "3",
+      "5",
+      6
+    ],
+    [
+      7,
+      4,
+      "5",
+      4,
+      7,
+      1,
+      "1",
+      "1",
+      9
+    ],
+    [
+      4095,
+      20,
+      "425645",
+      3,
+      25,
+      1,
+      "106411",
+      "159617",
+      27
+    ],
+    [
+      4095,
+      26,
+      "75757",
+      3,
+      37,
+      1,
+      "18939",
+      "28409",
+      39
+    ],
+    [
+      4095,
+      31,
+      "35957",
+      5,
+      46,
+      1,
+      "8989",
+      "3371",
+      48
+    ],
+    [
+      4095,
+      31,
+      "35957",
+      5,
+      46,
+      2,
+      "2247",
+      "3371",
+      50
+    ]
+  ],
+  "transition_count": 65536,
+  "transition_sha256": "e5f4d57c636927349900a6732f96b64aadd72a48d36d7d2e89758023dff3f914"
+}

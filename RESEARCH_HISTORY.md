@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–39 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–40 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -2104,3 +2104,45 @@ prevent those finite observations from becoming a global claim.
 Phase 39 constructs no eventual macroscopic ancestor, proves no H112 lift
 theorem, excludes no arbitrary-area critical cycle, and makes no Collatz
 proof claim. `proves_collatz=false`.
+
+## 2026-09-05 — Phase 40: normalized-height Bellman reduction
+
+**Branch:** `feat/phase40-normalized-height-bellman`
+
+**Acceptance record:** [`PHASE40_RUN_RESULTS.md`](PHASE40_RUN_RESULTS.md)
+**Proof audit:**
+[`research/audits/normalized-height-bellman/REPORT.md`](research/audits/normalized-height-bellman/REPORT.md)
+
+P242 defines intrinsic finite normalized height on all positive odd
+nonperiodic sources, with exact coalescent scaling. Finite ordinary-source
+sublevel sets give a minimizing permanent-safe representative. P243 proves
+its coefficient maximality against every positive literal competitor using
+strict-valley rescue for unsafe paths, then matches full-shortcut prefixes
+and canonical endpoint classes. The resulting H112 implication no longer
+uses X02. This strengthens the strategic reduction, not H112's status;
+P240 remains valid historical conditional evidence.
+
+P244 independently obtains an all-prefix geodesic through monotone bounded
+Bellman redundancy and finite normalized-height descent. The supplied
+strict-half claim was repaired to at most half, and the proposed constructive
+interpretation was separated from an effective last-jump/stopping theorem.
+
+NG43 records the first automatic-safety failure of a shifted-DAG weight gain
+at tail length25. Independent forward and positional enumerators rebuilt
+33,554,431 tails with no arbitrary initial-run cutoff: none fail through24,
+and exactly four pairs fail at25. The supplied witness is length-minimal;
+a different lex-first pair is also saved. P238's explicit safety requirement
+and P243's valley rescue survive the failure.
+
+P245 supplies the exact exponent-shortened collision-free predecessor cloud.
+P246 records the stronger all-j valuation moment as a direct P221/transition
+corollary, not a separate new obstruction. E56 adds 1,024 Bellman rows,
+448 normalization splits, 65,536 transitions, 12,954 cloud rows, independent
+verification and tamper tests. No new external theorem is introduced.
+
+### What this result does not prove
+
+H112, H72 and arbitrary-area positive cycles remain open. No finite Bellman
+plateau proves stabilization, and a finite number of replacements does not
+give a certified halting algorithm. The moment and cloud do not exclude the
+remaining positive ordinary source. `proves_collatz=false`.

@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-09-04
+**Last updated:** 2026-09-05
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -8,19 +8,30 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest layer: [`Phase 39`](../PHASE39_RUN_RESULTS.md) and its
-[`audit`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md).
-P235--P239 prove current-state carry, fixed direct-lift extinction,
-macroscopic shortening, the exact jump DAG, and renewal occupancy below
-`2X^(29/30)`. P240 conditionally concentrates the entire nonperiodic branch
-at [`H112`](context/H112.md), using X02 and P228/E54. P241 adds cycle event
-constraints. E55 is bounded exact evidence; H112/H72/H133 remain `OPEN`.
-Next, seek a growing carry-compatible ancestor or an all-depth source-lift
-theorem. A fixed direct-rewrite dictionary, raw DAG weight, or a finite
-zero-lift run does not supply either result.
+Latest layer: [`Phase 40`](../PHASE40_RUN_RESULTS.md) and its
+[`audit`](../research/audits/normalized-height-bellman/REPORT.md).
+P242/P243 use a normalized-height minimum and strict-valley rescue to prove
+that [`H112`](context/H112.md) would exclude the entire positive nonperiodic
+branch without X02. P244's bounded Bellman redundancy stabilizes, but no
+effective last-jump index follows. P245 gives collision-free alternate
+predecessor clouds; P246's weighted moment also follows directly from P221
+on the original endpoint orbit. NG43 refutes safety monotonicity under DAG
+weight gain. E56 is bounded exact evidence; H112/H72/H133 remain `OPEN`.
+P240 is preserved as a historical conditional route. The next missing result
+is an all-depth source-lift or arithmetic ancestor theorem that survives the
+formal models, source 167, and NG43.
 
 ## What is currently proved?
 
+- `VERIFIED_THEOREM`: P242's finite normalized height attains a minimum
+  within a permanent-safe shared-future class. P243 makes every prefix of
+  that representative coefficient-maximal among positive literal competitors,
+  including unsafe competitors after valley extraction. This proves the
+  implication from H112 to nonperiodic exclusion without proving H112.
+- `VERIFIED_THEOREM`: P244 proves bounded monotone Bellman redundancy and
+  finite height descent with factor at most one half. P245 proves an
+  equal-time collision-free alternate-predecessor cloud; P246 records its
+  weighted valuation moment and the direct endpoint-orbit derivation.
 - `VERIFIED_THEOREM`: the exact affine-cylinder identities and the symbolic
   algebra used by the certificate rules can be reconstructed with integer or
   rational arithmetic.
@@ -366,6 +377,12 @@ No item above proves the Collatz conjecture.
 
 ## What is only computationally verified?
 
+- E56 independently reconstructs 1,024 Bellman rows, all 33,554,431 tails
+  starting with zero through length 25, and 12,954 cloud rows. No safety
+  weight-gain failure occurs through tail length 24; four ordered pairs fail
+  at length 25. The lexicographically first pair has `J=173991363`, while
+  the supplied `J=166692291` witness is retained. These finite counts do not
+  prove infinite geodesic extinction or an effective stabilization time.
 - Phase 1–2: depth 26 has 190,069 `DESCENT`, 1,227,442 `SPLIT`, and
   1,037,374 `OPEN` nodes. Literal shortcut iteration agrees for all 16,777,214
   starts with `2 <= n < 2^24`.
@@ -601,6 +618,15 @@ independent exclusion.
 
 ## Current main bottleneck
 
+P243 removes X02 from the global H112 reduction: every hypothetical positive
+nonperiodic future has a normalized-height-minimal permanent-safe geodesic
+representative. The unresolved step is to force infinitely many nonzero
+canonical lifts on every such infinite branch. A finite Bellman plateau
+cannot certify this, and NG43 prevents dropping full safety tests from the
+jump DAG. P246's moment already follows from endpoint sparsity, so merely
+rewriting it does not add an independent obstruction. Critical arbitrary-area
+cycle exclusion remains a separate obligation.
+
 Phase 38 makes the one-orbit finite capacities exact at each dyadic scale and
 reduces every noncritical primitive positive cycle to `m<2^49`, but it does
 not perform that finite cycle exhaustion. On the nonperiodic side, P231--P234
@@ -725,6 +751,12 @@ eventual nonzero lifts.
 
 ## What was recently refuted?
 
+- `REFUTED`: higher tail weight at a fixed shifted-correction DAG vertex
+  preserves safety after reducing the initial run (NG43). Complete enumeration
+  through length 25 finds its first four failures there. The lexicographically
+  first pair requires run four on both tails; the weight gain reduces one
+  run to three and breaks safety. Positive literal coalescence and strict-valley
+  rescue survive, so the unsafe competitor must not simply be discarded.
 - `REFUTED`: the Phase 26 EXT05 plus factor-separation scalar mechanism also
   excludes critical area six. NG35 records the exact reversal
   `75^7=13348388671875>13194139533312=3*64^7`. This does not construct an
@@ -807,10 +839,11 @@ eventual nonzero lifts.
 3. Can H104's positive ordinary-source G270 geodesic words be excluded while
    the formal all-contact 2-adic prefixes remain allowed, or can H105 be
    excluded with an exact two-sided source/endpoint-height automaton?
-4. Can P224's vanishing companion ratio and P225's `3/2` endpoint ceiling be
-   combined with P79/P84 valuations to force a P86 descent or a P80
-   anti-concentration bound, while surviving the positive ordinary-source
-   obstruction NG22?
+4. Can P243's normalized-height-minimal geodesic representative be excluded
+   by an all-depth H112 lift theorem, or by a larger-coefficient literal
+   ancestor with NG43-safe valley rescue? The argument must distinguish
+   ordinary positivity from NG22 and avoid treating Bellman stabilization as
+   an effective finite stopping test.
 5. Can P126/P132 be made composable: either force a certifying repeat along
    every H89 critical branch, or turn repeat avoidance/right-special growth
    into a nonzero P115 source lift or an ordinary-height contradiction while
@@ -864,6 +897,11 @@ eventual nonzero lifts.
 
 ## Tasks not worth doing without a new idea
 
+- Infer infinite geodesic or lift extinction from a finite Bellman plateau.
+- Drop adjusted initial-run safety because a DAG path gained weight; NG43
+  refutes that step at length 25.
+- Present P246's weighted valuation sum alone as new independent sparsity;
+  its direct endpoint-orbit proof already follows from P221.
 - Merely extend Phase 1–5 search depth or modulus.
 - Add another fixed finite shadow dictionary.
 - Extend the Phase 11 q-limit without a nonvacuous asymptotic mechanism; E18 is
@@ -932,4 +970,5 @@ eventual nonzero lifts.
 - Phase 37 acceptance: [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md)
 - Phase 38 acceptance: [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md)
 - Phase 39 acceptance: [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md)
+- Phase 40 acceptance: [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

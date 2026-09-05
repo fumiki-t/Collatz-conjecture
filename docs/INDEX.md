@@ -68,6 +68,7 @@ This is the canonical map of the research archive. Start with
 | 37 | [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md) | [`../artifacts/phase37_obstruction_report.md`](../artifacts/phase37_obstruction_report.md) | `feat/phase37-internal-uniform-sparsity` |
 | 38 | [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md) | [`../artifacts/phase38_obstruction_report.md`](../artifacts/phase38_obstruction_report.md) | `feat/phase38-finite-capacity-renewal-transfer` |
 | 39 | [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md) | [`../artifacts/phase39_obstruction_report.md`](../artifacts/phase39_obstruction_report.md) | `feat/phase39-macroscopic-carry-jump-geodesic` |
+| 40 | [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md) | [`safety obstruction`](../research/audits/normalized-height-bellman/REPORT.md#7-shifted-correction-safety-obstruction) | `feat/phase40-normalized-height-bellman` |
 
 Research supplements:
 
@@ -104,9 +105,10 @@ Research supplements:
 | Internal uniform-sparsity audit | [`../research/audits/internal-uniform-sparsity/REPORT.md`](../research/audits/internal-uniform-sparsity/REPORT.md) | Phase 37 exact uniform interval induction, internal permanent-safe reduction, defect and renewal consequences, and cycle finiteness boundary | P219--P226, E53, H70/H72/H133 boundary |
 | Finite-capacity/renewal-transfer audit | [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md) | Phase 38 exact `A_N,O_N` recursion, reciprocal certificate, explicit cycle cutoff, renewal mass/weight/completion transfer, and independent finite reconstruction | P227--P234, E54, H72/H133 boundary |
 | Macroscopic carry/jump-geodesic audit | [`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md) | Exact current-state carry, all bounded tail collisions, positive endpoint lifts, capacity/event audit, independent verifier and tamper tests | P235--P241, E55, conditional full nonperiodic reduction to H112 |
+| Normalized-height/Bellman audit | [`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md) | Normalized-height minimum, global coefficient maximality, Bellman redundancy, complete length-25 safety falsification, alternate-predecessor cloud, independent verifier and tamper tests | P242--P246, E56, NG43; H112 implication without X02 and non-effective stabilization boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 39 and both the branch-point and two-tail
+documentation through Phase 40 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

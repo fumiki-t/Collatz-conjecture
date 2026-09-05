@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "phase40-normalized-height-bellman",
+  "status": "RUNNING",
+  "claim_ids": ["P242", "P243", "P244", "P245", "P246", "NG43", "E56", "H112", "H72"],
+  "objective": "Audit normalized-height minimization and Bellman geodesic descent, reconstruct the first shifted-DAG safety failure, and independently check alternate-predecessor clouds and valuation moments.",
+  "exact_scope": {
+    "quantifiers": ["positive non-eventually-periodic ordinary orbits and their positive coalescing predecessors", "all zero-prefixed binary tails of lengths 1 through 25 and every admissible initial run, using an exact threshold reduction", "positive literal paths; full shortcut safety distinct from odd-endpoint convention"],
+    "bounds": {"maximum_tail_length": 25, "bellman_source_maximum": 255, "bellman_odd_steps": 8, "cloud_source_maximum": 4095, "cloud_odd_steps": 32},
+    "completeness": "The tail-length minimality claim is exhaustive only through length 25. Finite orbit checks do not certify a nonperiodic positive orbit, an infinite Bellman stopping time, or H112."
+  },
+  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "none; integer powers, rational inequalities and symbolic limiting arguments"},
+  "commands": {
+    "generator": [".venv/bin/python src/phase40_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase40.py --artifact-dir artifacts --output artifacts/phase40_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase40_properties.py tests/test_phase40_verifier.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["shortest predecessor lengths by a separate positive inverse search", "affine normalization and strict valleys", "complete length-bounded DAG failure criterion using a separate exact enumerator", "alternate-predecessor arithmetic, phase offsets and moment comparisons", "retained adversarial families"],
+    "forbidden_imports": ["src.phase40_search", "phase40_search", "src.phase40_minimality"],
+    "tamper_tests": ["tests/test_phase40_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG24", "NG41", "NG42", "source 167", "trivial and negative cycles", "unsafe maximum-weight paths"],
+  "artifacts": ["artifacts/phase40_bellman.json", "artifacts/phase40_safety_minimality.json", "artifacts/phase40_cloud.json", "artifacts/phase40_regressions.json", "artifacts/phase40_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["Repair incorrect strictness or effectiveness assertions before acceptance.", "Do not assign a minimality-backed NG claim without independent complete enumeration of the declared domain.", "Do not identify geodesicity, cloud sparsity, or moment summability with H112 or cycle exclusion."],
+  "interpretation_boundary": ["H112, H72 and arbitrary-area positive cycles remain open.", "No X02 input may enter the new normalized-height reduction.", "An existential finite descent is not an effective recognition algorithm.", "proves_collatz=false"],
+  "proves_collatz": false
+}

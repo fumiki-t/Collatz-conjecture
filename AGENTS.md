@@ -384,6 +384,21 @@ pack. P241's integer event direction and positive-cycle event count are
 auxiliary, not an arbitrary-area critical-cycle exclusion. Preserve identity
 and periodic zero-carry controls, NG22/NG24, and rational event exceptions.
 
+Phase 40 removes X02 from the H112 implication through P242/P243:
+normalized height attains a minimum within each positive permanent-safe
+shared-future class, and every larger-coefficient literal competitor is
+forbidden, with strict-valley rescue for unsafe paths. H112 itself remains
+OPEN and P240 remains a historical CONDITIONAL route. P244's bounded monotone
+Bellman redundancy has no supplied effective last-jump index; a finite plateau
+is not a stopping certificate. Height replacements are at most one half and
+need not decrease ordinary source. Preserve NG43's exact length-25 safety
+weight-gain failures and the supplied witness; keep full adjusted-run safety
+and valley extraction. P245 proves an alternate-predecessor cloud, but P246's
+weighted valuation moment already follows directly from P221 on the endpoint
+orbit. Future work must add lift, carry, source-order, or cross-cloud arithmetic
+rather than repackage that summability. Positive-cycle exclusion remains
+separate, and `proves_collatz=false`.
+
 Phase 31 replaces the near-uniform singleton picture by P185/P186 static
 double-hit transport and strengthens the area constant through P187. Future
 H172 work must split two cases: use P190 only after proving a sublinear global

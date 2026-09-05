@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 39
+# Collatz research synthesis through Phase 40
 
-**Audit date:** 2026-09-04
+**Audit date:** 2026-09-05
 
-**Audited base:** Phase 39 evidence and independent verifier
+**Audited base:** Phase 40 evidence and independent verifier
 
-**Latest accepted phase:** Phase 39
+**Latest accepted phase:** Phase 40
 
 **Problem status:** `OPEN`
 
@@ -1009,6 +1009,35 @@ rewrite, periodic zero carry, and rational event-direction exception are
 preserved. See the [`Phase 39 audit`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md)
 and [`H112 context`](context/H112.md).
 
+### Phase 40 — normalized height and Bellman geodesics
+
+P242 extends finite normalized height to all coalescing positive odd
+nonperiodic sources and proves attainment of a minimum within a permanent-safe
+future class. P243 rules out every larger-coefficient positive literal
+competitor at that representative, including unsafe paths after strict-valley
+extraction. Canonical positivity and odd/even endpoint bridges make every
+full shortcut prefix same-Q geodesic in H112's exact sense. H112 would then
+contradict P115's eventual zero source lifts. This internal implication uses
+no X02 or finite source cutoff; H112 remains `OPEN`, and P240 remains the
+historical conditional reduction.
+
+P244 proves that integer Bellman redundancy is bounded, nondecreasing, and
+eventually constant. Positive redundancy permits a replacement with at most
+half the normalized height, with equality for a safe redundancy-one path.
+The finite descent argument supplies neither an effective last-jump bound
+nor a stopping certificate, and ordinary source order need not decrease.
+
+NG43 refutes automatic safety under greater DAG tail weight. E56's complete
+33,554,431-tail audit finds no failure through length 24 and four ordered
+failing pairs at 25. The lexicographically first pair has `J=173991363`;
+the supplied `J=166692291` witness and its strict-valley rescue are retained.
+P245 proves that all admissible exponent-shortened predecessors form an
+equal-time collision-free cloud. P246's weighted valuation moment also
+follows directly from P221 on the original endpoint orbit, so summability
+alone is not a new independent obstruction. E56 also reconstructs 1,024
+Bellman rows and 12,954 cloud rows. See the
+[`Phase 40 audit`](../research/audits/normalized-height-bellman/REPORT.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -1016,9 +1045,9 @@ and [`H112 context`](context/H112.md).
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P229/P231–P239/P241 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P229/P231–P239/P241–P246 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
-  NG17–NG42.
+  NG17–NG43.
 
 None is a full convergence theorem.
 
@@ -1069,11 +1098,12 @@ None is a full convergence theorem.
    connect repeat avoidance to signed carry, source lifts, or an upper height
    obstruction.
 
-10. **P240/H112 reduction.** Under X02, P222 and P228/E54 reduce the full
-    nonperiodic branch to an infinite all-prefix same-Q geodesic with
-    eventual zero ordinary source lifts. H112 would exclude it. A proof must
-    still establish that open lift statement; P237 is only a necessary
-    macroscopic carry condition.
+10. **P243/H112 reduction.** P222 and P242/P243 reduce the full nonperiodic
+    branch to an infinite all-prefix same-Q geodesic with eventual zero
+    ordinary source lifts, without X02. H112 would exclude it and remains
+    open. P240 is the historical conditional route. P244 gives no effective
+    stopping test; P237 is only a necessary macroscopic carry condition, and
+    NG43 requires full safety checks and strict-valley rescue.
 
 ### Nontrivial cycles
 
@@ -1147,6 +1177,17 @@ P80 bound, eventual P86 surplus reducibility, or an equivalent positive-height
 obstruction, plus a checked finite remainder. P220's one-orbit occupancy bound
 is not by itself a many-address P80 estimate. See
 [`context/H72.md`](context/H72.md).
+
+### H112 — infinite safe geodesic source lifts
+
+**Target:** prove infinitely many nonzero canonical accelerated source lifts
+on every infinite safe all-prefix same-Q geodesic. **Implication:** P243
+would then exclude the entire nonperiodic branch without X02; positive
+cycles remain separate. **Known traps:** formal 2-adic positivity substitution,
+source 167, finite Bellman plateaus, and NG43's unsafe greater-weight tail.
+**Acceptance:** an all-depth lift or compatible coefficient-maximality
+contradiction with exact positive-source and full-prefix conventions. See
+[`context/H112.md`](context/H112.md).
 
 ### H54 — eventual critical-prefix barrier
 
@@ -1283,8 +1324,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase39.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase39_verifier.json
+.venv/bin/python verifier/verify_phase40.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase40_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

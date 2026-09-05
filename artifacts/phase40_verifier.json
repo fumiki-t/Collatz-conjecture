@@ -1,0 +1,32 @@
+{
+  "H112_proved": false,
+  "bellman_rows": 1024,
+  "claim_statuses": {
+    "E56": "VERIFIED_FINITE",
+    "H112": "OPEN",
+    "H133": "OPEN",
+    "H72": "OPEN",
+    "NG43": "REFUTED",
+    "P242": "VERIFIED_THEOREM",
+    "P243": "VERIFIED_THEOREM",
+    "P244": "VERIFIED_THEOREM",
+    "P245": "VERIFIED_THEOREM",
+    "P246": "VERIFIED_THEOREM"
+  },
+  "cloud_rows": 12954,
+  "cloud_transitions": 65536,
+  "failing_pairs_at_length25": 4,
+  "first_failure_length": 25,
+  "floating_point_used_for_acceptance": false,
+  "generator_imported": false,
+  "input_sha256": {
+    "phase40_bellman.json": "24d5a273deb7c8220f85e02e98ef82eb53eea6417dba051c3b946e05c3fedf43",
+    "phase40_cloud.json": "4760cb3b551f65d13b6b8d65c64f9caa496f61b42856452b82f0887b3d2910fb",
+    "phase40_regressions.json": "153494824675354276fdb78f9a123241d7517904049644fc01bd1927a30540d5",
+    "phase40_safety_minimality.json": "7124f4a6afe1370e2544df1232f101795f0199c1e087db0dc196c69864d1523b"
+  },
+  "proves_collatz": false,
+  "total_tail_count": 33554431,
+  "uses_X02_in_new_reduction": false,
+  "valid": true
+}

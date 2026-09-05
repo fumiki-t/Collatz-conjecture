@@ -22,20 +22,21 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 39 is the latest accepted research layer. It expresses prefix carry
-in the current ordinary state and proves that fixed distinct local rewrites
-eventually fail as direct deep-prefix lifts. Under the stated growth and
-dominance assumptions, successful shortening must satisfy `k>=Q-O(1)`.
-An exact shifted-correction DAG records candidate ancestors. Phase 38's
-finite capacity certificate now gives a conditional reduction of the entire
-nonperiodic branch to the open source-lift target H112, using external
-evidence X02. Positive-cycle event direction and count give further necessary
-conditions; arbitrary-area critical cycles remain unexcluded.
+Phase 40 is the latest accepted research layer. Minimizing a finite normalized
+height gives a permanent-safe representative whose every prefix is globally
+shortest among positive paths with the same odd count. This proves that the
+open source-lift statement H112 would exclude the entire nonperiodic branch
+without external evidence X02. It does not prove H112. Bellman redundancy
+stabilizes, but no effective stopping rule is supplied. An exact length-25
+counterexample shows why shifted-correction rewrites still need safety tests
+and strict-valley rescue. Alternate-predecessor clouds supply additional
+collision-free sets; their weighted valuation bound is already a direct
+consequence of orbit sparsity. Arbitrary-area positive cycles remain separate.
 H72, H133, and the broader H54, H70, H89, H104, H105, H112, H141, H172, C03,
 C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–39, separates internal and external
+map and conventions, summarizes Phases 1–40, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -76,12 +77,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase39.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase39_verifier.json
+.venv/bin/python verifier/verify_phase40.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase40_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 39 result](PHASE39_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 40 result](PHASE40_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

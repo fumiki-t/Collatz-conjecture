@@ -1425,11 +1425,46 @@ hypothesis for directions and a separately proved positive-cycle event-count
 bound. These scope repairs introduce no new general no-go claim. See the
 [`Phase 39 audit`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md).
 
+## Phase 40 — NG43 and Bellman effectiveness boundaries
+
+**NG43 (`REFUTED`).** At fixed shifted-DAG vertex (ell,J), the conjectured
+rule was that gaining k tail ones preserves safety after changing the
+initial run R to R-k, whenever 1<=k<=R-1. Every Phase 39 bounded candidate
+passed, making this tempting. It fails first at tail length 25 in the
+complete zero-prefixed binary-tail domain, with all R handled by exact
+threshold intervals. Two independent enumerators checked 33,554,431 tails;
+there are four failing ordered pairs at length 25 and none through 24.
+
+The lex-first pair is
+`0110110110110010110101101` -> `0011111111111011100001100`, J=173991363,
+weights 15/16, both minimum safe initial run 4. Using R=4 and R-k=3 gives
+positive sources 328539247 and 164269623 at endpoint 711248276, with only
+the target safe. The supplied J=166692291 pair is also preserved and
+length-minimal. Its unsafe path has a safe strict-valley suffix starting
+151044095, whose coefficient is still larger. The failure is fundamental
+for automatic safety transfer, but local to that inference: P238's positive
+source jump and P243's valley rescue remain valid. Future work must retain
+the complete safety profile or perform valley extraction.
+
+The Phase 40 proposal also overstates the halving factor and effectivity.
+A safe redundancy-one replacement has exactly half the normalized height;
+the valid general factor is at most half. A bounded monotone integer
+redundancy eventually stabilizes but supplies no effective last-jump index.
+A search may make only finitely many replacements yet run forever after
+its last one. Do not rediscover a claimed halting algorithm by conflating
+these statements.
+
+The alternate-predecessor cloud requires nonperiodicity: source 21 gives
+cloud {5,1}, colliding after three (also four) shortcut steps. Its valuation
+moment is already a direct P221 consequence of `2^e/(x+1)<3/x_next`, not a
+new independent route to contradiction. See the
+[`Phase 40 audit`](../research/audits/normalized-height-bellman/REPORT.md).
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,
 `(110|111)^*`, `A=11101`, `B=1100`, `A^rB^s`, Phase 7 macro id 0, NG21, NG22,
-NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, NG40, NG41, NG42, source 167,
+NG23, NG24, NG25, NG26, NG27, NG28, NG29, NG30, NG31, NG32, NG33, NG34, NG35, NG36, NG37, NG38, NG39, NG40, NG41, NG42, NG43, source 167,
 both Phase 20 NG22 controllers, the E33 repetition survivors, both Phase 22
 negative cycles, the complete Phase 24 area-two profiles, the E36 worst
 area-three supports, the E37 seven-grid rows, the E38/E39 all-gcd profile

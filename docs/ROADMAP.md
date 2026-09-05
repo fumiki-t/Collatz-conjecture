@@ -8,6 +8,12 @@ The global branch map and uniform Phase 1–15 terminology are in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md). This file remains the
 operational ranking; the synthesis remains the orientation layer.
 
+Phase 40 supplies a second direct global program: P242/P243 internally
+reduce the nonperiodic branch to H112 without X02, while H133 retains the
+separate positive-cycle branch. Read [`context/H112.md`](context/H112.md)
+before further Bellman or jump-DAG work; finite stabilization observations
+and the endpoint-sparsity corollary P246 are not new closure mechanisms.
+
 ## P0 — Eventual critical-prefix barrier
 
 **Target.** Prove `M(K_q-1) > H_q` for all sufficiently large `q`.
@@ -307,10 +313,12 @@ boundaries. NG22 remains decisive: different completion limits and opposite
 weighted sums are not contradictory without ordinary positivity, carry,
 ancestry, or effective height.
 
-Phase 39 makes the H112 link precise: under X02, P228/E54 forces
-`Y_infinity<2S` at the least permanent-safe nonperiodic source, so P240 makes
-every prefix same-Q geodesic. H112 would then exclude the entire nonperiodic
-branch. Read [`context/H112.md`](context/H112.md) for this acceptance boundary.
+Phase 40 removes X02 from the H112 link. P242 gives a finite normalized-height
+minimum in every permanent-safe shared-future class. P243 forbids any
+larger-coefficient positive literal competitor, including unsafe ones after
+strict-valley extraction. Every full prefix is same-Q geodesic, so H112
+would contradict P115 and exclude the entire nonperiodic branch. P240 remains
+the historical X02-based route. Read [`context/H112.md`](context/H112.md).
 P235--P237 require a successful dominating nonzero carry to shorten by
 `k>=Q-O(1)` when local odd counts are subexponential in Q. A finite dictionary
 cannot supply direct lifts at unbounded depth, but growing compositions
@@ -318,10 +326,19 @@ remain a possible route. Search P238's `(ell,J)` DAG with the full adjusted
 initial-run safety test and actual ordinary sources; seek a uniform
 construction or obstruction rather than another finite depth record.
 
+P244's redundancy is bounded and nondecreasing, hence eventually constant;
+it supplies no effective last-jump time. Height descent is at most one half
+per replacement and does not assert ordinary-source descent. NG43 records
+the first safety weight-gain failures at tail length 25: keep adjusted-run
+safety and strict-valley rescue in every search state. P245's collision-free
+cloud may support new cross-cloud arithmetic, but the weighted moment P246
+already follows directly from P221 on the original endpoint orbit. Repeating
+that summability argument alone is not a new H112 obstruction.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15
-  cross-Q/unsafe-target witnesses, NG27--NG31, source 167, the `{1,2}` core, and every mandatory
+  cross-Q/unsafe-target witnesses, NG27--NG31, NG43, source 167, the `{1,2}` core, and every mandatory
 adversarial family. Reject any proof that identifies a general
 2-adic source with a positive ordinary integer, promotes a finite zero-lift
 run to eventual stabilization, drops the per-address lattice
