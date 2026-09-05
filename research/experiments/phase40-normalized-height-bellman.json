@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase40-normalized-height-bellman",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P242", "P243", "P244", "P245", "P246", "NG43", "E56", "H112", "H72"],
   "objective": "Audit normalized-height minimization and Bellman geodesic descent, reconstruct the first shifted-DAG safety failure, and independently check alternate-predecessor clouds and valuation moments.",
   "exact_scope": {
@@ -24,5 +24,19 @@
   "artifacts": ["artifacts/phase40_bellman.json", "artifacts/phase40_safety_minimality.json", "artifacts/phase40_cloud.json", "artifacts/phase40_regressions.json", "artifacts/phase40_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Repair incorrect strictness or effectiveness assertions before acceptance.", "Do not assign a minimality-backed NG claim without independent complete enumeration of the declared domain.", "Do not identify geodesicity, cloud sparsity, or moment summability with H112 or cycle exclusion."],
   "interpretation_boundary": ["H112, H72 and arbitrary-area positive cycles remain open.", "No X02 input may enter the new normalized-height reduction.", "An existential finite descent is not an effective recognition algorithm.", "proves_collatz=false"],
+  "recorded_result": {
+    "commit": "966efed344885ca22735326d6cd46863d89c4de2",
+    "generator": "Four generated evidence files reproduced byte-for-byte in a separate temporary directory.",
+    "verifier": "valid=true; generator_imported=false; bellman_rows=1024; total_tail_count=33554431; first_failure_length=25; failing_pairs_at_length25=4; cloud_rows=12954; cloud_transitions=65536; proves_collatz=false",
+    "focused_tests": "83 passed in 55.54s: Phase 40 properties, independent verifier/tamper tests, and research health; full rerun after repairing stale AI guide.",
+    "dependency_tests": "89 passed in 147.63s: Phase 15B/16/19/37/38/39 properties and Phase 38/39 verifiers.",
+    "clean_ci_equivalent_tests": "89 passed in 335.21s from detached implementation-commit worktree: research health, Phase 24 verifier, Phase 40 properties/verifier. Worktree clean before and after.",
+    "full_tests": "Whole repository suite not rerun. 178 distinct scoped tests passed, including the six additional Phase 24 verifier checks in the CI-equivalent set.",
+    "strict_research_health": "valid=true, errors=[], warnings=[]; latest_phase=40; claim_count=324; 270 tracked artifacts; executed from clean detached implementation-commit worktree.",
+    "markdown_links": "149 files valid in the clean implementation-commit worktree.",
+    "manifest_verification": "All 270 SHA-256 entries matched in the clean implementation-commit worktree.",
+    "manifest_sha256": "81b43e3ebd23eb8309bb19fbff2ed4edc891a1e87c91781d7445451366236a43",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }

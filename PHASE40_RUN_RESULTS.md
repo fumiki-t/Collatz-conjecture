@@ -111,7 +111,14 @@ directory and matched byte-for-byte. The independent verifier returned
 The initial control-plane pass found a stale AI guide; it was updated and
 the complete focused set rerun. The index link and trailing whitespace were
 also repaired. Markdown links validate across 149 files.
-These are 172 scoped tests, not a fresh whole-repository test run.
+The CI-equivalent set was also run from a clean detached worktree of
+implementation commit `966efed344885ca22735326d6cd46863d89c4de2`:
+**89 passed in 335.21s**, including six additional Phase 24 verifier tests.
+This gives **178 distinct scoped tests**, not a fresh whole-repository run.
+The worktree was clean before and after testing. Strict research health
+returned `valid=true`, no errors or warnings, 324 claims and 270 tracked
+artifacts; all 270 manifest entries matched. Reproduce the CI-equivalent set
+with the focused command above plus `tests/test_phase24_verifier.py`.
 
 ## Evidence and SHA-256
 
