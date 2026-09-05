@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase38-finite-capacity-renewal-transfer",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P227", "P228", "E54", "P229", "P230", "P231", "P232", "P233", "P234", "H72", "H133"],
   "objective": "Audit exact finite interval capacities for odd collision-free shortcut sets, derive an explicit noncritical-cycle minimum cutoff, and verify the exact renewal threshold transfer on a permanent coefficient-safe nonperiodic tail.",
   "exact_scope": {
@@ -53,5 +53,15 @@
     "Different real and 2-adic limits of one rational series are not a contradiction.",
     "The Collatz conjecture remains open."
   ],
+  "recorded_result": {
+    "commit": "417595c81e30fa0a741d3b34cba4d194d94fc07d",
+    "generator": "valid=true; capacity_rows=501; renewal_addresses=423; renewal_transitions=817; private_digest_match=false; proves_collatz=false",
+    "verifier": "valid=true; generator_imported=false; 12672 translated sources; 608 fixed-weight groups; 817 renewal transitions; proves_collatz=false",
+    "focused_tests": "17 passed in 87.19s",
+    "full_tests": "515 passed in 3092.21s",
+    "strict_research_health": "valid=true, errors=[], warnings=[]; 259 tracked artifacts",
+    "manifest_sha256": "1fbe822b0a1a986cc773a4c0efeedacbc6ce9bd0faddae02afe5abf12a9a6a37",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
