@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–23 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–39 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -2065,3 +2065,42 @@ Phase 38 does not perform the remaining noncritical finite cycle exhaustion,
 exclude critical arbitrary-area cycles, prove P80, force a smaller positive
 ancestor, eliminate H72/H133, or prove or disprove Collatz.
 `proves_collatz=false`.
+
+## 2026-09-04 — Phase 39: macroscopic carry and jump geodesics
+
+**Branch:** `feat/phase39-macroscopic-carry-jump-geodesic`
+
+**Acceptance record:** [`PHASE39_RUN_RESULTS.md`](PHASE39_RUN_RESULTS.md)
+**Detailed audit:**
+[`research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](research/audits/macroscopic-carry-jump-geodesic/REPORT.md)
+
+The supplied proposal was independently audited and repaired before acceptance.
+P235 proves the current-state P91 carry for its explicit nonnegative-index
+domain. P236 excludes fixed distinct direct lifts at sufficiently large depth;
+identity and periodic zero-carry examples prevent unqualified formulations.
+The proposal's blanket dismissal of finite dictionaries was narrowed to that
+direct-lift conclusion. P237 strengthens the conditional macroscopic deficit
+to `k>=Q-O(1)`. P238 makes exact shifted-correction collisions into candidate
+positive ancestors while retaining adjusted-run safety.
+
+P239 proves renewal occupancy below `2X^(29/30)`, including a separate X=1
+boundary. P240 uses X02 and P228/E54 to obtain `Y_infinity<2S` at the least
+positive permanent-safe nonperiodic source, so every prefix is same-Q
+geodesic. H112 would contradict the eventual zero lifts supplied by P115.
+The new implication is CONDITIONAL and neither H112 nor H72 changes status.
+P241 separately establishes integer event direction and the positive-cycle
+count `M>m log(1/lambda)`.
+
+E55 independently reconstructs 21,844 carries, every DAG path through ell=12
+(tail includes its first zero), 10,520 candidate jumps with R<=12, 500
+capacity rows, 8,178 canonical endpoint words and 24,534 source lifts, 1,320
+formal positive rational cycle rows, and 32,768 actual odd transitions.
+All bounded jump candidates were safe; maximum observed gain was three.
+The recorded identity/periodic/rational controls and NG22/NG24/NG41/NG42
+prevent those finite observations from becoming a global claim.
+
+### What this result does not prove
+
+Phase 39 constructs no eventual macroscopic ancestor, proves no H112 lift
+theorem, excludes no arbitrary-area critical cycle, and makes no Collatz
+proof claim. `proves_collatz=false`.

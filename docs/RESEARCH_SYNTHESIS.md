@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 38
+# Collatz research synthesis through Phase 39
 
-**Audit date:** 2026-09-03
+**Audit date:** 2026-09-04
 
-**Audited base:** Phase 38 accepted evidence and independent verifier
+**Audited base:** Phase 39 evidence and independent verifier
 
-**Latest accepted phase:** Phase 38
+**Latest accepted phase:** Phase 39
 
 **Problem status:** `OPEN`
 
@@ -987,6 +987,28 @@ See the [`Phase 37 audit`](../research/audits/internal-uniform-sparsity/REPORT.m
 See the
 [`Phase 38 audit`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).
 
+### Phase 39 — macroscopic carry and geodesic reduction
+
+P235 expresses the nonnegative-index prefix carry in the current ordinary
+state. P236 proves eventual failure for every fixed distinct direct rewrite;
+its dictionary corollary does not exclude compositions whose effective size
+grows. P237 strengthens the proposed length deficit to `k>=Q-O(1)` under
+the stated subexponential local odd-count condition. P238 gives a literal
+positive-source jump DAG, with adjusted initial-run safety checked separately.
+P239 improves renewal-boundary occupancy to `<2X^(29/30)`.
+
+P240 supplies a new conditional connection: X02 and the Phase 38 reciprocal
+certificate give `Y_infinity<2S` at the least permanent-safe nonperiodic
+source. Every prefix must be same-Q geodesic, so H112 would contradict P115's
+eventual zero source lifts. H112 stays open and X02 remains external evidence.
+P241's cycle event direction and count are separate necessary constraints.
+
+E55 reconstructs 21,844 carry cases, 10,520 jump candidates, 500 binomial
+rows, 24,534 endpoint lifts, and exact event/adversarial corpora. The identity
+rewrite, periodic zero carry, and rational event-direction exception are
+preserved. See the [`Phase 39 audit`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md)
+and [`H112 context`](context/H112.md).
+
 ## 5. Strongest current results and what remains
 
 ### Unconditional internal results
@@ -994,7 +1016,7 @@ See the
 - exact affine/cylinder and return algebra;
 - independently checked finite certificates through their recorded bounds;
 - C02 for ordered contracting `A^rB^s`;
-- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P229/P231–P234 with their exact hypotheses;
+- P65/P66/P68/P69–P73/P76–P79/P81–P89/P91–P102/P104–P109/P111–P118/P120/P122/P125–P127/P129–P138/P140/P141/P144/P145/P147–P177/P179–P229/P231–P239/P241 with their exact hypotheses;
 - explicit counterexamples and no-go mechanisms NG04, NG07–NG10, NG15,
   NG17–NG42.
 
@@ -1046,6 +1068,12 @@ None is a full convergence theorem.
    constraints. E33 shows repeat rejection is not yet eventual; a proof must
    connect repeat avoidance to signed carry, source lifts, or an upper height
    obstruction.
+
+10. **P240/H112 reduction.** Under X02, P222 and P228/E54 reduce the full
+    nonperiodic branch to an infinite all-prefix same-Q geodesic with
+    eventual zero ordinary source lifts. H112 would exclude it. A proof must
+    still establish that open lift statement; P237 is only a necessary
+    macroscopic carry condition.
 
 ### Nontrivial cycles
 
@@ -1255,8 +1283,8 @@ Run the control plane and tests:
 The latest mathematical verifier is:
 
 ```bash
-.venv/bin/python verifier/verify_phase38.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase38_verifier.json
+.venv/bin/python verifier/verify_phase39.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase39_verifier.json
 ```
 
 Start a new AI or human research session by reading, in order:

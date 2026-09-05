@@ -1,5 +1,5 @@
 {
-  "claim_count": 309,
+  "claim_count": 317,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -974,7 +974,7 @@
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, surplus/coalescent irreducibility, or a lift-linked complexity theorem to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the only nonperiodic branch left by P222; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, P227, P228, P231, P232, P233, P234, EXT08, E23, E24, E30, E31, E32, E33, E53, E54, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, P227, P228, P231, P232, P233, P234, P235, P236, P237, P238, P239, P240, E55, EXT08, E23, E24, E30, E31, E32, E33, E53, E54, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
       "dependency_ids": [
         "E23",
         "E24",
@@ -984,6 +984,7 @@
         "E33",
         "E53",
         "E54",
+        "E55",
         "EXT08",
         "NG21",
         "NG22",
@@ -1030,6 +1031,12 @@
         "P232",
         "P233",
         "P234",
+        "P235",
+        "P236",
+        "P237",
+        "P238",
+        "P239",
+        "P240",
         "P72",
         "P73",
         "P75",
@@ -1047,11 +1054,11 @@
         "P87",
         "P88"
       ],
-      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).",
+      "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).  [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md); [`context/H112.md`](context/H112.md).",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-09-04 (Phase 38 audit)",
-      "notes": "P231--P234 add exact threshold mass, opposite source/companion summability, a real/2-adic transfer, and pointwise renewal-boundary defects. They still do not control canonical-address multiplicity, force a nonzero P115 lift, or extinguish the P81/P86 irreducible tree. P80 and H112 remain unproved.",
+      "last_audited": "2026-09-04 (Phase 39 audit)",
+      "notes": "P240 conditionally reduces every nonperiodic orbit to H112 using X02 and P228/E54. P235--P239 constrain current-state carries and macroscopic ancestors but construct no universal ancestor and prove no lift extinction. P80 and H112 remain unproved.",
       "status": "OPEN"
     },
     {
@@ -2023,23 +2030,34 @@
     },
     {
       "claim": "Prove that every infinite coefficient-safe all-prefix same-Q-geodesic branch has infinitely many nonzero canonical accelerated source lifts.",
-      "collatz_implication": "With P115, would exclude positive ordinary sources in this exact H72 sublanguage.",
-      "dependencies": "P98, P115, P125, P126, P127, P129, P131, E33; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.",
+      "collatz_implication": "With P115 and P240/X02, would exclude the full positive nonperiodic branch; cycles remain separate.",
+      "dependencies": "P98, P115, P125, P126, P127, P129, P131, E33; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.  P86, P222, P228, E54, P235, P236, P237, P238, P240, E55; X02 only in the global implication.",
       "dependency_ids": [
         "E33",
+        "E54",
+        "E55",
         "P115",
         "P125",
         "P126",
         "P127",
         "P129",
         "P131",
-        "P98"
+        "P222",
+        "P228",
+        "P235",
+        "P236",
+        "P237",
+        "P238",
+        "P240",
+        "P86",
+        "P98",
+        "X02"
       ],
-      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Sections 6--7; [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md); [`context/H72.md`](context/H72.md).",
+      "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Sections 6--7; [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md); [`context/H72.md`](context/H72.md).  [`context/H112.md`](context/H112.md); [`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md).",
       "first_introduced": "Phase 19",
       "id": "H112",
-      "last_audited": "2026-08-29 (Phase 21 audit)",
-      "notes": "P127/P131 constrain complexity and peaks but do not force one nonzero lift; the nongeodesic H72 language and nontrivial cycles also remain separate.",
+      "last_audited": "2026-09-04 (Phase 39 implication audit; status unchanged)",
+      "notes": "The statement remains OPEN. P240 supplies the formerly missing reduction from the full H72 branch under X02; P237/P238 give a macroscopic search language but force no nonzero lift.",
       "status": "OPEN"
     },
     {
@@ -4451,9 +4469,129 @@
       "last_audited": "2026-09-04",
       "notes": "It is not pointwise at every odd iterate and gives no finite last-small-defect time.",
       "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For integer k,s>=0 and m with the P91 local relation, prefix carry integrality is equivalent to divisibility of (2^k-3^s)S+m by 3^Q in the current ordinary state S.",
+      "collatz_implication": "Expresses the prefix obstruction in ordinary current coordinates.",
+      "dependencies": "P91; actual prefix identity 2^L S=3^Q N+B(p).",
+      "dependency_ids": [
+        "P91"
+      ],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "P235",
+      "last_audited": "2026-09-04",
+      "notes": "Divisibility alone is not positive literal safe descent; signed-s generalization requires a separately stated convention.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every fixed distinct literal relation in P235 admits carry lifts at only finitely many odd depths on a positive nonperiodic permanent-safe orbit; the same holds for a fixed finite dictionary of direct lifts.",
+      "collatz_implication": "Rules out bounded direct local-lift mechanisms at unbounded depth.",
+      "dependencies": "P235, P222, P76; S(Q)<(S0+h0)(3/2)^Q and S(Q)->infinity.",
+      "dependency_ids": [
+        "P222",
+        "P235",
+        "P76"
+      ],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "P236",
+      "last_audited": "2026-09-04",
+      "notes": "Identity a=d=1 is excluded. Periodic a=1,d=101,S=1 has zero carry. No impossibility of all dictionary-based proofs or growing compositions is asserted.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For safe local words with k,s>=0, 2^k>=3^s and nonzero carry, 3^Q<=2^k(S(Q)+(Q(a)+Q(d))/3). If local odd counts are exp(o(Q)) along a fixed orbit, successful lifts require k>=Q-O(1), hence k>=Q-o(Q).",
+      "collatz_implication": "Requires macroscopic shortening for this dominating carry mechanism.",
+      "dependencies": "P235, P97 weak correction bound including q=1; fixed orbit normalization.",
+      "dependency_ids": [
+        "P235",
+        "P97"
+      ],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "P237",
+      "last_audited": "2026-09-04",
+      "notes": "This is a necessary condition, not an ancestor construction; hypotheses do not cover every signed cross-Q relation.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For w=1^R0v, D(w)=2^R J and the tail DAG has J1=1, J_next=3J on 1 or J+2^ell on 0. Equal-(ell,J) tails with k extra ones yield the same-Q jump source (S+1)/2^k-1. For 1<=k<=R-1 it is a smaller positive literal source; a safe competitor contradicts P86 minimality. The family 1^r00 -> 1^(r-1)01 is safe for r>=4.",
+      "collatz_implication": "Provides an exact growing-ancestor search language.",
+      "dependencies": "P95, P86; actual maximal initial run gives v2(S+1)=R; endpoint integrality gives parity legality.",
+      "dependency_ids": [
+        "P86",
+        "P95"
+      ],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "P238",
+      "last_audited": "2026-09-04",
+      "notes": "Full safety uses adjusted run R-k. Neither global confluence nor extinction follows; a common suffix must preserve safety.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every translated integer interval of length X>=1 contains fewer than 2X^(29/30) renewal-boundary states of a positive permanent-safe nonperiodic orbit.",
+      "collatz_implication": "Improves the renewal-subset occupancy constant from 32 to 2.",
+      "dependencies": "P77 parity cylinders; exact binomial first-bit count; Phase 37 theta=14/23 entropy certificate.",
+      "dependency_ids": [
+        "P77"
+      ],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "P239",
+      "last_audited": "2026-09-04",
+      "notes": "X=1 is handled separately; this does not bound multiplicity across arbitrary addresses or improve the exponent.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Assuming X02, existence of a positive nonperiodic orbit gives a least permanent-safe source S with Y_infinity<2S and every prefix same-Q geodesic. Its canonical source lifts eventually vanish. Therefore X02 plus H112, with the accepted internal inputs, exclude the full nonperiodic branch.",
+      "collatz_implication": "Concentrates the full nonperiodic route at H112 conditionally on the finite exclusion input.",
+      "dependencies": "P222, P228/E54, P86, P98, P115, X02; initial odd source included in the reciprocal sum; canonical endpoint positivity bridge.",
+      "dependency_ids": [
+        "E54",
+        "P115",
+        "P222",
+        "P228",
+        "P86",
+        "P98",
+        "X02"
+      ],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "P240",
+      "last_audited": "2026-09-04",
+      "notes": "H112 remains OPEN, X02 is EXTERNAL_EVIDENCE. Choose least source across all such positive orbits. Cycles remain separate.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "claim": "For positive ordinary odd orbit states y=(x+1)/2, e=1 strictly ascends and e>=2 strictly descends except x=1,e=2. A positive cycle with minimum m and M events e>=2 obeys M>m log(1/lambda); noncritical cycles satisfy M>m log 2.",
+      "collatz_implication": "Adds directional and event-count constraints to the separate cycle branch.",
+      "dependencies": "P215 exact shifted recurrence; positive-cycle product; log(1+u)<u and event increment u<1/m.",
+      "dependency_ids": [
+        "P215"
+      ],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "P241",
+      "last_audited": "2026-09-04",
+      "notes": "The direction equality characterization requires integer positivity: rational e=3 fixes x=1/5. Event count alone excludes no arbitrary-area critical cycle.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Phase 39 independently reconstructs 21844 prefix-carry cases, every tail path through ell=12 (including its initial zero), 10520 jump candidates for R<=12, 500 binomial rows, 8178 canonical endpoint words and 24534 lifts, plus exact event and adversarial corpora.",
+      "collatz_implication": "Audits the finite implementations and repaired conventions.",
+      "dependencies": "P235--P241; declared experiment bounds; exact integer/rational reconstruction.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); `verifier/verify_phase39.py`; Phase 39 artifacts and tamper tests.",
+      "first_introduced": "Phase 39",
+      "id": "E55",
+      "last_audited": "2026-09-04",
+      "notes": "All tested jump candidates are safe and maximum gain is 3; no all-depth safety or ancestor existence theorem follows.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "ad82658e91e85f24366a377898694c1f5011b6e4572e0279a8edecfdca8d32d7"
+  "source_sha256": "add29b4926623a8046d478a028549d139092c9fde5e7b48fcdee85097b29db04"
 }

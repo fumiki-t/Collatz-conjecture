@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 38,
+    "latest_phase": 39,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,17 +22,17 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 38,
-    "report": "PHASE38_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase38_verifier.json",
+    "phase": 39,
+    "report": "PHASE39_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase39_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "generator_imported": false,
-      "capacity_rows": 501,
-      "private_digest_match": false,
+      "carry_rows": 21844,
+      "dag_rewrites": 10520,
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase38-finite-capacity-renewal-transfer.json"
+    "experiment_manifest": "research/experiments/phase39-macroscopic-carry-jump-geodesic.json"
   },
   "active_obligations": [
     {
@@ -80,24 +80,24 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "P117", "P119", "P120", "P121", "P122", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P219", "P220", "P221", "P222", "P223", "P224", "P225", "P227", "P228", "P231", "P232", "P233", "P234", "EXT08", "EXT10", "EXT11", "EXT12", "EXT13", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "E32", "E33", "E53", "E54", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31"],
-      "success_scope": "Eliminate the permanent coefficient-safe nonperiodic branch left by P222; Phase 38 supplies exact threshold mass, opposite source/companion summability, completion-dependent transfer limits, and pointwise renewal-boundary defects, but P80 address multiplicity, ordinary carry/height, and the separate cycle branch remain open."
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "P117", "P119", "P120", "P121", "P122", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P219", "P220", "P221", "P222", "P223", "P224", "P225", "P227", "P228", "P231", "P232", "P233", "P234", "EXT08", "EXT10", "EXT11", "EXT12", "EXT13", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "E32", "E33", "E53", "E54", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55"],
+      "success_scope": "Eliminate the permanent-safe nonperiodic branch left by P222; P240 reduces it to H112 conditionally on X02 and P228/E54, while P235--P238 constrain macroscopic current-state carry and source descent and cycles remain separate."
     },
     {
       "id": "H112",
       "status": "OPEN",
       "priority": "P0",
-      "context": "docs/context/H72.md",
-      "depends_on": ["P98", "P112", "P114", "P115", "P116", "P117", "P121", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "EXT08", "E31", "E32", "E33", "NG22", "NG23", "NG28", "NG31"],
-      "success_scope": "Exclude positive ordinary sources only in the infinite coefficient-safe all-prefix same-Q-geodesic sublanguage by proving infinitely many nonzero canonical source lifts; repetition complexity is now a stronger necessary input but not a lift theorem."
+      "context": "docs/context/H112.md",
+      "depends_on": ["P98", "P112", "P114", "P115", "P116", "P117", "P121", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "EXT08", "E31", "E32", "E33", "NG22", "NG23", "NG28", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55"],
+      "success_scope": "Prove infinitely many nonzero canonical lifts on every infinite safe all-prefix same-Q geodesic; P240 now makes this sufficient for the full nonperiodic exclusion under X02. Retain ordinary positive realization, growing carry-compatible ancestors, and source 167."
     },
     {
       "id": "H133",
       "status": "OPEN",
       "priority": "P1",
       "context": "docs/context/H133.md",
-      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P177", "P178", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "P195", "P196", "P197", "P198", "P199", "P200", "P201", "P202", "P203", "P204", "P207", "P208", "P209", "P210", "P211", "P212", "P213", "P214", "P215", "P216", "P217", "P220", "P221", "P226", "P227", "P228", "P229", "P230", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "E44", "E45", "E46", "E47", "E48", "E50", "E51", "E52", "E53", "E54", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "NG41", "NG42", "H172", "H200"],
-      "success_scope": "Eliminate every primitive positive nontrivial cycle beyond Phase 36's critical A>=230 floor; P229 confines noncritical cycles to minimum below 2^49 and P230 closes them only conditionally on X02, while the critical root-sparse/root-dense full-cofactor problem remains."
+      "depends_on": ["P133", "P134", "P135", "P136", "P137", "P138", "P139", "P140", "P144", "P145", "P146", "P147", "P148", "P149", "P150", "P151", "P154", "P155", "P156", "P157", "P158", "P159", "P160", "P161", "P162", "P163", "P164", "P165", "P166", "P167", "P168", "P169", "P170", "P171", "P173", "P174", "P175", "P176", "P177", "P178", "P179", "P180", "P181", "P182", "P183", "P184", "P185", "P186", "P187", "P188", "P189", "P190", "P191", "P192", "P193", "P194", "P195", "P196", "P197", "P198", "P199", "P200", "P201", "P202", "P203", "P204", "P207", "P208", "P209", "P210", "P211", "P212", "P213", "P214", "P215", "P216", "P217", "P220", "P221", "P226", "P227", "P228", "P229", "P230", "E28", "E34", "E35", "E36", "E37", "E38", "E39", "E40", "E41", "E42", "E43", "E44", "E45", "E46", "E47", "E48", "E50", "E51", "E52", "E53", "E54", "EXT05", "EXT15", "EXT17", "NG32", "NG33", "NG34", "NG35", "NG36", "NG37", "NG38", "NG39", "NG40", "NG41", "NG42", "H172", "H200", "P241", "E55"],
+      "success_scope": "Exclude arbitrary-area primitive positive critical cycles; P229 bounds noncritical minima and P230 closes that branch only under X02. P241 adds integer event direction and event count but no critical exclusion."
     },
     {
       "id": "H141",
@@ -385,7 +385,15 @@
     "P231",
     "P232",
     "P233",
-    "P234"
+    "P234",
+    "P235",
+    "P236",
+    "P237",
+    "P238",
+    "P239",
+    "P240",
+    "P241",
+    "E55"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

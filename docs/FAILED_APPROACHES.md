@@ -1402,6 +1402,29 @@ no specified serialization and is diagnostic only; E54 instead reconstructs
 all rows independently. See
 [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).
 
+## Phase 39 — repaired direct-rewrite and event scopes
+
+The unrestricted assertion that every fixed rewrite dies at depth omits the
+identity `a=d=1,k=s=m=0`, whose carry is zero at every depth. P236 excludes
+identical rules. The distinct pair `a=1,d=101` at S=1 also has zero carry and
+endpoint 2; it is the exact periodic exception. The valid result concerns
+direct lifts on positive nonperiodic orbits. It cannot justify the broader
+claim that no finite dictionary can participate in an H72 proof: growing
+compositions or a different use of rules remain possible.
+
+P238's equal-J tail weights are promising because they yield exact shorter
+coalescent words. Full safety must still be checked after reducing the initial
+run. Every one of the 10,520 bounded candidates passed, which leaves the
+all-depth safety question open. Do not promote this finite absence to a
+confluence or extinction theorem. The smallest collision has ell=2,J=3;
+the first safe source jump is 15 to 7.
+
+The positive integer event-direction equality characterization fails if
+extended to rational controls: e=3 fixes x=1/5. P241 retains the integer
+hypothesis for directions and a separately proved positive-cycle event-count
+bound. These scope repairs introduce no new general no-go claim. See the
+[`Phase 39 audit`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md).
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

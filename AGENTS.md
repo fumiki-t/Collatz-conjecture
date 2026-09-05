@@ -371,6 +371,19 @@ carry, ancestry, address multiplicity, or effective height rather than merely
 repackage the transfer series. Preserve NG22 and the distinction between
 renewal-boundary control and control of every odd iterate.
 
+Phase 39 focuses the nonperiodic route further. P235--P237 express the
+nonnegative k,s prefix carry in the current ordinary state and require
+macroscopic shortening, k>=Q-O(1), under their subexponential local-weight
+hypothesis. Fixed-dictionary extinction concerns direct lifts only; do not
+exclude growing compositions or signed-s ancestors by that theorem. P238's
+shifted-correction DAG requires full-word safety, initial-run budget,
+positive literal sources and ordinary descent. P239 gives renewal occupancy
+below 2X^(29/30). P240 reduces the entire nonperiodic branch to H112 only
+under X02, P228/E54 and P222; H112 remains OPEN. Use its dedicated context
+pack. P241's integer event direction and positive-cycle event count are
+auxiliary, not an arbitrary-area critical-cycle exclusion. Preserve identity
+and periodic zero-carry controls, NG22/NG24, and rational event exceptions.
+
 Phase 31 replaces the near-uniform singleton picture by P185/P186 static
 double-hit transport and strengthens the area constant through P187. Future
 H172 work must split two cases: use P190 only after proving a sublinear global

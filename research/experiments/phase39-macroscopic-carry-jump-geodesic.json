@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "phase39-macroscopic-carry-jump-geodesic",
+  "status": "RUNNING",
+  "claim_ids": ["P235", "P236", "P237", "P238", "P239", "P240", "P241", "E55", "H72", "H112", "H133"],
+  "objective": "Independently audit current-state prefix carry, fixed-rewrite depth obstructions, shifted-correction DAG collisions, the conditional all-prefix geodesic reduction, and positive-cycle event constraints.",
+  "exact_scope": {
+    "quantifiers": ["fixed distinct literal coalescent word relations on actual nonperiodic positive orbits", "all tail paths and collisions through the declared DAG depth", "safe positive ordinary competitors only", "every permanent-safe renewal boundary and every positive integral cycle"],
+    "bounds": {"tail_length_including_initial_zero_maximum": 12, "suffix_length_maximum": 11, "initial_run_maximum": 12, "local_word_length_maximum": 8, "prefix_length_maximum": 6, "positive_endpoint_word_length_maximum": 12, "capacity_length_maximum": 500, "finite_orbit_source_maximum": 1023, "finite_orbit_steps": 64, "cycle_odd_count_maximum": 5, "cycle_exponent_maximum": 4},
+    "completeness": "Bounded exact enumeration audits conventions and finds obstructions; all-scale statements require written proofs. No finite exhaustion of H112, H72 or cycles is asserted."
+  },
+  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "none; integer powers, rational inequalities, and symbolic limiting arguments only"},
+  "commands": {
+    "generator": [".venv/bin/python src/phase39_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase39.py --artifact-dir artifacts --output artifacts/phase39_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase39_properties.py tests/test_phase39_verifier.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["affine coefficients from odd positions", "tail collisions by full binary enumeration", "safe maximum-weight competitors and ordinary source residues", "state-form carries and exact macro inequalities", "renewal binomial capacities and rational entropy certificates", "cycle event identities and retained adversarial obstructions"],
+    "forbidden_imports": ["src.phase39_search", "phase39_search", "from src", "import src"],
+    "tamper_tests": ["tests/test_phase39_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG24", "NG41", "NG42", "source 167", "trivial and negative cycles", "identity rewrite", "unsafe maximum-weight paths"],
+  "artifacts": ["artifacts/phase39_carry_audit.json", "artifacts/phase39_jump_dag.json", "artifacts/phase39_capacity_cycle.json", "artifacts/phase39_regressions.json", "artifacts/phase39_obstruction_report.md", "artifacts/phase39_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["Repair or refute missing quantifiers before accepting a theorem.", "Do not confuse affine divisibility with legal positive safe descent.", "Do not infer extinction or global confluence from a finite DAG.", "Do not promote H112 or X02 to an internally verified theorem."],
+  "interpretation_boundary": ["Fixed-dictionary direct-lift extinction does not forbid all uses or compositions of finitely many rules.", "Maximum-weight and safe maximum-weight paths must be distinguished.", "The H112 reduction is conditional and cycles remain separate.", "Collatz remains open."],
+  "proves_collatz": false
+}

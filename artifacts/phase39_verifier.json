@@ -1,0 +1,34 @@
+{
+  "capacity_rows": 500,
+  "carry_relations": 172,
+  "carry_rows": 21844,
+  "claim_statuses": {
+    "E55": "VERIFIED_FINITE",
+    "H112": "OPEN",
+    "H133": "OPEN",
+    "H72": "OPEN",
+    "P235": "VERIFIED_THEOREM",
+    "P236": "VERIFIED_THEOREM",
+    "P237": "VERIFIED_THEOREM",
+    "P238": "VERIFIED_THEOREM",
+    "P239": "VERIFIED_THEOREM",
+    "P240": "CONDITIONAL",
+    "P241": "VERIFIED_THEOREM"
+  },
+  "dag_rewrites": 10520,
+  "dag_vertices": 1938,
+  "direct_event_count": 32768,
+  "floating_point_used_for_acceptance": false,
+  "generator_imported": false,
+  "input_sha256": {
+    "phase39_capacity_cycle.json": "e937adb6af2815e20d38f71f5cbd9e937146a7db4aeadfbf52addc90bae901de",
+    "phase39_carry_audit.json": "48a1cbcb519aec3954ed06c4238e48f3b0e9bdb75c74619d98586ea568fa2888",
+    "phase39_jump_dag.json": "21c15569c0aade0cb88e794858dd8689739ef4006f20110796b1de48a42671dd",
+    "phase39_obstruction_report.md": "10585e25d98fbc234d91253219bbff049273397a123d9877fa5b3f619ca61cf2",
+    "phase39_regressions.json": "14c624789adb3346e9e55da0e173731202b508b9648a464bf6691f550bb7e32b"
+  },
+  "positive_endpoint_lifts": 24534,
+  "proves_collatz": false,
+  "rational_cycles": 1320,
+  "valid": true
+}

@@ -5,8 +5,19 @@
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
 
-For the self-contained Phase 1–15 map, conventions, dependency branches, and
+For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
+
+Latest layer: [`Phase 39`](../PHASE39_RUN_RESULTS.md) and its
+[`audit`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md).
+P235--P239 prove current-state carry, fixed direct-lift extinction,
+macroscopic shortening, the exact jump DAG, and renewal occupancy below
+`2X^(29/30)`. P240 conditionally concentrates the entire nonperiodic branch
+at [`H112`](context/H112.md), using X02 and P228/E54. P241 adds cycle event
+constraints. E55 is bounded exact evidence; H112/H72/H133 remain `OPEN`.
+Next, seek a growing carry-compatible ancestor or an all-depth source-lift
+theorem. A fixed direct-rewrite dictionary, raw DAG weight, or a finite
+zero-lift run does not supply either result.
 
 ## What is currently proved?
 
@@ -920,4 +931,5 @@ eventual nonzero lifts.
 - Phase 36 acceptance: [`../PHASE36_RUN_RESULTS.md`](../PHASE36_RUN_RESULTS.md)
 - Phase 37 acceptance: [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md)
 - Phase 38 acceptance: [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md)
+- Phase 39 acceptance: [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md)
 - Hashes: [`../artifacts/SHA256SUMS`](../artifacts/SHA256SUMS)

@@ -281,6 +281,15 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   Those completion-dependent limits are not a contradiction, and H72 remains
   open.
 
+- Phase 39 proves current-state carry and the restricted fixed-direct-lift
+  obstruction; successful subexponential-weight dominating rewrites need
+  `k>=Q-O(1)`. Its exact shifted-correction DAG checks safe ancestors with
+  ordinary source descent. P240 shows that X02 plus open H112 would exclude
+  the full nonperiodic branch through P228/E54; H112 is not proved. P239
+  improves the renewal-subset constant to 2, and P241 adds cycle event
+  direction/count. Read [`context/H112.md`](context/H112.md) before extending
+  the DAG. Identity and periodic zero-carry cases are recorded explicitly.
+
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
 

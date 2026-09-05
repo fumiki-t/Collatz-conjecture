@@ -307,6 +307,17 @@ boundaries. NG22 remains decisive: different completion limits and opposite
 weighted sums are not contradictory without ordinary positivity, carry,
 ancestry, or effective height.
 
+Phase 39 makes the H112 link precise: under X02, P228/E54 forces
+`Y_infinity<2S` at the least permanent-safe nonperiodic source, so P240 makes
+every prefix same-Q geodesic. H112 would then exclude the entire nonperiodic
+branch. Read [`context/H112.md`](context/H112.md) for this acceptance boundary.
+P235--P237 require a successful dominating nonzero carry to shorten by
+`k>=Q-O(1)` when local odd counts are subexponential in Q. A finite dictionary
+cannot supply direct lifts at unbounded depth, but growing compositions
+remain a possible route. Search P238's `(ell,J)` DAG with the full adjusted
+initial-run safety test and actual ordinary sources; seek a uniform
+construction or obstruction rather than another finite depth record.
+
 **Fast falsification test.** Apply the proposed exclusion to the exact finite
 orbits, all-contact prefixes, NG21, both NG22 formal exponent/2-adic sources,
 the NG23 `u=1,H=2` obstruction, the NG24 prefixed collision, both Phase 15

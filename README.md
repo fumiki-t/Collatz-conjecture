@@ -22,19 +22,20 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 38 is the latest accepted research layer. It turns Phase 37's
-location-uniform sparsity into exact recursive finite-scale capacities and
-proves that every primitive positive noncritical cycle has minimum below
-`2^49`. The stronger statement that every positive cycle is critical remains
-conditional on external evidence X02. For a surviving permanent-safe
-nonperiodic tail, exact renewal digits are summable relative to the ordinary
-source, nonsummable relative to the real companion, and define different
-limits over the reals and `Q_2`; this is a constraint, not a contradiction.
+Phase 39 is the latest accepted research layer. It expresses prefix carry
+in the current ordinary state and proves that fixed distinct local rewrites
+eventually fail as direct deep-prefix lifts. Under the stated growth and
+dominance assumptions, successful shortening must satisfy `k>=Q-O(1)`.
+An exact shifted-correction DAG records candidate ancestors. Phase 38's
+finite capacity certificate now gives a conditional reduction of the entire
+nonperiodic branch to the open source-lift target H112, using external
+evidence X02. Positive-cycle event direction and count give further necessary
+conditions; arbitrary-area critical cycles remain unexcluded.
 H72, H133, and the broader H54, H70, H89, H104, H105, H112, H141, H172, C03,
 C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–38, separates internal and external
+map and conventions, summarizes Phases 1–39, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -75,12 +76,12 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase38.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase38_verifier.json
+.venv/bin/python verifier/verify_phase39.py \
+  --artifact-dir artifacts --output /tmp/collatz_phase39_verifier.json
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 38 result](PHASE38_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 39 result](PHASE39_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout
