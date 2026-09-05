@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase39-macroscopic-carry-jump-geodesic",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P235", "P236", "P237", "P238", "P239", "P240", "P241", "E55", "H72", "H112", "H133"],
   "objective": "Independently audit current-state prefix carry, fixed-rewrite depth obstructions, shifted-correction DAG collisions, the conditional all-prefix geodesic reduction, and positive-cycle event constraints.",
   "exact_scope": {
@@ -24,5 +24,18 @@
   "artifacts": ["artifacts/phase39_carry_audit.json", "artifacts/phase39_jump_dag.json", "artifacts/phase39_capacity_cycle.json", "artifacts/phase39_regressions.json", "artifacts/phase39_obstruction_report.md", "artifacts/phase39_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Repair or refute missing quantifiers before accepting a theorem.", "Do not confuse affine divisibility with legal positive safe descent.", "Do not infer extinction or global confluence from a finite DAG.", "Do not promote H112 or X02 to an internally verified theorem."],
   "interpretation_boundary": ["Fixed-dictionary direct-lift extinction does not forbid all uses or compositions of finitely many rules.", "Maximum-weight and safe maximum-weight paths must be distinguished.", "The H112 reduction is conditional and cycles remain separate.", "Collatz remains open."],
+  "recorded_result": {
+    "commit": "d5cdc0f9b1065bf0c30d8888b7b519945134180a",
+    "generator": "valid=true; carry_rows=21844; dag_rewrites=10520; proves_collatz=false",
+    "verifier": "valid=true; generator_imported=false; floating_point_used_for_acceptance=false; 1938 DAG vertices; 24534 positive endpoint lifts; proves_collatz=false",
+    "focused_tests": "61 passed in 22.76s (Phase 39 properties, independent verifier/tamper tests, research health)",
+    "dependency_tests": "33 passed in 118.03s (Phase 15B/16/19/37/38 properties and Phase 38 verifier)",
+    "dependency_verifier": "Phase 38 valid=true; 501 capacity rows independently reconstructed",
+    "full_tests": "Not rerun in Phase 39; 94 scoped tests passed. Phase 38 full-suite result remains historical evidence only.",
+    "strict_research_health": "valid=true, errors=[], warnings=[]; 265 tracked artifacts; run from detached implementation-commit worktree, clean before and after",
+    "markdown_links": "147 files valid",
+    "manifest_sha256": "b629ea2ca612051a68282bf96fa44a36868d2d111eae6664bf863c0f9da4450b",
+    "verifier_valid": true
+  },
   "proves_collatz": false
 }
