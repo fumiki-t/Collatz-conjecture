@@ -306,6 +306,11 @@ finite search found no recursive closure or uniform anti-concentration bound.
 
 ## 6. Square-root critical countermodel
 
+Later audit (2026-09-10): [Phase 42 P255](../mechanical-capacity/REPORT.md)
+excludes this particular model's positive ordinary source. Its formal/2-adic
+construction below remains valid; the unknown-source wording at the end of
+this section records the historical Phase 13 boundary.
+
 Let
 
 \[

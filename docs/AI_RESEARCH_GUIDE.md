@@ -2,8 +2,13 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 41's shifted-decoder/all-Q audit is the latest
-research layer. P243's simplified height proof makes H112 equivalent to
+proof of the conjecture. Phase 42's mechanical-capacity audit is the latest
+research layer. P252/P253 retain distinctness and downward variation; P254
+applies only to nondecreasing defects. P255 excludes the particular Phase 13
+square-root model's ordinary source, not its formal 2-adic model or the safe
+language. P256 gives the minimum q=22 negative carry. E58's ordinary CAP
+sample is vacuous for packing; its repeat-and-split certificates are not.
+P243's simplified height proof makes H112 equivalent to
 nonperiodic exclusion without X02; it does not prove either. P247 stabilization
 has no effective last join. P248 is a finite decoder, not ancestor existence.
 P251/NG45 refute forced same-vertex gain from the current formal analytic
@@ -13,13 +18,15 @@ unsafe and longer cross-Q competitors, NG43, and explicit finite search caps.
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–41 evidence boundaries, and current obligations.
+   branch map, Phase 1–42 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md) and
+6. [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md) and
+   [`../research/audits/mechanical-capacity/REPORT.md`](../research/audits/mechanical-capacity/REPORT.md),
+   then [`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md) and
    [`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md),
    then [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md),
    [`context/H112.md`](context/H112.md), and

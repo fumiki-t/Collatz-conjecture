@@ -22,12 +22,13 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 41 is the latest accepted research layer. It provides a complete
-shifted decoder and a bounded ancestor oracle that retains even, unsafe,
-longer and different-Q competitors. An exact formal word has no higher-weight
-same-vertex alternative at any depth, showing why ordinary-source arithmetic
-is still needed. The formal word is not a positive-integer counterexample.
-See the [Phase 41 results](PHASE41_RUN_RESULTS.md).
+Phase 42 is the latest research layer. Mechanical-factor capacity proves a
+square-root lower bound for nondecreasing defects and excludes a positive
+ordinary source for the specific square-root formal model of Phases 13/41.
+This does not exclude general safe words or prove H112. Independent finite
+certificates also establish the minimum odd count 22 for negative same-q
+carry. See the [Phase 42 results](PHASE42_RUN_RESULTS.md), including the
+explicit limits of its finite capacity sample.
 
 The Phase 40 normalized-height reduction survives and is simplified in
 Phase 41. Minimizing a finite normalized
@@ -44,7 +45,7 @@ H72, H133, and the broader H54, H70, H89, H104, H105, H112, H141, H172, C03,
 C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–41, separates internal and external
+map and conventions, summarizes Phases 1–42, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -85,12 +86,11 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase40.py \
-  --artifact-dir artifacts --output /tmp/collatz_phase40_verifier.json
+.venv/bin/python verifier/verify_phase42.py --artifact-dir artifacts
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 40 result](PHASE40_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 42 result](PHASE42_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

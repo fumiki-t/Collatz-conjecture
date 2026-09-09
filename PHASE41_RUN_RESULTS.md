@@ -1,5 +1,10 @@
 # Phase 41 — shifted decoding, all-Q ancestors, and a formal no-gain model
 
+Later audit (2026-09-10): [Phase 42 P255](research/audits/mechanical-capacity/REPORT.md)
+excludes the particular square-root model's positive ordinary source. This
+report and its accepted JSON record the Phase 41 state of knowledge; the
+formal/2-adic P251/NG45 results remain valid and the old artifacts are unchanged.
+
 Base: `4a814b3b376d491e602310e41cbf30725f9fd5b6` (Phase 40 acceptance).
 Branch: `feat/phase41-shifted-decoder-all-q`.
 The supplied September 9 bundle was treated as an unaudited proposal.

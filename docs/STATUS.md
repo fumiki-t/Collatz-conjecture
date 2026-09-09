@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-09-09
+**Last updated:** 2026-09-10
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -8,7 +8,19 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest layer: [`Phase 41`](../PHASE41_RUN_RESULTS.md) and its
+Latest layer: [`Phase 42`](../PHASE42_RUN_RESULTS.md) and its
+[`audit`](../research/audits/mechanical-capacity/REPORT.md).
+P252/P253 give simultaneous mechanical capacity, energy and downward-variation
+bounds. P254 implies a square-root lower bound for nondecreasing defects;
+P255 excludes the particular Phase 13/P251 model as a positive ordinary
+infinite source. Its formal 2-adic model and NG45 remain valid. P256 proves
+negative carry first occurs at q=22. E58 verifies eight nonvacuous finite
+repeat certificates up to source bound 2^1024; the separate 2,048-source CAP
+sample has zero counted factors and is explicitly recorded as vacuous for
+packing. The missing step is a lift/ancestry constraint on the general
+defect and its downward variation. H112/H72/H89/H133 remain OPEN.
+
+Previous layer: [`Phase 41`](../PHASE41_RUN_RESULTS.md) and its
 [`audit`](../research/audits/shifted-decoder-all-q/REPORT.md).
 P242/P243 now have an all-positive-source reproof and H112 equivalence,
 without an H112 proof. P247 gives non-effective all-Q stabilization;
@@ -34,6 +46,14 @@ formal models, source 167, and NG43.
 
 ## What is currently proved?
 
+- `VERIFIED_THEOREM`: P252--P256 give pure-factor capacity, variation cost,
+  the monotone square-root bound, exclusion of one specific formal model's
+  positive ordinary source, and the exact q=22 negative-carry minimum.
+- `VERIFIED_FINITE`: E58 reconstructs the declared orbit conventions, all
+  48 q=21 remainder cases and eight repeat-and-split certificates. It does
+  not certify an infinite trajectory by a large finite prefix.
+- Still missing: monotonicity or a contradicting variation budget for
+  actual geodesics. Do not extend P255 from this one model to all safe words.
 - `VERIFIED_THEOREM`: P247--P251 give all-Q maximum-ratio stabilization,
   complete shifted decoding, mixed positive-source coalescence, the exact
   gain cap, and an all-depth formal maximal-vertex model. The P243 equivalence

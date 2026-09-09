@@ -108,8 +108,15 @@ Research supplements:
 | Macroscopic carry/jump-geodesic audit | [`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md) | Exact current-state carry, all bounded tail collisions, positive endpoint lifts, capacity/event audit, independent verifier and tamper tests | P235--P241, E55, conditional full nonperiodic reduction to H112 |
 | Normalized-height/Bellman audit | [`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md) | Normalized-height minimum, global coefficient maximality, Bellman redundancy, complete length-25 safety falsification, alternate-predecessor cloud, independent verifier and tamper tests | P242--P246, E56, NG43; H112 implication without X02 and non-effective stabilization boundary |
 
+Latest followup: [`Phase 42 results`](../PHASE42_RUN_RESULTS.md),
+[`mechanical-capacity audit`](../research/audits/mechanical-capacity/REPORT.md),
+and [`experiment contract`](../research/experiments/phase42-mechanical-capacity.json).
+These distinguish the particular model's ordinary-source exclusion from its
+surviving formal no-go, record q=22 negative-carry minimality, and flag the
+vacuous ordinary CAP sample separately from the direct repeat certificates.
+
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 41 and both the branch-point and two-tail
+documentation through Phase 42 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

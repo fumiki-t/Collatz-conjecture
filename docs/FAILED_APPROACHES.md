@@ -737,12 +737,18 @@ and endpoint, with `d` longer than `a`, then the integer carry in
 have positive carry, and shorter paths amplify the normalized affine
 correction by `2^k`.
 
-**Smallest stored counterexample (by the supplied audited witness).** At
-Q=26, the length-39 word
+**Original stored counterexample (preserved).** At Q=26, the length-39 word
 `111111111101111110101011110010001001100` and length-40 word
 `1101101101110011100111011101010101101101` are both safe and reach endpoint
 716727426419. Their sources are 155014110207 and 310028220411, with
 `S_d=2S_a-3`.
+
+**Phase 42 minimum update.** P256/E58 establish the exact minimum Q=22,
+with sources 29023002619 and 14511501311, endpoint 53013941237, and carry
+-3. The complete q<=21 proof combines extremal inequalities and a 48-case
+single-shift remainder. It is q-minimal, not asserted height- or lex-minimal.
+The target has only `{1,2}` exponents but its alternative does not, preserving
+P88. See the [`Phase 42 audit`](../research/audits/mechanical-capacity/REPORT.md).
 
 **Failure scope.** Fundamental for positivity, not for quantitative carry
 bounds. A common legal suffix preserves the endpoint relation when both
@@ -750,7 +756,7 @@ extended paths remain safe.
 
 **Weaker statement retained.** P97 proves `m>-q/3` and
 `m>(2^k-q)/3`; negative carry can occur only when `2^k<q`. Future recurrences
-must store signed carry and survive this Q=26 pair.
+must store signed carry and survive both the Q=22 and Q=26 pairs.
 
 **Evidence.** [`../PHASE16_RUN_RESULTS.md`](../PHASE16_RUN_RESULTS.md),
 `artifacts/phase16_theory.json`, and the independent Phase 16 verifier.
@@ -1478,6 +1484,8 @@ No minimality among infinite models is asserted. This is fundamental for
 analytic-only forced same-vertex rewriting, but not for an argument using
 positive ordinary source integrality or broader ancestors. A positive source,
 full same-Q geodesicity and H112 failure are **not** established for w.
+The later P255 theorem excludes its positive ordinary source. This does not
+retract its formal no-gain property or the analytic-only NG45 refutation.
 
 The convergent source7 similarly admits no mixed rewrite at any prefix:
 its clock differences to candidate sources3,1 fail the required values.
@@ -1488,6 +1496,28 @@ effective last-coalescence bound, not a new stopping algorithm.
 
 Proofs and exact scopes: [`Phase 41 audit`](../research/audits/shifted-decoder-all-q/REPORT.md).
 What this result does not prove: H112/H72/H89/H133 and Collatz remain open.
+
+## Phase 42 — capacity assumptions and the surviving variation branch
+
+The square-root formal model's ordinary source is now excluded by P255,
+but not by its coherent 2-adic source, completion limits, or sampled residue
+growth. P125 plus literal mechanical capacity supplies the missing integer
+input for this particular model. P254 does not imply defect monotonicity for
+a geodesic and does not exclude faster monotone defects. P253 explicitly
+retains downward variation, which can absorb the low-maximum-defect budget.
+Treating all defects as monotone would be an unsupported new hypothesis.
+
+The abstract interval data `ell_r=r+K-1` obey CAP with zero left side and
+total length asymptotic to H^2/2. Thus the same CAP relaxation alone cannot
+improve its leading monotone constant. These are not an actual-orbit
+counterexample. Independent tests exercise nonzero energy and show why
+separate per-interval bounds cannot replace the joint capacity.
+
+The ordinary sample in E58 has **zero factor occurrences** at the tested
+widths, although its 30,060 checks pass. Do not advertise this as extensive
+positive packing evidence. The eight direct repeat-and-split certificates
+are genuinely nonvacuous; they prove finite source exclusions, not the
+asymptotic theorem by extrapolation. H112/H72/H89/H133 remain open.
 
 ## Mandatory regression rule
 

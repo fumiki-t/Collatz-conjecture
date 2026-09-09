@@ -1,0 +1,20 @@
+{
+  "artifact_sha256": {
+    "capacity": "d3a1f1151e26e85cad582b944f3481bfa1a98374d3e571d574c9e3118de94ce5",
+    "carry": "62fe942a3bb43abc9929930cad91d982edfd3423fd178f93692afdb924edf604",
+    "regressions": "62302746bf6b1012ba7684ab1924aed0ba85b52ca2fd5c31c5305bd25a5e42c6",
+    "repeats": "c3c822acfc99c13b6a46a20f8397a659c2de1e5c38fe9625258787d7bc4d13f1"
+  },
+  "capacity_levels": 30060,
+  "finite_capacity_factor_occurrences": 0,
+  "generator_imported": false,
+  "infinite_claims_require_written_proof": true,
+  "maximum_repeat_prefix": 391004,
+  "maximum_source_bits": 1024,
+  "negative_carry_minimum_q": 22,
+  "positive_odd_sources": 2048,
+  "proves_collatz": false,
+  "q21_rejections": 48,
+  "repeat_certificates": 8,
+  "valid": true
+}

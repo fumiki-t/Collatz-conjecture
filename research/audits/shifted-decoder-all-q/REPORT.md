@@ -5,6 +5,11 @@ The attachment is an unaudited proposal, not an external theorem. This audit
 rederives its arguments and uses separately implemented finite reconstruction.
 `proves_collatz=false`. The N labels in the proposal are not repository IDs.
 
+Later audit (2026-09-10): [Phase 42 P255](../mechanical-capacity/REPORT.md)
+excludes the positive ordinary source of the specific Section 7 model.
+The unverified-source statements below describe this Phase 41 snapshot;
+P251/NG45's formal theorem and frozen accepted artifacts remain valid.
+
 ## 1. Conventions, dependencies, and classification
 
 Throughout, `T(n)=n/2` for even n and `T(n)=(3n+1)/2` for odd n.

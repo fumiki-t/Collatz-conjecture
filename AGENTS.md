@@ -458,6 +458,20 @@ positive ordinary source. Future H112 work must add ordinary-source or
 cross-address arithmetic, retain longer/different-Q ancestors, and never
 promote a bounded oracle no-hit to all-Q geodesicity. Cycles remain separate.
 
+Phase 42 adds P252/P253 joint pure-mechanical capacity and defect variation.
+P254's square-root bound requires nondecreasing defect; P255 excludes the
+specific Phase 13/P251 square-root model's positive ordinary source, without
+retracting its formal 2-adic existence or NG45. Old Phase 41 evidence is a
+historical snapshot and must not be manually rewritten. Future H112/H72 work
+must connect ordinary lifts, ancestry or source order to a contradicting
+maximum-defect/downward-variation budget; do not assume geodesic monotonicity.
+The 2,048-source E58 CAP sample has zero counted factors, so its passing
+checks are vacuous for packing. The eight repeat-and-split certificates are
+separate nonvacuous finite exclusions, not an asymptotic proof by extrapolation.
+P256 proves the minimum q=22 negative carry; preserve it together with NG28's
+q=26 witness and the two-sided exponent restriction of P88. Faster monotone
+and oscillating defects, H112/H72/H89, and positive cycles remain unresolved.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

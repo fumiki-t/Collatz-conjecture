@@ -26,6 +26,19 @@ P247 all-Q stabilization has no supplied effective final join. A new finite
 search must declare its length cap and retain longer cross-Q ancestors.
 See the [`Phase 41 audit`](../research/audits/shifted-decoder-all-q/REPORT.md).
 
+Phase 42 adds an ordinary-source test with a new boundary: P252/P253 bound
+pure-mechanical interval length using both maximum defect H and downward
+variation D. P254 rules out a monotone defect of size below
+`sqrt(2 log_2 3)*sqrt(q)` in the lower limit, excluding the particular
+Phase 13/P251 square-root model by P255. Next, connect canonical lifts,
+source order or ancestral minimality to a contradicting H/D budget. Neither
+defect monotonicity nor such a budget is currently proved. Do not merely
+extend model prefixes; faster monotone and oscillating defects survive.
+P256's q=22 negative-carry minimum strengthens the signed-carry regression;
+the old q=26 example remains. The finite ordinary CAP sample is vacuous as
+a packing check, unlike E58's direct repeat certificates. Read the
+[`Phase 42 audit`](../research/audits/mechanical-capacity/REPORT.md).
+
 ## P0 — Eventual critical-prefix barrier
 
 **Target.** Prove `M(K_q-1) > H_q` for all sufficiently large `q`.

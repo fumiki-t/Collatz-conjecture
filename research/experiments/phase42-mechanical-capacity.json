@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "phase42-mechanical-capacity",
+  "status": "RUNNING",
+  "claim_ids": ["P252", "P253", "P254", "P255", "P256", "E58", "NG28", "P251", "NG45", "H112", "H72", "H89"],
+  "objective": "Audit the September 9 followup: simultaneous mechanical-factor capacity, defect variation and monotone growth, ordinary-source exclusion of the specific square-root formal model, and the minimum odd count for negative same-Q carry.",
+  "exact_scope": {
+    "quantifiers": ["finite complete odd prefixes from an odd positive source with initial defect zero, nonnegative defects and distinct full input states", "infinite positive permanent-safe sources for the written asymptotic corollaries", "odd sources 1 through 4095, at most 300 complete odd steps, stopping before coefficient failure or repetition", "all safe negative-carry pairs with q<=21 through an exact extremal bound and a complete 48-case remainder; a literal q=22 witness", "eight repeat-and-split certificates for the fixed square-root model at source bounds 2^B, B=8,16,32,64,128,256,512,1024"],
+    "bounds": {"maximum_source": 4095, "maximum_odd_steps": 300, "negative_carry_minimum_q": 22, "repeat_source_bits": [8,16,32,64,128,256,512,1024]},
+    "completeness": "The finite orbit sample is not universal evidence. The q<=21 search is complete only through the written pruning proof. Repeat certificates exclude the specified finite prefixes and source bounds; the separate asymptotic proof excludes all positive ordinary sources for this particular model, not all safe words."
+  },
+  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "none; integer powers, exact rationals, bit lengths, integer square roots and symbolic asymptotics"},
+  "commands": {
+    "generator": [".venv/bin/python src/phase42_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase42.py --artifact-dir artifacts --output artifacts/phase42_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase42_properties.py tests/test_phase42_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q tests/test_phase13_properties.py tests/test_phase16_properties.py tests/test_phase21_properties.py tests/test_phase23_properties.py tests/test_phase37_properties.py tests/test_phase41_properties.py tests/test_phase41_verifier.py", ".venv/bin/python -m pytest -q tests/test_research_health.py tests/test_phase24_verifier.py tests/test_phase42_properties.py tests/test_phase42_verifier.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["full shortcut trajectories instead of the accelerated generator; mechanical alignment, strict state heights and parity separation", "position-sum extremal corrections and forced-source forward decoding of the complete q=21 remainder", "closed square-index defect formula instead of the model recurrence; literal repeats, later mismatch and exact affine source bounds"],
+    "forbidden_imports": ["src.phase42_search", "phase42_search"],
+    "tamper_tests": ["tests/test_phase42_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG28 q26", "NG32", "NG43", "NG44", "NG45", "source 167", "trivial and negative cycles"],
+  "artifacts": ["artifacts/phase42_capacity.json", "artifacts/phase42_carry.json", "artifacts/phase42_repeats.json", "artifacts/phase42_regressions.json", "artifacts/phase42_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["Repair any missing distinctness, parity orientation or quantifier before accepting a theorem.", "Do not extend depth merely to improve a finite record.", "Preserve old accepted artifacts, especially Phase 41's historical unverified ordinary-source field."],
+  "interpretation_boundary": ["The specific square-root model is distinguished from the whole permanent-safe language.", "The monotone lower bound does not assert monotonicity for actual geodesics.", "General downward variation may compensate for small maximum defect.", "No new external theorem or literature-wide novelty claim is used.", "H112/H72/H89/H133 remain OPEN; proves_collatz=false"],
+  "proves_collatz": false
+}

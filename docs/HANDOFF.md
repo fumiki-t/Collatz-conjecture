@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the forty-one phases established
+## 3. What the forty-two phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -307,7 +307,16 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   The all-positive normalized-height reproof simplifies P243; P247 adds
   non-effective all-Q stabilization. NG44 rejects contiguous fiber weights,
   while P251/NG45 show no same-vertex improvement at any depth for a critical
-  formal model. No positive ordinary source or H112 counterexample is known.
+  formal model. P255 now excludes its positive ordinary source; the formal
+  no-gain theorem remains valid and is not an H112 counterexample.
+
+- Phase 42 adds simultaneous mechanical-factor capacity and energy, together
+  with the cost of downward defect variation. A monotone defect must have
+  lower limiting size at least `sqrt(2 log_2 3)*sqrt(q)`, excluding the
+  particular Phase 13/P251 square-root word as a positive ordinary source.
+  P256 proves q=22 negative-carry minimality. The small ordinary CAP sample
+  is vacuous for factor packing; eight direct finite repeat certificates
+  independently rule out their specified source bounds through 2^1024.
 
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
@@ -325,6 +334,12 @@ Do not focus a new search solely on larger-weight tails at the same shifted
 vertex: NG45 survives the current formal analytic conditions. Keep ordinary
 positive source order, carry and broader ancestors in scope. The new finite
 decoder decides a candidate, not whether a successful candidate must exist.
+
+P252--P255 supply one concrete ordinary-source exclusion but leave the
+general defect unrestricted. A useful continuation must tie lifts or ancestry
+to an upper defect/variation budget contradicting P253/P254. Do not infer
+monotonicity, discard downward variation, or extrapolate E58's finite source
+bounds. See the [`Phase 42 audit`](../research/audits/mechanical-capacity/REPORT.md).
 
 P54 is `CONDITIONAL`. If `N` is a least positive counterexample and its affine
 coefficient first crosses below one at the `q`-barrier, the independently

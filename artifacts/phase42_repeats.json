@@ -1,0 +1,203 @@
+{
+  "certificates": [
+    {
+      "K": 10,
+      "capacity": 20,
+      "clean_occurrences": 25,
+      "covering_odd_steps": 79,
+      "first_start": 51,
+      "generated_odd_steps": 4096,
+      "h": 9,
+      "lcp": 21,
+      "odd_counts": [
+        36,
+        65
+      ],
+      "prefix_length": 117,
+      "prefix_sha256": "65669711eef7d9f9dd3483b26e25304ae3a65e3621624cba84ce639e7a80b5f6",
+      "second_start": 95,
+      "source_bits": 8,
+      "split_bits": [
+        "1",
+        "0"
+      ],
+      "width": 19
+    },
+    {
+      "K": 18,
+      "capacity": 33,
+      "clean_occurrences": 40,
+      "covering_odd_steps": 194,
+      "first_start": 222,
+      "generated_odd_steps": 4624,
+      "h": 14,
+      "lcp": 34,
+      "odd_counts": [
+        148,
+        172
+      ],
+      "prefix_length": 294,
+      "prefix_sha256": "27f1f3a2086694c27741059b8c2a0d16f43883b3a45de21e874bc6215a2c5dd5",
+      "second_start": 259,
+      "source_bits": 16,
+      "split_bits": [
+        "1",
+        "0"
+      ],
+      "width": 32
+    },
+    {
+      "K": 34,
+      "capacity": 58,
+      "clean_occurrences": 59,
+      "covering_odd_steps": 454,
+      "first_start": 553,
+      "generated_odd_steps": 5776,
+      "h": 23,
+      "lcp": 79,
+      "odd_counts": [
+        361,
+        402
+      ],
+      "prefix_length": 697,
+      "prefix_sha256": "2f735e23c41cc5345d7044ec216b007e3b60f148045ac7d779742b6e82f52ce9",
+      "second_start": 617,
+      "source_bits": 32,
+      "split_bits": [
+        "0",
+        "1"
+      ],
+      "width": 57
+    },
+    {
+      "K": 66,
+      "capacity": 108,
+      "clean_occurrences": 109,
+      "covering_odd_steps": 1443,
+      "first_start": 1906,
+      "generated_odd_steps": 8464,
+      "h": 41,
+      "lcp": 112,
+      "odd_counts": [
+        1225,
+        1372
+      ],
+      "prefix_length": 2250,
+      "prefix_sha256": "b3d98e8bc340cfc8219740cf85be0c93a3536001d6ff24523e7cdd45ee9d7022",
+      "second_start": 2137,
+      "source_bits": 64,
+      "split_bits": [
+        "1",
+        "0"
+      ],
+      "width": 107
+    },
+    {
+      "K": 130,
+      "capacity": 207,
+      "clean_occurrences": 229,
+      "covering_odd_steps": 4901,
+      "first_start": 6838,
+      "generated_odd_steps": 15376,
+      "h": 76,
+      "lcp": 208,
+      "odd_counts": [
+        4356,
+        4768
+      ],
+      "prefix_length": 7697,
+      "prefix_sha256": "b578c2462a2a4d46487bd4aad5d1fa2178988d9921666de1a2f81e73e6ca9ac0",
+      "second_start": 7488,
+      "source_bits": 128,
+      "split_bits": [
+        "0",
+        "1"
+      ],
+      "width": 206
+    },
+    {
+      "K": 258,
+      "capacity": 400,
+      "clean_occurrences": 411,
+      "covering_odd_steps": 17154,
+      "first_start": 26257,
+      "generated_odd_steps": 35344,
+      "h": 141,
+      "lcp": 400,
+      "odd_counts": [
+        16648,
+        16901
+      ],
+      "prefix_length": 27058,
+      "prefix_sha256": "978c9877b9f1ba8c028e8998bf3ed52ab9bcf30366a6dcecb41ae2dcc8099b2a",
+      "second_start": 26657,
+      "source_bits": 256,
+      "split_bits": [
+        "1",
+        "0"
+      ],
+      "width": 399
+    },
+    {
+      "K": 514,
+      "capacity": 783,
+      "clean_occurrences": 787,
+      "covering_odd_steps": 63499,
+      "first_start": 96451,
+      "generated_odd_steps": 99856,
+      "h": 268,
+      "lcp": 782,
+      "odd_counts": [
+        61010,
+        63005
+      ],
+      "prefix_length": 100392,
+      "prefix_sha256": "85064f313fa0a79d4dd3b9958a0e2388882f2f487208dcdb9a1c5d5cc3626025",
+      "second_start": 99609,
+      "source_bits": 512,
+      "split_bits": [
+        "1",
+        "0"
+      ],
+      "width": 782
+    },
+    {
+      "K": 1026,
+      "capacity": 1544,
+      "clean_occurrences": 1545,
+      "covering_odd_steps": 247010,
+      "first_start": 386295,
+      "generated_odd_steps": 327184,
+      "h": 517,
+      "lcp": 1548,
+      "odd_counts": [
+        244037,
+        246032
+      ],
+      "prefix_length": 391004,
+      "prefix_sha256": "6a02ab76603fca6d8f21c98d7dc1c6068e382f846eeb598ef8d7e760c3df41f3",
+      "second_start": 389455,
+      "source_bits": 1024,
+      "split_bits": [
+        "0",
+        "1"
+      ],
+      "width": 1543
+    }
+  ],
+  "finite_conclusion": "no 0<S<=2^B realizes the certified finite prefix of u",
+  "format": "collatz-phase42-repeats-v1",
+  "infinite_conclusion_requires_written_proof": "P254/P255, not finite extrapolation",
+  "model": "Phase13 square-root u, not its finite-prefix extension w",
+  "proves_collatz": false,
+  "source_bounds_bits": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ]
+}

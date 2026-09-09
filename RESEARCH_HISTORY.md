@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–41 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–42 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -2179,3 +2179,43 @@ tests and immutable acceptance metadata are in
 No ordinary-source ancestor-existence theorem or effective all-Q stopping
 certificate is obtained. H112/H72/H89/H133 remain OPEN, and positive cycles
 remain separate. `proves_collatz=false`.
+
+## 2026-09-10 — Phase 42: mechanical capacity and ordinary-source exclusion
+
+The September 9 followup was audited from Phase 41 acceptance `0982519` on
+`feat/phase42-mechanical-capacity`. P252 proves simultaneous pure-mechanical
+factor capacity and its integrated energy. P253 adds the exact downward-
+variation budget; its general asymptotic corollary uses internal P221.
+P254 proves `liminf a_q/sqrt(q)>=sqrt(2 log_2 3)` for nondecreasing defects
+using only finite normalization. P255 consequently excludes every positive
+ordinary source of the specific Phase 13 square-root word u and P251's w.
+Their formal 2-adic existence and no-gain result are preserved. Phase 41
+artifacts remain immutable historical snapshots, not edited to change their
+then-unverified ordinary-source field.
+
+P256 identifies the minimum q=22 for negative same-q carry: exact q<=20
+bounds, all 12 q=21 single-shift patterns and 48 possible remaining cases
+are independently rejected; a literal q=22 pair reaches 53013941237 with
+carry -3. NG28's q=26 witness remains as a regression and P88 is untouched.
+
+E58 reconstructs 2,048 odd source prefixes, 5,069 odd steps, 4,304 pure
+intervals and 30,060 capacity levels. The audit detects that this ordinary
+sample has zero counted factors, so its capacity check is vacuous for packing.
+Eight separate repeat-and-split certificates are nonvacuous, with source
+bounds through 2^1024 and maximum required full prefix 391,004. The verifier
+uses full iteration, positional sums, forced-source decoding and closed
+square-index defects, without importing the search. Exact tamper tests and
+the SHA-256 manifest protect scope, hypotheses and arithmetic.
+
+Details, commands and acceptance metadata:
+[`PHASE42_RUN_RESULTS.md`](PHASE42_RUN_RESULTS.md),
+[`audit`](research/audits/mechanical-capacity/REPORT.md),
+[`experiment`](research/experiments/phase42-mechanical-capacity.json).
+
+### What this result does not prove
+
+No monotonicity or contradicting variation budget is proved for general
+geodesics. Faster monotone and oscillating defects may survive. The all-source
+model exclusion is a written theorem, not finite extrapolation, and excludes
+only this model. H112/H72/H89/H133 and Collatz remain OPEN;
+`proves_collatz=false`.

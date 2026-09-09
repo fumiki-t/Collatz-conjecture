@@ -1,0 +1,488 @@
+{
+  "all_finite_checks": true,
+  "capacity_levels": 30060,
+  "factor_occurrences": 0,
+  "format": "collatz-phase42-capacity-v1",
+  "hypotheses": [
+    "positive odd source",
+    "complete coefficient-safe odd prefix",
+    "distinct full states"
+  ],
+  "maximum_odd_steps": 300,
+  "maximum_source": 4095,
+  "odd_steps": 5069,
+  "positive_odd_sources": 2048,
+  "proves_collatz": false,
+  "pure_blocks": 4304,
+  "rows_sha256": "4f22770bde403823b990ff08e710bed9c8f2828b9c933df66dcee4414cdac6d1",
+  "samples": [
+    {
+      "D": 0,
+      "E": 0,
+      "H": 0,
+      "K": 2,
+      "M": 24,
+      "Y": [
+        1,
+        1
+      ],
+      "blocks": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "capacity_levels": 3,
+      "energy": 0,
+      "factor_occurrences": 0,
+      "height_sum": 0,
+      "q": 0,
+      "source": 1,
+      "variation_base": 1,
+      "variation_residual": -1,
+      "word_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "D": 0,
+      "E": 1,
+      "H": 0,
+      "K": 4,
+      "M": 70,
+      "Y": [
+        10,
+        3
+      ],
+      "blocks": [
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "capacity_levels": 5,
+      "energy": 0,
+      "factor_occurrences": 0,
+      "height_sum": 0,
+      "q": 1,
+      "source": 3,
+      "variation_base": 3,
+      "variation_residual": -2,
+      "word_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "D": 1,
+      "E": 4,
+      "H": 1,
+      "K": 5,
+      "M": 152,
+      "Y": [
+        208,
+        27
+      ],
+      "blocks": [
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          4,
+          4
+        ]
+      ],
+      "capacity_levels": 8,
+      "energy": 0,
+      "factor_occurrences": 0,
+      "height_sum": 1,
+      "q": 3,
+      "source": 7,
+      "variation_base": 20,
+      "variation_residual": -16,
+      "word_sha256": "055f78940c07630352676197ab7c3ed8d5bb204d406e5c6ff101f870bc9b7dd7"
+    },
+    {
+      "D": 12,
+      "E": 56,
+      "H": 6,
+      "K": 7,
+      "M": 700,
+      "Y": [
+        4395513236313604096,
+        150094635296999121
+      ],
+      "blocks": [
+        [
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          7,
+          9
+        ],
+        [
+          1,
+          1,
+          11,
+          12
+        ],
+        [
+          2,
+          1,
+          12,
+          14
+        ],
+        [
+          1,
+          1,
+          14,
+          15
+        ],
+        [
+          2,
+          1,
+          15,
+          17
+        ],
+        [
+          3,
+          1,
+          16,
+          19
+        ],
+        [
+          2,
+          1,
+          18,
+          20
+        ],
+        [
+          3,
+          2,
+          19,
+          22
+        ],
+        [
+          4,
+          1,
+          21,
+          25
+        ],
+        [
+          3,
+          2,
+          23,
+          26
+        ],
+        [
+          2,
+          1,
+          26,
+          28
+        ],
+        [
+          3,
+          7,
+          27,
+          30
+        ],
+        [
+          4,
+          2,
+          34,
+          38
+        ],
+        [
+          5,
+          2,
+          36,
+          41
+        ],
+        [
+          6,
+          1,
+          38,
+          44
+        ],
+        [
+          4,
+          1,
+          41,
+          45
+        ],
+        [
+          5,
+          1,
+          42,
+          47
+        ],
+        [
+          6,
+          3,
+          43,
+          49
+        ],
+        [
+          4,
+          1,
+          48,
+          52
+        ],
+        [
+          3,
+          4,
+          50,
+          53
+        ],
+        [
+          1,
+          0,
+          56,
+          57
+        ]
+      ],
+      "capacity_levels": 20,
+      "energy": 0,
+      "factor_occurrences": 0,
+      "height_sum": 67,
+      "q": 36,
+      "source": 27,
+      "variation_base": 363,
+      "variation_residual": -307,
+      "word_sha256": "71cabd36325c5846ee98301a4a2d36569eccf886302f0f7d83cccefc19555348"
+    },
+    {
+      "D": 7,
+      "E": 26,
+      "H": 4,
+      "K": 9,
+      "M": 666,
+      "Y": [
+        21810380800,
+        129140163
+      ],
+      "blocks": [
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          7,
+          7
+        ],
+        [
+          1,
+          1,
+          8,
+          9
+        ],
+        [
+          2,
+          2,
+          9,
+          11
+        ],
+        [
+          3,
+          3,
+          11,
+          14
+        ],
+        [
+          2,
+          1,
+          15,
+          17
+        ],
+        [
+          3,
+          2,
+          16,
+          19
+        ],
+        [
+          4,
+          1,
+          18,
+          22
+        ],
+        [
+          1,
+          3,
+          22,
+          23
+        ],
+        [
+          0,
+          0,
+          26,
+          26
+        ]
+      ],
+      "capacity_levels": 18,
+      "energy": 0,
+      "factor_occurrences": 0,
+      "height_sum": 18,
+      "q": 17,
+      "source": 167,
+      "variation_base": 225,
+      "variation_residual": -199,
+      "word_sha256": "82774ad14ea3ae821afef6ec94c1d28a8a59b4b352bc50b49c021c7e23f8d984"
+    },
+    {
+      "D": 7,
+      "E": 46,
+      "H": 6,
+      "K": 14,
+      "M": 1512,
+      "Y": [
+        2530248934396264448,
+        617673396283947
+      ],
+      "blocks": [
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          1,
+          6,
+          9
+        ],
+        [
+          4,
+          2,
+          7,
+          11
+        ],
+        [
+          5,
+          2,
+          9,
+          14
+        ],
+        [
+          6,
+          2,
+          11,
+          17
+        ],
+        [
+          3,
+          2,
+          16,
+          19
+        ],
+        [
+          4,
+          2,
+          18,
+          22
+        ],
+        [
+          5,
+          4,
+          20,
+          25
+        ],
+        [
+          6,
+          3,
+          24,
+          30
+        ],
+        [
+          5,
+          1,
+          28,
+          33
+        ],
+        [
+          4,
+          8,
+          30,
+          34
+        ],
+        [
+          2,
+          6,
+          40,
+          42
+        ],
+        [
+          3,
+          0,
+          46,
+          49
+        ]
+      ],
+      "capacity_levels": 27,
+      "energy": 0,
+      "factor_occurrences": 0,
+      "height_sum": 53,
+      "q": 31,
+      "source": 4095,
+      "variation_base": 385,
+      "variation_residual": -339,
+      "word_sha256": "991511ae198912f8675692b7ce0f31c6c702bc81b2388c4938a641d105f7623d"
+    }
+  ]
+}

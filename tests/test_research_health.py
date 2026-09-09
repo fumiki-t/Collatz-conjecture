@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 41
+    assert result["latest_phase"] == 42
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -241,10 +241,17 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["word_count"] == 32767
-    assert result["latest_supplemental_verifier"]["mixed_rows"] == 4192
-    assert result["latest_supplemental_verifier"]["even_rows"] == 658
-    assert result["latest_supplemental_verifier"]["ancestor_targets"] == 125
+    assert result["latest_supplemental_verifier"]["positive_odd_sources"] == 2048
+    assert result["latest_supplemental_verifier"]["finite_capacity_factor_occurrences"] == 0
+    assert result["latest_supplemental_verifier"]["negative_carry_minimum_q"] == 22
+    assert result["latest_supplemental_verifier"]["q21_rejections"] == 48
+    assert result["latest_supplemental_verifier"]["repeat_certificates"] == 8
+    assert result["latest_supplemental_verifier"]["maximum_repeat_prefix"] == 391004
+    historical_phase41 = json.loads(Path("artifacts/phase41_verifier.json").read_text(encoding="utf-8"))
+    assert historical_phase41["word_count"] == 32767
+    assert historical_phase41["mixed_rows"] == 4192
+    assert historical_phase41["even_rows"] == 658
+    assert historical_phase41["ancestor_targets"] == 125
     historical_phase40 = json.loads(Path("artifacts/phase40_verifier.json").read_text(encoding="utf-8"))
     assert historical_phase40["bellman_rows"] == 1024
     assert historical_phase40["total_tail_count"] == 33554431
@@ -268,6 +275,9 @@ def test_repository_research_health() -> None:
         assert result["active_focus"][claim] == "VERIFIED_THEOREM"
     assert result["active_focus"]["NG44"] == result["active_focus"]["NG45"] == "REFUTED"
     assert result["active_focus"]["E57"] == "VERIFIED_FINITE"
+    for claim in ("P252", "P253", "P254", "P255", "P256"):
+        assert result["active_focus"][claim] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E58"] == "VERIFIED_FINITE"
     assert result["registry"] == "research/registry.json"
     assert result["claim_index"] == "research/claims-index.json"
     required_accepted = {
@@ -349,7 +359,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 332
+    assert committed["claim_count"] == 338
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -360,6 +370,9 @@ def test_generated_claim_index_is_complete() -> None:
     assert rows["P240"]["status"] == "CONDITIONAL"
     assert rows["NG43"]["status"] == "REFUTED"
     assert rows["E56"]["status"] == "VERIFIED_FINITE"
+    for claim in ("P252", "P253", "P254", "P255", "P256"):
+        assert rows[claim]["status"] == "VERIFIED_THEOREM"
+    assert rows["E58"]["status"] == "VERIFIED_FINITE"
     assert rows["P117"]["status"] == "VERIFIED_THEOREM"
     assert rows["P124"]["status"] == "CONDITIONAL"
     assert rows["E32"]["status"] == "VERIFIED_FINITE"
@@ -546,6 +559,12 @@ def test_generated_claim_index_is_complete() -> None:
         "NG44",
         "NG45",
         "E57",
+        "P252",
+        "P253",
+        "P254",
+        "P255",
+        "P256",
+        "E58",
         "EXT08",
         "E23",
         "E24",
