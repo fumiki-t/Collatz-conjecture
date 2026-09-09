@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 42
+# Collatz research synthesis through Phase 43
 
 **Audit date:** 2026-09-10
 
-**Audited base:** Phase 42 evidence and independent verifier
+**Audited base:** Phase 43 evidence and independent verifier
 
-**Latest accepted phase:** Phase 42
+**Latest accepted phase:** Phase 43
 
 **Problem status:** `OPEN`
 
@@ -24,7 +24,19 @@ status.
 
 ## 1. Evidence boundary
 
-Latest synthesis: the [`Phase 42 audit`](../research/audits/mechanical-capacity/REPORT.md)
+Latest synthesis: the [`Phase 43 audit`](../research/audits/normalization-barrier/REPORT.md)
+adds finite rational certificates over every positive ancestor and every
+length/Q, with exact normalization cuts and default values beyond the
+stored graph. This is pointwise all-length evidence, not bounded-search
+extrapolation. P259 guarantees a finite certificate for each prefix of a
+hypothetical global minimum, so the language does not exclude that branch.
+P260 bounds candidate sources by 13S, reusing internal E46/E54; join times
+remain unbounded. NG46's minimal (7,4) refutes finite geodesic defect
+monotonicity, while the longer (703,80) control is also certified. E59's
+2,668-query reconstruction preserves the ordinary/formal and finite/infinite
+boundaries. H112, H72, H89 and H133 remain OPEN.
+
+Previous synthesis: the [`Phase 42 audit`](../research/audits/mechanical-capacity/REPORT.md)
 proves simultaneous mechanical capacity and a maximum-defect/variation bound.
 For nondecreasing defects P254 gives `liminf a_q/sqrt(q)>=sqrt(2 log_2 3)`;
 P255 excludes an ordinary positive source for the Phase 13 square-root model

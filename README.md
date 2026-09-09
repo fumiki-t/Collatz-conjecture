@@ -22,7 +22,15 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 42 is the latest accepted research layer. Mechanical-factor capacity proves a
+Phase 43 is the latest accepted research layer. Finite rational potentials
+now certify coefficient maximality against every positive ancestor, over
+all lengths and odd counts. The independent audit covers 2,668 queries.
+A minimal finite counterexample, `7 -> 11 -> 17 -> 26 -> 13`, shows that
+even this maximality does not force monotone defect. Search budgets still
+return `UNKNOWN`; neither universal termination nor H112 is proved.
+See the [Phase 43 results](PHASE43_RUN_RESULTS.md).
+
+Phase 42's mechanical-factor capacity proves a
 square-root lower bound for nondecreasing defects and excludes a positive
 ordinary source for the specific square-root formal model of Phases 13/41.
 This does not exclude general safe words or prove H112. Independent finite
@@ -45,7 +53,7 @@ H72, H133, and the broader H54, H70, H89, H104, H105, H112, H141, H172, C03,
 C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–42, separates internal and external
+map and conventions, summarizes Phases 1–43, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:
@@ -86,11 +94,11 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase42.py --artifact-dir artifacts
+.venv/bin/python verifier/verify_phase43.py --artifact-dir artifacts
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 42 result](PHASE42_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 43 result](PHASE43_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

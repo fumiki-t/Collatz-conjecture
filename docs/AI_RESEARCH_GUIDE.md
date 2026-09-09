@@ -2,8 +2,15 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 42's mechanical-capacity audit is the latest
-research layer. P252/P253 retain distinctness and downward variation; P254
+proof of the conjecture. Phase 43's normalization-barrier audit is the latest
+research layer. P258 certifies all-length no strict improvement from finite
+rational inequalities, including outside-graph edges. P259 completeness is
+only at a hypothetical global minimizer; resources exhausted means UNKNOWN.
+P260 bounds sources by 13S, not joining time. NG46 minimally refutes finite
+geodesic defect monotonicity at (7,4); keep (703,80) too. The unresolved
+task is a source/lift-linked variation or compatible-certificate obstruction.
+
+Phase 42's P252/P253 retain distinctness and downward variation; P254
 applies only to nondecreasing defects. P255 excludes the particular Phase 13
 square-root model's ordinary source, not its formal 2-adic model or the safe
 language. P256 gives the minimum q=22 negative carry. E58's ordinary CAP
@@ -18,13 +25,15 @@ unsafe and longer cross-Q competitors, NG43, and explicit finite search caps.
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–42 evidence boundaries, and current obligations.
+   branch map, Phase 1–43 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md) and
+6. [`../PHASE43_RUN_RESULTS.md`](../PHASE43_RUN_RESULTS.md) and
+   [`../research/audits/normalization-barrier/REPORT.md`](../research/audits/normalization-barrier/REPORT.md),
+   then [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md) and
    [`../research/audits/mechanical-capacity/REPORT.md`](../research/audits/mechanical-capacity/REPORT.md),
    then [`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md) and
    [`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md),

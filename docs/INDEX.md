@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–41, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–43, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -70,6 +70,8 @@ This is the canonical map of the research archive. Start with
 | 39 | [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md) | [`../artifacts/phase39_obstruction_report.md`](../artifacts/phase39_obstruction_report.md) | `feat/phase39-macroscopic-carry-jump-geodesic` |
 | 40 | [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md) | [`safety obstruction`](../research/audits/normalized-height-bellman/REPORT.md#7-shifted-correction-safety-obstruction) | `feat/phase40-normalized-height-bellman` |
 | 41 | [`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md) | [`formal no-gain and all-Q boundary`](../research/audits/shifted-decoder-all-q/REPORT.md) | `feat/phase41-shifted-decoder-all-q` |
+| 42 | [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md) | [`mechanical capacity and carry`](../research/audits/mechanical-capacity/REPORT.md) | `feat/phase42-mechanical-capacity` |
+| 43 | [`../PHASE43_RUN_RESULTS.md`](../PHASE43_RUN_RESULTS.md) | [`normalization barriers and NG46`](../research/audits/normalization-barrier/REPORT.md) | `feat/phase43-normalization-barrier` |
 
 Research supplements:
 
@@ -108,7 +110,14 @@ Research supplements:
 | Macroscopic carry/jump-geodesic audit | [`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md) | Exact current-state carry, all bounded tail collisions, positive endpoint lifts, capacity/event audit, independent verifier and tamper tests | P235--P241, E55, conditional full nonperiodic reduction to H112 |
 | Normalized-height/Bellman audit | [`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md) | Normalized-height minimum, global coefficient maximality, Bellman redundancy, complete length-25 safety falsification, alternate-predecessor cloud, independent verifier and tamper tests | P242--P246, E56, NG43; H112 implication without X02 and non-effective stabilization boundary |
 
-Latest followup: [`Phase 42 results`](../PHASE42_RUN_RESULTS.md),
+Latest followup: [`Phase 43 results`](../PHASE43_RUN_RESULTS.md),
+[`normalization-barrier audit`](../research/audits/normalization-barrier/REPORT.md),
+and [`experiment contract`](../research/experiments/phase43-normalization-barrier.json).
+P257--P261 separate all-length potential soundness, minimizer-specific
+completeness and the 13S bound. NG46 preserves minimal (7,4) and longer
+(703,80) finite monotonicity failures; H112 remains OPEN.
+
+Previous followup: [`Phase 42 results`](../PHASE42_RUN_RESULTS.md),
 [`mechanical-capacity audit`](../research/audits/mechanical-capacity/REPORT.md),
 and [`experiment contract`](../research/experiments/phase42-mechanical-capacity.json).
 These distinguish the particular model's ordinary-source exclusion from its
@@ -116,7 +125,7 @@ surviving formal no-go, record q=22 negative-carry minimality, and flag the
 vacuous ordinary CAP sample separately from the direct repeat certificates.
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 42 and both the branch-point and two-tail
+documentation through Phase 43 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

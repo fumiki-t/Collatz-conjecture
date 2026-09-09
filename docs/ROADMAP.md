@@ -39,6 +39,20 @@ the old q=26 example remains. The finite ordinary CAP sample is vacuous as
 a packing check, unlike E58's direct repeat certificates. Read the
 [`Phase 42 audit`](../research/audits/mechanical-capacity/REPORT.md).
 
+Phase 43 replaces bounded no-hit evidence by P258's finite rational
+certificate when it is available. Use the additional mode, not a changed
+interpretation of the Phase 41 length cutoff. P260 confines all improving
+sources of a hypothetical nonperiodic S to z<13S, but does not bound joining
+times. P259 says every fixed prefix of a hypothetical global minimizer has
+a finite certificate, so merely producing more certificates cannot exclude
+that source. The next precise target is a uniform obstruction to such a
+compatible sequence at one fixed ordinary source, or a source/lift-linked
+P253 variation bound. First test any proposed monotonicity or potential-size
+rule on NG46's minimal (7,4), the longer (703,80), and mandatory families.
+Do not optimize 13, infer universal termination, or discard downward
+variation without a new argument. See the
+[`Phase 43 audit`](../research/audits/normalization-barrier/REPORT.md).
+
 ## P0 — Eventual critical-prefix barrier
 
 **Target.** Prove `M(K_q-1) > H_q` for all sufficiently large `q`.

@@ -45,7 +45,17 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the forty-two phases established
+## 3. What the forty-three phases established
+
+- Phase 43 adds a new proof-producing all-length/all-Q mode alongside the
+  unchanged bounded oracle. Read P257--P261: finite source cutoff, rational
+  potential extension, completeness only at a hypothetical global minimizer,
+  inherited-input 13S bound, and endpoint-to-prefix propagation. NG46's
+  minimal (7,4) refutes finite geodesic monotonicity; the (703,80) certificate
+  is retained. E59 has 185 no-improvement certificates and 2,483 witnesses
+  across 2,668 queries. UNKNOWN is not a certificate. The next bottleneck is
+  a uniform source/lift/variation obstruction, not more depth or a last-join
+  inference. See [`Phase 43`](../PHASE43_RUN_RESULTS.md).
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary

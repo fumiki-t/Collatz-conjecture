@@ -1,0 +1,28 @@
+{
+  "all_prefix_703_scope": "all prefixes 0..80, all positive starts/lengths/Q via P261",
+  "capacity_rows": 49,
+  "certificate_703_vertices": 1188,
+  "certified_no_improvement": 185,
+  "diagnostics_scope": "search work/cut counters are non-proof diagnostics",
+  "family_rows": 61,
+  "finite_monotonicity_falsifiers": 21,
+  "generator_imported": false,
+  "improvements": 2483,
+  "inherited_E46_E54": "hash-pinned reuse, not full rerun",
+  "maximum_candidate_source": 705,
+  "minimal_monotonicity_query": [
+    7,
+    4
+  ],
+  "proves_collatz": false,
+  "query_count": 2668,
+  "reference_cycles": [
+    [
+      1,
+      2
+    ]
+  ],
+  "reference_vertices": 1189,
+  "retained_controls": 22,
+  "valid": true
+}

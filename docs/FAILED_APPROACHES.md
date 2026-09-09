@@ -8,6 +8,43 @@ The cross-phase lesson map is in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md#6-failed-mechanisms-and-surviving-lessons).
 This file remains the detailed canonical failure archive.
 
+## NG46 — Finite all-Q maximality forces monotone defect
+
+**Status:** `REFUTED`.
+
+**Exact hypothesis.** A finite positive odd-source path whose every prefix
+is coefficient-maximal among all positive ancestors of every length/Q has
+nondecreasing odd defect `a_j=floor(j log_2 3)-E_j`.
+
+**Why plausible.** A large valuation drops defect and can look like a
+shortcut opportunity; monotonicity would allow P254 to be used directly.
+
+**Smallest counterexample.** Source 7, length 4:
+`7 -> 11 -> 17 -> 26 -> 13`. The odd defect drops from 1 at state 17 to
+0 at state 13. P258 certifies all-length endpoint maximality, and P261
+covers every earlier prefix. Minimality is by source then length: even
+sources fail safety at step 1, sources 1/3/5 fail before any odd-defect
+decrease, and the first drop from 7 occurs at step 4. E59's fixed grid
+contains 21 certified defect-drop queries.
+
+**Longer retained control.** The (703,80) certificate uses 1,188 potential
+vertices and certifies all 81 target prefixes including the empty one.
+Defect drops 6->2 at `50165 --e=5--> 4703`. Its independently closed
+reference has 1,189 vertices; these are different objects.
+
+**Failure scope.** Fundamental for a finite-geodesic monotonicity rule, not
+a refutation of an infinite-global-minimizer-only theorem. Neither finite
+source is claimed to realize an infinite safe tail.
+
+**Weaker statements retained.** P254 with its explicit monotonicity premise,
+P253 with downward variation, and the new all-length certificate theorem.
+P259 completeness at a hypothetical global minimizer supplies no contradiction.
+
+**Rules out.** Treating finite coefficient maximality, a rational potential,
+or a bounded no-hit plateau as a monotonicity or full Collatz proof.
+Proof and evidence: [`Phase 43 audit`](../research/audits/normalization-barrier/REPORT.md),
+[`results`](../PHASE43_RUN_RESULTS.md). `proves_collatz=false`.
+
 ## NG01 — Local parity exchange `01 <-> 10`
 
 **Status:** `REFUTED`

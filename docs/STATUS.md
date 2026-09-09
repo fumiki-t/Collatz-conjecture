@@ -8,7 +8,21 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest layer: [`Phase 42`](../PHASE42_RUN_RESULTS.md) and its
+Latest layer: [`Phase 43`](../PHASE43_RUN_RESULTS.md) and its
+[`audit`](../research/audits/normalization-barrier/REPORT.md).
+P257/P258 give finite rational all-length/all-Q no-improvement certificates;
+P261 propagates them to every earlier target prefix. P259 proves termination
+only for each fixed prefix of a hypothetical global normalized-height
+minimizer. P260 gives Ycal(S)<13S using inherited E46/E54, not a last-join
+bound. E59 verifies 185 certificates and 2,483 improvements across 2,668
+queries, with a separate closed-graph reference. NG46 refutes finite
+geodesic defect monotonicity minimally at (7,4); (703,80) remains certified.
+Next seek an ordinary-source/lift constraint on the P253 variation budget,
+or a uniform obstruction to extending these finite potentials along a
+fixed ordinary source. No such obstruction or universal stopping rule is
+proved. H112/H72/H89/H133 remain OPEN.
+
+Previous layer: [`Phase 42`](../PHASE42_RUN_RESULTS.md) and its
 [`audit`](../research/audits/mechanical-capacity/REPORT.md).
 P252/P253 give simultaneous mechanical capacity, energy and downward-variation
 bounds. P254 implies a square-root lower bound for nondecreasing defects;
@@ -46,14 +60,22 @@ formal models, source 167, and NG43.
 
 ## What is currently proved?
 
+- `VERIFIED_THEOREM`: P257--P261 provide normalization cuts, finite rational
+  certificate soundness, minimizer-specific completeness, a 13S source
+  bound, and all-prefix propagation. Their precise quantifiers are separate.
+- `VERIFIED_FINITE`: E59 checks the 2,668-query domain and nonclosed 703
+  certificate independently; no finite unsuccessful run is accepted as proof.
+- `REFUTED`: NG46 shows finite coefficient maximality does not imply defect
+  monotonicity. Infinite-minimizer monotonicity remains unestablished.
 - `VERIFIED_THEOREM`: P252--P256 give pure-factor capacity, variation cost,
   the monotone square-root bound, exclusion of one specific formal model's
   positive ordinary source, and the exact q=22 negative-carry minimum.
 - `VERIFIED_FINITE`: E58 reconstructs the declared orbit conventions, all
   48 q=21 remainder cases and eight repeat-and-split certificates. It does
   not certify an infinite trajectory by a large finite prefix.
-- Still missing: monotonicity or a contradicting variation budget for
-  actual geodesics. Do not extend P255 from this one model to all safe words.
+- Still missing: a contradicting variation budget for actual infinite
+  geodesics. Finite monotonicity fails by NG46. Do not extend P255 from one
+  model to all safe words.
 - `VERIFIED_THEOREM`: P247--P251 give all-Q maximum-ratio stabilization,
   complete shifted decoding, mixed positive-source coalescence, the exact
   gain cap, and an all-depth formal maximal-vertex model. The P243 equivalence

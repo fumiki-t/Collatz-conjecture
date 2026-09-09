@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "phase43-normalization-barrier",
+  "status": "RUNNING",
+  "claim_ids": ["P257", "P258", "P259", "P260", "P261", "E59", "NG46", "H112", "H72", "H89"],
+  "objective": "Independently audit finite rational all-length/all-Q normalization-barrier certificates, their conditional completeness at a hypothetical global height minimum, and the auxiliary internal 13S source bound.",
+  "exact_scope": {
+    "quantifiers": ["All positive literal competitors, including even, unsafe, empty, longer, different-Q and cyclic paths", "2668 distinct queries: 1<=S<=127 and 0<=L<=20, plus (703,80)", "Every fixed prefix of a hypothetical global minimum over all positive nonperiodic sources, not every arbitrary target", "New capacities through N=48; E46/E54 reused, not fully rerun. Dependency properties also replay the old capacity generator through N=500."],
+    "bounds": {"maximum_small_source": 127, "maximum_small_length": 20, "special_query": [703,80], "maximum_capacity_N": 48, "maximum_work_per_query": 1000000, "maximum_candidates_per_query": 1000000},
+    "completeness": "Finite query coverage is explicit. Each valid potential separately proves an all-length statement by global extension, not finite extrapolation. Resource limits return UNKNOWN. No universal search termination or certificate-size bound is asserted."
+  },
+  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "none; integers, rational potentials and positive-term logarithm lower bounds"},
+  "commands": {
+    "generator": [".venv/bin/python src/phase43_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase43.py --artifact-dir artifacts --output artifacts/phase43_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase43_properties.py tests/test_phase43_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q tests/test_phase41_properties.py tests/test_phase41_verifier.py tests/test_phase42_properties.py tests/test_phase42_verifier.py tests/test_phase38_properties.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["Finite potential inequalities, default values outside W and literal target/witness affine maps without replaying barrier search", "A separate forward-closed graph, first-hit coefficients and contracting positive cycles for every candidate source", "Pascal-row capacities instead of generator binomial/Fraction arithmetic; exact dependency hashes and rational comparisons"],
+    "forbidden_imports": ["src.phase43_search", "phase43_search", "src"],
+    "tamper_tests": ["tests/test_phase43_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG24", "NG25", "NG26", "NG28", "NG43", "NG44", "NG45", "source 167", "source 7", "703 defect drop", "P256 q22 negative carry"],
+  "artifacts": ["artifacts/phase43_queries.json", "artifacts/phase43_certificate_703.json", "artifacts/phase43_certificate_7.json", "artifacts/phase43_reference.json", "artifacts/phase43_capacity.json", "artifacts/phase43_regressions.json", "artifacts/phase43_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["A timeout is UNKNOWN, never a no-improvement certificate.", "Repair any omitted upper envelope, positive-source, cycle or outside-W edge before acceptance.", "Do not extend range merely to optimize 13 or search for an empirical last-join bound."],
+  "interpretation_boundary": ["Old bounded Phase 41 mode is unchanged.", "No new external theorem is used; E46 and E54 remain explicitly inherited finite inputs.", "703 is a finite monotonicity falsifier, not an infinite geodesic or a Collatz counterexample.", "H112/H72/H89/H133 remain OPEN; proves_collatz=false"],
+  "proves_collatz": false
+}

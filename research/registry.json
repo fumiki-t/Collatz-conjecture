@@ -3,7 +3,7 @@
   "repository": {
     "status": "OPEN",
     "proves_collatz": false,
-    "latest_phase": 42,
+    "latest_phase": 43,
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
@@ -22,23 +22,25 @@
     "RESEARCH_HISTORY.md"
   ],
   "latest_acceptance": {
-    "phase": 42,
-    "report": "PHASE42_RUN_RESULTS.md",
-    "verifier_artifact": "artifacts/phase42_verifier.json",
+    "phase": 43,
+    "report": "PHASE43_RUN_RESULTS.md",
+    "verifier_artifact": "artifacts/phase43_verifier.json",
     "expected_verifier_fields": {
       "valid": true,
       "generator_imported": false,
-      "positive_odd_sources": 2048,
-      "capacity_levels": 30060,
-      "finite_capacity_factor_occurrences": 0,
-      "negative_carry_minimum_q": 22,
-      "q21_rejections": 48,
-      "repeat_certificates": 8,
-      "maximum_source_bits": 1024,
-      "maximum_repeat_prefix": 391004,
+      "query_count": 2668,
+      "certified_no_improvement": 185,
+      "improvements": 2483,
+      "reference_vertices": 1189,
+      "certificate_703_vertices": 1188,
+      "capacity_rows": 49,
+      "minimal_monotonicity_query": [
+        7,
+        4
+      ],
       "proves_collatz": false
     },
-    "experiment_manifest": "research/experiments/phase42-mechanical-capacity.json"
+    "experiment_manifest": "research/experiments/phase43-normalization-barrier.json"
   },
   "active_obligations": [
     {
@@ -54,7 +56,7 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H89.md",
-      "depends_on": ["P54", "P89", "P91", "P92", "P95", "P97", "P98", "P104", "P125", "P126", "P132", "P141", "P142", "P151", "P152", "P153", "P205", "P206", "P218", "E25", "E26", "E27", "E28", "E29", "E33", "E35", "E37", "E48", "E49", "E52", "NG27", "NG28", "NG29", "NG32", "NG42", "P248", "P249", "P250", "NG44", "E57", "P252", "P253", "P255", "P256", "E58"],
+      "depends_on": ["P54", "P89", "P91", "P92", "P95", "P97", "P98", "P104", "P125", "P126", "P132", "P141", "P142", "P151", "P152", "P153", "P205", "P206", "P218", "E25", "E26", "E27", "E28", "E29", "E33", "E35", "E37", "E48", "E49", "E52", "NG27", "NG28", "NG29", "NG32", "NG42", "P248", "P249", "P250", "NG44", "E57", "P252", "P253", "P255", "P256", "E58", "P257", "P258", "P259", "P260", "P261", "E59", "NG46"],
       "success_scope": "Prove M_star(K_q-1)>H_q eventually and independently check the finite remainder; use P206 decoding and P218 mirror roots together with ancestry, carry, literal safety, and ordinary source order to force a smaller positive source."
     },
     {
@@ -86,16 +88,16 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "P117", "P119", "P120", "P121", "P122", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P219", "P220", "P221", "P222", "P223", "P224", "P225", "P227", "P228", "P231", "P232", "P233", "P234", "EXT08", "EXT10", "EXT11", "EXT12", "EXT13", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "E32", "E33", "E53", "E54", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58"],
-      "success_scope": "Exclude the permanent-safe nonperiodic branch. P242/P243 give an all-positive normalized-height minimum and H112 equivalence. P247 stabilization has no effective last join; P251/NG45 show formal analytic conditions do not force same-vertex rewriting. Add ordinary-source or cross-address arithmetic; cycles remain separate."
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "P117", "P119", "P120", "P121", "P122", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P219", "P220", "P221", "P222", "P223", "P224", "P225", "P227", "P228", "P231", "P232", "P233", "P234", "EXT08", "EXT10", "EXT11", "EXT12", "EXT13", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "E32", "E33", "E53", "E54", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58", "P257", "P258", "P259", "P260", "P261", "E59", "NG46"],
+      "success_scope": "Exclude the permanent-safe nonperiodic branch. P242/P243 give an all-positive normalized-height minimum and H112 equivalence. P247 stabilization has no effective last join; P251/NG45 show formal analytic conditions do not force same-vertex rewriting. P258 adds pointwise all-length certificates and P260 bounds ancestor sources by 13S, but neither supplies a global contradiction; retain NG46 and ordinary-source arithmetic. Cycles remain separate."
     },
     {
       "id": "H112",
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H112.md",
-      "depends_on": ["P98", "P112", "P114", "P115", "P116", "P117", "P121", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "EXT08", "E31", "E32", "E33", "NG22", "NG23", "NG28", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58"],
-      "success_scope": "Prove infinitely many nonzero canonical lifts on every infinite safe all-prefix same-Q geodesic. P243 identifies this with nonperiodic exclusion without X02. P248 supplies complete finite decoding, not ancestor existence; P251/NG45 forbid analytic-only same-vertex gain. All-Q comparisons must retain even/unsafe/longer paths and explicit finite caps."
+      "depends_on": ["P98", "P112", "P114", "P115", "P116", "P117", "P121", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "EXT08", "E31", "E32", "E33", "NG22", "NG23", "NG28", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58", "P257", "P258", "P259", "P260", "P261", "E59", "NG46"],
+      "success_scope": "Prove infinitely many nonzero canonical lifts on every infinite safe all-prefix same-Q geodesic. P243 identifies this with nonperiodic exclusion without X02. P248 supplies complete finite decoding, not ancestor existence; P251/NG45 forbid analytic-only same-vertex gain. P258 finite potentials certify all-length no-gain pointwise; P259 completeness is only at a hypothetical global minimizer. NG46 refutes finite geodesic defect monotonicity; no universal termination or variation budget follows."
     },
     {
       "id": "H133",
@@ -420,7 +422,14 @@
     "P254",
     "P255",
     "P256",
-    "E58"
+    "E58",
+    "P257",
+    "P258",
+    "P259",
+    "P260",
+    "P261",
+    "E59",
+    "NG46"
   ],
   "mandatory_adversarial_families": [
     "2^m-1",

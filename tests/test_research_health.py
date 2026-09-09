@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 42
+    assert result["latest_phase"] == 43
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -241,12 +241,23 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["positive_odd_sources"] == 2048
-    assert result["latest_supplemental_verifier"]["finite_capacity_factor_occurrences"] == 0
-    assert result["latest_supplemental_verifier"]["negative_carry_minimum_q"] == 22
-    assert result["latest_supplemental_verifier"]["q21_rejections"] == 48
-    assert result["latest_supplemental_verifier"]["repeat_certificates"] == 8
-    assert result["latest_supplemental_verifier"]["maximum_repeat_prefix"] == 391004
+    assert result["latest_supplemental_verifier"]["query_count"] == 2668
+    assert result["latest_supplemental_verifier"]["certified_no_improvement"] == 185
+    assert result["latest_supplemental_verifier"]["improvements"] == 2483
+    assert result["latest_supplemental_verifier"]["reference_vertices"] == 1189
+    assert result["latest_supplemental_verifier"]["certificate_703_vertices"] == 1188
+    assert result["latest_supplemental_verifier"]["minimal_monotonicity_query"] == [7, 4]
+    for claim in ("P257", "P258", "P259", "P260", "P261"):
+        assert result["active_focus"][claim] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["NG46"] == "REFUTED"
+    assert result["active_focus"]["E59"] == "VERIFIED_FINITE"
+    historical_phase42 = json.loads(Path("artifacts/phase42_verifier.json").read_text(encoding="utf-8"))
+    assert historical_phase42["positive_odd_sources"] == 2048
+    assert historical_phase42["finite_capacity_factor_occurrences"] == 0
+    assert historical_phase42["negative_carry_minimum_q"] == 22
+    assert historical_phase42["q21_rejections"] == 48
+    assert historical_phase42["repeat_certificates"] == 8
+    assert historical_phase42["maximum_repeat_prefix"] == 391004
     historical_phase41 = json.loads(Path("artifacts/phase41_verifier.json").read_text(encoding="utf-8"))
     assert historical_phase41["word_count"] == 32767
     assert historical_phase41["mixed_rows"] == 4192
@@ -336,6 +347,8 @@ def test_repository_research_health() -> None:
     assert ("phase39-macroscopic-carry-jump-geodesic" in result["accepted_experiments"]) == (phase39["status"] == "ACCEPTED")
     phase40 = json.loads(Path("research/experiments/phase40-normalized-height-bellman.json").read_text(encoding="utf-8"))
     assert ("phase40-normalized-height-bellman" in result["accepted_experiments"]) == (phase40["status"] == "ACCEPTED")
+    phase43 = json.loads(Path("research/experiments/phase43-normalization-barrier.json").read_text(encoding="utf-8"))
+    assert ("phase43-normalization-barrier" in result["accepted_experiments"]) == (phase43["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -359,7 +372,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 338
+    assert committed["claim_count"] == 345
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -373,6 +386,10 @@ def test_generated_claim_index_is_complete() -> None:
     for claim in ("P252", "P253", "P254", "P255", "P256"):
         assert rows[claim]["status"] == "VERIFIED_THEOREM"
     assert rows["E58"]["status"] == "VERIFIED_FINITE"
+    for claim in ("P257", "P258", "P259", "P260", "P261"):
+        assert rows[claim]["status"] == "VERIFIED_THEOREM"
+    assert rows["E59"]["status"] == "VERIFIED_FINITE"
+    assert rows["NG46"]["status"] == "REFUTED"
     assert rows["P117"]["status"] == "VERIFIED_THEOREM"
     assert rows["P124"]["status"] == "CONDITIONAL"
     assert rows["E32"]["status"] == "VERIFIED_FINITE"
@@ -565,6 +582,13 @@ def test_generated_claim_index_is_complete() -> None:
         "P255",
         "P256",
         "E58",
+        "P257",
+        "P258",
+        "P259",
+        "P260",
+        "P261",
+        "E59",
+        "NG46",
         "EXT08",
         "E23",
         "E24",

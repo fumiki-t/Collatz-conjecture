@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–42 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–43 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -2218,4 +2218,42 @@ No monotonicity or contradicting variation budget is proved for general
 geodesics. Faster monotone and oscillating defects may survive. The all-source
 model exclusion is a written theorem, not finite extrapolation, and excludes
 only this model. H112/H72/H89/H133 and Collatz remain OPEN;
+`proves_collatz=false`.
+
+## 2026-09-10 — Phase 43: normalization-barrier certificates
+
+Started from Phase 42 main `04727b5d3d10b33a9cadb0d316fd218871a38817`
+on `feat/phase43-normalization-barrier`. The supplied R1--R5 proposal was
+audited independently rather than treated as authority. P257 bounds all
+strictly improving sources by the finite target normalization. P258 extends
+a finite rational potential to all positive integers by y/x, covering
+outside-to-inside edges and all lengths/Q. The existing bounded Phase 41
+oracle is unchanged; the new search reports IMPROVEMENT, certified no strict
+improvement, or UNKNOWN on resource exhaustion.
+
+P259 guarantees termination only for every fixed prefix of a hypothetical
+global normalized-height minimum. P260 proves Ycal(S)<13S using new exact
+N<=48 capacities and hash-pinned inherited E46/E54, not a rerun of those
+large certificates or an external cutoff. P261 propagates endpoint
+maximality to every earlier target prefix.
+
+E59 independently agrees on all 2,668 queries: 185 rational certificates
+and 2,483 actual improvements. The (703,80) certificate has 1,188 vertices;
+its independent closed reference has 1,189. Obstruction mining in the
+existing query domain found the smaller NG46 witness (7,4), minimal by
+source then length: `7 -> 11 -> 17 -> 26 -> 13` has a defect decrease despite
+all-prefix all-Q maximality. The longer 703 decrease 6->2 is retained.
+Thus P254 cannot be applied to finite geodesics without its hypothesis.
+
+Proofs, commands, independent verification, tests and hashes:
+[`results`](PHASE43_RUN_RESULTS.md),
+[`audit`](research/audits/normalization-barrier/REPORT.md),
+[`experiment`](research/experiments/phase43-normalization-barrier.json).
+
+### What this result does not prove
+
+No arbitrary-input termination, effective last join, or uniform
+certificate-size/variation obstruction is supplied. A hypothetical global
+minimum still has a finite certificate at every prefix; neither 7 nor 703
+is an infinite counterexample. H112/H72/H89/H133 and Collatz remain OPEN.
 `proves_collatz=false`.

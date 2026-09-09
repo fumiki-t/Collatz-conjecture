@@ -472,6 +472,20 @@ P256 proves the minimum q=22 negative carry; preserve it together with NG28's
 q=26 witness and the two-sided exponent restriction of P88. Faster monotone
 and oscillating defects, H112/H72/H89, and positive cycles remain unresolved.
 
+Phase 43 adds P257/P258's normalization cuts and finite rational all-length
+certificates as a separate mode; the Phase 41 bounded oracle is unchanged.
+Keep the upper envelope, outside-W edges, every positive source, and all
+lengths/Q, including even/unsafe/empty/cyclic paths. Budget exhaustion is
+UNKNOWN. P259 proves completeness only for each fixed prefix of a
+hypothetical global normalized-height minimum, not arbitrary targets.
+P260 bounds sources by 13S using inherited E46/E54, not join times. NG46
+refutes finite all-prefix geodesic defect monotonicity minimally at (7,4);
+preserve (703,80) too. Future H112 work must force a source/lift-linked
+variation contradiction or rule out compatible certificates at one fixed
+ordinary source; neither more finite certificates nor optimizing 13 does
+this. Keep P254's hypothesis, P253's downward variation and all earlier
+adversarial controls. H112/H72/H89/H133 remain OPEN.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:
