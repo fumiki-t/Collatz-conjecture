@@ -1,0 +1,54 @@
+{
+  "even_rows": 658,
+  "examples": {
+    "even_h_equals_R": {
+      "R": 0,
+      "alternate": "01",
+      "alternate_safe": false,
+      "endpoint": 5,
+      "gain": 3,
+      "h": 0,
+      "k": 1,
+      "source": 20,
+      "tail": "00",
+      "target_safe": false,
+      "z": 6
+    },
+    "even_positive_run": {
+      "R": 1,
+      "alternate": "01",
+      "alternate_safe": false,
+      "endpoint": 5,
+      "gain": 2,
+      "h": 1,
+      "k": 1,
+      "source": 13,
+      "tail": "00",
+      "target_safe": false,
+      "z": 6
+    },
+    "ternary_factor": {
+      "R": 0,
+      "alternate": "01",
+      "alternate_safe": false,
+      "endpoint": 5,
+      "gain": 3,
+      "h": 0,
+      "k": 1,
+      "source": 20,
+      "tail": "00",
+      "target_safe": false,
+      "z": 6
+    }
+  },
+  "excluded_zero_sources": 0,
+  "format": "collatz-phase41-mixed-v1",
+  "maximum_run": 6,
+  "maximum_tail_length": 8,
+  "maximum_v3": 2,
+  "proves_collatz": false,
+  "row_count": 4192,
+  "rows_sha256": "7e2a2a84786858bcd8950611d07278ace61fb941b1e041791dfa1611e221aeca",
+  "safe_gain_cap_rows": 645,
+  "unsafe_from_safe_rows": 0
+}

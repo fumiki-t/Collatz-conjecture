@@ -14,6 +14,18 @@ separate positive-cycle branch. Read [`context/H112.md`](context/H112.md)
 before further Bellman or jump-DAG work; finite stabilization observations
 and the endpoint-sparsity corollary P246 are not new closure mechanisms.
 
+Phase 41 sharpens the nonperiodic route: use P248's complete shifted decoder
+as a finite test, not an existence theorem. P249 allows even and unsafe
+positive competitors at least ordinary sources; preserve signed carry and
+check safety when a selected representative argument needs it. P250 caps
+each fiber's weights, but NG44 refutes interpolation between them. P251/NG45
+prove that formal analytic conditions alone cannot force a higher-weight
+same-vertex tail. The next useful result must force a broader literal
+ancestor, or nonzero source lifts, using positive ordinary integrality.
+P247 all-Q stabilization has no supplied effective final join. A new finite
+search must declare its length cap and retain longer cross-Q ancestors.
+See the [`Phase 41 audit`](../research/audits/shifted-decoder-all-q/REPORT.md).
+
 ## P0 — Eventual critical-prefix barrier
 
 **Target.** Prove `M(K_q-1) > H_q` for all sufficiently large `q`.

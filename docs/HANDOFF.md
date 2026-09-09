@@ -45,7 +45,7 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the forty phases established
+## 3. What the forty-one phases established
 
 - Phase 1–2 built exact affine cylinders and an independent verifier. The
   depth-26 frontier has 1,037,374 unresolved nodes. A short-period dictionary
@@ -302,6 +302,13 @@ with `B_q^max` given explicitly in the Phase 6 result and verifier.
   already follows directly from endpoint-orbit sparsity. E56 independently
   reconstructs 1,024 Bellman rows, 33,554,431 tails, and 12,954 cloud rows.
 
+- Phase 41 supplies complete shifted decoding, mixed 2/3 source rewrites
+  including even h=R competitors, and a bounded all-Q ancestor oracle.
+  The all-positive normalized-height reproof simplifies P243; P247 adds
+  non-effective all-Q stabilization. NG44 rejects contiguous fiber weights,
+  while P251/NG45 show no same-vertex improvement at any depth for a critical
+  formal model. No positive ordinary source or H112 counterexample is known.
+
 The chronological details and exact counts are in
 [`../RESEARCH_HISTORY.md`](../RESEARCH_HISTORY.md).
 
@@ -313,7 +320,11 @@ theorem is H112 itself: every infinite safe all-prefix same-Q geodesic must
 have infinitely many nonzero canonical source lifts. P240 remains historical
 and conditional. Positive cycles still require the separate H133 exclusion.
 See [`context/H112.md`](context/H112.md) and the
-[`Phase 40 audit`](../research/audits/normalized-height-bellman/REPORT.md).
+[`Phase 41 audit`](../research/audits/shifted-decoder-all-q/REPORT.md).
+Do not focus a new search solely on larger-weight tails at the same shifted
+vertex: NG45 survives the current formal analytic conditions. Keep ordinary
+positive source order, carry and broader ancestors in scope. The new finite
+decoder decides a candidate, not whether a successful candidate must exist.
 
 P54 is `CONDITIONAL`. If `N` is a least positive counterexample and its affine
 coefficient first crosses below one at the `q`-barrier, the independently

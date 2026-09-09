@@ -1,0 +1,17 @@
+{
+  "ancestor_targets": 125,
+  "artifact_sha256": {
+    "ancestors": "cdd38f1cf2127772f9cab6778390979c59b30ddbe80ace8b2a3d6a2cbefa4847",
+    "decoder": "3c658b84b30833134e8691d89edccb2794a5304d839933bf3126afb4a226d375",
+    "formal": "aa7f6c5feb4ff7970d9c8d275f410fa9e89db68e274f13cb0711ca2db20165be",
+    "mixed": "abcd10c34b5d20086efa1898e0ea2a48146ee395b1aff13cbb80e633ca09c6ff",
+    "regressions": "8d664a0af537526053b08d5c1b4f50d3e7e9791568e580451e6dedd8faffa759"
+  },
+  "even_rows": 658,
+  "formal_odd_steps": 512,
+  "generator_imported": false,
+  "mixed_rows": 4192,
+  "proves_collatz": false,
+  "valid": true,
+  "word_count": 32767
+}

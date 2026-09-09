@@ -445,6 +445,19 @@ finite-equality and NG38's endpoint-correction obstructions, and test every
 proposal on the five Phase 28 synthetic profiles. Transport, height, area, or
 factor-complexity growth alone is not a cycle exclusion.
 
+Phase 41 extends normalized height to all positive nonperiodic sources and
+reproves P243 directly; H112 is equivalent to nonperiodic exclusion, not
+proved by that equivalence. P247's all-Q ratio stabilization still has no
+effective last-coalescence bound. P248's complete shifted decoder is a
+finite-candidate test, not a successful-ancestor existence theorem. Use P249
+with positive literal sources, mixed divisibility, and even h=R competitors;
+least ordinary counterexamples do not require competitor safety. Preserve
+NG43 when safety matters. P250's gain cap does not fill NG44's weight holes.
+P251/NG45 give an all-depth formal maximal-vertex model without a verified
+positive ordinary source. Future H112 work must add ordinary-source or
+cross-address arithmetic, retain longer/different-Q ancestors, and never
+promote a bounded oracle no-hit to all-Q geodesicity. Cycles remain separate.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

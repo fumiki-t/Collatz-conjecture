@@ -1460,6 +1460,35 @@ moment is already a direct P221 consequence of `2^e/(x+1)<3/x_next`, not a
 new independent route to contradiction. See the
 [`Phase 40 audit`](../research/audits/normalized-height-bellman/REPORT.md).
 
+## Phase 41 — NG44/NG45 and the ancestor-existence boundary
+
+**NG44 (`REFUTED`).** The tempting interpolation hypothesis says that all
+weights at one shifted vertex are consecutive. Exact minimal obstruction:
+ell=14,J=24573, weights {1,2,5,6}; every smaller length has no hole. A second
+length-14 hole has J=24609. P250's finite cutoff survives, but every candidate
+weight must be tested individually; maximum weight cannot fill a missing gain.
+This is a local structural failure, not a refutation of the shifted decoder.
+
+**NG45 (`REFUTED`).** Permanent safety, critical density, summable escaping
+defects, a coherent 2-adic source and the established companion conditions
+seem to provide growing pressure for a same-vertex improvement. They do not:
+the exact infinite word w=110111111u of P251 obeys J/3^t<=1753/729<3 at
+every tail prefix. Hence every such vertex has no higher-weight alternative.
+No minimality among infinite models is asserted. This is fundamental for
+analytic-only forced same-vertex rewriting, but not for an argument using
+positive ordinary source integrality or broader ancestors. A positive source,
+full same-Q geodesicity and H112 failure are **not** established for w.
+
+The convergent source7 similarly admits no mixed rewrite at any prefix:
+its clock differences to candidate sources3,1 fail the required values.
+The broader oracle retains 27 --110-->31, empty paths, even sources, and
+NG25/26/28/43. A finite no-hit, however, is not an all-Q geodesic certificate.
+All-Q height stabilization is a finite-source existence argument with no
+effective last-coalescence bound, not a new stopping algorithm.
+
+Proofs and exact scopes: [`Phase 41 audit`](../research/audits/shifted-decoder-all-q/REPORT.md).
+What this result does not prove: H112/H72/H89/H133 and Collatz remain open.
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

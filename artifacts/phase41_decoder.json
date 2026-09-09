@@ -1,0 +1,204 @@
+{
+  "accepted_count": 255,
+  "boundary_scope": "0<=L<=7,-1<=q<=L+1,-1<=D<=max(1,3^(max(0,L-1)))+1",
+  "boundary_sha256": "cd00791415179baea29bb4929b49596fddc335967d0caee7876ebc8b195be0ee",
+  "fibers": [
+    {
+      "ell": 1,
+      "holes": [],
+      "sha256": "f92298b256b080069ed50d8bf6a0609985901149daa96afa2eb666b7f9cbbbe2",
+      "vertices": 1
+    },
+    {
+      "ell": 2,
+      "holes": [],
+      "sha256": "ac6100695cd58486288ebbcaa2433d94f42f7ef468e2d5666bee0e0791acf4da",
+      "vertices": 1
+    },
+    {
+      "ell": 3,
+      "holes": [],
+      "sha256": "ec4358d0112e0b2a8effbc61c87e139d349f846965e28d4c47c19a404783e797",
+      "vertices": 2
+    },
+    {
+      "ell": 4,
+      "holes": [],
+      "sha256": "eaaedabf88c1dfdef82ff1692c0964d5b9b927cfbbcc7d50118bdcb46654b269",
+      "vertices": 4
+    },
+    {
+      "ell": 5,
+      "holes": [],
+      "sha256": "a7205ceb570d538179653d1216c9f7d65f1bab5bccafd38bdf250fe73365270b",
+      "vertices": 8
+    },
+    {
+      "ell": 6,
+      "holes": [],
+      "sha256": "3734d380eec4f5c6dc9cb07e966303d2c371489f9e094223ac4522ba5abe1cf9",
+      "vertices": 16
+    },
+    {
+      "ell": 7,
+      "holes": [],
+      "sha256": "effd762c47d614c4372a893ac2e25dac972bd5d31ddb83090132428eb76c049d",
+      "vertices": 32
+    },
+    {
+      "ell": 8,
+      "holes": [],
+      "sha256": "a738b590105af493ac137f11fea33ba82d04e47e20961229f87a7b19e9dee3a3",
+      "vertices": 63
+    },
+    {
+      "ell": 9,
+      "holes": [],
+      "sha256": "562167a054e2b1eac8acb14dfe6de9974254815ca3b636b2e678f0b5dad74cb5",
+      "vertices": 124
+    },
+    {
+      "ell": 10,
+      "holes": [],
+      "sha256": "b1c44b3e9067b9fca44fd279d724f995a161a8b29325886b97d0bcab614607d9",
+      "vertices": 245
+    },
+    {
+      "ell": 11,
+      "holes": [],
+      "sha256": "63eec056cf687e04c1bc6d7bfa3f2ea0321bef4095cd511fcd4352a32e320028",
+      "vertices": 484
+    },
+    {
+      "ell": 12,
+      "holes": [],
+      "sha256": "1dee3fe775f9f74dfc589fd669418b7dbc5a28669ff232f31a2f70b1cf51b3dc",
+      "vertices": 958
+    },
+    {
+      "ell": 13,
+      "holes": [],
+      "sha256": "95c4f0414a84e5094d74be0792f4c2dc1a01c342e2e92b20c073ec601e2649e2",
+      "vertices": 1899
+    },
+    {
+      "ell": 14,
+      "holes": [
+        [
+          24573,
+          [
+            1,
+            2,
+            5,
+            6
+          ],
+          [
+            "00000000000001",
+            "01000000000001",
+            "00001101001100",
+            "01001101001100"
+          ]
+        ],
+        [
+          24609,
+          [
+            3,
+            4,
+            7,
+            8
+          ],
+          [
+            "00110000000001",
+            "01110000000001",
+            "00111110100100",
+            "01111110100100"
+          ]
+        ]
+      ],
+      "sha256": "f409bd45e4c60118bec6b6fb9d459d3bd626c0ffc951316667135dcd40bf0ea0",
+      "vertices": 3765
+    }
+  ],
+  "format": "collatz-phase41-decoder-v1",
+  "layers": [
+    {
+      "L": 0,
+      "count": 1,
+      "sha256": "c5132fd135d4d4fe030c9cb04ffea98e3ca48df4065b3354cee98ac3986d44bb"
+    },
+    {
+      "L": 1,
+      "count": 2,
+      "sha256": "882edd0bc1fb6f404aee6016f5b02eefe4f739ab3198c904dddebacb1e0c2f34"
+    },
+    {
+      "L": 2,
+      "count": 4,
+      "sha256": "eb20db2d5168802670825c9458d03b10ccfc7d1559b1a466e03338cbb684ae2e"
+    },
+    {
+      "L": 3,
+      "count": 8,
+      "sha256": "32f3fba8e4a1ba11edc58057aa7552eb907ac183df05f6f073c806de4e0be09b"
+    },
+    {
+      "L": 4,
+      "count": 16,
+      "sha256": "1b16ccda5a76306b9196487b78e6571278c361d649573e794b09a43dc8027436"
+    },
+    {
+      "L": 5,
+      "count": 32,
+      "sha256": "5247cdfb8a0dbcd759b1cfc698623ec5cdbad17257a07306c30bdada23157aec"
+    },
+    {
+      "L": 6,
+      "count": 64,
+      "sha256": "3ae615d6272459d00a9a7d23e882d89fd6c18f59931083c0c1df92f8b05f702c"
+    },
+    {
+      "L": 7,
+      "count": 128,
+      "sha256": "1abf210169331fc2289a7d6b6b5830a3baf40e6a6d61890b8e2ef84f36017de0"
+    },
+    {
+      "L": 8,
+      "count": 256,
+      "sha256": "afe48b747753b8091d905a865f8a53447c8c4656e38978e6ce369f42d8789462"
+    },
+    {
+      "L": 9,
+      "count": 512,
+      "sha256": "86ed4d2c3b86614a95adaf4b42df0210d0cd729dc89c0e5559dede1ee18d4798"
+    },
+    {
+      "L": 10,
+      "count": 1024,
+      "sha256": "bbd70fd08612ed9aa99b4fb2ac7f63500c2b101aa5b75ec7cc97a3dfbea4cd0e"
+    },
+    {
+      "L": 11,
+      "count": 2048,
+      "sha256": "5c209425dbd98959bcb1102f662303487e4182951209f6b497c3a8a35d580cfa"
+    },
+    {
+      "L": 12,
+      "count": 4096,
+      "sha256": "3a9d738e027dac46582e06098a71cf04f750b18ff56617b79522a22bc6e510ef"
+    },
+    {
+      "L": 13,
+      "count": 8192,
+      "sha256": "eca8dd1587cd775544b49cb0d8c5f61de56813d458d04727baf3c2ec0c284a37"
+    },
+    {
+      "L": 14,
+      "count": 16384,
+      "sha256": "f68cb228984334ec9c602e90a2eec97591f4f27cd4f53763e3b436c9f647179a"
+    }
+  ],
+  "maximum_length": 14,
+  "proves_collatz": false,
+  "rejected_count": 10291,
+  "word_count": 32767
+}

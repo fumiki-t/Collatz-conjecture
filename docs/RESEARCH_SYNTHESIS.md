@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 40
+# Collatz research synthesis through Phase 41
 
-**Audit date:** 2026-09-05
+**Audit date:** 2026-09-09
 
-**Audited base:** Phase 40 evidence and independent verifier
+**Audited base:** Phase 41 evidence and independent verifier
 
-**Latest accepted phase:** Phase 40
+**Latest accepted phase:** Phase 41
 
 **Problem status:** `OPEN`
 
@@ -23,6 +23,19 @@ experiments. It is not a second claims ledger and does not change a claim's
 status.
 
 ## 1. Evidence boundary
+
+Latest synthesis: the [`Phase 41 audit`](../research/audits/shifted-decoder-all-q/REPORT.md)
+reproves P242/P243 over all positive nonperiodic sources and records H112's
+equivalence to nonperiodic exclusion, without proving it. P247 extends
+non-effective maximum-ratio stabilization to all Q. P248--P250 give a complete
+shifted decoder, mixed 2/3 source rewriting and a strict safe gain cap.
+NG44 preserves the least weight-hole fiber; P251/NG45 supply a critical
+permanent-safe formal word with no same-vertex gain at any depth. Its coherent
+2-adic source is not a verified positive ordinary source. E57's broad finite
+ancestor oracle includes longer, even and unsafe competitors, but supplies
+no effective all-depth no-hit certificate. The missing ingredient remains
+ordinary-source ancestor existence or the equivalent H112 lift theorem;
+positive cycles are separate.
 
 The repository uses this order of confidence:
 

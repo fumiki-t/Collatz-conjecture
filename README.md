@@ -22,7 +22,15 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 40 is the latest accepted research layer. Minimizing a finite normalized
+Phase 41 is the latest accepted research layer. It provides a complete
+shifted decoder and a bounded ancestor oracle that retains even, unsafe,
+longer and different-Q competitors. An exact formal word has no higher-weight
+same-vertex alternative at any depth, showing why ordinary-source arithmetic
+is still needed. The formal word is not a positive-integer counterexample.
+See the [Phase 41 results](PHASE41_RUN_RESULTS.md).
+
+The Phase 40 normalized-height reduction survives and is simplified in
+Phase 41. Minimizing a finite normalized
 height gives a permanent-safe representative whose every prefix is globally
 shortest among positive paths with the same odd count. This proves that the
 open source-lift statement H112 would exclude the entire nonperiodic branch
@@ -36,7 +44,7 @@ H72, H133, and the broader H54, H70, H89, H104, H105, H112, H141, H172, C03,
 C04, and C05 obligations remain open.
 
 Start with the [research synthesis](docs/RESEARCH_SYNTHESIS.md). It defines the
-map and conventions, summarizes Phases 1–40, separates internal and external
+map and conventions, summarizes Phases 1–41, separates internal and external
 results, records failed mechanisms, and states the remaining proof obligations.
 
 Canonical status and navigation:

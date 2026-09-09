@@ -1,6 +1,6 @@
 # Current research status
 
-**Last updated:** 2026-09-05
+**Last updated:** 2026-09-09
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -8,7 +8,18 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest layer: [`Phase 40`](../PHASE40_RUN_RESULTS.md) and its
+Latest layer: [`Phase 41`](../PHASE41_RUN_RESULTS.md) and its
+[`audit`](../research/audits/shifted-decoder-all-q/REPORT.md).
+P242/P243 now have an all-positive-source reproof and H112 equivalence,
+without an H112 proof. P247 gives non-effective all-Q stabilization;
+P248--P250 provide complete shifted decoding and mixed-source tests.
+P251/NG45 show that the current formal analytic conditions can coexist with
+no same-vertex improvement at any depth. NG44 preserves the least fiber hole.
+E57's broad ancestor oracle is length-bounded, not a final no-hit certificate.
+The next requirement is an ordinary-source or broader-ancestor existence
+theorem that survives this formal obstruction. H112/H72/H89/H133 stay OPEN.
+
+Previous layer: [`Phase 40`](../PHASE40_RUN_RESULTS.md) and its
 [`audit`](../research/audits/normalized-height-bellman/REPORT.md).
 P242/P243 use a normalized-height minimum and strict-valley rescue to prove
 that [`H112`](context/H112.md) would exclude the entire positive nonperiodic
@@ -23,6 +34,15 @@ formal models, source 167, and NG43.
 
 ## What is currently proved?
 
+- `VERIFIED_THEOREM`: P247--P251 give all-Q maximum-ratio stabilization,
+  complete shifted decoding, mixed positive-source coalescence, the exact
+  gain cap, and an all-depth formal maximal-vertex model. The P243 equivalence
+  is proved; its H112 premise and nonperiodic exclusion remain unproved.
+- `VERIFIED_FINITE`: E57 reconstructs 32,767 words, 4,192 mixed rewrites,
+  512 formal odd steps, and 718 ancestor hits in an explicit L'<=10 scope.
+- `REFUTED`: NG44 rejects contiguous fiber weights; NG45 rejects forcing a
+  same-vertex improvement from the current formal analytic conditions alone.
+  Do not repeat those strategies without additional ordinary-source input.
 - `VERIFIED_THEOREM`: P242's finite normalized height attains a minimum
   within a permanent-safe shared-future class. P243 makes every prefix of
   that representative coefficient-maximal among positive literal competitors,

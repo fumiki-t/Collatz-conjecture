@@ -2,22 +2,26 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 40's normalized-height/Bellman audit is the
-latest research layer. P243 proves the implication from H112 to nonperiodic
-exclusion without X02; it does not prove H112. Bellman stabilization has no
-effective last-jump certificate, and NG43 requires adjusted-run safety or
-strict-valley rescue. P246's moment is a direct P221 corollary.
+proof of the conjecture. Phase 41's shifted-decoder/all-Q audit is the latest
+research layer. P243's simplified height proof makes H112 equivalent to
+nonperiodic exclusion without X02; it does not prove either. P247 stabilization
+has no effective last join. P248 is a finite decoder, not ancestor existence.
+P251/NG45 refute forced same-vertex gain from the current formal analytic
+conditions; add ordinary-source or cross-address arithmetic. Retain even,
+unsafe and longer cross-Q competitors, NG43, and explicit finite search caps.
 
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–40 evidence boundaries, and current obligations.
+   branch map, Phase 1–41 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md),
+6. [`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md) and
+   [`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md),
+   then [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md),
    [`context/H112.md`](context/H112.md), and
    [`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md),
    then [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md) and

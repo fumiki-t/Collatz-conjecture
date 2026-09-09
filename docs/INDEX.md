@@ -9,7 +9,7 @@ This is the canonical map of the research archive. Start with
 
 | Document | Role | Update trigger |
 |---|---|---|
-| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–37, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
+| [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–41, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |
 | [`STATUS.md`](STATUS.md) | Current proved/finite/open/refuted state and next questions | Every meaningful result |
 | [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) | Stable claim IDs, exact status, dependencies, evidence, and counterexamples | Any claim introduction or status change |
 | [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) | Negative results and retracted shortcuts | Any counterexample or retraction |
@@ -69,6 +69,7 @@ This is the canonical map of the research archive. Start with
 | 38 | [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md) | [`../artifacts/phase38_obstruction_report.md`](../artifacts/phase38_obstruction_report.md) | `feat/phase38-finite-capacity-renewal-transfer` |
 | 39 | [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md) | [`../artifacts/phase39_obstruction_report.md`](../artifacts/phase39_obstruction_report.md) | `feat/phase39-macroscopic-carry-jump-geodesic` |
 | 40 | [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md) | [`safety obstruction`](../research/audits/normalized-height-bellman/REPORT.md#7-shifted-correction-safety-obstruction) | `feat/phase40-normalized-height-bellman` |
+| 41 | [`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md) | [`formal no-gain and all-Q boundary`](../research/audits/shifted-decoder-all-q/REPORT.md) | `feat/phase41-shifted-decoder-all-q` |
 
 Research supplements:
 
@@ -108,7 +109,7 @@ Research supplements:
 | Normalized-height/Bellman audit | [`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md) | Normalized-height minimum, global coefficient maximality, Bellman redundancy, complete length-25 safety falsification, alternate-predecessor cloud, independent verifier and tamper tests | P242--P246, E56, NG43; H112 implication without X02 and non-effective stabilization boundary |
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 40 and both the branch-point and two-tail
+documentation through Phase 41 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

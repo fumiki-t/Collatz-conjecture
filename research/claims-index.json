@@ -1,5 +1,5 @@
 {
-  "claim_count": 324,
+  "claim_count": 332,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -974,7 +974,7 @@
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, surplus/coalescent irreducibility, or a lift-linked complexity theorem to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the only nonperiodic branch left by P222; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, P227, P228, P231, P232, P233, P234, P235, P236, P237, P238, P239, P240, E55, P242, P243, P244, P245, P246, NG43, E56, EXT08, E23, E24, E30, E31, E32, E33, E53, E54, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, P227, P228, P231, P232, P233, P234, P235, P236, P237, P238, P239, P240, E55, P242, P243, P244, P245, P246, NG43, E56, EXT08, E23, E24, E30, E31, E32, E33, E53, E54, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31. Phase 41: P247, P248, P249, P250, P251, NG44, NG45, E57.",
       "dependency_ids": [
         "E23",
         "E24",
@@ -986,6 +986,7 @@
         "E54",
         "E55",
         "E56",
+        "E57",
         "EXT08",
         "NG21",
         "NG22",
@@ -996,6 +997,8 @@
         "NG30",
         "NG31",
         "NG43",
+        "NG44",
+        "NG45",
         "P107",
         "P108",
         "P109",
@@ -1044,6 +1047,11 @@
         "P244",
         "P245",
         "P246",
+        "P247",
+        "P248",
+        "P249",
+        "P250",
+        "P251",
         "P72",
         "P73",
         "P75",
@@ -1064,7 +1072,7 @@
       "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).  [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md); [`context/H112.md`](context/H112.md); [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md)",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-09-05 (Phase 40 audit; status unchanged)",
+      "last_audited": "2026-09-09 (Phase 41 scope audit; status unchanged)",
       "notes": "P243 now reduces every positive nonperiodic orbit to H112 without X02, via normalized-height minimization and valley rescue. P244 gives finite height descent but no effective stopping certificate. NG43 requires full adjusted-run safety. P80 and H112 remain unproved.",
       "status": "OPEN"
     },
@@ -1445,20 +1453,25 @@
     {
       "claim": "Prove `M_star(K_q-1)>H_q` for all sufficiently large `q`, where `M_star(k)` is the least source with ancestral-safe depth at least `k`, then independently check the finite first-crossing remainder.",
       "collatz_implication": "Together with P90 and a finite remainder, this would exclude a least positive counterexample.",
-      "dependencies": "P54, P89, P125, P126, P132, P151--P153, E33, E37; an eventual ancestral-frontier lower bound.",
+      "dependencies": "P54, P89, P125, P126, P132, P151--P153, E33, E37; an eventual ancestral-frontier lower bound. Phase 41: P248, P249, P250, NG44, E57.",
       "dependency_ids": [
         "E33",
         "E37",
+        "E57",
+        "NG44",
         "P125",
         "P126",
         "P132",
+        "P248",
+        "P249",
+        "P250",
         "P54",
         "P89"
       ],
       "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Sections 3 and 9; [`context/H89.md`](context/H89.md); `artifacts/phase21_critical_repetitions.json`; `artifacts/phase25_theory.json`.",
       "first_introduced": "Phase 15B",
       "id": "H89",
-      "last_audited": "2026-08-30 (Phase 25 audit)",
+      "last_audited": "2026-09-09 (Phase 41 scope audit; status unchanged)",
       "notes": "E25 is finite, E33 leaves most bounded words alive, and P152/P153 leave the q0 support interval nonempty; none is an eventual theorem.",
       "status": "OPEN"
     },
@@ -2037,14 +2050,17 @@
     },
     {
       "claim": "Prove that every infinite coefficient-safe all-prefix same-Q-geodesic branch has infinitely many nonzero canonical accelerated source lifts.",
-      "collatz_implication": "With P115 and P243, would exclude the full positive nonperiodic branch without X02; cycles remain separate.",
-      "dependencies": "P98, P115, P125, P126, P127, P129, P131, E33; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.  P86, P222, P228, E54, P235, P236, P237, P238, P240, E55, P242, P243, P244, P245, P246, NG43, E56; X02 only in historical P240, not in the new P243 implication.",
+      "collatz_implication": "P243 makes H112 equivalent to full positive nonperiodic exclusion without X02; cycles remain separate.",
+      "dependencies": "P98, P115, P125, P126, P127, P129, P131, E33; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.  P86, P222, P228, E54, P235, P236, P237, P238, P240, E55, P242, P243, P244, P245, P246, NG43, E56; X02 only in historical P240, not in the new P243 implication. Phase 41: P247, P248, P249, P250, P251, NG44, NG45, E57.",
       "dependency_ids": [
         "E33",
         "E54",
         "E55",
         "E56",
+        "E57",
         "NG43",
+        "NG44",
+        "NG45",
         "P115",
         "P125",
         "P126",
@@ -2063,6 +2079,11 @@
         "P244",
         "P245",
         "P246",
+        "P247",
+        "P248",
+        "P249",
+        "P250",
+        "P251",
         "P86",
         "P98",
         "X02"
@@ -2070,7 +2091,7 @@
       "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Sections 6--7; [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md); [`context/H72.md`](context/H72.md).  [`context/H112.md`](context/H112.md); [`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md)",
       "first_introduced": "Phase 19",
       "id": "H112",
-      "last_audited": "2026-09-05 (Phase 40 implication audit; status unchanged)",
+      "last_audited": "2026-09-09 (Phase 41 scope audit; status unchanged)",
       "notes": "The statement remains OPEN. P243 supplies an internal normalized-height reduction; P244 stabilization is not an effective final stopping rule. P237/P238 constrain growing ancestors; NG43 refutes automatic safety under weight gain.",
       "status": "OPEN"
     },
@@ -4605,35 +4626,35 @@
       "status": "VERIFIED_FINITE"
     },
     {
-      "claim": "Every positive odd nonperiodic source has finite intrinsic normalized height Ycal(x)=x+beta_infinity>x, with Ycal(z)=Ycal(y)/c(w) for every positive coalescing odd-to-odd path. Every nonempty permanent-safe shared-future class attains its minimum normalized height.",
+      "claim": "Every positive (including even) nonperiodic source has finite intrinsic normalized height Ycal(x)=x+beta_infinity>x, with Ycal(z)=Ycal(y)/c(w) for every positive coalescing literal path. Every nonempty permanent-safe shared-future class attains its minimum normalized height; so does the set of all positive nonperiodic sources when nonempty.",
       "collatz_implication": "Supplies an intrinsic descent order without X02 or a least-ordinary-source height ratio.",
       "dependencies": "P221/P222; exact product and affine normalization; positive ordinary integer sources give finite height sublevel sets.",
       "dependency_ids": [
         "P221",
         "P222"
       ],
-      "evidence": "[`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md), Section 2; Phase 40 finite normalization checks.",
+      "evidence": "[`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md), Section 2; Phase 40 finite normalization checks; [`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 2 (all-positive reproof).",
       "first_introduced": "Phase 40",
       "id": "P242",
-      "last_audited": "2026-09-05",
+      "last_audited": "2026-09-09 (Phase 41 reproof; status unchanged)",
       "notes": "Intermediate sources need not be safe; the minimum is not obtained by well-ordering reals, and need not be a least ordinary source.",
       "status": "VERIFIED_THEOREM"
     },
     {
-      "claim": "A P242 minimizing permanent-safe source has globally maximal coefficient at every prefix among all positive literal paths to that endpoint, including unsafe and different-Q competitors. It is all-prefix same-Q geodesic. Thus H112 implies exclusion of every positive nonperiodic orbit, without X02.",
-      "collatz_implication": "Proves the internal logical reduction to H112; P240 remains a valid historical X02-conditional route.",
-      "dependencies": "P242, P222, P87 strict-valley extraction, canonical endpoint positivity, full-shortcut/odd-endpoint bridge, P115.",
+      "claim": "A P242 minimizing permanent-safe source has globally maximal coefficient at every prefix among all positive literal paths to that endpoint, including unsafe and different-Q competitors. It is all-prefix same-Q geodesic. H112 is equivalent to exclusion of every positive nonperiodic orbit, without X02.",
+      "collatz_implication": "Proves the internal logical equivalence with H112; P240 remains a valid historical X02-conditional route.",
+      "dependencies": "P242, P222, P87 strict-valley extraction, canonical endpoint positivity, full-shortcut/odd-endpoint bridge, P115; Phase 41 alternatively minimizes over all positive nonperiodic sources and uses the positive-cycle contraction for the converse.",
       "dependency_ids": [
         "P115",
         "P222",
         "P242",
         "P87"
       ],
-      "evidence": "[`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md), Sections 3--4.",
+      "evidence": "[`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md), Sections 3--4; [`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 2.",
       "first_introduced": "Phase 40",
       "id": "P243",
-      "last_audited": "2026-09-05",
-      "notes": "The implication is proved, not its H112 premise or the actual nonperiodic exclusion. H112 and positive cycles remain OPEN.",
+      "last_audited": "2026-09-09 (Phase 41 converse/reproof; status unchanged)",
+      "notes": "The equivalence is proved, not its H112 premise or the actual nonperiodic exclusion. H112 and positive cycles remain OPEN.",
       "status": "VERIFIED_THEOREM"
     },
     {
@@ -4702,9 +4723,110 @@
       "last_audited": "2026-09-05",
       "notes": "No sampled orbit is certified nonperiodic. No finite Bellman plateau certifies stabilization; H112/H72/H133 stay OPEN. `proves_collatz=false`.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "For any positive nonperiodic source, the maximum ratio of competitor to actual prefix coefficient at its odd endpoints, over all positive literal ancestors of every length and weight, is attained, nondecreasing, and eventually constant.",
+      "collatz_implication": "Extends the stabilization interpretation to all Q, including even and unsafe predecessors.",
+      "dependencies": "P221, P242 cocycle; finite positive sources z<Ycal(S); unique visits to endpoints and persistence under common suffixes.",
+      "dependency_ids": [
+        "P221",
+        "P242"
+      ],
+      "evidence": "[`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 3.",
+      "first_introduced": "Phase 41",
+      "id": "P247",
+      "last_audited": "2026-09-09",
+      "notes": "No effective final coalescence index or finite no-hit stopping certificate is supplied.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "D=B+2^L-3^q admits a complete unique binary-word decoder: even D forces initial one and D/2; odd D forces initial zero and (D-3^q)/2, with exact residual length, weight, and nonnegativity checks.",
+      "collatz_implication": "Makes arbitrary finite ancestor candidates decidable without restricting them to the P206 critical-safe image.",
+      "dependencies": "Integer L,q,D; initial q<=L; empty word and all-one/all-zero boundaries; shifted D is not the cycle denominator.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 4; `verifier/verify_phase41.py` reconstructs positional images independently.",
+      "first_introduced": "Phase 41",
+      "id": "P248",
+      "last_audited": "2026-09-09",
+      "notes": "O(L) counts integer operations, not bit complexity; decoding supplies no successful-ancestor existence theorem.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "At equal zero-prefixed tail coordinates (ell,J), a weight gain k>0 rewrites 1^R v from S to 1^(R-h)v' from z=(S+1)/(2^h3^(k-h))-1 with coefficient gain 2^h3^(k-h), for 0<=h<=min(R,k), divisibility and z>0. Literal coalescence and z<S follow.",
+      "collatz_implication": "Includes even h=R competitors and unsafe competitors for least ordinary sources, in either cyclic or nonperiodic counterexamples.",
+      "dependencies": "Actual positive target, maximal initial run R, exact shared shifted correction; least ordinary counterexample and nonperiodic height minimizer are distinct applications.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 5; `artifacts/phase41_mixed.json`.",
+      "first_introduced": "Phase 41",
+      "id": "P249",
+      "last_audited": "2026-09-09",
+      "notes": "No safety preservation; NG43 survives. If 3 divides S+1 an elementary superior predecessor already exists.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "A safe target 1^R v with total weight Q and a higher-weight tail at the same (ell,J), of gain k>0, satisfies 3^(k+1)2^R<3^R Q. Every zero-prefixed tail of weight t satisfies 3^t<=J.",
+      "collatz_implication": "Provides an exact complete weight cutoff at each fixed shifted vertex.",
+      "dependencies": "Full coefficient safety for the strict gain cap; zero-prefixed tail convention for the finite weight cutoff.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 6; independent finite gain-cap checks.",
+      "first_introduced": "Phase 41",
+      "id": "P250",
+      "last_audited": "2026-09-09",
+      "notes": "Does not make available weights contiguous or force any improvement at a future vertex.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For the Phase 13 square-root formal word u, the normalized zero correction C_u<=8. The permanently safe critical nonperiodic formal word w=110111111u has tail v=0111111u with D(v_prefix)/3^t<=1753/729<3 at every depth, so no higher-weight tail exists at its shifted vertex.",
+      "collatz_implication": "Locates the missing ordinary-source arithmetic in same-vertex rewriting strategies.",
+      "dependencies": "Exact square-root recurrence and square-shell sums; coherent odd 2-adic source; no positive ordinary realization assumed.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 7; Phase 13 Section 6; `artifacts/phase41_formal.json` is finite regression only.",
+      "first_introduced": "Phase 41",
+      "id": "P251",
+      "last_audited": "2026-09-09",
+      "notes": "Does not establish full same-Q geodesicity, all-Q maximality, or a positive ordinary source, and does not refute H112.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Every shifted tail fiber has a contiguous set of possible weights, so an available large gain supplies intermediate gains.",
+      "collatz_implication": "Requires checking every individual weight up to the P250 cutoff.",
+      "dependencies": "All zero-prefixed tails of equal ell,J; exact P248 image.",
+      "dependency_ids": [
+        "P248"
+      ],
+      "evidence": "[`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 6; `artifacts/phase41_decoder.json`; E57.",
+      "first_introduced": "Phase 41",
+      "id": "NG44",
+      "last_audited": "2026-09-09",
+      "notes": "Least (ell,J)=(14,24573) has weights {1,2,5,6}; no holes through ell=13.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Permanent safety, critical density, escaping summable defects, coherent 2-adic source, h>1 and divergent sum 1/h force an eventual higher-weight same-vertex tail rewrite.",
+      "collatz_implication": "Rules out analytic-only forced same-vertex improvement and requires a genuinely ordinary-source or broader-ancestor argument.",
+      "dependencies": "Formal words with the stated analytic properties, without positive ordinary-source integrality.",
+      "dependency_ids": [],
+      "evidence": "P251; [`../research/audits/shifted-decoder-all-q/REPORT.md`](../research/audits/shifted-decoder-all-q/REPORT.md), Section 7.",
+      "first_introduced": "Phase 41",
+      "id": "NG45",
+      "last_audited": "2026-09-09",
+      "notes": "Exact infinite witness w=110111111u has no improvement at any depth. No minimality among infinite words is asserted; H112 and integer-only assertions are untouched.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Independent Phase 41 reconstruction covers all 32767 words through length 14, 10546 boundary triples, every tail fiber through 14, 4192 mixed rewrites including 658 even competitors, 512 formal odd steps, and 718 dominating ancestor hits across 125 bounded targets, plus retained controls.",
+      "collatz_implication": "Certifies the finite arithmetic and NG44 minimal finite hole, separately from written infinite derivations.",
+      "dependencies": "Fixed domains in the experiment contract; exact integers/rationals; positional image and forward-iteration verifier does not import the decoder search.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md); `verifier/verify_phase41.py`; Phase 41 artifacts and tamper tests.",
+      "first_introduced": "Phase 41",
+      "id": "E57",
+      "last_audited": "2026-09-09",
+      "notes": "L'<=10 is an explicit ancestor cutoff, not all-Q geodesic certification. The supplied length-27 computation is not accepted. `proves_collatz=false`.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "6970e9c2f1ce63fe26ae0313fdb0b70628687c1d650d878915ddc250b93791f5"
+  "source_sha256": "663129a169f9ae5c706186b335230f5af833a3444c80dbcadc3df56950514410"
 }

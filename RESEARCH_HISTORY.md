@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–40 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–41 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -2146,3 +2146,36 @@ H112, H72 and arbitrary-area positive cycles remain open. No finite Bellman
 plateau proves stabilization, and a finite number of replacements does not
 give a certified halting algorithm. The moment and cloud do not exclude the
 remaining positive ordinary source. `proves_collatz=false`.
+
+## 2026-09-09 — Phase 41: shifted decoding and all-Q ancestor audit
+
+The September 9 bundle was audited from Phase 40 acceptance `4a814b3`.
+P242/P243 receive an all-positive-source normalized-height reproof and the
+converse H112 equivalence; this is a simplification of the existing reduction,
+not proof of H112. P247 shows that all-Q maximum coefficient ratios stabilize
+through finitely many candidate ordinary sources, without an effective last
+join. P248 gives complete shifted decoding; P249 includes mixed 2/3 factors,
+even competitors and unsafe competitors in the least-ordinary-source setting.
+P250 supplies a strict gain cap and an exact finite vertex cutoff.
+
+NG44 records the minimal weight-hole fiber ell=14,J=24573, weights {1,2,5,6}.
+P251 proves a square-shell bound C_u<=8 and constructs w=110111111u with
+J/3^t<=1753/729<3 at every depth. NG45 refutes forced same-vertex improvement
+from the formal analytic conditions alone; the model has no verified positive
+ordinary source or all-prefix geodesicity. The convergent source7 is another
+all-time no-rewrite control, with an exact clock obstruction.
+
+E57 independently reconstructs 32,767 words, 10,546 boundary triples,
+4,192 mixed rewrites (658 even competitors), 512 formal odd steps and 718
+bounded ancestor hits. The new oracle retains every q'<=L', even/unsafe
+sources and longer paths, including 27 --110-->31. The supplied length-27
+single-implementation output was not accepted or rerun. Details, commands,
+tests and immutable acceptance metadata are in
+[`PHASE41_RUN_RESULTS.md`](PHASE41_RUN_RESULTS.md) and the
+[`audit`](research/audits/shifted-decoder-all-q/REPORT.md).
+
+### What this result does not prove
+
+No ordinary-source ancestor-existence theorem or effective all-Q stopping
+certificate is obtained. H112/H72/H89/H133 remain OPEN, and positive cycles
+remain separate. `proves_collatz=false`.

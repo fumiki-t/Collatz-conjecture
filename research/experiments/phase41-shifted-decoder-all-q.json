@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "phase41-shifted-decoder-all-q",
+  "status": "RUNNING",
+  "claim_ids": ["P242", "P243", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "H112", "H72", "H89", "H133"],
+  "objective": "Independently audit the supplied shifted-decoder proposal, its all-Q normalized-height reproof, mixed positive-source rewrites, and a formal all-depth obstruction to same-vertex improvement; implement a bounded unrestricted-weight ancestor oracle.",
+  "exact_scope": {
+    "quantifiers": ["all positive nonperiodic ordinary sources for the normalized-height proofs", "all binary words through length 14 and all zero-prefixed fibers through length 14", "mixed rewrites through tail length 8, initial runs 0 through 6, and ternary valuations 0 through 2", "512 odd steps of the formal square-root model; its infinite claim requires the separate written proof", "all strictly dominating positive sources for each declared finite target, competitor lengths 0 through 10 and every weight 0 through its length"],
+    "bounds": {"word_length": 14, "tail_length": 14, "mixed_tail_length": 8, "maximum_run": 6, "maximum_ternary_valuation": 2, "formal_odd_steps": 512, "ancestor_length": 10},
+    "completeness": "Finite word and ancestor scopes are exhaustive only within their declared bounds. The supplied length-27 single-implementation computation is not accepted or rerun. No finite no-hit or residue plateau certifies an infinite geodesic or ordinary source."
+  },
+  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "none; integer powers, exact rationals, square-shell sums, and symbolic limits"},
+  "commands": {
+    "generator": [".venv/bin/python src/phase41_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_phase41.py --artifact-dir artifacts --output artifacts/phase41_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase41_properties.py tests/test_phase41_verifier.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["affine odd-position and shifted zero-position sums, without the leading-bit decoder", "full finite fiber maps by independent word enumeration", "positive literal mixed rewrites and all declared ancestor hits by forward iteration", "formal exponents using exact power comparisons and inverse residues", "prior falsifiers, full safety, source 167, even and longer cross-Q competitors"],
+    "forbidden_imports": ["src.phase41_search", "phase41_search"],
+    "tamper_tests": ["tests/test_phase41_verifier.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG24", "NG25", "NG26", "NG28", "NG43 original and lex-first", "source 167", "source 7", "even competitors", "longer cross-Q competitors"],
+  "artifacts": ["artifacts/phase41_decoder.json", "artifacts/phase41_mixed.json", "artifacts/phase41_formal.json", "artifacts/phase41_ancestors.json", "artifacts/phase41_regressions.json", "artifacts/phase41_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["Repair any false infinite statement before assigning its status.", "No depth-27 rerun without a new mathematical purpose.", "Do not impose same Q, vertex, or target-length caps on the bounded oracle implicitly."],
+  "interpretation_boundary": ["P242/P243 reproof is not a new independent breakthrough.", "The formal maximal-vertex model is not a positive ordinary source or an H112 counterexample.", "All-Q stabilization has no supplied effective last-coalescence bound.", "H112/H72/H89/H133 remain OPEN; cycles remain separate.", "proves_collatz=false"],
+  "proves_collatz": false
+}
