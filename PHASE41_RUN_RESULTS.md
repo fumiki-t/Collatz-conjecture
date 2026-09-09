@@ -78,8 +78,17 @@ files. Verify the repository-wide SHA-256 manifest from `artifacts/` with
 clean detached worktree; the pre-existing untracked scratch directory is
 preserved outside the published commit.
 
-Final test timings, clean-worktree results, immutable implementation commit,
-and manifest SHA-256 are recorded in the
+Acceptance checks passed: 92 focused tests (18.61 s), 100 dependency tests
+(39.91 s), and 98 CI-equivalent tests in a clean detached worktree
+(301.30 s). These cover 198 distinct scoped tests, not the whole repository
+suite. Strict research health reported no errors or warnings, all 151 tracked
+Markdown files passed link checks, and all 276 artifact hashes matched.
+Six Phase 41 outputs reproduced byte-for-byte in a separate directory.
+
+Implementation commit: `6ca405e16dcaee8546b8c129c3ef9440d8a0c038`.
+[`artifacts/SHA256SUMS`](artifacts/SHA256SUMS) SHA-256:
+`1726417526abfd68ba98389e4d194ce33229b1955b51b8b8065068b35e02a930`.
+Detailed commands, clean-worktree results and immutable evidence are recorded in the
 [`experiment contract`](research/experiments/phase41-shifted-decoder-all-q.json).
 Only the reported scoped tests are asserted; a whole-repository suite is not
 implied by successful focused tests.

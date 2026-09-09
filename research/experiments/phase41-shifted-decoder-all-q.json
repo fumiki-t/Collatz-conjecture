@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase41-shifted-decoder-all-q",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P242", "P243", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "H112", "H72", "H89", "H133"],
   "objective": "Independently audit the supplied shifted-decoder proposal, its all-Q normalized-height reproof, mixed positive-source rewrites, and a formal all-depth obstruction to same-vertex improvement; implement a bounded unrestricted-weight ancestor oracle.",
   "exact_scope": {
@@ -13,16 +13,31 @@
   "commands": {
     "generator": [".venv/bin/python src/phase41_search.py --artifact-dir artifacts"],
     "verifier": [".venv/bin/python verifier/verify_phase41.py --artifact-dir artifacts --output artifacts/phase41_verifier.json"],
-    "tests": [".venv/bin/python -m pytest -q tests/test_phase41_properties.py tests/test_phase41_verifier.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+    "tests": [".venv/bin/python -m pytest -q tests/test_phase41_properties.py tests/test_phase41_verifier.py tests/test_research_health.py", ".venv/bin/python -m pytest -q tests/test_phase13_properties.py tests/test_phase35_properties.py tests/test_phase37_properties.py tests/test_phase39_properties.py tests/test_phase40_properties.py tests/test_phase40_verifier.py", ".venv/bin/python -m pytest -q tests/test_research_health.py tests/test_phase24_verifier.py tests/test_phase41_properties.py tests/test_phase41_verifier.py", ".venv/bin/python scripts/research_health.py --strict"]
   },
   "independence": {
     "verifier_reconstructs": ["affine odd-position and shifted zero-position sums, without the leading-bit decoder", "full finite fiber maps by independent word enumeration", "positive literal mixed rewrites and all declared ancestor hits by forward iteration", "formal exponents using exact power comparisons and inverse residues", "prior falsifiers, full safety, source 167, even and longer cross-Q competitors"],
     "forbidden_imports": ["src.phase41_search", "phase41_search"],
     "tamper_tests": ["tests/test_phase41_verifier.py"]
   },
-  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG24", "NG25", "NG26", "NG28", "NG43 original and lex-first", "source 167", "source 7", "even competitors", "longer cross-Q competitors"],
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG24", "NG25", "NG26", "NG28", "NG43 original and lex-first", "NG44", "NG45", "source 167", "source 7", "even competitors", "longer cross-Q competitors"],
   "artifacts": ["artifacts/phase41_decoder.json", "artifacts/phase41_mixed.json", "artifacts/phase41_formal.json", "artifacts/phase41_ancestors.json", "artifacts/phase41_regressions.json", "artifacts/phase41_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Repair any false infinite statement before assigning its status.", "No depth-27 rerun without a new mathematical purpose.", "Do not impose same Q, vertex, or target-length caps on the bounded oracle implicitly."],
   "interpretation_boundary": ["P242/P243 reproof is not a new independent breakthrough.", "The formal maximal-vertex model is not a positive ordinary source or an H112 counterexample.", "All-Q stabilization has no supplied effective last-coalescence bound.", "H112/H72/H89/H133 remain OPEN; cycles remain separate.", "proves_collatz=false"],
+  "recorded_result": {
+    "commit": "6ca405e16dcaee8546b8c129c3ef9440d8a0c038",
+    "generator": "Five evidence files and the independent verifier output reproduced byte-for-byte in a separate temporary directory.",
+    "verifier": "valid=true; generator_imported=false; word_count=32767; mixed_rows=4192; even_rows=658; formal_odd_steps=512; ancestor_targets=125; 718 finite ancestor hits; proves_collatz=false",
+    "focused_tests": "92 passed in 18.61s: Phase 41 properties, independent verifier/tamper tests and research health, after final CLI and strict JSON parsing changes.",
+    "dependency_tests": "100 passed in 39.91s: Phase 13/35/37/39 properties and Phase 40 properties/verifier, preserving prior controls including NG43.",
+    "clean_ci_equivalent_tests": "98 passed in 301.30s from detached implementation-commit worktree: research health, Phase 24 verifier, Phase 41 properties/verifier. Worktree clean before and after.",
+    "full_tests": "Whole repository suite not rerun. 198 distinct scoped tests passed; the CI-equivalent set adds six Phase 24 checks to the focused and dependency sets.",
+    "strict_research_health": "valid=true; errors=[]; warnings=[]; latest_phase=41; claim_count=332; executed from a clean detached implementation-commit worktree.",
+    "markdown_links": "151 tracked Markdown files valid in the clean implementation-commit worktree.",
+    "manifest_verification": "All 276 SHA-256 entries matched in the clean implementation-commit worktree.",
+    "manifest_sha256": "1726417526abfd68ba98389e4d194ce33229b1955b51b8b8065068b35e02a930",
+    "verifier_valid": true,
+    "external_large_run": "The supplied length-27 C++ output was not rerun or accepted."
+  },
   "proves_collatz": false
 }
