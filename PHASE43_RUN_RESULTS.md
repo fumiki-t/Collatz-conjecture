@@ -84,8 +84,10 @@ are not rerun**. No external X02 is used.
   in 3.04s before control-plane integration.
 - Dependency regression: **190 passed** in 27.65s, covering Phase 41 and
   Phase 42 properties/verifiers plus Phase 38 properties.
-- Final clean-worktree acceptance and provenance are recorded below after
-  the implementation commit; the entire repository suite is not claimed.
+- Final clean-worktree CI-equivalent run: **109 passed** in 269.23s,
+  covering Phase 43, control-plane, and six Phase 24 verifier tests.
+- **299 distinct scoped tests passed** in total. The entire repository
+  suite was not rerun. The worktree was clean before and after the final run.
 
 One intermediate formal-model regression rejected an over-restricted
 square-index lag formula in the development verifier. The full exact
@@ -110,10 +112,23 @@ retained rather than limiting the report to the supplied 703 example.
 - [`phase43_verifier.json`](artifacts/phase43_verifier.json): independent results.
 - [`SHA256SUMS`](artifacts/SHA256SUMS): tracked generated-evidence manifest.
 
-The implementation commit and manifest hash are recorded in the
-[`experiment`](research/experiments/phase43-normalization-barrier.json) once
-clean-worktree acceptance is complete. This two-commit procedure avoids a
-self-referential commit/hash field in generated evidence.
+Implementation commit: `62e07534ddefe2950fa7f71600be1a003a068887`.
+Clean-worktree acceptance is recorded in the
+[`experiment`](research/experiments/phase43-normalization-barrier.json).
+All seven new artifacts reproduced byte-for-byte in a separate directory.
+All **288** tracked evidence hashes and **156** Markdown documents passed;
+strict research health reported no errors/warnings, phase 43 and 345 claims.
+The old claim statuses and all old accepted evidence files are unchanged.
+
+SHA-256 of `artifacts/SHA256SUMS`:
+
+```text
+93fc416cdfd99fd25bbfc5daa2aba35fe2097855989ab790146402d629de6615
+```
+
+The separate implementation and acceptance commits avoid a self-referential
+commit/hash field in generated evidence. Existing untracked scratch work
+was preserved and excluded from the commits.
 
 ## What this result does not prove
 

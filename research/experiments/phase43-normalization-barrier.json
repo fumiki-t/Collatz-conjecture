@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase43-normalization-barrier",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P257", "P258", "P259", "P260", "P261", "E59", "NG46", "H112", "H72", "H89"],
   "objective": "Independently audit finite rational all-length/all-Q normalization-barrier certificates, their conditional completeness at a hypothetical global height minimum, and the auxiliary internal 13S source bound.",
   "exact_scope": {
@@ -24,5 +24,22 @@
   "artifacts": ["artifacts/phase43_queries.json", "artifacts/phase43_certificate_703.json", "artifacts/phase43_certificate_7.json", "artifacts/phase43_reference.json", "artifacts/phase43_capacity.json", "artifacts/phase43_regressions.json", "artifacts/phase43_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["A timeout is UNKNOWN, never a no-improvement certificate.", "Repair any omitted upper envelope, positive-source, cycle or outside-W edge before acceptance.", "Do not extend range merely to optimize 13 or search for an empirical last-join bound."],
   "interpretation_boundary": ["Old bounded Phase 41 mode is unchanged.", "No new external theorem is used; E46 and E54 remain explicitly inherited finite inputs.", "703 is a finite monotonicity falsifier, not an infinite geodesic or a Collatz counterexample.", "H112/H72/H89/H133 remain OPEN; proves_collatz=false"],
+  "recorded_result": {
+    "commit": "62e07534ddefe2950fa7f71600be1a003a068887",
+    "generator": "Seven Phase 43 artifacts reproduced byte-for-byte in a separate temporary directory, including both standalone potentials.",
+    "verifier": "valid=true; generator_imported=false; 2668 queries, 185 no-strict-improvement potentials, 2483 improvements; 1189 reference vertices and 1188 vertices in the 703 potential; all lengths/Q via rational inequalities; proves_collatz=false.",
+    "verifier_valid": true,
+    "focused_tests": "98 Phase 43 tests passed in 3.17s. Earlier integrated Phase 43 plus control-plane run: 103 passed in 18.75s. Final implementation is covered by the clean CI-equivalent run below.",
+    "dependency_tests": "190 passed in 27.65s: Phase 41 and Phase 42 properties/verifiers plus Phase 38 properties. The latter replays the existing capacity generator through N=500 and its tail comparison, not all independent E54 evidence.",
+    "clean_ci_equivalent_tests": "109 passed in 269.23s in a clean detached implementation-commit worktree: research health, Phase 24 verifier, Phase 43 properties/verifier. Worktree clean before and after.",
+    "full_tests": "Whole repository suite not rerun. 299 distinct scoped tests passed: 98 Phase 43, five control-plane, 190 dependency, and six Phase 24 verifier tests.",
+    "strict_research_health": "valid=true; errors=[]; warnings=[]; latest_phase=43; claim_count=345; checked from the clean implementation-commit worktree.",
+    "markdown_links": "All 156 tracked Markdown files valid in the clean implementation-commit worktree.",
+    "manifest_verification": "All 288 SHA-256 entries explicitly matched in the clean implementation-commit worktree; old accepted evidence unchanged.",
+    "manifest_sha256": "93fc416cdfd99fd25bbfc5daa2aba35fe2097855989ab790146402d629de6615",
+    "regression_repair": "An intermediate verifier's over-restricted square-index lag was rejected and repaired to the full square/b_j condition. Final formal controls agree; no old artifact was changed.",
+    "obstruction_mining": "Found and certified the smaller (7,4) finite monotonicity falsifier; wrote a separate 12-vertex certificate. Preserved (703,80), all old NG controls, and every prior claim status.",
+    "important_limit": "P259 is completeness only at a hypothetical global normalized-height minimizer. UNKNOWN is not a certificate; 13S bounds sources, not join times. Full E46/E54 verification is inherited, not rerun. No infinite geodesic or Collatz proof."
+  },
   "proves_collatz": false
 }
