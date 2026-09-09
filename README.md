@@ -22,7 +22,7 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 42 is the latest research layer. Mechanical-factor capacity proves a
+Phase 42 is the latest accepted research layer. Mechanical-factor capacity proves a
 square-root lower bound for nondecreasing defects and excludes a positive
 ordinary source for the specific square-root formal model of Phases 13/41.
 This does not exclude general safe words or prove H112. Independent finite

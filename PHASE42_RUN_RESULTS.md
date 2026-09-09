@@ -74,6 +74,19 @@ The original untracked scratch directory is preserved and not published.
 Old Phase 41 accepted artifacts remain byte-for-byte unchanged: their then-open
 ordinary-source annotation is historical, superseded for this model by P255.
 
+Acceptance checks passed: **103 focused tests** (33.09 s), **114 dependency
+tests** (6.42 s), and **109 CI-equivalent tests** from the clean detached
+implementation worktree (237.86 s). This covers **223 distinct scoped tests**,
+not the whole repository suite. Initial integration checks caught stale
+phase/count/dependency expectations; the synchronized control plane passed
+the final checks. Strict health reported no errors or warnings, all 153
+tracked Markdown files passed link checks, and all 281 artifact hashes matched.
+
+Implementation commit: `4eab21bb84a1e133ae53a3ccbf8d4fbef180ec65`.
+[`artifacts/SHA256SUMS`](artifacts/SHA256SUMS) SHA-256:
+`6f121c0839898f6ba02f26e54d28b5c4424e8826c64232d51c83c837407142a5`.
+Five generated JSON files reproduced byte-for-byte in a separate directory.
+
 ## What this result does not prove
 
 H112/H72/H89/H133 remain `OPEN`; `proves_collatz=false`. General defects

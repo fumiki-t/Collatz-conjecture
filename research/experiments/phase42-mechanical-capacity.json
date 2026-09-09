@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "phase42-mechanical-capacity",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["P252", "P253", "P254", "P255", "P256", "E58", "NG28", "P251", "NG45", "H112", "H72", "H89"],
   "objective": "Audit the September 9 followup: simultaneous mechanical-factor capacity, defect variation and monotone growth, ordinary-source exclusion of the specific square-root formal model, and the minimum odd count for negative same-Q carry.",
   "exact_scope": {
@@ -24,5 +24,21 @@
   "artifacts": ["artifacts/phase42_capacity.json", "artifacts/phase42_carry.json", "artifacts/phase42_repeats.json", "artifacts/phase42_regressions.json", "artifacts/phase42_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Repair any missing distinctness, parity orientation or quantifier before accepting a theorem.", "Do not extend depth merely to improve a finite record.", "Preserve old accepted artifacts, especially Phase 41's historical unverified ordinary-source field."],
   "interpretation_boundary": ["The specific square-root model is distinguished from the whole permanent-safe language.", "The monotone lower bound does not assert monotonicity for actual geodesics.", "General downward variation may compensate for small maximum defect.", "No new external theorem or literature-wide novelty claim is used.", "H112/H72/H89/H133 remain OPEN; proves_collatz=false"],
+  "recorded_result": {
+    "commit": "4eab21bb84a1e133ae53a3ccbf8d4fbef180ec65",
+    "generator": "Four evidence files and the independent verifier output reproduced byte-for-byte in a separate temporary directory.",
+    "verifier": "valid=true; generator_imported=false; 2048 odd sources; 30060 capacity levels with zero counted factors; q=22 negative-carry minimum with all 48 q=21 cases rejected; eight repeat certificates through source bound 2^1024 and prefix length 391004; proves_collatz=false.",
+    "verifier_valid": true,
+    "focused_tests": "103 passed in 33.09s: Phase 42 properties/verifier/tamper tests and research health, after the complete ledger/index/control-plane update.",
+    "dependency_tests": "114 passed in 6.42s: Phase 13/16/21/23/37 properties and Phase 41 properties/verifier, preserving the square-root model, P88 boundary, earlier signed carry, NG32 and P251/NG44/NG45.",
+    "clean_ci_equivalent_tests": "109 passed in 237.86s from a clean detached implementation-commit worktree: research health, Phase 24 verifier, Phase 42 properties/verifier. Worktree clean before and after.",
+    "full_tests": "Whole repository suite not rerun. 223 distinct scoped tests passed; the CI-equivalent set adds six Phase 24 checks to the focused and dependency sets.",
+    "integration_audit": "Intermediate control-plane tests detected not-yet-registered new IDs and stale Phase 41 phase/count/dependency expectations. The ledger, generated index, registry and tests were synchronized and the final checks passed; no mathematical counterexample was suppressed.",
+    "strict_research_health": "valid=true; errors=[]; warnings=[]; latest_phase=42; claim_count=338; executed from the clean detached implementation-commit worktree.",
+    "markdown_links": "All 153 tracked Markdown files valid in the clean implementation-commit worktree.",
+    "manifest_verification": "All 281 SHA-256 entries matched in the clean implementation-commit worktree; old accepted evidence unchanged.",
+    "manifest_sha256": "6f121c0839898f6ba02f26e54d28b5c4424e8826c64232d51c83c837407142a5",
+    "important_limit": "The ordinary capacity sample has zero counted factors. It is a convention/identity regression, not nonvacuous packing evidence. P252-P256's quantified claims require their written proofs; eight finite prefixes do not establish an all-source exclusion by extrapolation."
+  },
   "proves_collatz": false
 }

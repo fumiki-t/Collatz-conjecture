@@ -4,7 +4,7 @@
 
 **Audited base:** Phase 42 evidence and independent verifier
 
-**Latest research phase:** Phase 42
+**Latest accepted phase:** Phase 42
 
 **Problem status:** `OPEN`
 
