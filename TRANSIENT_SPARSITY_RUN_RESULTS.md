@@ -88,8 +88,25 @@ occupancies as sparsity of arbitrary upper-bound arrays.
 
 ## Acceptance checks
 
-Implementation and clean-worktree checks are recorded in the experiment
-manifest after completion; no unperformed full-repository test run is claimed.
+Accepted implementation commit:
+`408a6f653a1014f37d7f84173b5cd792b212beee`.
+Its clean detached worktree passed **394 tests in 261.98s**, using:
+
+```sh
+python -m pytest -q tests/test_research_health.py tests/test_phase24_verifier.py tests/test_phase44_properties.py tests/test_phase44_verifier.py tests/test_ext08_scope.py tests/test_transient_sparsity.py tests/test_phase43_properties.py tests/test_phase43_verifier.py
+```
+
+That is five control-plane tests, six Phase 24 verifier tests, 140 Phase 44
+tests, 75 EXT08 audit tests, 70 new supplement tests and 98 Phase 43 tests.
+Strict research health on the same clean implementation passed with 359
+claims, 301 artifact entries, no errors and no warnings. All 163 tracked
+Markdown files have valid local links, the generated claim index matches,
+and compileall/diff checks pass. All four new artifacts reproduced exactly.
+The full repository suite and large older corpora were **not** rerun;
+unchanged historical hashes do not constitute a fresh audit of old proofs.
+
+The acceptance metadata is a later commit referring back to this immutable
+implementation and its artifact manifest, avoiding self-referential hashes.
 Initial focused checks: 168 passed in 7.81s (70 new supplement tests plus
 98 Phase 43 tests). This includes 36 changed-field tamper cases, six
 missing/extra-field cases, duplicate-key rejection and optimized-Python
