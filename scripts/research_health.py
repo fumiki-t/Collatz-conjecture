@@ -503,6 +503,9 @@ def run(root: Path, strict: bool = False) -> dict[str, object]:
                     errors.append("scope audit report missing")
             except (OSError,ValueError,KeyError,TypeError) as exc:
                 errors.append("scope audit unavailable: "+str(exc))
+    # Mathematical supplements need not impersonate a numbered phase or a
+    # status-supersession audit. Check their registered evidence explicitly.
+    errors.extend(supplement_audit(root, registry, claim_map))
     if strict:
         errors.extend(f"strict mode: {warning}" for warning in warnings)
 
@@ -541,6 +544,44 @@ def run(root: Path, strict: bool = False) -> dict[str, object]:
         "errors": errors,
         "proves_collatz": False,
     }
+
+
+def supplement_audit(root: Path, registry: dict, claim_map: dict[str, str]) -> list[str]:
+    errors = []
+    records = registry.get("supplemental_acceptances", [])
+    if not isinstance(records, list):
+        return ["supplemental_acceptances must be a list"]
+    seen = set()
+    for item in records:
+        try:
+            if not isinstance(item, dict) or not isinstance(item.get("id"), str):
+                raise ValueError("supplement id missing")
+            if item["id"] in seen:
+                raise ValueError("duplicate supplement id")
+            seen.add(item["id"])
+            for key in ("report", "verifier_artifact", "experiment_manifest"):
+                name = item.get(key)
+                if not isinstance(name, str) or not (root / name).is_file():
+                    raise ValueError("supplement file missing: " + key)
+            manifest = json.loads((root / item["experiment_manifest"]).read_text())
+            if manifest.get("id") != item["id"]:
+                raise ValueError("supplement experiment id mismatch")
+            ids = item.get("claim_ids")
+            if not isinstance(ids, list) or not ids or any(c not in claim_map for c in ids):
+                raise ValueError("supplement claims missing")
+            if not set(ids).issubset(manifest.get("claim_ids", [])):
+                raise ValueError("supplement experiment claims mismatch")
+            result = json.loads((root / item["verifier_artifact"]).read_text())
+            expected = item.get("expected_verifier_fields")
+            if not isinstance(expected, dict) or not expected:
+                raise ValueError("supplement verifier contract missing")
+            for key, value in {**expected, "valid": True, "generator_imported": False,
+                               "proves_collatz": False}.items():
+                if type(result.get(key)) is not type(value) or result.get(key) != value:
+                    raise ValueError("supplement verifier field mismatch: " + key)
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            errors.append(str(exc))
+    return errors
 
 
 def main() -> int:

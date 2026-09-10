@@ -1,5 +1,16 @@
 # Collatz conjecture research history
 
+## 2026-09-10 — transient-sparsity supplement
+
+P269/P270 extend capacities and normalization to distinct positive finite
+input trajectories; E62 reconstructs all 501 rows and exact constants.
+P267 already contains the proposal's boundary-loss sparsity, so no new phase
+or duplicate claim is created. NG48 preserves S=1's first failure at length
+39 when repeated inputs are allowed. Phase 38/43 shell-sum notation is
+corrected to actual occupancy; old evidence and theorem statuses are intact.
+The [run record](TRANSIENT_SPARSITY_RUN_RESULTS.md) separates finite checks
+from written all-scale proofs. H112/H72/H89/H133 remain OPEN.
+
 ## 2026-09-10 — EXT08 scope correction audit
 
 EXT08 changed EXTERNAL_THEOREM -> OPEN after P268/NG47 exposed the prescribed-real

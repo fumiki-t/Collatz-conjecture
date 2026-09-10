@@ -1,0 +1,16 @@
+{
+  "NG46_potentials_verified": 2,
+  "affine_words": 32767,
+  "capacity_rows": 501,
+  "generator_imported": false,
+  "historical_files_preserved": 3,
+  "infinite_proofs_machine_formalized": false,
+  "nonzero_terminal_deletions": 15420,
+  "normalization_paths": 28,
+  "prefix_window_cases": 25020,
+  "proves_collatz": false,
+  "raw_capacity_tail_claimed": false,
+  "regression_words": 48,
+  "status": "VERIFIED_FINITE",
+  "valid": true
+}

@@ -10,6 +10,16 @@
   "scope_audits": [
     {"id":"ext08-scope-audit", "report":"EXT08_SCOPE_AUDIT_RESULTS.md", "impact_artifact":"artifacts/ext08_scope_impact.json", "verifier_artifact":"artifacts/ext08_scope_verifier.json", "experiment_manifest":"research/experiments/ext08-scope-audit.json"}
   ],
+  "supplemental_acceptances": [
+    {
+      "id":"transient-sparsity",
+      "report":"TRANSIENT_SPARSITY_RUN_RESULTS.md",
+      "verifier_artifact":"artifacts/transient_sparsity_verifier.json",
+      "experiment_manifest":"research/experiments/transient-sparsity.json",
+      "claim_ids":["P269","P270","E62","NG48"],
+      "expected_verifier_fields":{"valid":true,"generator_imported":false,"capacity_rows":501,"affine_words":32767,"prefix_window_cases":25020,"raw_capacity_tail_claimed":false,"NG46_potentials_verified":2,"proves_collatz":false}
+    }
+  ],
   "canonical_documents": [
     "README.md",
     "AGENTS.md",
@@ -147,6 +157,10 @@
     }
   ],
   "watch_claims": [
+    "P269",
+    "P270",
+    "E62",
+    "NG48",
     "P268",
     "NG47",
     "E61",

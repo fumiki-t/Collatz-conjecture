@@ -1,0 +1,21 @@
+{
+  "H112_status": "OPEN",
+  "H72_status": "OPEN",
+  "P267_reused_without_duplicate_claim": true,
+  "all_competitor_source_pool_requires_distinct_target_inputs": true,
+  "base_commit": "feb29b423d43445f1c7d826d6ef71a25e2854b44",
+  "external_theorem_required": false,
+  "floor_19_bound": 13,
+  "floor_49_bound": 2,
+  "general_bound": 256,
+  "infinite_proofs_machine_formalized": false,
+  "input_contract": "distinct positive integer input states; closing endpoint may repeat; empty path allowed",
+  "old_capacity_tables_replaced": false,
+  "proposal_zip_sha256": "0f3811f9274e5cf605ddd3f66e0f935a0ad28c9e97aec4a0c3835401b5763eda",
+  "proves_collatz": false,
+  "repeated_target_cycle_deletion_only_supplies_a_witness": true,
+  "schema": "transient-sparsity-scope-v1",
+  "status": "VERIFIED_FINITE",
+  "tail_applies_to_raw_recursive_capacities": false,
+  "tail_contract": "actual odd shell counts only; finite recursive upper bounds through N=500"
+}

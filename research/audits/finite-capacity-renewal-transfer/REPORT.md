@@ -157,7 +157,11 @@ integer cross multiplication verifies
 \tag{5.1}
 \]
 
-P220 gives `O_N<32*2^(29N/30)`.  Since
+Correction (2026-09-10, transient-sparsity audit): write `c_N` for the
+actual odd occupancy in `[2^N,2^(N+1))` of the orbit under consideration.
+P228 gives `c_N<=O_N`; P220 gives `c_N<32*2^(29N/30)`, not automatically
+the same bound on the raw recursively defined `O_N`. Use the computed
+`O_N` only through 500 and the bound on actual `c_N` for the tail. Since
 
 \[
 2\,44^{30}>45^{30},
@@ -185,7 +189,7 @@ Finally `2079*405=841995<842000=842*1000`, so
 Combining these exact comparisons proves
 
 \[
-\boxed{\sum_{N=49}^{\infty}\frac{O_N}{2^N}<3\log2.}
+\boxed{\sum_{N=49}^{\infty}\frac{c_N}{2^N}<3\log2.}
 \tag{5.2}
 \]
 
@@ -213,7 +217,7 @@ Therefore
 
 \[
 \sum_{x\in\mathcal O}\frac1x
-\le\sum_{N\ge49}\frac{O_N}{2^N}<3\log2.
+\le\sum_{N\ge49}\frac{c_N}{2^N}<3\log2.
 \tag{6.1}
 \]
 

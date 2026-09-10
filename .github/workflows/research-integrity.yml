@@ -41,6 +41,7 @@ jobs:
           tests/test_phase44_properties.py
           tests/test_phase44_verifier.py
           tests/test_ext08_scope.py
+          tests/test_transient_sparsity.py
       - name: Verify tracked artifact manifest
         working-directory: artifacts
         run: sha256sum --check SHA256SUMS

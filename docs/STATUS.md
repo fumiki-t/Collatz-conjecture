@@ -15,7 +15,17 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest layer: [`Phase 44`](../PHASE44_RUN_RESULTS.md) and its
+Latest supplement: [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md).
+P269/P270 add finite distinct-path capacities and normalization `Y<256S`,
+or `13S`/`2S` with input floors `2^19`/`2^49`, without a nonperiodic-future
+hypothesis. E62 independently checks the finite constants and regressions.
+NG48 refutes removal of distinct inputs (S=1, length 39). The infinite tail
+uses actual occupancies, not raw capacity arrays; Phase 38/43 notation is
+repaired without changing conclusions. Next: connect the bounded source pool
+to actual carry/ancestry or incompatible all-prefix certificates. No last
+join or successful-ancestor theorem is known; do not just extend table depth.
+
+Latest numbered layer: [`Phase 44`](../PHASE44_RUN_RESULTS.md) and its
 [`audit`](../research/audits/edit-capacity/REPORT.md). P262 counts low-zero-edit
 mechanical windows with positive distinct input states and exact height;
 finite safety and monotonicity are not required. P263 strengthens the

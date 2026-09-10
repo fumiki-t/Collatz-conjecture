@@ -11,6 +11,13 @@ The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
 
+[Transient supplement](../TRANSIENT_SPARSITY_RUN_RESULTS.md): use P270's
+explicit finite source pool (256S generally; 13S for non-dropping S>=2^19)
+to seek a carry/ancestry obstruction to compatible all-prefix maximal
+certificates. This needs no future-nonperiodicity assumption on the observed
+distinct path. It does not cap join times. Preserve NG48/NG46; another
+capacity-table extension without a source-linked mechanism is not progress.
+
 The global branch map and uniform Phase 1–15 terminology are in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md). This file remains the
 operational ranking; the synthesis remains the orientation layer.

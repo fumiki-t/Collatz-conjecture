@@ -29,7 +29,13 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 44 is the latest research layer. Counting mechanical factors with zero
+The [transient-sparsity supplement](TRANSIENT_SPARSITY_RUN_RESULTS.md) adds
+uniform normalization bounds for distinct positive finite paths, with no
+assumption about their infinite future. It also corrects the distinction
+between actual occupancy and recursive upper-bound tables. No improving
+ancestor or Collatz proof follows.
+
+Phase 44 is the latest numbered research layer. Counting mechanical factors with zero
 insertions/deletions strengthens the necessary downward-variation budget
 without assuming monotone defect. It excludes one oscillating formal model
 as a positive ordinary source, with a nonvacuous million-step independent

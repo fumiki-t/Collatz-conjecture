@@ -14,6 +14,12 @@ This is the canonical map of the research archive. Start with
 
 ## Canonical layer
 
+Latest unnumbered mathematical supplement:
+[transient-sparsity results](../TRANSIENT_SPARSITY_RUN_RESULTS.md),
+[proof](../research/audits/transient-sparsity/REPORT.md),
+[experiment](../research/experiments/transient-sparsity.json).
+Registered under `supplemental_acceptances`; latest numbered phase remains 44.
+
 | Document | Role | Update trigger |
 |---|---|---|
 | [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) | Self-contained map of notation, Phases 1–43, evidence boundaries, failures, literature roles, and open obligations | Major phase, audit, or strategic reorganization |

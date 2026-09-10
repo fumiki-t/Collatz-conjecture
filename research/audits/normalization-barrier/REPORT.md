@@ -179,7 +179,9 @@ computed from the finite target. The inherited internal inputs are:
 
 - P228's odd-shell capacities O_N, with the general image recurrence A_m.
 - P220 and E54's exact finite sum plus geometric tail from N=501, giving
-  `sum_(N>=49) O_N/2^N <2079/1000`; see
+  `sum_(N>=49) c_N/2^N <2079/1000`, where c_N is actual odd shell
+  occupancy. Correction (2026-09-10): use raw O_N only through 500 and
+  P220 on c_N beyond 500; no all-scale bound on raw O_N is inferred. See
   [`Phase 38 Sections 4–5`](../finite-capacity-renewal-transfer/REPORT.md).
 - E46: every positive n<583561 reaches 1, by E28 and 141,780 first-descent
   rows plus strong induction. See

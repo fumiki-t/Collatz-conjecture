@@ -1,5 +1,22 @@
 # Failed and deprioritized approaches
 
+## NG48 — dropping distinct inputs from finite normalization
+
+- Hypothesis: every positive finite path has Y/S<256, including repetitions.
+- Why plausible: the bound is independent of finite observation length.
+- Counterexample: S=1, Y_L/S=(4/3)^ceil(L/2); first failure at this source
+  is L=39, and the supplied L=40 witness is preserved. No length minimality
+  over other sources is asserted.
+- Failure is fundamental: repeated visits are not distinct value occupancy.
+- Survives: P270 for distinct inputs, even when the closing endpoint repeats;
+  cycle deletion provides a witness for repeated targets, not a 256S bound
+  on every competitor.
+- Do not retry: applying sparsity to visit multiplicity. Also do not infer
+  sparsity of raw recursive capacity arrays from sparsity of actual counts;
+  use the valid finite-table/actual-tail splice in P269 instead.
+
+See the [transient audit](../research/audits/transient-sparsity/REPORT.md).
+
 ## NG47 — identifying the real inverse-series limit with its 2-adic source
 
 - Hypothesis: the same canonical Collatz inverse partial sums force identical

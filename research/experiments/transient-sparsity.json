@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "transient-sparsity",
+  "status": "RUNNING",
+  "claim_ids": ["P267", "P269", "P270", "E62", "NG48", "H112", "H72"],
+  "objective": "Extend recursive occupancy and normalization bounds to distinct positive finite input trajectories; deduplicate F1/F2 against P267 and separate actual shell occupancy from recursive upper bounds.",
+  "exact_scope": {
+    "quantifiers": ["Every finite distinct positive input trajectory; repeated closing endpoint allowed", "All 501 transient-capacity rows; all words of lengths 0..14", "128 starts and the specified prefix/window grid, all subsets of abstract paths through length 10, mandatory families and 7/703 certificates"],
+    "bounds": {"capacity_N":500, "word_length":14, "sources":"1..127 and 703", "window_N":8, "abstract_M":10, "abstract_N":12},
+    "completeness": "Written all-scale proof plus independently reconstructed bounded arithmetic. No large search extension; no universal ancestor-existence claim."
+  },
+  "arithmetic": {"proof_decisions":"exact", "floating_point_role":"none in acceptance"},
+  "commands": {
+    "generator":[".venv/bin/python src/transient_sparsity_search.py --artifact-dir artifacts"],
+    "verifier":[".venv/bin/python verifier/verify_transient_sparsity.py --artifact-dir artifacts --output artifacts/transient_sparsity_verifier.json"],
+    "tests":[".venv/bin/python -m pytest -q tests/test_transient_sparsity.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs":["Pascal coefficients and dynamically propagated affine extrema instead of closed forms", "Positive residue enumeration and literal image tracking instead of positional sums/cumulative weights", "Affine normalization versus product multiplication; exact geometric tail on actual occupancies"],
+    "forbidden_imports":["src", "transient_sparsity_search"],
+    "tamper_tests":["tests/test_transient_sparsity.py"]
+  },
+  "adversarial_families":["2^m-1","8^m-5","(110|111)^*","A=11101","B=1100","A^rB^s","NG46","NG22","NG45","positive repeated cycle","negative fixed point"],
+  "artifacts":["artifacts/transient_sparsity_evidence.json","artifacts/transient_sparsity_scope.json","artifacts/transient_sparsity_regressions.json","artifacts/transient_sparsity_verifier.json","artifacts/SHA256SUMS"],
+  "stop_conditions":["Reject old/transient capacity substitution, multiplying terminal loss by weight count, repeated-input generalization, or raw-capacity tail inference without proof", "Preserve all previous artifacts and scratch"],
+  "interpretation_boundary":["F1/F2 are already P267; do not add duplicate claims or a numbered phase", "256S is global for distinct finite inputs; 13S and 2S require the specified input floors; no X02 or E46 is used", "No monotonicity, successful ancestor, last-join bound, cycle-floor improvement or Collatz proof"],
+  "proves_collatz": false
+}

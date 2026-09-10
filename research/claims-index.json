@@ -1,5 +1,5 @@
 {
-  "claim_count": 355,
+  "claim_count": 359,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -5221,9 +5221,70 @@
       "last_audited": "2026-09-10",
       "notes": "Finite positive sources are not positive infinite sources; no real-to-2-adic rationality transfer or theorem-statement refutation.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The transient capacities At_N,Ot_N defined in Section 3 bound all translated width-2^N input occupancies of any finite distinct positive shortcut path. Actual odd shell counts admit a finite-capacity sum through 500 plus tail 1440(44/45)^501.",
+      "collatz_implication": "Removes the nonperiodic-future hypothesis from the finite capacity tool.",
+      "dependencies": "P267, P227 affine extrema; positive ordinary distinct inputs; closing endpoint may repeat; integer N>=0.",
+      "dependency_ids": [
+        "P227",
+        "P267"
+      ],
+      "evidence": "[`../research/audits/transient-sparsity/REPORT.md`](../research/audits/transient-sparsity/REPORT.md), Sections 2--3; E62.",
+      "first_introduced": "Transient-sparsity supplement",
+      "id": "P269",
+      "last_audited": "2026-09-10",
+      "notes": "Terminal loss N is shared, not charged per weight. Odd recursion uses general At_m. Old P228 tables are unchanged; no all-scale sparsity of the raw arrays is asserted.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For all distinct positive finite input paths, S<=Y_j<256S; input floors 2^19 and 2^49 give Y_j<13S and Y_j<2S. Non-dropping paths have Y_j/S=1+O(S^(-1/30)) uniformly in length. All-Q coefficient-maximal finite paths are distinct and dropping-safe. Strict competitors of a distinct target start below 256S, or 13S under the stated floor/non-dropping condition; K=ceil(log2 S)+10 or +6 suffices for 2^K>=3Y_j.",
+      "collatz_implication": "Gives an explicit uniform finite source pool without knowing an orbit's infinite behavior.",
+      "dependencies": "P267, P269, E62 rational comparisons, exact product formula, P257 and P261; positive ordinary source; no X02, E46 or nonperiodic future.",
+      "dependency_ids": [
+        "E46",
+        "E62",
+        "P257",
+        "P261",
+        "P267",
+        "P269",
+        "X02"
+      ],
+      "evidence": "[`../research/audits/transient-sparsity/REPORT.md`](../research/audits/transient-sparsity/REPORT.md), Sections 4--5.",
+      "first_introduced": "Transient-sparsity supplement",
+      "id": "P270",
+      "last_audited": "2026-09-10",
+      "notes": "Bounds sources, not join times or successful ancestry. Maximality does not imply defect monotonicity (NG46). Repeated targets only have the cycle-deletion witness, not the asserted bound on all competitors.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independently reconstructs 501 transient-capacity rows, 32767 words, 25020 finite path/window cases, 48 mandatory family words, 28 normalization paths and two NG46 potentials; checks exact rational normalization constants and the source-1 repeat witness.",
+      "collatz_implication": "Certifies bounded arithmetic and preserves prior counterexamples; no finite-to-infinite promotion.",
+      "dependencies": "Declared experiment domains; independent Pascal/extrema and literal residue/image verification versus closed forms/positional generator.",
+      "dependency_ids": [],
+      "evidence": "[`../TRANSIENT_SPARSITY_RUN_RESULTS.md`](../TRANSIENT_SPARSITY_RUN_RESULTS.md); `verifier/verify_transient_sparsity.py`; tamper tests; SHA-256 manifest.",
+      "first_introduced": "Transient-sparsity supplement",
+      "id": "E62",
+      "last_audited": "2026-09-10",
+      "notes": "Core numerical components reproduce the supplied evidence exactly; adaptation is not independent authorship. Written all-scale proofs are not machine-formalized. proves_collatz=false.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "Every positive finite shortcut path has Y_L/S<256 even with repeated inputs.",
+      "collatz_implication": "Prevents using finite transient normalization on repeated visits or arbitrary repeated-target source pools.",
+      "dependencies": "Proposed removal of P270's distinct-input requirement; S positive ordinary integer.",
+      "dependency_ids": [
+        "P270"
+      ],
+      "evidence": "[`../research/audits/transient-sparsity/REPORT.md`](../research/audits/transient-sparsity/REPORT.md), Section 6; `artifacts/transient_sparsity_regressions.json`.",
+      "first_introduced": "Transient-sparsity supplement",
+      "id": "NG48",
+      "last_audited": "2026-09-10",
+      "notes": "S=1 has Y_L/S=(4/3)^ceil(L/2); first failure within S=1 is L=39, with supplied L=40 retained. No global length minimality across other sources is claimed.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "added4872fd02b2e733d2a91258940544e2ec95663a87a29c3bee1357401b1cb"
+  "source_sha256": "a18a7b714f9c44d66790a915a996e8df19751fd3975de61b93ed5e0fc5b2d9be"
 }

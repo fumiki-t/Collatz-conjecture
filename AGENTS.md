@@ -510,6 +510,15 @@ Historical Phase 20/21 artifacts are immutable snapshots and their old status
 annotations do not override the current ledger. Preserve the supersession
 record/checker and use EXT08_SCOPE_AUDIT_RESULTS.md for the audit boundary.
 
+The 2026-09-10 transient-sparsity supplement adds P269/P270 and E62 without
+renumbering Phase 44. Use the finite distinct-input normalization 256S, or
+13S/2S under input floors 2^19/2^49, without a nonperiodic-future hypothesis.
+For all-competitor source pools retain distinct target inputs; repeated
+targets only have a cycle-deletion witness. Preserve NG48's S=1 length-39
+failure and NG46. Tail sparsity concerns actual occupancies, not raw recursive
+upper-bound arrays. Seek carry/ancestry or effective join structure rather
+than further depth-only capacity computations. H112/H72 remain OPEN.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

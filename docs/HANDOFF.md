@@ -13,6 +13,12 @@ competent researcher or AI continuing the project without the original chat.
 
 ## 1. Safety boundary
 
+Latest supplement: [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md).
+P269/P270 provide finite source cutoffs (256S; 13S with the stated floor),
+not a last-join bound. P267 is reused. Preserve NG48, NG46, and the
+actual-occupancy/raw-capacity distinction. Phase 38/43 proof notation is
+repaired while old evidence stays immutable. Continue from H112's context.
+
 The Collatz conjecture remains `OPEN`. This repository contains exact finite
 certificates, some internally checked algebra, external theorems, failed
 mechanisms, and conjectural directions. Keep those categories separate using

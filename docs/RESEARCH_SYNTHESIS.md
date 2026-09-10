@@ -13,6 +13,12 @@
 
 **Latest phase:** Phase 44 (acceptance commands and commit in its run report)
 
+**Later supplement:** [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md),
+P269/P270/E62/NG48. Finite distinct paths have uniform normalization 256S,
+with source-floor refinements; actual shell counts, not raw recursive arrays,
+justify geometric tails. This removes a future hypothesis from the finite
+tool, not the ancestry/last-join bottleneck. P267 is not duplicated.
+
 **Problem status:** `OPEN`
 
 **`proves_collatz=false`**
