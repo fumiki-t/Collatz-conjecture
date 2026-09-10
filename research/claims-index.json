@@ -1,5 +1,5 @@
 {
-  "claim_count": 359,
+  "claim_count": 364,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -5282,9 +5282,83 @@
       "last_audited": "2026-09-10",
       "notes": "S=1 has Y_L/S=(4/3)^ceil(L/2); first failure within S=1 is L=39, with supplied L=40 retained. No global length minimality across other sources is claimed.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "With U_0=1 counting all-prefix coefficient-safe words and V_0=0,V_n=sum_(3^k>2^n) binomial(n,k), sum U_n z^n=exp(sum V_n z^n/n), equivalently n U_n=sum V_k U_(n-k). For rho=H_2(log(2)/log(3)), mu=2^rho and all n>=1, mu^n/(24 n^(3/2))<=U_n<446 mu^n/n^(3/2), and sum U_n mu^(-n)<9.",
+      "collatz_implication": "Supplies the critical exponent and summable log correction for the permanent-safe source class.",
+      "dependencies": "Finite sign-preserving generic perturbation and cycle/hull bijection; elementary Fourier/tilting and Chebyshev bounds; E63 exact finite sum plus analytic tail.",
+      "dependency_ids": [
+        "E63"
+      ],
+      "evidence": "[`../research/audits/critical-safe-mass/REPORT.md`](../research/audits/critical-safe-mass/REPORT.md), Sections 2--4; independent verifier.",
+      "first_introduced": "Critical-safe-mass supplement",
+      "id": "P271",
+      "last_audited": "2026-09-10",
+      "notes": "Classical method, not a general-identity novelty claim. No random-orbit assumption, asymptotic ratio limit, or all-depth extrapolation of the stronger rational finite envelopes.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For every integer b>=0, the positive finite filter C_b={x>b:safe through floor(log2(x-b)) steps} has critical mass sum_(x in C_b)(x-b)^(-rho)<9, exactly U_n points in each b-shifted dyadic shell, and real convergence boundary exactly rho with convergence at rho. Permanent-safe positive sources form a subset and have fewer than 892 X^rho/(log2 X)^(3/2) points in every integer-translated interval of integer length X>=2.",
+      "collatz_implication": "Gives a uniform translated critical mass bound without asserting any permanent-safe source exists.",
+      "dependencies": "P271, P125 parity cylinders; ordinary positive integers; strict safety at every tested nonempty prefix; b>=0.",
+      "dependency_ids": [
+        "P125",
+        "P271"
+      ],
+      "evidence": "[`../research/audits/critical-safe-mass/REPORT.md`](../research/audits/critical-safe-mass/REPORT.md), Section 5.",
+      "first_introduced": "Critical-safe-mass supplement",
+      "id": "P272",
+      "last_audited": "2026-09-10",
+      "notes": "C_b is infinite for every b. The arbitrary-window log correction is not asserted for C_b, general finite trajectories or all orbit states. This does not count P80 address multiplicity.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For the increasing renewal sources S_i on a positive permanent-safe nonperiodic orbit and i>=2, S_i>(i/892)^(1/rho)(log2 i)^(3/(2rho)); sum S_i^(-rho)<9. At its odd indices q_i, a_(q_i)>log2(i)/rho+3 log2(log2 i)/(2rho)-log2(892)/rho-log2(2Y_infinity). One may replace the final constant using Y_infinity<=256S_0.",
+      "collatz_implication": "Sharpens P234 at the critical exponent with an explicit log-log term on renewal boundaries.",
+      "dependencies": "P272, P77, P222, exact odd normalization P72; P270 and monotone convergence for finite Y_infinity, with P221 as an alternative.",
+      "dependency_ids": [
+        "P221",
+        "P222",
+        "P270",
+        "P272",
+        "P72",
+        "P77"
+      ],
+      "evidence": "[`../research/audits/critical-safe-mass/REPORT.md`](../research/audits/critical-safe-mass/REPORT.md), Section 6.",
+      "first_introduced": "Critical-safe-mass supplement",
+      "id": "P273",
+      "last_audited": "2026-09-10",
+      "notes": "Renewal index i is not every odd time q. P234 remains valid. Taking limits in P270 only gives <=256S_0, not strict <. No last-small-defect time or H72 exclusion follows.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Reconstructs 513 safe/terminal word-count rows, 512 exact two-sided coefficient envelopes, all 524287 binary words through length 18, and 50362 labeled permutation/color pairs through six labels including 6327 positive bijection cases. Verifies 59 nonzero interval queries, 55 added filter shells, mandatory families and prior NG45/NG46 evidence.",
+      "collatz_implication": "Certifies finite arithmetic inputs and boundary controls for P271--P273.",
+      "dependencies": "Declared finite bounds; DP versus Pascal/cycle recurrence; literal iteration versus positional residues; exact generic subset/convex-inverse checks; integers and rationals only.",
+      "dependency_ids": [],
+      "evidence": "[`../CRITICAL_SAFE_MASS_RUN_RESULTS.md`](../CRITICAL_SAFE_MASS_RUN_RESULTS.md); `verifier/verify_critical_safe_mass.py`; tamper tests and SHA-256 manifest.",
+      "first_introduced": "Critical-safe-mass supplement",
+      "id": "E63",
+      "last_audited": "2026-09-10",
+      "notes": "Supplied implementations were audited and adapted; independence of reconstruction is not independent authorship or proof-assistant formalization. Finite safety is not permanent safety; proves_collatz=false.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "A positive integer set with translated critical mass <9 for every integer b>=0 must be finite or empty.",
+      "collatz_implication": "Rules out turning necessary critical-mass summability into an emptiness argument without a new source-supply theorem.",
+      "dependencies": "Arbitrary positive integer sets; rho and mu as in P271; no literal permanent-safe-orbit assumption.",
+      "dependency_ids": [
+        "P271"
+      ],
+      "evidence": "[`../research/audits/critical-safe-mass/REPORT.md`](../research/audits/critical-safe-mass/REPORT.md), Section 7; exact geometric comparison.",
+      "first_introduced": "Critical-safe-mass supplement",
+      "id": "NG49",
+      "last_audited": "2026-09-10",
+      "notes": "The infinite set {2^k:k>=1} has translated mass <=mu/(mu-1)<3<9, but every point fails first-step safety. It is not a Collatz counterexample; no infinite-model minimality is asserted.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "a18a7b714f9c44d66790a915a996e8df19751fd3975de61b93ed5e0fc5b2d9be"
+  "source_sha256": "3b491a28a9305377318896cfb9fbc9f0561b66c2a3278cad31fc754cbf6264f5"
 }

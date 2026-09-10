@@ -519,6 +519,16 @@ failure and NG46. Tail sparsity concerns actual occupancies, not raw recursive
 upper-bound arrays. Seek carry/ancestry or effective join structure rather
 than further depth-only capacity computations. H112/H72 remain OPEN.
 
+The critical-safe-mass supplement adds P271--P273/E63 and NG49. Its sharp
+U_n=Theta(mu^n/n^(3/2)) and translated mass <9 concern permanent-safe
+ordinary sources and the explicitly defined finite filter, not all orbit
+values or P80 address multiplicity. C_b is infinite, so mass is not emptiness.
+Keep renewal index i distinct from odd time q, and retain sign-preserving
+finite perturbations in the classical GF proof. P270 gives Y_infinity<=256S,
+not a strict bound merely by passing to the limit. The needed new theorem
+is an ordinary-source/ancestor supply contradicting the upper mass. Do not
+substitute deeper counting, random parity or EXT08; H112/H72 remain OPEN.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

@@ -1,5 +1,24 @@
 # Failed and deprioritized approaches
 
+## NG49 — critical summability is not an emptiness theorem
+
+- Hypothesis: a positive integer set whose translated rho-mass is <9 at
+  every integer base b>=0 must be finite or empty.
+- Why plausible: the boundary exponent and log correction appear stringent.
+- Exact infinite countermodel: {2^k:k>=1}; successive distances above any
+  b are at least 2^j, so mass<=mu/(mu-1)<3<9. No infinite-model minimality
+  is asserted. Every point fails first-step safety, so this is not an orbit
+  counterexample to Collatz.
+- Failure is fundamental for mass-only reasoning. P272's finite filter is
+  also provably infinite with mass<9; it is not a permanent-safe set.
+- Survives: the upper mass/count bounds as necessary conditions. A new
+  ordinary-source or ancestor-supply lower bound could contradict them.
+- Do not retry: treating finite filter membership as permanent safety,
+  extending the log factor to all orbit values, or identifying distinct
+  safe sources with P80 address multiplicity.
+
+See the [critical-mass audit](../research/audits/critical-safe-mass/REPORT.md).
+
 ## NG48 — dropping distinct inputs from finite normalization
 
 - Hypothesis: every positive finite path has Y/S<256, including repetitions.

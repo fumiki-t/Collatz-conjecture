@@ -1,5 +1,17 @@
 # Collatz conjecture research history
 
+## 2026-09-10 — critical-safe-mass supplement
+
+P271--P273 give an internally proved classical generating-function
+specialization, sharp critical safe-word order, a translated mass bound <9
+and a renewal-boundary log-log improvement. E63 reconstructs 513 rows,
+524287 words and 50362 labeled permutation/color cases; all-depth proofs
+are written, not extrapolated. The finite filter itself is infinite, and
+NG49 preserves an infinite mass-only countermodel. P270 supplies an optional
+explicit normalization bound. H112/H72/H89/H133 remain OPEN, EXT08 is not
+used, and no general-method novelty or Collatz proof is claimed. See the
+[run record](CRITICAL_SAFE_MASS_RUN_RESULTS.md).
+
 ## 2026-09-10 — transient-sparsity supplement
 
 P269/P270 extend capacities and normalization to distinct positive finite

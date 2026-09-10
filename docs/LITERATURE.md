@@ -7,6 +7,17 @@ independently reproduced here.
 
 ## Foundational and structural
 
+### Abramson and Pitman (2011 manuscript) — classical context only
+
+Josh Abramson and Jim Pitman, *Concave Majorants of Random Walks and Related
+Poisson Processes*, [arXiv:1011.3262v2](https://arxiv.org/abs/1011.3262v2).
+Checked 2026-09-10: Theorem 1, Lemma 2, Section 2 construction and discussion
+of equal means. Context for the classical cycle/envelope method in
+[P271](../research/audits/critical-safe-mass/REPORT.md), not an imported
+external theorem or new EXT claim. The discrete specialization is proved
+internally with finite sign-preserving perturbations. No general-method
+novelty or literature-wide priority is asserted.
+
 ### Terras (1976)
 
 **Status:** `EXTERNAL_THEOREM`

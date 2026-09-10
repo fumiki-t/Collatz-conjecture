@@ -15,7 +15,18 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest supplement: [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md).
+Latest supplement: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
+P271 proves the safe-word generating function and sharp critical order
+Theta(mu^n/n^(3/2)); P272 gives uniform translated mass <9 for permanent
+safe sources and an infinite finite-prefix filter. P273 adds a critical
+log-log correction at renewal boundaries, not at every odd time. E63
+independently checks the exact finite sum, analytic-tail constants, all
+words through 18 and labeled bijections through six labels. NG49's powers
+of two show why mass summability is not emptiness. The missing step remains
+an ordinary-source/ancestor supply theorem contradicting these upper bounds;
+no such lower bound, last join or global exclusion is proved.
+
+Previous supplement: [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md).
 P269/P270 add finite distinct-path capacities and normalization `Y<256S`,
 or `13S`/`2S` with input floors `2^19`/`2^49`, without a nonperiodic-future
 hypothesis. E62 independently checks the finite constants and regressions.

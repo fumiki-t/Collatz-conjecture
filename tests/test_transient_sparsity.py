@@ -158,7 +158,7 @@ def test_supplement_health_contract(mutation):
     registry=json.loads(Path('research/registry.json').read_text())
     item=registry['supplemental_acceptances'][0]
     assert item['id']=='transient-sparsity'
-    claim_map={c:'OPEN' for c in item['claim_ids']}
+    claim_map={c:'OPEN' for record in registry['supplemental_acceptances'] for c in record['claim_ids']}
     assert supplement_audit(Path('.'),registry,claim_map)==[]
     if mutation=='duplicate': registry['supplemental_acceptances'].append(copy.deepcopy(item))
     elif mutation=='missing_report': item['report']='nonexistent-report.md'

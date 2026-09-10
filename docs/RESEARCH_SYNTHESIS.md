@@ -13,7 +13,13 @@
 
 **Latest phase:** Phase 44 (acceptance commands and commit in its run report)
 
-**Later supplement:** [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md),
+**Latest supplement:** [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md),
+P271--P273/E63/NG49. A classical generating-function specialization gives
+sharp critical safe-word order, translated mass <9 and renewal log-log
+growth. The finite-prefix filter is infinite; the missing ingredient is
+an orbit-forced ordinary-source supply contradicting the mass ceiling.
+
+**Previous supplement:** [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md),
 P269/P270/E62/NG48. Finite distinct paths have uniform normalization 256S,
 with source-floor refinements; actual shell counts, not raw recursive arrays,
 justify geometric tails. This removes a future hypothesis from the finite

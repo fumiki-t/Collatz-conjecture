@@ -1,0 +1,28 @@
+{
+  "schema_version":1,
+  "id":"critical-safe-mass",
+  "status":"RUNNING",
+  "claim_ids":["P271","P272","P273","E63","NG49","H72","H112"],
+  "objective":"Audit the discrete asymmetric safe-word generating function, sharp critical coefficient order and translated ordinary-source mass; distinguish finite filters, permanent sources and address multiplicity.",
+  "exact_scope":{
+    "quantifiers":["Written all-depth proofs with finite sign-preserving perturbations; no random-orbit assumption", "All counts through 512, all binary words through 18, all label colorings and permutations through 6", "59 specified finite source intervals and mandatory adversarial families; no permanent-source existence inference"],
+    "bounds":{"counts":512,"word_length":18,"labels":6,"interval_queries":59,"family_m":12,"AB_r_s":4},
+    "completeness":"Bounded exact independent reconstruction plus written analytic tails and lower bounds. No depth-only search extension, no general ancestor theorem."
+  },
+  "arithmetic":{"proof_decisions":"exact","floating_point_role":"none in acceptance"},
+  "commands":{
+    "generator":[".venv/bin/python src/critical_safe_mass_search.py --artifact-dir artifacts"],
+    "verifier":[".venv/bin/python verifier/verify_critical_safe_mass.py --artifact-dir artifacts --output artifacts/critical_safe_mass_verifier.json"],
+    "tests":[".venv/bin/python -m pytest -q tests/test_critical_safe_mass.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence":{
+    "verifier_reconstructs":["Pascal rows and cycle-index recurrence versus surviving-prefix DP", "Exhaustive labeled cycle/convex-minorant inverse construction with exact genericity checks", "Positional affine residues versus literal positive interval iteration", "Rational critical-tail certificate and two-sided coefficient envelopes"],
+    "forbidden_imports":["critical_safe_mass_search","src"],
+    "tamper_tests":["tests/test_critical_safe_mass.py"]
+  },
+  "adversarial_families":["2^m-1","8^m-5","(110|111)^*","A=11101","B=1100","A^rB^s","equal subset means","NG45","NG46","NG48","powers-of-two mass-only control"],
+  "artifacts":["artifacts/critical_safe_mass_evidence.json","artifacts/critical_safe_mass_regressions.json","artifacts/critical_safe_mass_scope.json","artifacts/critical_safe_mass_verifier.json","artifacts/SHA256SUMS"],
+  "stop_conditions":["Reject an invalid tie-removal or convex inverse step, an unproved analytic tail, or any scope promotion to all orbit values", "Preserve historical artifacts, EXT08 quarantine and existing scratch"],
+  "interpretation_boundary":["GF is a classical cycle/convex-envelope specialization, not a novelty claim", "Critical mass is not emptiness and does not count multiple canonical addresses; finite safety is not permanent safety", "Renewal index i is not odd time q; H112/H72/H89/H133 remain OPEN; EXT08 unused"],
+  "proves_collatz":false
+}

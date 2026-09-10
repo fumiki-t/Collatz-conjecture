@@ -18,6 +18,14 @@
       "experiment_manifest":"research/experiments/transient-sparsity.json",
       "claim_ids":["P269","P270","E62","NG48"],
       "expected_verifier_fields":{"valid":true,"generator_imported":false,"capacity_rows":501,"affine_words":32767,"prefix_window_cases":25020,"raw_capacity_tail_claimed":false,"NG46_potentials_verified":2,"proves_collatz":false}
+    },
+    {
+      "id":"critical-safe-mass",
+      "report":"CRITICAL_SAFE_MASS_RUN_RESULTS.md",
+      "verifier_artifact":"artifacts/critical_safe_mass_verifier.json",
+      "experiment_manifest":"research/experiments/critical-safe-mass.json",
+      "claim_ids":["P271","P272","P273","E63","NG49"],
+      "expected_verifier_fields":{"valid":true,"generator_imported":false,"count_rows":513,"exhaustive_words":524287,"interval_queries":59,"filter_shells":55,"NG46_potentials_checked":2,"NG45_formal_evidence_rebuilt":true,"generic_subset_checks":true,"permanent_source_existence_asserted":false,"EXT08_used":false,"proves_collatz":false}
     }
   ],
   "canonical_documents": [
@@ -157,6 +165,11 @@
     }
   ],
   "watch_claims": [
+    "P271",
+    "P272",
+    "P273",
+    "E63",
+    "NG49",
     "P269",
     "P270",
     "E62",

@@ -13,7 +13,13 @@ competent researcher or AI continuing the project without the original chat.
 
 ## 1. Safety boundary
 
-Latest supplement: [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md).
+Latest: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
+P271--P273 give sharp safe-word order, translated critical mass <9 and
+renewal-boundary log-log growth. The finite filter is infinite; NG49 blocks
+mass-only exclusion. These bounds do not count all orbit values or addresses.
+Find an ordinary-source/ancestor lower supply, not a deeper count table.
+
+Previous supplement: [transient sparsity](../TRANSIENT_SPARSITY_RUN_RESULTS.md).
 P269/P270 provide finite source cutoffs (256S; 13S with the stated floor),
 not a last-join bound. P267 is reused. Preserve NG48, NG46, and the
 actual-occupancy/raw-capacity distinction. Phase 38/43 proof notation is

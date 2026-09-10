@@ -1,0 +1,53 @@
+{
+  "EXT08_used": false,
+  "NG45_formal_evidence_rebuilt": true,
+  "NG46_potentials_checked": 2,
+  "bijection": {
+    "labeled_permutation_color_pairs": 50362,
+    "positive_pairs": 6327,
+    "rows": [
+      {
+        "n": 1,
+        "positive_labeled_cycles": 1
+      },
+      {
+        "n": 2,
+        "positive_labeled_cycles": 2
+      },
+      {
+        "n": 3,
+        "positive_labeled_cycles": 12
+      },
+      {
+        "n": 4,
+        "positive_labeled_cycles": 72
+      },
+      {
+        "n": 5,
+        "positive_labeled_cycles": 480
+      },
+      {
+        "n": 6,
+        "positive_labeled_cycles": 5760
+      }
+    ]
+  },
+  "count_rows": 513,
+  "exhaustive_words": 524287,
+  "filter_shells": 55,
+  "finite_checks_are_not_an_infinite_proof": true,
+  "finite_safe_occurrences": 5497,
+  "generator_imported": false,
+  "generic_subset_checks": true,
+  "historical_files_preserved": 6,
+  "interval_points": 137848,
+  "interval_queries": 59,
+  "nonzero_interval_queries": 59,
+  "permanent_source_existence_asserted": false,
+  "proves_collatz": false,
+  "regression_words": 48,
+  "status": "VERIFIED_FINITE",
+  "tamper_rejections": 22,
+  "two_sided_envelope_rows": 512,
+  "valid": true
+}

@@ -15,6 +15,11 @@ This is the canonical map of the research archive. Start with
 ## Canonical layer
 
 Latest unnumbered mathematical supplement:
+[critical-safe-mass results](../CRITICAL_SAFE_MASS_RUN_RESULTS.md),
+[proof](../research/audits/critical-safe-mass/REPORT.md),
+[experiment](../research/experiments/critical-safe-mass.json).
+
+Previous supplement:
 [transient-sparsity results](../TRANSIENT_SPARSITY_RUN_RESULTS.md),
 [proof](../research/audits/transient-sparsity/REPORT.md),
 [experiment](../research/experiments/transient-sparsity.json).

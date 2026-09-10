@@ -29,6 +29,11 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
+The [critical-safe-mass supplement](CRITICAL_SAFE_MASS_RUN_RESULTS.md) proves
+sharp safe-word counting and a translated critical-mass bound. The associated
+finite-prefix filter is infinite: summability does not solve Collatz or
+prove that a permanent-safe source exists.
+
 The [transient-sparsity supplement](TRANSIENT_SPARSITY_RUN_RESULTS.md) adds
 uniform normalization bounds for distinct positive finite paths, with no
 assumption about their infinite future. It also corrects the distinction
