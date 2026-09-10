@@ -6,7 +6,7 @@ original chat is unavailable. The live status is in
 [`docs/STATUS.md`](docs/STATUS.md); stable claim IDs are in
 [`docs/CLAIMS_LEDGER.md`](docs/CLAIMS_LEDGER.md).
 
-**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–43 proves or
+**The Collatz conjecture remains `OPEN`. Nothing in Phases 1–44 proves or
 disproves it.**
 
 ## 1. Conventions and evidence policy
@@ -2257,3 +2257,41 @@ certificate-size/variation obstruction is supplied. A hypothetical global
 minimum still has a finite certificate at every prefix; neither 7 nor 703
 is an infinite counterexample. H112/H72/H89/H133 and Collatz remain OPEN.
 `proves_collatz=false`.
+
+## Phase 44 — Zero-edit capacity and oscillating defect (2026-09-10)
+
+Started from Phase 43 main `44430b21705bd69acb6cc29760ee27bdf2433b1f`
+on `feat/phase44-edit-capacity`. The supplied EC1--EC7 proposal predates
+Phase 43, so the normalization barriers and both NG46 controls were retained.
+P262 counts windows with zero insertions/deletions from the infinite
+mechanical language, retaining positive distinct input states and exact
+height. All edit budgets are allowed; finite safety is unnecessary.
+P263/P264 give a fixed-edit hierarchy and a logarithmic-height positive
+downward-density bound without monotonicity.
+
+P265 constructs an oscillating formal model with H=2log_2(q)+O(1) and
+HD/q->log_2(3)/2, whose old pure CAP is zero at every depth. P266's new
+capacity excludes its positive ordinary source, including after the specified
+finite prefix, while its formal 2-adic source and same-vertex no-gain survive.
+P267 separately handles finite pre-repeat sparsity with terminal truncation.
+
+E60 independently reconstructs 1000000 odd steps: 590784 low-edit window
+occurrences, only 966 distinct words, and r=1 capacity excess 269665.
+Eight repeat-and-split certificates avoid global distinctness and exclude
+the stated finite source bounds through 2^1024. The 256-source ordinary
+audit has 5090 queries and 3888 nonvacuous window cases, unlike the old
+pure-CAP sample. Small zero-edit balls and all declared alignments were
+checked by inverse DP independently of edit generation. The supplied
+assert-based checker was not adopted; explicit rejection survives `python -O`.
+
+Proofs, commands, tests, independent results and hashes:
+[`results`](PHASE44_RUN_RESULTS.md),
+[`audit`](research/audits/edit-capacity/REPORT.md),
+[`experiment`](research/experiments/phase44-edit-capacity.json).
+
+### What this result does not prove
+
+No symbolic-edit count has yet forced a positive dominating ancestor with
+the fixed ordinary source's carry, nor a contradicting upper variation
+budget. The particular model is not an infinite geodesic. H112/H72/H89/H133
+remain OPEN, and arbitrary-area cycles are separate. `proves_collatz=false`.

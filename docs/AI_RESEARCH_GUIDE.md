@@ -2,8 +2,14 @@
 
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
-proof of the conjecture. Phase 43's normalization-barrier audit is the latest
-research layer. P258 certifies all-length no strict improvement from finite
+proof of the conjecture. Phase 44's zero-edit-capacity audit is the latest
+layer: P262--P264 strengthen necessary variation costs without monotonicity;
+P265/P266 exclude one oscillating formal model's positive ordinary source.
+The new requirement is to connect these forced edits to a source/lift-linked
+upper budget or an actual dominating ancestor. P267 is auxiliary finite
+pre-repeat sparsity, not a capacity-table update. See the new report first.
+
+Phase 43's P258 certifies all-length no strict improvement from finite
 rational inequalities, including outside-graph edges. P259 completeness is
 only at a hypothetical global minimizer; resources exhausted means UNKNOWN.
 P260 bounds sources by 13S, not joining time. NG46 minimally refutes finite
@@ -25,13 +31,15 @@ unsafe and longer cross-Q competitors, NG43, and explicit finite search caps.
 ## Read in this order
 
 1. [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) — conventions, global
-   branch map, Phase 1–43 evidence boundaries, and current obligations.
+   branch map, Phase 1–44 evidence boundaries, and current obligations.
 2. [`STATUS.md`](STATUS.md) — current mathematical state.
 3. [`CLAIMS_LEDGER.md`](CLAIMS_LEDGER.md) — exact claim labels and dependencies.
 4. [`ROADMAP.md`](ROADMAP.md) — prioritized proof obligations and fast
    falsification tests.
 5. [`FAILED_APPROACHES.md`](FAILED_APPROACHES.md) — shortcuts not to rediscover.
-6. [`../PHASE43_RUN_RESULTS.md`](../PHASE43_RUN_RESULTS.md) and
+6. [`../PHASE44_RUN_RESULTS.md`](../PHASE44_RUN_RESULTS.md) and
+   [`../research/audits/edit-capacity/REPORT.md`](../research/audits/edit-capacity/REPORT.md),
+   then [`../PHASE43_RUN_RESULTS.md`](../PHASE43_RUN_RESULTS.md) and
    [`../research/audits/normalization-barrier/REPORT.md`](../research/audits/normalization-barrier/REPORT.md),
    then [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md) and
    [`../research/audits/mechanical-capacity/REPORT.md`](../research/audits/mechanical-capacity/REPORT.md),

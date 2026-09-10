@@ -8,6 +8,41 @@ The cross-phase lesson map is in
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md#6-failed-mechanisms-and-surviving-lessons).
 This file remains the detailed canonical failure archive.
 
+## Phase 44 — Pure CAP vacuity is not ordinary-source compatibility
+
+**Status:** the inference is `REFUTED` by the explicitly defined P265/P266
+oscillating model; this is an extension of the NG45 failure boundary, not
+a new claim that every pure-CAP strategy is false.
+
+**Exact failed inference.** A permanent-safe formal word with summable
+inverse coefficients, h_j>1, divergent reciprocal companion sum, all-depth
+zero pure-CAP counts, and no same-vertex gain after the stated prefix must
+remain compatible with a positive ordinary source.
+
+**Why plausible.** P253's former leading HD/q bound is saturated by the
+oscillating model, while P252 counts nothing at any depth. The analytic and
+local-rewrite tests alone leave no contradiction.
+
+**Exact obstruction.** P265 specifies the full recurrence (not a numerical
+fit): H=2log_2(q)+O(1), HD/q->log_2(3)/2. P262 at r=1 requires twice that
+leading variation cost and excludes every positive ordinary source by P266.
+No smallest model in an unrestricted class is claimed. The smallest *stored*
+source-bound certificate uses B=8, equal windows at 70 and 135, length 58,
+split after 81 bits, and required prefix 217; prefix minimality is not claimed.
+
+**Survivors and future restriction.** Formal 2-adic realization and prefixed
+same-vertex no-gain remain valid; neither implies all-Q geodesicity. General
+superlogarithmic maximum defects or sufficiently large downward variation
+remain. Connect symbolic edits to ordinary-source carry/lifts or ancestry;
+do not re-exclude this model by extending its finite depth. Keep u's CAP
+origin separate from w's shifted vertex and retain NG46's 7/703 controls.
+
+**Verification hazard repaired.** The supplied verifier uses `assert` in
+acceptance paths, so optimization can disable them. The new independent
+checker uses explicit exceptions, with valid/tampered tests under `python -O`.
+This is a software acceptance repair, not a refutation of the mathematical
+EDIT-CAP theorem. See the [`Phase 44 audit`](../research/audits/edit-capacity/REPORT.md).
+
 ## NG46 — Finite all-Q maximality forces monotone defect
 
 **Status:** `REFUTED`.

@@ -72,6 +72,7 @@ This is the canonical map of the research archive. Start with
 | 41 | [`../PHASE41_RUN_RESULTS.md`](../PHASE41_RUN_RESULTS.md) | [`formal no-gain and all-Q boundary`](../research/audits/shifted-decoder-all-q/REPORT.md) | `feat/phase41-shifted-decoder-all-q` |
 | 42 | [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md) | [`mechanical capacity and carry`](../research/audits/mechanical-capacity/REPORT.md) | `feat/phase42-mechanical-capacity` |
 | 43 | [`../PHASE43_RUN_RESULTS.md`](../PHASE43_RUN_RESULTS.md) | [`normalization barriers and NG46`](../research/audits/normalization-barrier/REPORT.md) | `feat/phase43-normalization-barrier` |
+| 44 | [`../PHASE44_RUN_RESULTS.md`](../PHASE44_RUN_RESULTS.md) | [`zero-edit capacity and oscillating defect`](../research/audits/edit-capacity/REPORT.md) | `feat/phase44-edit-capacity` |
 
 Research supplements:
 
@@ -110,7 +111,14 @@ Research supplements:
 | Macroscopic carry/jump-geodesic audit | [`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md) | Exact current-state carry, all bounded tail collisions, positive endpoint lifts, capacity/event audit, independent verifier and tamper tests | P235--P241, E55, conditional full nonperiodic reduction to H112 |
 | Normalized-height/Bellman audit | [`../research/audits/normalized-height-bellman/REPORT.md`](../research/audits/normalized-height-bellman/REPORT.md) | Normalized-height minimum, global coefficient maximality, Bellman redundancy, complete length-25 safety falsification, alternate-predecessor cloud, independent verifier and tamper tests | P242--P246, E56, NG43; H112 implication without X02 and non-effective stabilization boundary |
 
-Latest followup: [`Phase 43 results`](../PHASE43_RUN_RESULTS.md),
+Latest followup: [`Phase 44 results`](../PHASE44_RUN_RESULTS.md),
+[`zero-edit-capacity audit`](../research/audits/edit-capacity/REPORT.md),
+and [`experiment contract`](../research/experiments/phase44-edit-capacity.json).
+P262--P264 strengthen variation costs without monotonicity. P265/P266 exclude
+one oscillating model's ordinary source; E60's nonvacuous count is finite.
+P267's finite sparsity extension is separate. H112 remains OPEN.
+
+Previous followup: [`Phase 43 results`](../PHASE43_RUN_RESULTS.md),
 [`normalization-barrier audit`](../research/audits/normalization-barrier/REPORT.md),
 and [`experiment contract`](../research/experiments/phase43-normalization-barrier.json).
 P257--P261 separate all-length potential soundness, minimizer-specific
@@ -125,7 +133,7 @@ surviving formal no-go, record q=22 negative-carry minimality, and flag the
 vacuous ordinary CAP sample separately from the direct repeat certificates.
 
 The phase branches are reproducible milestones. Main contains the canonical
-documentation through Phase 43 and both the branch-point and two-tail
+documentation through Phase 44 and both the branch-point and two-tail
 supplements after their independent acceptance checks.
 
 ## Evidence boundaries

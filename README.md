@@ -22,7 +22,14 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
-Phase 43 is the latest accepted research layer. Finite rational potentials
+Phase 44 is the latest research layer. Counting mechanical factors with zero
+insertions/deletions strengthens the necessary downward-variation budget
+without assuming monotone defect. It excludes one oscillating formal model
+as a positive ordinary source, with a nonvacuous million-step independent
+audit and eight finite repeat-and-split certificates. It does not force a
+dominating ancestor or resolve H112. See the [Phase 44 results](PHASE44_RUN_RESULTS.md).
+
+Phase 43's finite rational potentials
 now certify coefficient maximality against every positive ancestor, over
 all lengths and odd counts. The independent audit covers 2,668 queries.
 A minimal finite counterexample, `7 -> 11 -> 17 -> 26 -> 13`, shows that
@@ -94,11 +101,11 @@ non-strict command reports it without treating it as accepted.
 Recheck the latest mathematical artifacts independently with:
 
 ```bash
-.venv/bin/python verifier/verify_phase43.py --artifact-dir artifacts
+.venv/bin/python verifier/verify_phase44.py --artifact-dir artifacts
 ```
 
 Acceptance details, finite bounds, commands, test counts, and hashes are in
-[the Phase 43 result](PHASE43_RUN_RESULTS.md). Earlier phase and supplement
+[the Phase 44 result](PHASE44_RUN_RESULTS.md). Earlier phase and supplement
 reports are indexed in [the documentation map](docs/INDEX.md).
 
 ## Repository layout

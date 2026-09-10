@@ -53,6 +53,17 @@ Do not optimize 13, infer universal termination, or discard downward
 variation without a new argument. See the
 [`Phase 43 audit`](../research/audits/normalization-barrier/REPORT.md).
 
+Phase 44 strengthens that same target through P262--P264: all edit budgets
+give a downward-variation hierarchy; logarithmic maximum defect forces
+positive downward density, and D=o(q) forces superlogarithmic H. Seek a
+source/lift/ancestry-linked upper budget that contradicts these bounds.
+P265/P266's oscillating model has all-depth vacuous pure CAP and same-vertex
+no-gain after a finite prefix, yet EDIT-CAP excludes its positive ordinary
+source. Do not spend compute re-excluding that model or call it an infinite
+geodesic. P267's finite pre-repeat sparsity is auxiliary and needs terminal
+truncation. Keep NG46, ordinary order, signed carry, and full literal safety.
+See the [`Phase 44 audit`](../research/audits/edit-capacity/REPORT.md).
+
 ## P0 — Eventual critical-prefix barrier
 
 **Target.** Prove `M(K_q-1) > H_q` for all sufficiently large `q`.

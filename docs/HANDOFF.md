@@ -45,7 +45,19 @@ H_q=B_q^{\max}/(2^{K_q}-3^q),
 
 with `B_q^max` given explicitly in the Phase 6 result and verifier.
 
-## 3. What the forty-three phases established
+## 3. What the forty-four phases established
+
+- Phase 44's P262 counts zero-edited mechanical windows, including boundary
+  deletions and all-inserted windows. P263/P264 force stronger downward
+  variation without monotonicity: D=o(q) implies H/log_2(q)->infinity.
+  P265/P266 exclude one oscillating logarithmic formal model as an ordinary
+  positive source, although its old pure CAP is zero at every depth and its
+  prefixed word has no same-vertex gain. These use different origins, and
+  neither has proved all-Q geodesicity. E60 has a nonvacuous million-step
+  audit and eight finite repeat certificates; P267 is a separate finite
+  distinct-trajectory sparsity extension. Next link forced edits to the
+  fixed source's carry or a dominating ancestor; counting alone is not
+  enough. See [`Phase 44`](../PHASE44_RUN_RESULTS.md).
 
 - Phase 43 adds a new proof-producing all-length/all-Q mode alongside the
   unchanged bounded oracle. Read P257--P261: finite source cutoff, rational

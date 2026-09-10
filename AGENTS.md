@@ -486,6 +486,20 @@ ordinary source; neither more finite certificates nor optimizing 13 does
 this. Keep P254's hypothesis, P253's downward variation and all earlier
 adversarial controls. H112/H72/H89/H133 remain OPEN.
 
+Phase 44 adds P262's zero-edit capacity with distinct positive full input
+states, strict height and all edit budgets; finite safety is not required.
+P263/P264 strengthen downward-variation costs without monotonicity. Future
+H112/H72 work must link many forced edits to the fixed ordinary source's
+carry/lifts or a contradicting upper variation budget. P265/P266 exclude one
+oscillating logarithmic model as a positive ordinary source despite all-depth
+pure-CAP vacuity and prefixed same-vertex no-gain. Keep those two origins
+distinct; neither establishes all-Q geodesicity. E60's low-edit occurrences
+are not distinct words; only its repeat-and-split certificates avoid a global
+distinctness premise. P267's finite pre-repeat sparsity requires terminal
+truncation and is auxiliary, not an optimized capacity table or cycle
+exclusion. Preserve NG46's 7/703 controls and all prior artifacts. No forced
+ancestor theorem follows from symbolic edit counts alone.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

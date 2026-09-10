@@ -8,7 +8,22 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest layer: [`Phase 43`](../PHASE43_RUN_RESULTS.md) and its
+Latest layer: [`Phase 44`](../PHASE44_RUN_RESULTS.md) and its
+[`audit`](../research/audits/edit-capacity/REPORT.md). P262 counts low-zero-edit
+mechanical windows with positive distinct input states and exact height;
+finite safety and monotonicity are not required. P263 strengthens the
+fixed-edit variation hierarchy; P264 proves that D=o(q) requires
+H/log_2(q)->infinity on a positive permanent-safe orbit. P265/P266 exclude
+one oscillating logarithmic model's ordinary positive source while retaining
+its formal 2-adic existence and all-depth same-vertex no-gain. P267 separately
+extends interval sparsity to a finite distinct trajectory with terminal loss.
+E60 independently reconstructs one million odd steps, eight finite repeat
+certificates, 5,090 actual prefix queries and exhaustive small edit balls.
+The model has 590,784 low-edit occurrences but only 966 distinct words.
+No source/lift-linked variation upper bound has been proved. H112/H72/H89/H133
+remain OPEN; NG46 and both 7/703 certificates are retained.
+
+Previous layer: [`Phase 43`](../PHASE43_RUN_RESULTS.md) and its
 [`audit`](../research/audits/normalization-barrier/REPORT.md).
 P257/P258 give finite rational all-length/all-Q no-improvement certificates;
 P261 propagates them to every earlier target prefix. P259 proves termination
@@ -60,6 +75,13 @@ formal models, source 167, and NG43.
 
 ## What is currently proved?
 
+- `VERIFIED_THEOREM`: P262--P264 give zero-edit capacity and asymptotic
+  variation costs, not a contradicting upper budget. P265/P266 exclude one
+  specified oscillating model, not general safe words. P267 is a separate
+  finite pre-repeat sparsity theorem, not a cycle exclusion.
+- `VERIFIED_FINITE`: E60's nonvacuous model and actual-orbit checks are
+  independently recomputed; only repeat-and-split certificates dispense with
+  global distinctness. Repeated terminal endpoints are permitted.
 - `VERIFIED_THEOREM`: P257--P261 provide normalization cuts, finite rational
   certificate soundness, minimizer-specific completeness, a 13S source
   bound, and all-prefix propagation. Their precise quantifiers are separate.

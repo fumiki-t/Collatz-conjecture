@@ -1,5 +1,5 @@
 {
-  "claim_count": 345,
+  "claim_count": 352,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -974,7 +974,7 @@
     {
       "claim": "Use actual odd-orbit transition congruences, positivity, ordinary-integrality, surplus/coalescent irreducibility, or a lift-linked complexity theorem to exclude every infinite coefficient-safe tail.",
       "collatz_implication": "Would eliminate the only nonperiodic branch left by P222; cycles remain separate.",
-      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, P227, P228, P231, P232, P233, P234, P235, P236, P237, P238, P239, P240, E55, P242, P243, P244, P245, P246, NG43, E56, EXT08, E23, E24, E30, E31, E32, E33, E53, E54, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31. Phase 41: P247, P248, P249, P250, P251, NG44, NG45, E57. Phase 42: P252, P253, P254, P255, P256, E58. Phase 43: P257, P258, P259, P260, P261, E59, NG46.",
+      "dependencies": "P72, P73, P75, P76, P77, P78, P79, P80, P81, P82, P83, P84, P85, P86, P87, P88, P107, P108, P109, P110, P111, P112, P113, P114, P115, P116, P117, P119, P120, P121, P122, P123, P124, P125, P126, P127, P128, P129, P130, P131, P219, P220, P221, P222, P223, P224, P225, P227, P228, P231, P232, P233, P234, P235, P236, P237, P238, P239, P240, E55, P242, P243, P244, P245, P246, NG43, E56, EXT08, E23, E24, E30, E31, E32, E33, E53, E54, NG21, NG22, NG23, NG24, NG25, NG26, NG30, NG31. Phase 41: P247, P248, P249, P250, P251, NG44, NG45, E57. Phase 42: P252, P253, P254, P255, P256, E58. Phase 43: P257, P258, P259, P260, P261, E59, NG46. Phase 44: P262, P263, P264, P265, P266, P267, E60.",
       "dependency_ids": [
         "E23",
         "E24",
@@ -989,6 +989,7 @@
         "E57",
         "E58",
         "E59",
+        "E60",
         "EXT08",
         "NG21",
         "NG22",
@@ -1065,6 +1066,12 @@
         "P259",
         "P260",
         "P261",
+        "P262",
+        "P263",
+        "P264",
+        "P265",
+        "P266",
+        "P267",
         "P72",
         "P73",
         "P75",
@@ -1085,7 +1092,7 @@
       "evidence": "[`../PHASE12_RUN_RESULTS.md`](../PHASE12_RUN_RESULTS.md); [`../PHASE13_RUN_RESULTS.md`](../PHASE13_RUN_RESULTS.md); [`../PHASE14_RUN_RESULTS.md`](../PHASE14_RUN_RESULTS.md); [`../PHASE15_RUN_RESULTS.md`](../PHASE15_RUN_RESULTS.md); [`../PHASE18_RUN_RESULTS.md`](../PHASE18_RUN_RESULTS.md); [`../PHASE19_RUN_RESULTS.md`](../PHASE19_RUN_RESULTS.md); [`../PHASE20_RUN_RESULTS.md`](../PHASE20_RUN_RESULTS.md); [`../PHASE21_RUN_RESULTS.md`](../PHASE21_RUN_RESULTS.md); [`../PHASE37_RUN_RESULTS.md`](../PHASE37_RUN_RESULTS.md); [`../PHASE38_RUN_RESULTS.md`](../PHASE38_RUN_RESULTS.md); [`ROADMAP.md`](ROADMAP.md); [`../research/audits/finite-capacity-renewal-transfer/REPORT.md`](../research/audits/finite-capacity-renewal-transfer/REPORT.md).  [`../PHASE39_RUN_RESULTS.md`](../PHASE39_RUN_RESULTS.md); [`context/H112.md`](context/H112.md); [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md); [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md)",
       "first_introduced": "Phase 12",
       "id": "H72",
-      "last_audited": "2026-09-10 (Phase 43 scope audit; status unchanged)",
+      "last_audited": "2026-09-10 (Phase 44 scope audit; status unchanged)",
       "notes": "P243 now reduces every positive nonperiodic orbit to H112 without X02, via normalized-height minimization and valley rescue. P244 gives finite height descent but no effective stopping certificate. NG43 requires full adjusted-run safety. P80 and H112 remain unproved. P255 excludes one formal model's ordinary source; NG46 refutes finite geodesic monotonicity. P258 gives pointwise all-length certificates and P260 a 13S source bound, not a contradicting variation budget or a proof of H112.",
       "status": "OPEN"
     },
@@ -1466,13 +1473,14 @@
     {
       "claim": "Prove `M_star(K_q-1)>H_q` for all sufficiently large `q`, where `M_star(k)` is the least source with ancestral-safe depth at least `k`, then independently check the finite first-crossing remainder.",
       "collatz_implication": "Together with P90 and a finite remainder, this would exclude a least positive counterexample.",
-      "dependencies": "P54, P89, P125, P126, P132, P151--P153, E33, E37; an eventual ancestral-frontier lower bound. Phase 41: P248, P249, P250, NG44, E57. Phase 42: P252, P253, P255, P256, E58. Phase 43: P257, P258, P259, P260, P261, E59, NG46.",
+      "dependencies": "P54, P89, P125, P126, P132, P151--P153, E33, E37; an eventual ancestral-frontier lower bound. Phase 41: P248, P249, P250, NG44, E57. Phase 42: P252, P253, P255, P256, E58. Phase 43: P257, P258, P259, P260, P261, E59, NG46. Phase 44: P262, P263, P264, P265, P266, P267, E60.",
       "dependency_ids": [
         "E33",
         "E37",
         "E57",
         "E58",
         "E59",
+        "E60",
         "NG44",
         "NG46",
         "P125",
@@ -1490,13 +1498,19 @@
         "P259",
         "P260",
         "P261",
+        "P262",
+        "P263",
+        "P264",
+        "P265",
+        "P266",
+        "P267",
         "P54",
         "P89"
       ],
       "evidence": "[`../research/audits/ancestral-frontier/REPORT.md`](../research/audits/ancestral-frontier/REPORT.md), Sections 3 and 9; [`context/H89.md`](context/H89.md); `artifacts/phase21_critical_repetitions.json`; `artifacts/phase25_theory.json`.; [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md)",
       "first_introduced": "Phase 15B",
       "id": "H89",
-      "last_audited": "2026-09-10 (Phase 43 scope audit; status unchanged)",
+      "last_audited": "2026-09-10 (Phase 44 scope audit; status unchanged)",
       "notes": "E25 is finite, E33 leaves most bounded words alive, and P152/P153 leave the q0 support interval nonempty; none is an eventual theorem. P256 retains signed carry at the q=22 minimum; finite repeats do not force an eventual barrier.",
       "status": "OPEN"
     },
@@ -2079,7 +2093,7 @@
     {
       "claim": "Prove that every infinite coefficient-safe all-prefix same-Q-geodesic branch has infinitely many nonzero canonical accelerated source lifts.",
       "collatz_implication": "P243 makes H112 equivalent to full positive nonperiodic exclusion without X02; cycles remain separate.",
-      "dependencies": "P98, P115, P125, P126, P127, P129, P131, E33; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.  P86, P222, P228, E54, P235, P236, P237, P238, P240, E55, P242, P243, P244, P245, P246, NG43, E56; X02 only in historical P240, not in the new P243 implication. Phase 41: P247, P248, P249, P250, P251, NG44, NG45, E57. Phase 42: P252, P253, P254, P255, P256, E58. Phase 43: P257, P258, P259, P260, P261, E59, NG46.",
+      "dependencies": "P98, P115, P125, P126, P127, P129, P131, E33; source-167 falsifier; positive ordinary-integrality must not be replaced by coherence in `Z_2`.  P86, P222, P228, E54, P235, P236, P237, P238, P240, E55, P242, P243, P244, P245, P246, NG43, E56; X02 only in historical P240, not in the new P243 implication. Phase 41: P247, P248, P249, P250, P251, NG44, NG45, E57. Phase 42: P252, P253, P254, P255, P256, E58. Phase 43: P257, P258, P259, P260, P261, E59, NG46. Phase 44: P262, P263, P264, P265, P266, P267, E60.",
       "dependency_ids": [
         "E33",
         "E54",
@@ -2088,6 +2102,7 @@
         "E57",
         "E58",
         "E59",
+        "E60",
         "NG43",
         "NG44",
         "NG45",
@@ -2125,6 +2140,12 @@
         "P259",
         "P260",
         "P261",
+        "P262",
+        "P263",
+        "P264",
+        "P265",
+        "P266",
+        "P267",
         "P86",
         "P98",
         "X02"
@@ -2132,7 +2153,7 @@
       "evidence": "[`../research/audits/affine-lift/REPORT.md`](../research/audits/affine-lift/REPORT.md), Sections 6--7; [`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md); [`context/H72.md`](context/H72.md).  [`context/H112.md`](context/H112.md); [`../research/audits/macroscopic-carry-jump-geodesic/REPORT.md`](../research/audits/macroscopic-carry-jump-geodesic/REPORT.md); [`../PHASE40_RUN_RESULTS.md`](../PHASE40_RUN_RESULTS.md); [`../PHASE42_RUN_RESULTS.md`](../PHASE42_RUN_RESULTS.md)",
       "first_introduced": "Phase 19",
       "id": "H112",
-      "last_audited": "2026-09-10 (Phase 43 scope audit; status unchanged)",
+      "last_audited": "2026-09-10 (Phase 44 scope audit; status unchanged)",
       "notes": "The statement remains OPEN. P243 supplies an internal normalized-height reduction; P244 stabilization is not an effective final stopping rule. P237/P238 constrain growing ancestors; NG43 refutes automatic safety under weight gain. P255 excludes one formal model's ordinary source; NG46 refutes finite geodesic monotonicity. P258 gives pointwise all-length certificates and P260 a 13S source bound, not a contradicting variation budget or a proof of H112.",
       "status": "OPEN"
     },
@@ -5057,9 +5078,110 @@
       "last_audited": "2026-09-10",
       "notes": "Least source then length is (7,4): 7->11->17->26->13, a_2=1,a_3=0. Smaller sources fail safety before any drop. This does not refute an infinite-global-minimizer-only statement.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "For q complete odd blocks of a positive literal orbit with distinct full input states, let a_j=floor(j log_2 3)-E_j, H=max a_j, D=sum downward variation, 2^K>=3Y_q, n=H+K. For every integer r>=0, max(E_q-n+1,0)<=(n+r+1)binom(2n+r+1,r)+floor(n(a_q+2D)/(r+1)).",
+      "collatz_implication": "Supplies an ordinary-height capacity obstruction beyond pure mechanical intervals.",
+      "dependencies": "P125; infinite mechanical factor complexity from P252; a_0=0; only zero edits; positive distinct input states, closing endpoint may repeat. No finite safety or monotonicity.",
+      "dependency_ids": [
+        "P125",
+        "P252"
+      ],
+      "evidence": "[`../research/audits/edit-capacity/REPORT.md`](../research/audits/edit-capacity/REPORT.md), Section 2; Phase 44 independent verifier.",
+      "first_introduced": "Phase 44",
+      "id": "P262",
+      "last_audited": "2026-09-10",
+      "notes": "Occurrences become distinct words only through P125 and the height/distinctness premises; formal words can violate this orbit inequality.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For a positive permanent coefficient-safe orbit and each fixed integer k>=2, H_q=o(q^(1/k)) implies liminf H_q D_q/q>=k log_2(3)/2. Consequently H_q=q^(o(1)) implies H_q D_q/q->infinity.",
+      "collatz_implication": "Doubles P253's necessary constant at H=o(sqrt(q)) and supplies every fixed-edit level without monotonicity.",
+      "dependencies": "P262, P221; fixed K from finite normalization; a_j and H_q tend to infinity.",
+      "dependency_ids": [
+        "P221",
+        "P262"
+      ],
+      "evidence": "[`../research/audits/edit-capacity/REPORT.md`](../research/audits/edit-capacity/REPORT.md), Section 3.",
+      "first_introduced": "Phase 44",
+      "id": "P263",
+      "last_audited": "2026-09-10",
+      "notes": "No uniform growing-k substitution or contradicting upper variation budget. P253/P254 remain valid in their own scopes.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "On a positive permanent-safe orbit, H_q<=C log_2(q)+O(1) and C Psi(delta)<1 imply liminf D_q/q>=delta log_2(3)/2, where Psi(delta)=(2+delta)log_2(2+delta)-delta log_2(delta)-2. In particular C=2 gives log_2(3)/32, and D_q=o(q) implies H_q/log_2(q)->infinity.",
+      "collatz_implication": "Excludes sublinear downward variation together with logarithmic maximum defect.",
+      "dependencies": "P262, P221; delta>0 fixed; exact binomial entropy bound, subsequence argument; 33^33<2^168 for delta=1/16.",
+      "dependency_ids": [
+        "P221",
+        "P262"
+      ],
+      "evidence": "[`../research/audits/edit-capacity/REPORT.md`](../research/audits/edit-capacity/REPORT.md), Section 3; `artifacts/phase44_theory.json`.",
+      "first_introduced": "Phase 44",
+      "id": "P264",
+      "last_audited": "2026-09-10",
+      "notes": "Superlogarithmic H and sufficiently large D remain; no dominating ancestor is forced.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The specified oscillating recurrence u has exponents in {1,2,3}, full permanent safety, H_q=2log_2(q)+O(1), H_q D_q/q->log_2(3)/2, D_q=o(q), and every pure interval ell<=r+2. Thus old pure CAP at origin u is zero at every depth for K>=4. Its normalization beta_infinity<2, coherent odd 2-adic source exists, and real companion h_j=Theta(j)>1 with sum 1/h_j divergent.",
+      "collatz_implication": "Shows a pure-CAP-vacuous oscillating formal model can survive the older leading variation relaxation.",
+      "dependencies": "Exact recurrence in Phase 44 report Section 4; infinite mechanical floor convention; dyadic envelope and complete beta tail; no positive ordinary-source assumption.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/edit-capacity/REPORT.md`](../research/audits/edit-capacity/REPORT.md), Section 4; `artifacts/phase44_model.json`; finite evidence separately E60.",
+      "first_introduced": "Phase 44",
+      "id": "P265",
+      "last_audited": "2026-09-10",
+      "notes": "It is not a positive ordinary orbit; that possibility is excluded by P266, not by the 2-adic construction. No all-Q geodesicity.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Neither P265's u nor w=110111111u is the infinite shortcut parity word of a positive ordinary integer. Nevertheless every prefix of w's shifted tail v=0111111u has J/3^t<857/729<3 and no same-vertex larger-weight zero-start tail.",
+      "collatz_implication": "Excludes this particular logarithmic oscillating model using actual positive height, without P221 or P254.",
+      "dependencies": "P262, P265; fixed K from beta_infinity<2; r=1 asymptotic contradiction; shifted telescoping. P125 for separate finite repeat-and-split exclusions.",
+      "dependency_ids": [
+        "P125",
+        "P262",
+        "P265"
+      ],
+      "evidence": "[`../research/audits/edit-capacity/REPORT.md`](../research/audits/edit-capacity/REPORT.md), Section 5; independent repeat verifier.",
+      "first_introduced": "Phase 44",
+      "id": "P266",
+      "last_audited": "2026-09-10",
+      "notes": "The pure-CAP origin u and shifted vertex of w differ. NG45 survives; no all-same-Q/all-Q geodesicity, H112 proof, or general safe-language exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For any finite pairwise distinct positive shortcut trajectory and any integer translated interval of length X>=1, the number of trajectory values in the interval is less than 32 X^(29/30).",
+      "collatz_implication": "Extends internal interval sparsity to finite pre-repeat segments, including convergent ones.",
+      "dependencies": "P219/P125; discard final ceil(log_2 X) states before image compression; strong induction with exact P220 constants plus terminal loss.",
+      "dependency_ids": [
+        "P125",
+        "P219",
+        "P220"
+      ],
+      "evidence": "[`../research/audits/edit-capacity/REPORT.md`](../research/audits/edit-capacity/REPORT.md), Section 6; `artifacts/phase44_theory.json`.",
+      "first_introduced": "Phase 44",
+      "id": "P267",
+      "last_audited": "2026-09-10",
+      "notes": "Not a direct P220 application to convergent value sets; no equal-time collision-free continuation assumed. Auxiliary, unused in P262--P266; no new table or cycle exclusion.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independent reconstruction checks 1000000 odd model steps (1584925 bits), 590784 low-edit occurrences/966 distinct words, r=1 excess 269665, eight repeat-and-split certificates through source bound 2^1024, 24 small edit balls, 1364 alignment words, and 5090 actual orbit prefix queries with 20360 exact inequalities.",
+      "collatz_implication": "Nonvacuous finite validation of the new capacity and separate finite source-exclusion certificates.",
+      "dependencies": "Declared finite domains; event-jump reconstruction, independent log(9/8) enclosure, range-added charges, inverse zero-edit DP, full-state literal orbits; no generator imports.",
+      "dependency_ids": [],
+      "evidence": "[`../PHASE44_RUN_RESULTS.md`](../PHASE44_RUN_RESULTS.md); Phase 44 artifacts, independent verifier, optimized-Python tamper tests.",
+      "first_introduced": "Phase 44",
+      "id": "E60",
+      "last_audited": "2026-09-10",
+      "notes": "Greatest required repeat prefix is 25756, not claimed minimal. All-source model exclusion comes from P266. Retains all families, NG46 potentials and prior failures; proves_collatz=false.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "8a3f63832268e50e3a7564ff73f84600425901c5bacd78d060e109596dc75a96"
+  "source_sha256": "9a409faab7ed7041184395405a4eabd1e9da8622512086fbeea7d2c7b99a926a"
 }

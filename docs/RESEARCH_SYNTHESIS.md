@@ -1,10 +1,10 @@
-# Collatz research synthesis through Phase 43
+# Collatz research synthesis through Phase 44
 
 **Audit date:** 2026-09-10
 
-**Audited base:** Phase 43 evidence and independent verifier
+**Audited base:** Phase 44 evidence and independent verifier
 
-**Latest accepted phase:** Phase 43
+**Latest phase:** Phase 44 (acceptance commands and commit in its run report)
 
 **Problem status:** `OPEN`
 
@@ -24,7 +24,20 @@ status.
 
 ## 1. Evidence boundary
 
-Latest synthesis: the [`Phase 43 audit`](../research/audits/normalization-barrier/REPORT.md)
+Latest synthesis: the [`Phase 44 audit`](../research/audits/edit-capacity/REPORT.md)
+counts factors after zero-only edits rather than just pure mechanical
+intervals. P262 retains positive distinct input states and a strict height
+bound; P263/P264 turn it into nonmonotone downward-variation lower bounds.
+In particular D=o(q) requires superlogarithmic H. P265/P266 exclude one
+oscillating formal model's ordinary source without excluding its formal
+2-adic model or establishing geodesicity. Its old pure CAP is zero at all
+depths; new low-edit counting is nonvacuous. E60 separately checks 1000000
+odd steps, eight repeat-and-split certificates, and finite ordinary cases.
+P267 extends sparsity to finite distinct trajectories with an explicit
+terminal loss. No new external input or source/lift upper variation theorem
+is supplied. H112/H72/H89/H133 remain OPEN.
+
+Previous synthesis: the [`Phase 43 audit`](../research/audits/normalization-barrier/REPORT.md)
 adds finite rational certificates over every positive ancestor and every
 length/Q, with exact normalization cuts and default values beyond the
 stored graph. This is pointwise all-length evidence, not bounded-search

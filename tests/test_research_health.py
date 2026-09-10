@@ -20,7 +20,7 @@ def test_repository_research_health() -> None:
     assert completed.returncode == 0, completed.stdout + completed.stderr
     result = json.loads(completed.stdout)
     assert result["valid"] is True
-    assert result["latest_phase"] == 43
+    assert result["latest_phase"] == 44
     assert result["active_focus"]["C04"] == "OPEN"
     assert result["active_focus"]["C05"] == "OPEN"
     assert result["active_focus"]["P69"] == "VERIFIED_THEOREM"
@@ -241,12 +241,22 @@ def test_repository_research_health() -> None:
     assert result["active_focus"]["H147"] == "VERIFIED_THEOREM"
     assert result["latest_supplemental_verifier"]["valid"] is True
     assert result["latest_supplemental_verifier"]["generator_imported"] is False
-    assert result["latest_supplemental_verifier"]["query_count"] == 2668
-    assert result["latest_supplemental_verifier"]["certified_no_improvement"] == 185
-    assert result["latest_supplemental_verifier"]["improvements"] == 2483
-    assert result["latest_supplemental_verifier"]["reference_vertices"] == 1189
-    assert result["latest_supplemental_verifier"]["certificate_703_vertices"] == 1188
-    assert result["latest_supplemental_verifier"]["minimal_monotonicity_query"] == [7, 4]
+    assert result["latest_supplemental_verifier"]["model_odd_steps"] == 1000000
+    assert result["latest_supplemental_verifier"]["shortcut_bits"] == 1584925
+    assert result["latest_supplemental_verifier"]["low_edit_occurrences"] == 590784
+    assert result["latest_supplemental_verifier"]["distinct_low_edit_words"] == 966
+    assert result["latest_supplemental_verifier"]["edit_capacity_r1_excess"] == 269665
+    assert result["latest_supplemental_verifier"]["actual_prefix_queries"] == 5090
+    historical_phase43 = json.loads(Path("artifacts/phase43_verifier.json").read_text(encoding="utf-8"))
+    assert historical_phase43["query_count"] == 2668
+    assert historical_phase43["certified_no_improvement"] == 185
+    assert historical_phase43["improvements"] == 2483
+    assert historical_phase43["reference_vertices"] == 1189
+    assert historical_phase43["certificate_703_vertices"] == 1188
+    assert historical_phase43["minimal_monotonicity_query"] == [7, 4]
+    for claim in ("P262", "P263", "P264", "P265", "P266", "P267"):
+        assert result["active_focus"][claim] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E60"] == "VERIFIED_FINITE"
     for claim in ("P257", "P258", "P259", "P260", "P261"):
         assert result["active_focus"][claim] == "VERIFIED_THEOREM"
     assert result["active_focus"]["NG46"] == "REFUTED"
@@ -349,6 +359,8 @@ def test_repository_research_health() -> None:
     assert ("phase40-normalized-height-bellman" in result["accepted_experiments"]) == (phase40["status"] == "ACCEPTED")
     phase43 = json.loads(Path("research/experiments/phase43-normalization-barrier.json").read_text(encoding="utf-8"))
     assert ("phase43-normalization-barrier" in result["accepted_experiments"]) == (phase43["status"] == "ACCEPTED")
+    phase44 = json.loads(Path("research/experiments/phase44-edit-capacity.json").read_text(encoding="utf-8"))
+    assert ("phase44-edit-capacity" in result["accepted_experiments"]) == (phase44["status"] == "ACCEPTED")
     assert isinstance(result["warnings"], list)
     assert result["proves_collatz"] is False
 
@@ -372,7 +384,7 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 345
+    assert committed["claim_count"] == 352
     rows = {row["id"]: row for row in committed["claims"]}
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
@@ -390,6 +402,9 @@ def test_generated_claim_index_is_complete() -> None:
         assert rows[claim]["status"] == "VERIFIED_THEOREM"
     assert rows["E59"]["status"] == "VERIFIED_FINITE"
     assert rows["NG46"]["status"] == "REFUTED"
+    for claim in ("P262", "P263", "P264", "P265", "P266", "P267"):
+        assert rows[claim]["status"] == "VERIFIED_THEOREM"
+    assert rows["E60"]["status"] == "VERIFIED_FINITE"
     assert rows["P117"]["status"] == "VERIFIED_THEOREM"
     assert rows["P124"]["status"] == "CONDITIONAL"
     assert rows["E32"]["status"] == "VERIFIED_FINITE"
@@ -589,6 +604,13 @@ def test_generated_claim_index_is_complete() -> None:
         "P261",
         "E59",
         "NG46",
+        "P262",
+        "P263",
+        "P264",
+        "P265",
+        "P266",
+        "P267",
+        "E60",
         "EXT08",
         "E23",
         "E24",
