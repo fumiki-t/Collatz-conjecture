@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "ext08-scope-audit",
-  "status": "RUNNING",
+  "status": "ACCEPTED",
   "claim_ids": ["EXT08", "P268", "NG47", "E61", "P119", "P121", "P123", "P124", "P128"],
   "objective": "Independently audit the real/2-adic proof boundary of EXT08 without asserting a counterexample to its density statement; quarantine its current use and preserve historical evidence.",
   "exact_scope": {
@@ -24,5 +24,22 @@
   "artifacts": ["artifacts/ext08_scope_models.json", "artifacts/ext08_scope_regressions.json", "artifacts/ext08_scope_impact.json", "artifacts/ext08_scope_verifier.json", "artifacts/SHA256SUMS"],
   "stop_conditions": ["Reject any parity/real-limit confusion, altered historical evidence or promotion of auxiliary counterexamples to a refutation of EXT08", "No large old Phase 21 corpus replay; preserve untracked scratch"],
   "interpretation_boundary": ["EXT08 is OPEN pending a valid repair or independent proof, not REFUTED; its dependent implications remain CONDITIONAL", "P127 and P219--P222/P242/P243 and Phases 42--44 remain independent; H112/H72/H89/H133 stay OPEN"],
-  "proves_collatz": false
+  "proves_collatz": false,
+  "recorded_result": {
+    "commit": "71696aeada34d2e3a6637d1c0849d404b3111d04",
+    "manifest_sha256": "5e278fe5bd7223aa0abf52042285094a6979eae909a48a84d83c18334c2aeb53",
+    "verifier_valid": true,
+    "verifier": "valid=true; generator_imported=false; 12291 prefixes; 28209 literal positive finite-prefix steps; 72 regression words; three 96-step literal cycle controls; seven historical snapshots preserved; EXT08_statement_refuted=false; proves_collatz=false",
+    "regeneration": "All four new JSON artifacts reproduced byte-for-byte in a separate temporary directory. Model evidence SHA-256 equals the supplied 212d620887af40d631e021175b156818e3cc796c3bf3f9f3d64c4287229ff2fd.",
+    "focused_tests": "Initial 84 passed in 16.62s plus 16 in 16.36s. Two additional current-ledger quarantine tests included in final acceptance.",
+    "integrated_tests": "226 passed in 269.10s: 75 EXT08 audit, five control-plane, 140 Phase 44 and six Phase 24 verifier tests.",
+    "clean_worktree_tests": "102 passed in 36.61s in a clean detached implementation worktree: 75 EXT08 audit, five control-plane, eleven Phase 20/21 verifier and eleven Phase 20/21 property tests.",
+    "full_tests": "248 distinct scoped tests total, including 39 new corruption/quarantine checks. Whole repository suite and large Phase 21 corpus not rerun.",
+    "strict_research_health": "Clean implementation worktree: valid=true; errors=[]; warnings=[]; 355 claims; latest_phase=44; 297 artifact entries.",
+    "other_checks": "Generated index matches ledger; compileall and diff checks pass; all 161 tracked Markdown files have valid local links. All previous 293 artifact manifest entries unchanged.",
+    "source_review": "Eight supplied member hashes and ZIP SHA verified. Original arXiv v1 PDF printed pages 4,7,8,28,29,30 visually checked; limited repair search located no repair, not proof of absence.",
+    "independence_boundary": "Supplied generator and verifier read in full and adapted after logic review; independent arithmetic representations, not a claim of independent authorship. Infinite proofs and literature objections are written audits, not machine-formalized.",
+    "issue_status": "GitHub claim-audit issue creation attempted; integration returned HTTP 403. Tracked mathematical report is the local audit docket. No author communication or external endorsement claimed.",
+    "scope": "EXT08 EXTERNAL_THEOREM -> OPEN, not REFUTED; conditional implications preserved; internal P127/P219--P222/P242/P243 and Phases 42--44 untouched. H112/H72/H89/H133 OPEN; proves_collatz=false."
+  }
 }

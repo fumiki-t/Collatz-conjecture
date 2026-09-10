@@ -65,6 +65,19 @@ Initial scoped tests: 84 passed in 16.62s (model/regression/tamper tests and
 Phase 20/21 verifier paths), then 16 passed in 16.36s (control plane and
 Phase 20/21 properties). Two additional quarantine tests were added after
 those runs and are included in the final clean-worktree acceptance below.
+Final integrated CI-equivalent run: **226 passed in 269.10s** (75 new audit
+tests, five control-plane tests, 140 Phase 44 tests and six Phase 24 verifier
+tests). Clean detached implementation worktree: **102 passed in 36.61s**
+(75 new tests, five control-plane, eleven Phase 20/21 verifier tests and
+eleven Phase 20/21 property tests). This is **248 distinct scoped tests**,
+not 328 different tests. The new suite includes 39 corruption/quarantine
+checks, including an optimized-Python rejection.
+
+Clean-worktree strict research-health: valid=true, no errors or warnings,
+355 claims, latest numbered phase 44, 297 manifest entries. The generated
+index, compileall, all 161 tracked Markdown link checks and diff checks pass.
+All four new artifact outputs regenerate byte-for-byte in a separate
+directory. All previous 293 artifact hashes are unchanged.
 The whole historical repository suite and the large Phase 21 corpus are not
 rerun; old evidence is retained and affected metadata/tamper paths are tested.
 
@@ -84,6 +97,10 @@ identical to the supplied evidence:
 The repository [SHA-256 manifest](artifacts/SHA256SUMS) covers the acceptance
 artifacts; implementation commit and manifest digest are also recorded in
 the experiment acceptance metadata.
+
+Implementation commit: `71696aeada34d2e3a6637d1c0849d404b3111d04`.
+SHA-256 of the complete artifact manifest:
+`5e278fe5bd7223aa0abf52042285094a6979eae909a48a84d83c18334c2aeb53`.
 
 GitHub issue creation returned HTTP 403 for the connected integration.
 The tracked mathematical report serves as the local claim-audit docket;
