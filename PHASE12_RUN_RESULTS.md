@@ -187,6 +187,8 @@ confused with an infinite positive-integer orbit.
   preprint states that a divergent rational 2-adic orbit must have lower
   parity-one density equal to the critical value and explicitly studies
   critical mechanical words.
+  Current scope note: this 2021 assertion is now EXT08 OPEN; see the
+  [scope audit](EXT08_SCOPE_AUDIT_RESULTS.md). It is not a P72/P73 input.
 
 Phase 12 does not claim the critical density or the mechanical-word language
 as new.  P72 instead packs the distinct positive odd values and bounds the

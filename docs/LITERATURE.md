@@ -237,7 +237,9 @@ full reduction.
 
 ### López and Stoll (2021)
 
-**Status:** `EXTERNAL_THEOREM`; active conditional input EXT08
+**Status:** `OPEN`; EXT08's external assertion has a disputed proof route.
+It is no longer an accepted external premise. The theorem statement is not
+refuted. See the [scope audit](../research/audits/ext08-scope/REPORT.md).
 
 Josefina López and Peter Stoll, “The 3x+1 Periodicity Conjeture in
 `R`,” arXiv:2101.12747 (2021).
@@ -255,8 +257,16 @@ the input parity, `Q_odd` is the rational 2-adic subring, and the conclusion is
 `liminf`, not existence of a natural density. The proof separates the cases
 `liminf` above and below the critical density.
 
-**Repository role.** EXT08 is an explicit external input to P119/P121/P123/
-P124 and P128. The repository does not reproduce the paper's real-conjugacy proof.
+**Current scope audit (2026-09-10).** Prescribed real branch countermodels
+invalidate the auxiliary real/parity identification and real distinctness
+argument. Original PDF pages 4, 7--8 and 28--30 were visually checked.
+The exact constructions, all-depth proofs, source hash, bounded repair
+search and metadata supersession are in the scope audit linked above.
+No repaired or independent proof was located in that limited search; this
+is not proof that none exists. EXT08 changed EXTERNAL_THEOREM -> OPEN.
+
+**Repository role.** P119/P121/P123/P124 and P128 remain implications
+conditional on the now-unestablished EXT08. Internal P127 is independent.
 Positive integers lie in the rational 2-adics, but this input does not prove
 that their orbits terminate; the cyclic branch remains separate.
 
@@ -677,10 +687,9 @@ Bibliographic metadata above was checked against primary records. Before any
 item becomes a dependency of a claimed Collatz proof, human mathematical audit
 is still required for:
 
-1. an independent specialist review of the López--Stoll (2021) proof itself
-   before EXT08 is ever used inside a claimed full Collatz proof; Phase 20 has
-   already audited the map, rational domain, theorem/proof location, and
-   `liminf` quantifier;
+1. a repaired or independent López--Stoll (2021) density proof before EXT08
+   is used as an accepted premise at all; the 2026-09-10 scope audit invalidates
+   auxiliary completion-transfer steps, without refuting the density statement;
 2. the derivation, exponent rounding, and effective constants in converting
    Wu–Wang to the contextual `H_q = O(q^5.117)` statement;
 3. the complete proof chain from Ellison's Theorem 3 to Rozier--Terracol Lemma

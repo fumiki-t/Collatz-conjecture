@@ -961,6 +961,9 @@ is used to prove (5.3)–(5.10).
    overlap for critical density and real inverse-series behavior. They do not
    supply the arbitrary-orbit interval sparsity (1.1), and this audit does
    not assume that a hypothetical orbit is Sturmian.
+   Current scope note (2026-09-10): the 2021 density assertion is EXT08 OPEN,
+   not an accepted input; see the [scope audit](../../../EXT08_SCOPE_AUDIT_RESULTS.md).
+   The sparsity/permanent-safe arguments here do not depend on that assertion.
 
 5. **Siegel `(p,q)`-adic correspondence.** M. C. Siegel, “The Collatz
    Conjecture & Non-Archimedean Spectral Theory: Part I,”

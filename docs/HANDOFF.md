@@ -1,5 +1,12 @@
 # Research handoff
 
+> 2026-09-10 [EXT08 scope audit](../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 Read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) first for the complete
 map. This file is the compact ten-minute orientation for a technically
 competent researcher or AI continuing the project without the original chat.

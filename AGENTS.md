@@ -500,6 +500,16 @@ truncation and is auxiliary, not an optimized capacity table or cycle
 exclusion. Preserve NG46's 7/703 controls and all prior artifacts. No forced
 ancestor theorem follows from symbolic edit counts alone.
 
+The 2026-09-10 EXT08 scope audit changes EXT08 from EXTERNAL_THEOREM to OPEN.
+Do not use its critical-density assertion as an accepted premise until a valid
+repair or independent proof is audited. P268/NG47 refute auxiliary real/2-adic
+identification and real-trajectory distinctness, not the density statement.
+P119/P121/P123/P124/P128 retain their conditional historical formulations;
+internal P127, P219--P222/P242/P243 and Phases 42--44 remain independent.
+Historical Phase 20/21 artifacts are immutable snapshots and their old status
+annotations do not override the current ledger. Preserve the supersession
+record/checker and use EXT08_SCOPE_AUDIT_RESULTS.md for the audit boundary.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

@@ -1,5 +1,12 @@
 # Phase 20 audit — parity-complexity barriers
 
+> 2026-09-10 [EXT08 scope audit](../../../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 ## 1. Result and scope
 
 This audit treats `phase20_parity_complexity_note.md` as an untrusted research
@@ -67,11 +74,12 @@ López and Stoll use exactly the shortcut map above on `Z_2`. Their
 \tag{3.1}
 \]
 
-The proof separates `liminf>rho_c`, excluded by the real conjugacy argument,
+The proposed proof separates `liminf>rho_c`, claimed excluded by the real conjugacy argument,
 and `liminf<rho_c`, excluded for a rational 2-adic infinite orbit using the
 Monks--Yazinski lower bound. Equality is the remaining case.
 
-This is registered as EXT08, an `EXTERNAL_THEOREM`. The repository has audited
+Historically this was registered as EXT08, an `EXTERNAL_THEOREM`; the scope
+audit now marks it OPEN because the real/2-adic bridge is invalid. The earlier audit covered
 the map, input-parity convention, `liminf`, rationality domain, and cyclic
 boundary; it does not reproduce the paper's full real-conjugacy proof.
 Every positive integer is rational 2-adic, but EXT08 does not assert that its
@@ -182,7 +190,7 @@ B_n\le\rho n\le A_n,
 Applying (6.1) to prefixes also proves existence of the natural frequency.
 This is P120 and uses no Collatz or literature hypothesis.
 
-For a positive permanent-safe nonperiodic orbit, EXT08 identifies this
+For a positive permanent-safe nonperiodic orbit, assuming the now-OPEN EXT08 identifies this
 frequency with `rho_c`; (6.1) then gives bounded critical discrepancy,
 contradicting P117. Hence P121 conditionally gives unbounded balance. Since
 one-counts of consecutive length-`n` windows change by at most one, their set

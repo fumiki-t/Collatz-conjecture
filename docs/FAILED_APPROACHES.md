@@ -1,5 +1,25 @@
 # Failed and deprioritized approaches
 
+## NG47 — identifying the real inverse-series limit with its 2-adic source
+
+- Hypothesis: the same canonical Collatz inverse partial sums force identical
+  ordinary rational limits in R and Q_2; aperiodic real prescribed trajectories
+  are therefore literal and have no repeated states.
+- Why plausible: coherent residues uniquely reconstruct the finite parity word.
+- Counterexamples: real limits -3/2 and -2 with incompatible 2-adic source;
+  the buffered negative cycle has x_0=x_3=-5 and escapes by an illegal zero
+  at time 36. Twelve repetitions are minimal within that safe buffer family,
+  not asserted globally minimal. All-depth proofs are P268, not finite inference.
+- Failure: fundamental change-of-completion and parity-selection error.
+- Survives: the Z_2 parity conjugacy, coherent finite residues and formal real
+  affine identity. EXT08's density statement is OPEN, not refuted.
+- Do not retry: treating prescribed real motion or a finite positive residue
+  as a literal infinite positive orbit. A new rationality-transfer theorem
+  needs its own genuine arithmetic hypothesis and proof.
+
+See the [scope audit](../research/audits/ext08-scope/REPORT.md).
+
+
 Failures are retained as research assets. Each entry states the precise scope
 that failed; it must not be read as a theorem excluding every possible
 strengthening of the idea.

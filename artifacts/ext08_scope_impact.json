@@ -1,0 +1,84 @@
+{
+  "audit_id": "ext08-scope-audit",
+  "repository_base": "2da31e63c87f7c2225899f2d2c500629a0e5668d",
+  "proposal_base": "44430b21705bd69acb6cc29760ee27bdf2433b1f",
+  "bundle_sha256": "e4d5692be68bbbe0e08e4380b87623b2e6ce61b78a564d2bb0aa6775074550aa",
+  "primary_source": {
+    "url": "https://arxiv.org/pdf/2101.12747v1",
+    "sha256": "e4c5bccec262d8fdb001d7970dee56c347c03d789796c165e79a18dc2d584b9a",
+    "printed_pages": [
+      4,
+      7,
+      8,
+      28,
+      29,
+      30
+    ]
+  },
+  "status_transition": {
+    "claim": "EXT08",
+    "from": "EXTERNAL_THEOREM",
+    "to": "OPEN",
+    "reason": "Auxiliary real/2-adic bridge refuted; theorem statement not refuted"
+  },
+  "conditional_claims": [
+    "P119",
+    "P121",
+    "P123",
+    "P124",
+    "P128"
+  ],
+  "independent_claims": [
+    "P118",
+    "P120",
+    "P122",
+    "P125",
+    "P126",
+    "P127",
+    "P219",
+    "P220",
+    "P221",
+    "P222",
+    "P242",
+    "P243"
+  ],
+  "open_obligations": [
+    "H112",
+    "H72",
+    "H89",
+    "H133"
+  ],
+  "historical_files": [
+    {
+      "path": "artifacts/phase20_theory.json",
+      "sha256": "cfebe5c42dc7df4fd7e4c5c213ed5cc719b947380f590cf07c474cb6a3389635"
+    },
+    {
+      "path": "artifacts/phase20_literature_audit.json",
+      "sha256": "bacd59d0ee71fb8b0b22321587f02a645d9923812078fe4d4f1b2de3091589f9"
+    },
+    {
+      "path": "artifacts/phase20_verifier.json",
+      "sha256": "786c71dbb210553111c1790eaa9503930bc63408b9f714e26da85a5f4203ad8e"
+    },
+    {
+      "path": "artifacts/phase21_theory.json",
+      "sha256": "fe15c7fc2e3e7042e4d6b351fdf5dca689c7d1601dc2cffec7740ab043385e34"
+    },
+    {
+      "path": "artifacts/phase21_literature_audit.json",
+      "sha256": "4f61369329bc9f8fa54a2c8f94b4fbefafad5a5310815ee3a8aba841bcbb7df0"
+    },
+    {
+      "path": "artifacts/phase21_obstruction_report.md",
+      "sha256": "5e9602c6bb7ae8ec992b011d5577de959ee80b3ff9d0a33b3cb432b798286095"
+    },
+    {
+      "path": "artifacts/phase21_verifier.json",
+      "sha256": "4cab029b805073d1c40769c3b7b1be8d18f7e446928d0d7e354f755fdaf8aa87"
+    }
+  ],
+  "historical_verification_is_current_theorem_acceptance": false,
+  "EXT08_statement_refuted": false,
+  "proves_collatz": false
+}

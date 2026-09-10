@@ -1,5 +1,5 @@
 {
-  "claim_count": 352,
+  "claim_count": 355,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -2159,15 +2159,17 @@
     },
     {
       "claim": "If a rational 2-adic integer has an infinite orbit under the shortcut map, the lower limiting parity-one density equals `ln(2)/ln(3)`.",
-      "collatz_implication": "Makes critical lower density an external necessary condition for the rational noncyclic branch.",
-      "dependencies": "López--Stoll (2021), Theorem `aperiodic`; exact shortcut/input-parity convention and `liminf` audited from the arXiv TeX source.",
-      "dependency_ids": [],
-      "evidence": "[`LITERATURE.md`](LITERATURE.md); [`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 3.",
+      "collatz_implication": "May be used only as an explicit unestablished hypothesis, not an accepted external theorem.",
+      "dependencies": "External assertion in López--Stoll (2021), arXiv:2101.12747v1, Theorem 1; map and liminf audited, but the real/2-adic proof bridge fails (NG47). A valid repair or independent proof is required.",
+      "dependency_ids": [
+        "NG47"
+      ],
+      "evidence": "[`LITERATURE.md`](LITERATURE.md); [`../research/audits/ext08-scope/REPORT.md`](../research/audits/ext08-scope/REPORT.md), Sections 1--5.",
       "first_introduced": "Phase 20",
       "id": "EXT08",
-      "last_audited": "2026-08-29",
-      "notes": "The paper's proof is not reproduced here; `liminf` is not a natural-density assertion and the cyclic branch is separate.",
-      "status": "EXTERNAL_THEOREM"
+      "last_audited": "2026-09-10 (scope audit: EXTERNAL_THEOREM -> OPEN)",
+      "notes": "Theorem statement not refuted. Auxiliary real claims are refuted by NG47; no 2-adic rationality classification or positive infinite source is asserted. Historical Phase 20/21 artifact statuses are superseded, not rewritten.",
+      "status": "OPEN"
     },
     {
       "claim": "If algebraic `alpha` is neither zero nor one and algebraic `beta` is irrational, every value of `alpha^beta` is transcendental.",
@@ -2268,8 +2270,8 @@
       "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 5; `artifacts/phase20_literature_audit.json`.",
       "first_introduced": "Phase 20",
       "id": "P119",
-      "last_audited": "2026-08-29",
-      "notes": "General morphic words without natural frequency remain; the result does not imply randomness or treat cycles.",
+      "last_audited": "2026-09-10 (EXT08 scope audit; CONDITIONAL unchanged)",
+      "notes": "General morphic words without natural frequency remain; the result does not imply randomness or treat cycles. EXT08 is now OPEN: this implication has an unestablished premise, not an accepted external input.",
       "status": "CONDITIONAL"
     },
     {
@@ -2296,8 +2298,8 @@
       "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 6.",
       "first_introduced": "Phase 20",
       "id": "P121",
-      "last_audited": "2026-08-29",
-      "notes": "Unbounded balance does not imply positive entropy or exclude all infinite words.",
+      "last_audited": "2026-09-10 (EXT08 scope audit; CONDITIONAL unchanged)",
+      "notes": "Unbounded balance does not imply positive entropy or exclude all infinite words. EXT08 is now OPEN: this implication has an unestablished premise, not an accepted external input.",
       "status": "CONDITIONAL"
     },
     {
@@ -2325,8 +2327,8 @@
       "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 7.",
       "first_introduced": "Phase 20",
       "id": "P123",
-      "last_audited": "2026-08-29 (Phase 21 comparison)",
-      "notes": "It remains a historical external-input route and does not exclude arbitrary morphic tails.",
+      "last_audited": "2026-09-10 (EXT08 scope audit; CONDITIONAL unchanged)",
+      "notes": "It remains a historical external-input route and does not exclude arbitrary morphic tails. EXT08 is now OPEN: this implication has an unestablished premise, not an accepted external input.",
       "status": "CONDITIONAL"
     },
     {
@@ -2340,8 +2342,8 @@
       "evidence": "[`../research/audits/parity-complexity/REPORT.md`](../research/audits/parity-complexity/REPORT.md), Section 8.",
       "first_introduced": "Phase 20",
       "id": "P124",
-      "last_audited": "2026-08-29 (Phase 21 comparison)",
-      "notes": "It gives no positive entropy or randomness, and its own status remains conditional on EXT08/EXT12.",
+      "last_audited": "2026-09-10 (EXT08 scope audit; CONDITIONAL unchanged)",
+      "notes": "It gives no positive entropy or randomness, and its own status remains conditional on EXT08/EXT12. EXT08 is now OPEN: this implication has an unestablished premise, not an accepted external input.",
       "status": "CONDITIONAL"
     },
     {
@@ -2417,8 +2419,8 @@
       "evidence": "[`../research/audits/repetition-complexity/REPORT.md`](../research/audits/repetition-complexity/REPORT.md), Section 5; `artifacts/phase21_theory.json`.",
       "first_introduced": "Phase 21",
       "id": "P128",
-      "last_audited": "2026-08-29",
-      "notes": "It is conditional on EXT08, uses only a limsup, and does not imply positive entropy or termination.",
+      "last_audited": "2026-09-10 (EXT08 scope audit; CONDITIONAL unchanged)",
+      "notes": "It is conditional on EXT08, uses only a limsup, and does not imply positive entropy or termination. EXT08 is now OPEN: this implication has an unestablished premise, not an accepted external input.",
       "status": "CONDITIONAL"
     },
     {
@@ -5179,9 +5181,49 @@
       "last_audited": "2026-09-10",
       "notes": "Greatest required repeat prefix is 25756, not claimed minimal. All-source model exclusion comes from P266. Retains all families, NG46 potentials and prior failures; proves_collatz=false.",
       "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "The three explicit prescribed-real branch schedules A/B/C in the scope report are not eventually periodic, have liminf one-density at least 4/5 and real inverse-series limits -3/2, -2, -5; A and C are permanently coefficient-safe. Every r>=12 variant of C is safe, aperiodic and has real limit -5.",
+      "collatz_implication": "Separates real prescribed dynamics from actual ordinary/2-adic parity dynamics.",
+      "dependencies": "The stated rational recurrence and forced prefixes; integer denominator induction, affine identity and expanding periodic-block contradiction. No positive ordinary infinite-source premise.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/ext08-scope/REPORT.md`](../research/audits/ext08-scope/REPORT.md), Sections 2--4.",
+      "first_introduced": "EXT08 scope audit",
+      "id": "P268",
+      "last_audited": "2026-09-10",
+      "notes": "B is not permanently safe (10 has multiplier 3/4). Corresponding 2-adic source rationality remains unknown. Infinite proofs are written, not machine-formalized.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "A real limit of a convergent canonical Collatz inverse series must avoid even-denominator rationals; a Q_odd real limit must have the prescribed literal parity; every aperiodic real prescribed trajectory has distinct states; real Phi is injective on permanently safe aperiodic words.",
+      "collatz_implication": "Blocks an unjustified change-of-completion step; EXT08 itself is OPEN, not REFUTED.",
+      "dependencies": "P268; prescribed real branch convention, not literal parity-selected iteration.",
+      "dependency_ids": [
+        "P268"
+      ],
+      "evidence": "[`../research/audits/ext08-scope/REPORT.md`](../research/audits/ext08-scope/REPORT.md), Section 4; E61.",
+      "first_introduced": "EXT08 scope audit",
+      "id": "NG47",
+      "last_audited": "2026-09-10",
+      "notes": "A has limit -3/2; B starts with bit 1 at -2; C has x_0=x_3=-5 before illegal escape at time 36. Twelve is minimal only within the declared buffered escape family.",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "All 12291 prefixes of three 4096-bit schedules are independently reconstructed, with 28209 literal positive finite-prefix steps, mandatory source/block regressions, cycle controls and seven immutable historical evidence files checked.",
+      "collatz_implication": "Audits the finite witnesses and historical/current claim boundary, not a Collatz proof.",
+      "dependencies": "P268 schedules; homogeneous integer generator versus rational/positional-series and canonical bit-lifting verifier; exact arithmetic.",
+      "dependency_ids": [
+        "P268"
+      ],
+      "evidence": "[`../EXT08_SCOPE_AUDIT_RESULTS.md`](../EXT08_SCOPE_AUDIT_RESULTS.md); `verifier/verify_ext08_scope.py`; tamper tests and SHA-256 manifest.",
+      "first_introduced": "EXT08 scope audit",
+      "id": "E61",
+      "last_audited": "2026-09-10",
+      "notes": "Finite positive sources are not positive infinite sources; no real-to-2-adic rationality transfer or theorem-statement refutation.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "9a409faab7ed7041184395405a4eabd1e9da8622512086fbeea7d2c7b99a926a"
+  "source_sha256": "added4872fd02b2e733d2a91258940544e2ec95663a87a29c3bee1357401b1cb"
 }

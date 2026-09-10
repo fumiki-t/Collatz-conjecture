@@ -1,5 +1,12 @@
 # Research documentation index
 
+> 2026-09-10 [EXT08 scope audit](../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 This is the canonical map of the research archive. Start with
 [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md) for the complete map,
 [`HANDOFF.md`](HANDOFF.md) for a short orientation, or
@@ -25,6 +32,12 @@ This is the canonical map of the research archive. Start with
 | [`../research/experiments/`](../research/README.md) | Reproducible experiment contracts and accepted provenance | Before a large run and after acceptance |
 
 ## Phase evidence
+
+Scope correction outside phase numbering:
+[EXT08 scope audit](../EXT08_SCOPE_AUDIT_RESULTS.md), with
+[proof and failure docket](../research/audits/ext08-scope/REPORT.md).
+P268/NG47/E61 preserve the distinction between refuted auxiliary real claims
+and the still-OPEN external density statement.
 
 | Phase | Result record | Main obstruction report | Milestone |
 |---|---|---|---|

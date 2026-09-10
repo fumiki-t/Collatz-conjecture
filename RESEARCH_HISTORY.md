@@ -1,5 +1,16 @@
 # Collatz conjecture research history
 
+## 2026-09-10 — EXT08 scope correction audit
+
+EXT08 changed EXTERNAL_THEOREM -> OPEN after P268/NG47 exposed the prescribed-real
+versus literal-parity and completion-transfer gap. This does not refute the
+external density statement. P119/P121/P123/P124/P128 remain conditional;
+internal P127, P219--P222/P242/P243 and Phases 42--44 survive. E61 supplies
+independent exact finite reconstruction. The latest numbered phase remains 44.
+Old evidence stays immutable, with a checked supersession record. See the
+[run record](EXT08_SCOPE_AUDIT_RESULTS.md). No Collatz proof is claimed.
+
+
 This is the chronological human-readable record of the repository. It is
 designed to preserve both successful results and failed mechanisms when the
 original chat is unavailable. The live status is in

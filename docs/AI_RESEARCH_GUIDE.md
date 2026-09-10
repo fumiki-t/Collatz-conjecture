@@ -1,5 +1,12 @@
 # AI research guide
 
+> 2026-09-10 [EXT08 scope audit](../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 This is the operational entry point for an AI agent continuing the repository.
 The Collatz conjecture remains `OPEN`; no finite search in this repository is a
 proof of the conjecture. Phase 44's zero-edit-capacity audit is the latest
@@ -197,7 +204,7 @@ flowchart TD
     P114["P114 strip occupation"] --> H72
     P115["P115 exact source lifts"] --> H112["H112 nonzero lifts"]
     P116["P116 periodic residue growth"] --> H112
-    EXT08["EXT08 critical liminf density"] --> P119["P119 symbolic class exclusions"]
+    EXT08["EXT08 OPEN: unestablished critical liminf"] --> P119["P119 conditional symbolic exclusions"]
     P117["P117 discrepancy barrier"] --> P121["P121 unbounded balance"]
     P119 --> H72
     P121 --> H72

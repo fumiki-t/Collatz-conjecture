@@ -1,5 +1,12 @@
 # Phase 20: parity-complexity barriers — run results
 
+> 2026-09-10 [EXT08 scope audit](EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 Branch: `feat/phase20-parity-complexity`
 
 Base: `2fbcad3fbcfb8ecabc4522ec3acfb81467daf8df`
@@ -14,7 +21,8 @@ proof/dependency audit is in
 
 | Claim | Status | Accepted statement |
 |---|---|---|
-| EXT08--EXT13 | `EXTERNAL_THEOREM` | Critical `liminf` density and the exact external word/transcendence inputs are isolated rather than reproved. |
+| EXT08 | `OPEN` | Historical EXTERNAL_THEOREM classification superseded by the 2026-09-10 scope audit; density statement not refuted. |
+| EXT09--EXT13 | `EXTERNAL_THEOREM` | External word/transcendence inputs unaffected by the EXT08 audit. |
 | P117 | `VERIFIED_THEOREM` | P72 excludes bounded discrepancy and every global envelope below `(8/9)log j`. |
 | P118 | `VERIFIED_THEOREM` | `ln(2)/ln(3)` is transcendental, using EXT09. |
 | P119 | `CONDITIONAL` | Under EXT08 and class-specific inputs, algebraic-frequency morphic, pure binary morphic, primitive substitutive, and automatic parity words are excluded. |

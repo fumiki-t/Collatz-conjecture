@@ -1,5 +1,12 @@
 # Collatz research synthesis through Phase 44
 
+> 2026-09-10 [EXT08 scope audit](../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 **Audit date:** 2026-09-10
 
 **Audited base:** Phase 44 evidence and independent verifier
@@ -648,8 +655,8 @@ and handoff. Exact counts and hashes remain in the linked phase report.
   below `(8/9)log j`; P118 proves the critical density transcendental using
   EXT09; P120 proves bounded-balance frequency/discrepancy; P122 proves
   bounded discrepancy for morphic Sturmian images.
-- **Conditional:** EXT08 is López--Stoll's audited `liminf` critical-density
-  theorem. With EXT10--EXT13, P119/P121/P123/P124 exclude automatic,
+- **Conditional:** EXT08 is an OPEN `liminf` critical-density assertion after
+  the scope audit. Assuming it and EXT10--EXT13, P119/P121/P123/P124 exclude automatic,
   primitive substitutive, bounded-balance, and quasi-Sturmian tails and force
   `p(n)-n -> infinity`.
 - **Finite evidence:** E32 rebuilds thirteen 512-bit prefixes, 832 factor rows,

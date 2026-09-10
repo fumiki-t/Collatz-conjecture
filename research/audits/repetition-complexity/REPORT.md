@@ -1,5 +1,12 @@
 # Phase 21 audit — orbit separation, repetition, and factor complexity
 
+> 2026-09-10 [EXT08 scope audit](../../../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 Status: accepted repository derivations and bounded computations; Collatz remains
 `OPEN`; `proves_collatz=false`.
 

@@ -1,5 +1,12 @@
 # Current research status
 
+> 2026-09-10 [EXT08 scope audit](../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 **Last updated:** 2026-09-10
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
@@ -208,8 +215,8 @@ formal models, source 167, and NG43.
   gives a natural frequency and uniform factor discrepancy. P122 proves the
   corresponding bounded-discrepancy formula for every non-erasing morphic
   image of a Sturmian word.
-- `CONDITIONAL`: EXT08 is López--Stoll's audited `liminf` critical-density
-  theorem for rational 2-adic infinite orbits. With the word-theoretic inputs
+- `CONDITIONAL`: assuming the now-OPEN EXT08 `liminf` critical-density
+  assertion for rational 2-adic infinite orbits, and the word-theoretic inputs
   EXT10--EXT13, P119 excludes algebraic-frequency morphic, pure binary
   morphic, primitive substitutive, and automatic parity vectors. P121/P123/
   P124 force unbounded balance, exclude quasi-Sturmian tails, and give

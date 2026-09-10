@@ -1,5 +1,12 @@
 # Phase 21: repetition-complexity barriers — run results
 
+> 2026-09-10 [EXT08 scope audit](EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 Branch: `feat/phase21-repetition-complexity`
 
 Base: `f4a9b6818fad5d406f6d4db9785a98cc830f8b82`

@@ -7,6 +7,9 @@
     "claim_source": "docs/CLAIMS_LEDGER.md",
     "claim_index": "research/claims-index.json"
   },
+  "scope_audits": [
+    {"id":"ext08-scope-audit", "report":"EXT08_SCOPE_AUDIT_RESULTS.md", "impact_artifact":"artifacts/ext08_scope_impact.json", "verifier_artifact":"artifacts/ext08_scope_verifier.json", "experiment_manifest":"research/experiments/ext08-scope-audit.json"}
+  ],
   "canonical_documents": [
     "README.md",
     "AGENTS.md",
@@ -144,6 +147,9 @@
     }
   ],
   "watch_claims": [
+    "P268",
+    "NG47",
+    "E61",
     "P54",
     "P69",
     "P70",

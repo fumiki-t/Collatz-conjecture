@@ -479,6 +479,30 @@ def run(root: Path, strict: bool = False) -> dict[str, object]:
         + claim_index_audit(root, claim_map)
         + experiment_errors
     )
+    # Audit corrections are not renumbered research phases. Their supersession
+    # records prevent historical status snapshots from becoming current axioms.
+    from scripts.audit_claim_supersession import audit_supersession
+    scope_audits = registry.get("scope_audits", [])
+    if scope_audits != [{"id":"ext08-scope-audit", "report":"EXT08_SCOPE_AUDIT_RESULTS.md",
+                         "impact_artifact":"artifacts/ext08_scope_impact.json",
+                         "verifier_artifact":"artifacts/ext08_scope_verifier.json",
+                         "experiment_manifest":"research/experiments/ext08-scope-audit.json"}]:
+        errors.append("EXT08 scope audit registry entry missing or changed")
+    else:
+        for item in scope_audits:
+            try:
+                impact = json.loads((root/item["impact_artifact"]).read_text())
+                errors.extend(audit_supersession(root,impact))
+                audit_result = json.loads((root/item["verifier_artifact"]).read_text())
+                for key,value in {"valid":True,"generator_imported":False,"current_EXT08_status":"OPEN",
+                                  "checked_prefixes_total":12291,"historical_files_preserved":7,
+                                  "EXT08_statement_refuted":False,"proves_collatz":False}.items():
+                    if audit_result.get(key)!=value:
+                        errors.append("scope verifier field mismatch: "+key)
+                if not (root/item["report"]).is_file():
+                    errors.append("scope audit report missing")
+            except (OSError,ValueError,KeyError,TypeError) as exc:
+                errors.append("scope audit unavailable: "+str(exc))
     if strict:
         errors.extend(f"strict mode: {warning}" for warning in warnings)
 
@@ -528,6 +552,7 @@ def main() -> int:
     )
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
+    sys.path.insert(0, str(root))
     result = run(root, strict=args.strict)
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0 if result["valid"] else 1

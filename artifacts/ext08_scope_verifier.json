@@ -1,0 +1,48 @@
+{
+  "valid": true,
+  "generator_imported": false,
+  "models": [
+    {
+      "name": "dyadic_real_minus_three_halves",
+      "checked_prefixes": 4097,
+      "q": 3561,
+      "safe_in_checked_range": true,
+      "first_literal_mismatch": null,
+      "all_prefix_digest": "df30c0cb93b3128a84a5e00e9d854a1ae9d8fb333ba464f2380bc4d6f73b73dd"
+    },
+    {
+      "name": "integer_real_minus_two",
+      "checked_prefixes": 4097,
+      "q": 3560,
+      "safe_in_checked_range": false,
+      "first_literal_mismatch": {
+        "time": 0,
+        "state": "-2/1",
+        "prescribed_bit": 1,
+        "literal_bit": 0
+      },
+      "all_prefix_digest": "c2605418a706298f1b2f3db98df4379b12c245c9d855a341cd95e6e38000ce16"
+    },
+    {
+      "name": "safe_repeated_real_minus_five",
+      "checked_prefixes": 4097,
+      "q": 3551,
+      "safe_in_checked_range": true,
+      "first_literal_mismatch": {
+        "time": 36,
+        "state": "-5/1",
+        "prescribed_bit": 0,
+        "literal_bit": 1
+      },
+      "all_prefix_digest": "015985c3ad6ac73c13d4dc21fa05dd602c135ae49fded13cd4284e84fbd06021"
+    }
+  ],
+  "checked_prefixes_total": 12291,
+  "literal_finite_prefix_steps": 28209,
+  "infinite_proofs_machine_formalized": false,
+  "EXT08_statement_refuted": false,
+  "proves_collatz": false,
+  "regression_words": 72,
+  "historical_files_preserved": 7,
+  "current_EXT08_status": "OPEN"
+}

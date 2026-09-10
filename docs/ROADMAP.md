@@ -1,5 +1,12 @@
 # Proof-oriented research roadmap
 
+> 2026-09-10 [EXT08 scope audit](../EXT08_SCOPE_AUDIT_RESULTS.md): EXT08 is now `OPEN`,
+> not an accepted external premise and not a refuted theorem statement.
+> P119/P121/P123/P124/P128 retain their conditional historical routes;
+> P127, internal permanent-safe reduction and Phases 42--44 remain intact.
+> Older artifact status snapshots are historical, not current claim authority.
+
+
 The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
@@ -332,8 +339,8 @@ noncycle stabilization. NG31 proves that the endpoint-tilted affine correction
 has infinite mean; fractional moments below one remain available.
 
 Phase 20 adds a symbolic-complexity filter. P117 internally excludes every
-global discrepancy envelope below `(8/9)log j`. Under the audited external
-critical-density theorem EXT08, P119/P121/P123/P124 exclude automatic, pure
+global discrepancy envelope below `(8/9)log j`. Assuming the now-OPEN
+critical-density assertion EXT08, P119/P121/P123/P124 exclude automatic, pure
 binary morphic, primitive substitutive, bounded-balance, and quasi-Sturmian
 parity tails and force `p(n)-n -> infinity`. This does not imply positive
 entropy or a finite presentation, and it does not force a P115 lift digit.

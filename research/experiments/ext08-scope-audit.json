@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "ext08-scope-audit",
+  "status": "RUNNING",
+  "claim_ids": ["EXT08", "P268", "NG47", "E61", "P119", "P121", "P123", "P124", "P128"],
+  "objective": "Independently audit the real/2-adic proof boundary of EXT08 without asserting a counterexample to its density statement; quarantine its current use and preserve historical evidence.",
+  "exact_scope": {
+    "quantifiers": ["Three explicitly defined infinite prescribed-real words; all-depth proofs are written, not inferred from finite checks", "All prefixes through 4096 bits per model; selected canonical residues replayed literally", "Mandatory finite adversarial families and positive/negative cycle controls"],
+    "bounds": {"model_bits": 4096, "family_m": 12, "AB_r_s": 4, "mixed_blocks": 4},
+    "completeness": "Exhaustive within the three declared finite schedules only; no general positive infinite source or 2-adic rationality classification. Bounded literature repair search is not a proof of absence."
+  },
+  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "none"},
+  "commands": {
+    "generator": [".venv/bin/python src/ext08_scope_search.py --artifact-dir artifacts"],
+    "verifier": [".venv/bin/python verifier/verify_ext08_scope.py --artifact-dir artifacts --output artifacts/ext08_scope_verifier.json"],
+    "tests": [".venv/bin/python -m pytest -q tests/test_ext08_scope.py tests/test_phase20_verifier.py tests/test_phase21_verifier.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence": {
+    "verifier_reconstructs": ["Fraction-valued prescribed branches and positional inverse series versus homogeneous integer recurrence", "Bit-by-bit canonical positive source lifting versus modular inversion", "Literal cycle/family replays and historical file digests"],
+    "forbidden_imports": ["src.ext08_scope_search", "ext08_scope_search", "src"],
+    "tamper_tests": ["tests/test_ext08_scope.py"]
+  },
+  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s"],
+  "artifacts": ["artifacts/ext08_scope_models.json", "artifacts/ext08_scope_regressions.json", "artifacts/ext08_scope_impact.json", "artifacts/ext08_scope_verifier.json", "artifacts/SHA256SUMS"],
+  "stop_conditions": ["Reject any parity/real-limit confusion, altered historical evidence or promotion of auxiliary counterexamples to a refutation of EXT08", "No large old Phase 21 corpus replay; preserve untracked scratch"],
+  "interpretation_boundary": ["EXT08 is OPEN pending a valid repair or independent proof, not REFUTED; its dependent implications remain CONDITIONAL", "P127 and P219--P222/P242/P243 and Phases 42--44 remain independent; H112/H72/H89/H133 stay OPEN"],
+  "proves_collatz": false
+}
