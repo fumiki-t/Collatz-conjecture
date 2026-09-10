@@ -92,8 +92,30 @@ permanent-safe sources. Positive-cycle exclusion remains separate.
 
 ## Acceptance record
 
-Final clean-worktree test scope, byte reproduction and hashes are recorded
-after the acceptance gate. No unperformed whole-repository suite is claimed.
+Accepted against implementation commit
+`246c4127c805881fb7cdc88d5891db1c89ccdb94` in a clean detached worktree.
+The acceptance metadata is committed separately, avoiding circular hashes.
+
+Clean integrated suite: **493 passed in 267.74s**. Exact command:
+
+```sh
+python -m pytest -q tests/test_research_health.py tests/test_phase24_verifier.py tests/test_phase44_properties.py tests/test_phase44_verifier.py tests/test_ext08_scope.py tests/test_transient_sparsity.py tests/test_critical_safe_mass.py tests/test_phase43_properties.py tests/test_phase43_verifier.py tests/test_phase41_properties.py
+```
+
+This comprises five control-plane, six Phase 24 verifier, 140 Phase 44,
+75 EXT08 scope, 70 transient-sparsity, 65 critical-safe-mass, 98 Phase 43 and
+34 Phase 41 property tests. The checkout's existing virtual environment
+provided Python; the tested files came from the clean implementation commit.
+
 Initial focused suite: 140 passed in 29.05s, comprising 65 new tests,
 70 transient-sparsity tests and five control-plane tests. The embedded 22
 corruption checks are reported separately, not added to the pytest count.
+
+All four new JSON files reproduced byte-for-byte in a separate temporary
+directory under `python -O`; all embedded tamper rejections remained active.
+All 301 older artifact manifest entries are unchanged. Strict research health
+passed with no warnings or errors, 364 claims and 305 artifact entries.
+The generated claims index, 165 tracked Markdown files' local links,
+compileall and diff checks passed. Existing scratch was neither altered nor
+staged. The **whole-repository test suite was not run**; historical hash
+preservation is not a fresh audit of every older mathematical result.
