@@ -95,8 +95,23 @@ index has 352 entries and registry health reports no errors or warnings.
 The [SHA-256 manifest](artifacts/SHA256SUMS) contains 293 entries, with the
 previous 288 retained unchanged. Its own SHA-256 is
 `23d0216cbda7b233ae9725cbb4f93b68459fecfad62f6790ac8a6b963539018c`.
-Clean-worktree acceptance of the implementation commit is recorded below
-after that final pass; this paragraph does not claim the whole suite ran.
+
+**Accepted implementation commit:**
+`55d7afb7394c7c05e52914c3d6a4eb0200609a1a`.
+From a clean detached worktree at that commit, the CI-equivalent run passed
+**151 tests in 249.59s**: 140 Phase 44, five control-plane and six Phase 24
+verifier tests. Worktree cleanliness was checked before and after. Strict
+health, compileall, generated index, all 159 Markdown files, and all 293
+artifact hashes passed there. Including the 201 dependency tests, this is
+**352 distinct scoped tests**, not the entire repository suite.
+
+The experiment status is `ACCEPTED`. The implementation commit above is the
+hash-pinned mathematical/code evidence; the following metadata-only commit
+records these checks without creating a circular artifact/commit hash.
+An early local iterator boundary was repaired to finish the last requested
+odd block before stopping; this preceded acceptance computation and all
+256 ordinary transcripts then agreed. No mathematical counterexample to
+EDIT-CAP was found in the declared exact domains.
 
 ## What this result does not prove
 

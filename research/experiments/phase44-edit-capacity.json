@@ -1,28 +1,132 @@
 {
   "schema_version": 1,
   "id": "phase44-edit-capacity",
-  "status": "RUNNING",
-  "claim_ids": ["P262", "P263", "P264", "P265", "P266", "P267", "E60", "H112", "H72", "H89"],
+  "status": "ACCEPTED",
+  "claim_ids": [
+    "P262",
+    "P263",
+    "P264",
+    "P265",
+    "P266",
+    "P267",
+    "E60",
+    "H112",
+    "H72",
+    "H89"
+  ],
   "objective": "Audit zero-edit mechanical capacity, its downward-variation hierarchy, and an oscillating formal model independently of the supplied implementation; retain normalization certificates and ordinary-source boundaries.",
   "exact_scope": {
-    "quantifiers": ["Finite positive complete odd prefixes with distinct full shortcut input states; closing endpoint may repeat; no safety premise", "All integer edit budgets r>=0; all fixed hierarchy parameters k>=2", "One million formal odd steps, eight repeat-and-split certificates, exhaustive small zero-edit balls and alignments", "All odd sources 1..511 through at most 64 complete odd blocks before a repeated input; mandatory families and Phase 43 controls"],
-    "bounds": {"model_odd_steps": 1000000, "source_bound_bits": [8,16,32,64,128,256,512,1024], "maximum_small_ball_n": 8, "maximum_small_ball_r": 2, "alignment_q": 5, "alignment_e": 4, "maximum_ordinary_source": 511, "maximum_ordinary_q": 64},
+    "quantifiers": [
+      "Finite positive complete odd prefixes with distinct full shortcut input states; closing endpoint may repeat; no safety premise",
+      "All integer edit budgets r>=0; all fixed hierarchy parameters k>=2",
+      "One million formal odd steps, eight repeat-and-split certificates, exhaustive small zero-edit balls and alignments",
+      "All odd sources 1..511 through at most 64 complete odd blocks before a repeated input; mandatory families and Phase 43 controls"
+    ],
+    "bounds": {
+      "model_odd_steps": 1000000,
+      "source_bound_bits": [
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "maximum_small_ball_n": 8,
+      "maximum_small_ball_r": 2,
+      "alignment_q": 5,
+      "alignment_e": 4,
+      "maximum_ordinary_source": 511,
+      "maximum_ordinary_q": 64
+    },
     "completeness": "All finite domains are explicit. Asymptotic conclusions require written proofs; finite model source exclusions use matching factors followed by a split, not global distinctness. Optional finite pre-repeat sparsity audited separately without capacity-table extension."
   },
-  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "none; integer powers, rational logarithm enclosures, fractions and binomial identities"},
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "none; integer powers, rational logarithm enclosures, fractions and binomial identities"
+  },
   "commands": {
-    "generator": [".venv/bin/python src/phase44_search.py --artifact-dir artifacts"],
-    "verifier": [".venv/bin/python verifier/verify_phase44.py --artifact-dir artifacts --output artifacts/phase44_verifier.json"],
-    "tests": [".venv/bin/python -m pytest -q tests/test_phase44_properties.py tests/test_phase44_verifier.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+    "generator": [
+      ".venv/bin/python src/phase44_search.py --artifact-dir artifacts"
+    ],
+    "verifier": [
+      ".venv/bin/python verifier/verify_phase44.py --artifact-dir artifacts --output artifacts/phase44_verifier.json"
+    ],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_phase44_properties.py tests/test_phase44_verifier.py tests/test_research_health.py",
+      ".venv/bin/python scripts/research_health.py --strict",
+      ".venv/bin/python -m pytest -q tests/test_phase37_properties.py tests/test_phase42_properties.py tests/test_phase42_verifier.py tests/test_phase43_properties.py tests/test_phase43_verifier.py"
+    ]
   },
   "independence": {
-    "verifier_reconstructs": ["Event-driven constant-height epoch jumps with binary search, instead of the stepwise model generator", "Independent log(9/8) enclosure and direct integer-power checks", "Range-add edit charges and byte factors instead of sliding sums and rolling integer words", "Full-state literal orbit iteration and positional affine arithmetic; explicit checks survive python -O"],
-    "forbidden_imports": ["src", "src.phase44_search", "phase44_search"],
-    "tamper_tests": ["tests/test_phase44_verifier.py"]
+    "verifier_reconstructs": [
+      "Event-driven constant-height epoch jumps with binary search, instead of the stepwise model generator",
+      "Independent log(9/8) enclosure and direct integer-power checks",
+      "Range-add edit charges and byte factors instead of sliding sums and rolling integer words",
+      "Full-state literal orbit iteration and positional affine arithmetic; explicit checks survive python -O"
+    ],
+    "forbidden_imports": [
+      "src",
+      "src.phase44_search",
+      "phase44_search"
+    ],
+    "tamper_tests": [
+      "tests/test_phase44_verifier.py"
+    ]
   },
-  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "NG22", "NG32 terminal mutation", "NG43", "NG44", "NG45", "NG46 (7,4)", "703 defect drop", "source 167", "P256 q22 signed carry"],
-  "artifacts": ["artifacts/phase44_model.json", "artifacts/phase44_finite.json", "artifacts/phase44_regressions.json", "artifacts/phase44_theory.json", "artifacts/phase44_verifier.json", "artifacts/SHA256SUMS"],
-  "stop_conditions": ["Any mismatch or omitted distinctness/height/alignment assumption blocks acceptance until repaired.", "Do not turn one formal model exclusion or finite no-gain certificates into H112 closure.", "Do not overwrite old accepted evidence or untracked scratch files."],
-  "interpretation_boundary": ["Finite counts are not asymptotic proofs. The supplied code and verdicts are unaudited inputs, not authority.", "The oscillating u CAP origin and prefixed w shifted-tail vertex are distinct; neither has proved all-Q geodesicity.", "No lift-linked variation upper bound or arbitrary-area cycle exclusion; H112/H72/H89/H133 remain OPEN; proves_collatz=false."],
-  "proves_collatz": false
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "NG22",
+    "NG32 terminal mutation",
+    "NG43",
+    "NG44",
+    "NG45",
+    "NG46 (7,4)",
+    "703 defect drop",
+    "source 167",
+    "P256 q22 signed carry"
+  ],
+  "artifacts": [
+    "artifacts/phase44_model.json",
+    "artifacts/phase44_finite.json",
+    "artifacts/phase44_regressions.json",
+    "artifacts/phase44_theory.json",
+    "artifacts/phase44_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Any mismatch or omitted distinctness/height/alignment assumption blocks acceptance until repaired.",
+    "Do not turn one formal model exclusion or finite no-gain certificates into H112 closure.",
+    "Do not overwrite old accepted evidence or untracked scratch files."
+  ],
+  "interpretation_boundary": [
+    "Finite counts are not asymptotic proofs. The supplied code and verdicts are unaudited inputs, not authority.",
+    "The oscillating u CAP origin and prefixed w shifted-tail vertex are distinct; neither has proved all-Q geodesicity.",
+    "No lift-linked variation upper bound or arbitrary-area cycle exclusion; H112/H72/H89/H133 remain OPEN; proves_collatz=false."
+  ],
+  "proves_collatz": false,
+  "recorded_result": {
+    "commit": "55d7afb7394c7c05e52914c3d6a4eb0200609a1a",
+    "generator": "All four Phase 44 generator outputs reproduced byte-for-byte in a separate temporary directory; its independent verifier result matches the accepted result.",
+    "verifier": "valid=true; generator_imported=false; 1000000 odd steps; 1584925 bits; 590784 low-edit occurrences / 966 distinct words; r=1 excess 269665; eight repeat-and-split certificates with both exact affine heights checked; proves_collatz=false.",
+    "verifier_valid": true,
+    "focused_tests": "Initial 133 tests passed in 25.53s. Final integrated run: 145 passed in 78.02s (140 Phase 44 plus five control-plane). Includes inverse edit DP, all declared alignments, actual safe/unsafe trajectories, retained controls, tampering and python -O.",
+    "dependency_tests": "201 passed in 47.12s: Phase 37 properties, Phase 42 properties/verifier, Phase 43 properties/verifier. Not the whole repository suite.",
+    "clean_ci_equivalent_tests": "151 passed in 249.59s in a clean detached worktree of the implementation commit: five control-plane, six Phase 24 verifier, 140 Phase 44 tests. Worktree clean before and after.",
+    "full_tests": "Whole repository suite not rerun. 352 distinct scoped tests passed: 140 Phase 44, five control-plane, 201 dependency, six Phase 24 verifier tests.",
+    "strict_research_health": "valid=true; errors=[]; warnings=[]; latest_phase=44; claim_count=352; verified from the clean implementation worktree.",
+    "markdown_links": "All 159 tracked Markdown files valid in the clean implementation worktree; compileall and generated-index check passed.",
+    "manifest_verification": "All 293 artifact SHA-256 entries explicitly matched from the clean implementation worktree; previous 288 entries unchanged.",
+    "manifest_sha256": "23d0216cbda7b233ae9725cbb4f93b68459fecfad62f6790ac8a6b963539018c",
+    "audit_repairs": "Supplied assert-based verifier not adopted. New event-jump / log(9/8) / range-add / inverse-DP checker uses explicit exceptions. Repository-side full-state iterator initially stopped before the last requested odd block finished; corrected before acceptance computation, then all 256 transcripts agreed.",
+    "scope_boundary": "P262 needs distinct positive full input states, not a distinct closing endpoint. Only repeat-and-split certificates avoid global distinctness. P265's pure CAP origin u differs from w's shifted vertex. No all-Q geodesicity, forced ancestor, H112 closure, or Collatz proof.",
+    "optional_supplement": "P267 finite pre-repeat sparsity audited separately using terminal truncation and exact induction constants; no large capacity-table recomputation or 13 optimization."
+  }
 }
