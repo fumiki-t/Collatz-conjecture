@@ -1647,6 +1647,37 @@ positive packing evidence. The eight direct repeat-and-split certificates
 are genuinely nonvacuous; they prove finite source exclusions, not the
 asymptotic theorem by extrapolation. H112/H72/H89/H133 remain open.
 
+## NG50 — one fixed affine contraction of three specified blocks
+
+Hypothesis: a single H(x)=rx+s, 0<r<1, simultaneously conjugates
+u2=11011011111000, u3=11011110011010, u4=11011110101010 into Collatz words
+and maps at least one ordinary integer to an integer. It looked plausible
+because each relevant two-word subfamily has a genuine integer shrinking
+map (P278), while the four-block family has a different-future 5/6 reduction.
+
+P279 refutes this exact hypothesis: slope equality forces all output words
+to (L,q)=(14,9), r=k/288, and a full pool of 2002 corrections leaves 1179
+symbolic triples. Every residue k*34159-288K modulo 3299 is nonzero. This
+is a complete integer obstruction, not a search cutoff. The r=1 boundary
+only allows translations 0,+4. The specified three-map family is the exact
+witness; no smallest family under a global ordering is claimed.
+
+Failure is fundamental for this one fixed conjugacy, local to that method's
+scope. State dependence, time/Q changes, nonlinear maps and pointwise
+coalescences remain available. Proper-subalphabet contractions survive;
+their image language is not closed, so repeated descent is not established.
+P280 additionally forces a common fixed point and finite valuation budget
+when one contraction makes a finite expanding affine family self-closed.
+This is not a no-go for general finite-state rewriting or matrix methods.
+
+Other preserved pitfalls: synchronized same-height classification includes
+the even S+3 peer; a smaller different future is not automatically an ancestor
+of the original source; depth-r collision families spend v2(139S+2903)=11r+5;
+minimal and maximal equal-height source tie-breakers cannot be interchanged.
+The finite third-source control does not realize an infinite ordinary source,
+and does not refute a conditional infinite-source statement by itself.
+See the [audit](../research/audits/synchronized-shadow-closure/REPORT.md).
+
 ## Mandatory regression rule
 
 Every future universal mechanism must be tested against `2^m-1`, `8^m-5`,

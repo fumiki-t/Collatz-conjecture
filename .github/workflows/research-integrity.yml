@@ -43,6 +43,7 @@ jobs:
           tests/test_ext08_scope.py
           tests/test_transient_sparsity.py
           tests/test_critical_safe_mass.py
+          tests/test_synchronized_shadow.py
       - name: Verify tracked artifact manifest
         working-directory: artifacts
         run: sha256sum --check SHA256SUMS

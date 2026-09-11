@@ -692,6 +692,29 @@ conversion.
 constants is audited here. The bound is not an input to a current finite
 certificate.
 
+## Shadow-audit backlog references (context only, 2026-09-11)
+
+The following primary arXiv metadata and abstracts were checked for the
+unreviewed [B1--B6 handoff](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md).
+Full proofs were not audited and **no theorem from these papers is used**
+in P274--P280. No new EXT claim or literature-wide novelty claim is assigned.
+Journal publication details were not verified in this limited check.
+
+- L. Addario-Berry and B. A. Reed, *Ballot theorems for random walks with
+  finite variance*, 2008, [arXiv:0802.2491v2](https://arxiv.org/abs/0802.2491v2).
+  Candidate background for backlog B3's unreviewed stopping-time bound;
+  its uniform constants and hypotheses have not been imported or certified.
+- Mikhail Neklyudov, *Functional analysis approach to the Collatz conjecture*,
+  2021, v9 revised 2022, [arXiv:2106.11859v9](https://arxiv.org/abs/2106.11859v9).
+  Context for operator/fixed-point reformulations. The backlog's particular
+  weighted ell^2 operator and optimal residual constants are not attributed
+  to a theorem in this paper.
+- Emre Yolcu, Scott Aaronson and Marijn J. H. Heule, *An Automated Approach
+  to the Collatz Conjecture*, 2021, v3 revised 2022,
+  [arXiv:2105.14697v3](https://arxiv.org/abs/2105.14697v3).
+  Context for rewriting and matrix-interpretation methods, whose general
+  scope must not be confused with P279's single affine-conjugacy obstruction.
+
 ## Human-verification queue
 
 Bibliographic metadata above was checked against primary records. Before any

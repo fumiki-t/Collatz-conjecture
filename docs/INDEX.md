@@ -15,6 +15,14 @@ This is the canonical map of the research archive. Start with
 ## Canonical layer
 
 Latest unnumbered mathematical supplement:
+[synchronized-shadow results](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md),
+[audit](../research/audits/synchronized-shadow-closure/REPORT.md),
+[archived proposal](../research/audits/synchronized-shadow-closure/PROPOSAL.md),
+[experiment](../research/experiments/synchronized-shadow-closure.json).
+The [theory handoff](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md)
+is unreviewed OPEN backlog, not evidence or a second claims ledger.
+
+Previous supplement:
 [critical-safe-mass results](../CRITICAL_SAFE_MASS_RUN_RESULTS.md),
 [proof](../research/audits/critical-safe-mass/REPORT.md),
 [experiment](../research/experiments/critical-safe-mass.json).

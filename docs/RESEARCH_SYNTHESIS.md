@@ -7,13 +7,20 @@
 > Older artifact status snapshots are historical, not current claim authority.
 
 
-**Audit date:** 2026-09-10
+**Audit date:** 2026-09-11
 
 **Audited base:** Phase 44 evidence and independent verifier
 
 **Latest phase:** Phase 44 (acceptance commands and commit in its run report)
 
-**Latest supplement:** [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md),
+**Latest supplement:** [synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md),
+P274--P280/E64/NG50. Exact synchronized peers include an even third source;
+one fixed three-map affine contraction fails integrality, while smaller
+subalphabets admit shrinking maps. No global ancestor coverage or closed
+descent follows. The [B1--B6 backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md)
+remains unreviewed, not an accepted theorem layer.
+
+**Previous supplement:** [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md),
 P271--P273/E63/NG49. A classical generating-function specialization gives
 sharp critical safe-word order, translated mass <9 and renewal log-log
 growth. The finite-prefix filter is infinite; the missing ingredient is

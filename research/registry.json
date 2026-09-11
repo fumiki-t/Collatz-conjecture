@@ -26,6 +26,14 @@
       "experiment_manifest":"research/experiments/critical-safe-mass.json",
       "claim_ids":["P271","P272","P273","E63","NG49"],
       "expected_verifier_fields":{"valid":true,"generator_imported":false,"count_rows":513,"exhaustive_words":524287,"interval_queries":59,"filter_shells":55,"NG46_potentials_checked":2,"NG45_formal_evidence_rebuilt":true,"generic_subset_checks":true,"permanent_source_existence_asserted":false,"EXT08_used":false,"proves_collatz":false}
+    },
+    {
+      "id":"synchronized-shadow-closure",
+      "report":"SYNCHRONIZED_SHADOW_RUN_RESULTS.md",
+      "verifier_artifact":"artifacts/synchronized_shadow_verifier.json",
+      "experiment_manifest":"research/experiments/synchronized-shadow-closure.json",
+      "claim_ids":["P274","P275","P276","P277","P278","P279","P280","E64","NG50"],
+      "expected_verifier_fields":{"valid":true,"generator_imported":false,"unit_edges":122,"two_thirds_edges":334,"enumerated_word_corpus":2332,"common_affine_candidates":1179,"ratio_integer_lifts":334,"NG46_potentials_checked":2,"NG45_formal_evidence_rebuilt":true,"infinite_positive_source_constructed":false,"all_ancestors_classified":false,"backlog_accepted":false,"EXT08_used":false,"proves_collatz":false}
     }
   ],
   "canonical_documents": [
@@ -165,6 +173,7 @@
     }
   ],
   "watch_claims": [
+    "P274", "P275", "P276", "P277", "P278", "P279", "P280", "E64", "NG50",
     "P271",
     "P272",
     "P273",

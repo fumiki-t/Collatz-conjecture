@@ -1,0 +1,22 @@
+{
+  "EXT08_used": false,
+  "H112_status": "OPEN",
+  "H72_status": "OPEN",
+  "all_ancestors_classified": false,
+  "backlog_B1_B6_accepted": false,
+  "coequal_minimality": "minimum q only, same L/q and safe literal words; not P256",
+  "conjugacy_domain": "one affine identity for u2/u3/u4, 0<r<1, at least one integer input and output",
+  "global_ancestor_existence_proved": false,
+  "height_equal_domain": "equal intrinsic normalized limits, not assumed bounded difference",
+  "independent_authorship_claimed": false,
+  "infinite_positive_source_constructed": false,
+  "infinite_proofs_machine_formalized": false,
+  "peer_domain": "same L and q in every prescribed left block; right words unrestricted",
+  "proves_collatz": false,
+  "ratio_initial_integrality": "3 divides 2*S+d for ratio 2/3; graph is an overapproximation",
+  "same_height_min_and_max_interchangeable": false,
+  "schema": "synchronized-shadow-scope-v1",
+  "shrink_language_closed": false,
+  "status": "VERIFIED_FINITE",
+  "zip_sha256": "6b276556e66271daddae1077d9ca7bdc06a421e0414004b71a319e647ab519e2"
+}

@@ -29,6 +29,12 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
+The [synchronized-shadow audit](SYNCHRONIZED_SHADOW_RUN_RESULTS.md) classifies
+parallel sources under exact block synchronization and certifies an integer
+obstruction to one fixed affine contraction of three specified maps. It does
+not classify all ancestors or construct an infinite positive source. Earlier
+unreviewed theory is preserved separately, not as accepted evidence.
+
 The [critical-safe-mass supplement](CRITICAL_SAFE_MASS_RUN_RESULTS.md) proves
 sharp safe-word counting and a translated critical-mass bound. The associated
 finite-prefix filter is infinite: summability does not solve Collatz or

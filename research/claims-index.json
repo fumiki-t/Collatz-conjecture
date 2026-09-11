@@ -1,5 +1,5 @@
 {
-  "claim_count": 364,
+  "claim_count": 373,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -5356,9 +5356,130 @@
       "last_audited": "2026-09-10",
       "notes": "The infinite set {2^k:k>=1} has translated mass <=mu/(mu-1)<3<9, but every point fails first-step safety. It is not a Collatz counterexample; no infinite-model minimality is asserted.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "The minimum odd count for distinct positive safe literal sources coalescing at equal L and q is 22. The specified length-34 pair has sources 7435082747 and 7435082751 and endpoint 13581056558. Prefixing by the specified parallel u1/v1 blocks gives all-r equal-coefficient families with v2(139S+2903)=11r+5 and, on S=1 mod3 lifts, a smaller coefficient-gain-3/2 ancestor.",
+      "collatz_implication": "Adds equal-coefficient ordinary-source improvement and an explicit resource limit for deep lifted families.",
+      "dependencies": "Exact safe position bounds, q<=20 width comparisons, complete 24-case q=21 remainder, parity decoding and E64.",
+      "dependency_ids": [
+        "E64"
+      ],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 3; independent verifier.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "P274",
+      "last_audited": "2026-09-11",
+      "notes": "Minimality is in q only; P256's shorter-alternative negative carry is distinct. Different r source sets are disjoint; arbitrary depth is not arbitrary depth at one fixed source.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "If a positive ordinary source S realizes an infinite schedule over the four specified left blocks, S+4 realizes its right schedule at equal normalized height and different nonperiodic future. A positive z<5S/6 has Ycal(z)<=6561/8192 Ycal(S) and joins the right future. Thus no globally least ordinary or height-minimizing nonperiodic source realizes this left language.",
+      "collatz_implication": "Excludes one language from global-minimizer representatives without supplying global language coverage.",
+      "dependencies": "Exact four-block identities, literal integer branches, uniform expansion and geometric normalization; P242 for global-minimum interpretation.",
+      "dependency_ids": [
+        "P242"
+      ],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 4.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "P275",
+      "last_audited": "2026-09-11",
+      "notes": "No infinite ordinary source is constructed. The image language need not close, and z is not an ancestor of the original left future.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For finite expanding left alphabets and synchronized per-block L/q peers, a prescribed normalized-height ratio forces the affine offset into the explicit correction-extrema interval. For the four specified blocks, all same-height positive peers of an actual infinite source S are S,S+4, plus S+3 exactly when the first label is 2.",
+      "collatz_implication": "Includes variable differences and even/unsafe peers under the exact synchronization, not all ancestors or all equal-height sources.",
+      "dependencies": "Bounded-offset escape proof; full 223-state/122-edge graph, SCC reconstruction E64; finite 2-adic valuation resource excludes negative live states.",
+      "dependency_ids": [
+        "E64"
+      ],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 5.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "P276",
+      "last_audited": "2026-09-11",
+      "notes": "The third peer starts 01111111010100; its half is smaller and has half the height. A finite third-peer example is not an infinite ordinary realization.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Conditional on an actual positive infinite left schedule in the four-block alphabet, no positive peer with the identical per-block L/q history has normalized height exactly 2/3 of the left source.",
+      "collatz_implication": "Rules out this one synchronized shrink ratio, not smaller sources in general.",
+      "dependencies": "P276 offset argument; 674-state/334-edge complete graph E64; all live paths force an eventual single expanding block.",
+      "dependency_ids": [
+        "E64",
+        "P276"
+      ],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 6.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "P277",
+      "last_audited": "2026-09-11",
+      "notes": "Actual initialization requires 3 divides 2S+d; the exclusion graph safely overapproximates. Other ratios and different-time constructions survive.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "The subalphabets u2/u3 and u3/u4 admit literal positive integer contractions (x-95)/4 and respectively (x-83)/8, (3x-241)/32 on every hypothesized infinite positive left source; normalized heights shrink by 1/4,1/8,3/32.",
+      "collatz_implication": "Supplies strong proper-subalphabet reductions, not a self-contained descent of the full safe language.",
+      "dependencies": "Exact conjugate words, inherited initial-bit divisibility at every boundary, positivity from least source residues, uniform expansion.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 7; E64 finite regressions.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "P278",
+      "last_audited": "2026-09-11",
+      "notes": "The output language is not asserted closed; these are not counterexamples to P277 or P279.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "No single H(x)=rx+s, 0<r<1, conjugates the specified u2/u3/u4 to arbitrary Collatz words while taking any integer to an integer. At r=1 the only integer-compatible translations are 0 and +4.",
+      "collatz_implication": "An exact integer obstruction to one fixed affine simultaneous contraction.",
+      "dependencies": "Slope equality forces L=14,q=9; integer correction differences force r=k/288; full 2002-correction pool and all 1179 candidate residues modulo 3299 reconstructed by E64.",
+      "dependency_ids": [
+        "E64"
+      ],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 8.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "P279",
+      "last_audited": "2026-09-11",
+      "notes": "Right words are not restricted in advance by length or safety. No state-dependent/nonlinear/non-synchronized ancestor exclusion follows.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "A finite nonempty family of expanding real affine maps closed under conjugation by one affine contraction has a common fixed point. For expanding Collatz words this yields a negative rational common center with odd denominator, a finite valuation budget for every positive switching source, and every family member is a power of one common primitive word.",
+      "collatz_implication": "Explains why simple affine self-closure gives periodic valuation exhaustion rather than a new arbitrary-switching descent.",
+      "dependencies": "Finite permutation and diameter contraction; fixed-point affine normalization; literal word injectivity and word commutation.",
+      "dependency_ids": [],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 9.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "P280",
+      "last_audited": "2026-09-11",
+      "notes": "Does not forbid general finite-state rewriting, matrix interpretations or unrelated word families.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Independently reconstructs 2332 right words, complete 122/334-edge graphs, 24 q=21 rejections, 1179 affine contraction candidates, 4092 lifted four-block pairs, 1023 third peers, 1134 subalphabet pairs and 68 repeat lifts. Also checks 334 mod3-compatible ratio edges, mandatory families and retained NG45/NG46 evidence.",
+      "collatz_implication": "Certifies the finite remainders of the written synchronized/affine reductions.",
+      "dependencies": "Declared finite scopes; residue iteration versus positional cylinders, pruning versus SCC, literal versus valuation decoding, grid versus nearby correction pairs.",
+      "dependency_ids": [],
+      "evidence": "[`../SYNCHRONIZED_SHADOW_RUN_RESULTS.md`](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md); `verifier/verify_synchronized_shadow.py`; tamper tests and SHA-256 manifest.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "E64",
+      "last_audited": "2026-09-11",
+      "notes": "B1--B6 backlog is unreviewed, not evidence. Finite counts do not establish an infinite ordinary source; proves_collatz=false.",
+      "status": "VERIFIED_FINITE"
+    },
+    {
+      "claim": "One integer-compatible affine contraction can simultaneously conjugate the specified three expanding left maps u2/u3/u4 into Collatz words.",
+      "collatz_implication": "Rejects the tempting extension of P278's proper-subalphabet shrink maps to this fixed three-map conjugacy.",
+      "dependencies": "The exact affine-identity and at-least-one-integer-input/output domain of P279; no state dependence.",
+      "dependency_ids": [
+        "P279"
+      ],
+      "evidence": "[`../research/audits/synchronized-shadow-closure/REPORT.md`](../research/audits/synchronized-shadow-closure/REPORT.md), Section 8; E64 full remainder.",
+      "first_introduced": "Synchronized-shadow supplement",
+      "id": "NG50",
+      "last_audited": "2026-09-11",
+      "notes": "All 1179 real symbolic candidates fail the modulo-3299 integer condition. No minimality among all alphabets or general rewrite impossibility is claimed.",
+      "status": "REFUTED"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "3b491a28a9305377318896cfb9fbc9f0561b66c2a3278cad31fc754cbf6264f5"
+  "source_sha256": "396506456f05bc513d1fea06ae44b98add42a365cca0e90f84e9d0adfdac3ef7"
 }

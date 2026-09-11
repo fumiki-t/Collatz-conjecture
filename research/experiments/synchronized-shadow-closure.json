@@ -1,0 +1,28 @@
+{
+  "schema_version":1,
+  "id":"synchronized-shadow-closure",
+  "status":"RUNNING",
+  "claim_ids":["P274","P275","P276","P277","P278","P279","P280","E64","NG50","H112","H72"],
+  "objective":"Audit equal-coefficient collisions, synchronized normalized-height peers and affine contraction obstructions; preserve unreviewed theory separately.",
+  "exact_scope":{
+    "quantifiers":["Four specified left blocks, arbitrary right words with the same per-block length and weight", "All offsets in proved bounded strips, all 2332 right words, all three-map affine contractions forced to L=14 q=9", "Finite schedules through five blocks, subalphabets through six, lifts r=0..16; no infinite ordinary-source existence claim"],
+    "bounds":{"unit_states":223,"ratio_states":674,"affine_scale_k":287,"q21_remainder":24,"macro_depth":5,"subalphabet_depth":6,"lift_r":16},
+    "completeness":"Analytic finite reductions plus independent graph and correction enumeration. Unreviewed backlog B1--B6 is not accepted evidence."
+  },
+  "arithmetic":{"proof_decisions":"exact","floating_point_role":"none"},
+  "commands":{
+    "generator":[".venv/bin/python src/synchronized_shadow_search.py --artifact-dir artifacts"],
+    "verifier":[".venv/bin/python verifier/verify_synchronized_shadow.py --artifact-dir artifacts --output artifacts/synchronized_shadow_verifier.json"],
+    "tests":[".venv/bin/python -m pytest -q tests/test_synchronized_shadow.py tests/test_research_health.py", ".venv/bin/python scripts/research_health.py --strict"]
+  },
+  "independence":{
+    "verifier_reconstructs":["All fixed-weight right words and positional corrections versus residue iteration", "SCC and reverse reachability versus iterative pruning", "Valuation decoding versus literal residue decoding", "Nearby correction pairs versus scale/correction grid"],
+    "forbidden_imports":["src","synchronized_shadow_search"],
+    "tamper_tests":["tests/test_synchronized_shadow.py"]
+  },
+  "adversarial_families":["2^m-1","8^m-5","(110|111)^*","A=11101","B=1100","A^rB^s","NG43","NG45","NG46","even third source","r=1 translation boundary","unrealized 2-adic schedules"],
+  "artifacts":["artifacts/synchronized_shadow_evidence.json","artifacts/synchronized_shadow_regressions.json","artifacts/synchronized_shadow_scope.json","artifacts/synchronized_shadow_verifier.json","artifacts/SHA256SUMS"],
+  "stop_conditions":["Reject an incomplete offset/correction reduction or any promotion from synchronized peers to all ancestors", "Preserve old artifacts and scratch; backlog requires a separate audit before promotion"],
+  "interpretation_boundary":["Same coefficient is not strict gain; different future is not coalescent ancestry", "One fixed affine conjugacy obstruction is not general rewrite impossibility", "Positive infinite source existence, H112/H72/H89/H133 remain OPEN; EXT08 unused"],
+  "proves_collatz":false
+}

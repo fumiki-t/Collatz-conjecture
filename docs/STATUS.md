@@ -7,7 +7,7 @@
 > Older artifact status snapshots are historical, not current claim authority.
 
 
-**Last updated:** 2026-09-10
+**Last updated:** 2026-09-11
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -15,7 +15,17 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest supplement: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
+Latest supplement: [synchronized shadow closure](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md).
+P274--P280/E64 record equal-coefficient collisions, conditional parallel
+sources and contractions, complete synchronized peer graphs and affine
+self-closure rigidity. NG50 refutes one fixed three-map integer affine
+contraction, not general ancestry. Keep the even third source, different
+futures and depth-dependent valuation budgets. No infinite ordinary source,
+general coverage or image-language closure is proved. The
+[backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md) preserves
+B1--B6 as unreviewed OPEN material, not accepted claims.
+
+Previous supplement: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
 P271 proves the safe-word generating function and sharp critical order
 Theta(mu^n/n^(3/2)); P272 gives uniform translated mass <9 for permanent
 safe sources and an infinite finite-prefix filter. P273 adds a critical

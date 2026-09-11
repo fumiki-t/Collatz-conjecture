@@ -1,0 +1,137 @@
+{
+  "EXT08_used": false,
+  "NG45_formal_evidence_rebuilt": true,
+  "NG46_potentials_checked": 2,
+  "all_ancestors_classified": false,
+  "backlog_accepted": false,
+  "common_affine_candidates": 1179,
+  "direct_pair_and_third_steps": 570663,
+  "enumerated_word_corpus": 2332,
+  "finite_pairs": 4092,
+  "finite_schedules": 1364,
+  "generator_imported": false,
+  "historical_files_preserved": 6,
+  "independent_external_review": false,
+  "infinite_positive_source_constructed": false,
+  "lift_rows": 68,
+  "negative_exit_ranks": [
+    [
+      [
+        -83,
+        0
+      ],
+      [
+        -81,
+        1
+      ],
+      [
+        -79,
+        1
+      ],
+      [
+        -78,
+        1
+      ],
+      [
+        -77,
+        2
+      ],
+      [
+        -76,
+        2
+      ],
+      [
+        -74,
+        1
+      ],
+      [
+        -69,
+        2
+      ],
+      [
+        -68,
+        2
+      ],
+      [
+        -64,
+        3
+      ],
+      [
+        -20,
+        0
+      ],
+      [
+        -18,
+        1
+      ]
+    ],
+    [
+      [
+        -174,
+        1
+      ],
+      [
+        -170,
+        1
+      ],
+      [
+        -168,
+        1
+      ],
+      [
+        -167,
+        0
+      ],
+      [
+        -164,
+        1
+      ],
+      [
+        -163,
+        1
+      ],
+      [
+        -162,
+        1
+      ],
+      [
+        -160,
+        1
+      ],
+      [
+        -159,
+        1
+      ],
+      [
+        -157,
+        1
+      ],
+      [
+        -149,
+        1
+      ],
+      [
+        -41,
+        0
+      ],
+      [
+        -37,
+        1
+      ]
+    ]
+  ],
+  "normalization_paths": 28,
+  "proves_collatz": false,
+  "q21_complete_remainder": 24,
+  "ratio_integer_lifts": 334,
+  "regression_words": 48,
+  "scope": "Finite graph complete only under proved bounded affine-offset and synchronized per-block-count hypotheses; written proofs in the audit REPORT.md, not formalized.",
+  "status": "VERIFIED_FINITE",
+  "subalphabet_finite_pairs": 1134,
+  "third_source_checks": 1023,
+  "two_thirds_cases": 2696,
+  "two_thirds_edges": 334,
+  "unit_edges": 122,
+  "unit_offset_cases": 892,
+  "valid": true
+}

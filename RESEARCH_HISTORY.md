@@ -1,5 +1,17 @@
 # Collatz conjecture research history
 
+## 2026-09-11 — synchronized shadow closure and theory handoff
+
+P274--P280/E64 distinguish equal-coefficient source improvement, different-
+future shrinking and synchronized same-height peers. Complete offset graphs
+give two peers or three with an even exception; the synchronized 2/3 ratio
+fails. Proper-subalphabet contractions survive, but NG50 certifies that all
+1179 common three-map affine contractions fail ordinary integrality. Simple
+finite affine self-closure forces a common fixed point and valuation exhaustion.
+These are scoped reductions, not H112/H72 or cycle exclusion. The proposal
+and unreviewed B1--B6 backlog are preserved separately; no old claim or artifact
+changes. See the [run record](SYNCHRONIZED_SHADOW_RUN_RESULTS.md).
+
 ## 2026-09-10 — critical-safe-mass supplement
 
 P271--P273 give an internally proved classical generating-function

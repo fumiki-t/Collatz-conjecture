@@ -13,7 +13,14 @@ competent researcher or AI continuing the project without the original chat.
 
 ## 1. Safety boundary
 
-Latest: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
+Latest: [synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md).
+P274--P280/E64/NG50 preserve the q=22 equal-coefficient collision, conditional
+parallel/shrink maps, exact synchronized peer graphs and the complete
+three-map affine integer obstruction. Keep the even third peer, different
+future, and per-block L/q hypotheses. No infinite ordinary source or general
+ancestor exclusion follows. B1--B6 is [unreviewed backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md).
+
+Previous: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
 P271--P273 give sharp safe-word order, translated critical mass <9 and
 renewal-boundary log-log growth. The finite filter is infinite; NG49 blocks
 mass-only exclusion. These bounds do not count all orbit values or addresses.

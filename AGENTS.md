@@ -529,6 +529,16 @@ not a strict bound merely by passing to the limit. The needed new theorem
 is an ordinary-source/ancestor supply contradicting the upper mass. Do not
 substitute deeper counting, random parity or EXT08; H112/H72 remain OPEN.
 
+The 2026-09-11 synchronized-shadow supplement adds P274--P280/E64/NG50.
+Equal-coefficient source order is not strict coefficient gain. P276's peer
+classification requires the same L/q in each block and includes the even
+S+3 exception. P275 may shrink into a different future; image-language
+closure is not proved. P279 excludes one fixed three-map affine conjugacy,
+not state-dependent/time-changing/all-Q ancestry. Preserve P274's valuation
+budget, NG43/NG45/NG46, and the unreviewed B1--B6 backlog without promotion.
+The missing input is ordinary-source-linked coverage and closure or a
+decreasing rank for the nonclosed remainder. H112/H72 remain OPEN.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

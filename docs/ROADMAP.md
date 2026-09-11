@@ -11,6 +11,16 @@ The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
 
+[Synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md): P279/NG50
+close the one-fixed-affine-conjugacy attempt for the specified three maps.
+Next retain state dependence, ordinary divisibility and both time and Q
+differences; prove full coverage and image-language closure or a rank for
+the nonclosed remainder. P275/P278 already shrink proper languages but do
+not supply that closure. P276 is synchronized, not all-ancestor classification.
+Do not interchange minimal and maximal ordinary representatives within a
+height class. Backlog B1--B6 needs separate audits, not promotion from this
+finite certificate; deeper shadow counts do not strengthen P279.
+
 [Critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md): P272 gives an
 absolute translated critical-moment ceiling for distinct permanent-safe
 sources. Seek a source/lift-linked lower supply of those actual integers
