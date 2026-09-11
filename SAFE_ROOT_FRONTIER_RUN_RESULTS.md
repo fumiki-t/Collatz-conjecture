@@ -71,9 +71,36 @@ byte. The verifier reads old reference evidence from the checkout without
 modifying it. Its implementation imports neither search module. Numerical
 proof decisions use only integers/rationals; elapsed timing is not evidence.
 
-The [experiment manifest](research/experiments/safe-root-frontier.json) will
-record clean-worktree acceptance and the implementation commit. Artifact
+The [experiment manifest](research/experiments/safe-root-frontier.json)
+records clean-worktree acceptance and the implementation commit. Artifact
 digests are in [SHA256SUMS](artifacts/SHA256SUMS).
+
+## Clean acceptance and SHA-256
+
+- Initial implementation: `d9aadd86897713bd85df447b9f91b555b215f539`.
+- Audited implementation with control-plane regressions:
+  `90ff3233d1081877c76d59a4c05ba77921e6a53e`.
+- New focused suite: **64 passed in 12.12s**, including all 23 supplied
+  rejection controls; optimized boundary unittest: 11 passed in 0.031s.
+- Clean detached-worktree dependency suite: **508 passed in 66.30s**.
+  The exact file list is in the experiment manifest; the full repository
+  suite and large historical corpus were not rerun.
+- Strict clean-worktree health: valid=true, errors=[], warnings=[];
+  379 claims, 313 artifact entries, latest numbered phase 44.
+- All four files reproduce byte-for-byte in a separate temporary directory,
+  with the verifier under `python -O`. All 309 prior artifact hashes unchanged.
+- 173 tracked Markdown files pass link checks; index, compilation and diff
+  checks pass. Existing user scratch was not staged or modified.
+
+Manifest SHA-256:
+`05f058cbd5eb70d726b6d83cbcff71e547e6482658b891f4355db57abde688af`.
+
+```text
+1c63edb5d03269e699a16cb295d1c311daab55634ebd89bace95c0e8475c0481  safe_root_frontier_certificates.json
+156d17f8c0a1fd59624bcee01ad65d95b536d8eb4a453c22b5e91ad86f2bb0cd  safe_root_frontier_evidence.json
+27a160cdf6962f036bb9ef38feb2f600ac08f19a3f73828104f32ccdc774e668  safe_root_frontier_regressions.json
+52bb78b4b6a0a061974fbbef463eed6e656dc2db55697b21302da4a3eaa933d0  safe_root_frontier_verifier.json
+```
 
 ## Issues found and repaired during audit
 
