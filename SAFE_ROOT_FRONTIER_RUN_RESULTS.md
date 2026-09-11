@@ -87,6 +87,9 @@ digests are in [SHA256SUMS](artifacts/SHA256SUMS).
   of target (703,80). The reused certificate remains mathematically valid
   at (703,79), so that test expectation was wrong. The corrected tests
   distinguish invalid parity from a valid certificate for a different query.
+- The first clean dependency run exposed a stale control-plane test count
+  (373 rather than 379 after six new claims). The count and new claim-status
+  assertions were updated; this was not an arithmetic/certificate failure.
 - No fatal flaw was found in R1--R6. We retain their essential restrictions:
   global source-set reduction, every short hit, z<S normalization equality,
   hypothetical-minimizer completeness and no future-trace complexity bound.

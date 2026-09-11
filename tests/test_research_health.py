@@ -111,6 +111,10 @@ def test_repository_research_health() -> None:
         assert result["active_focus"][f"P{number}"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["E64"] == "VERIFIED_FINITE"
     assert result["active_focus"]["NG50"] == "REFUTED"
+    for number in range(281,285):
+        assert result["active_focus"][f"P{number}"] == "VERIFIED_THEOREM"
+    assert result["active_focus"]["E65"] == "VERIFIED_FINITE"
+    assert result["active_focus"]["NG51"] == "REFUTED"
     assert result["active_focus"]["EXT09"] == "EXTERNAL_THEOREM"
     assert result["active_focus"]["P117"] == "VERIFIED_THEOREM"
     assert result["active_focus"]["P118"] == "VERIFIED_THEOREM"
@@ -400,8 +404,12 @@ def test_generated_claim_index_is_complete() -> None:
     generated = build_index(root)
     committed = json.loads((root / "research/claims-index.json").read_text(encoding="utf-8"))
     assert committed == generated
-    assert committed["claim_count"] == 373
+    assert committed["claim_count"] == 379
     rows = {row["id"]: row for row in committed["claims"]}
+    for number in range(281,285):
+        assert rows[f"P{number}"]["status"] == "VERIFIED_THEOREM"
+    assert rows["E65"]["status"] == "VERIFIED_FINITE"
+    assert rows["NG51"]["status"] == "REFUTED"
     assert rows["H72"]["status"] == "OPEN"
     assert rows["H112"]["status"] == "OPEN"
     assert rows["P115"]["status"] == "VERIFIED_THEOREM"
