@@ -1,5 +1,25 @@
 # Failed and deprioritized approaches
 
+## NG51 — pruning crossing leaves without checking short hits
+
+- Hypothesis: only the depth-N surviving roots and their histories need
+  target-hit checks; discarded crossing leaves can omit all earlier hits.
+- Why plausible: every complete safe path lies in a safe-prefix cylinder.
+- Minimum empty-target counterexample: S=y=14, N=4. Source 9 reaches 14
+  after word 1 with coefficient 3/2, then crosses at word 10 before depth 4.
+  No survivor supplies the missing safe improvement. Literal checks for
+  S<14 establish minimality only among empty positive targets.
+- The supplied S=17/11 blind-cover example is also kept, with crossing word
+  11010. An early incorrect S=11 candidate was rejected by literal parity
+  checking before acceptance; 7 begins 1110, not 1100.
+- Failure is local. P283 survives by checking all internal prefixes and
+  earlier trace hits. Also never cut at normalization equality when z<S:
+  later even steps can complete an equal-coefficient, smaller-source hit.
+- Do not retry: interpreting a complete cover as a complete endpoint test,
+  or converting fewer initial roots into a future trace-time bound.
+
+See the [safe-root audit](../research/audits/safe-root-frontier/REPORT.md).
+
 ## NG49 — critical summability is not an emptiness theorem
 
 - Hypothesis: a positive integer set whose translated rho-mass is <9 at

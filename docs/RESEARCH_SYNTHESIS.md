@@ -13,12 +13,19 @@
 
 **Latest phase:** Phase 44 (acceptance commands and commit in its run report)
 
-**Latest supplement:** [synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md),
+**Latest supplement:** [safe-root frontier](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md),
+P281--P284/E65/NG51. Exact fixed-Q windows audit B1; complete safe-root
+certificates include all positive sources, lengths and Q. Termination is
+proved only for fixed prefixes of a hypothetical global LEX minimizer;
+its finite minimum-height unresolved set is not excluded. Root count is not
+trace time. Keep S=14's short-hit falsifier and smaller-source equality.
+
+**Previous supplement:** [synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md),
 P274--P280/E64/NG50. Exact synchronized peers include an even third source;
 one fixed three-map affine contraction fails integrality, while smaller
 subalphabets admit shrinking maps. No global ancestor coverage or closed
-descent follows. The [B1--B6 backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md)
-remains unreviewed, not an accepted theorem layer.
+descent follows. In the [archived backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md),
+B1 is now audited as P281/P282; B2--B6 remains unreviewed.
 
 **Previous supplement:** [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md),
 P271--P273/E63/NG49. A classical generating-function specialization gives

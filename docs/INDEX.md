@@ -15,12 +15,20 @@ This is the canonical map of the research archive. Start with
 ## Canonical layer
 
 Latest unnumbered mathematical supplement:
+[safe-root-frontier results](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md),
+[proof audit](../research/audits/safe-root-frontier/REPORT.md),
+[proposal](../research/audits/safe-root-frontier/PROPOSAL.md),
+[experiment](../research/experiments/safe-root-frontier.json).
+P281--P284/E65/NG51; fixed-Q windows and independent all-length LEX certificates.
+
+Previous supplement:
 [synchronized-shadow results](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md),
 [audit](../research/audits/synchronized-shadow-closure/REPORT.md),
 [archived proposal](../research/audits/synchronized-shadow-closure/PROPOSAL.md),
 [experiment](../research/experiments/synchronized-shadow-closure.json).
 The [theory handoff](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md)
-is unreviewed OPEN backlog, not evidence or a second claims ledger.
+is an archived backlog, not a second claims ledger. Only B1 is now audited
+as P281/P282; B2--B6 remains unreviewed OPEN.
 
 Previous supplement:
 [critical-safe-mass results](../CRITICAL_SAFE_MASS_RUN_RESULTS.md),

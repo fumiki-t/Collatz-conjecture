@@ -44,6 +44,8 @@ jobs:
           tests/test_transient_sparsity.py
           tests/test_critical_safe_mass.py
           tests/test_synchronized_shadow.py
+          tests/test_safe_root_frontier.py
+          tests/test_safe_root_boundaries.py
       - name: Verify tracked artifact manifest
         working-directory: artifacts
         run: sha256sum --check SHA256SUMS

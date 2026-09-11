@@ -13,12 +13,20 @@ competent researcher or AI continuing the project without the original chat.
 
 ## 1. Safety boundary
 
-Latest: [synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md).
+Latest: [safe-root frontier](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md).
+P281/P282 turn B1 into exact fixed-Q safe windows. P283 gives all-length
+LEX certificates; P284 only gives minimizer-prefix termination and an
+existential finite unresolved minimum set. Preserve every short hit (NG51,
+S=14), smaller-source normalization equality, and UNKNOWN on budget limits.
+64 focused tests and complete query reconstruction guard the new mode.
+Next force source-linked ancestry, not a deeper bounded no-hit. B2--B6 stays OPEN.
+
+Previous: [synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md).
 P274--P280/E64/NG50 preserve the q=22 equal-coefficient collision, conditional
 parallel/shrink maps, exact synchronized peer graphs and the complete
 three-map affine integer obstruction. Keep the even third peer, different
 future, and per-block L/q hypotheses. No infinite ordinary source or general
-ancestor exclusion follows. B1--B6 is [unreviewed backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md).
+ancestor exclusion follows. B2--B6 is [unreviewed backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md).
 
 Previous: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
 P271--P273 give sharp safe-word order, translated critical mass <9 and

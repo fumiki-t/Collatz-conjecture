@@ -539,6 +539,20 @@ budget, NG43/NG45/NG46, and the unreviewed B1--B6 backlog without promotion.
 The missing input is ordinary-source-linked coverage and closure or a
 decreasing rank for the nonclosed remainder. H112/H72 remain OPEN.
 
+The 2026-09-12 safe-root-frontier supplement adds P281--P284/E65/NG51.
+Backlog B1 is audited as fixed-Q safe ancestor windows, not a successful-
+ancestor existence theorem; B2--B6 stays unreviewed. P281 is a global
+source-set reduction and retains odd-count caps, not a same-source claim.
+P283 certificates cover all lengths/Q only with full root coverage, every
+short hit, and valid cuts. Preserve NG51's empty-target S=14 and supplied
+S=17 cases; normalization equality is a cut only when z>=S. UNKNOWN is not
+evidence. The initial safe-root count bounds no future trace time. P284
+permits a finite nonempty minimum-height unresolved set without effective
+R or last cut. Seek ordinary-source/carry/lift arithmetic forcing LEX
+improvement or excluding compatible certificates; do not just extend Q or
+enumerate more roots. Phase 41/43 APIs and old artifacts remain unchanged;
+H112/H72/H89/H133 and EXT08 remain OPEN, proves_collatz=false.
+
 ## 16. Proof-claim emergency protocol
 
 If any agent believes it has proved or disproved the Collatz conjecture:

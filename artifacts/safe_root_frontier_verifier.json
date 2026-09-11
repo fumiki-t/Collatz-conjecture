@@ -1,0 +1,26 @@
+{
+  "EXT08_used": false,
+  "NG45_formal_evidence_rebuilt": true,
+  "NG46_potentials_checked": 2,
+  "all_length_queries": 2668,
+  "decoder_candidates": 16865,
+  "extrema_pairs": 72,
+  "family_words": 72,
+  "fixed_Q_queries": 10240,
+  "general_termination_proved": false,
+  "generator_imported": false,
+  "global_ancestor_existence_proved": false,
+  "proves_collatz": false,
+  "reference_states": 1189,
+  "safe_witness_occurrences": 2744,
+  "status": "VERIFIED_FINITE",
+  "status_counts": {
+    "IMPROVEMENT": 2483,
+    "NO_LEX_IMPROVEMENT": 185,
+    "certified_frontier_roots": 1195,
+    "trace_steps": 38313,
+    "tree_nodes": 5455
+  },
+  "valid": true,
+  "word_checks": 524287
+}

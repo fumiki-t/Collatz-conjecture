@@ -29,6 +29,11 @@ original chat history.
 **`OPEN` — this repository has not proved or disproved the Collatz
 conjecture. `proves_collatz=false`.**
 
+The [safe-root-frontier audit](SAFE_ROOT_FRONTIER_RUN_RESULTS.md) adds exact
+fixed-Q ancestor windows and independently checked all-length LEX certificates.
+It preserves short-hit and equal-coefficient source-order checks, but supplies
+no universal ancestor-existence or termination theorem.
+
 The [synchronized-shadow audit](SYNCHRONIZED_SHADOW_RUN_RESULTS.md) classifies
 parallel sources under exact block synchronization and certifies an integer
 obstruction to one fixed affine contraction of three specified maps. It does

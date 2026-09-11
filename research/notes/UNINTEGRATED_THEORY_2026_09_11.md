@@ -1,6 +1,9 @@
 # Unintegrated theory handoff — status boundary
 
-This is an archived proposal/backlog, not a second claims ledger. B1--B6 remain `OPEN` (unreviewed here). A-group acceptance is governed by [the shadow audit](../audits/synchronized-shadow-closure/REPORT.md), not the supplied wording below. No operator, critical all-orbit count or logarithmic improvement is accepted by the finite shadow certificates.
+This is an archived proposal/backlog, not a second claims ledger. The text
+below is the original historical snapshot. On 2026-09-12, **B1 only** was
+audited as P281/P282 in the [safe-root-frontier audit](../audits/safe-root-frontier/REPORT.md).
+B2--B6 remain `OPEN` (unreviewed here). A-group acceptance is governed by [the shadow audit](../audits/synchronized-shadow-closure/REPORT.md), not the supplied wording below. No operator, critical all-orbit count or logarithmic improvement is accepted by the finite shadow certificates.
 
 The three external papers mentioned below were checked only at their primary arXiv metadata/abstract pages on 2026-09-11; no theorem from them is an input to this acceptance. See [LITERATURE.md](../../docs/LITERATURE.md). Historical counts and historical claims of checking remain attributed to the submitted note. `proves_collatz=false`.
 

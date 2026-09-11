@@ -7,7 +7,7 @@
 > Older artifact status snapshots are historical, not current claim authority.
 
 
-**Last updated:** 2026-09-11
+**Last updated:** 2026-09-12
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -15,7 +15,17 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest supplement: [synchronized shadow closure](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md).
+Latest supplement: [safe-root frontier](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md).
+P281/P282 accept backlog B1's exact fixed-Q windows and global safe LEX
+reduction. P283 supplies all-positive/all-length certificates; P284 proves
+termination only at each prefix of a hypothetical global height/source
+minimizer. E65 checks 10,240 windows and 2,668 all-length queries. NG51's
+minimum empty-target S=14 forbids omitting short hits of crossing leaves.
+The initial tree bound is not a trace-time bound; the finite unresolved
+minimum set is not proved empty. Next force a source/lift-linked LEX
+improvement, not more bounded no-hits. B2--B6 stays unreviewed OPEN.
+
+Previous supplement: [synchronized shadow closure](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md).
 P274--P280/E64 record equal-coefficient collisions, conditional parallel
 sources and contractions, complete synchronized peer graphs and affine
 self-closure rigidity. NG50 refutes one fixed three-map integer affine
@@ -23,7 +33,8 @@ contraction, not general ancestry. Keep the even third source, different
 futures and depth-dependent valuation budgets. No infinite ordinary source,
 general coverage or image-language closure is proved. The
 [backlog](../research/notes/UNINTEGRATED_THEORY_2026_09_11.md) preserves
-B1--B6 as unreviewed OPEN material, not accepted claims.
+B1--B6 as an historical proposal; only B1 is now audited by P281/P282.
+B2--B6 remains unreviewed OPEN material.
 
 Previous supplement: [critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md).
 P271 proves the safe-word generating function and sharp critical order

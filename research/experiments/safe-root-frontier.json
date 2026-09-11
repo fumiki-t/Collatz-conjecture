@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "safe-root-frontier",
+  "status": "RUNNING",
+  "claim_ids": [
+    "P281",
+    "P282",
+    "P283",
+    "P284",
+    "E65",
+    "NG51",
+    "H112",
+    "H72"
+  ],
+  "objective": "Audit fixed-Q safe ancestor windows and all-length lexicographic safe-root certificates without a universal ancestor-existence claim.",
+  "exact_scope": {
+    "quantifiers": [
+      "All safe words at fixed q,L; all positive literal competitors under global safe reduction",
+      "Finite words through length 18; endpoints 1..256 with five Q caps and eight rational thresholds",
+      "2668 all-length target queries with a complete first-repeat oracle through source 705"
+    ],
+    "bounds": {
+      "word_length": 18,
+      "endpoint_max": 256,
+      "Q_max": 12,
+      "target_source_max": 127,
+      "target_length_max": 20,
+      "extra_target": [
+        703,
+        80
+      ],
+      "reference_sources": 705,
+      "auxiliary_verifier_extrema_length": 19
+    },
+    "completeness": "Fixed-Q enumeration is not all-Q. All-length certificates rely on global safe reduction, complete cylinder covers, short-prefix hits and justified stopping rules; budget exhaustion is UNKNOWN."
+  },
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "Timing only; no mathematical acceptance."
+  },
+  "commands": {
+    "generator": [
+      ".venv/bin/python -m src.safe_root_frontier_search --artifact-dir artifacts"
+    ],
+    "verifier": [
+      ".venv/bin/python verifier/verify_safe_root_frontier.py --artifact-dir artifacts --output artifacts/safe_root_frontier_verifier.json"
+    ],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_safe_root_frontier.py tests/test_safe_root_boundaries.py",
+      ".venv/bin/python scripts/research_health.py --strict"
+    ]
+  },
+  "independence": {
+    "verifier_reconstructs": [
+      "Literal source iteration versus safe correction extrema/valuation decoding",
+      "Independent first-repeat source oracle versus cylinder pruning",
+      "Positional affine maps versus generator recurrence; full typed evidence comparison"
+    ],
+    "forbidden_imports": [
+      "src",
+      "safe_ancestor_window",
+      "safe_root_frontier_search"
+    ],
+    "tamper_tests": [
+      "tests/test_safe_root_frontier.py"
+    ]
+  },
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "NG43",
+    "NG45",
+    "NG46",
+    "q22 equal coefficient",
+    "negative carry",
+    "short prefix hits",
+    "smaller-source normalization equality"
+  ],
+  "artifacts": [
+    "artifacts/safe_root_frontier_evidence.json",
+    "artifacts/safe_root_frontier_certificates.json",
+    "artifacts/safe_root_frontier_regressions.json",
+    "artifacts/safe_root_frontier_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Reject any incomplete global source reduction or false all-Q claim",
+    "Do not infer universal termination or ancestor existence from finite certificates"
+  ],
+  "interpretation_boundary": [
+    "B1 is audited separately from the unreviewed B2--B6 backlog",
+    "No trace-time bound from the initial frontier count; no effective minimizing height cutoff",
+    "H112/H72/H89/H133 and EXT08 remain OPEN"
+  ],
+  "proves_collatz": false
+}

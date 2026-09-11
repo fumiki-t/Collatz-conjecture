@@ -34,6 +34,38 @@
       "experiment_manifest":"research/experiments/synchronized-shadow-closure.json",
       "claim_ids":["P274","P275","P276","P277","P278","P279","P280","E64","NG50"],
       "expected_verifier_fields":{"valid":true,"generator_imported":false,"unit_edges":122,"two_thirds_edges":334,"enumerated_word_corpus":2332,"common_affine_candidates":1179,"ratio_integer_lifts":334,"NG46_potentials_checked":2,"NG45_formal_evidence_rebuilt":true,"infinite_positive_source_constructed":false,"all_ancestors_classified":false,"backlog_accepted":false,"EXT08_used":false,"proves_collatz":false}
+    },
+    {
+      "id": "safe-root-frontier",
+      "report": "SAFE_ROOT_FRONTIER_RUN_RESULTS.md",
+      "verifier_artifact": "artifacts/safe_root_frontier_verifier.json",
+      "experiment_manifest": "research/experiments/safe-root-frontier.json",
+      "claim_ids": [
+        "P281",
+        "P282",
+        "P283",
+        "P284",
+        "E65",
+        "NG51"
+      ],
+      "expected_verifier_fields": {
+        "valid": true,
+        "generator_imported": false,
+        "word_checks": 524287,
+        "extrema_pairs": 72,
+        "fixed_Q_queries": 10240,
+        "decoder_candidates": 16865,
+        "safe_witness_occurrences": 2744,
+        "all_length_queries": 2668,
+        "reference_states": 1189,
+        "family_words": 72,
+        "NG46_potentials_checked": 2,
+        "NG45_formal_evidence_rebuilt": true,
+        "general_termination_proved": false,
+        "global_ancestor_existence_proved": false,
+        "EXT08_used": false,
+        "proves_collatz": false
+      }
     }
   ],
   "canonical_documents": [
@@ -115,7 +147,7 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H72.md",
-      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "P117", "P119", "P120", "P121", "P122", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P219", "P220", "P221", "P222", "P223", "P224", "P225", "P227", "P228", "P231", "P232", "P233", "P234", "EXT08", "EXT10", "EXT11", "EXT12", "EXT13", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "E32", "E33", "E53", "E54", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58", "P257", "P258", "P259", "P260", "P261", "E59", "NG46", "P262", "P263", "P264", "P265", "P266", "P267", "E60"],
+      "depends_on": ["P69", "P72", "P73", "P75", "P76", "P77", "P78", "P79", "P80", "P81", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P107", "P108", "P109", "P110", "P111", "P112", "P113", "P114", "P115", "P116", "P117", "P119", "P120", "P121", "P122", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "P219", "P220", "P221", "P222", "P223", "P224", "P225", "P227", "P228", "P231", "P232", "P233", "P234", "EXT08", "EXT10", "EXT11", "EXT12", "EXT13", "E20", "E21", "E22", "E23", "E24", "E30", "E31", "E32", "E33", "E53", "E54", "NG21", "NG22", "NG23", "NG24", "NG25", "NG26", "NG30", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58", "P257", "P258", "P259", "P260", "P261", "E59", "NG46", "P262", "P263", "P264", "P265", "P266", "P267", "E60", "P281", "P282", "P283", "P284", "E65", "NG51"],
       "success_scope": "Exclude the permanent-safe nonperiodic branch. P242/P243 give an all-positive normalized-height minimum and H112 equivalence. P247 stabilization has no effective last join; P251/NG45 show formal analytic conditions do not force same-vertex rewriting. P258 adds pointwise all-length certificates and P260 bounds ancestor sources by 13S, but neither supplies a global contradiction; retain NG46 and ordinary-source arithmetic. Cycles remain separate. P262--P264 add lower variation costs, not an upper budget or ancestor theorem. P266 excludes one oscillating model; keep ordinary-source arithmetic and NG46."
     },
     {
@@ -123,7 +155,7 @@
       "status": "OPEN",
       "priority": "P0",
       "context": "docs/context/H112.md",
-      "depends_on": ["P98", "P112", "P114", "P115", "P116", "P117", "P121", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "EXT08", "E31", "E32", "E33", "NG22", "NG23", "NG28", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58", "P257", "P258", "P259", "P260", "P261", "E59", "NG46", "P262", "P263", "P264", "P265", "P266", "P267", "E60"],
+      "depends_on": ["P98", "P112", "P114", "P115", "P116", "P117", "P121", "P123", "P124", "P125", "P126", "P127", "P128", "P129", "P130", "P131", "EXT08", "E31", "E32", "E33", "NG22", "NG23", "NG28", "NG31", "P235", "P236", "P237", "P238", "P239", "P240", "E55", "P242", "P243", "P244", "P245", "P246", "NG43", "E56", "P247", "P248", "P249", "P250", "P251", "NG44", "NG45", "E57", "P252", "P253", "P254", "P255", "P256", "E58", "P257", "P258", "P259", "P260", "P261", "E59", "NG46", "P262", "P263", "P264", "P265", "P266", "P267", "E60", "P281", "P282", "P283", "P284", "E65", "NG51"],
       "success_scope": "Prove infinitely many nonzero canonical lifts on every infinite safe all-prefix same-Q geodesic. P243 identifies this with nonperiodic exclusion without X02. P248 supplies complete finite decoding, not ancestor existence; P251/NG45 forbid analytic-only same-vertex gain. P258 finite potentials certify all-length no-gain pointwise; P259 completeness is only at a hypothetical global minimizer. NG46 refutes finite geodesic defect monotonicity; no universal termination or variation budget follows. P262--P264 add lower variation costs, not an upper budget or ancestor theorem. P266 excludes one oscillating model; keep ordinary-source arithmetic and NG46."
     },
     {
@@ -173,6 +205,7 @@
     }
   ],
   "watch_claims": [
+    "P281", "P282", "P283", "P284", "E65", "NG51",
     "P274", "P275", "P276", "P277", "P278", "P279", "P280", "E64", "NG50",
     "P271",
     "P272",

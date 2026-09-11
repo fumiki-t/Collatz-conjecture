@@ -1,5 +1,18 @@
 # Collatz conjecture research history
 
+## 2026-09-12 — safe-root frontier and exact ancestor windows
+
+P281/P282 audit B1 with global safe LEX reduction, sharp fixed-count
+correction extrema and complete bounded-Q windows. P283 adds an independent
+all-length certificate mode; P284 retains every fixed prefix of a hypothetical
+global LEX height minimizer and describes a non-effective finite unresolved
+minimum set. E65 reconstructs 10240 query witness sets and 2668 all-length
+comparisons; NG51 preserves the minimum empty-target short-hit omission at
+S=14, with the supplied S=17 case retained. Initial root sparsity is not
+trace-time control or an ancestor lower bound. B2--B6 remains unreviewed,
+no older artifact/status changes, and all global obligations stay OPEN.
+See the [run record](SAFE_ROOT_FRONTIER_RUN_RESULTS.md).
+
 ## 2026-09-11 — synchronized shadow closure and theory handoff
 
 P274--P280/E64 distinguish equal-coefficient source improvement, different-

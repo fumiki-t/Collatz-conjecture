@@ -1,0 +1,605 @@
+{
+  "family_rows": [
+    {
+      "B": 5,
+      "endpoint": 4,
+      "q": 2,
+      "safe": true,
+      "source": 3,
+      "word": "110"
+    },
+    {
+      "B": 19,
+      "endpoint": 26,
+      "q": 3,
+      "safe": true,
+      "source": 7,
+      "word": "111"
+    },
+    {
+      "B": 5,
+      "endpoint": 2,
+      "q": 2,
+      "safe": false,
+      "source": 3,
+      "word": "1100"
+    },
+    {
+      "B": 73,
+      "endpoint": 20,
+      "q": 4,
+      "safe": true,
+      "source": 7,
+      "word": "11101"
+    },
+    {
+      "B": 47,
+      "endpoint": 2,
+      "q": 3,
+      "safe": false,
+      "source": 3,
+      "word": "110001"
+    },
+    {
+      "B": 85,
+      "endpoint": 76,
+      "q": 4,
+      "safe": true,
+      "source": 59,
+      "word": "110110"
+    },
+    {
+      "B": 287,
+      "endpoint": 107,
+      "q": 5,
+      "safe": true,
+      "source": 27,
+      "word": "110111"
+    },
+    {
+      "B": 73,
+      "endpoint": 10,
+      "q": 4,
+      "safe": true,
+      "source": 7,
+      "word": "111010"
+    },
+    {
+      "B": 211,
+      "endpoint": 121,
+      "q": 5,
+      "safe": true,
+      "source": 31,
+      "word": "111110"
+    },
+    {
+      "B": 665,
+      "endpoint": 728,
+      "q": 6,
+      "safe": true,
+      "source": 63,
+      "word": "111111"
+    },
+    {
+      "B": 65,
+      "endpoint": 10,
+      "q": 4,
+      "safe": false,
+      "source": 15,
+      "word": "1111000"
+    },
+    {
+      "B": 125,
+      "endpoint": 47,
+      "q": 4,
+      "safe": false,
+      "source": 147,
+      "word": "11001100"
+    },
+    {
+      "B": 697,
+      "endpoint": 91,
+      "q": 6,
+      "safe": true,
+      "source": 31,
+      "word": "11111010"
+    },
+    {
+      "B": 511,
+      "endpoint": 29,
+      "q": 5,
+      "safe": false,
+      "source": 59,
+      "word": "110110001"
+    },
+    {
+      "B": 1085,
+      "endpoint": 724,
+      "q": 6,
+      "safe": true,
+      "source": 507,
+      "word": "110110110"
+    },
+    {
+      "B": 3511,
+      "endpoint": 1079,
+      "q": 7,
+      "safe": true,
+      "source": 251,
+      "word": "110110111"
+    },
+    {
+      "B": 2903,
+      "endpoint": 121,
+      "q": 7,
+      "safe": true,
+      "source": 27,
+      "word": "110111110"
+    },
+    {
+      "B": 8965,
+      "endpoint": 3644,
+      "q": 8,
+      "safe": true,
+      "source": 283,
+      "word": "110111111"
+    },
+    {
+      "B": 817,
+      "endpoint": 695,
+      "q": 6,
+      "safe": true,
+      "source": 487,
+      "word": "111011100"
+    },
+    {
+      "B": 2219,
+      "endpoint": 1777,
+      "q": 7,
+      "safe": true,
+      "source": 415,
+      "word": "111110110"
+    },
+    {
+      "B": 6913,
+      "endpoint": 2051,
+      "q": 8,
+      "safe": true,
+      "source": 159,
+      "word": "111110111"
+    },
+    {
+      "B": 665,
+      "endpoint": 91,
+      "q": 6,
+      "safe": true,
+      "source": 63,
+      "word": "111111000"
+    },
+    {
+      "B": 6305,
+      "endpoint": 3280,
+      "q": 8,
+      "safe": true,
+      "source": 255,
+      "word": "111111110"
+    },
+    {
+      "B": 19171,
+      "endpoint": 19682,
+      "q": 9,
+      "safe": true,
+      "source": 511,
+      "word": "111111111"
+    },
+    {
+      "B": 8249,
+      "endpoint": 668,
+      "q": 8,
+      "safe": true,
+      "source": 103,
+      "word": "1110111101"
+    },
+    {
+      "B": 6433,
+      "endpoint": 820,
+      "q": 8,
+      "safe": true,
+      "source": 127,
+      "word": "1111111010"
+    },
+    {
+      "B": 6305,
+      "endpoint": 820,
+      "q": 8,
+      "safe": true,
+      "source": 255,
+      "word": "11111111000"
+    },
+    {
+      "B": 2405,
+      "endpoint": 209,
+      "q": 6,
+      "safe": false,
+      "source": 1171,
+      "word": "110011001100"
+    },
+    {
+      "B": 5303,
+      "endpoint": 272,
+      "q": 7,
+      "safe": false,
+      "source": 507,
+      "word": "110110110001"
+    },
+    {
+      "B": 12325,
+      "endpoint": 6556,
+      "q": 8,
+      "safe": true,
+      "source": 4091,
+      "word": "110110110110"
+    },
+    {
+      "B": 39023,
+      "endpoint": 9827,
+      "q": 9,
+      "safe": true,
+      "source": 2043,
+      "word": "110110110111"
+    },
+    {
+      "B": 34159,
+      "endpoint": 11056,
+      "q": 9,
+      "safe": true,
+      "source": 2299,
+      "word": "110110111110"
+    },
+    {
+      "B": 104525,
+      "endpoint": 3644,
+      "q": 10,
+      "safe": true,
+      "source": 251,
+      "word": "110110111111"
+    },
+    {
+      "B": 28687,
+      "endpoint": 14899,
+      "q": 9,
+      "safe": true,
+      "source": 3099,
+      "word": "110111110110"
+    },
+    {
+      "B": 88109,
+      "endpoint": 15173,
+      "q": 10,
+      "safe": true,
+      "source": 1051,
+      "word": "110111110111"
+    },
+    {
+      "B": 83245,
+      "endpoint": 55768,
+      "q": 10,
+      "safe": true,
+      "source": 3867,
+      "word": "110111111110"
+    },
+    {
+      "B": 251783,
+      "endpoint": 78731,
+      "q": 11,
+      "safe": true,
+      "source": 1819,
+      "word": "110111111111"
+    },
+    {
+      "B": 22531,
+      "endpoint": 16762,
+      "q": 9,
+      "safe": true,
+      "source": 3487,
+      "word": "111110110110"
+    },
+    {
+      "B": 69641,
+      "endpoint": 20762,
+      "q": 10,
+      "safe": true,
+      "source": 1439,
+      "word": "111110110111"
+    },
+    {
+      "B": 64777,
+      "endpoint": 2308,
+      "q": 10,
+      "safe": true,
+      "source": 159,
+      "word": "111110111110"
+    },
+    {
+      "B": 196379,
+      "endpoint": 95498,
+      "q": 11,
+      "safe": true,
+      "source": 2207,
+      "word": "111110111111"
+    },
+    {
+      "B": 59305,
+      "endpoint": 25834,
+      "q": 10,
+      "safe": true,
+      "source": 1791,
+      "word": "111111110110"
+    },
+    {
+      "B": 179963,
+      "endpoint": 166076,
+      "q": 11,
+      "safe": true,
+      "source": 3839,
+      "word": "111111110111"
+    },
+    {
+      "B": 58537,
+      "endpoint": 7381,
+      "q": 10,
+      "safe": true,
+      "source": 511,
+      "word": "111111111010"
+    },
+    {
+      "B": 175099,
+      "endpoint": 88573,
+      "q": 11,
+      "safe": true,
+      "source": 2047,
+      "word": "111111111110"
+    },
+    {
+      "B": 527345,
+      "endpoint": 531440,
+      "q": 12,
+      "safe": true,
+      "source": 4095,
+      "word": "111111111111"
+    },
+    {
+      "B": 9913,
+      "endpoint": 5312,
+      "q": 8,
+      "safe": false,
+      "source": 6631,
+      "word": "1110111001100"
+    },
+    {
+      "B": 58025,
+      "endpoint": 7381,
+      "q": 10,
+      "safe": true,
+      "source": 1023,
+      "word": "1111111111000"
+    },
+    {
+      "B": 79361,
+      "endpoint": 26210,
+      "q": 10,
+      "safe": true,
+      "source": 7271,
+      "word": "11101111011100"
+    },
+    {
+      "B": 529393,
+      "endpoint": 66430,
+      "q": 12,
+      "safe": true,
+      "source": 2047,
+      "word": "11111111111010"
+    },
+    {
+      "B": 53359,
+      "endpoint": 2459,
+      "q": 9,
+      "safe": false,
+      "source": 4091,
+      "word": "110110110110001"
+    },
+    {
+      "B": 742921,
+      "endpoint": 184376,
+      "q": 12,
+      "safe": true,
+      "source": 11367,
+      "word": "111011110111101"
+    },
+    {
+      "B": 527345,
+      "endpoint": 66430,
+      "q": 12,
+      "safe": true,
+      "source": 4095,
+      "word": "111111111111000"
+    },
+    {
+      "B": 42125,
+      "endpoint": 938,
+      "q": 8,
+      "safe": false,
+      "source": 9363,
+      "word": "1100110011001100"
+    },
+    {
+      "B": 130177,
+      "endpoint": 14060,
+      "q": 10,
+      "safe": false,
+      "source": 31207,
+      "word": "11101110011001100"
+    },
+    {
+      "B": 525287,
+      "endpoint": 22142,
+      "q": 11,
+      "safe": false,
+      "source": 32763,
+      "word": "110110110110110001"
+    },
+    {
+      "B": 796169,
+      "endpoint": 313679,
+      "q": 12,
+      "safe": true,
+      "source": 154727,
+      "word": "111011110111001100"
+    },
+    {
+      "B": 6850129,
+      "endpoint": 3392003,
+      "q": 14,
+      "safe": true,
+      "source": 371815,
+      "word": "1110111101111011100"
+    },
+    {
+      "B": 62568665,
+      "endpoint": 42168215,
+      "q": 16,
+      "safe": true,
+      "source": 1027175,
+      "word": "11101111011110111101"
+    },
+    {
+      "B": 5088031,
+      "endpoint": 199289,
+      "q": 13,
+      "safe": false,
+      "source": 262139,
+      "word": "110110110110110110001"
+    },
+    {
+      "B": 1826953,
+      "endpoint": 506135,
+      "q": 12,
+      "safe": false,
+      "source": 1997287,
+      "word": "111011100110011001100"
+    },
+    {
+      "B": 8476241,
+      "endpoint": 1372187,
+      "q": 14,
+      "safe": true,
+      "source": 1203303,
+      "word": "1110111101110011001100"
+    },
+    {
+      "B": 64272601,
+      "endpoint": 1908002,
+      "q": 16,
+      "safe": true,
+      "source": 371815,
+      "word": "11101111011110111001100"
+    },
+    {
+      "B": 48675863,
+      "endpoint": 1793612,
+      "q": 15,
+      "safe": false,
+      "source": 2097147,
+      "word": "110110110110110110110001"
+    },
+    {
+      "B": 568360865,
+      "endpoint": 314284988,
+      "q": 18,
+      "safe": true,
+      "source": 13610087,
+      "word": "111011110111101111011100"
+    },
+    {
+      "B": 97257689,
+      "endpoint": 22295216,
+      "q": 16,
+      "safe": false,
+      "source": 34757735,
+      "word": "11101111011100110011001100"
+    },
+    {
+      "B": 461151439,
+      "endpoint": 16142519,
+      "q": 17,
+      "safe": false,
+      "source": 16777211,
+      "word": "110110110110110110110110001"
+    },
+    {
+      "B": 620396449,
+      "endpoint": 25287032,
+      "q": 18,
+      "safe": true,
+      "source": 8760423,
+      "word": "111011110111101110011001100"
+    },
+    {
+      "B": 5199133865,
+      "endpoint": 3445645682,
+      "q": 20,
+      "safe": true,
+      "source": 265268327,
+      "word": "1110111101111011110111001100"
+    },
+    {
+      "B": 6254656681,
+      "endpoint": 667996031,
+      "q": 20,
+      "safe": true,
+      "source": 411413607,
+      "word": "1110111101111011100110011001100"
+    },
+    {
+      "B": 48134382065,
+      "endpoint": 3899491922,
+      "q": 22,
+      "safe": true,
+      "source": 533703783,
+      "word": "11101111011110111101110011001100"
+    },
+    {
+      "B": 454684275065,
+      "endpoint": 161060078477,
+      "q": 24,
+      "safe": true,
+      "source": 39188409447,
+      "word": "111011110111101111011100110011001100"
+    }
+  ],
+  "finite_only": true,
+  "minimal_empty_target_obstruction": {
+    "ancestor_source": 9,
+    "ancestor_word": "1",
+    "crossing_word": "10",
+    "depth": 4,
+    "minimality_domain": "positive empty targets ordered by source",
+    "source": 14
+  },
+  "proves_collatz": false,
+  "same_source_valley_failure": {
+    "endpoint": 8,
+    "safe_suffix": "11",
+    "source": 6,
+    "valley_source": 3,
+    "word": "011"
+  },
+  "schema": "safe-root-frontier-regressions-v1",
+  "short_hit_obstruction": {
+    "ancestor_source": 11,
+    "ancestor_word": "1",
+    "first_crossing_word": "11010",
+    "target_source": 17,
+    "target_word": ""
+  }
+}

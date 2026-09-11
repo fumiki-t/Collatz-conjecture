@@ -11,6 +11,15 @@ The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
 
+[Safe-root frontier](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md): P281/P282 make
+fixed-Q candidate rejection exact and efficient; P283 supplies all-length
+LEX certificates without asserting arbitrary-target termination. Seek an
+ordinary-source/carry/lift theorem forcing one successful window or excluding
+a compatible certificate family at one fixed source. P284 permits a finite
+nonempty minimum-height unresolved set, so sparsifying roots does not exclude
+it. Keep NG51's short hits, smaller-source equality, and separate Q limits.
+B1 is audited here; B2--B6 needs separate justification.
+
 [Synchronized shadows](../SYNCHRONIZED_SHADOW_RUN_RESULTS.md): P279/NG50
 close the one-fixed-affine-conjugacy attempt for the specified three maps.
 Next retain state dependence, ordinary divisibility and both time and Q
@@ -18,7 +27,7 @@ differences; prove full coverage and image-language closure or a rank for
 the nonclosed remainder. P275/P278 already shrink proper languages but do
 not supply that closure. P276 is synchronized, not all-ancestor classification.
 Do not interchange minimal and maximal ordinary representatives within a
-height class. Backlog B1--B6 needs separate audits, not promotion from this
+height class. Backlog B2--B6 needs separate audits, not promotion from this
 finite certificate; deeper shadow counts do not strengthen P279.
 
 [Critical safe mass](../CRITICAL_SAFE_MASS_RUN_RESULTS.md): P272 gives an
