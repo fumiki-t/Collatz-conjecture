@@ -84,18 +84,45 @@ All 305 prior entries are unchanged; four entries are added:
 | synchronized_shadow_scope.json | `01df028d54df078c9036653c181641e8c893f947653cfa782fd3eb07f3666b06` |
 | synchronized_shadow_verifier.json | `4c558544b24389f21301d384247edd1613f61971a74fcc05d6436592fb00541e` |
 
-Final implementation commit and clean acceptance results are recorded below
-after the gate; no unperformed whole-repository suite is claimed.
+Acceptance references the implementation commit below; metadata is recorded
+in a separate commit to avoid circular hashes.
 
 ## Acceptance record
+
+Accepted against implementation commit
+`f63291994276caf25d8c74c216ba76c51f093933` in a clean detached worktree.
+**444 passed in 51.20s**, with this exact command:
+
+```sh
+python -m pytest -q tests/test_synchronized_shadow.py tests/test_phase41_properties.py tests/test_phase42_properties.py tests/test_phase43_properties.py tests/test_phase43_verifier.py tests/test_critical_safe_mass.py tests/test_transient_sparsity.py tests/test_research_health.py tests/test_ext08_scope.py
+```
+
+This comprises 65 new tests, 34 Phase 41 properties, 32 Phase 42 properties,
+98 Phase 43, 65 critical-safe-mass, 70 transient-sparsity, five control-plane
+and 75 EXT08 scope tests. The existing repository virtual environment
+provided Python, while tested files came from the clean implementation commit.
 
 Initial focused suite: 65 passed in 8.85s, including the supplied 28
 corruption-rejection tests plus new scope, integrality, graph and arithmetic
 checks. This count is not a claim that the full repository suite was run.
 An initial dependency suite passed 364 tests in 25.92s: this supplement,
 Phase 41/42 property tests, Phase 43 properties/verifier, critical safe mass
-and transient sparsity. Acceptance additionally requires clean-worktree
-control-plane and EXT08 scope checks.
+and transient sparsity. An optimized
+`python -O -m unittest discover -s tests -p test_synchronized_shadow.py -q`
+run passed all 32 unittest cases in
+1.230s, including all 28 supplied corruption tests.
+
+All four new artifacts reproduced byte-for-byte in a separate directory,
+including the verifier report under `python -O`. Strict research health was
+valid with no warnings/errors, 373 claims and 309 artifact entries. All
+169 tracked Markdown files' local links, generated claims index, compileall
+and diff checks passed. Existing scratch was not altered or staged; all
+305 older artifact manifest entries are unchanged. Prior main's CI run
+34479635402 was independently confirmed completed successfully.
+
+The **whole-repository suite was not run**. Old hashes do not constitute a
+fresh audit of every historical mathematical result; large historical
+enumerations were not rerun merely for this supplement.
 
 ## What this result does not prove
 
