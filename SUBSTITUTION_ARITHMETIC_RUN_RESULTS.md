@@ -100,9 +100,19 @@ The manifest adds four entries; all 313 prior entries are unchanged (317 total).
 All four new JSON files reproduce byte-for-byte in an independent temporary
 directory, with the standalone verifier under isolated optimized Python.
 
-Final tested commit, clean-worktree checks, test counts and artifact manifest
-SHA are recorded in the experiment's `recorded_result` after validation.
-The implementation/acceptance commit chain avoids a self-referential hash.
+Tested implementation commit: `f0562c2fb9fe7c03d9bfacbbec8394f1dfd6bb25`.
+The clean detached worktree passed **588 selected tests in 53.77s** and
+strict health (382 claims, 317 artifacts, no errors or warnings). Focused
+tests: **69 passed in 0.78s**; optimized unittest subset: **32 passed**.
+These counts overlap. All 178 tracked Markdown files pass local-link checks,
+the generated index matches, and compile/diff checks pass. The standalone
+verifier also passes `-I -S -O`, disabling site-packages. The initial clean
+test launch raced checkout completion and ran no tests; the recorded run
+was restarted after a clean checkout was confirmed.
+
+Commands and detailed results are recorded in the experiment's
+`recorded_result`. The implementation/acceptance commit chain avoids a
+self-referential hash. Prior main's GitHub integrity run 34639849034 passed.
 The full historical repository test suite and a wholesale Phase 1--44 proof
 re-audit are not claimed. No workflow/publication system was added.
 

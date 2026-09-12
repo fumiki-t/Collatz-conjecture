@@ -1,28 +1,124 @@
 {
   "schema_version": 1,
   "id": "substitution-arithmetic",
-  "status": "RUNNING",
-  "claim_ids": ["P285", "P286", "E66", "H112", "H72"],
+  "status": "ACCEPTED",
+  "claim_ids": [
+    "P285",
+    "P286",
+    "E66",
+    "H112",
+    "H72"
+  ],
   "objective": "Independently audit rational-source exclusion and exponential canonical residues for aperiodic binary uniform fixed words, without EXT08 or an orbit-coverage premise.",
   "exact_scope": {
-    "quantifiers": ["Every aperiodic fixed word of a binary r-uniform substitution, r>=2", "Four explicit substitutions and eight source bounds each"],
-    "bounds": {"auxiliary_x_degree": 10, "vanishing_conditions": 21, "source_bound_powers": [8,16,32,64,128,256,512,1024], "functional_equation_image_lengths": [2,3,4], "functional_equation_input_max": 5},
+    "quantifiers": [
+      "Every aperiodic fixed word of a binary r-uniform substitution, r>=2",
+      "Four explicit substitutions and eight source bounds each"
+    ],
+    "bounds": {
+      "auxiliary_x_degree": 10,
+      "vanishing_conditions": 21,
+      "source_bound_powers": [
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "functional_equation_image_lengths": [
+        2,
+        3,
+        4
+      ],
+      "functional_equation_input_max": 5
+    },
     "completeness": "Written universal proof and finite certificates are distinct. No claim that arbitrary nonperiodic Collatz words are substitution fixed words."
   },
-  "arithmetic": {"proof_decisions": "exact", "floating_point_role": "Timing only."},
+  "arithmetic": {
+    "proof_decisions": "exact",
+    "floating_point_role": "Timing only."
+  },
   "commands": {
-    "generator": [".venv/bin/python -m src.substitution_arithmetic_search --artifact-dir artifacts"],
-    "verifier": [".venv/bin/python verifier/verify_substitution_arithmetic.py --artifact-dir artifacts --output artifacts/substitution_arithmetic_verifier.json"],
-    "tests": [".venv/bin/python -m pytest -q tests/test_substitution_arithmetic.py", ".venv/bin/python scripts/research_health.py --strict"]
+    "generator": [
+      ".venv/bin/python -m src.substitution_arithmetic_search --artifact-dir artifacts"
+    ],
+    "verifier": [
+      ".venv/bin/python verifier/verify_substitution_arithmetic.py --artifact-dir artifacts --output artifacts/substitution_arithmetic_verifier.json"
+    ],
+    "tests": [
+      ".venv/bin/python -m pytest -q tests/test_substitution_arithmetic.py",
+      ".venv/bin/python scripts/research_health.py --strict"
+    ]
   },
   "independence": {
-    "verifier_reconstructs": ["Sparse polynomial identities versus fraction-free nullspace", "Base-r random access versus iterative substitution", "Parity carry lifting versus affine modular inverse", "Finite tower error and rational specialization"],
-    "forbidden_imports": ["src", "substitution_arithmetic_search", "substitution_auxiliary", "sympy"],
-    "tamper_tests": ["tests/test_substitution_arithmetic.py"]
+    "verifier_reconstructs": [
+      "Sparse polynomial identities versus fraction-free nullspace",
+      "Base-r random access versus iterative substitution",
+      "Parity carry lifting versus affine modular inverse",
+      "Finite tower error and rational specialization"
+    ],
+    "forbidden_imports": [
+      "src",
+      "substitution_arithmetic_search",
+      "substitution_auxiliary",
+      "sympy"
+    ],
+    "tamper_tests": [
+      "tests/test_substitution_arithmetic.py"
+    ]
   },
-  "adversarial_families": ["2^m-1", "8^m-5", "(110|111)^*", "A=11101", "B=1100", "A^rB^s", "r=1 identity", "periodic 10 source 1", "all ones source -1", "all zeros source 0", "negative delta", "specialization zero", "NG45", "NG46", "NG51"],
-  "artifacts": ["artifacts/substitution_arithmetic_auxiliaries.json", "artifacts/substitution_arithmetic_evidence.json", "artifacts/substitution_arithmetic_regressions.json", "artifacts/substitution_arithmetic_verifier.json", "artifacts/SHA256SUMS"],
-  "stop_conditions": ["Reject a vanishing auxiliary evaluation or unaccounted valuation/height loss", "Do not promote finite examples or exclusion of a special language to Collatz exclusion"],
-  "interpretation_boundary": ["No primitivity needed; binary uniform fixed words only", "H112/H72/H89/H133 and EXT08 remain OPEN", "Supplied code adapted; not independent authorship or proof-assistant formalization"],
-  "proves_collatz": false
+  "adversarial_families": [
+    "2^m-1",
+    "8^m-5",
+    "(110|111)^*",
+    "A=11101",
+    "B=1100",
+    "A^rB^s",
+    "r=1 identity",
+    "periodic 10 source 1",
+    "all ones source -1",
+    "all zeros source 0",
+    "negative delta",
+    "specialization zero",
+    "NG45",
+    "NG46",
+    "NG51"
+  ],
+  "artifacts": [
+    "artifacts/substitution_arithmetic_auxiliaries.json",
+    "artifacts/substitution_arithmetic_evidence.json",
+    "artifacts/substitution_arithmetic_regressions.json",
+    "artifacts/substitution_arithmetic_verifier.json",
+    "artifacts/SHA256SUMS"
+  ],
+  "stop_conditions": [
+    "Reject a vanishing auxiliary evaluation or unaccounted valuation/height loss",
+    "Do not promote finite examples or exclusion of a special language to Collatz exclusion"
+  ],
+  "interpretation_boundary": [
+    "No primitivity needed; binary uniform fixed words only",
+    "H112/H72/H89/H133 and EXT08 remain OPEN",
+    "Supplied code adapted; not independent authorship or proof-assistant formalization"
+  ],
+  "proves_collatz": false,
+  "recorded_result": {
+    "commit": "f0562c2fb9fe7c03d9bfacbbec8394f1dfd6bb25",
+    "manifest_sha256": "3a90a0bdb1c2c746d97071a1df90a3a42baa7f89460a1a05cfce5ba9bf3faf9e",
+    "verifier_valid": true,
+    "verifier": "valid=true; 4 auxiliaries; 84 zero identities; 4 leading polynomials; 21168 functional equations; 308 first differences; 32 source bounds; 18 distinct prefixes/493370 bits; 16 tower steps; 65 family/control words; generator_imported=false; proves_collatz=false",
+    "regeneration": "Four JSON artifacts reproduced byte-for-byte in a separate temporary directory. Auxiliary and 32 certificate values match the supplied bundle exactly, except intended top-level format/status metadata. Standalone verifier also passed under -I -S -O with site-packages disabled.",
+    "focused_tests": "69 passed in 0.78s. Optimized unittest subset: 32 passed in 0.202s. Counts overlap; not additive independent experiments.",
+    "clean_worktree_tests": "588 passed in 53.77s in a clean detached worktree at the recorded commit.",
+    "clean_worktree_test_command": "python -m pytest -q tests/test_substitution_arithmetic.py tests/test_phase20_properties.py tests/test_phase21_properties.py tests/test_safe_root_frontier.py tests/test_safe_root_boundaries.py tests/test_synchronized_shadow.py tests/test_phase41_properties.py tests/test_phase42_properties.py tests/test_phase43_properties.py tests/test_phase43_verifier.py tests/test_critical_safe_mass.py tests/test_transient_sparsity.py tests/test_ext08_scope.py tests/test_research_health.py",
+    "strict_research_health": "Clean recorded-commit worktree: valid=true; strict=true; errors=[]; warnings=[]; 382 claims; latest_phase=44; 317 artifact entries.",
+    "other_checks": "178 tracked Markdown files pass local-link checks; generated index matches ledger; compileall and Git diff checks pass. All 313 prior artifact hashes unchanged; only four new entries. Existing scratch untouched. Prior main CI 34639849034 succeeded.",
+    "audit_corrections": "Malformed --1 encoding now raises the explicit Reject. No EXT08 was moved from assumptions to notes because the dependency extractor otherwise treated it as a positive premise; exact dependency IDs are regression-tested and the quarantine guard is unchanged. A worktree setup race produced no tests and was rerun after checkout completed.",
+    "runtime": "Python 3.13.0; generator SymPy 1.14.0/mpmath 1.3.0; standalone verifier standard-library only.",
+    "full_repository_suite": "Not run. The selected dependency suite is not a full historical mathematical re-audit.",
+    "independence_boundary": "Supplied algorithms adapted and logically audited, not independent authorship. Generator nullspace/expansion/affine inverse is checked by sparse polynomial arithmetic/base-r digits/carry lifting, with no generator imports. Universal proofs are written, not machine formalized.",
+    "scope": "P285/P286/E66 only. Binary uniform fixed words, not general automatic/morphic/safe languages; word-dependent constants. Four positive-source examples overlap P126/P130. No orbit coverage or Collatz proof. P119 remains CONDITIONAL; EXT08/H112/H72/H89/H133 remain OPEN."
+  }
 }
