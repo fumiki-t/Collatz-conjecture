@@ -1,0 +1,18 @@
+{
+  "EXT08_used": false,
+  "auxiliaries": 4,
+  "distinct_image_first_difference_checks": 308,
+  "distinct_prefix_replays": 18,
+  "distinct_prefix_total_bits": 493370,
+  "family_words": 65,
+  "finite_functional_equations": 21168,
+  "general_orbit_coverage_proved": false,
+  "generator_imported": false,
+  "leading_polynomials": 4,
+  "proves_collatz": false,
+  "source_bound_queries": 32,
+  "tower_error_height_checks": 16,
+  "universal_proof_machine_formalized": false,
+  "valid": true,
+  "zero_coefficient_identities": 84
+}

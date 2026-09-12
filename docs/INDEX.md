@@ -15,6 +15,13 @@ This is the canonical map of the research archive. Start with
 ## Canonical layer
 
 Latest unnumbered mathematical supplement:
+[substitution-arithmetic results](../SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md),
+[proof audit](../research/audits/substitution-arithmetic/REPORT.md),
+[proposal](../research/audits/substitution-arithmetic/PROPOSAL.md),
+[experiment](../research/experiments/substitution-arithmetic.json).
+P285/P286/E66 concern binary uniform aperiodic fixed words, not every safe tail.
+
+Previous supplement:
 [safe-root-frontier results](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md),
 [proof audit](../research/audits/safe-root-frontier/REPORT.md),
 [proposal](../research/audits/safe-root-frontier/PROPOSAL.md),

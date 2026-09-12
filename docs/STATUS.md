@@ -7,7 +7,7 @@
 > Older artifact status snapshots are historical, not current claim authority.
 
 
-**Last updated:** 2026-09-12
+**Last updated:** 2026-09-13
 
 **Problem status:** `OPEN` — the Collatz conjecture is neither proved nor
 disproved by this repository.
@@ -15,7 +15,17 @@ disproved by this repository.
 For the self-contained research map, conventions, dependency branches, and
 proof obligations, read [`RESEARCH_SYNTHESIS.md`](RESEARCH_SYNTHESIS.md).
 
-Latest supplement: [safe-root frontier](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md).
+Latest supplement: [substitution arithmetic](../SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md).
+P285 excludes rational 2-adic sources of non-ultimately-periodic binary
+uniform fixed words (r>=2); P286 gives word-dependent exponential canonical
+residue growth. E66 reconstructs 32 source bounds and 21,168 functional
+identities. Neither primitivity nor EXT08 is used. The four examples overlap
+P126/P130; they are not a novelty claim. Arbitrary positive orbits are not
+proved to belong to this special class. The general route still needs
+ordinary-source, carry/lift or ancestor supply. H112/H72 and positive-cycle
+exclusion remain open; deeper self-similar tables do not fill this gap.
+
+Previous supplement: [safe-root frontier](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md).
 P281/P282 accept backlog B1's exact fixed-Q windows and global safe LEX
 reduction. P283 supplies all-positive/all-length certificates; P284 proves
 termination only at each prefix of a hypothetical global height/source

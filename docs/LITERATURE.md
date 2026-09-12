@@ -7,6 +7,24 @@ independently reproduced here.
 
 ## Foundational and structural
 
+### Substitution arithmetic: Mahler-method context (checked 2026-09-13)
+
+M. Sharpe, *Rung One of the Word-Complexity Ladder: a Machine-Verified
+Exclusion of an Automatic Collatz Itinerary by Mahler's Method in Degree
+One*, author-hosted manuscript dated 2026-08-28,
+[paper/rung1.tex](https://github.com/msharpe248/collatz/blob/main/paper/rung1.tex).
+No journal/DOI was established in this audit. The degree-one Padé and height
+comparison sections were read as context for the (011,110) example and the
+method in [P285/P286](../research/audits/substitution-arithmetic/REPORT.md).
+No Lean execution or blanket endorsement of the manuscript is claimed.
+
+Boris Adamczewski and Colin Faverjon, *A new proof of Nishioka's theorem in
+Mahler's method*, 2022, [arXiv:2210.14528](https://arxiv.org/abs/2210.14528),
+DOI [10.48550/arXiv.2210.14528](https://doi.org/10.48550/arXiv.2210.14528).
+Metadata/abstract only were checked; context for linear Mahler equations,
+not a theorem used in this supplement. P285/P286 give their needed argument
+internally and make no literature-wide novelty claim. No new EXT claim.
+
 ### Abramson and Pitman (2011 manuscript) — classical context only
 
 Josh Abramson and Jim Pitman, *Concave Majorants of Random Walks and Related

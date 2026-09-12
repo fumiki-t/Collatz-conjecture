@@ -1,0 +1,3 @@
+# Optional, only for auxiliary regeneration. Verifier uses the standard library.
+sympy==1.14.0
+mpmath==1.3.0

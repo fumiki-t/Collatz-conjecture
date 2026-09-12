@@ -1,5 +1,18 @@
 # Collatz conjecture research history
 
+## 2026-09-13 — binary uniform substitution arithmetic
+
+P285/P286 audit the 2026-09-12 proposal's rational-source exclusion and
+exponential canonical residue bound for aperiodic binary uniform fixed words.
+The proof separates eta>=2 from eta=0,1 specializations, retains common
+content removal and finite-agreement valuation loss, and uses the exact
+2^21>3^13 gap. E66 regenerates 32 source certificates and 21168 functional
+identities; distinct prefix replay is 18 words/493370 bits. The four examples'
+positive-source conclusions overlap P126/P130. No general automatic-word,
+safe-language, or Collatz exclusion is claimed. No external density input,
+old status change or old artifact rewrite. See the
+[audit and run record](SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md).
+
 ## 2026-09-12 — safe-root frontier and exact ancestor windows
 
 P281/P282 audit B1 with global safe LEX reduction, sharp fixed-count

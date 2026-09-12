@@ -489,6 +489,19 @@ the (703,80) certificate at (703,79) were corrected before acceptance; neither
 became an accepted claim. H112/H72/H89/H133 and EXT08 remain OPEN.
 No global claim status changes and proves_collatz=false.
 
+## Substitution-arithmetic supplement (2026-09-13)
+
+| ID | Status | Statement | Assumptions / dependencies | Proof / verifier / source | First introduced | Last audited | Implication for Collatz | Notes / counterexample |
+|---|---|---|---|---|---|---|---|---|
+| P285 | `VERIFIED_THEOREM` | Every not-ultimately-periodic one-sided fixed word of a binary r-uniform substitution with r>=2 has irrational inverse shortcut-parity source in Z_2. This remains true for every shift and arbitrary finite prefix of a shift. | Exact parity inverse convention P125; internally proved normalized-state rationality lemma, bivariate functional equation and degree-one auxiliary construction. No primitivity or external theorem. | [`../research/audits/substitution-arithmetic/REPORT.md`](../research/audits/substitution-arithmetic/REPORT.md), Sections 1--6; E66 finite checks. | Substitution-arithmetic supplement | 2026-09-13 | Excludes rational, hence ordinary integer, sources for this special self-similar class. | Does not cover all automatic words, nonuniform morphic words or arbitrary safe tails. Written derivation, not proof-assistant formalization. r=1 and periodic source 1/-1/0 controls are essential. EXT08 is not used. |
+| P286 | `VERIFIED_THEOREM` | For each P285 fixed word there are word-dependent c>0,C,N_0 with canonical residues r_N>=2^(cN-C) for all N>=N_0; positive S matching N bits has N<=C'(1+log2(S+1)). | P285 functional/height/nonvanishing lemmas; exact finite-agreement valuation loss j_0 sum_{i<k}r^i; actual leading order, not always 21. | [`../research/audits/substitution-arithmetic/REPORT.md`](../research/audits/substitution-arithmetic/REPORT.md), Section 7; E66 explicit finite source bounds. | Substitution-arithmetic supplement | 2026-09-13 | Gives an arithmetic source-height obstruction for the specified class without an asymptotic density premise. | Constants are not uniform over substitutions. The four examples' positive-source exclusions already have P126/P130 repeat proofs; no example-based novelty assertion. No general source/lift supply. |
+| E66 | `VERIFIED_FINITE` | Reconstructs 4 primitive auxiliaries, 84 vanishing coefficients and 4 x^21 leading polynomials; 21168 finite functional equations, 308 first-difference cases, 32 all-source bound certificates, 18 distinct prefixes totaling 493370 bits, 16 exact tower-error/height checks and 65 family/control words. | Four declared substitutions; eight bounds S<=2^B, B=8..1024 in the declared list. Generator expansion/affine inverse versus verifier base-r digits/carry lifting; finite FE images r=2,3,4, input lengths 0..5. | [`../SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md`](../SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md); `verifier/verify_substitution_arithmetic.py`; tamper tests; SHA-256 manifest. | Substitution-arithmetic supplement | 2026-09-13 | Verifies finite identities and uniform-in-source exclusions for specified finite prefixes, not global orbit coverage. | Supplied code adapted, not independently authored. No generator import; verifier standard-library only. Finite scope does not prove P285/P286 by extrapolation. proves_collatz=false. |
+
+Only these three IDs are added. P119 remains CONDITIONAL and EXT08 remains
+OPEN. No earlier claim status or historical artifact changes. P285/P286 do
+not assert literature-wide novelty. H112/H72/H89/H133 remain OPEN and
+proves_collatz=false.
+
 ## Status-change procedure
 
 To change a row:

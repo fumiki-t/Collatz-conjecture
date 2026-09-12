@@ -1,5 +1,5 @@
 {
-  "claim_count": 379,
+  "claim_count": 382,
   "claims": [
     {
       "claim": "For a fixed parity word of length `k`, the shortcut iterate has exact affine form `(3^q n+B)/2^k`; on its residue cylinder it is `y+3^q t`.",
@@ -5564,9 +5564,49 @@
       "last_audited": "2026-09-12",
       "notes": "Minimum in the stated empty-target domain is S=14: 9 --1--> 14 improves, but 9 --10--> 7 crosses before N=4. Supplied S=17 blind-cover case also retained. No minimality over nonempty targets is asserted.",
       "status": "REFUTED"
+    },
+    {
+      "claim": "Every not-ultimately-periodic one-sided fixed word of a binary r-uniform substitution with r>=2 has irrational inverse shortcut-parity source in Z_2. This remains true for every shift and arbitrary finite prefix of a shift.",
+      "collatz_implication": "Excludes rational, hence ordinary integer, sources for this special self-similar class.",
+      "dependencies": "Exact parity inverse convention P125; internally proved normalized-state rationality lemma, bivariate functional equation and degree-one auxiliary construction. No primitivity or external theorem.",
+      "dependency_ids": [
+        "P125"
+      ],
+      "evidence": "[`../research/audits/substitution-arithmetic/REPORT.md`](../research/audits/substitution-arithmetic/REPORT.md), Sections 1--6; E66 finite checks.",
+      "first_introduced": "Substitution-arithmetic supplement",
+      "id": "P285",
+      "last_audited": "2026-09-13",
+      "notes": "Does not cover all automatic words, nonuniform morphic words or arbitrary safe tails. Written derivation, not proof-assistant formalization. r=1 and periodic source 1/-1/0 controls are essential. EXT08 is not used.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "For each P285 fixed word there are word-dependent c>0,C,N_0 with canonical residues r_N>=2^(cN-C) for all N>=N_0; positive S matching N bits has N<=C'(1+log2(S+1)).",
+      "collatz_implication": "Gives an arithmetic source-height obstruction for the specified class without an asymptotic density premise.",
+      "dependencies": "P285 functional/height/nonvanishing lemmas; exact finite-agreement valuation loss j_0 sum_{i<k}r^i; actual leading order, not always 21.",
+      "dependency_ids": [
+        "P285"
+      ],
+      "evidence": "[`../research/audits/substitution-arithmetic/REPORT.md`](../research/audits/substitution-arithmetic/REPORT.md), Section 7; E66 explicit finite source bounds.",
+      "first_introduced": "Substitution-arithmetic supplement",
+      "id": "P286",
+      "last_audited": "2026-09-13",
+      "notes": "Constants are not uniform over substitutions. The four examples' positive-source exclusions already have P126/P130 repeat proofs; no example-based novelty assertion. No general source/lift supply.",
+      "status": "VERIFIED_THEOREM"
+    },
+    {
+      "claim": "Reconstructs 4 primitive auxiliaries, 84 vanishing coefficients and 4 x^21 leading polynomials; 21168 finite functional equations, 308 first-difference cases, 32 all-source bound certificates, 18 distinct prefixes totaling 493370 bits, 16 exact tower-error/height checks and 65 family/control words.",
+      "collatz_implication": "Verifies finite identities and uniform-in-source exclusions for specified finite prefixes, not global orbit coverage.",
+      "dependencies": "Four declared substitutions; eight bounds S<=2^B, B=8..1024 in the declared list. Generator expansion/affine inverse versus verifier base-r digits/carry lifting; finite FE images r=2,3,4, input lengths 0..5.",
+      "dependency_ids": [],
+      "evidence": "[`../SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md`](../SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md); `verifier/verify_substitution_arithmetic.py`; tamper tests; SHA-256 manifest.",
+      "first_introduced": "Substitution-arithmetic supplement",
+      "id": "E66",
+      "last_audited": "2026-09-13",
+      "notes": "Supplied code adapted, not independently authored. No generator import; verifier standard-library only. Finite scope does not prove P285/P286 by extrapolation. proves_collatz=false.",
+      "status": "VERIFIED_FINITE"
     }
   ],
   "generated_from": "docs/CLAIMS_LEDGER.md",
   "schema_version": 1,
-  "source_sha256": "e73f5b9727ebd39d5b9c9e0d3713ee642d7c1ce5bca69fd8a1d2f0ba9fec48ba"
+  "source_sha256": "de3ba30e7762dda3e81151b30c7f109ddc64024513371b655f77da41e316d4c4"
 }

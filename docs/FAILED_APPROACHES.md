@@ -1,5 +1,19 @@
 # Failed and deprioritized approaches
 
+## Substitution-arithmetic scope traps (P285/P286/E66)
+
+The tempting extensions “distinct images imply aperiodicity”, “a nonzero
+formal residual never specializes to zero”, and “binary self-similar
+exclusion covers every safe orbit” are not accepted. Exact boundary controls:
+(010,101), seed 1, fixes (10)^infinity with positive source 1; y-1 vanishes
+at y=1; r=1 identity fixes every word. All ones/zeros retain sources -1/0.
+The first two shortcuts fail locally; general orbit coverage is OPEN, not
+refuted by these examples. The surviving P285 theorem retains r>=2,
+non-ultimate-periodicity, content removal and separate specialization cases.
+The four finite examples already admit P126/P130 positive-source repeat
+arguments. Do not spend another search rediscovering their exclusion or
+promote it to H112/H72. See the [audit](../research/audits/substitution-arithmetic/REPORT.md).
+
 ## NG51 — pruning crossing leaves without checking short hits
 
 - Hypothesis: only the depth-N surviving roots and their histories need

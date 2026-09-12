@@ -11,6 +11,13 @@ The ranking is by closeness to a complete Collatz implication, not by ease of
 computation. Every proposal begins with a small exact falsification test and
 the mandatory adversarial families.
 
+[Substitution arithmetic](../SUBSTITUTION_ARITHMETIC_RUN_RESULTS.md): P285/P286
+give irrationality and exponential canonical residues for binary uniform
+aperiodic fixed words. Seek an ordinary-source/carry/lift bridge forcing a
+comparable self-similar arithmetic obstruction. General orbit coverage is
+not known, so deeper substitution prefixes are not the next proof step.
+Preserve periodic/r=1 exceptions and EXT08's OPEN boundary.
+
 [Safe-root frontier](../SAFE_ROOT_FRONTIER_RUN_RESULTS.md): P281/P282 make
 fixed-Q candidate rejection exact and efficient; P283 supplies all-length
 LEX certificates without asserting arbitrary-target termination. Seek an
